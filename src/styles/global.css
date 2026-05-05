@@ -1,1 +1,8 @@
 @import "tailwindcss";
+@import "@fontsource-variable/playfair-display";
+@import "@fontsource-variable/open-sans";
+
+@theme {
+  --font-sans: "Open Sans Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display Variable", ui-serif, Georgia, serif;
+}
