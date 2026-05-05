@@ -1,13 +1,13 @@
 # Paircraft
 
-Maridaje vino-comida con explicaciones cortas y opinionadas, al estilo *Guía del Vino* de Hugh Johnson.
+Wine and food pairings with short, opinionated explanations — pocket guide style, inspired by Hugh Johnson's *Pocket Wine Book*.
 
 ## Stack
 
 - [Astro](https://astro.build/) — mobile-first PWA
 - [Tailwind CSS v4](https://tailwindcss.com/) — CSS-first config
 - [@vite-pwa/astro](https://vite-pwa-org.netlify.app/frameworks/astro.html) — manifest + service worker
-- [Bun](https://bun.sh/) — runtime y package manager
+- [Bun](https://bun.sh/) — runtime and package manager
 
 ## Dev
 
@@ -16,8 +16,8 @@ bun install
 bun run dev
 ```
 
-Build de producción: `bun run build`. Preview: `bun run preview`.
+Production build: `bun run build`. Preview: `bun run preview`.
 
 ## Deploy
 
-Vercel via GitHub integration (zero-config). PR a `main` → preview. Push a `main` → producción.
+Vercel via GitHub integration (zero-config). PR to `main` → preview. Push to `main` → production.

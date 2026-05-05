@@ -12,12 +12,12 @@ export default defineConfig({
         name: 'Paircraft',
         short_name: 'Paircraft',
         description:
-          'Maridaje vino-comida con explicaciones cortas y opinionadas, estilo pocket guide.',
+          'Wine and food pairings with short, opinionated explanations — pocket guide style.',
         theme_color: '#1a1a1a',
         background_color: '#ffffff',
         display: 'standalone',
         start_url: '/',
-        lang: 'es',
+        lang: 'en',
         icons: [
           {
             src: '/favicon.svg',
