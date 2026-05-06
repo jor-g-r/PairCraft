@@ -3,7 +3,7 @@
 Wine and food pairings with short, opinionated explanations — pocket guide style, inspired by Hugh Johnson's *Pocket Wine Book*.
 
 **Live:** https://pair-craft.vercel.app/ (auto-deploys on push to `main`)
-**Status (2026-05-05):** Week 1 of 90-day MVP complete. Ready for Week 2.
+**Status (2026-05-05 EOD):** Week 2 in progress — pairing engine library scaffolded (rules layer + prompt builder + Anthropic SDK wrapper). Astro Action + UI pending; user setting up personal Anthropic API key.
 
 ---
 
@@ -11,7 +11,7 @@ Wine and food pairings with short, opinionated explanations — pocket guide sty
 
 This is the v1 product of "Wedge B" — AI tools for hospitality/F&B in LATAM, leveraging the founder's CUHELAV (hospitality school) background. Strategy/operational docs live outside this repo:
 
-- `/Users/user/LocalDocuments/sideprojects/Bootstrap/paircraft-mvp.md` — **canonical operational plan**: scope, weekly cadence, kill criteria, distribution, all resolved Q1-Q5 decisions.
+- `/Users/user/LocalDocuments/sideprojects/Bootstrap/paircraft-mvp.md` — **canonical operational plan**: scope, weekly cadence, kill criteria, distribution, resolved Q1-Q5. §14 (added 2026-05-05) = Programa CUHELAV affiliate structure. §15 (added 2026-05-05) = voice Hugh Johnson + IP rules.
 - `/Users/user/LocalDocuments/sideprojects/Bootstrap/Paircraft-—-Product-&-System-Description.txt` — original 12-month vision (symmetric food/wine model; superseded by tri-modal wine-primary decision).
 - `/Users/user/LocalDocuments/sideprojects/Bootstrap/README.md` — financial framing ($200/mo floor → $2000/mo aspiration, Pieter-Levels-style portfolio).
 - `/Users/user/LocalDocuments/sideprojects/Bootstrap/offer-candidates.md` — portfolio context.
@@ -74,17 +74,19 @@ Always read `paircraft-mvp.md` first if context is needed beyond what's here.
 
 ---
 
-## What's next — Week 2 (2026-05-12 → 2026-05-18)
+## Week 2 — current state
 
-Per `paircraft-mvp.md` §10:
+Per `paircraft-mvp.md` §10. Scaffolded 2026-05-05 in one session:
 
-1. **Rules layer drafted** — 10-15 rules in TypeScript (`src/lib/rules.ts`), each tagged with `mode: 'harmony' | 'contrast' | 'enhancement'`. Pure-data shape; the LLM uses them as context, doesn't replace them.
-2. **First Astro Action** (`src/actions/index.ts`) — takes a wine identifier (or text input), invokes Claude with rules layer + wine attributes as context, returns 9 structured pairing recommendations.
-3. **Tri-modal grid render** — replace the placeholder homepage with a basic input → 9-cell result page using Playfair for headings + the tri-modal section labels.
+1. **Rules layer** ✅ — `src/lib/rules.ts`. 13 rules tagged by mode (4 harmony / 5 contrast / 4 enhancement). Pure data; the LLM uses them as context, doesn't execute them.
+2. **Prompt builder** ✅ — `src/lib/prompt.ts`. 3 cacheable system blocks (voice / tri-modal+rules / output schema), each with `cache_control: ephemeral`. ~1,450 tokens total, above Anthropic minimum cacheable. Voice describes register without naming Hugh Johnson per `paircraft-mvp.md §15` rule 1.
+3. **SDK wrapper** ✅ — `src/lib/anthropic.ts`. Model `claude-sonnet-4-6`, max_tokens 2500, temperature 0.5, Zod-validated output, single retry on schema failure with explicit "JSON only" instruction, module-level client cache for serverless reuse. `zod` added as direct dep.
+4. **First Astro Action** ⏸ — `src/actions/index.ts`. Will take `{ wineText: string }` and call `generatePairings`. Pending API key.
+5. **Tri-modal grid render** ⏸ — `src/pages/index.astro`. Input + skeleton + 9-card grid using Playfair for headings + tri-modal section labels. Pending action.
 
-Open architectural decision for Week 2: **one Claude call returning 9 results structured, vs. three parallel calls (one per mode)**. Trade-offs: latency vs. cost vs. coherence vs. prompt simplicity. Decide at start of Week 2.
+**Architectural decision (RESOLVED 2026-05-05):** **Option A** — one Claude call returning all 9 pairings as structured JSON, plus aggressive prompt caching (3 cache breakpoints). Streaming UX deferred to Phase 2 (post-MVP) when progressive grid fill justifies the complexity. Rationale: tri-modal coherence (model self-deduplicates across modes), simpler ship in Week 2, ~30% lower per-query cost than 3 parallel calls. See conversation 2026-05-05 for full tradeoff analysis.
 
-API key needed: `ANTHROPIC_API_KEY` from console.anthropic.com → `.env` (local) and Vercel env vars (production). Server-side only — never expose to client.
+**Blocking next step:** user signs up at console.anthropic.com with personal email (NOT the agency account — see memory `agency-vs-personal-resources`), generates API key, sets `ANTHROPIC_API_KEY` in local `.env`. ~5 min. $5 free credit covers Week 2 dev with margin. Vercel env var added at first deploy with action.
 
 ---
 
@@ -94,5 +96,7 @@ From `paircraft-mvp.md §12`:
 
 - §12.2 — Buy domain. Deferred by user to next month (June 2026). Order: `paircraft.com` → `.app` → `.ai` → `.co`.
 - §12.3 — Fill 5 named B2C buyers in `paircraft-mvp.md §7 Pool B`. Deadline: 2026-05-18 (Week 2 close).
+- §14.7 — Name 3 CUHELAV alumni for the Founder's Cut affiliate experiment. Deadline: 2026-05-25. Top candidate already in doc: Teo (De la Capellanía).
+- §15.6 — Informal trademark search "Paircraft" in USPTO TESS + EUIPO + INPI/IMPI (CO/MX). Deadline: 2026-05-25. Free, ~30 min.
 
 These are user-execution tasks; Claude doesn't need to drive them.

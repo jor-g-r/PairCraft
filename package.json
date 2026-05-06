@@ -18,7 +18,8 @@
     "@fontsource-variable/playfair-display": "^5.2.8",
     "@tailwindcss/vite": "^4.2.4",
     "astro": "^6.2.2",
-    "tailwindcss": "^4.2.4"
+    "tailwindcss": "^4.2.4",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@vite-pwa/astro": "^1.2.0"
