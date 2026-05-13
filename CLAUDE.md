@@ -2,8 +2,8 @@
 
 Wine and food pairings with short, opinionated explanations — pocket guide style, inspired by Hugh Johnson's *Pocket Wine Book*.
 
-**Live:** https://pair-craft.vercel.app/ (auto-deploys on push to `main`)
-**Status (2026-05-05 EOD):** Week 2 in progress — pairing engine library scaffolded (rules layer + prompt builder + Anthropic SDK wrapper). Astro Action + UI pending; user setting up personal Anthropic API key.
+**Live:** https://pair-craft.vercel.app/ (auto-deploys on push to `main` — currently hosts the v1 chat-style MVP, which is being replaced)
+**Status (2026-05-13):** v2 pivot approved. Canonical plan is now `paircraft-mvp-v2.md` (NOT the original `paircraft-mvp.md`). Shape: navigable entity-graph (Wine/Grape/Region/Dish), tier-only pairing scoring, hand-reviewed demo subset for profesor + Teo by Day 21 (2026-06-02). Week 1 starts: Astro Content Collections schemas + rules-as-data + pure tier engine.
 
 ---
 
@@ -11,30 +11,32 @@ Wine and food pairings with short, opinionated explanations — pocket guide sty
 
 This is the v1 product of "Wedge B" — AI tools for hospitality/F&B in LATAM, leveraging the founder's CUHELAV (hospitality school) background. Strategy/operational docs live outside this repo:
 
-- `/Users/user/LocalDocuments/sideprojects/Bootstrap/paircraft-mvp.md` — **canonical operational plan**: scope, weekly cadence, kill criteria, distribution, resolved Q1-Q5. §14 (added 2026-05-05) = Programa CUHELAV affiliate structure. §15 (added 2026-05-05) = voice Hugh Johnson + IP rules.
-- `/Users/user/LocalDocuments/sideprojects/Bootstrap/Paircraft-—-Product-&-System-Description.txt` — original 12-month vision (symmetric food/wine model; superseded by tri-modal wine-primary decision).
+- `/Users/user/LocalDocuments/sideprojects/Bootstrap/paircraft-mvp-v2.md` — **CANONICAL operational plan (since 2026-05-13)**. Entity-graph model, MVP-demo-first for profesor + Teo, tier-only scoring. Supersedes v1.
+- `/Users/user/LocalDocuments/sideprojects/Bootstrap/paircraft-mvp.md` — v1 plan, preserved for traceability. §14 (CUHELAV affiliate) and §15 (Hugh Johnson voice + IP) are inherited unchanged by v2.
+- `/Users/user/LocalDocuments/sideprojects/Bootstrap/Paircraft-—-Product-&-System-Description.txt` — original 12-month vision (symmetric food/wine model; superseded).
 - `/Users/user/LocalDocuments/sideprojects/Bootstrap/README.md` — financial framing ($200/mo floor → $2000/mo aspiration, Pieter-Levels-style portfolio).
 - `/Users/user/LocalDocuments/sideprojects/Bootstrap/offer-candidates.md` — portfolio context.
 
-Always read `paircraft-mvp.md` first if context is needed beyond what's here.
+Always read `paircraft-mvp-v2.md` first if context is needed beyond what's here.
 
 ---
 
 ## Locked product decisions (don't relitigate without explicit signal)
 
-- **Wine is the primary structured entity.** Wines are hand-curated (target: 50-100 in v1). Food is a tag taxonomy (`protein` × `flavor_profile` × `intensity`), NOT entities. The original .txt's symmetric food/wine model is superseded.
-- **Tri-modal pairing output (signature IP).** Every query returns **3 pairings per mode × 3 modes = 9 total**. Modes:
+- **Navigable entity graph, not chat UX.** v1 entities = Wine / Grape / Region / Dish. Each has a Content Collection, a URL, a page template. The chat-style "type a wine → 9 pairings out" surface from v1 is **removed**. FlavorNote / Method / Sauce / etc. live as tags, not entities (v0.2 promotion only if signal warrants).
+- **Tri-modal rules layer (signature IP, preserved).** 13 rules from `src/lib/rules.ts`, tagged by mode:
   - `by Harmony` — matching/balancing (e.g., rich wine + rich food)
   - `by Contrast` — opposing axis (e.g., acid cuts fat, tannin meets protein)
   - `by Enhancement` — bridging notes (shared flavors, terroir, aromatic complement)
-  - Rules in the engine MUST be tagged by mode.
+  - In v2 these become data (a `rules` collection with `strength: strong|moderate|mild`), consumed by the pure-function tier engine.
+- **Pairing scoring = tier-only.** `Decisive match` / `Worth trying` / `Risky bridge` / `Skip` plus Hugh-voice prose. **No numeric score, no itemized `+25 / +18 / −6` breakdown** in v1. Numbers deferred to Day 36+ pending profesor + Teo feedback.
 - **Voice anchor:** Hugh Johnson pocket-guide. Opinionated. One-sentence pairing explanations. "Drink this with that" — confidence > caveats. Test: would Hugh Johnson put this in a 200-page pocket guide, or save it for the encyclopedia? If encyclopedia-shaped, defer.
-- **Two food modes share one engine:** `snacks-default` (curated category list — quesos, charcutería, etc.) and `restaurant/dish mode` (free-text dish → tag extraction → match).
-- **Wine schema (Path C: model now, render later):** in addition to structural attrs, store `flavouring.{primary, secondary, tertiary}[]` and `tannin_profile.{softness, astringency, complexity, structure}`. v0.1 stores them but only renders the top section + tri-modal pairing grid. Wireframe shows v0.2-v0.3 visual horizon.
-- **Product language: English at launch.** Spanish reserved as v0.2 i18n if Pool B (mostly LATAM) feedback warrants. Wedge B is geographic, not language-bound.
-- **Auth (v0.1): none.** Fully public, IP-based rate limit (5 queries/day per IP) + hard monthly LLM-spend cap. Hybrid signup wall comes in v0.2 weeks 5-6, gate placed at data-revealed "magic moment" query.
-- **Mobile-first PWA.** Native wrap via Capacitor reserved for v0.2/v0.3 if revenue signal justifies. NOT an App-Store-day-1 product.
-- **Pricing:** $9/month or $79/year (provisional, reset after 10 paying users). Free tier = 5 queries/day anonymous.
+- **LLM is a curation-time layer, not a runtime engine.** Anthropic SDK drafts entity copy and pairing prose; user reviews; output is committed to Content Collections. Per-query LLM cost approaches zero. Free-text dish parsing is the one runtime LLM use (and only on the dish-input affordance).
+- **Data layer: Astro Content Collections** (YAML/MDX, Zod schemas, cross-references). Supabase deferred to v0.2.
+- **Product language: English at launch.** Spanish reserved as v0.2 i18n.
+- **Auth: none in v1.** Demo is unlisted/password-gated. Public launch (Day 60) introduces hybrid signup wall at magic moment.
+- **Mobile-first PWA.** Native wrap via Capacitor reserved for v0.2/v0.3.
+- **Pricing:** $9/month or $79/year (provisional). Activates at Day 60, not at MVP-demo.
 
 ## Visual identity (locked)
 
@@ -74,19 +76,27 @@ Always read `paircraft-mvp.md` first if context is needed beyond what's here.
 
 ---
 
-## Week 2 — current state
+## Current state (v2, Week 1 — May 12-18)
 
-Per `paircraft-mvp.md` §10. Scaffolded 2026-05-05 in one session:
+Per `paircraft-mvp-v2.md` §6. Day 21 demo target: **2026-06-02**.
 
-1. **Rules layer** ✅ — `src/lib/rules.ts`. 13 rules tagged by mode (4 harmony / 5 contrast / 4 enhancement). Pure data; the LLM uses them as context, doesn't execute them.
-2. **Prompt builder** ✅ — `src/lib/prompt.ts`. 3 cacheable system blocks (voice / tri-modal+rules / output schema), each with `cache_control: ephemeral`. ~1,450 tokens total, above Anthropic minimum cacheable. Voice describes register without naming Hugh Johnson per `paircraft-mvp.md §15` rule 1.
-3. **SDK wrapper** ✅ — `src/lib/anthropic.ts`. Model `claude-sonnet-4-6`, max_tokens 2500, temperature 0.5, Zod-validated output, single retry on schema failure with explicit "JSON only" instruction, module-level client cache for serverless reuse. `zod` added as direct dep.
-4. **First Astro Action** ⏸ — `src/actions/index.ts`. Will take `{ wineText: string }` and call `generatePairings`. Pending API key.
-5. **Tri-modal grid render** ⏸ — `src/pages/index.astro`. Input + skeleton + 9-card grid using Playfair for headings + tri-modal section labels. Pending action.
+**Inherited from v1 scaffolding, still useful:**
+- `src/lib/rules.ts` ✅ — 13 tri-modal rules. About to be **migrated to a `rules` Content Collection** with `strength` field per rule.
+- `src/lib/prompt.ts` ✅ — voice-anchored cacheable prompt blocks. Will be reused at curation time for LLM-drafted entity copy.
+- `src/lib/anthropic.ts` ✅ — Anthropic SDK wrapper. Same model (`claude-sonnet-4-6`), same Zod validation. Will be called from curation scripts, not from per-request actions.
+- `src/styles/global.css` ✅ — Playfair + Open Sans + theme tokens. Editorial pass extends this in Week 3.
+- `astro.config.mjs` env schema ✅ — `ANTHROPIC_API_KEY` via `astro:env`, already working in prod.
 
-**Architectural decision (RESOLVED 2026-05-05):** **Option A** — one Claude call returning all 9 pairings as structured JSON, plus aggressive prompt caching (3 cache breakpoints). Streaming UX deferred to Phase 2 (post-MVP) when progressive grid fill justifies the complexity. Rationale: tri-modal coherence (model self-deduplicates across modes), simpler ship in Week 2, ~30% lower per-query cost than 3 parallel calls. See conversation 2026-05-05 for full tradeoff analysis.
+**To be replaced/removed (v1 chat MVP surface):**
+- `src/actions/index.ts` — the `pair` action goes away; replaced by `parseDish` (free-text dish → tag extraction) later.
+- `src/pages/index.astro` — chat form replaced by catalog home page (curated wine grid + entry points by Grape/Region/Dish).
 
-**Blocking next step:** user signs up at console.anthropic.com with personal email (NOT the agency account — see memory `agency-vs-personal-resources`), generates API key, sets `ANTHROPIC_API_KEY` in local `.env`. ~5 min. $5 free credit covers Week 2 dev with margin. Vercel env var added at first deploy with action.
+**To be created in Week 1:**
+- `src/content/config.ts` — Zod schemas for `wines`, `grapes`, `regions`, `dishes`, `rules` collections with cross-references via `reference()`.
+- `src/lib/tier.ts` — pure-function tier engine (rule activations → `Decisive match | Worth trying | Risky bridge | Skip`). No weights, no numbers. Unit-tested.
+- One debug page rendering a schema-validated wine entity to verify the data layer end-to-end.
+
+**Week 1 end-of-week deliverable:** schemas live + tier function unit-tested + one wine renders from Content Collection in a debug route. NO entity pages yet (those are Week 2).
 
 ---
 
