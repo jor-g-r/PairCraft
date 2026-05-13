@@ -1,5 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { z } from 'zod';
+import { ANTHROPIC_API_KEY } from 'astro:env/server';
 import { SYSTEM_PROMPT, buildUserMessage, type WineInput } from './prompt.ts';
 
 const MODEL = 'claude-sonnet-4-6';
@@ -30,11 +31,7 @@ export type Pairing = z.infer<typeof PairingSchema>;
 let cachedClient: Anthropic | null = null;
 function getClient(): Anthropic {
   if (cachedClient) return cachedClient;
-  const apiKey = import.meta.env.ANTHROPIC_API_KEY ?? process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    throw new Error('ANTHROPIC_API_KEY is not set');
-  }
-  cachedClient = new Anthropic({ apiKey });
+  cachedClient = new Anthropic({ apiKey: ANTHROPIC_API_KEY });
   return cachedClient;
 }
 
