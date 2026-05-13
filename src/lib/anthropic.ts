@@ -30,7 +30,7 @@ export type Pairing = z.infer<typeof PairingSchema>;
 let cachedClient: Anthropic | null = null;
 function getClient(): Anthropic {
   if (cachedClient) return cachedClient;
-  const apiKey = process.env.ANTHROPIC_API_KEY;
+  const apiKey = import.meta.env.ANTHROPIC_API_KEY ?? process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
     throw new Error('ANTHROPIC_API_KEY is not set');
   }

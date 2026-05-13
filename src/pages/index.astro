@@ -1,5 +1,17 @@
 ---
 import '../styles/global.css';
+import { actions } from 'astro:actions';
+
+const result = Astro.getActionResult(actions.pair);
+const data = result && !result.error ? result.data : null;
+const errorMessage = result?.error?.message ?? null;
+
+const MODES = ['harmony', 'contrast', 'enhancement'] as const;
+const MODE_LABEL: Record<(typeof MODES)[number], string> = {
+  harmony: 'by Harmony',
+  contrast: 'by Contrast',
+  enhancement: 'by Enhancement',
+};
 ---
 
 <html lang="en">
@@ -15,9 +27,74 @@ import '../styles/global.css';
 		<title>Paircraft — wine and food pairing</title>
 	</head>
 	<body class="min-h-dvh bg-white text-neutral-900 antialiased font-sans">
-		<main class="mx-auto max-w-xl px-6 py-20">
-			<h1 class="font-display text-5xl font-bold tracking-tight">Paircraft</h1>
-			<p class="mt-3 text-neutral-600">Wine and food pairings. Coming soon.</p>
+		<main class="mx-auto max-w-2xl px-6 py-12 md:py-20">
+			<header class="text-center">
+				<h1 class="font-display text-5xl md:text-6xl font-bold tracking-tight">Paircraft</h1>
+				<p class="mt-3 text-neutral-600">Wine in. Nine pairings out.</p>
+			</header>
+
+			<form method="POST" action={actions.pair} class="mt-10" id="pair-form">
+				<label for="wineText" class="block text-sm font-medium text-neutral-700">
+					Describe a wine
+				</label>
+				<textarea
+					id="wineText"
+					name="wineText"
+					rows="3"
+					required
+					minlength="2"
+					maxlength="500"
+					placeholder="e.g. Malbec 2021, Mendoza, oak-aged"
+					class="mt-2 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-base shadow-sm focus:border-neutral-900 focus:outline-none focus:ring-1 focus:ring-neutral-900"
+				></textarea>
+				<button
+					type="submit"
+					id="pair-submit"
+					class="mt-3 w-full rounded-lg bg-neutral-900 px-4 py-3 text-white font-medium transition hover:bg-neutral-800 active:bg-neutral-700 disabled:cursor-not-allowed disabled:opacity-60"
+				>
+					<span data-label="idle">Pair this wine</span>
+					<span data-label="loading" class="hidden">Pairing…</span>
+				</button>
+			</form>
+
+			{errorMessage && (
+				<p class="mt-6 rounded-lg bg-red-50 px-4 py-3 text-sm text-red-800">{errorMessage}</p>
+			)}
+
+			{data && (
+				<section class="mt-12">
+					<div class="border-b border-neutral-200 pb-6">
+						<h2 class="font-display text-3xl font-bold tracking-tight">{data.wine.name}</h2>
+						<p class="mt-2 text-neutral-700">{data.wine.summary}</p>
+					</div>
+
+					{MODES.map((mode) => (
+						<div class="mt-10">
+							<h3 class="font-display text-2xl italic text-neutral-900">{MODE_LABEL[mode]}</h3>
+							<ul class="mt-4 space-y-3">
+								{data.pairings[mode].map((p) => (
+									<li class="rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3">
+										<p class="font-display text-lg font-semibold">{p.food}</p>
+										<p class="mt-1 text-sm text-neutral-700">{p.explanation}</p>
+									</li>
+								))}
+							</ul>
+						</div>
+					))}
+				</section>
+			)}
 		</main>
+
+		<script>
+			const form = document.getElementById('pair-form') as HTMLFormElement | null;
+			const btn = document.getElementById('pair-submit') as HTMLButtonElement | null;
+			if (form && btn) {
+				form.addEventListener('submit', () => {
+					btn.disabled = true;
+					btn.querySelector('[data-label="idle"]')?.classList.add('hidden');
+					btn.querySelector('[data-label="loading"]')?.classList.remove('hidden');
+				});
+			}
+		</script>
 	</body>
 </html>
