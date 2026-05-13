@@ -13,9 +13,10 @@ export const server = {
         return await generatePairings({ freeText: wineText });
       } catch (err) {
         console.error('[paircraft] action.pair failed:', err);
+        const detail = err instanceof Error ? err.message : String(err);
         throw new ActionError({
           code: 'INTERNAL_SERVER_ERROR',
-          message: 'Could not generate pairings. Try again.',
+          message: `DEBUG: ${detail}`,
         });
       }
     },
