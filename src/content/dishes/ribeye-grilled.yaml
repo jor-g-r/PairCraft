@@ -1,0 +1,11 @@
+name: Grilled ribeye
+description: A thick cut over open flame — charred crust, pink centre, finishing salt.
+protein:
+  - beef
+cookingMethod:
+  - grilled
+flavorProfile:
+  - fatty
+  - smoky
+intensity: 4
+weight: heavy

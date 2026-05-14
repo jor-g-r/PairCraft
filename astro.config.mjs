@@ -2,6 +2,7 @@
 import { defineConfig, envField } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import AstroPWA from '@vite-pwa/astro';
+import mdx from '@astrojs/mdx';
 
 import vercel from '@astrojs/vercel';
 
@@ -13,6 +14,7 @@ export default defineConfig({
     },
   },
   integrations: [
+    mdx(),
     AstroPWA({
       registerType: 'autoUpdate',
       manifest: {

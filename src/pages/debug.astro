@@ -1,0 +1,120 @@
+---
+import '../styles/global.css';
+import { getCollection, getEntry } from 'astro:content';
+import { computeTier, TIER_LABEL } from '../lib/tier.ts';
+
+const wines = await getCollection('wines');
+const dishes = await getCollection('dishes');
+
+const pairings = await Promise.all(
+  wines.map(async (wine) => {
+    const region = await getEntry(wine.data.region);
+    const grapes = await Promise.all(
+      wine.data.grapes.map(async (g) => ({
+        entry: await getEntry(g.grape),
+        percentage: g.percentage,
+      })),
+    );
+    const results = dishes.map((dish) => ({
+      dish,
+      result: computeTier(wine.data, dish.data),
+    }));
+    return { wine, region, grapes, results };
+  }),
+);
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paircraft — debug</title>
+  </head>
+  <body class="min-h-dvh bg-white text-neutral-900 antialiased font-sans">
+    <main class="mx-auto max-w-3xl px-6 py-12 space-y-12">
+      <header>
+        <h1 class="font-display text-4xl font-bold tracking-tight">Debug</h1>
+        <p class="mt-2 text-neutral-600 text-sm">
+          Week 1 deliverable — schema-validated content + tier engine output.
+          Not user-facing.
+        </p>
+      </header>
+
+      {pairings.length === 0 && <p class="text-neutral-500">No wines seeded yet.</p>}
+
+      {
+        pairings.map(({ wine, region, grapes, results }) => (
+          <section class="space-y-6">
+            <div class="border-b border-neutral-200 pb-4">
+              <h2 class="font-display text-3xl font-bold">{wine.data.name}{wine.data.vintage ? ` ${wine.data.vintage}` : ''}</h2>
+              <p class="mt-1 italic text-neutral-700">{wine.data.tagline}</p>
+              <p class="mt-3 text-neutral-700">{wine.data.summary}</p>
+              <dl class="mt-4 grid grid-cols-2 gap-x-6 gap-y-1 text-sm">
+                <dt class="text-neutral-500">slug</dt>
+                <dd class="font-mono">{wine.id}</dd>
+                <dt class="text-neutral-500">color</dt>
+                <dd>{wine.data.color}</dd>
+                <dt class="text-neutral-500">region</dt>
+                <dd>{region?.data.name} <span class="text-neutral-400">({region?.data.country})</span></dd>
+                <dt class="text-neutral-500">grapes</dt>
+                <dd>
+                  {grapes.map((g, i) => (
+                    <span>
+                      {g.entry?.data.name}
+                      {g.percentage != null && <span class="text-neutral-400"> ({g.percentage}%)</span>}
+                      {i < grapes.length - 1 && ', '}
+                    </span>
+                  ))}
+                </dd>
+                <dt class="text-neutral-500">sensory</dt>
+                <dd class="font-mono text-xs">
+                  sweet {wine.data.sensoryProfile.sweetness} ·
+                  acid {wine.data.sensoryProfile.acidity} ·
+                  tannin {wine.data.sensoryProfile.tannin} ·
+                  body {wine.data.sensoryProfile.body}
+                </dd>
+                {wine.data.flavouring && (
+                  <>
+                    <dt class="text-neutral-500">primary</dt>
+                    <dd>{wine.data.flavouring.primary.join(', ') || '—'}</dd>
+                    <dt class="text-neutral-500">secondary</dt>
+                    <dd>{wine.data.flavouring.secondary.join(', ') || '—'}</dd>
+                    <dt class="text-neutral-500">tertiary</dt>
+                    <dd>{wine.data.flavouring.tertiary.join(', ') || '—'}</dd>
+                  </>
+                )}
+              </dl>
+            </div>
+
+            <div>
+              <h3 class="font-display text-xl font-semibold">Pairings</h3>
+              <ul class="mt-3 space-y-3">
+                {results.map(({ dish, result }) => (
+                  <li class="rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3">
+                    <div class="flex items-baseline justify-between gap-4">
+                      <p class="font-display text-lg font-semibold">{dish.data.name}</p>
+                      <p class="text-sm font-medium">{TIER_LABEL[result.tier]}</p>
+                    </div>
+                    <p class="mt-1 text-sm text-neutral-600">{dish.data.description}</p>
+                    {result.activations.length > 0 ? (
+                      <ul class="mt-2 text-xs text-neutral-500 space-y-0.5">
+                        {result.activations.map((r) => (
+                          <li>
+                            <span class="font-mono">{r.id}</span>
+                            <span class="text-neutral-400"> · {r.mode} · {r.strength}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p class="mt-2 text-xs text-neutral-400">No rules fired.</p>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        ))
+      }
+    </main>
+  </body>
+</html>
