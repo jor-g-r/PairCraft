@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import { computeTier, type Tier } from '../../lib/tier.ts';
 import type { Mode } from '../../lib/rules.ts';
 import TierBadge from '../../components/TierBadge.astro';
+import Eyebrow from '../../components/Eyebrow.astro';
 
 export async function getStaticPaths() {
   const dishes = await getCollection('dishes');
@@ -87,9 +88,7 @@ const TAGS = [
     {
       dish.data.pairingLogic && (
         <aside class="mt-10 rounded-lg border-l-4 border-neutral-900 bg-neutral-50 px-5 py-4">
-          <p class="text-[10px] uppercase tracking-widest text-neutral-500">
-            The pairing logic
-          </p>
+          <Eyebrow>The pairing logic</Eyebrow>
           <p class="mt-2 font-display text-lg italic text-neutral-800 leading-snug">
             {dish.data.pairingLogic}
           </p>
@@ -100,7 +99,7 @@ const TAGS = [
     {
       dish.data.recommendedWineStyles && dish.data.recommendedWineStyles.length > 0 && (
         <section class="mt-8">
-          <p class="text-[10px] uppercase tracking-widest text-neutral-500">Quick hints</p>
+          <Eyebrow>Quick hints</Eyebrow>
           <ul class="mt-2 flex flex-wrap gap-2">
             {dish.data.recommendedWineStyles.map((style) => (
               <li class="inline-block rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs text-neutral-600">

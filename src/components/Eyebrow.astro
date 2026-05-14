@@ -1,0 +1,21 @@
+---
+/**
+ * Editorial section label — the small-caps "eyebrow" pattern.
+ *
+ * Used above content blocks where the prose itself shouldn't carry a
+ * full <h2>/<h3> heading but the block needs to be named (e.g.
+ * "Where to find it", "Primary notes", "The pairing logic").
+ *
+ * Single source of truth for the small-caps label style. Editing the
+ * default classes here flows to every labeled section site-wide.
+ */
+interface Props {
+  /** Extra utilities, e.g. tone override "text-neutral-400" or spacing "mb-1". */
+  class?: string;
+}
+const { class: className = '' } = Astro.props;
+---
+
+<p class={`text-[10px] uppercase tracking-widest text-neutral-500 ${className}`}>
+  <slot />
+</p>
