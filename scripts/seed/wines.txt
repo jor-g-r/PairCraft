@@ -1,0 +1,10 @@
+# One wine per line. Format: "Producer + cuvée + vintage" (e.g. "Catena Malbec 2021").
+# Vintage is optional — omit for non-vintage wines (champagne NV, port, etc.).
+# Lines starting with # are ignored. Existing slugs are auto-skipped.
+#
+# IMPORTANT: every wine must reference a grape and region that ALREADY EXIST
+# (or will be drafted earlier in this run). Add to grapes.txt / regions.txt
+# first if needed — the script processes regions → grapes → wines → dishes.
+#
+# Already in corpus: catena-malbec-2021, pazo-albarino-2022
+

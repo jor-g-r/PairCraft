@@ -1,0 +1,6 @@
+# One region per line. Format: "Region name" or "Region name, Country".
+# Country helps disambiguate (e.g. "Rioja, Spain" vs "La Rioja, Argentina").
+# Lines starting with # are ignored. Existing slugs are auto-skipped.
+#
+# Already in corpus: mendoza, rias-baixas
+

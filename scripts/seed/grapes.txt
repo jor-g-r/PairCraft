@@ -1,0 +1,5 @@
+# One grape per line. Just the canonical name (English spelling preferred).
+# Lines starting with # are ignored. Existing slugs are auto-skipped.
+#
+# Already in corpus: malbec, albarino
+

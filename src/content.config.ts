@@ -23,6 +23,10 @@ const wines = defineCollection({
       acidity: z.number().int().min(0).max(5),
       tannin: z.number().int().min(0).max(5),
       body: z.number().int().min(0).max(5),
+      // Optional axes preserved from CSV import; not yet consumed by rules engine.
+      oak: z.number().int().min(0).max(5).optional(),
+      alcohol: z.number().int().min(0).max(5).optional(),
+      intensity: z.number().int().min(0).max(5).optional(),
     }),
     flavouring: z
       .object({
@@ -39,6 +43,18 @@ const wines = defineCollection({
         structure: z.number().int().min(0).max(5),
       })
       .optional(),
+    // Strategic fields preserved from editorial corpus. All optional so legacy
+    // wines (catena-malbec-2021, pazo-albarino-2022) keep validating.
+    style: z.string().optional(),
+    pedagogicalRole: z.string().optional(),
+    availability: z
+      .object({
+        note: z.string(),
+        sourceUrl: z.string().url().optional(),
+      })
+      .optional(),
+    recommendedPairings: z.array(z.string()).default([]),
+    notesForDemo: z.string().optional(),
   }),
 });
 
@@ -96,6 +112,9 @@ const COOKING_METHOD = [
   'smoked',
   'seared',
   'poached',
+  'boiled',
+  'simmered',
+  'sauteed',
 ] as const;
 
 const FLAVOR_PROFILE = [
@@ -125,6 +144,13 @@ const dishes = defineCollection({
     flavorProfile: z.array(z.enum(FLAVOR_PROFILE)).default([]),
     intensity: z.number().int().min(0).max(5),
     weight: z.enum(['light', 'medium', 'heavy']),
+    // Strategic editorial fields from CSV corpus. All optional so legacy
+    // dishes (ribeye-grilled, oysters-raw, etc.) keep validating.
+    category: z.string().optional(),
+    cuisineContext: z.string().optional(),
+    pairingLogic: z.string().optional(),
+    recommendedWineStyles: z.array(z.string()).default([]),
+    notesForDemo: z.string().optional(),
   }),
 });
 

@@ -1,0 +1,6 @@
+# One dish per line. Plain English, no recipes — the LLM fills in description,
+# proteins, cooking method, flavor profile, intensity, weight.
+# Lines starting with # are ignored. Existing slugs are auto-skipped.
+#
+# Already in corpus: ribeye-grilled, oysters-raw, aged-manchego, fried-calamari
+
