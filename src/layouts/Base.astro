@@ -17,6 +17,7 @@ const { title, description } = Astro.props;
     <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#1a1a1a" />
+    <meta name="robots" content="noindex, nofollow" />
     {description && <meta name="description" content={description} />}
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
