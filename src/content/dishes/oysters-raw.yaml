@@ -1,0 +1,11 @@
+name: Oysters on the half-shell
+description: Raw, briny, served with lemon and not much else.
+protein:
+  - shellfish
+cookingMethod:
+  - raw
+flavorProfile:
+  - briny
+  - lean
+intensity: 2
+weight: light

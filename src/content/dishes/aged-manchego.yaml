@@ -1,0 +1,10 @@
+name: Aged manchego
+description: A hard sheep's-milk cheese aged twelve months or more — nutty, salty, with a crystalline crunch.
+protein:
+  - cheese-aged
+cookingMethod: []
+flavorProfile:
+  - salty
+  - fatty
+intensity: 4
+weight: medium

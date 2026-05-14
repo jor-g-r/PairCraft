@@ -1,0 +1,10 @@
+name: Fried calamari
+description: Squid rings in light batter, deep-fried to crisp gold, served with lemon.
+protein:
+  - shellfish
+cookingMethod:
+  - fried
+flavorProfile:
+  - fatty
+intensity: 3
+weight: medium

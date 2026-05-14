@@ -1,0 +1,100 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const grapes = await getCollection('grapes');
+  return grapes.map((grape) => ({ params: { slug: grape.id }, props: { grape } }));
+}
+
+const { grape } = Astro.props;
+const { Content } = await render(grape);
+
+const signatureRegions = await Promise.all(
+  grape.data.signatureRegions.map((ref) => getEntry(ref)),
+);
+
+const allWines = await getCollection('wines');
+const wines = allWines.filter((w) => w.data.grapes.some((g) => g.grape.id === grape.id));
+const winesWithRegion = await Promise.all(
+  wines.map(async (w) => ({ wine: w, region: await getEntry(w.data.region) })),
+);
+---
+
+<Base
+  title={`${grape.data.name} — Paircraft`}
+  description={grape.data.tagline}
+>
+  <main class="mx-auto max-w-2xl px-6 py-10 md:py-16">
+    <p class="text-sm text-neutral-500 capitalize">{grape.data.color} grape · {grape.data.origin}</p>
+
+    <header class="mt-2">
+      <h1 class="font-display text-4xl md:text-5xl font-bold tracking-tight">{grape.data.name}</h1>
+      <p class="mt-2 font-display text-lg italic text-neutral-700">{grape.data.tagline}</p>
+      {
+        grape.data.aliases.length > 0 && (
+          <p class="mt-2 text-sm text-neutral-500">
+            Also called: {grape.data.aliases.join(', ')}
+          </p>
+        )
+      }
+    </header>
+
+    <article class="prose prose-neutral mt-8 max-w-none text-neutral-800 leading-relaxed [&_p]:mt-4">
+      <Content />
+    </article>
+
+    {
+      signatureRegions.length > 0 && (
+        <section class="mt-12">
+          <h2 class="font-display text-2xl font-semibold">Signature regions</h2>
+          <ul class="mt-3 flex flex-wrap gap-2">
+            {signatureRegions.map(
+              (r) =>
+                r && (
+                  <li>
+                    <a
+                      href={`/region/${r.id}`}
+                      class="inline-block rounded-full border border-neutral-300 px-3 py-1 text-sm hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition"
+                    >
+                      {r.data.name}
+                    </a>
+                  </li>
+                ),
+            )}
+          </ul>
+        </section>
+      )
+    }
+
+    <section class="mt-12">
+      <h2 class="font-display text-2xl font-semibold">Wines</h2>
+      {winesWithRegion.length === 0 && <p class="mt-4 text-neutral-500">No wines yet.</p>}
+      <ul class="mt-4 space-y-3">
+        {
+          winesWithRegion.map(({ wine, region }) => (
+            <li>
+              <a
+                href={`/wine/${wine.id}`}
+                class="block rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3 transition hover:border-neutral-400 hover:bg-white"
+              >
+                <p class="font-display text-lg font-semibold">
+                  {wine.data.name}
+                  {wine.data.vintage && (
+                    <span class="font-normal text-neutral-500"> {wine.data.vintage}</span>
+                  )}
+                </p>
+                <p class="mt-1 text-sm italic text-neutral-700">{wine.data.tagline}</p>
+                {region && (
+                  <p class="mt-1 text-xs text-neutral-500">
+                    {region.data.name}, {region.data.country}
+                  </p>
+                )}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </main>
+</Base>
