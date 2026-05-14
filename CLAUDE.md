@@ -3,7 +3,7 @@
 Wine and food pairings with short, opinionated explanations — pocket guide style, inspired by Hugh Johnson's *Pocket Wine Book*.
 
 **Live:** https://pair-craft.vercel.app/ (auto-deploys on push to `main` — currently hosts the v1 chat-style MVP, which is being replaced)
-**Status (2026-05-13, EOD):** Weeks 1-3 of v2 plan all entregadas in one session. Day-21 demo is shippable from current `main`. Canonical plan is `paircraft-mvp-v2.md` (v1 superseded). Awaiting user track: Anthropic credit top-up + corpus expansion to ~10 wines via `bun run scripts/draft-pairings.ts`.
+**Status (2026-05-14, EOD):** Full Medellín corpus imported. 11 wines × 12 dishes = 126 pairings drafted in Hugh-voice, schema extended with strategic editorial fields, all Astro-validated. Day-21 demo shippable from current `main`. Canonical plan is `paircraft-mvp-v2.md` (v1 superseded). Pending: user review of generated YAMLs + commit, plus deploy to Vercel.
 
 ---
 
@@ -87,30 +87,34 @@ Day 21 demo target: **2026-06-02**. Code-side, everything required for that demo
 - `robots.txt` Disallow + meta `noindex, nofollow` site-wide. `/debug` removed from prod.
 
 **Engine + infra:**
-- `src/content.config.ts` — 5 collections: `wines`, `grapes`, `regions`, `dishes`, `pairings`. References via `reference()`.
+- `src/content.config.ts` — 5 collections: `wines`, `grapes`, `regions`, `dishes`, `pairings`. Extended schema includes strategic editorial fields: `style`, `pedagogicalRole`, `availability.{note,sourceUrl}`, `recommendedPairings` (wines); `category`, `cuisineContext`, `pairingLogic`, `recommendedWineStyles`, `notesForDemo` (dishes). All optional for backwards compat. `COOKING_METHOD` enum extended with `boiled`, `simmered`, `sauteed`.
 - `src/lib/rules.ts` — 13 tri-modal rules with `{ mode, strength, predicate }`. `terroir-bridge` predicate is always-false in v1 (no dish-region affinity field yet — re-activates in v0.2).
 - `src/lib/tier.ts` — pure-function tier engine. 6/6 unit tests pass (`bun test src/lib/tier.test.ts`).
 - `src/lib/prompt.ts` — `VOICE` + `serializeRules()` exported, reused by curation.ts.
-- `src/lib/curation.ts` — `draftPairingProse()`. Uses `process.env.ANTHROPIC_API_KEY` (script context).
-- `scripts/draft-pairings.ts` — idempotent orchestrator. Walks (wine × dish) combos, skips existing files and tier=skip, writes YAML to `src/content/pairings/`. **Verified structurally; blocked at last run on `credit_balance_too_low`** — needs API top-up before next run.
+- `src/lib/curation.ts` — `draftPairingProse()` + entity drafters (`draftGrape`, `draftRegion`, `draftWine`, `draftDish`) + enrichment helpers (`draftWineCopy`, `draftDishCopy`). **Provider switch via `LLM_PROVIDER` env var** (`anthropic` default, `opencode-go` for cost-test alternate). Provider tested but voice quality favors Anthropic for Hugh-voice — see prior conversation logs if reconsidering.
+- `scripts/draft-pairings.ts` — idempotent (wine × dish) orchestrator.
+- `scripts/draft-entities.ts` — idempotent entity orchestrator. Reads `scripts/seed/{wines,grapes,regions,dishes}.txt` (one name per line), drafts MDX/YAML in dependency order regions→grapes→wines→dishes.
+- `scripts/import-csv.ts` — one-shot CSV importer for Medellín editorial corpus. Reads `scripts/seed/csv/paircraft_{wines,dishes}_medellin.csv`. Auto-derives unique grapes + regions. LLM only for Hugh-voice copy + enum mapping; structural data straight from CSV.
+- `scripts/test-curation.ts` — debug helper. Prints prose for one (wine, dish) without writing. `bun run scripts/test-curation.ts <wine-slug> <dish-slug>`.
 
-**Seed corpus (intentionally small for demo, expansion is user-track):**
-- 2 wines (Catena Malbec 2021, Pazo de Señoráns Albariño 2022)
-- 2 grapes (Malbec, Albariño)
-- 2 regions (Mendoza, Rías Baixas)
-- 4 dishes (Grilled ribeye, Oysters, Aged manchego, Fried calamari)
-- 7 hand-drafted Hugh-voice pairings (Skip combos have no entry — Malbec × Oysters)
+**Corpus (post-Medellín import, 2026-05-14):**
+- 11 wines, all anchored to LATAM retail (Carulla, Dislicores, Vinos El Kiosco URLs preserved in `availability.sourceUrl`). Includes: Catena Malbec, 1865 Cab Sauv, Castillo de Molina Sauv Blanc, Enate Chardonnay, Leyda Pinot Noir, Mionetto Prosecco, Pazo Barrantes Albariño, Ramón Bilbao Crianza, Piccini Chianti Riserva, Gato Negro Blanco Dulce, Garzón Marselan Reserva. **No vintages in slugs** — entities represent producer/cuvée archetype, not specific bottlings.
+- 10 grapes, 11 regions (auto-derived from wines CSV during import). Regions have `signatureGrapes: []` because they were processed before grapes (dep-order limitation; manually editable).
+- 12 dishes: 4 legacy (ribeye-grilled, oysters-raw, aged-manchego, fried-calamari) + 8 Medellín (lomo-a-la-parrilla, cerdo-asado, salmon-a-la-parrilla, ceviche, pasta-con-salsa-de-tomate, risotto-de-hongos, pollo-con-mole, tabla-de-quesos).
+- **126 LLM-drafted pairings** (Claude Sonnet 4.6, Hugh-voice). 6 tier=skip combos correctly produce no file (oysters with most reds; engine works).
+- Legacy wines (catena-malbec-2021, pazo-albarino-2022) and their 7 hand-drafted pairings **removed** on 2026-05-14 — new corpus supersedes.
 
-**Engine note worth flagging on next iteration:** Catena Malbec lands as Decisive against all non-Skip dishes (~3/3). The tier rubric over-fires Decisive when 2 strong rules activate. Three candidate fixes (deferred to post-Day-21 feedback): raise threshold to 3 strong, require multi-mode coverage, or add anti-rules. Don't tune blindly — wait for Teo + profesora feedback.
+**Engine note worth flagging on next iteration:** Tier engine over-fires Decisive — most wines land Decisive against most non-Skip dishes (e.g. 1865 Cab decisive on 11/12 dishes). The rubric over-fires when 2 strong rules activate. Three candidate fixes (deferred to post-Day-21 feedback): raise threshold to 3 strong, require multi-mode coverage, or add anti-rules. Don't tune blindly — wait for Teo + profesora feedback.
 
 ## Tomorrow's possible starting points
 
 Pick based on energy + intent. None of these are blockers for shipping the demo.
 
-1. **Curation expansion (user track).** Top up Anthropic credit at console.anthropic.com (your personal account — NOT the agency, per memory `agency-vs-personal-resources`). Then: seed 7-8 more wine/grape/region YAMLs in `src/content/`, run `bun run scripts/draft-pairings.ts`, review the generated prose files, commit the ones that pass Hugh-voice check.
-2. **Demo dry-run.** Walk the site end-to-end as if you were profesora. Note anything that breaks the pocket-guide register. Bring observations to Claude for tweaks.
-3. **Pre-feedback rubric prep.** Draft the 3-question feedback script for Teo + profesora (per `paircraft-mvp-v2.md §6` Day-21 plan). What you'd ask, what answers would shift target B2B vs B2C.
-4. **Offline pending (v1 §12, deadlines drifting):** name 5 B2C Pool B contacts, name 3 CUHELAV alumni for Founder's Cut, informal trademark search "Paircraft".
+1. **Review the imported corpus + commit.** 37 new entity files + 126 pairings sit uncommitted on `main`. Read a representative sample (~5 wines + ~10 pairings) for voice/data check before commit. Anything off-voice → delete and re-roll.
+2. **Demo dry-run.** Walk the site end-to-end as if you were profesora. The catalog now has 11 wines instead of 2 — verify cards, chips, detail pages all render. Note anything that breaks the pocket-guide register.
+3. **Backfill `signatureGrapes` in regions (small cleanup).** The 9 new region MDXs have `signatureGrapes: []` due to dep-order during import. Either manually edit each, or write a small script that scans wines and populates the back-refs.
+4. **Pre-feedback rubric prep.** Draft the 3-question feedback script for Teo + profesora (per `paircraft-mvp-v2.md §6` Day-21 plan).
+5. **Offline pending (v1 §12, deadlines drifting):** name 5 B2C Pool B contacts (deadline 2026-05-18), name 3 CUHELAV alumni for Founder's Cut, informal trademark search "Paircraft".
 
 ---
 
