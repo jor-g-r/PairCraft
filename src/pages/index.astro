@@ -75,6 +75,7 @@ const countries = [
         <input
           id="search-input"
           type="search"
+          role="combobox"
           autocomplete="off"
           placeholder="Type a wine, dish, or grape. We do the rest."
           class="w-full rounded-xl border border-neutral-300 bg-white py-4 pl-12 pr-4 text-base md:text-lg shadow-sm focus:border-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-900/10 transition"
@@ -110,14 +111,14 @@ const countries = [
       </div>
     </section>
 
-    <div class="mt-12 flex items-center gap-3 text-xs uppercase tracking-widest text-neutral-400">
+    <div class="mt-12 flex items-center gap-3 text-xs uppercase tracking-widest text-neutral-500">
       <div class="flex-1 border-t border-neutral-200"></div>
       <span>or browse</span>
       <div class="flex-1 border-t border-neutral-200"></div>
     </div>
 
     <section class="mt-6">
-      <div class="flex flex-wrap gap-2" id="region-pills" role="tablist" aria-label="Filter by country">
+      <div class="flex flex-wrap gap-2" id="region-pills" role="group" aria-label="Filter by country">
         <button
           type="button"
           class="region-pill is-active rounded-full border px-3 py-1 text-sm transition"
@@ -286,10 +287,10 @@ const countries = [
         if (!currentMatches.length) return;
         if (e.key === 'ArrowDown') {
           e.preventDefault();
-          setActive(Math.min(activeIndex + 1, currentMatches.length - 1));
+          setActive((activeIndex + 1) % currentMatches.length);
         } else if (e.key === 'ArrowUp') {
           e.preventDefault();
-          setActive(Math.max(activeIndex - 1, 0));
+          setActive(activeIndex <= 0 ? currentMatches.length - 1 : activeIndex - 1);
         } else if (e.key === 'Enter') {
           if (activeIndex >= 0) {
             e.preventDefault();
