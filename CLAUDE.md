@@ -3,7 +3,7 @@
 Wine and food pairings with short, opinionated explanations — pocket guide style, inspired by Hugh Johnson's *Pocket Wine Book*.
 
 **Live:** https://pair-craft.vercel.app/ (auto-deploys on push to `main` — currently hosts the v1 chat-style MVP, which is being replaced)
-**Status (2026-05-13):** v2 pivot approved. Canonical plan is now `paircraft-mvp-v2.md` (NOT the original `paircraft-mvp.md`). Shape: navigable entity-graph (Wine/Grape/Region/Dish), tier-only pairing scoring, hand-reviewed demo subset for profesor + Teo by Day 21 (2026-06-02). Week 1 starts: Astro Content Collections schemas + rules-as-data + pure tier engine.
+**Status (2026-05-13, EOD):** Weeks 1-3 of v2 plan all entregadas in one session. Day-21 demo is shippable from current `main`. Canonical plan is `paircraft-mvp-v2.md` (v1 superseded). Awaiting user track: Anthropic credit top-up + corpus expansion to ~10 wines via `bun run scripts/draft-pairings.ts`.
 
 ---
 
@@ -76,27 +76,41 @@ Always read `paircraft-mvp-v2.md` first if context is needed beyond what's here.
 
 ---
 
-## Current state (v2, Week 1 — May 12-18)
+## Current state (end of 2026-05-13 — Weeks 1-3 closed)
 
-Per `paircraft-mvp-v2.md` §6. Day 21 demo target: **2026-06-02**.
+Day 21 demo target: **2026-06-02**. Code-side, everything required for that demo is on `main`. The remaining work is user-track (curation expansion + offline tasks).
 
-**Inherited from v1 scaffolding, still useful:**
-- `src/lib/rules.ts` ✅ — 13 tri-modal rules. About to be **migrated to a `rules` Content Collection** with `strength` field per rule.
-- `src/lib/prompt.ts` ✅ — voice-anchored cacheable prompt blocks. Will be reused at curation time for LLM-drafted entity copy.
-- `src/lib/anthropic.ts` ✅ — Anthropic SDK wrapper. Same model (`claude-sonnet-4-6`), same Zod validation. Will be called from curation scripts, not from per-request actions.
-- `src/styles/global.css` ✅ — Playfair + Open Sans + theme tokens. Editorial pass extends this in Week 3.
-- `astro.config.mjs` env schema ✅ — `ANTHROPIC_API_KEY` via `astro:env`, already working in prod.
+**What's live in prod (`pair-craft.vercel.app`):**
+- Home `/` — catalog hub: wine cards + chips por grape/region/dish. Sticky "Paircraft" wordmark linked home from every page.
+- `/wine/<slug>`, `/grape/<slug>`, `/region/<slug>`, `/dish/<slug>` — entity pages with cross-navigation, tri-modal pairing groups, Hugh-voice prose rendered in italic Playfair.
+- Tier badges as chips (filled black for Decisive, light for Worth trying, outlined for Risky, hidden for Skip on wine pages, surfaced as "Better choices elsewhere" on dish pages).
+- `robots.txt` Disallow + meta `noindex, nofollow` site-wide. `/debug` removed from prod.
 
-**To be replaced/removed (v1 chat MVP surface):**
-- `src/actions/index.ts` — the `pair` action goes away; replaced by `parseDish` (free-text dish → tag extraction) later.
-- `src/pages/index.astro` — chat form replaced by catalog home page (curated wine grid + entry points by Grape/Region/Dish).
+**Engine + infra:**
+- `src/content.config.ts` — 5 collections: `wines`, `grapes`, `regions`, `dishes`, `pairings`. References via `reference()`.
+- `src/lib/rules.ts` — 13 tri-modal rules with `{ mode, strength, predicate }`. `terroir-bridge` predicate is always-false in v1 (no dish-region affinity field yet — re-activates in v0.2).
+- `src/lib/tier.ts` — pure-function tier engine. 6/6 unit tests pass (`bun test src/lib/tier.test.ts`).
+- `src/lib/prompt.ts` — `VOICE` + `serializeRules()` exported, reused by curation.ts.
+- `src/lib/curation.ts` — `draftPairingProse()`. Uses `process.env.ANTHROPIC_API_KEY` (script context).
+- `scripts/draft-pairings.ts` — idempotent orchestrator. Walks (wine × dish) combos, skips existing files and tier=skip, writes YAML to `src/content/pairings/`. **Verified structurally; blocked at last run on `credit_balance_too_low`** — needs API top-up before next run.
 
-**To be created in Week 1:**
-- `src/content/config.ts` — Zod schemas for `wines`, `grapes`, `regions`, `dishes`, `rules` collections with cross-references via `reference()`.
-- `src/lib/tier.ts` — pure-function tier engine (rule activations → `Decisive match | Worth trying | Risky bridge | Skip`). No weights, no numbers. Unit-tested.
-- One debug page rendering a schema-validated wine entity to verify the data layer end-to-end.
+**Seed corpus (intentionally small for demo, expansion is user-track):**
+- 2 wines (Catena Malbec 2021, Pazo de Señoráns Albariño 2022)
+- 2 grapes (Malbec, Albariño)
+- 2 regions (Mendoza, Rías Baixas)
+- 4 dishes (Grilled ribeye, Oysters, Aged manchego, Fried calamari)
+- 7 hand-drafted Hugh-voice pairings (Skip combos have no entry — Malbec × Oysters)
 
-**Week 1 end-of-week deliverable:** schemas live + tier function unit-tested + one wine renders from Content Collection in a debug route. NO entity pages yet (those are Week 2).
+**Engine note worth flagging on next iteration:** Catena Malbec lands as Decisive against all non-Skip dishes (~3/3). The tier rubric over-fires Decisive when 2 strong rules activate. Three candidate fixes (deferred to post-Day-21 feedback): raise threshold to 3 strong, require multi-mode coverage, or add anti-rules. Don't tune blindly — wait for Teo + profesora feedback.
+
+## Tomorrow's possible starting points
+
+Pick based on energy + intent. None of these are blockers for shipping the demo.
+
+1. **Curation expansion (user track).** Top up Anthropic credit at console.anthropic.com (your personal account — NOT the agency, per memory `agency-vs-personal-resources`). Then: seed 7-8 more wine/grape/region YAMLs in `src/content/`, run `bun run scripts/draft-pairings.ts`, review the generated prose files, commit the ones that pass Hugh-voice check.
+2. **Demo dry-run.** Walk the site end-to-end as if you were profesora. Note anything that breaks the pocket-guide register. Bring observations to Claude for tweaks.
+3. **Pre-feedback rubric prep.** Draft the 3-question feedback script for Teo + profesora (per `paircraft-mvp-v2.md §6` Day-21 plan). What you'd ask, what answers would shift target B2B vs B2C.
+4. **Offline pending (v1 §12, deadlines drifting):** name 5 B2C Pool B contacts, name 3 CUHELAV alumni for Founder's Cut, informal trademark search "Paircraft".
 
 ---
 
