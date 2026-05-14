@@ -13,26 +13,137 @@ const winesWithRegion = await Promise.all(
     region: await getEntry(wine.data.region),
   })),
 );
+winesWithRegion.sort((a, b) => a.wine.data.name.localeCompare(b.wine.data.name));
+
+interface SearchEntry {
+  id: string;
+  type: 'wine' | 'grape' | 'region' | 'dish';
+  name: string;
+  meta?: string;
+}
+
+const searchIndex: SearchEntry[] = [
+  ...winesWithRegion.map(({ wine, region }) => ({
+    id: wine.id,
+    type: 'wine' as const,
+    name: wine.data.name,
+    meta: region ? `${region.data.name}, ${region.data.country}` : undefined,
+  })),
+  ...grapes.map((g) => ({ id: g.id, type: 'grape' as const, name: g.data.name })),
+  ...regions.map((r) => ({
+    id: r.id,
+    type: 'region' as const,
+    name: r.data.name,
+    meta: r.data.country,
+  })),
+  ...dishes.map((d) => ({ id: d.id, type: 'dish' as const, name: d.data.name })),
+];
+
+const countries = [
+  ...new Set(winesWithRegion.map(({ region }) => region?.data.country).filter(Boolean) as string[]),
+].sort();
 ---
 
 <Base
   title="Paircraft"
   description="A pocket guide to what pairs with what — wines, grapes, regions, dishes."
 >
-  <main class="mx-auto max-w-2xl px-6 py-12 md:py-20">
+  <main class="mx-auto max-w-2xl px-6 py-10 md:py-16">
     <header class="text-center">
       <h1 class="font-display text-5xl md:text-7xl font-bold tracking-tight">Paircraft</h1>
-      <p class="mt-4 font-display text-lg md:text-xl italic text-neutral-700">
+      <p class="mt-3 font-display text-lg md:text-xl italic text-neutral-700">
         A pocket guide to what pairs with what.
       </p>
     </header>
 
-    <section class="mt-16">
-      <h2 class="font-display text-2xl font-semibold">Wines</h2>
-      <ul class="mt-4 grid gap-3 sm:grid-cols-2">
+    <section class="relative mt-10 md:mt-14">
+      <label for="search-input" class="sr-only">Search wines, grapes, dishes, or regions</label>
+      <div class="relative">
+        <svg
+          class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-neutral-400"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="m21 21-4.3-4.3"></path>
+        </svg>
+        <input
+          id="search-input"
+          type="search"
+          autocomplete="off"
+          placeholder="Type a wine, dish, or grape. We do the rest."
+          class="w-full rounded-xl border border-neutral-300 bg-white py-4 pl-12 pr-4 text-base md:text-lg shadow-sm focus:border-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-900/10 transition"
+          aria-autocomplete="list"
+          aria-controls="search-results"
+          aria-expanded="false"
+        />
+      </div>
+      <ul
+        id="search-results"
+        class="absolute left-0 right-0 top-full z-20 mt-2 hidden overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-lg"
+        role="listbox"
+      >
+      </ul>
+
+      <div class="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm">
+        <span class="text-neutral-500">Try:</span>
+        <a
+          href="/grape/malbec"
+          class="rounded-full border border-neutral-300 px-3 py-1 hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition"
+          >Malbec</a
+        >
+        <a
+          href="/grape/albarino"
+          class="rounded-full border border-neutral-300 px-3 py-1 hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition"
+          >Albariño</a
+        >
+        <a
+          href="/dish/ribeye-grilled"
+          class="rounded-full border border-neutral-300 px-3 py-1 hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition"
+          >Ribeye</a
+        >
+      </div>
+    </section>
+
+    <div class="mt-12 flex items-center gap-3 text-xs uppercase tracking-widest text-neutral-400">
+      <div class="flex-1 border-t border-neutral-200"></div>
+      <span>or browse</span>
+      <div class="flex-1 border-t border-neutral-200"></div>
+    </div>
+
+    <section class="mt-6">
+      <div class="flex flex-wrap gap-2" id="region-pills" role="tablist" aria-label="Filter by country">
+        <button
+          type="button"
+          class="region-pill is-active rounded-full border px-3 py-1 text-sm transition"
+          data-country=""
+          aria-pressed="true"
+        >
+          All
+        </button>
+        {
+          countries.map((c) => (
+            <button
+              type="button"
+              class="region-pill rounded-full border px-3 py-1 text-sm transition"
+              data-country={c}
+              aria-pressed="false"
+            >
+              {c}
+            </button>
+          ))
+        }
+      </div>
+
+      <ul class="mt-5 grid gap-3 sm:grid-cols-2" id="wine-grid">
         {
           winesWithRegion.map(({ wine, region }) => (
-            <li>
+            <li class="wine-card" data-country={region?.data.country ?? ''}>
               <a
                 href={`/wine/${wine.id}`}
                 class="block h-full rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-4 transition hover:border-neutral-400 hover:bg-white"
@@ -56,60 +167,188 @@ const winesWithRegion = await Promise.all(
           ))
         }
       </ul>
-    </section>
-
-    <section class="mt-12">
-      <h2 class="font-display text-2xl font-semibold">By grape</h2>
-      <ul class="mt-3 flex flex-wrap gap-2">
-        {
-          grapes.map((g) => (
-            <li>
-              <a
-                href={`/grape/${g.id}`}
-                class="inline-block rounded-full border border-neutral-300 px-3 py-1 text-sm hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition"
-              >
-                {g.data.name}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-    </section>
-
-    <section class="mt-12">
-      <h2 class="font-display text-2xl font-semibold">By region</h2>
-      <ul class="mt-3 flex flex-wrap gap-2">
-        {
-          regions.map((r) => (
-            <li>
-              <a
-                href={`/region/${r.id}`}
-                class="inline-block rounded-full border border-neutral-300 px-3 py-1 text-sm hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition"
-              >
-                {r.data.name}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-    </section>
-
-    <section class="mt-12">
-      <h2 class="font-display text-2xl font-semibold">Dishes</h2>
-      <ul class="mt-3 flex flex-wrap gap-2">
-        {
-          dishes.map((d) => (
-            <li>
-              <a
-                href={`/dish/${d.id}`}
-                class="inline-block rounded-full border border-neutral-300 px-3 py-1 text-sm hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition"
-              >
-                {d.data.name}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
+      <p
+        id="grid-empty"
+        class="mt-6 hidden text-center text-sm text-neutral-500 italic"
+      >
+        No wines listed for this country yet.
+      </p>
     </section>
   </main>
+
+  <script type="application/json" id="search-index" set:html={JSON.stringify(searchIndex)}></script>
+
+  <script is:inline>
+    (function () {
+      const indexEl = document.getElementById('search-index');
+      const input = document.getElementById('search-input');
+      const results = document.getElementById('search-results');
+      if (!indexEl || !input || !results) return;
+
+      /** @type {Array<{id:string,type:string,name:string,meta?:string}>} */
+      const entries = JSON.parse(indexEl.textContent || '[]');
+
+      const TYPE_RANK = { wine: 0, grape: 1, dish: 2, region: 3 };
+      const TYPE_PATH = { wine: 'wine', grape: 'grape', dish: 'dish', region: 'region' };
+      const TYPE_LABEL = { wine: 'wine', grape: 'grape', dish: 'dish', region: 'region' };
+
+      let activeIndex = -1;
+      let currentMatches = [];
+
+      function normalize(s) {
+        return s
+          .toLowerCase()
+          .normalize('NFD')
+          .replace(/[̀-ͯ]/g, '');
+      }
+
+      function search(query) {
+        const q = normalize(query.trim());
+        if (!q) return [];
+        return entries
+          .map((e) => {
+            const name = normalize(e.name);
+            const meta = e.meta ? normalize(e.meta) : '';
+            let score = -1;
+            if (name.startsWith(q)) score = 0;
+            else if (name.includes(q)) score = 1;
+            else if (meta.includes(q)) score = 2;
+            return score < 0 ? null : { entry: e, score };
+          })
+          .filter((x) => x !== null)
+          .sort((a, b) => {
+            if (a.score !== b.score) return a.score - b.score;
+            const ta = TYPE_RANK[a.entry.type] ?? 9;
+            const tb = TYPE_RANK[b.entry.type] ?? 9;
+            if (ta !== tb) return ta - tb;
+            return a.entry.name.localeCompare(b.entry.name);
+          })
+          .slice(0, 8)
+          .map((x) => x.entry);
+      }
+
+      function render(matches) {
+        currentMatches = matches;
+        activeIndex = -1;
+        if (!matches.length) {
+          results.hidden = true;
+          results.classList.add('hidden');
+          input.setAttribute('aria-expanded', 'false');
+          results.innerHTML = '';
+          return;
+        }
+        results.innerHTML = matches
+          .map(
+            (m, i) => `
+            <li role="option" id="search-opt-${i}" data-index="${i}">
+              <a href="/${TYPE_PATH[m.type]}/${m.id}"
+                 class="flex items-center justify-between gap-3 px-4 py-3 hover:bg-neutral-100 transition border-b border-neutral-100 last:border-b-0"
+                 data-index="${i}">
+                <span class="flex-1 min-w-0">
+                  <span class="font-display text-base font-semibold block truncate">${escapeHtml(m.name)}</span>
+                  ${m.meta ? `<span class="block text-xs text-neutral-500 truncate">${escapeHtml(m.meta)}</span>` : ''}
+                </span>
+                <span class="shrink-0 text-[10px] uppercase tracking-wider text-neutral-400 border border-neutral-200 rounded px-1.5 py-0.5">${TYPE_LABEL[m.type]}</span>
+              </a>
+            </li>`,
+          )
+          .join('');
+        results.hidden = false;
+        results.classList.remove('hidden');
+        input.setAttribute('aria-expanded', 'true');
+      }
+
+      function escapeHtml(s) {
+        return s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+      }
+
+      function setActive(i) {
+        const items = results.querySelectorAll('a');
+        items.forEach((el, idx) => {
+          if (idx === i) {
+            el.classList.add('bg-neutral-100');
+            el.setAttribute('aria-selected', 'true');
+            input.setAttribute('aria-activedescendant', `search-opt-${i}`);
+          } else {
+            el.classList.remove('bg-neutral-100');
+            el.removeAttribute('aria-selected');
+          }
+        });
+        activeIndex = i;
+      }
+
+      input.addEventListener('input', (e) => {
+        const q = e.target.value;
+        render(search(q));
+      });
+
+      input.addEventListener('keydown', (e) => {
+        if (!currentMatches.length) return;
+        if (e.key === 'ArrowDown') {
+          e.preventDefault();
+          setActive(Math.min(activeIndex + 1, currentMatches.length - 1));
+        } else if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          setActive(Math.max(activeIndex - 1, 0));
+        } else if (e.key === 'Enter') {
+          if (activeIndex >= 0) {
+            e.preventDefault();
+            const m = currentMatches[activeIndex];
+            window.location.href = `/${TYPE_PATH[m.type]}/${m.id}`;
+          }
+        } else if (e.key === 'Escape') {
+          input.blur();
+          render([]);
+        }
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!results.contains(e.target) && e.target !== input) {
+          render([]);
+        }
+      });
+
+      // Region pills + grid filter
+      const pills = document.querySelectorAll('.region-pill');
+      const cards = document.querySelectorAll('.wine-card');
+      const empty = document.getElementById('grid-empty');
+
+      function applyFilter(country) {
+        let visible = 0;
+        cards.forEach((card) => {
+          const match = !country || card.dataset.country === country;
+          card.classList.toggle('hidden', !match);
+          if (match) visible++;
+        });
+        if (empty) empty.classList.toggle('hidden', visible > 0);
+      }
+
+      pills.forEach((p) => {
+        p.addEventListener('click', () => {
+          pills.forEach((q) => {
+            q.classList.remove('is-active');
+            q.setAttribute('aria-pressed', 'false');
+          });
+          p.classList.add('is-active');
+          p.setAttribute('aria-pressed', 'true');
+          applyFilter(p.dataset.country || '');
+        });
+      });
+    })();
+  </script>
+
+  <style>
+    .region-pill {
+      border-color: rgb(212 212 212); /* neutral-300 */
+      color: rgb(64 64 64); /* neutral-700 */
+    }
+    .region-pill:hover {
+      border-color: rgb(23 23 23); /* neutral-900 */
+    }
+    .region-pill.is-active {
+      background-color: rgb(23 23 23);
+      color: white;
+      border-color: rgb(23 23 23);
+    }
+  </style>
 </Base>
