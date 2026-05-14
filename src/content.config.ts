@@ -128,4 +128,13 @@ const dishes = defineCollection({
   }),
 });
 
-export const collections = { wines, grapes, regions, dishes };
+const pairings = defineCollection({
+  loader: glob({ pattern: '**/*.yaml', base: './src/content/pairings' }),
+  schema: z.object({
+    wine: reference('wines'),
+    dish: reference('dishes'),
+    explanation: z.string(),
+  }),
+});
+
+export const collections = { wines, grapes, regions, dishes, pairings };

@@ -18,7 +18,7 @@ type SystemBlock = {
   cache_control?: { type: 'ephemeral' };
 };
 
-const VOICE = `You write pairing recommendations in a terse, opinionated pocket-guide register. The reader is holding this in a wine shop or a restaurant; they have four seconds.
+export const VOICE = `You write pairing recommendations in a terse, opinionated pocket-guide register. The reader is holding this in a wine shop or a restaurant; they have four seconds.
 
 Rules of voice:
 
@@ -62,7 +62,7 @@ Field constraints:
 
 Output ONLY the JSON. No prose before or after.`;
 
-function serializeRules(rules: readonly Rule[]): string {
+export function serializeRules(rules: readonly Rule[]): string {
   const byMode: Record<Mode, Rule[]> = { harmony: [], contrast: [], enhancement: [] };
   for (const r of rules) byMode[r.mode].push(r);
 

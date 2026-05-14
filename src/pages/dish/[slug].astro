@@ -12,6 +12,10 @@ export async function getStaticPaths() {
 
 const { dish } = Astro.props;
 const allWines = await getCollection('wines');
+const allPairings = await getCollection('pairings');
+const pairingMap = new Map(
+  allPairings.map((p) => [`${p.data.wine.id}__${p.data.dish.id}`, p.data.explanation]),
+);
 
 const MODES: readonly Mode[] = ['harmony', 'contrast', 'enhancement'] as const;
 const MODE_LABEL: Record<Mode, string> = {
@@ -29,6 +33,7 @@ const TIER_ORDER: Record<Tier, number> = {
 const wineResults = allWines.map((wine) => ({
   wine,
   result: computeTier(wine.data, dish.data),
+  explanation: pairingMap.get(`${wine.id}__${dish.id}`),
 }));
 
 const winesByMode = MODES.map((mode) => ({
@@ -84,7 +89,7 @@ const TAGS = [
             <div class="mt-8">
               <h3 class="font-display text-xl italic text-neutral-800">{MODE_LABEL[mode]}</h3>
               <ul class="mt-3 space-y-3">
-                {entries.map(({ wine, result }) => (
+                {entries.map(({ wine, result, explanation }) => (
                   <li>
                     <a
                       href={`/wine/${wine.id}`}
@@ -100,6 +105,11 @@ const TAGS = [
                         <TierBadge tier={result.tier} class="shrink-0" />
                       </div>
                       <p class="mt-1 text-sm italic text-neutral-700">{wine.data.tagline}</p>
+                      {explanation && (
+                        <p class="mt-2 font-display text-base italic text-neutral-800 leading-snug">
+                          {explanation}
+                        </p>
+                      )}
                     </a>
                   </li>
                 ))}
