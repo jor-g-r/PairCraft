@@ -1,0 +1,26 @@
+name: Pasta con salsa de tomate
+description: Pasta in bright tomato sauce — garlic-forward, herb-lifted, with a
+  sharp acidic edge and optional parmesan depth.
+protein:
+  - none
+  - cheese-aged
+cookingMethod:
+  - boiled
+  - simmered
+flavorProfile:
+  - acidic
+  - umami
+  - herbal
+  - salty
+intensity: 3
+weight: medium
+category: pasta
+cuisineContext: Italian / international restaurant staple
+pairingLogic: Tomato acidity needs an acidic red; herbal notes bridge with
+  savory Sangiovese profile
+recommendedWineStyles:
+  - Chianti
+  - Sangiovese
+  - Rioja Crianza
+  - Pinot Noir
+notesForDemo: Clear educational example for acid-to-acid matching

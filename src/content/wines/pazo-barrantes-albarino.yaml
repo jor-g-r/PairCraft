@@ -1,0 +1,39 @@
+name: Pazo Barrantes Albariño
+tagline: Galicia in a glass — salt air, peach, and citrus that makes seafood inevitable.
+summary: "Pazo Barrantes is the benchmark Albariño: saline, taut, and driven by
+  acid that slices through anything the Atlantic pulls from the water. Drink it
+  cold, drink it young, drink it with percebes or grilled turbot and stop
+  overthinking it. This is the wine that teaches you why geography and grape
+  variety can be the same argument."
+color: white
+region: rias-baixas
+grapes:
+  - grape: albarino
+    percentage: 100
+sensoryProfile:
+  sweetness: 0
+  acidity: 5
+  tannin: 0
+  body: 3
+  oak: 0
+  alcohol: 3
+  intensity: 4
+flavouring:
+  primary:
+    - citrus
+    - peach
+    - white flowers
+    - saline
+    - mineral
+  secondary: []
+  tertiary: []
+style: Rías Baixas Albariño
+pedagogicalRole: High-acid coastal white; teaches salinity, seafood and acid-driven pairings
+availability:
+  note: Listed in Colombia retail examples such as Dislicores
+  sourceUrl: https://www.dislicores.com/vino-blanco-pazo-barrantes-albarino-ref806001/p
+recommendedPairings:
+  - ceviche
+  - shellfish
+  - grilled fish
+  - fresh cheese

@@ -1,0 +1,39 @@
+name: Catena Malbec
+tagline: Mendoza in a glass — black plum, violet, and the spine of the Andes.
+summary: "Catena Malbec is the benchmark: ripe blackberry and plum with a violet
+  lift, firm enough tannin to mean business, and oak that stays in its lane.
+  Drink it with charred ribeye or lamb shoulder — tannin meets protein, and the
+  fruit holds its ground. This is why Mendoza matters."
+color: red
+region: mendoza
+grapes:
+  - grape: malbec
+    percentage: 100
+sensoryProfile:
+  sweetness: 0
+  acidity: 3
+  tannin: 3
+  body: 4
+  oak: 3
+  alcohol: 4
+  intensity: 4
+flavouring:
+  primary:
+    - black plum
+    - blackberry
+    - violet
+    - spice
+    - subtle oak
+  secondary: []
+  tertiary: []
+style: Argentine Malbec
+pedagogicalRole: Canonical LATAM red; teaches body, ripe fruit, moderate tannin,
+  red meat pairings
+availability:
+  note: Listed in Colombia retail examples such as Carulla
+  sourceUrl: https://www.carulla.com/vino-tinto-malbec-catena-x-750ml-518133/p
+recommendedPairings:
+  - grilled beef
+  - pork
+  - pasta with meat sauce
+  - aged cheese

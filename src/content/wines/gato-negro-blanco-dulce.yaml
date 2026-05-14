@@ -1,0 +1,39 @@
+name: Gato Negro Blanco Dulce
+tagline: Chile's sweet crowd-pleaser — peach, honeyed tropical fruit, and floral
+  lift at a price that demands no apology.
+summary: Gato Negro Blanco Dulce is a soft, uncomplicated sweet white built on
+  ripe peach and tropical fruit with a honeyed finish that signals exactly what
+  it is. Serve it cold with fresh fruit tarts or mild blue cheese — sweetness
+  meets sweetness, or sugar cuts salt. It is the entry point where drinkers
+  learn that sweetness is a tool, not a flaw.
+color: white
+region: chile
+grapes:
+  - grape: white-blend
+    percentage: 100
+sensoryProfile:
+  sweetness: 5
+  acidity: 3
+  tannin: 0
+  body: 2
+  oak: 0
+  alcohol: 2
+  intensity: 3
+flavouring:
+  primary:
+    - peach
+    - tropical fruit
+    - honeyed fruit
+    - floral notes
+  secondary: []
+  tertiary: []
+style: Sweet white wine
+pedagogicalRole: Accessible sweet wine; teaches dessert pairings and sweetness matching
+availability:
+  note: Listed in Colombia retail examples such as Dislicores
+  sourceUrl: https://www.dislicores.com/vino-gato-negro-blanco-dulce-referencia100515/p
+recommendedPairings:
+  - fruit desserts
+  - mild spicy dishes
+  - blue cheese
+  - pastries

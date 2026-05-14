@@ -1,0 +1,41 @@
+name: Ramón Bilbao Crianza
+tagline: Rioja in its working clothes — red cherry, vanilla oak, and leather
+  doing exactly what crianza promised.
+summary: "Ramón Bilbao Crianza is Tempranillo with a year in American oak and a
+  year in bottle, and it shows: red cherry and plum up front, vanilla and spice
+  in the middle, leather at the finish. Drink it with lamb chops or aged
+  manchego, not a moment's hesitation. This is the wine that explains why Rioja
+  built its reputation on the crianza system."
+color: red
+region: rioja
+grapes:
+  - grape: tempranillo
+    percentage: 100
+sensoryProfile:
+  sweetness: 0
+  acidity: 3
+  tannin: 3
+  body: 3
+  oak: 3
+  alcohol: 4
+  intensity: 4
+flavouring:
+  primary:
+    - red cherry
+    - plum
+    - vanilla
+    - spice
+    - leather
+  secondary: []
+  tertiary: []
+style: Rioja Crianza
+pedagogicalRole: Classic Old World red; teaches oak, crianza, red fruit and balanced tannin
+availability:
+  note: Listed in Colombia retail examples such as Dislicores
+  sourceUrl: https://www.dislicores.com/vino-tinto-ramon-bilbao-crianza-tempranillo-ref147000/p
+recommendedPairings:
+  - lamb
+  - pork
+  - manchego
+  - roasted vegetables
+  - tomato-based dishes

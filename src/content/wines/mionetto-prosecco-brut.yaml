@@ -1,0 +1,41 @@
+name: Mionetto Prosecco Brut
+tagline: Northern Italy's aperitif workhorse — green apple, pear, and relentless
+  bubbles at a price that demands no apology.
+summary: "Glera from the Veneto, made by the Charmat method: fresh, low-alcohol,
+  built for the first pour of the evening. Drink it cold, drink it fast, drink
+  it with fried calamari or prosciutto and melon — acid cuts fat, bubbles reset
+  the palate. This is the wine that teaches you why sparkling exists before
+  dinner, not during."
+color: sparkling
+region: veneto
+grapes:
+  - grape: glera
+    percentage: 100
+sensoryProfile:
+  sweetness: 0
+  acidity: 4
+  tannin: 0
+  body: 1
+  oak: 0
+  alcohol: 2
+  intensity: 3
+flavouring:
+  primary:
+    - green apple
+    - pear
+    - white flowers
+    - citrus
+    - bubbles
+  secondary: []
+  tertiary: []
+style: Prosecco Brut
+pedagogicalRole: Sparkling wine; teaches bubbles, freshness, fried food and aperitif pairings
+availability:
+  note: Listed in Colombia retail examples such as Dislicores
+  sourceUrl: https://www.dislicores.com/vino-espumoso-prosecco-mionetto-brut-glera-ref140015/p
+recommendedPairings:
+  - fried appetizers
+  - seafood
+  - ceviche
+  - fresh cheese
+  - salty snacks

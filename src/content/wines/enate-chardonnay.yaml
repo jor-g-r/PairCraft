@@ -1,0 +1,39 @@
+name: Enate Chardonnay
+tagline: Somontano's answer to Burgundy — ripe apple, butter, and vanilla with
+  the body to back it up.
+summary: "Enate's Chardonnay is barrel-fermented Spanish sun in a glass:
+  pineapple and toasted oak riding a broad, creamy frame. Drink it with roast
+  chicken thighs or a plate of aged Idiazabal — fat needs fat. This is the wine
+  that teaches you what oak and lees actually do to texture."
+color: white
+region: somontano
+grapes:
+  - grape: chardonnay
+    percentage: 100
+sensoryProfile:
+  sweetness: 0
+  acidity: 3
+  tannin: 0
+  body: 4
+  oak: 3
+  alcohol: 4
+  intensity: 4
+flavouring:
+  primary:
+    - ripe apple
+    - pineapple
+    - butter
+    - vanilla
+    - toasted notes
+  secondary: []
+  tertiary: []
+style: Spanish Chardonnay
+pedagogicalRole: Textural white; teaches body, creaminess and oak in white wine
+availability:
+  note: Listed in Colombia retail examples such as Dislicores
+  sourceUrl: https://www.dislicores.com/vino-blanco-enate-chardonnay---ref259001/p
+recommendedPairings:
+  - salmon
+  - roasted chicken
+  - creamy pasta
+  - risotto

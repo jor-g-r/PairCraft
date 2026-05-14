@@ -1,0 +1,42 @@
+name: Castillo de Molina Sauvignon Blanc Reserva
+tagline: Chile's Andes-cooled answer to Sancerre — grapefruit pith, cut grass,
+  and a blade of acid.
+summary: "Castillo de Molina Reserva is a textbook high-wire act: grapefruit,
+  green herb, and green apple held together by acid sharp enough to strip fat
+  off a plate. Drink it cold, drink it fast, drink it with ceviche or raw
+  oysters — acid cuts through everything. This is the wine that teaches you why
+  acidity is a food tool, not a flaw."
+color: white
+region: central-valley
+grapes:
+  - grape: sauvignon-blanc
+    percentage: 100
+sensoryProfile:
+  sweetness: 0
+  acidity: 5
+  tannin: 0
+  body: 1
+  oak: 0
+  alcohol: 3
+  intensity: 4
+flavouring:
+  primary:
+    - citrus
+    - grapefruit
+    - herbs
+    - green apple
+    - tropical fruit
+  secondary: []
+  tertiary: []
+style: Chilean Sauvignon Blanc
+pedagogicalRole: High-acid herbaceous white; teaches acid, freshness, seafood
+  and ceviche pairings
+availability:
+  note: Listed in Colombia retail examples such as Dislicores
+  sourceUrl: https://www.dislicores.com/vino-blanco-castillo-de-molina-sauvignon-blanc-reserva-ref100073/p
+recommendedPairings:
+  - ceviche
+  - fresh cheese
+  - salads
+  - white fish
+  - shellfish

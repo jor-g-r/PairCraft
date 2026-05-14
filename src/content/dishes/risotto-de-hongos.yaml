@@ -1,0 +1,27 @@
+name: Risotto de hongos
+description: Arborio rice slow-stirred to a dense, butter-glossed cream, loaded
+  with wild mushrooms and finished with aged parmesan — fat and umami
+  wall-to-wall.
+protein:
+  - mushroom
+  - cheese-aged
+cookingMethod:
+  - simmered
+  - sauteed
+flavorProfile:
+  - fatty
+  - umami
+  - salty
+  - creamy
+  - earthy
+intensity: 4
+weight: medium
+category: rice
+cuisineContext: Formal restaurant / Italian-inspired
+pairingLogic: Creaminess benefits from acidity; mushroom earthiness bridges with
+  Pinot Noir and aged reds
+recommendedWineStyles:
+  - Pinot Noir
+  - Chardonnay
+  - Rioja Crianza
+notesForDemo: Useful for teaching umami, texture and earthy flavor bridges

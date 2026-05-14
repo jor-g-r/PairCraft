@@ -1,0 +1,40 @@
+name: Piccini Chianti Riserva
+tagline: Tuscany in a glass — sour cherry, dried herbs, and the acid that makes
+  tomato sing.
+summary: "Piccini's Chianti Riserva is Sangiovese doing exactly what Sangiovese
+  was born to do: high acid, savory depth, and a spine of tannin that demands
+  food. Drink it with anything that has a tomato base or a char on it — the wine
+  sharpens both. This is the benchmark for understanding why Italian reds and
+  Italian cooking are inseparable."
+color: red
+region: tuscany
+grapes:
+  - grape: sangiovese
+    percentage: 100
+sensoryProfile:
+  sweetness: 0
+  acidity: 4
+  tannin: 3
+  body: 3
+  oak: 3
+  alcohol: 3
+  intensity: 4
+flavouring:
+  primary:
+    - sour cherry
+    - dried herbs
+    - tomato leaf
+    - leather
+    - spice
+  secondary: []
+  tertiary: []
+style: Chianti Riserva
+pedagogicalRole: Acidic red; teaches why Sangiovese works with tomato and savory dishes
+availability:
+  note: Listed in Colombia retail examples such as Dislicores
+  sourceUrl: https://www.dislicores.com/vino-tinto-docg-piccini-chianti-ref153031/p
+recommendedPairings:
+  - pasta with tomato sauce
+  - pizza
+  - pork
+  - aged cheese

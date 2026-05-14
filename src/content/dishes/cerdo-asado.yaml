@@ -1,0 +1,24 @@
+name: Cerdo asado / pork belly
+description: Roasted pork belly — crackling skin, molten fat layers,
+  salt-forward with a faint caramelised edge.
+protein:
+  - pork
+cookingMethod:
+  - roasted
+  - grilled
+flavorProfile:
+  - fatty
+  - salty
+  - umami
+  - sweet
+intensity: 4
+weight: heavy
+category: meat
+cuisineContext: Restaurant main course
+pairingLogic: Acidity and bubbles cut fat; fruity reds complement pork sweetness
+recommendedWineStyles:
+  - Pinot Noir
+  - Malbec
+  - Chardonnay
+  - Prosecco Brut
+notesForDemo: Useful for comparing contrast pairing versus complement pairing

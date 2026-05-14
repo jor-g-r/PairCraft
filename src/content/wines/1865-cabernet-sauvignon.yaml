@@ -1,0 +1,39 @@
+name: 1865 Cabernet Sauvignon
+tagline: Maipo muscle — blackcurrant, cedar, and tobacco with tannins that mean
+  business.
+summary: "This is Chilean Cabernet at its most direct: dark fruit, a spine of
+  cedar, and grip that demands protein. Open it with a ribeye or a leg of lamb
+  and the tannins snap into place. It earns its place on the shelf by being
+  exactly what it says it is."
+color: red
+region: maipo-valley
+grapes:
+  - grape: cabernet-sauvignon
+    percentage: 100
+sensoryProfile:
+  sweetness: 0
+  acidity: 3
+  tannin: 5
+  body: 5
+  oak: 4
+  alcohol: 4
+  intensity: 5
+flavouring:
+  primary:
+    - blackcurrant
+    - cassis
+    - cedar
+    - tobacco
+    - spice
+  secondary: []
+  tertiary: []
+style: Chilean Cabernet Sauvignon
+pedagogicalRole: Classic tannic red; teaches tannin plus protein/fat interaction
+availability:
+  note: Listed in Colombia retail examples such as Dislicores
+  sourceUrl: https://www.dislicores.com/vino-tinto-1865-cabernet-sauvignon-ref100218/p
+recommendedPairings:
+  - grilled steak
+  - lamb
+  - short ribs
+  - aged hard cheese

@@ -1,0 +1,24 @@
+name: Lomo / punta de anca a la parrilla
+description: Thick sirloin cap or loin strip off live fire — charred crust, pink
+  centre, coarse salt finish.
+protein:
+  - beef
+cookingMethod:
+  - grilled
+flavorProfile:
+  - fatty
+  - umami
+  - salty
+  - smoky
+  - bitter
+intensity: 5
+weight: heavy
+category: meat
+cuisineContext: LATAM steakhouse / formal restaurant
+pairingLogic: Protein and fat soften tannin; Maillard flavors bridge with oak and dark fruit
+recommendedWineStyles:
+  - Cabernet Sauvignon
+  - Malbec
+  - Rioja Crianza
+  - Marselan
+notesForDemo: Best core dish for explaining tannin plus protein and intensity matching

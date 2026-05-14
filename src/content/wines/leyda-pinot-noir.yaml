@@ -1,0 +1,39 @@
+name: Leyda Pinot Noir
+tagline: Pacific fog in a glass — cherry, earth, and spice from Chile's coolest corner.
+summary: "Leyda sits twelve miles from the Pacific and it shows: this is Pinot
+  Noir with genuine tension, not the jammy imposter that warmer Chilean valleys
+  produce. Drink it with seared salmon or roast duck breast — low tannin, bright
+  acid, and it holds its line. The grape's whole argument for versatility is
+  made right here."
+color: red
+region: leyda-valley
+grapes:
+  - grape: pinot-noir
+    percentage: 100
+sensoryProfile:
+  sweetness: 0
+  acidity: 4
+  tannin: 1
+  body: 3
+  oak: 2
+  alcohol: 3
+  intensity: 3
+flavouring:
+  primary:
+    - cherry
+    - raspberry
+    - spice
+    - earth
+    - floral notes
+  secondary: []
+  tertiary: []
+style: Cool-climate Chilean Pinot Noir
+pedagogicalRole: Light red; teaches lower tannin, acidity and versatility with poultry/fish
+availability:
+  note: Listed in Colombia retail examples such as Dislicores
+  sourceUrl: https://www.dislicores.com/vino-tinto-leyda-pinot-noir-ref121090/p
+recommendedPairings:
+  - salmon
+  - pork
+  - mushroom risotto
+  - roasted chicken

@@ -1,0 +1,42 @@
+name: Garzón Marselan Reserva
+tagline: Uruguay's dark horse — red fruit, cool mint, and mineral grit where you
+  least expect it.
+summary: "Marselan is Cabernet Sauvignon crossed with Grenache, and Garzón's
+  Reserva shows exactly why the marriage works: the structure of one parent, the
+  fruit of the other, tightened by Atlantic winds off Maldonado. Drink it with
+  charred lamb chops or a ribeye rubbed with chimichurri — tannin meets protein,
+  herb meets herb. It earns its place on any list that claims to look beyond
+  France and Argentina."
+color: red
+region: maldonado
+grapes:
+  - grape: marselan
+    percentage: 100
+sensoryProfile:
+  sweetness: 0
+  acidity: 3
+  tannin: 3
+  body: 4
+  oak: 3
+  alcohol: 4
+  intensity: 4
+flavouring:
+  primary:
+    - red fruit
+    - mineral
+    - mint
+    - eucalyptus
+    - spice
+  secondary: []
+  tertiary: []
+style: Uruguayan Marselan
+pedagogicalRole: LATAM regional bonus; teaches lesser-known grape and modern
+  restaurant-list diversity
+availability:
+  note: Seen in Colombia specialty retail examples such as Vinos El Kiosco
+  sourceUrl: https://www.vinoselkiosco.com/tienda/marselan-reserva/
+recommendedPairings:
+  - grilled meats
+  - lamb
+  - roasted vegetables
+  - semi-hard cheese

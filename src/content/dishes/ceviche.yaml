@@ -1,0 +1,27 @@
+name: Ceviche
+description: Raw white fish or shellfish, lime-cured until opaque, sharp with
+  citrus and onion, heat optional from fresh chili.
+protein:
+  - fish
+  - shellfish
+cookingMethod:
+  - raw
+  - cured
+flavorProfile:
+  - acidic
+  - salty
+  - citrusy
+  - briny
+  - herbal
+  - spicy
+intensity: 4
+weight: light
+category: seafood
+cuisineContext: LATAM coastal cuisine
+pairingLogic: High acid in food needs high-acid wine; freshness and salinity
+  bridge with coastal whites
+recommendedWineStyles:
+  - Sauvignon Blanc
+  - Albariño
+  - Prosecco Brut
+notesForDemo: Best dish for teaching acidity matching and conflict with oaky/tannic wines

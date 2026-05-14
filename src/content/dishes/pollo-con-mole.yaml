@@ -1,0 +1,27 @@
+name: Pollo con mole / salsa especiada con cacao
+description: Braised chicken buried in mole — layers of dried chili, cacao, and
+  toasted seeds building bitter-sweet heat that coats every bite.
+protein:
+  - poultry
+cookingMethod:
+  - braised
+  - simmered
+flavorProfile:
+  - spicy
+  - bitter
+  - sweet
+  - umami
+  - fatty
+  - earthy
+intensity: 5
+weight: heavy
+category: poultry
+cuisineContext: Mexican / LATAM regional cuisine
+pairingLogic: Spice and bitterness can clash with high tannin; fruit and
+  moderate sweetness can soften heat
+recommendedWineStyles:
+  - Malbec
+  - Pinot Noir
+  - off-dry white
+  - sparkling demi-sec
+notesForDemo: Good controlled case for explaining conflict avoidance with tannin and spice
