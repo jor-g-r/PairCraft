@@ -1,8 +1,9 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { computeTier, TIER_LABEL, type Tier } from '../../lib/tier.ts';
+import { computeTier, type Tier } from '../../lib/tier.ts';
 import type { Mode } from '../../lib/rules.ts';
+import TierBadge from '../../components/TierBadge.astro';
 
 export async function getStaticPaths() {
   const wines = await getCollection('wines');
@@ -151,9 +152,7 @@ const SENSORY_AXES = [
                     >
                       <div class="flex items-baseline justify-between gap-4">
                         <p class="font-display text-lg font-semibold">{dish.data.name}</p>
-                        <p class="text-sm font-medium text-neutral-700 shrink-0">
-                          {TIER_LABEL[result.tier]}
-                        </p>
+                        <TierBadge tier={result.tier} class="shrink-0" />
                       </div>
                       <p class="mt-1 text-sm text-neutral-600">{dish.data.description}</p>
                     </a>

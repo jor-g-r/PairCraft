@@ -1,8 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { computeTier, TIER_LABEL, type Tier } from '../../lib/tier.ts';
+import { computeTier, type Tier } from '../../lib/tier.ts';
 import type { Mode } from '../../lib/rules.ts';
+import TierBadge from '../../components/TierBadge.astro';
 
 export async function getStaticPaths() {
   const dishes = await getCollection('dishes');
@@ -96,9 +97,7 @@ const TAGS = [
                             <span class="font-normal text-neutral-500"> {wine.data.vintage}</span>
                           )}
                         </p>
-                        <p class="text-sm font-medium text-neutral-700 shrink-0">
-                          {TIER_LABEL[result.tier]}
-                        </p>
+                        <TierBadge tier={result.tier} class="shrink-0" />
                       </div>
                       <p class="mt-1 text-sm italic text-neutral-700">{wine.data.tagline}</p>
                     </a>
