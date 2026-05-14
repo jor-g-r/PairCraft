@@ -23,6 +23,16 @@ const { title, description } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="min-h-dvh bg-white text-neutral-900 antialiased font-sans">
+    <header class="sticky top-0 z-10 border-b border-neutral-200/60 bg-white/85 backdrop-blur supports-[backdrop-filter]:bg-white/70">
+      <div class="mx-auto max-w-2xl px-6 py-3">
+        <a
+          href="/"
+          class="font-display text-xl font-bold tracking-tight hover:text-neutral-600 transition-colors"
+        >
+          Paircraft
+        </a>
+      </div>
+    </header>
     <slot />
   </body>
 </html>
