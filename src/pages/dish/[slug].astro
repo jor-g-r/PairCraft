@@ -57,10 +57,18 @@ const TAGS = [
 
 <Base title={`${dish.data.name} — Paircraft`} description={dish.data.description}>
   <main class="mx-auto max-w-2xl px-6 py-10 md:py-16">
-    <p class="text-sm text-neutral-500 capitalize">{dish.data.weight} · intensity {dish.data.intensity}</p>
+    <p class="text-sm text-neutral-500 capitalize">
+      {dish.data.category && <span>{dish.data.category} · </span>}
+      {dish.data.weight} · intensity {dish.data.intensity}
+    </p>
 
     <header class="mt-2">
       <h1 class="font-display text-4xl md:text-5xl font-bold tracking-tight">{dish.data.name}</h1>
+      {
+        dish.data.cuisineContext && (
+          <p class="mt-1 text-sm italic text-neutral-500">{dish.data.cuisineContext}</p>
+        )
+      }
       <p class="mt-3 text-neutral-800 leading-relaxed">{dish.data.description}</p>
     </header>
 
@@ -73,6 +81,34 @@ const TAGS = [
             </li>
           ))}
         </ul>
+      )
+    }
+
+    {
+      dish.data.pairingLogic && (
+        <aside class="mt-10 rounded-lg border-l-4 border-neutral-900 bg-neutral-50 px-5 py-4">
+          <p class="text-[10px] uppercase tracking-widest text-neutral-500">
+            The pairing logic
+          </p>
+          <p class="mt-2 font-display text-lg italic text-neutral-800 leading-snug">
+            {dish.data.pairingLogic}
+          </p>
+        </aside>
+      )
+    }
+
+    {
+      dish.data.recommendedWineStyles && dish.data.recommendedWineStyles.length > 0 && (
+        <section class="mt-8">
+          <p class="text-[10px] uppercase tracking-widest text-neutral-500">Quick hints</p>
+          <ul class="mt-2 flex flex-wrap gap-2">
+            {dish.data.recommendedWineStyles.map((style) => (
+              <li class="inline-block rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs text-neutral-600">
+                {style}
+              </li>
+            ))}
+          </ul>
+        </section>
       )
     }
 

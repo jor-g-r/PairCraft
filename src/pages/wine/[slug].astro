@@ -83,9 +83,65 @@ const SENSORY_AXES = [
         {wine.data.vintage && <span class="font-normal text-neutral-500"> {wine.data.vintage}</span>}
       </h1>
       <p class="mt-2 font-display text-lg italic text-neutral-700">{wine.data.tagline}</p>
+      {
+        wine.data.style && (
+          <p class="mt-3">
+            <span class="inline-block rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs uppercase tracking-wider text-neutral-600">
+              {wine.data.style}
+            </span>
+          </p>
+        )
+      }
     </header>
 
     <p class="mt-6 text-neutral-800 leading-relaxed">{wine.data.summary}</p>
+
+    {
+      wine.data.pedagogicalRole && (
+        <p class="mt-4 border-l-2 border-neutral-300 pl-4 text-sm italic text-neutral-600 leading-relaxed">
+          <span class="block text-[10px] uppercase tracking-widest not-italic text-neutral-400 mb-1">
+            Teaching note
+          </span>
+          {wine.data.pedagogicalRole}
+        </p>
+      )
+    }
+
+    {
+      wine.data.availability && (
+        <section class="mt-8 rounded-lg border border-neutral-200 bg-neutral-50 px-5 py-4">
+          <p class="text-[10px] uppercase tracking-widest text-neutral-500">
+            Where to find it
+          </p>
+          <p class="mt-1.5 text-sm text-neutral-800">{wine.data.availability.note}</p>
+          {
+            wine.data.availability.sourceUrl && (
+              <a
+                href={wine.data.availability.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-3 inline-flex items-center gap-1.5 rounded-md border border-neutral-900 bg-neutral-900 px-3 py-1.5 text-sm font-medium text-white hover:bg-neutral-800 transition"
+              >
+                <span>View listing</span>
+                <svg
+                  class="h-3.5 w-3.5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M7 17 17 7"></path>
+                  <path d="M7 7h10v10"></path>
+                </svg>
+              </a>
+            )
+          }
+        </section>
+      )
+    }
 
     <dl class="mt-8 grid grid-cols-[auto_1fr] gap-x-6 gap-y-2 text-sm">
       <dt class="text-neutral-500">Colour</dt>
@@ -136,6 +192,21 @@ const SENSORY_AXES = [
         }
       </dl>
     </section>
+
+    {
+      wine.data.recommendedPairings && wine.data.recommendedPairings.length > 0 && (
+        <section class="mt-12">
+          <p class="text-[10px] uppercase tracking-widest text-neutral-500">Quick hints</p>
+          <ul class="mt-2 flex flex-wrap gap-2">
+            {wine.data.recommendedPairings.map((hint) => (
+              <li class="inline-block rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs text-neutral-600 capitalize">
+                {hint}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
 
     <section class="mt-12">
       <h2 class="font-display text-2xl font-semibold">Pairings</h2>
