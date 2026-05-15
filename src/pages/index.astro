@@ -1,6 +1,7 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import WineGlass from '../components/WineGlass.astro';
 
 const wines = await getCollection('wines');
 const grapes = await getCollection('grapes');
@@ -149,12 +150,15 @@ const countries = [
                 href={`/wine/${wine.id}`}
                 class="block h-full rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-4 transition hover:border-neutral-400 hover:bg-white"
               >
-                <p class="font-display text-xl font-semibold leading-tight">
-                  {wine.data.name}
-                  {wine.data.vintage && (
-                    <span class="font-normal text-neutral-500"> {wine.data.vintage}</span>
-                  )}
-                </p>
+                <div class="flex items-start gap-2.5">
+                  <WineGlass color={wine.data.color} class="shrink-0 mt-0.5 text-neutral-700" />
+                  <p class="font-display text-xl font-semibold leading-tight">
+                    {wine.data.name}
+                    {wine.data.vintage && (
+                      <span class="font-normal text-neutral-500"> {wine.data.vintage}</span>
+                    )}
+                  </p>
+                </div>
                 {region && (
                   <p class="mt-1 text-xs text-neutral-500">
                     {region.data.name}, {region.data.country}
