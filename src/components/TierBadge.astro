@@ -9,7 +9,7 @@ interface Props {
 const { tier, class: className = '' } = Astro.props;
 
 const STYLES: Record<Tier, string> = {
-  decisive: 'bg-neutral-900 text-white',
+  decisive: 'bg-[var(--color-accent)] text-white',
   'worth-trying': 'bg-neutral-100 text-neutral-900',
   risky: 'border border-neutral-300 text-neutral-700',
   skip: 'text-neutral-400',

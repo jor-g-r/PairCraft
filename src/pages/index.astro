@@ -180,7 +180,7 @@ const countries = [
   <script type="application/json" id="search-index" set:html={JSON.stringify(searchIndex)}></script>
 
   <script is:inline>
-    (function () {
+    function initPaircraftHome() {
       const indexEl = document.getElementById('search-index');
       const input = document.getElementById('search-input');
       const results = document.getElementById('search-results');
@@ -335,7 +335,8 @@ const countries = [
           applyFilter(p.dataset.country || '');
         });
       });
-    })();
+    }
+    document.addEventListener('astro:page-load', initPaircraftHome);
   </script>
 
   <style>
@@ -347,9 +348,9 @@ const countries = [
       border-color: rgb(23 23 23); /* neutral-900 */
     }
     .region-pill.is-active {
-      background-color: rgb(23 23 23);
+      background-color: var(--color-accent);
       color: white;
-      border-color: rgb(23 23 23);
+      border-color: var(--color-accent);
     }
   </style>
 </Base>
