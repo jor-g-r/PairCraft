@@ -32,6 +32,9 @@ pedagogicalRole: Accessible sweet wine; teaches dessert pairings and sweetness m
 availability:
   note: Listed in Colombia retail examples such as Dislicores
   sourceUrl: https://www.dislicores.com/vino-gato-negro-blanco-dulce-referencia100515/p
+markets:
+  - CO
+  - VE
 recommendedPairings:
   - fruit desserts
   - mild spicy dishes

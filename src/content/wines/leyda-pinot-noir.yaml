@@ -32,6 +32,9 @@ pedagogicalRole: Light red; teaches lower tannin, acidity and versatility with p
 availability:
   note: Listed in Colombia retail examples such as Dislicores
   sourceUrl: https://www.dislicores.com/vino-tinto-leyda-pinot-noir-ref121090/p
+markets:
+  - CO
+  - VE
 recommendedPairings:
   - salmon
   - pork

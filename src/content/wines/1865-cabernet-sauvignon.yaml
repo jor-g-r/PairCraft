@@ -32,6 +32,9 @@ pedagogicalRole: Classic tannic red; teaches tannin plus protein/fat interaction
 availability:
   note: Listed in Colombia retail examples such as Dislicores
   sourceUrl: https://www.dislicores.com/vino-tinto-1865-cabernet-sauvignon-ref100218/p
+markets:
+  - CO
+  - VE
 recommendedPairings:
   - grilled steak
   - lamb

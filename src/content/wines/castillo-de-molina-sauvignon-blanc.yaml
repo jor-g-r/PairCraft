@@ -34,6 +34,9 @@ pedagogicalRole: High-acid herbaceous white; teaches acid, freshness, seafood
 availability:
   note: Listed in Colombia retail examples such as Dislicores
   sourceUrl: https://www.dislicores.com/vino-blanco-castillo-de-molina-sauvignon-blanc-reserva-ref100073/p
+markets:
+  - CO
+  - VE
 recommendedPairings:
   - ceviche
   - fresh cheese

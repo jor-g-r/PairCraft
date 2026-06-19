@@ -32,6 +32,9 @@ pedagogicalRole: Canonical LATAM red; teaches body, ripe fruit, moderate tannin,
 availability:
   note: Listed in Colombia retail examples such as Carulla
   sourceUrl: https://www.carulla.com/vino-tinto-malbec-catena-x-750ml-518133/p
+markets:
+  - CO
+  - VE
 recommendedPairings:
   - grilled beef
   - pork
