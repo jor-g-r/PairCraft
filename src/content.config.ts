@@ -54,6 +54,10 @@ const wines = defineCollection({
       })
       .optional(),
     recommendedPairings: z.array(z.string()).default([]),
+    // Markets (ISO-3166 alpha-2) where this wine is stocked. Defaults to ['CO']
+    // so the launch corpus is Colombia-available without per-file edits; the
+    // home feed gates on the visitor's market against this list.
+    markets: z.array(z.string()).default(['CO']),
     notesForDemo: z.string().optional(),
   }),
 });
@@ -163,4 +167,21 @@ const pairings = defineCollection({
   }),
 });
 
-export const collections = { wines, grapes, regions, dishes, pairings };
+// A market = a country where Paircraft serves a localized feed. The visitor's
+// market gates the wine grid; `dominantGrapes` is the grape-level fallback shown
+// when no curated bottles exist for that market yet.
+const markets = defineCollection({
+  loader: glob({ pattern: '**/*.mdx', base: './src/content/markets' }),
+  schema: z.object({
+    code: z.string(),
+    name: z.string(),
+    tagline: z.string().max(140).optional(),
+    dominantGrapes: z.array(reference('grapes')).default([]),
+    dominantOrigins: z.array(z.string()).default([]),
+    retailers: z
+      .array(z.object({ name: z.string(), url: z.string().url().optional() }))
+      .default([]),
+  }),
+});
+
+export const collections = { wines, grapes, regions, dishes, pairings, markets };

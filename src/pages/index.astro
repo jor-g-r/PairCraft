@@ -1,4 +1,8 @@
 ---
+// Server-rendered so we can read the visitor's market from the Vercel geo header
+// / cookie. The rest of the site stays static; only this feed is dynamic.
+export const prerender = false;
+
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import WineGlass from '../components/WineGlass.astro';
@@ -7,14 +11,31 @@ const wines = await getCollection('wines');
 const grapes = await getCollection('grapes');
 const regions = await getCollection('regions');
 const dishes = await getCollection('dishes');
+const markets = await getCollection('markets');
 
+// --- Resolve the visitor's market: cookie override > Vercel geo IP > default CO.
+const knownMarkets = new Map(markets.map((m) => [m.data.code, m]));
+const cookieMarket = Astro.cookies.get('pc_market')?.value;
+const geoMarket = Astro.request.headers.get('x-vercel-ip-country');
+const marketCode =
+  [cookieMarket, geoMarket, 'CO'].find((c) => c && knownMarkets.has(c)) ?? 'CO';
+const market = knownMarkets.get(marketCode) ?? null;
+
+// Feed is gated to wines stocked in this market. Search (below) stays global —
+// every wine keeps a reachable page; only the browse grid is localized.
+const marketWines = wines.filter((w) => w.data.markets.includes(marketCode));
 const winesWithRegion = await Promise.all(
-  wines.map(async (wine) => ({
+  marketWines.map(async (wine) => ({
     wine,
     region: await getEntry(wine.data.region),
   })),
 );
 winesWithRegion.sort((a, b) => a.wine.data.name.localeCompare(b.wine.data.name));
+
+// Grape-level fallback shown when a market has no curated bottles yet.
+const fallbackGrapes = market
+  ? (await Promise.all(market.data.dominantGrapes.map((g) => getEntry(g)))).filter(Boolean)
+  : [];
 
 interface SearchEntry {
   id: string;
@@ -123,65 +144,123 @@ const countries = [
     </div>
 
     <section class="mt-6">
-      <div class="flex flex-wrap gap-2" id="region-pills" role="group" aria-label="Filter by country">
-        <button
-          type="button"
-          class="region-pill is-active rounded-full border px-3 py-1 text-sm transition"
-          data-country=""
-          aria-pressed="true"
-        >
-          All
-        </button>
-        {
-          countries.map((c) => (
-            <button
-              type="button"
-              class="region-pill rounded-full border px-3 py-1 text-sm transition"
-              data-country={c}
-              aria-pressed="false"
-            >
-              {c}
-            </button>
-          ))
-        }
+      <div class="flex flex-wrap items-center justify-center gap-2 text-sm">
+        <label for="market-select" class="text-neutral-500">Showing wines available in</label>
+        <div class="relative">
+          <select
+            id="market-select"
+            class="appearance-none rounded-full border border-neutral-300 bg-white py-1 pl-3 pr-8 font-medium text-neutral-900 focus:border-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-900/10 transition"
+          >
+            {
+              markets
+                .slice()
+                .sort((a, b) => a.data.name.localeCompare(b.data.name))
+                .map((m) => (
+                  <option value={m.data.code} selected={m.data.code === marketCode}>
+                    {m.data.name}
+                  </option>
+                ))
+            }
+          </select>
+          <svg
+            class="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 h-4 w-4 text-neutral-400"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6"></path>
+          </svg>
+        </div>
       </div>
 
-      <ul class="mt-5 grid gap-3 sm:grid-cols-2" id="wine-grid">
-        {
-          winesWithRegion.map(({ wine, region }) => (
-            <li class="wine-card" data-country={region?.data.country ?? ''}>
-              <a
-                href={`/wine/${wine.id}`}
-                class="block h-full rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-4 transition hover:border-neutral-400 hover:bg-white"
+      {
+        winesWithRegion.length > 0 ? (
+          <>
+            <p class="mt-6 text-xs uppercase tracking-widest text-neutral-500">Origin</p>
+            <div
+              class="mt-2 flex flex-wrap gap-2"
+              id="region-pills"
+              role="group"
+              aria-label="Filter by origin"
+            >
+              <button
+                type="button"
+                class="region-pill is-active rounded-full border px-3 py-1 text-sm transition"
+                data-country=""
+                aria-pressed="true"
               >
-                <div class="flex items-start gap-2.5">
-                  <WineGlass color={wine.data.color} class="shrink-0 mt-0.5 text-neutral-700" />
-                  <p class="font-display text-xl font-semibold leading-tight">
-                    {wine.data.name}
-                    {wine.data.vintage && (
-                      <span class="font-normal text-neutral-500"> {wine.data.vintage}</span>
+                All
+              </button>
+              {countries.map((c) => (
+                <button
+                  type="button"
+                  class="region-pill rounded-full border px-3 py-1 text-sm transition"
+                  data-country={c}
+                  aria-pressed="false"
+                >
+                  {c}
+                </button>
+              ))}
+            </div>
+
+            <ul class="mt-5 grid gap-3 sm:grid-cols-2" id="wine-grid">
+              {winesWithRegion.map(({ wine, region }) => (
+                <li class="wine-card" data-country={region?.data.country ?? ''}>
+                  <a
+                    href={`/wine/${wine.id}`}
+                    class="block h-full rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-4 transition hover:border-neutral-400 hover:bg-white"
+                  >
+                    <div class="flex items-start gap-2.5">
+                      <WineGlass color={wine.data.color} class="shrink-0 mt-0.5 text-neutral-700" />
+                      <p class="font-display text-xl font-semibold leading-tight">
+                        {wine.data.name}
+                        {wine.data.vintage && (
+                          <span class="font-normal text-neutral-500"> {wine.data.vintage}</span>
+                        )}
+                      </p>
+                    </div>
+                    {region && (
+                      <p class="mt-1 text-xs text-neutral-500">
+                        {region.data.name}, {region.data.country}
+                      </p>
                     )}
-                  </p>
-                </div>
-                {region && (
-                  <p class="mt-1 text-xs text-neutral-500">
-                    {region.data.name}, {region.data.country}
-                  </p>
-                )}
-                <p class="mt-3 text-sm italic text-neutral-700 leading-snug">
-                  {wine.data.tagline}
-                </p>
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-      <p
-        id="grid-empty"
-        class="mt-6 hidden text-center text-sm text-neutral-500 italic"
-      >
-        No wines listed for this country yet.
-      </p>
+                    <p class="mt-3 text-sm italic text-neutral-700 leading-snug">
+                      {wine.data.tagline}
+                    </p>
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <p id="grid-empty" class="mt-6 hidden text-center text-sm text-neutral-500 italic">
+              No wines from this origin yet.
+            </p>
+          </>
+        ) : (
+          <div class="mt-8 text-center">
+            <p class="text-sm italic text-neutral-600">
+              No bottles curated for {market?.data.name ?? 'this market'} yet — start from a grape
+              that's widely poured here:
+            </p>
+            <ul class="mt-5 grid gap-3 sm:grid-cols-2 text-left">
+              {fallbackGrapes.map((g) => (
+                <li>
+                  <a
+                    href={`/grape/${g.id}`}
+                    class="block h-full rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-4 transition hover:border-neutral-400 hover:bg-white"
+                  >
+                    <p class="font-display text-xl font-semibold leading-tight">{g.data.name}</p>
+                    <p class="mt-1 text-sm italic text-neutral-700 leading-snug">{g.data.tagline}</p>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )
+      }
     </section>
   </main>
 
@@ -362,6 +441,17 @@ const countries = [
           applyFilter(p.dataset.country || '');
         });
       });
+
+      // Market selector — persist the choice (overrides geo) and re-render the
+      // localized feed server-side on reload.
+      const marketSelect = document.getElementById('market-select');
+      if (marketSelect) {
+        marketSelect.addEventListener('change', () => {
+          const code = encodeURIComponent(marketSelect.value);
+          document.cookie = `pc_market=${code}; path=/; max-age=31536000; samesite=lax`;
+          window.location.reload();
+        });
+      }
     }
     document.addEventListener('astro:page-load', initPaircraftHome);
   </script>
