@@ -33,6 +33,9 @@ pedagogicalRole: Sparkling wine; teaches bubbles, freshness, fried food and aper
 availability:
   note: Listed in Colombia retail examples such as Dislicores
   sourceUrl: https://www.dislicores.com/vino-espumoso-prosecco-mionetto-brut-glera-ref140015/p
+markets:
+  - CO
+  - NL
 recommendedPairings:
   - fried appetizers
   - seafood

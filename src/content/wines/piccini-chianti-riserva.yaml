@@ -33,6 +33,9 @@ pedagogicalRole: Acidic red; teaches why Sangiovese works with tomato and savory
 availability:
   note: Listed in Colombia retail examples such as Dislicores
   sourceUrl: https://www.dislicores.com/vino-tinto-docg-piccini-chianti-ref153031/p
+markets:
+  - CO
+  - NL
 recommendedPairings:
   - pasta with tomato sauce
   - pizza

@@ -32,6 +32,9 @@ pedagogicalRole: Textural white; teaches body, creaminess and oak in white wine
 availability:
   note: Listed in Colombia retail examples such as Dislicores
   sourceUrl: https://www.dislicores.com/vino-blanco-enate-chardonnay---ref259001/p
+markets:
+  - CO
+  - NL
 recommendedPairings:
   - salmon
   - roasted chicken
