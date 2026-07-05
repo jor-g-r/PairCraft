@@ -1,0 +1,309 @@
+{
+  "mionetto-prosecco-brut": {
+    "name": "Mionetto Prosecco Brut",
+    "foundAt": [
+      {
+        "retailer": "Éxito",
+        "name": "Vino MIONETTO   (750  ml)",
+        "priceCop": null,
+        "url": "https://www.exito.com/vino-rosa-extdry-prestige-739908/p"
+      },
+      {
+        "retailer": "Carulla",
+        "name": "Vino MIONETTO   (750  ml)",
+        "priceCop": null,
+        "url": "https://www.carulla.com/vino-rosa-extdry-prestige-739908/p"
+      },
+      {
+        "retailer": "Jumbo",
+        "name": "Vino Espumoso Mionetto Prosecco Brut 750ml",
+        "priceCop": 95800,
+        "url": "https://www.jumbocolombia.com/vino-espumoso-mionetto-prosecco-brut-750ml-34924/p"
+      },
+      {
+        "retailer": "Olímpica",
+        "name": "Vino Espumoso Mionetto Prosecco Doc Treviso 750 Ml",
+        "priceCop": 95000,
+        "url": "https://www.olimpica.com/vino-espum-mionetto-proseco-750-ml/p"
+      },
+      {
+        "retailer": "Dislicores",
+        "name": "Mionetto 750ml + Martino Blanco + Copa Balon",
+        "priceCop": 131990,
+        "url": "https://www.dislicores.com/mionetto-750ml-martino-blanco-copa-balon-ref-of140005/p"
+      }
+    ]
+  },
+  "castillo-de-molina-sauvignon-blanc": {
+    "name": "Castillo de Molina Sauvignon Blanc Reserva",
+    "foundAt": [
+      {
+        "retailer": "Éxito",
+        "name": "Vino tinto CASTILLO DE MOLINA gran reserva merlot Merlot (750  ml)",
+        "priceCop": 97700,
+        "url": "https://www.exito.com/vino-tinto-merlot-castillo-x-750ml-349818/p"
+      },
+      {
+        "retailer": "Carulla",
+        "name": "Vino tinto CASTILLO DE MOLINA gran reserva merlot Merlot (750  ml)",
+        "priceCop": 98700,
+        "url": "https://www.carulla.com/vino-tinto-merlot-castillo-x-750ml-349818/p"
+      },
+      {
+        "retailer": "Jumbo",
+        "name": "Vino Tinto Castillo Molina Merlot G.Reserva 750ml",
+        "priceCop": 101990,
+        "url": "https://www.jumbocolombia.com/vino-tinto-castillo-molina-merlot-g-reserva-750ml-122733/p"
+      },
+      {
+        "retailer": "Olímpica",
+        "name": "Vino Tinto Castillo de Molina Pinot Noir 750 Ml",
+        "priceCop": 99000,
+        "url": "https://www.olimpica.com/-d-vino-castillo-molina-pinot-noir-750ml/p"
+      },
+      {
+        "retailer": "Dislicores",
+        "name": "Vino Tinto Castillo De Molina Reserva Pinot Noir",
+        "priceCop": 89500,
+        "url": "https://www.dislicores.com/vino-tinto-castillo-de-molina-reserva-pinot-noir-ref100219/p"
+      }
+    ]
+  },
+  "catena-malbec": {
+    "name": "Catena Malbec",
+    "foundAt": [
+      {
+        "retailer": "Éxito",
+        "name": "Vino tinto CATENA ZAPATA appellation la consulta Malbec (750  ml)",
+        "priceCop": 176400,
+        "url": "https://www.exito.com/vino-tinto-appellation-malbec-catena-zapata-750-ml-3010299/p"
+      },
+      {
+        "retailer": "Carulla",
+        "name": "Vino tinto CATENA ZAPATA appellation la consulta Malbec (750  ml)",
+        "priceCop": 194400,
+        "url": "https://www.carulla.com/vino-tinto-appellation-malbec-catena-zapata-750-ml-3010299/p"
+      },
+      {
+        "retailer": "Jumbo",
+        "name": "Vino Tinto Catena Malbec 750ml",
+        "priceCop": 176990,
+        "url": "https://www.jumbocolombia.com/vino-tinto-catena-malbec-750ml-41446/p"
+      },
+      {
+        "retailer": "Olímpica",
+        "name": "Vino Tinto Catena Malbec 750 Ml",
+        "priceCop": 162800,
+        "url": "https://www.olimpica.com/vino-tinto-catena-malbec-750-ml-7794450008053-1256706/p"
+      },
+      {
+        "retailer": "Vinos El Kiosco",
+        "name": "Vino Tinto Catena Zapata Nicasia Vineyard",
+        "priceCop": 99900,
+        "url": "https://www.vinoselkiosco.com/tienda/vino-tinto-catena-zapata-nicasia-vineyard/"
+      }
+    ]
+  },
+  "gato-negro-blanco-dulce": {
+    "name": "Gato Negro Blanco Dulce",
+    "foundAt": [
+      {
+        "retailer": "Éxito",
+        "name": "Vino tinto GATO NEGRO sweet Otra Cepa (750  ml)",
+        "priceCop": 41000,
+        "url": "https://www.exito.com/vino-tinto-gato-negro-sweet-otra-cepa-750-ml-3209561/p"
+      },
+      {
+        "retailer": "Carulla",
+        "name": "Vino tinto GATO NEGRO merlot Merlot (750  ml)",
+        "priceCop": 54900,
+        "url": "https://www.carulla.com/vino-tinto-merlot-gato-negro-x-750ml-35475/p"
+      },
+      {
+        "retailer": "Jumbo",
+        "name": "Vino Tinto Gato Negro Dulce Blend 750ml",
+        "priceCop": 43990,
+        "url": "https://www.jumbocolombia.com/vino-tinto-gato-negro-dulce-blend-750ml-363944/p"
+      },
+      {
+        "retailer": "Olímpica",
+        "name": "Vino Tinto Gato Negro Semi Sweet 750 Ml X2 Unds",
+        "priceCop": 56400,
+        "url": "https://www.olimpica.com/vino-gato-negro-tin-semi-sweet-750ml-x2/p"
+      },
+      {
+        "retailer": "Dislicores",
+        "name": "Vino Gato Negro Tinto Dulce",
+        "priceCop": 36990,
+        "url": "https://www.dislicores.com/vino-gato-negro-tinto-dulce-referencia100516/p"
+      }
+    ]
+  },
+  "garzon-marselan-reserva": {
+    "name": "Garzón Marselan Reserva",
+    "foundAt": [
+      {
+        "retailer": "Éxito",
+        "name": "Vino tinto GARZON reserva tannat  (750  ml)",
+        "priceCop": 191900,
+        "url": "https://www.exito.com/vino-tinto-reserva-tannat-garzon-750-ml-3025641/p"
+      },
+      {
+        "retailer": "Carulla",
+        "name": "Vino tinto GARZON reserva tannat  (750  ml)",
+        "priceCop": 201500,
+        "url": "https://www.carulla.com/vino-tinto-reserva-tannat-garzon-750-ml-3025641/p"
+      },
+      {
+        "retailer": "Jumbo",
+        "name": "Vino Tinto Garzon Tannat Reserva 750 ml",
+        "priceCop": 209990,
+        "url": "https://www.jumbocolombia.com/vino-tinto-garzon-tannat-reserva-750-ml-260518/p"
+      },
+      {
+        "retailer": "Olímpica",
+        "name": "Vino Tinto Garzón Cabernet de Corte 750 Ml",
+        "priceCop": 136800,
+        "url": "https://www.olimpica.com/vino-garzon-cabernet-de-corte-750ml-7730951081317-2160300/p"
+      },
+      {
+        "retailer": "Vinos El Kiosco",
+        "name": "Vino Tinto Garzón Cabernet Franc Reserva",
+        "priceCop": 138100,
+        "url": "https://www.vinoselkiosco.com/tienda/cabernet-franc-reserva/"
+      }
+    ]
+  },
+  "leyda-pinot-noir": {
+    "name": "Leyda Pinot Noir",
+    "foundAt": [
+      {
+        "retailer": "Dislicores",
+        "name": "Vino Tinto Leyda Pinot Noir",
+        "priceCop": 262000,
+        "url": "https://www.dislicores.com/vino-tinto-leyda-pinot-noir-ref121090/p"
+      }
+    ]
+  },
+  "piccini-chianti-riserva": {
+    "name": "Piccini Chianti Riserva",
+    "foundAt": [
+      {
+        "retailer": "Éxito",
+        "name": "Vino tinto PICCINI chianti docg  (750  ml)",
+        "priceCop": 47400,
+        "url": "https://www.exito.com/vino-tinto-tuscany-chianti-x-750ml-109948/p"
+      },
+      {
+        "retailer": "Carulla",
+        "name": "Vino tinto PICCINI chianti docg  (750  ml)",
+        "priceCop": null,
+        "url": "https://www.carulla.com/vino-tinto-tuscany-chianti-x-750ml-109948/p"
+      },
+      {
+        "retailer": "Jumbo",
+        "name": "Vino Espumoso Piccini Lambrusco Rosso Regg. 750ml",
+        "priceCop": 58400,
+        "url": "https://www.jumbocolombia.com/vino-espumoso-piccini-lambrusco-rosso-regg--750ml-49668/p"
+      },
+      {
+        "retailer": "Olímpica",
+        "name": "Vino Tinto Piccini Lambrusco Reggniano 750 Ml",
+        "priceCop": 57300,
+        "url": "https://www.olimpica.com/vino-piccini-tint-lambru-regn-doc-750ml/p"
+      },
+      {
+        "retailer": "Dislicores",
+        "name": "Vino Tinto Espumoso Piccini Regno Lambrusco",
+        "priceCop": 52500,
+        "url": "https://www.dislicores.com/vino-tinto-espumoso-piccini-regno-lambrusco-ref153130/p"
+      }
+    ]
+  },
+  "1865-cabernet-sauvignon": {
+    "name": "1865 Cabernet Sauvignon",
+    "foundAt": [
+      {
+        "retailer": "Éxito",
+        "name": "Vino tinto 1865 cabernet sauvignon Cabenet S (750  ml)",
+        "priceCop": 170500,
+        "url": "https://www.exito.com/vino-tinto-cabernet-sauvignon-reserva-2009-x-750ml-349824/p"
+      },
+      {
+        "retailer": "Carulla",
+        "name": "Vino tinto 1865 cabernet sauvignon Cabenet S (750  ml)",
+        "priceCop": 172500,
+        "url": "https://www.carulla.com/vino-tinto-cabernet-sauvignon-reserva-2009-x-750ml-349824/p"
+      },
+      {
+        "retailer": "Jumbo",
+        "name": "Vino 1865 cabernet sauvignon x750ml",
+        "priceCop": 166990,
+        "url": "https://www.jumbocolombia.com/vino-1865-cabernet-sauvignonx750cm3/p"
+      },
+      {
+        "retailer": "Dislicores",
+        "name": "Vino Tinto 1865 Carmenere",
+        "priceCop": 151500,
+        "url": "https://www.dislicores.com/vino-tinto-1865-carmenere--ref100209/p"
+      }
+    ]
+  },
+  "pazo-barrantes-albarino": {
+    "name": "Pazo Barrantes Albariño",
+    "foundAt": [
+      {
+        "retailer": "Dislicores",
+        "name": "Vino Blanco Pazo Barrantes Albariño",
+        "priceCop": 289990,
+        "url": "https://www.dislicores.com/vino-blanco-pazo-barrantes-albarino-ref806001/p"
+      }
+    ]
+  },
+  "ramon-bilbao-crianza": {
+    "name": "Ramón Bilbao Crianza",
+    "foundAt": [
+      {
+        "retailer": "Éxito",
+        "name": "Vino tinto RAMON BILBAO crianza Tempranillo (750  ml)",
+        "priceCop": 88700,
+        "url": "https://www.exito.com/crianza-ramon-bilbao-750-mililitro-15151/p"
+      },
+      {
+        "retailer": "Carulla",
+        "name": "Vino tinto RAMON BILBAO crianza Tempranillo (750  ml)",
+        "priceCop": 89600,
+        "url": "https://www.carulla.com/crianza-ramon-bilbao-750-mililitro-15151/p"
+      },
+      {
+        "retailer": "Jumbo",
+        "name": "Vino Tinto Ramon Bilbao Rioja Crianza 750ml",
+        "priceCop": 90390,
+        "url": "https://www.jumbocolombia.com/vino-tinto-ramon-bilbao-rioja-crianza-750ml-101257/p"
+      },
+      {
+        "retailer": "Olímpica",
+        "name": "Vino Blanco Ramón Bilbao Verdejo 750 Ml",
+        "priceCop": 93000,
+        "url": "https://www.olimpica.com/vino-ramon-bilbao-verdejo-2019-750-ml/p"
+      },
+      {
+        "retailer": "Dislicores",
+        "name": "Vino Tinto Ramón Bilbao Crianza Tempranillo",
+        "priceCop": 83500,
+        "url": "https://www.dislicores.com/vino-tinto-ramon-bilbao-crianza-tempranillo-ref147000/p"
+      }
+    ]
+  },
+  "enate-chardonnay": {
+    "name": "Enate Chardonnay",
+    "foundAt": [
+      {
+        "retailer": "Dislicores",
+        "name": "Vino Tinto Enate Crianza",
+        "priceCop": 115000,
+        "url": "https://www.dislicores.com/vino-tinto-enate-crianza-ref259021/p"
+      }
+    ]
+  }
+}

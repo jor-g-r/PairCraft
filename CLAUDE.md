@@ -2,8 +2,8 @@
 
 Wine and food pairings with short, opinionated explanations — pocket guide style, inspired by Hugh Johnson's *Pocket Wine Book*.
 
-**Live:** https://pair-craft.vercel.app/ (auto-deploys on push to `main` — currently hosts the v1 chat-style MVP, which is being replaced)
-**Status (2026-05-14, EOD):** Full Medellín corpus imported. 11 wines × 12 dishes = 126 pairings drafted in Hugh-voice, schema extended with strategic editorial fields, all Astro-validated. Day-21 demo shippable from current `main`. Canonical plan is `paircraft-mvp-v2.md` (v1 superseded). Pending: user review of generated YAMLs + commit, plus deploy to Vercel.
+**Live:** https://pair-craft.vercel.app/ (auto-deploys on push to `main` — hosts the v2 entity-graph product; the v1 chat MVP is gone)
+**Status (2026-07-05):** **On deliberate pause since 2026-06-18** (last commit). Everything is committed, pushed, and live: full Medellín corpus (11 wines, 126 pairings), search-first home, visual system, and the market-gated feed (CO/VE/CL/AR). The **Day-21 demo for Teo + profesora has NOT happened** — original target 2026-06-02 lapsed, not cancelled; it remains the next milestone and the gate for tier-engine tuning. Canonical plan is `paircraft-mvp-v2.md` (v1 superseded).
 
 ---
 
@@ -43,6 +43,7 @@ Always read `paircraft-mvp-v2.md` first if context is needed beyond what's here.
 - **Headings/wine names:** Playfair Display Variable (`font-display`)
 - **Body:** Open Sans Variable (`font-sans`)
 - Self-hosted via `@fontsource-variable/*`. Theme tokens in `src/styles/global.css`.
+- Shipped foundations (2026-05-14): accent color token, view transitions, scroll reveals, editorial hero photography on home. Visual/branding work is the founder's personal creative outlet — don't plan it for them.
 - Mobile-first responsive. Reference wireframe: Merlot detail page (grape illustration + name + tagline + Sweet/Sour slider + 4 property cards + tri-modal pairing grid + Flavouring/Tannins detail). v0.1 ships only top section + tri-modal grid; rest is v0.2.
 
 ---
@@ -76,55 +77,55 @@ Always read `paircraft-mvp-v2.md` first if context is needed beyond what's here.
 
 ---
 
-## Current state (end of 2026-05-13 — Weeks 1-3 closed)
+## Current state (2026-07-05 — on deliberate pause since 2026-06-18)
 
-Day 21 demo target: **2026-06-02**. Code-side, everything required for that demo is on `main`. The remaining work is user-track (curation expansion + offline tasks).
+Working tree clean, `main` in sync with origin, prod deployed and responding. Two work bursts happened after the last status note: **2026-05-14** (corpus commit + search-first home + visual system) and **2026-06-18** (market-gated feed). Nothing code-side blocks the demo — the open items are user-track.
+
+**Milestone check:** the Day-21 demo (target **2026-06-02**) **did not happen** — lapsed, not cancelled. It is still the next milestone. Consequence: no Teo/profesora feedback exists yet, so tier-engine tuning and the numeric-score decision (Day 36+) remain deliberately blocked.
 
 **What's live in prod (`pair-craft.vercel.app`):**
-- Home `/` — catalog hub: wine cards + chips por grape/region/dish. Sticky "Paircraft" wordmark linked home from every page.
-- `/wine/<slug>`, `/grape/<slug>`, `/region/<slug>`, `/dish/<slug>` — entity pages with cross-navigation, tri-modal pairing groups, Hugh-voice prose rendered in italic Playfair.
-- Tier badges as chips (filled black for Decisive, light for Worth trying, outlined for Risky, hidden for Skip on wine pages, surfaced as "Better choices elsewhere" on dish pages).
-- `robots.txt` Disallow + meta `noindex, nofollow` site-wide. `/debug` removed from prod.
+- Home `/` — **search-first and market-gated**. Typeahead search (global scope, cyclic keyboard nav, a11y-polished), origin pills, filterable wine grid. The grid shows only wines stocked in the visitor's **market**, resolved as: cookie `pc_market` > Vercel `x-vercel-ip-country` header > default `CO`. A visible `<select>` lets the visitor override (sets the cookie, reloads). Markets with no curated bottles fall back to dominant-grape cards. Home is the **only SSR page** (`export const prerender = false`); the rest of the site stays static.
+- `/wine/<slug>`, `/grape/<slug>`, `/region/<slug>`, `/dish/<slug>` — entity pages with cross-navigation, tri-modal pairing groups, Hugh-voice prose in italic Playfair. Wine pages surface flavour notes (primary/secondary/tertiary) and the strategic editorial fields; dish pages likewise.
+- Visual system shipped 2026-05-14: accent token, view transitions, scroll reveals, Catena editorial hero photo on home, `Eyebrow` and `WineGlass` components, site-wide footer with editorial quote + creator credit. Tier badges as chips (filled black Decisive / light Worth trying / outlined Risky / Skip hidden on wine pages, "Better choices elsewhere" on dish pages).
+- Still demo-gated: `robots.txt` `Disallow: /` + meta `noindex, nofollow` site-wide. No `/debug` in prod.
 
 **Engine + infra:**
-- `src/content.config.ts` — 5 collections: `wines`, `grapes`, `regions`, `dishes`, `pairings`. Extended schema includes strategic editorial fields: `style`, `pedagogicalRole`, `availability.{note,sourceUrl}`, `recommendedPairings` (wines); `category`, `cuisineContext`, `pairingLogic`, `recommendedWineStyles`, `notesForDemo` (dishes). All optional for backwards compat. `COOKING_METHOD` enum extended with `boiled`, `simmered`, `sauteed`.
-- `src/lib/rules.ts` — 13 tri-modal rules with `{ mode, strength, predicate }`. `terroir-bridge` predicate is always-false in v1 (no dish-region affinity field yet — re-activates in v0.2).
-- `src/lib/tier.ts` — pure-function tier engine. 6/6 unit tests pass (`bun test src/lib/tier.test.ts`).
-- `src/lib/prompt.ts` — `VOICE` + `serializeRules()` exported, reused by curation.ts.
-- `src/lib/curation.ts` — `draftPairingProse()` + entity drafters (`draftGrape`, `draftRegion`, `draftWine`, `draftDish`) + enrichment helpers (`draftWineCopy`, `draftDishCopy`). **Provider switch via `LLM_PROVIDER` env var** (`anthropic` default, `opencode-go` for cost-test alternate). Provider tested but voice quality favors Anthropic for Hugh-voice — see prior conversation logs if reconsidering.
-- `scripts/draft-pairings.ts` — idempotent (wine × dish) orchestrator.
-- `scripts/draft-entities.ts` — idempotent entity orchestrator. Reads `scripts/seed/{wines,grapes,regions,dishes}.txt` (one name per line), drafts MDX/YAML in dependency order regions→grapes→wines→dishes.
-- `scripts/import-csv.ts` — one-shot CSV importer for Medellín editorial corpus. Reads `scripts/seed/csv/paircraft_{wines,dishes}_medellin.csv`. Auto-derives unique grapes + regions. LLM only for Hugh-voice copy + enum mapping; structural data straight from CSV.
-- `scripts/test-curation.ts` — debug helper. Prints prose for one (wine, dish) without writing. `bun run scripts/test-curation.ts <wine-slug> <dish-slug>`.
+- `src/content.config.ts` — **6 collections:** `wines`, `grapes`, `regions`, `dishes`, `pairings`, `markets`. Wines carry `markets: z.array(z.string()).default(['CO'])` (ISO country codes = where the bottle is *sold*; distinct from origin `region.country`). Markets (`src/content/markets/*.mdx`) carry `code`, `name`, `tagline`, `dominantOrigins`, `dominantGrapes`, `retailers[]`. Strategic editorial fields on wines/dishes as documented before (all optional).
+- `src/lib/rules.ts` — 13 tri-modal rules with `{ mode, strength, predicate }`. Unchanged since May; `terroir-bridge` still always-false in v1 (re-activates in v0.2).
+- `src/lib/tier.ts` — pure-function tier engine. 6/6 unit tests pass (`bun test src/lib/tier.test.ts`). Unchanged since May.
+- `src/lib/prompt.ts` + `src/lib/curation.ts` — unchanged. `LLM_PROVIDER` env switch (`anthropic` default, `opencode-go` alternate; Anthropic wins on Hugh-voice quality).
+- Scripts: `draft-pairings.ts` (idempotent wine×dish orchestrator), `draft-entities.ts` (idempotent entity drafter from `scripts/seed/*.txt`, dep order regions→grapes→wines→dishes), `import-csv.ts` (one-shot Medellín CSV importer), `test-curation.ts` (print one pairing's prose without writing), and `backfill-region-grapes.ts` — idempotent, recomputes `signatureGrapes` per region from the wine corpus. **Already run: regions are backfilled** (commit 8b5c1f3).
+- `scripts/scout-retailers.ts` + **playbook `scripts/market-scout.md`** (added 2026-07-05) — market-scout pipeline for adding/refreshing a country: web-search retailer discovery → platform probe (VTEX dominates LATAM; always query the category tree, never free-text — "vino tinto" matches bedspreads) → catalog scrape → `scripts/seed/scout/` artifacts: per-retailer JSONs, candidates CSV ranked by multi-retailer presence (3+ = market staple), corpus availability cross-check. `--cached` re-ranks without re-scraping. Output is review material — new wines still go through Jorge + `import-csv.ts`; never auto-imports.
 
-**Corpus (post-Medellín import, 2026-05-14):**
-- 11 wines, all anchored to LATAM retail (Carulla, Dislicores, Vinos El Kiosco URLs preserved in `availability.sourceUrl`). Includes: Catena Malbec, 1865 Cab Sauv, Castillo de Molina Sauv Blanc, Enate Chardonnay, Leyda Pinot Noir, Mionetto Prosecco, Pazo Barrantes Albariño, Ramón Bilbao Crianza, Piccini Chianti Riserva, Gato Negro Blanco Dulce, Garzón Marselan Reserva. **No vintages in slugs** — entities represent producer/cuvée archetype, not specific bottlings.
-- 10 grapes, 11 regions (auto-derived from wines CSV during import). Regions have `signatureGrapes: []` because they were processed before grapes (dep-order limitation; manually editable).
-- 12 dishes: 4 legacy (ribeye-grilled, oysters-raw, aged-manchego, fried-calamari) + 8 Medellín (lomo-a-la-parrilla, cerdo-asado, salmon-a-la-parrilla, ceviche, pasta-con-salsa-de-tomate, risotto-de-hongos, pollo-con-mole, tabla-de-quesos).
-- **126 LLM-drafted pairings** (Claude Sonnet 4.6, Hugh-voice). 6 tier=skip combos correctly produce no file (oysters with most reds; engine works).
-- Legacy wines (catena-malbec-2021, pazo-albarino-2022) and their 7 hand-drafted pairings **removed** on 2026-05-14 — new corpus supersedes.
+**Corpus (stable since 2026-06-18):**
+- **11 wines, 11 grapes, 11 regions, 12 dishes, 126 pairings, 4 markets (CO, VE, CL, AR).**
+- Wines: Catena Malbec, 1865 Cab Sauv, Castillo de Molina Sauv Blanc, Enate Chardonnay, Leyda Pinot Noir, Mionetto Prosecco, Pazo Barrantes Albariño, Ramón Bilbao Crianza, Piccini Chianti Riserva, Gato Negro Blanco Dulce, Garzón Marselan Reserva. No vintages in slugs (producer/cuvée archetype, not bottlings). LATAM retail anchors in `availability.sourceUrl`.
+- Dishes: 4 legacy (ribeye-grilled, oysters-raw, aged-manchego, fried-calamari) + 8 Medellín (lomo-a-la-parrilla, cerdo-asado, salmon-a-la-parrilla, ceviche, pasta-con-salsa-de-tomate, risotto-de-hongos, pollo-con-mole, tabla-de-quesos).
+- 126 pairings LLM-drafted (Claude Sonnet 4.6, Hugh-voice); 6 tier=skip combos correctly have no file.
+- **Market tags are deliberately conservative.** All wines are in CO (schema default). VE list **verified by Jorge 2026-06-18** (6 bottles: Catena, 1865, Castillo de Molina, Gato Negro, Leyda, Ramón Bilbao). CL/AR tag only domestic bottles (grown there ⇒ high confidence; AR feed is thin by design — only Catena). The 5 European/Uruguayan wines (Enate, Garzón, Mionetto, Pazo Barrantes, Piccini) stay CO-only until verified elsewhere.
+- **Retailers: CO has 6 verified** (Carulla, Dislicores, Vinos El Kiosco, Éxito, Jumbo, Olímpica — scouted 2026-07-05; **all 11 corpus wines confirmed in CO retail**, evidence + URLs in `scripts/seed/scout/co-corpus-availability.json`; 3 wines are Dislicores-only: Leyda, Pazo Barrantes, Enate). D1/Ara excluded (hard-discount house brands, no online catalog); Euro excluded (API blocked). VE/CL/AR still have `retailers: []` deliberately — no fabricated names; run `scripts/market-scout.md` per country. The future "Recommended Wines" ads slot keys off `markets.retailers`.
+- Market-selection policy (2026-06-18): LATAM-first; a market earns its place only with real curatable data OR a real user living there. Netherlands was a throwaway VPN-test market, added and removed the same day.
 
-**Engine note worth flagging on next iteration:** Tier engine over-fires Decisive — most wines land Decisive against most non-Skip dishes (e.g. 1865 Cab decisive on 11/12 dishes). The rubric over-fires when 2 strong rules activate. Three candidate fixes (deferred to post-Day-21 feedback): raise threshold to 3 strong, require multi-mode coverage, or add anti-rules. Don't tune blindly — wait for Teo + profesora feedback.
+**Engine note (still open, still gated on demo feedback):** Tier engine over-fires Decisive — most wines land Decisive against most non-Skip dishes (e.g. 1865 Cab decisive on 11/12 dishes) because 2 strong rules firing is enough. Candidate fixes: raise threshold to 3 strong, require multi-mode coverage, or add anti-rules. **Don't tune blindly — wait for Teo + profesora feedback from the demo.**
 
-## Tomorrow's possible starting points
+## Reactivation starting points
 
-Pick based on energy + intent. None of these are blockers for shipping the demo.
+The pause is deliberate; when work resumes, these are the live threads in rough priority order:
 
-1. **Review the imported corpus + commit.** 37 new entity files + 126 pairings sit uncommitted on `main`. Read a representative sample (~5 wines + ~10 pairings) for voice/data check before commit. Anything off-voice → delete and re-roll.
-2. **Demo dry-run.** Walk the site end-to-end as if you were profesora. The catalog now has 11 wines instead of 2 — verify cards, chips, detail pages all render. Note anything that breaks the pocket-guide register.
-3. **Backfill `signatureGrapes` in regions (small cleanup).** The 9 new region MDXs have `signatureGrapes: []` due to dep-order during import. Either manually edit each, or write a small script that scans wines and populates the back-refs.
-4. **Pre-feedback rubric prep.** Draft the 3-question feedback script for Teo + profesora (per `paircraft-mvp-v2.md §6` Day-21 plan).
-5. **Offline pending (v1 §12, deadlines drifting):** name 5 B2C Pool B contacts (deadline 2026-05-18), name 3 CUHELAV alumni for Founder's Cut, informal trademark search "Paircraft".
+1. **Do the Day-21 demo** (overdue since 2026-06-02). It's shippable from `main` as-is. Prep = draft the 3-question feedback script for Teo + profesora (`paircraft-mvp-v2.md §6`) + a dry-run walk of the site in demo register.
+2. **Post-demo: tier-engine tuning** with real feedback (see engine note above). This also unblocks the Day-36+ numeric-score decision.
+3. **Run the market-scout playbook for VE/CL/AR** (`scripts/market-scout.md`; CO done 2026-07-05 — 6 retailers, 2594 candidates, 11/11 corpus wines confirmed). VE will need more manual/browser work (thin retail e-commerce). Corpus-expansion review material: `scripts/seed/scout/co-candidates.csv`.
+4. **Offline tasks** (see below — domain purchase deadline already lapsed).
 
 ---
 
-## Pending offline tasks (don't block Week 2)
+## Offline tasks (user-track; statuses as of 2026-07-05)
 
-From `paircraft-mvp.md §12`:
+From `paircraft-mvp.md §12/§14/§15`:
 
-- §12.2 — Buy domain. Deferred by user to next month (June 2026). Order: `paircraft.com` → `.app` → `.ai` → `.co`.
-- §12.3 — Fill 5 named B2C buyers in `paircraft-mvp.md §7 Pool B`. Deadline: 2026-05-18 (Week 2 close).
-- §14.7 — Name 3 CUHELAV alumni for the Founder's Cut affiliate experiment. Deadline: 2026-05-25. Top candidate already in doc: Teo (De la Capellanía).
-- §15.6 — Informal trademark search "Paircraft" in USPTO TESS + EUIPO + INPI/IMPI (CO/MX). Deadline: 2026-05-25. Free, ~30 min.
+- §15.6 — Informal trademark search "Paircraft" (USPTO TESS + EUIPO + INPI/IMPI). **DONE** (confirmed 2026-07-05; outcome not recorded — note here if anything surfaced).
+- §12.2 — Buy domain. **Pending; June 2026 target lapsed.** Order: `paircraft.com` → `.app` → `.ai` → `.co`.
+- §12.3 — Fill 5 named B2C buyers in `paircraft-mvp.md §7 Pool B`. **Pending; deadline 2026-05-18 lapsed.**
+- §14.7 — Name 3 CUHELAV alumni for the Founder's Cut affiliate experiment. **Pending; deadline 2026-05-25 lapsed.** Top candidate already in doc: Teo (De la Capellanía).
 
-These are user-execution tasks; Claude doesn't need to drive them.
+These are user-execution tasks; Claude doesn't need to drive them, but should surface the lapsed ones when the project reactivates.

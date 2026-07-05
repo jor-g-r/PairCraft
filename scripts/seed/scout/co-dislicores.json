@@ -1,0 +1,3566 @@
+[
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Ramón Bilbao Crianza Tempranillo",
+    "brand": "Ramón Bilbao",
+    "type": "tinto",
+    "priceCop": 83500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-ramon-bilbao-crianza-tempranillo-ref147000/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Rosaleda Merlot",
+    "brand": "Rosaleda",
+    "type": "tinto",
+    "priceCop": 21500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-rosaleda-merlot-ref100331/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Espumoso Piccini Regno Lambrusco",
+    "brand": "Piccini",
+    "type": "tinto",
+    "priceCop": 52500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-espumoso-piccini-regno-lambrusco-ref153130/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Trapiche Merlot Reserva",
+    "brand": "Trapiche",
+    "type": "tinto",
+    "priceCop": 78500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-trapiche-merlot-reserva-ref120144/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Trapiche Reserva Malbec",
+    "brand": "Trapiche",
+    "type": "tinto",
+    "priceCop": 78500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-trapiche-reserva-malbec-ref120140/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Trapiche Fino Malbec",
+    "brand": "Trapiche",
+    "type": "tinto",
+    "priceCop": 55990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-trapiche-fino-malbec--ref120120/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Trapiche Broquel Malbec",
+    "brand": "Trapiche",
+    "type": "tinto",
+    "priceCop": 102000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-trapiche-broquel-malbec-ref120080/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto La Celia Reserva Malbec",
+    "brand": "La Celia",
+    "type": "tinto",
+    "priceCop": 74990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-la-celia-reserva-malbec-ref109220/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Dadá 2 Merlot",
+    "brand": "Dadá",
+    "type": "tinto",
+    "priceCop": 67500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-dada-2-merlot-ref108125/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Dadá 1 Bonarda Malbec",
+    "brand": "Dadá",
+    "type": "tinto",
+    "priceCop": 67500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-dada-1-bonarda-malbec-ref108120/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Las Moras  Reserva Malbec",
+    "brand": "Las Moras",
+    "type": "tinto",
+    "priceCop": 80990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-las-moras--reserva-malbec-ref108030/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Las Moras Malbec",
+    "brand": "Las Moras",
+    "type": "tinto",
+    "priceCop": 59000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-las-moras-malbec---ref108015/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Rosaleda Cabernet Sauvignon",
+    "brand": "Rosaleda",
+    "type": "tinto",
+    "priceCop": 21500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-rosaleda-cabernet-sauvignon-ref100330/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Muga Reserva Tempranillo",
+    "brand": "Muga",
+    "type": "tinto",
+    "priceCop": 208990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-muga-reserva-tempranillo-ref265051/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Tarapacá Reserva Carmenére",
+    "brand": "Tarapacá",
+    "type": "tinto",
+    "priceCop": 75500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-tarapaca-reserva-carmenere--ref176003/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Ramón Bilbao Gran Reserva",
+    "brand": "Ramón Bilbao",
+    "type": "tinto",
+    "priceCop": 192990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-ramon-bilbao-gran-reserva-tempranillo-graciano-mazuelo-ref147017/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Yellow Tail Shiraz",
+    "brand": "Yellow Tail",
+    "type": "tinto",
+    "priceCop": 59990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-yellow-tail-shiraz-ref129005/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Navarro Correas Colección Privada Malbec",
+    "brand": "Navarro Correas",
+    "type": "tinto",
+    "priceCop": 99500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-navarro-correas-coleccion-privada-malbec-ref128003/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Trapiche Varietal Merlot",
+    "brand": "Trapiche",
+    "type": "tinto",
+    "priceCop": 55990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-trapiche-varietal-merlot-ref120065/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Trapiche Varietal Cabernet Sauvignon",
+    "brand": "Trapiche",
+    "type": "tinto",
+    "priceCop": 55990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-trapiche-varietal-cabernet-sauvignon-ref120060/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto La Celia Reserva Malbec Cabernet Franc",
+    "brand": "La Celia",
+    "type": "tinto",
+    "priceCop": 74990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-la-celia-reserva-malbec-cabernet-franc-ref109219/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Michel Torino Malbec",
+    "brand": "Michel Torino",
+    "type": "tinto",
+    "priceCop": 58990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-michel-torino-malbec-ref108026/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Los Intocables Malbec",
+    "brand": "Las Moras",
+    "type": "tinto",
+    "priceCop": 91500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-los-intocables-malbec-ref108003/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Carolina Reservado Merlot",
+    "brand": "Santa Carolina",
+    "type": "tinto",
+    "priceCop": 51000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-carolina-reservado-merlot-ref102027/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Carolina Cabernet Sauvignon Merlot",
+    "brand": "Santa Carolina",
+    "type": "tinto",
+    "priceCop": 51000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-carolina-cabernet-sauvignon-merlot-ref102023/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Helena Varietal Carmenére",
+    "brand": "Santa Helena",
+    "type": "tinto",
+    "priceCop": 46990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-helena-varietal-carmenere--ref100405/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Castillo De Molina Reserva Pinot Noir",
+    "brand": "Castillo de Molina",
+    "type": "tinto",
+    "priceCop": 89500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-castillo-de-molina-reserva-pinot-noir-ref100219/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Castillo De Molina Reserva Carmenere",
+    "brand": "Castillo de Molina",
+    "type": "tinto",
+    "priceCop": 89500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-castillo-de-molina-reserva-carmenere-ref100213/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Marqués De Murrieta Reserva",
+    "brand": "Marqués de Murrieta",
+    "type": "tinto",
+    "priceCop": 191500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-marques-de-murrieta-reserva-ref806004/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Luigi Bosca Malbec",
+    "brand": "LUIGI BOSCA",
+    "type": "tinto",
+    "priceCop": 105500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-luigi-bosca-malbec-ref338003/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino tinto Muga El Andén de la Estación 2019 Tempranillo Garnacha",
+    "brand": "Muga",
+    "type": "tinto",
+    "priceCop": 117990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-muga-el-anden-de-la-estacion-2019-tempranillo-garnacha-ref265013/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Pago De Capellanes Crianza Tempranillo",
+    "brand": "Pago de los Capellanes",
+    "type": "tinto",
+    "priceCop": 252990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-pago-de-capellanes-crianza-tempranillo-ref207001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Pago De Capellanes Joven Tempranillo",
+    "brand": "Pago de los Capellanes",
+    "type": "tinto",
+    "priceCop": 149500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-pago-de-capellanes-joven-tempranillo-ref207000/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Tarapaca Varietal Merlot",
+    "brand": "Tarapacá",
+    "type": "tinto",
+    "priceCop": 58990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-tarapaca-varietal-merlot-ref176008/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Tarapacá Reserva Cabernet Sauvignon",
+    "brand": "Tarapacá",
+    "type": "tinto",
+    "priceCop": 75500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-tarapaca-reserva-cabernet-sauvignon--ref176005/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Cousiño Macul Don Luis Cabernet Sauvignon",
+    "brand": "Cousiño Macul",
+    "type": "tinto",
+    "priceCop": 70500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-cousino-macul-don-luis-cabernet-sauvignon-ref161015/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Cousiño Macul Don Luis Merlot",
+    "brand": "Cousiño Macul",
+    "type": "tinto",
+    "priceCop": 70500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-cousino-macul-don-luis-merlot-ref161009/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Piccini Memoro Varietal",
+    "brand": "Piccini",
+    "type": "tinto",
+    "priceCop": 68500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-piccini-memoro-varietal-ref153121/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Ramón Bilbao Edición Limitada",
+    "brand": "Ramón Bilbao",
+    "type": "tinto",
+    "priceCop": 113990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-ramon-bilbao-edicion-limitida-147022/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Ramón Bilbao Reserva Tempranillo Graciano Mazuelo",
+    "brand": "Ramón Bilbao",
+    "type": "tinto",
+    "priceCop": 143990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-ramon-bilbao-reserva-tempranillo-graciano-mazuelo-ref147001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Navarro Correas Colección Privada Blend Malbec Cabernet Sauvignon Merlot",
+    "brand": "Navarro Correas",
+    "type": "tinto",
+    "priceCop": 99500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-navarro-correas-coleccion-privada-blend-malbec-cabernet-sauvignon-merlot-ref128004/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Trapiche Medalla Malbec",
+    "brand": "Trapiche",
+    "type": "tinto",
+    "priceCop": 136990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-trapiche-medalla-malbec-ref120002/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Pata Negra Reserva Tempranillo",
+    "brand": "Pata Negra",
+    "type": "tinto",
+    "priceCop": 59990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-pata-negra-reserva-tempranillo-ref115082/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Pata Negra Roble Tempranillo",
+    "brand": "Pata Negra",
+    "type": "tinto",
+    "priceCop": 49990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-pata-negra-roble-tempranillo-ref115081/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Don Simón Selección Tempranillo",
+    "brand": "Don Simón",
+    "type": "tinto",
+    "priceCop": 24990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-don-simon-seleccion-tempranillo-ref115065/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto La Celia Reserva Pioneer Cabernet Sauvignon",
+    "brand": "La Celia",
+    "type": "tinto",
+    "priceCop": 108500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-la-celia-reserva-pioneer-cabernet-sauvignon-ref109120/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto La Celia Cabernet Sauvignon Reserva",
+    "brand": "La Celia",
+    "type": "tinto",
+    "priceCop": 74990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-la-celia-cabernet-sauvignon-reserva-ref109113/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Dadá 3 Cabernet Sauvignon Syrah",
+    "brand": "Dadá",
+    "type": "tinto",
+    "priceCop": 67500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-dada-3-cabernet-sauvignon-syrah-ref108130/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Las Moras Reserva Cabernet Sauvignon Syrah",
+    "brand": "Las Moras",
+    "type": "tinto",
+    "priceCop": 80990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-las-moras-reserva-cabernet-sauvignon-syrah-ref108035/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Las Moras Bonarda",
+    "brand": "Las Moras",
+    "type": "tinto",
+    "priceCop": 59000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-las-moras-bonarda-ref108020/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Las Moras Cabernet Sauvignon",
+    "brand": "Las Moras",
+    "type": "tinto",
+    "priceCop": 59000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-las-moras-cabernet-sauvignon-ref108001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Fino Cepa 21 Tempranillo",
+    "brand": "Cepa 21",
+    "type": "tinto",
+    "priceCop": 211990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-fino-cepa-21-tempranillo-ref107025/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Jp Chenet Varietal Merlot",
+    "brand": "JP Chenet",
+    "type": "tinto",
+    "priceCop": 61990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-jp-chenet-varietal-merlot--ref106135/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Entrecote Varietal",
+    "brand": "Entrecote",
+    "type": "tinto",
+    "priceCop": 77500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-entrecote-varietal-ref106029/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Carolina Reserva Carmenére",
+    "brand": "Santa Carolina",
+    "type": "tinto",
+    "priceCop": 75500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-carolina-reserva-carmenere-ref102048/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Carolina Reservado Carmenére",
+    "brand": "Santa Carolina",
+    "type": "tinto",
+    "priceCop": 51000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-carolina-reservado-carmenere---ref102030/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Carolina Cabernet Sauvignon Reservado",
+    "brand": "Santa Carolina",
+    "type": "tinto",
+    "priceCop": 51000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-carolina-cabernet-sauvignon-reservado---ref102024/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Helena Varietal Merlot",
+    "brand": "Santa Helena",
+    "type": "tinto",
+    "priceCop": 46990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-helena-varietal-merlot--ref100409/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Helena Varietal Cabernet Sauvignon",
+    "brand": "Santa Helena",
+    "type": "tinto",
+    "priceCop": 46990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-helena-varietal-cabernet-sauvignon--ref100408/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto 1865 Carmenere",
+    "brand": "1865",
+    "type": "tinto",
+    "priceCop": 151500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-1865-carmenere--ref100209/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino La Linda Malbec",
+    "brand": "LUIGI BOSCA",
+    "type": "tinto",
+    "priceCop": 67990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-la-linda-malbec-ref338014/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Escorihuela Gascon Malbec",
+    "brand": "ESCORIHUELA GASCON",
+    "type": "tinto",
+    "priceCop": 109000,
+    "available": true,
+    "url": "https://www.dislicores.com/vinoe-scorihuela-gascon-malbec-ref303008/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto La Piu Belle",
+    "brand": "Vik",
+    "type": "tinto",
+    "priceCop": 622000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-la-piu-belle-ref269002/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Belle Glos Clark & Telephone",
+    "brand": "Belle Gloss",
+    "type": "tinto",
+    "priceCop": 344500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-belle-gloss-clark-y-telephone-ref263003/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Enate Crianza",
+    "brand": "Enate",
+    "type": "tinto",
+    "priceCop": 115000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-enate-crianza-ref259021/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Tarapaca Varietal Cabernet Sauvignon",
+    "brand": "Tarapacá",
+    "type": "tinto",
+    "priceCop": 58990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-tarapaca-varietal-cabernet-sauvignon-ref176007/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Tarapacá Reserva Merlot",
+    "brand": "Tarapacá",
+    "type": "tinto",
+    "priceCop": 75500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-tarapaca-reserva-merlot--ref176006/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Ramón Bilbao Orgánico",
+    "brand": "Ramón Bilbao",
+    "type": "tinto",
+    "priceCop": 83500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-ramon-bilbao-organic-ref147020/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Joel Gott Pinot Noir",
+    "brand": "Joel Gott",
+    "type": "tinto",
+    "priceCop": 116500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-joel-gott-pinot-noir--ref146064/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Joel Gott 815 Cabernet Sauvignon",
+    "brand": "Joel Gott",
+    "type": "tinto",
+    "priceCop": 116500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-joel-gott-815-cabernet-sauvignon-ref146063/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Marques De Vargas",
+    "brand": "Marqués de Vargas",
+    "type": "tinto",
+    "priceCop": 208500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-marques-de-vargas-ref142010/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Yellow Tail Merlot",
+    "brand": "Yellow Tail",
+    "type": "tinto",
+    "priceCop": 59500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-yellow-tail-merlot-ref129010/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Yellow Tail Cabernet Sauvignon",
+    "brand": "Yellow Tail",
+    "type": "tinto",
+    "priceCop": 59990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-yellow-tail-cabernet-suavignon--ref129000/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Navarro Correas Colección Privada Cabernet Sauvignon",
+    "brand": "Navarro Correas",
+    "type": "tinto",
+    "priceCop": 99500,
+    "available": true,
+    "url": "https://www.dislicores.com/navarro-correas-coleccion-privada-malbec-2-porta-vasos-ref-of128000/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Trapiche Reserva Cabernet Sauvingon",
+    "brand": "Trapiche",
+    "type": "tinto",
+    "priceCop": 78500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-trapiche-reserva-cabernet-sauvingon-ref120141/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Trapiche Medalla Cabernet Sauvignon",
+    "brand": "Trapiche",
+    "type": "tinto",
+    "priceCop": 136990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-trapiche-medalla-cabernet-sauvignon-ref120075/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Don Simón Merlot",
+    "brand": "Don Simón",
+    "type": "tinto",
+    "priceCop": 26500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-don-simon-merlot-ref115152/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Pata Negra Esamblaje Cabernet Sauvignon",
+    "brand": "Pata Negra",
+    "type": "tinto",
+    "priceCop": 52500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-pata-negra-esamblaje-cabernet-sauvignon--ref115080/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto La Celia Reserva Pioneer Malbec",
+    "brand": "La Celia",
+    "type": "tinto",
+    "priceCop": 108500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-la-celia-reserva-pioneer-malbec-ref109130/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Las Moras Malbec Piba",
+    "brand": "Las Moras",
+    "type": "tinto",
+    "priceCop": 17990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-las-moras-malbec-piba--ref108071/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Las Moras Black Label Malbec",
+    "brand": "Las Moras",
+    "type": "tinto",
+    "priceCop": 115990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-las-moras-black-label-malbec-ref108040/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Las Moras Orgánico Malbec",
+    "brand": "Las Moras",
+    "type": "tinto",
+    "priceCop": 71500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-las-moras-organico-malbec-ref108009/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Los Intocables Cabernet Sauvignon",
+    "brand": "Las Moras",
+    "type": "tinto",
+    "priceCop": 91500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-los-intocables-cabernet-sauvignon-ref108002/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Emilio Moro Tempranillo",
+    "brand": "Emilio Moro",
+    "type": "tinto",
+    "priceCop": 195990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-emilio-moro-tempranillo-ref107020/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Emilio Moro Finca Resalso Tempranillo",
+    "brand": "Emilio Moro",
+    "type": "tinto",
+    "priceCop": 111990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-emilio-moro-finca-resalso-tempranillo-ref107005/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Jp Chenet Varietal Merlot Piba",
+    "brand": "JP Chenet",
+    "type": "tinto",
+    "priceCop": 19500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-jp-chenet-varietal-merlot-piba-ref106140/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Carolina Reserva Merlot",
+    "brand": "Santa Carolina",
+    "type": "tinto",
+    "priceCop": 75500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-carolina-reserva-merlot-ref102051/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Carolina Assemblage",
+    "brand": "Santa Carolina",
+    "type": "tinto",
+    "priceCop": 74990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-carolina-assemblage-ref102013/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Gato Negro Tinto Dulce",
+    "brand": "Gato Negro",
+    "type": "tinto",
+    "priceCop": 36990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-gato-negro-tinto-dulce-referencia100516/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Santa Helena Varietal Cabernet Sauvignon",
+    "brand": "Santa Helena",
+    "type": "tinto",
+    "priceCop": 46990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-santa-helena-varietal-cabernet-sauvignon-ref100410/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Helena Reserva Merlot",
+    "brand": "Santa Helena",
+    "type": "tinto",
+    "priceCop": 65500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-helena-reserva-merlot-ref100403/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Helena Reserva Carmenére",
+    "brand": "Santa Helena",
+    "type": "tinto",
+    "priceCop": 65500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-helena-reserva-carmenere-ref100399/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto 1865 Cabernet Sauvignon",
+    "brand": "1865",
+    "type": "tinto",
+    "priceCop": 151500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-1865-cabernet-sauvignon-ref100218/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Gato Negro Varietal Cabernet Sauvignon",
+    "brand": "Gato Negro",
+    "type": "tinto",
+    "priceCop": 52500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-gato-negro-varietal-cabernet-sauvignon-ref100207/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto 9 Lives Reserva Ensamblaje Cabernet Sauvignon Syrah",
+    "brand": "Gato Negro",
+    "type": "tinto",
+    "priceCop": 73990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-9-lives-reserva-ensamblaje-cabernet-sauvignon-syrah-ref100190/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Gato Negro 9 Lives Reserva Cabernet Sauvignon",
+    "brand": "Gato Negro",
+    "type": "tinto",
+    "priceCop": 73990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-gato-negro-9-lives-reserva-cabernet-sauvignon-ref100188/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Gato Negro Varietal Merlot",
+    "brand": "Gato Negro",
+    "type": "tinto",
+    "priceCop": 52500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-gato-negro-varietal-merlot--ref100165/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto La Huerta Merlot",
+    "brand": "La Huerta",
+    "type": "tinto",
+    "priceCop": 39990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-la-huerta-merlot-ref100160/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Gato Negro Varietal Malbec",
+    "brand": "Gato Negro",
+    "type": "tinto",
+    "priceCop": 52500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-gato-negro-varietal-malbec--ref100117/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Castillo De Molina Cabernet Sauvignon",
+    "brand": "Castillo de Molina",
+    "type": "tinto",
+    "priceCop": 89500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-castillo-de-molina-cabernet-sauvignon-ref100081/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto La Celia Reserva Pioneer Malbec",
+    "brand": "La Celia",
+    "type": "tinto",
+    "priceCop": 59990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-la-celia-reserva-pioneer-malbec-ref65/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Luigi Bosca De Sangre Malbec",
+    "brand": "LUIGI BOSCA",
+    "type": "tinto",
+    "priceCop": 134500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-luigi-bosca-de-sangre-malbec-ref338004/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Escorihuela Gascon Gran Reserva Malbec",
+    "brand": "ESCORIHUELA GASCON",
+    "type": "tinto",
+    "priceCop": 167500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-escorihuela-gascon-gran-reserva-malbec-ref303014/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Escorihuela Gascon Pinot Noir",
+    "brand": "ESCORIHUELA GASCON",
+    "type": "tinto",
+    "priceCop": 109000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-escorihuela-gascon-pinor-noir-ref303012/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Louis Jadot Red Bourgogne",
+    "brand": "LOUIS JADOT",
+    "type": "tinto",
+    "priceCop": 184500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-louis-jadot-red-bourgogne-ref266001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Muga Selección Especial Tempranillo",
+    "brand": "Muga",
+    "type": "tinto",
+    "priceCop": 313500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-muga-seleccion-especial-tempranillo-ref265041/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Muga Reserva Tempranillo Media Botella",
+    "brand": "Muga",
+    "type": "tinto",
+    "priceCop": 118000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-muga-reserva-tempranillo-media-botella-ref265003/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Hacienda Monasterio Ribera Duero Cosecha",
+    "brand": "Hacienda Monasterio",
+    "type": "tinto",
+    "priceCop": 343500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-hacienda-monasterio-ribera-duero-cosecha-ref210001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Pago De Capellanes Reserva Tempranillo",
+    "brand": "Pago de los Capellanes",
+    "type": "tinto",
+    "priceCop": 403500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-pago-de-capellanes-reserva-tempranillo-ref207002/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Cousiño Macul Don Luis Carmenere",
+    "brand": "Cousiño Macul",
+    "type": "tinto",
+    "priceCop": 70500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-cousino-macul-don-luis-carmenere-ref161010/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Ramón Bilbao Crianza Tempranillo Media Botella",
+    "brand": "Ramón Bilbao",
+    "type": "tinto",
+    "priceCop": 45990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-ramon-bilbao-crianza-tempranillo-media-botella-ref147011/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Alegoria Navarro Gran Reserva Malbec",
+    "brand": "Navarro Correas",
+    "type": "tinto",
+    "priceCop": 208500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-alegoria-navarro-gran-reserva-malbec-ref128010/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Trapiche Broquel Cabernet Sauvignon",
+    "brand": "Trapiche",
+    "type": "tinto",
+    "priceCop": 102000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-trapiche-broquel-cabernet-sauvignon-ref120085/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Alma Mora Malbec",
+    "brand": "Alma Mora",
+    "type": "tinto",
+    "priceCop": 78500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-alma-mora-malbec-ref108160/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Intis Malbec",
+    "brand": "Intis",
+    "type": "tinto",
+    "priceCop": 29000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-intis-malbec-ref108022/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Hito Fino Tempranillo",
+    "brand": "Hito",
+    "type": "tinto",
+    "priceCop": 118500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-hito-fino-tempranillo-ref107030/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Emilio Moro Malleolus Tempranillo",
+    "brand": "Emilio Moro",
+    "type": "tinto",
+    "priceCop": 353000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-emilio-moro-malleolus-tempranillo-ref107010/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino tinto Santa Carolina Gran Reserva Carmenere",
+    "brand": "Santa Carolina",
+    "type": "tinto",
+    "priceCop": 113500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-carolina-gran-reserva-carmenere-ref102054/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Helena Gran Reserva Merlot",
+    "brand": "Santa Helena",
+    "type": "tinto",
+    "priceCop": 95500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-helena-gran-reserva-merlot--ref100396/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Helena Gran Reserva Carmenére",
+    "brand": "Santa Helena",
+    "type": "tinto",
+    "priceCop": 95500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-helena-gran-reserva-carmenere--ref100394/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Helena Varietal Cabernet Sauvignon Media Botella",
+    "brand": "Santa Helena",
+    "type": "tinto",
+    "priceCop": 25990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-helena-varietal-cabernet-sauvignon-media-botella-ref100393/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Gato Negro Varietal Cabernet Sauvignon Media botella",
+    "brand": "Gato Negro",
+    "type": "tinto",
+    "priceCop": 28990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-gato-negro-varietal-cabernet-sauvignon-media-botella-ref100186/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto La Huerta Cabernet Sauvignon",
+    "brand": "La Huerta",
+    "type": "tinto",
+    "priceCop": 39990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-la-huerta-cabernet-sauvignon-ref100135/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Ramon Bilbao Crianza + Ramon Bilbao Verdejo",
+    "brand": "Ramón Bilbao",
+    "type": "tinto",
+    "priceCop": 141990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-ramon-bilbao-crianza-ramon-bilbao-verdejo-ref-of147000/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Las Moras Malbec Barrel Mas Copa Restaurant",
+    "brand": "Las Moras",
+    "type": "tinto",
+    "priceCop": 79990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-las-moras-malbec-barrel-mas-copa-restaurant-ref-of108017/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Jp Divine Brut Chardonnay mas Copa Espiral",
+    "brand": "JP Chenet",
+    "type": "tinto",
+    "priceCop": 86500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-jp-divine-brut-chardonnay-mas-copa-espiral-ref-of106076/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Cata Vertical 170 Aniversario caja x6",
+    "brand": "Marqués de Murrieta",
+    "type": "tinto",
+    "priceCop": 1735990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-cata-vertical-170-aniversario-caja-x6-ref806011/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Dalmau Reserva Marques De Murrieta",
+    "brand": "Dalmau",
+    "type": "tinto",
+    "priceCop": 1168000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-dalmau-reserva-marques-de-murrieta-ref806008/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Maqués De Murrieta Gran Reserva",
+    "brand": "Marqués de Murrieta",
+    "type": "tinto",
+    "priceCop": 426990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-maques-de-murrieta-gran-reserva-ref806003/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Marqués De Murrieta Castillo Ygay",
+    "brand": "Marqués de Murrieta",
+    "type": "tinto",
+    "priceCop": 1495990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-marques-de-murrieta-castillo-ygay-ref806002/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino La Linda Cabernet Sauvignon",
+    "brand": "LUIGI BOSCA",
+    "type": "tinto",
+    "priceCop": 67990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-la-linda-cabernet-sauvignon-ref338015/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Luigi Bosca Paraiso Malbec-Cabernet",
+    "brand": "LUIGI BOSCA",
+    "type": "tinto",
+    "priceCop": 544990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-luigi-bosca-malbec-cabernet-ref338010/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Luigi Bosca De Sangre Cabernet Sauvignon",
+    "brand": "LUIGI BOSCA",
+    "type": "tinto",
+    "priceCop": 134500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-luigi-bosca-de-sangre-cabernet-sauvigon-ref338008/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Luigi Bosca De Sangre Cabernet Franc",
+    "brand": "LUIGI BOSCA",
+    "type": "tinto",
+    "priceCop": 134500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-luigi-bosca-de-sangre-cabernet-franc-ref338007/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Luigi Bosca Caberenet Sauvignon",
+    "brand": "LUIGI BOSCA",
+    "type": "tinto",
+    "priceCop": 105500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-luigi-bosca-cabernet-sauvigon-ref223002/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Opus One",
+    "brand": "OPUS ONE",
+    "type": "tinto",
+    "priceCop": 3135990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-opus-one-ref326000/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Vik A Carmenere",
+    "brand": "Vik",
+    "type": "tinto",
+    "priceCop": 190500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-vik-a-camenere-ref269004/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Milla Cala",
+    "brand": "Vik",
+    "type": "tinto",
+    "priceCop": 332500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-milla-cala-ref269003/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Vik",
+    "brand": "Vik",
+    "type": "tinto",
+    "priceCop": 1170500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-vik-ref269001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Torre Muga",
+    "brand": "Muga",
+    "type": "tinto",
+    "priceCop": 818990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-torre-muga-ref265061/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Prado Enea Gran Reserva",
+    "brand": "Muga",
+    "type": "tinto",
+    "priceCop": 600990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-prado-enea-gran-reserva--ref265031/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Belle Glos Pinot Noir Las Alturas",
+    "brand": "Belle Gloss",
+    "type": "tinto",
+    "priceCop": 344500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-belle-gloss-las-alturas-ref263001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Enate Cabernet Sauvignon Merlot",
+    "brand": "Enate",
+    "type": "tinto",
+    "priceCop": 115000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-enate-cabernet-sauvignon-merlot-ref259011/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto MastroJanni Brunello di Montalcino Sangiovese Reserva",
+    "brand": "Mastrojanni",
+    "type": "tinto",
+    "priceCop": 436500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-mastrojanni-brunello-de-montalcino-sangiovese-reserva-ref248001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto MastroJanni Rosso di Montalcino Sangiovese Reserva",
+    "brand": "Mastrojanni",
+    "type": "tinto",
+    "priceCop": 240990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-mastrojanni-rosso-de-montalcino-sangiovese-reserva-ref248000/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto San Román",
+    "brand": "SAN ROMAN",
+    "type": "tinto",
+    "priceCop": 381990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-san-roman-ref216001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Prima San Román",
+    "brand": "SAN ROMAN",
+    "type": "tinto",
+    "priceCop": 137990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-prima-san-roman-ref216000/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Tomas Postigo 3 Años",
+    "brand": "Tomas Postigo",
+    "type": "tinto",
+    "priceCop": 339990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-tomas-postigo-3-anos-ref215004/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Montecastro Reserva",
+    "brand": "Montecastro",
+    "type": "tinto",
+    "priceCop": 232990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-montecastro-reserva-ref210004/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Hacienda Monasterio Reserva",
+    "brand": "Hacienda Monasterio",
+    "type": "tinto",
+    "priceCop": 498000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-hacienda-monasterio-reserva-ref210003/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Hacienda Monasterio Ribera Duero Reserva Especial",
+    "brand": "Hacienda Monasterio",
+    "type": "tinto",
+    "priceCop": 753500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-hacienda-monasterio-ribera-duero-reserva-especial-ref210002/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Pago De Capellanes Nogal Tempranillo",
+    "brand": "Pago de los Capellanes",
+    "type": "tinto",
+    "priceCop": 544500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-pago-de-capellanes-nogal-tempranillo-ref207004/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Pago De Capellanes Picon Tempranillo",
+    "brand": "Pago de los Capellanes",
+    "type": "tinto",
+    "priceCop": 1516500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-pago-de-capellanes-picon-tempranillo-ref207003/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Tempranillo Mauro VS Reserva",
+    "brand": "MAURO",
+    "type": "tinto",
+    "priceCop": 740500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-tempranillo-mauro-vs-reserva-ref203002/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Mauro Tempranillo",
+    "brand": "MAURO",
+    "type": "tinto",
+    "priceCop": 427500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-mauro-tempranillo-ref203001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Tarapacá Etiqueta Negra Cabernet Sauvignon",
+    "brand": "Tarapacá",
+    "type": "tinto",
+    "priceCop": 234500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-tarapaca-etiqueta-negra-cabernet-sauvignon-ref176011/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Tarapaca Gran Reserva Cabernet Sauvignon",
+    "brand": "Tarapacá",
+    "type": "tinto",
+    "priceCop": 119990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-tarapaca-gran-reserva-cabernet-sauvignon-ref176002/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Tarapacá Carmenére Gran Reserva",
+    "brand": "Tarapacá",
+    "type": "tinto",
+    "priceCop": 119990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-tarapaca-carmenere-gran-reserva-ref176001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Cousiño Macul Gran Reserva Finis Terrae",
+    "brand": "Cousiño Macul",
+    "type": "tinto",
+    "priceCop": 165990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-cousino-macul-gran-reserva-finis-terrae-ref161027/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Cousiño Macul Lota Premium Blend",
+    "brand": "Cousiño Macul",
+    "type": "tinto",
+    "priceCop": 564500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-cousino-macul-lota-premium-blend-ref161026/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Cousiño Macul Antiguas Reservas Cabernet Sauvignon",
+    "brand": "Cousiño Macul",
+    "type": "tinto",
+    "priceCop": 106990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-cousino-macul-antiguas-reservas-cabernet-sauvignon-ref161003/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Cousiño Macul Antiguas Reservas Merlot",
+    "brand": "Cousiño Macul",
+    "type": "tinto",
+    "priceCop": 106990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-cousino-macul-antiguas-reservas-merlot-ref161001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Rosso Toscano Sasso Al Poggio",
+    "brand": "Piccini",
+    "type": "tinto",
+    "priceCop": 164990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-rosso-toscano-sasso-al-poggio-ref153095/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Rosso Toscana Igt Piccini",
+    "brand": "Piccini",
+    "type": "tinto",
+    "priceCop": 57500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-rosso-toscana-igt-piccini-ref153085/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Brunello Di Montalcino Piccini Sangiovese Grosso",
+    "brand": "Piccini",
+    "type": "tinto",
+    "priceCop": 329500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-brunello-di-montalcino-piccini-sangiovese-grosso-ref153075/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Rosso Di Montalcino Piccini  Sangiovese Grosso",
+    "brand": "Piccini",
+    "type": "tinto",
+    "priceCop": 183990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-rosso-di-montalcino-piccini--sangiovese-grosso--ref153070/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Docg Piccini Reserva Chianti",
+    "brand": "Piccini",
+    "type": "tinto",
+    "priceCop": 85500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-docg-piccini-reserva-chianti-ref153045/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Docg Piccini Chianti",
+    "brand": "Piccini",
+    "type": "tinto",
+    "priceCop": 75500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-docg-piccini-chianti-ref153031/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Ramón Bilbao Crianza",
+    "brand": "Ramón Bilbao",
+    "type": "tinto",
+    "priceCop": 151500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-ramon-bilbao-crianza-ref147024/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Sangría Vino Tinto Lolea No.1",
+    "brand": "LOLEA",
+    "type": "tinto",
+    "priceCop": 74500,
+    "available": true,
+    "url": "https://www.dislicores.com/sangria-vino-tinto-lolea-no-1-ref147005/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Napa Cellars Cabernet Sauvignon",
+    "brand": "Napa Cellars",
+    "type": "tinto",
+    "priceCop": 213000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-napa-cellars-cabernet-sauvignon-ref146606/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Calvet Saint-Émilion Grand Cru",
+    "brand": "Calvet",
+    "type": "tinto",
+    "priceCop": 145500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-calvet-saint--emilion-grand-cru-ref143007/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Marques De Vargas Reserva Privado",
+    "brand": "Marqués de Vargas",
+    "type": "tinto",
+    "priceCop": 473990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-marques-de-vargas-reserva-privado-ref142030/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Marques De Vargas Gran Reserva",
+    "brand": "Marqués de Vargas",
+    "type": "tinto",
+    "priceCop": 348990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-marques-de-vargas-gran-reserva-ref142012/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Mionetto 750ml + Martino Blanco + Copa Balon",
+    "brand": "Mionetto",
+    "type": "tinto",
+    "priceCop": 131990,
+    "available": true,
+    "url": "https://www.dislicores.com/mionetto-750ml-martino-blanco-copa-balon-ref-of140005/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Navarro Correas Structura Ultra",
+    "brand": "Navarro Correas",
+    "type": "tinto",
+    "priceCop": 516500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-navarro-correas-structura-ultra-ref128009/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Leyda Pinot Noir",
+    "brand": "Leyda",
+    "type": "tinto",
+    "priceCop": 262000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-leyda-pinot-noir-ref121090/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Trapiche Iscay Syrah Viognier",
+    "brand": "Trapiche",
+    "type": "tinto",
+    "priceCop": 383000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-trapiche-iscay-syrah-viognier-ref120205/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Trapiche Iscay  Malbec Cabernet Franc",
+    "brand": "Trapiche",
+    "type": "tinto",
+    "priceCop": 383000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-trapiche-iscay--malbec-cabernet-franc-ref120200/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Trapiche Reserva Pinot Noir",
+    "brand": "Trapiche",
+    "type": "tinto",
+    "priceCop": 78500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-trapiche-reserva-pinot-noir-ref120142/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Trapiche Fino Malbec Piba",
+    "brand": "Trapiche",
+    "type": "tinto",
+    "priceCop": 16990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-trapiche-fino-malbec-piba-ref120122/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Trapiche Broquel Bonarda",
+    "brand": "Trapiche",
+    "type": "tinto",
+    "priceCop": 102000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-trapiche-broquel-bonarda-ref120090/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Don Simón Selección Cabernet Sauvignon",
+    "brand": "Don Simón",
+    "type": "tinto",
+    "priceCop": 24990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-don-simon-seleccion-cabernet-sauvignon-ref115151/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Don Simón Cabernet Sauvignon",
+    "brand": "Don Simón",
+    "type": "tinto",
+    "priceCop": 26500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-don-simon-cabernet-sauvignon-ref115150/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Pata Negra Gran Reserva  Tempranillo",
+    "brand": "Pata Negra",
+    "type": "tinto",
+    "priceCop": 79000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-pata-negra-gran-reserva--tempranillo-ref115083/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Mayor De Castilla Crianza Tempranillo",
+    "brand": "Mayor de Castilla",
+    "type": "tinto",
+    "priceCop": 115990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-mayor-de-castilla-crianza-tempranillo-ref115025/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto La Celia Reserva Elite Malbec",
+    "brand": "La Celia",
+    "type": "tinto",
+    "priceCop": 146000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-la-celia-reserva-elite-malbec-ref109128/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto La Celia Malbec Heritage",
+    "brand": "La Celia",
+    "type": "tinto",
+    "priceCop": 262990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-la-celia-malbec-heritage-ref-109124/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto La Celia Reserva Pioneer Cabernet Franc",
+    "brand": "La Celia",
+    "type": "tinto",
+    "priceCop": 108500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-la-celia-reserva-pioneer-cabernet-franc-ref109122/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto La Celia Supremo",
+    "brand": "La Celia",
+    "type": "tinto",
+    "priceCop": 395500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-la-celia-supremo-ref109040/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Alma Mora Cabernet Sauvignon",
+    "brand": "Alma Mora",
+    "type": "tinto",
+    "priceCop": 78500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-alma-mora-cabernet-sauvignon-ref108150/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Las Moras Black Label Cabernet Sauvignon Cabernet Franc",
+    "brand": "Las Moras",
+    "type": "tinto",
+    "priceCop": 115990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-las-moras-black-label-cabernet-sauvignon-cabernet-franc-ref108045/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Mora Negra Malbec Bonarda",
+    "brand": "Las Moras",
+    "type": "tinto",
+    "priceCop": 219000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-mora-negra-malbec-bonarda-ref108005/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Emilio Moro Malleolus De Valderramiro Tempranillo",
+    "brand": "Emilio Moro",
+    "type": "tinto",
+    "priceCop": 938990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-emilio-moro-malleolus-de-valderramiro-tempranillo-ref107015/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino tinto Malabrigo Tempranillo",
+    "brand": "Cepa 21",
+    "type": "tinto",
+    "priceCop": 334990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-malabrigo-tempranillo-ref107006/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Emilio Moro Malleolus De Sancho Martin Tempranillo",
+    "brand": "Emilio Moro",
+    "type": "tinto",
+    "priceCop": 1319000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-emilio-moro-malleolus-de-sancho-martin-tempranillo--ref107001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Calvet Châteauneuf-du-Pape",
+    "brand": "Calvet",
+    "type": "tinto",
+    "priceCop": 298990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-calvet-chateaun-euf-du-pape-ref106411/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Jp Chenet Cabernet Sauvignon - Syrah",
+    "brand": "JP Chenet",
+    "type": "tinto",
+    "priceCop": 42400,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-jp-chenet-cabernet-sauvignon---syrah-ref106120/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Segú Ollé Tetra Pack Variedad Uvas",
+    "brand": "Segú Ollé",
+    "type": "tinto",
+    "priceCop": 28990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-segu-olle-tetra-pack-variedad-uvas-ref103050/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Carolina Reserva De La Familia Carmenere",
+    "brand": "Santa Carolina",
+    "type": "tinto",
+    "priceCop": 155990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-carolina-reserva-de-la-familia-carmenere-ref102069/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Carolina Reserva Familia Cabernet Sauvignon",
+    "brand": "Santa Carolina",
+    "type": "tinto",
+    "priceCop": 155990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-carolina-reserva-familia-cabernet-sauvignon-ref102066/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino tinto Santa Carolina Gran Reserva Cabernet Sauvingon",
+    "brand": "Santa Carolina",
+    "type": "tinto",
+    "priceCop": 113500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-carolina-gran-reserva-cabernet-sauvingon-ref102057/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Carolina Reserva Cabernet Sauvignon",
+    "brand": "Santa Carolina",
+    "type": "tinto",
+    "priceCop": 75500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-carolina-reserva-cabernet-sauvignon-ref102039/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Helena Varietal Cabernet Sauvignon Piba",
+    "brand": "Santa Helena",
+    "type": "tinto",
+    "priceCop": 13990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-helena-varietal-cabernet-sauvignon-piba-ref100407/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Helena Reserva Cabernet Sauvignon",
+    "brand": "Santa Helena",
+    "type": "tinto",
+    "priceCop": 65500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-helena-reserva-cabernet-sauvignon-ref100401/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Helena Gran Reserva Cabernet Sauvignon",
+    "brand": "Santa Helena",
+    "type": "tinto",
+    "priceCop": 95500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-santa-helena-gran-reserva-cabernet-sauvignon-ref100395/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Gato Negro Varietal Semi Sweet Red",
+    "brand": "Gato Negro",
+    "type": "tinto",
+    "priceCop": 48990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-gato-negro-varietal-semi-sweet-red--ref100206/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto 9 Lives Reserva Carmenére",
+    "brand": "Gato Negro",
+    "type": "tinto",
+    "priceCop": 73990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-9-lives-reserva-carmenere-ref100191/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Gato Negro Varietal Carmenére",
+    "brand": "Gato Negro",
+    "type": "tinto",
+    "priceCop": 52500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-gato-negro-varietal-carmenere-ref100114/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Gato Negro  Varietal Cabernet Merlot",
+    "brand": "Gato Negro",
+    "type": "tinto",
+    "priceCop": 52500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-gato-negro--varietal-cabernet-merlot--ref100111/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Gato Negro Varietal Cabernet Sauvignon Piba",
+    "brand": "Gato Negro",
+    "type": "tinto",
+    "priceCop": 15990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-gato-negro-varietal-cabernet-sauvignon-piba-ref100103/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Cuatro Cumbres Vino Tetra Pack Variedad De Uvas",
+    "brand": "Cuatro Cumbres",
+    "type": "tinto",
+    "priceCop": 27500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-cuatro-cumbres-vino-tetra-pack-variedad-de-uvas-ref100091/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Castillo De Molina Reserva Merlot",
+    "brand": "Castillo de Molina",
+    "type": "tinto",
+    "priceCop": 89500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-castillo-de-molina-reserva-merlot-ref100087/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Cabo De Hornos Reserva Cabernet Sauvignon",
+    "brand": "Cabo de hornos",
+    "type": "tinto",
+    "priceCop": 468500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-cabo-de-hornos-reserva-cabernet-sauvignon-ref100078/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Castillo De Molina Reserva Tributo Cabernet Sauvignon",
+    "brand": "Castillo de Molina",
+    "type": "tinto",
+    "priceCop": 121990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-castillo-de-molina-reserva-tributo-cabernet-sauvignon-ref100077/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino 9 Lives Cabernet 750 ml + Juego de Cacho",
+    "brand": "9 LIVES",
+    "type": "tinto",
+    "priceCop": 73990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-9-lives-cabernet-750ml-juego-de-cacho-ref-of100046/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Escorihuela Gascon Syrah",
+    "brand": "ESCORIHUELA GASCON",
+    "type": "tinto",
+    "priceCop": null,
+    "available": false,
+    "url": "https://www.dislicores.com/vino-escorihuela-gascon-syrah-ref303011/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Escorihuela Gascon Sangiovese",
+    "brand": "ESCORIHUELA GASCON",
+    "type": "tinto",
+    "priceCop": null,
+    "available": false,
+    "url": "https://www.dislicores.com/vino-escorihuela-gascon-sangiovese-ref303010/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Santa Helena Reserva Merlot Carmenére",
+    "brand": "Santa Helena",
+    "type": "tinto",
+    "priceCop": null,
+    "available": false,
+    "url": "https://www.dislicores.com/vino-tinto-santa-helena-reserva-merlot-carmenere-ref100402/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Ramón Bilbao Verdejo",
+    "brand": "Ramón Bilbao",
+    "type": "blanco",
+    "priceCop": 83500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-ramon-bilbao-verdejo-ref147002-ref147002/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Mar De Frades Albariño",
+    "brand": "Mar de Frades",
+    "type": "blanco",
+    "priceCop": 152500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-mar-de-frades-albarino-ref147004/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Rosaleda Sauvignon Blanc",
+    "brand": "Rosaleda",
+    "type": "blanco",
+    "priceCop": 21500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-rosaleda-sauvignon-blanc-ref100329/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Trapiche Sauvignon Blanc",
+    "brand": "Trapiche",
+    "type": "blanco",
+    "priceCop": 55990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-trapiche-sauvignon-blanc-ref120130/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Las Moras Chardonnay",
+    "brand": "Las Moras",
+    "type": "blanco",
+    "priceCop": 59000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-las-moras-chardonnay-ref108010/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Cousiño Macul Don Luis Chardonnay",
+    "brand": "Cousiño Macul",
+    "type": "blanco",
+    "priceCop": 70500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-cousino-macul-don-luis-chardonnay-ref161007/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Trapiche Broquel Torrontés",
+    "brand": "Trapiche",
+    "type": "blanco",
+    "priceCop": 102000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-trapiche-broquel-torrontes-ref120095/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Santa Carolina Chardonnay",
+    "brand": "Santa Carolina",
+    "type": "blanco",
+    "priceCop": 51990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-santa-carolina-chardonnay--ref102002/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Santa Helena Varietal Sauvignon Blanc",
+    "brand": "Santa Helena",
+    "type": "blanco",
+    "priceCop": 46990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-santa-helena-varietal-sauvignon-blanc--ref100413/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Tarapacá Sauvignon Blanc Varietal",
+    "brand": "Tarapacá",
+    "type": "blanco",
+    "priceCop": 58990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-tarapaca-sauvignon-blanc-varietal--ref176009/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Bco Venetian Piccini Prosecco",
+    "brand": "Piccini",
+    "type": "blanco",
+    "priceCop": 109990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-bco-venetian-piccini-prosecco-ref153116/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Yellow Tail Chardonnay",
+    "brand": "Yellow Tail",
+    "type": "blanco",
+    "priceCop": 59500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-yellow-tail-chardonnay-ref129015/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Don Simón Selección Airén",
+    "brand": "Don Simón",
+    "type": "blanco",
+    "priceCop": 24990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-don-simon-seleccion-airen-ref115020/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Michel Torino Torrontes",
+    "brand": "Michel Torino",
+    "type": "blanco",
+    "priceCop": 58990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-michel-torino-torrontes-ref108027/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino La Linda Chardonnay",
+    "brand": "LUIGI BOSCA",
+    "type": "blanco",
+    "priceCop": 67500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-la-linda-chardonnay-ref338011/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Luigi Bosca Chardonnay",
+    "brand": "LUIGI BOSCA",
+    "type": "blanco",
+    "priceCop": 105500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-luigi-bosca-chardonnay-ref338000/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Enate Chardonnay",
+    "brand": "Enate",
+    "type": "blanco",
+    "priceCop": 115000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-enate-chardonnay---ref259001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Cousiño Macul Antiguas Reservas Chardonnay",
+    "brand": "Cousiño Macul",
+    "type": "blanco",
+    "priceCop": 106500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-cousino-macul-antiguas-reservas-chardonnay-ref161005/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Piccini Venezie Pinot Grigio",
+    "brand": "Piccini",
+    "type": "blanco",
+    "priceCop": 70000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-piccini-venezie-pinot-grigio-ref153110/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Pazo De San Mauro Albariño",
+    "brand": "Marqués de Vargas",
+    "type": "blanco",
+    "priceCop": 159990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-pazo-de-san-mauro-albarino-ref142040/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Navarro Correas Colección Privada Chardonnay",
+    "brand": "Navarro Correas",
+    "type": "blanco",
+    "priceCop": 99500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-navarro-correas-coleccion-privada-chardonnay-ref128001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Trapiche Torrontés",
+    "brand": "Trapiche",
+    "type": "blanco",
+    "priceCop": 55990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-trapiche-torrontes-ref120131/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco La Celia Reserva Chardonnay",
+    "brand": "La Celia",
+    "type": "blanco",
+    "priceCop": 74990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-la-celia-reserva-chardonnay-ref109222/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco La Celia Pioneer Chardonnay",
+    "brand": "La Celia",
+    "type": "blanco",
+    "priceCop": 108500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-la-celia-pioneer-chardonnay-ref109218/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Las Moras Sauvignon Blanc",
+    "brand": "Las Moras",
+    "type": "blanco",
+    "priceCop": 59000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-las-moras-sauvignon-blanc-ref108086/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Las Moras Orgánico Chardonnay",
+    "brand": "Las Moras",
+    "type": "blanco",
+    "priceCop": 71500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-las-moras-organico-chardonnay-ref108008/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino blanco Emilio Moro El Zarzal Godello",
+    "brand": "Emilio Moro",
+    "type": "blanco",
+    "priceCop": 135990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-emilio-moro-el-zarzal-godello-ref107004/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Aperitivo Frizzatino Blanco Brut",
+    "brand": "Frizzantino",
+    "type": "blanco",
+    "priceCop": 27990,
+    "available": true,
+    "url": "https://www.dislicores.com/aperitivo-frizzatino-blanco-brut-ref106011/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Santa Carolina Reserva Sauvingnon Blanc",
+    "brand": "Santa Carolina",
+    "type": "blanco",
+    "priceCop": 75500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-santa-carolina-reserva-sauvingnon-blanc-ref102042/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Santa Carolina Reservado Sauvignon Blanc",
+    "brand": "Santa Carolina",
+    "type": "blanco",
+    "priceCop": 51500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-santa-carolina-reservado-sauvignon-blanc-ref102033/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Gato Negro Blanco Dulce",
+    "brand": "Gato Negro",
+    "type": "blanco",
+    "priceCop": 36990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-gato-negro-blanco-dulce-referencia100515/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Santa Helena Reserva Sauvignon Blanc",
+    "brand": "Santa Helena",
+    "type": "blanco",
+    "priceCop": 65500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-santa-helena-reserva-sauvignon-blanc--ref100404/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Castillo De Molina Reserva Chardonnay",
+    "brand": "Castillo de Molina",
+    "type": "blanco",
+    "priceCop": 89500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-castillo-de-molina-reserva-chardonnay-ref100084/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Castillo De Molina Sauvignon Blanc Reserva",
+    "brand": "Castillo de Molina",
+    "type": "blanco",
+    "priceCop": 89500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-castillo-de-molina-sauvignon-blanc-reserva-ref100073/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Gato Negro Varietal Sauvignon Blanc",
+    "brand": "Gato Negro",
+    "type": "blanco",
+    "priceCop": 52500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-gato-negro-varietal-sauvignon-blanc-ref100066/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Enate Gewurztraminer",
+    "brand": "Enate",
+    "type": "blanco",
+    "priceCop": 129990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-enate-gewurztraminer-ref259052/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Tarapacá Reserva Chardonnay",
+    "brand": "Tarapacá",
+    "type": "blanco",
+    "priceCop": 75500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-tarapaca-reserva-chardonnay-ref176004/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Don Simón Selección Chardonnay Tetra Pack",
+    "brand": "Don Simón",
+    "type": "blanco",
+    "priceCop": 26500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-don-simon-seleccion-chardonnay-tetra-pack-ref115154/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Las Moras Reserva Chardonnay",
+    "brand": "Las Moras",
+    "type": "blanco",
+    "priceCop": 80990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-las-moras-reserva-chardonnay-ref108025/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Segú Ollé Tetra Pack Variedad Uvas",
+    "brand": "Segú Ollé",
+    "type": "blanco",
+    "priceCop": 28990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-segu-olle-tetra-pack-variedad-uvas-ref103040/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Marqués De Murrieta Capellanía Viura",
+    "brand": "Marqués de Murrieta",
+    "type": "blanco",
+    "priceCop": 536990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-marques-de-murrieta-capellania-viura-ref806005/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Pazo Barrantes Albariño",
+    "brand": "Pazo Barrantes",
+    "type": "blanco",
+    "priceCop": 289990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-pazo-barrantes-albarino-ref806001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Escorihuela Gascon Suavignon Blanc",
+    "brand": "ESCORIHUELA GASCON",
+    "type": "blanco",
+    "priceCop": 109000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-escorihuela-gascon-suavignon-blan-ref303013/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Louis Jadot Chablis",
+    "brand": "LOUIS JADOT",
+    "type": "blanco",
+    "priceCop": 207500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-louis-jadot-chablis-ref266004/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Louis Jadot Pouilly Fuisse",
+    "brand": "LOUIS JADOT",
+    "type": "blanco",
+    "priceCop": 307500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-louis-jadot-pauilly-fuisse-ref266003/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Louis Jadot Bourgogne",
+    "brand": "LOUIS JADOT",
+    "type": "blanco",
+    "priceCop": 177990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-louis-jadot-bourgogne-ref266000/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Muga Reserva Viura",
+    "brand": "Muga",
+    "type": "blanco",
+    "priceCop": 113500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-muga-reserva-viura-ref265021/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Enate Chardonnay Fermentado",
+    "brand": "Enate",
+    "type": "blanco",
+    "priceCop": 195500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-enate-chardonnay-fermentado-ref259051/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Tomas Postigo Verdejo",
+    "brand": "Tomas Postigo",
+    "type": "blanco",
+    "priceCop": 237000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-tomas-postigo-verdejo-ref215001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Mauro Godello",
+    "brand": "MAURO",
+    "type": "blanco",
+    "priceCop": 466500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-mauro-godello-ref203000/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Cousiño Macul Don Luis Sauvignon Blanc",
+    "brand": "Cousiño Macul",
+    "type": "blanco",
+    "priceCop": 70000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-cousino-macul-don-luis-sauvignon-blanc-ref161011/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Piccini Memoro",
+    "brand": "Piccini",
+    "type": "blanco",
+    "priceCop": 68500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-piccini-memoro-ref153120/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Ramón Bilbao Orgánico Verdejo",
+    "brand": "Ramón Bilbao",
+    "type": "blanco",
+    "priceCop": 85990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-ramon-bilbao-organico-verdejo-ref147019/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Sangría Vino Blanco Lolea No. 2",
+    "brand": "LOLEA",
+    "type": "blanco",
+    "priceCop": 74500,
+    "available": true,
+    "url": "https://www.dislicores.com/sangria-vino-blanco-lolea-no--2-ref147006/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Joel Gott Sauvignon Blanc",
+    "brand": "Joel Gott",
+    "type": "blanco",
+    "priceCop": 103500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-joel-gott-sauvignon-blanc-ref146062/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Napa Cellars Sauvignon Blanc",
+    "brand": "Napa Cellars",
+    "type": "blanco",
+    "priceCop": 108500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-napa-cellars-sauvignon-blanc-ref146061/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Dry Sack Medium",
+    "brand": "Dry Sack",
+    "type": "blanco",
+    "priceCop": 117990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-dry-sack-medium-ref133050/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Dry Sack Fino Palomino",
+    "brand": "Dry Sack",
+    "type": "blanco",
+    "priceCop": 117990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-dry-sack-fino-palomino-ref133041/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Navarro Correas Colección Privada Sauvignon Blanc",
+    "brand": "Navarro Correas",
+    "type": "blanco",
+    "priceCop": 99500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-navarro-correas-coleccion-privada-sauvignon-blanc-ref128002/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Leyda Reserva Sauvignon Blanc",
+    "brand": "Leyda",
+    "type": "blanco",
+    "priceCop": 87500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-leyda-reserva-sauvignon-blanc-ref121190/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Alma Mora Chardonnay",
+    "brand": "Alma Mora",
+    "type": "blanco",
+    "priceCop": 78500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-alma-mora-chardonnay-ref108170/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Intis Chardonnay  Chenin",
+    "brand": "Intis",
+    "type": "blanco",
+    "priceCop": 29000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-intis-chardonnay--chenin-ref108055/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Jp Ice Blanco 750 ml + Copa Acrilica Blanca",
+    "brand": "JP Chenet",
+    "type": "blanco",
+    "priceCop": 72990,
+    "available": true,
+    "url": "https://www.dislicores.com/jp-ice-blanco-750ml-copa-acrilica-blanca-ref-of106051/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Santa Carolina Reservado Sauvignon Blanc Media Botella",
+    "brand": "Santa Carolina",
+    "type": "blanco",
+    "priceCop": 28500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-santa-carolina-reservado-sauvignon-blanc-media-botella-ref102034/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Santa Helena Varietal Sauvignon Blanc",
+    "brand": "Santa Helena",
+    "type": "blanco",
+    "priceCop": 13990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-santa-helena-varietal-sauvignon-blanc-ref100411/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Gato Negro 9 Lives Reserva Sauvignon Blanc",
+    "brand": "Gato Negro",
+    "type": "blanco",
+    "priceCop": 73990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-gato-negro-9-lives-reserva-sauvignon-blanc-ref100187/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco La Huerta Sauvignon Blanc",
+    "brand": "La Huerta",
+    "type": "blanco",
+    "priceCop": 39990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-la-huerta-sauvignon-blanc-ref100147/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Cuatro Cumbres Tetra Pack Variedad De Uvas",
+    "brand": "Cuatro Cumbres",
+    "type": "blanco",
+    "priceCop": 27500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-cuatro-cumbres-tetra-pack-variedad-de-uvas--ref100083/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Castillo De Molina Reserva Chardonnay Media Botella",
+    "brand": "Castillo de Molina",
+    "type": "blanco",
+    "priceCop": 49500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-castillo-de-molina-reserva-chardonnay-media-botella-ref100069/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Gato Negro Semi Sweet Varietal",
+    "brand": "Gato Negro",
+    "type": "blanco",
+    "priceCop": 48990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-gato-negro-semi-sweet-varietal-ref100067/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Escorihuela Gascon Viognier",
+    "brand": "ESCORIHUELA GASCON",
+    "type": "blanco",
+    "priceCop": null,
+    "available": false,
+    "url": "https://www.dislicores.com/vino-escorihuela-gascon-viognier-ref303009/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Espumoso Piccini Regno Lambrusco",
+    "brand": "Piccini",
+    "type": "rosado",
+    "priceCop": 52500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-espumoso-piccini-regno-lambrusco-ref153135/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Ramón Bilbao Garnacha Viura",
+    "brand": "Ramón Bilbao",
+    "type": "rosado",
+    "priceCop": 83500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-ramon-bilbao-garnacha-viura-ref147003/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Sutter Home Zinfandel",
+    "brand": "Sutter Home",
+    "type": "rosado",
+    "priceCop": 60500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-sutter-home-zinfandel-ref146010/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado  Trapiche Malbec Cabernet Sauvignon",
+    "brand": "Trapiche",
+    "type": "rosado",
+    "priceCop": 55990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado--trapiche-malbec-cabernet-sauvignon-ref120070/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Rosaleda",
+    "brand": "Rosaleda",
+    "type": "rosado",
+    "priceCop": 21500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-rosaleda-ref100124/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Las Moras Syrah",
+    "brand": "Las Moras",
+    "type": "rosado",
+    "priceCop": 59000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-las-moras-syrah-ref108019/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Aperitivo Frizzantino Rosado Brut",
+    "brand": "Frizzantino",
+    "type": "rosado",
+    "priceCop": 27990,
+    "available": true,
+    "url": "https://www.dislicores.com/aperitivo-frizzantino-rosado-brut-ref106012/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Santa Carolina Reservado Cabernet Sauvignon Rosé",
+    "brand": "Santa Carolina",
+    "type": "rosado",
+    "priceCop": 51000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-santa-carolina-reservado-cabernet-sauvignon-rose-ref102036/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Muga Garnacha",
+    "brand": "Muga",
+    "type": "rosado",
+    "priceCop": 116500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-muga-garnacha-ref265071/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Enate Cabernet Sauvignon",
+    "brand": "Enate",
+    "type": "rosado",
+    "priceCop": 115000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-enate-cabernet-sauvignon-ref259071/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Tarapacá Varietal",
+    "brand": "Tarapacá",
+    "type": "rosado",
+    "priceCop": 58990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-tarapaca-varietal--ref176010/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado D' Anjou Cabernet Franc",
+    "brand": "Calvet",
+    "type": "rosado",
+    "priceCop": 64500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-d--anjou-cabernet-franc-ref143330/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Jp Chenet Cinsault Grenache",
+    "brand": "JP Chenet",
+    "type": "rosado",
+    "priceCop": 61990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-jp-chenet-varietal-cinsault-grenache-ref106125/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Santa Carolina Reserva Rosé",
+    "brand": "Santa Carolina",
+    "type": "rosado",
+    "priceCop": 75500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-santa-carolina-reserva-rose-ref102107/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Gato Negro",
+    "brand": "Gato Negro",
+    "type": "rosado",
+    "priceCop": 52500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-gato-negro--ref100162/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosé La Huerta Variedad De Uvas",
+    "brand": "La Huerta",
+    "type": "rosado",
+    "priceCop": 39990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rose-la-huerta-variedad-de-uvas-ref100144/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Castillo de Molina Pinot Noir Rosé",
+    "brand": "Castillo de Molina",
+    "type": "rosado",
+    "priceCop": 89500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-castillo-de-molina-pinot-noir-rose--ref100076/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Marques De Murrieta Mazuelo",
+    "brand": "Marqués de Murrieta",
+    "type": "rosado",
+    "priceCop": 301000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-marques-de-murrieta-mazuelo-ref806010/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino La Linda Rose Malbec",
+    "brand": "LUIGI BOSCA",
+    "type": "rosado",
+    "priceCop": 67990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-la-linda-rose-malbec-ref338013/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Flor De Muga",
+    "brand": "Muga",
+    "type": "rosado",
+    "priceCop": 236000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-flor-de-muga-ref265075/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Cousiño Macul Gris Cabernet Sauvignon",
+    "brand": "Cousiño Macul",
+    "type": "rosado",
+    "priceCop": 70500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-cousino-macul-gris-cabernet-sauvignon-ref161021/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Piccini Memoro",
+    "brand": "Piccini",
+    "type": "rosado",
+    "priceCop": 68500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-piccini-memoro---ref153001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Sutter Home Zinfandel piba",
+    "brand": "Sutter Home",
+    "type": "rosado",
+    "priceCop": 17990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-sutter-home-zinfandel-piba-ref146037/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Don Simon",
+    "brand": "Don Simón",
+    "type": "rosado",
+    "priceCop": 24990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-don-simon/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino La Celia rosado",
+    "brand": "La Celia",
+    "type": "rosado",
+    "priceCop": 74000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-la-celia-rosado-ref109021/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Alma Mora Syrah",
+    "brand": "Alma Mora",
+    "type": "rosado",
+    "priceCop": 78500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-alma-mora-syrah-ref108175/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Michel Torino Colección Rosé",
+    "brand": "Michel Torino",
+    "type": "rosado",
+    "priceCop": 58990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-michel-torino-coleccion-rose-ref108028/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Hito Ribera Del Duero Tempranillo",
+    "brand": "Hito",
+    "type": "rosado",
+    "priceCop": 111990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-hito-ribera-del-duero-tempranillo-ref107035/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Marius Peyol Reserva Cotes De Provence",
+    "brand": "Marius Peyol",
+    "type": "rosado",
+    "priceCop": 99500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-marius-peyol-reserva-cotes-de-provence-ref106300/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Segú Ollé Tetra Pack Variedad De Uvas",
+    "brand": "Segú Ollé",
+    "type": "rosado",
+    "priceCop": 28500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-segu-olle-tetra-pack-variedad-de-uvas--ref103070/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Gato Negro Rosado Dulce",
+    "brand": "Gato Negro",
+    "type": "rosado",
+    "priceCop": 36990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-gato-negro-rodado-dulce-referencia100517/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Prosecco Mionetto Brut Glera",
+    "brand": "Mionetto",
+    "type": "espumoso",
+    "priceCop": 88990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-prosecco-mionetto-brut-glera-ref140015/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Chandon Extra Brut",
+    "brand": "Chandon",
+    "type": "espumoso",
+    "priceCop": 89500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-chandon-extra-brut-ref200005/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Espumoso Piccini Regno Lambrusco",
+    "brand": "Piccini",
+    "type": "espumoso",
+    "priceCop": 52500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-espumoso-piccini-regno-lambrusco-ref153135/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Tinto Espumoso Piccini Regno Lambrusco",
+    "brand": "Piccini",
+    "type": "espumoso",
+    "priceCop": 52500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-tinto-espumoso-piccini-regno-lambrusco-ref153130/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Jp Chenet Ice Rosado Variedad De Uvas",
+    "brand": "JP Chenet",
+    "type": "espumoso",
+    "priceCop": 72990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-jp-chenet-ice-rosado-variedad-de-uvas--ref106027/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Espumoso Piccini Lambrusco",
+    "brand": "Piccini",
+    "type": "espumoso",
+    "priceCop": 52500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-espumoso-piccini-lambrusco-ref153131/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Jp Chenet Ice Rosado Piba Variedad Uvas Piba",
+    "brand": "JP Chenet",
+    "type": "espumoso",
+    "priceCop": 22500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-jp-chenet-ice-rosado-piba-variedad-uvas-piba-ref106028/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino espumoso Chandon Extra Brut Rosé Box",
+    "brand": "Chandon",
+    "type": "espumoso",
+    "priceCop": 91500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-chandon-extra-brut-rose-box-ref200012/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino espumoso Chandon Delice",
+    "brand": "Chandon",
+    "type": "espumoso",
+    "priceCop": 89500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-chandon-delice-ref200008/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Blanco Calvet Celebration Brut",
+    "brand": "Calvet",
+    "type": "espumoso",
+    "priceCop": 86500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-blanco-calvet-celebration-brut-ref143346/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Cava Jaume Serra Brut Nature Reserva",
+    "brand": "Jaume Serra",
+    "type": "espumoso",
+    "priceCop": 83990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-cava-jaume-serra-brut-nature-reserva--ref115087/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Brut Baron De Rothberg Airén",
+    "brand": "Baron de Rothberg",
+    "type": "espumoso",
+    "priceCop": 39990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-brut-baron-de-rothberg-airen-ref106040/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Jp Chenet Ice Blanco Variedad de Uva Piba",
+    "brand": "JP Chenet",
+    "type": "espumoso",
+    "priceCop": 22500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-jp-chenet-ice-blanco-variedad-de-uva-piba-ref106034/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Jp Chenet Demi Sec Ice Blanco Variedad De Uva",
+    "brand": "JP Chenet",
+    "type": "espumoso",
+    "priceCop": 72990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-jp-chenet-demi-sec-ice-blanco-variedad-de-uva-ref106033/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Jp Chenet  Brut Variedad De Uvas Piba",
+    "brand": "JP Chenet",
+    "type": "espumoso",
+    "priceCop": 20500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-jp-chenet--brut-variedad-de-uvas-piba-ref106020/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Jp Chenet Sparlking  Rose Bobal Piba",
+    "brand": "JP Chenet",
+    "type": "espumoso",
+    "priceCop": 20500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-jp-chenet-sparlking--rose-bobal-piba--ref106015/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Jp Divine Muscat",
+    "brand": "JP Chenet",
+    "type": "espumoso",
+    "priceCop": 83500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-jp-divine-muscat-ref106004/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino espumoso Chandon Garden Spritz",
+    "brand": "Chandon",
+    "type": "espumoso",
+    "priceCop": 94500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-chandon-garden-spritz-ref200015/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino espumoso Chandon Demi Sec",
+    "brand": "Chandon",
+    "type": "espumoso",
+    "priceCop": 89500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-chandon-demi-sec-ref200013/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino espumoso Chandon Extra Brut Box",
+    "brand": "Chandon",
+    "type": "espumoso",
+    "priceCop": 91000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-chandon-extra-brut-box-ref200011/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino espumoso Chandon Extra Brut Rosé",
+    "brand": "Chandon",
+    "type": "espumoso",
+    "priceCop": 89500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-chandon-extra-brut-rose-ref200009/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Prosecco Mionetto Rose",
+    "brand": "Mionetto",
+    "type": "espumoso",
+    "priceCop": 92990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-prosecco-mionetto-rose-ref140011/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Freixenet Cordon Negro",
+    "brand": "Freixenet",
+    "type": "espumoso",
+    "priceCop": 103990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-freixenet-cordon-negro-ref140001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Rosado Jaume Serra Brut",
+    "brand": "Jaume Serra",
+    "type": "espumoso",
+    "priceCop": 55990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-rosado-jaume-serra-brut-ref115088/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Cava Jaume Serra Brut Nature",
+    "brand": "Jaume Serra",
+    "type": "espumoso",
+    "priceCop": 66990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-cava-jaume-serra-brut-nature-ref115085/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Cava Jaume Serra Semi Seco",
+    "brand": "Jaume Serra",
+    "type": "espumoso",
+    "priceCop": 66990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-cava-jaume-serra-semi-seco-ref115084/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Jaume Serra Ice Blanco Demi- Sec",
+    "brand": "Jaume Serra",
+    "type": "espumoso",
+    "priceCop": 72990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-jaume-serra-ice-blanco-demi-sec-ref115078/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Jp Chenet Cinsault Grenache",
+    "brand": "JP Chenet",
+    "type": "espumoso",
+    "priceCop": 19500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-jp-chenet-cinsault-grenache-ref106145/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Baron De Rothberg Demi Sec Airén",
+    "brand": "Baron de Rothberg",
+    "type": "espumoso",
+    "priceCop": 39990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-baron-de-rothberg-demi-sec-airen-ref106045/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Jp Chenet Rosé Bobal",
+    "brand": "JP Chenet",
+    "type": "espumoso",
+    "priceCop": 65000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-jp-chenet-rose-bobal--ref106035/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Jp Chenet  Brut Variedad De Uvas",
+    "brand": "JP Chenet",
+    "type": "espumoso",
+    "priceCop": 65000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-jp-chenet--brut-variedad-de-uvas--ref106025/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Navarro Correas Extra Brut",
+    "brand": "Navarro Correas",
+    "type": "espumoso",
+    "priceCop": 99500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-navarro-correas-extra-brut--ref128005/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Rivarose Rosado Brut",
+    "brand": "Rivarose",
+    "type": "espumoso",
+    "priceCop": 114990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-rivarose-rosado-brut--ref123001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Jp Chenet Fashion Strawberry Variedad De Uvas",
+    "brand": "JP Chenet",
+    "type": "espumoso",
+    "priceCop": 79990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-jp-chenet-fashion-strawberry-variedad-de-uvas-ref106037/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Jp Chenet Demi-Sec Variedad De Uvas",
+    "brand": "JP Chenet",
+    "type": "espumoso",
+    "priceCop": 65000,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-jp-chenet-demi-sec-variedad-de-uvas-ref106030/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Blanco Jp Divine Brut Chardonnay",
+    "brand": "JP Chenet",
+    "type": "espumoso",
+    "priceCop": 83500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-blanco-jp-divine-brut-chardonnay-ref106014/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Chandon Extra Brut mas Chandon Extra Brut Rose",
+    "brand": "Chandon",
+    "type": "espumoso",
+    "priceCop": 161990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-chandon-extra-brut-mas-chandon-estra-brut-rose-ref-of200003/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Mionetto Prosecco Trevis mas Copa De Cristal",
+    "brand": "Mionetto",
+    "type": "espumoso",
+    "priceCop": 86500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-mionetto-prosecco-trevis-mas-copa-de-cristal-ref-of140011/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Freixenet Negro mas 2 Vasos Dorados",
+    "brand": "Freixenet",
+    "type": "espumoso",
+    "priceCop": 103990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-freixenet-negro-mas-2-vasos-dorados-ref-of140009/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino espumoso Chandon Extra Brut Piba",
+    "brand": "Chandon",
+    "type": "espumoso",
+    "priceCop": 26990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-chandon-extra-brut-piba-ref200016/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino espumoso Chandon Extra Brut Rosé Piba",
+    "brand": "Chandon",
+    "type": "espumoso",
+    "priceCop": 26990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-chandon-extra-brut-rose-piba-ref200010/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Rosado Calvet Celebration Brut",
+    "brand": "Calvet",
+    "type": "espumoso",
+    "priceCop": 86500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-rosado-calvet-celebration-brut-ref143345/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Prosecco Mionetto Brut Glera Magnum",
+    "brand": "Mionetto",
+    "type": "espumoso",
+    "priceCop": 187500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-prosecco-mionetto-brut-glera-magnum-ref140010/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Freixenet Cordon Negro Gratis Brumax Splash",
+    "brand": "Freixenet",
+    "type": "espumoso",
+    "priceCop": 103500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-freixenet-cordon-negro-gratis-brumax-splash-ref140007/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Freixenet Carta Nevada",
+    "brand": "Freixenet",
+    "type": "espumoso",
+    "priceCop": 94500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-freixenet-carta-nevada-ref140002/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Navarro Correas Extra Brut piba",
+    "brand": "Navarro Correas",
+    "type": "espumoso",
+    "priceCop": 29990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-navarro-correas-extra-brut-piba-ref128030/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Navarro Correas Extra Brut Malbec",
+    "brand": "Navarro Correas",
+    "type": "espumoso",
+    "priceCop": 99500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-navarro-correas-extra-brut-malbec-ref128006/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Cava Jaume Serra Brut Nature Piba",
+    "brand": "Jaume Serra",
+    "type": "espumoso",
+    "priceCop": 17990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-cava-jaume-serra-brut-nature-piba-ref115079/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Jaume Serra Ice Rosado Demi- Sec",
+    "brand": "Jaume Serra",
+    "type": "espumoso",
+    "priceCop": 72990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-jaume-serra-ice-rosado-demi--sec-ref115077/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Jp Chenet Spritz",
+    "brand": "JP Chenet",
+    "type": "espumoso",
+    "priceCop": 80990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-jp-chenet-spritz-ref106413/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Jp Chenet  Fashion Strawberry  Piba",
+    "brand": "JP Chenet",
+    "type": "espumoso",
+    "priceCop": 24500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-jp-chenet--fashion-strawberry--piba-ref106039/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Jp Chenet Fashion Cassis Variedad De Uvas Piba",
+    "brand": "JP Chenet",
+    "type": "espumoso",
+    "priceCop": 24500,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-jp-chenet-fashion-cassis-variedad-de-uvas-piba-ref106038/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Espumoso Jp Chenet Fashion Cassis Variedad De Uvas",
+    "brand": "JP Chenet",
+    "type": "espumoso",
+    "priceCop": 79990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-espumoso-jp-chenet-fashion-cassis-variedad-de-uvas-ref106036/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Vino Rosado Baron De Rothberg Espumoso Bobal",
+    "brand": "Baron de Rothberg",
+    "type": "espumoso",
+    "priceCop": 39990,
+    "available": true,
+    "url": "https://www.dislicores.com/vino-rosado-baron-de-rothberg-espumoso-bobal-ref106026/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Veuve Clicquot Brut Yellow Label Box",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "priceCop": 374891,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-veuve-clicquot-brut-yellow-label-box-ref243001/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Laurent Perrier La Cuvee",
+    "brand": "Laurent Perrier",
+    "type": "espumoso",
+    "priceCop": 413990,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-laurent-perrier-la-cuvee-ref125015/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Veuve Clicquot Brut Label Ice Jacket",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "priceCop": 601500,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-veuve-clicquot-brut-label-ice-jacket-ref243041/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne R de Ruinart",
+    "brand": "Ruinart",
+    "type": "espumoso",
+    "priceCop": 573000,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-r-de-ruinart-ref243040/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Krug Rose Box",
+    "brand": "Krug",
+    "type": "espumoso",
+    "priceCop": 2930500,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-krug-rose-box-ref243031/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Krug Grande Cuvee Box",
+    "brand": "Krug",
+    "type": "espumoso",
+    "priceCop": 1931990,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-krug-grande-cuvee-box-ref243028/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Ruinart Blanc de Blanc box",
+    "brand": "Ruinart",
+    "type": "espumoso",
+    "priceCop": 783500,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-ruinart-blanc-de-blanc-box-ref243026/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Veuve Clicquot Brut Extra Old",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "priceCop": 929990,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-veuve-clicquot-brut-extra-old-ref243022/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Veuve Clicquot Brut Yellow Label Media Botella",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "priceCop": 310500,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-veuve-clicquot-brut-yellow-label-media-botella-ref243017/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Veuve Clicquot Vintage Blanc",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "priceCop": 714990,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-veuve-clicquot-vintage-blanc-ref243016/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Veuve Clicquot Rose Box",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "priceCop": 634500,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-veuve-clicquot-rose-box-ref243015/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Veuve Clicquot Demisec",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "priceCop": 528500,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-veuve-clicquot-demisec-ref243013/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Veuve Clicquot Rich",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "priceCop": 591500,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-veuve-clicquot-rich-ref243008/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Veuve Clicquot Brut Label Arrow",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "priceCop": 712000,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-veuve-clicquot-brut-label-arrow-ref243005/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Veuve Clicquot Brut Yellow Label Magnum",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "priceCop": 1041500,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-veuve-clicquot-brut-yellow-label-magnum-ref243003/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Veuve Clicquot Brut Yellow Label",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "priceCop": 374891,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-veuve-clicquot-brut-yellow-label-ref243000/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Laurent Perrier La Cuvee",
+    "brand": "Laurent Perrier",
+    "type": "espumoso",
+    "priceCop": 730990,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-laurent-perrier-la-cuvee--ref125014/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Laurent Perrier Grand Siecle",
+    "brand": "Laurent Perrier",
+    "type": "espumoso",
+    "priceCop": 393990,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-laurent-perrier-grand-siecle-ref-125006/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Rosé Laurent Perrier Cuvée  Pinot Noir",
+    "brand": "Laurent Perrier",
+    "type": "espumoso",
+    "priceCop": 662500,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-rose-laurent-perrier-cuvee--pinot-noir-ref125000/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Moet And Chandon Imperial Brut",
+    "brand": "Moet & Chandon",
+    "type": "espumoso",
+    "priceCop": 499990,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-moet-and-chandon-imperial-brut-ref002196/p"
+  },
+  {
+    "retailer": "Dislicores",
+    "name": "Champagne Dom Perignon Vintage",
+    "brand": "Dom Perignon",
+    "type": "espumoso",
+    "priceCop": 2404990,
+    "available": true,
+    "url": "https://www.dislicores.com/champagne-dom-perignon-vintage-ref002109/p"
+  }
+]
