@@ -1,0 +1,758 @@
+[
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack 12 vinos| 12 La selección del enólogo| 750cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 74940,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-12-vinos-12-la-seleccion-del-enologo-750cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack 12 vinos| 12 vinos lo mejor de Toreto| 750cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 78240,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-12-vinos-12-vinos-lo-mejor-de-toreto-750cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack 12 vinos| 12 vinos lo mejor del Carmenere  | 750cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 90000,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-12-vinos-12-vinos-lo-mejor-del-carmenere-750cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Caja 6 Botellas Royal One | Gran Reserva  | Cabernet Sauvignon | 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 29970,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/caja-6-botellas-royal-one-gran-reserva-cabernet-sauvignon-750-cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Caja 6 vinos Royal One | Gran Reserva  | Carmenere | 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 29970,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/caja-6-vinos-royal-one-gran-reserva-carmenere-750-cc-copia"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Caja 6 TORETO | Reserva Đ Familia | PACK VARIEDADES | 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 53970,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/caja-6-toreto-reserva-d-familia-pack-variedades-750-cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Caja 6 TORETO | Reserva Đ Familia | Merlot | 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 53970,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/caja-6-toreto-reserva-d-familia-merlot-750-cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Caja 6 TORETO | Reserva Đ Familia | Cabernet Sauvignon | 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 53970,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/caja-6-toreto-reserva-d-familia-cabernet-sauvignon-750-cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Caja 6 TORETO | Reserva Đ Familia | Carmenere | 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 53970,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/caja-6-toreto-reserva-d-familia-carmenere-750-cc-copia"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Royal One | Gran Reserva  | Carmenere | 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 6990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/royal-one-gran-reserva-carmenere-750-cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Royal One | Gran Reserva  | Cabernet Sauvignon | 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 6990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/royal-one-gran-reserva-cabernet-sauvignon-750-cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "TORETO | Reserva Đ Familia | Cabernet Sauvignon | 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 13990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/toreto-reserva-d-familia-cabernet-sauvignon-750-cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "TORETO | Reserva Đ Familia | Merlot | 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 13990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/toreto-reserva-d-familia-merlot-750-cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "TORETO | Reserva Đ Familia | Carmenere | 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 13990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/toreto-reserva-d-familia-carmenere-750-cc-copia"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack 6 vinos|Vinos unicos| 750cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 37750,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-6-vinos-vinos-unicos-750cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack 6 vinos|Vinos Refrescantes| 750cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 34950,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-6-vinos-vinos-tintos-diferentes-750cc-copia"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "6 x Bestia Origen|Premium| Carignan|  750cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 99000,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/6-x-bestia-origen-premium-carignan-750cc-copia"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Origen|Premium| Carignan|  750cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 18990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-origen-premium-carignan-750cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack 12 vinos| 12 Vinos Pasión por las Bestias  | 750cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 79716,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-12-vinos-12-vinos-pasion-por-las-bestias-750cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack 12 vinos|Pack 12 Vinos Intensidad & Celebración | 750cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 72864,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-12-vinos-pack-12-vinos-intensidad-celebracion-750cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack 12 vinos|Pack 12 Vinos Dulce & Estructura | 750cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 67584,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-12-vinos-pack-12-vinos-dulce-estructura-750cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack 12 vinos|12 vinos para brindar sin reglas |",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 79780,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-12-vinos-12-vinos-para-brindar-sin-reglas"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack 6 vinos|Lambrusco Rosso, Bestia Sweet| 750cc",
+    "brand": "Bestias Wines",
+    "type": "espumoso",
+    "price": 35960,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-6-vinos-lambrusco-rosso-bestia-sweet-750cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack 6 vinos|Vinos Tintos Diferentes| 750cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 40590,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-6-vinos-las-bestias-indomables-750cc-copia"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Sweet Reserva | Red Blend|  Caja 6 Botellas 750cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 32990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-sweet-reserva-red-blend-caja-6-botellas-750cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Sweet|Reserva| Red Blend|  750cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 7990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-sweet-reserva-red-blend-750cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack 6 vinos| Las Bestias indomables| 750cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 35200,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-6-vinos-las-bestias-indomables-750cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "PAck 6 vinos| Bestia Roja Carmenere,Toreto Gran Reserva Carmenere| 750cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 40000,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-6-vinos-bestia-roja-carmenere-toreto-gran-reserva-carmenere-750cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack 6 Vinos |Lambrusco Rosso, Dark Abyss Chocolate| 750cc",
+    "brand": "Bestias Wines",
+    "type": "espumoso",
+    "price": 31168,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-6-vinos-lambrusco-rosso-dark-abyss-chocolate-750cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack 6 vinos| Lambrusco Rosso, Toreto Gran Reserva| 750cc",
+    "brand": "Bestias Wines",
+    "type": "espumoso",
+    "price": 34947,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-6-vinos-lambrusco-rosso-toreto-gran-reserva-750cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack 6 Espumantes| Lo mejor en espumantes| 750cc",
+    "brand": "Bestias Wines",
+    "type": "espumoso",
+    "price": 47558,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-6-vinos-6-vinos-unicos-750cc-copia"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack 6 vinos| 6 Vinos únicos|  750cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 35994,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-12-vinos-seleccion-del-enologo-750cc-copia"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Lambrusco Rosso | Espumante Italiano |  Caja 6 Botellas 750cc",
+    "brand": "Bestias Wines",
+    "type": "espumoso",
+    "price": 35964,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/mouline-floss-carmenere-gran-seleccion-caja-6-botellas-750cc-copia"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Lambrusco Rosso | Espumante Italiano |  750cc",
+    "brand": "Bestias Wines",
+    "type": "espumoso",
+    "price": 7990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/legion-carmenere-reserva-750cc-copia"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack 3 vinos|Vinos Iconos y super premium |",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 79182,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-3-vinos-vinos-iconos-y-super-premium"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Roja Cabernet Sauvignon | Gran Reserva | Caja 12 Botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 69500,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-roja-cabernet-sauvignon-gran-reserva-caja-12-botellas-750-cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Roja Carmenere | Gran Reserva | Caja 12 Botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 69500,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-roja-gran-reserva-cepas-tintas-caja-6-botellas-750-cc-copy"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack 12 vinos| Reserva y Gran Reserva | Carmenere|",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 66000,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-12-vinos-reserva-y-gran-reserva-bestias-wines"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Entre Toros | Gran Reserva | Cabernet Sauvignon | Caja 6 Botellas 750 cc",
+    "brand": "VentaVinos",
+    "type": "tinto",
+    "price": 38964,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/entre-toros-gran-reserva-cabernet-sauvignon-caja-6-botellas-750-cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Entre Toros | Gran Reserva | Cabernet Sauvignon | Botella 750 cc",
+    "brand": "VentaVinos",
+    "type": "tinto",
+    "price": 8990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/entre-toros-gran-reserva-cabernet-sauvignon-botella-750-cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Toreto | Icono | Blend | Estuche Madera | 750 cc",
+    "brand": "VentaVinos",
+    "type": "otro",
+    "price": 59990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/toreto-icono-blend-estuche-madera-750-cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "PACK BESTIA LOVE Y DARK ABYSS CHOCOLATE",
+    "brand": "VentaVinos",
+    "type": "otro",
+    "price": 13990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-bestia-love-y-dark-abyss-chocolate"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Azul, Brut | Espumante | Botella",
+    "brand": "Bestias Wines",
+    "type": "espumoso",
+    "price": 6990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-azul-brut-espumante"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Azul, Brut | Espumante | Caja 6 Botellas",
+    "brand": "Bestias Wines",
+    "type": "espumoso",
+    "price": 32990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-azul-brut-espumante-1"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Rock | Gran Reserva | Blend | Botella 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 7990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-rock-gran-reserva-blend-caja-6-botellas-750-cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Rock | Gran Reserva | Blend | Caja 6 Botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 37964,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-rock-gran-reserva-blend-caja-6-botellas-750-cc-1"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "PACK ROCK AND LOVE | Gran Reserva | Blend | Caja 6 Botellas 750cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 38990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-love-gran-reserva-blend-caja-6-botellas-750-cc-copia"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Parrales | Reserva | Carmenere | Caja 6 Botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 32364,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/copia-de-parrales-reserva-carmenere-botella-750-cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Parrales | Reserva | Carmenere | Botella 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 6990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/parrales-reserva-carmenere-botella-750-cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Marqués De Cazaux | Gran Reserva | Cabernet Sauvignon | Caja 6 Botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 43164,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/marques-de-cazaux-gran-reserva-750cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack Mix Bestias - Toreto | Cabernet Sauvignon | Caja 6 Botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 41394,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-mix-bestias-toreto"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack Mix Bestias Wines | Cepas Tintas | Caja 6 Botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 41394,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-mix-bestias-wines-cepas-tintas"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Pack Mix Toreto | Cepas Tintas | Caja 6 Botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 42204,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/pack-mix-toreto-cepas-tintas"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Santa Agustina | Reserva | Carmenere | Caja 6 Botellas 750 cc",
+    "brand": "Santa Agustina",
+    "type": "tinto",
+    "price": 25164,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/santa-agustina-reserva"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Santa Agustina | Reserva | Carmenere | Botella 750 Cc",
+    "brand": "Santa Agustina",
+    "type": "tinto",
+    "price": 5990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/santa-agustina-reserva-1"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Toreto | Gran Reserva | Late Harvest | Botella 375 cc",
+    "brand": "Bestias Wines",
+    "type": "blanco",
+    "price": 5592,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/toreto-gran-reserva-late-harvest-botella-375cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Love | Gran Reserva | Blend | Caja 6 Botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 37990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-love-reserva-blend-caja-6-bot"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Love | Gran Reserva | Blend | 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 7990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-love-reserva-blend-750-cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Dark Abyss | Chocolate | Caja 6 Botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 32990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/dark-abyss-chocolate-caja-6-botellas"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Dark Abyss | Chocolate | Botella 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 7990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/dark-abyss-chocolate-750cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Toreto | Gran Reserva | Late Harvest | Caja 6 Botellas 375 cc",
+    "brand": "Bestias Wines",
+    "type": "blanco",
+    "price": 29990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/toreto-gran-reserva-late-harvest-caja-12-botellas"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Azul | Reserva | Sauvignon Blanc | Botella 750 cc",
+    "brand": "Bestias Wines",
+    "type": "blanco",
+    "price": 6392,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-verde-reserva-sauvignon-blanc-750-cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Azul | Reserva | Sauvignon Blanc | Caja 6 Botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "blanco",
+    "price": 32764,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-verde-reserva-sauvignon-blanc-caja-6-botellas"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Negra | Reserva De Familia | Chardonnay | 750 cc",
+    "brand": "Bestias Wines",
+    "type": "blanco",
+    "price": 12990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-negra-reserva-de-familia-chardonnay-750-cc"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Negra | Reserva De Familia | Chardonnay | Caja 6 Botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "blanco",
+    "price": 50364,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-negra-reserva-de-familia-chardonnay-caja-6-botellas"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Gold | Limited Edition | Carmenere| Caja Madera 6 botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 97990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-gold-limited-edition-caja-madera"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Toreto | Gran Reserva | Cepas Tintas | Botella 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 11190,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/toreto-gran-reserva-cepas-tintas-botella"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Toreto | Reserva Privada | Cepas Tintas | Botella 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 7990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/toreto-reserva-privada-cepas-tintas-1"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Toreto | Gran Reserva | Cepas Tintas | Caja 6 Botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 42990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/toreto-gran-reserva-cepas-tintas"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Toreto | Reserva Privada | Cepas Tintas | Caja 6 Botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 32990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/toreto-reserva-privada-cepas-tintas"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia | Espumante | Brut | Botella 750 cc",
+    "brand": "Bestias Wines",
+    "type": "espumoso",
+    "price": 9990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-espumante-1"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia | Espumante | Brut | Caja 6 Botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "espumoso",
+    "price": 43990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-espumante"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Mix Deluxe Bestias Wines | Cepas Tintas | Caja Madera 6 botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 59990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/mix-deluxe-bestias-wines-caja-madera"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Negra | Reserva De Familia | Cepas Tintas | Caja 6 Botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 54400,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-negra-reserva-de-familia"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Marqués De Cazaux | Reserva | Cabernet Sauvignon | Botella 750 cc",
+    "brand": "Marques de Cazaux",
+    "type": "tinto",
+    "price": 5990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/marques-de-cazaux-reserva-1"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Roja | Gran Reserva | Cepas Tintas | Caja 6 Botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 37425,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-roja-gran-reserva"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Azul | Reserva | Cepas Tintas | Caja 6 Botellas 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 32990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-azul-reserva"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Conde De Marras | Gran Reserva | Cabernet Sauvignon | Botella 750 Cc",
+    "brand": "Conde de Marras",
+    "type": "tinto",
+    "price": 9990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/conde-de-marras-gran-reserva-1"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Roja | Gran Reserva | Cepas Tintas | Botella 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 8990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-roja-gran-reserva-1"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Negra | Reserva De Familia | Cepas Tintas | Botella 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 13990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-negra-reserva-de-familia-1"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia Azul | Reserva | Cepas Tintas | Botella 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 6990,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-azul-reserva-1"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Marqués De Cazaux | Reserva | Cabernet Sauvignon | Caja 6 Botellas 750 cc",
+    "brand": "Marques de Cazaux",
+    "type": "tinto",
+    "price": 25364,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/marques-de-cazaux-reserva"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Conde De Marras | Gran Reserva | Cabernet Sauvignon | Caja 6 Botellas 750 cc",
+    "brand": "Conde de Marras",
+    "type": "tinto",
+    "price": 38970,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/conde-de-marras-gran-reserva"
+  },
+  {
+    "retailer": "VentaVinos",
+    "name": "Bestia | Icono | Strong Red Wine | Estuche Madera | 750 cc",
+    "brand": "Bestias Wines",
+    "type": "tinto",
+    "price": 34993,
+    "available": true,
+    "url": "https://www.ventavinos.cl/products/bestia-icono"
+  }
+]

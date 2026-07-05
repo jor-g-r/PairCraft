@@ -1,0 +1,2495 @@
+[
+  {
+    "retailer": "La Vinoteca",
+    "name": "Lopez Pangue Mezcla Ensamblaje",
+    "brand": "Lopez Pangue",
+    "type": "otro",
+    "price": 14310,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/lopez-pangue-mezcla-ensamblaje-6019/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Tarapacá Etiqueta Dorada Cab. Sauvignon",
+    "brand": "Tarapacá",
+    "type": "otro",
+    "price": 52990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/tarapaca-etiqueta-dorada-cab-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Gran Reserva Carmenere",
+    "brand": "Punti Ferrer",
+    "type": "tinto",
+    "price": 9990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-gran-reserva-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Clos de Luz Massal 1945 Carménère",
+    "brand": "Clos de Luz",
+    "type": "tinto",
+    "price": 12990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/clos-de-luz-massal-1945-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Garzón Reserva Tannat",
+    "brand": "Garzón",
+    "type": "tinto",
+    "price": 14690,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/garzon-reserva-tannat/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Montes Outer Limits Zapallar Sauvignon Blanc",
+    "brand": "Montes",
+    "type": "blanco",
+    "price": 17670,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/montes-outer-limits-zapallar-sauvignon-blanc/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "A Cabernet Franc",
+    "brand": "VIK",
+    "type": "tinto",
+    "price": 17990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/a-cabernet-franc-7557/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Montes Alpha Carménère",
+    "brand": "Montes",
+    "type": "tinto",
+    "price": 14990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/montes-alpha-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Montes Purple Angel Carménère",
+    "brand": "Montes",
+    "type": "tinto",
+    "price": 117590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/montes-purple-angel-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "A Carménère",
+    "brand": "VIK",
+    "type": "tinto",
+    "price": 21590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/vik-a-carmenere-6774/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Matetic Corralillo Garnacha",
+    "brand": "Matetic",
+    "type": "tinto",
+    "price": 14490,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/matetic-corralillo-garnacha-6761/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "El Principal Memorias",
+    "brand": "El Principal",
+    "type": "otro",
+    "price": 21990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/el-principal-memorias/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "El Principal Kiñe",
+    "brand": "El Principal",
+    "type": "otro",
+    "price": 20990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/el-principal-kiñe/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Clos de Luz Boho Sauvignon Blanc",
+    "brand": "Clos de Luz",
+    "type": "blanco",
+    "price": 14990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/clos-de-luz-boho-sauvignon-blanc/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Reserva Carmenere",
+    "brand": "Punti Ferrer",
+    "type": "tinto",
+    "price": 3990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-reserva-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Signature Carmenere",
+    "brand": "Punti Ferrer",
+    "type": "tinto",
+    "price": 4590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-signature-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Pack Íconos de la Casa",
+    "brand": "Casas del Bosque",
+    "type": "otro",
+    "price": 149990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/pack-iconos-de-la-casa/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Clos de Luz Arao Red Blend",
+    "brand": "Clos de Luz",
+    "type": "otro",
+    "price": 11990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/clos-de-luz-arao-red-blend/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Clos de Luz Carménère",
+    "brand": "Clos de Luz",
+    "type": "tinto",
+    "price": 38990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/clos-de-luz-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Clos de Luz Azuda Syrah",
+    "brand": "Clos de Luz",
+    "type": "tinto",
+    "price": 13490,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/clos-de-luz-azuda-syrah/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Clos de Luz Azuda Concreto Carménère",
+    "brand": "Clos de Luz",
+    "type": "tinto",
+    "price": 12990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/clos-de-luz-azuda-concreto-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viu Manent Infinito",
+    "brand": "Viu Manent",
+    "type": "otro",
+    "price": 47990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/viu-manent-infinito/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Montes Special Cuvee Cabernet Sauvignon",
+    "brand": "Montes",
+    "type": "tinto",
+    "price": 29350,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/montes-special-cuvee-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Lopez Pangue Rosado",
+    "brand": "Lopez Pangue",
+    "type": "rosado",
+    "price": 11190,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/lopez-pangue-rosado/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Ema Cuarto Elemento Carménère",
+    "brand": "Santa Ema",
+    "type": "tinto",
+    "price": 10490,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-ema-cuarto-elemento-carmenere-7168/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "El Principal",
+    "brand": "El Principal",
+    "type": "otro",
+    "price": 107990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/el-principal/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "El Principal Calicanto",
+    "brand": "El Principal",
+    "type": "otro",
+    "price": 12590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/el-principal-calicanto/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Lopez Pangue Gran Mezcla Ensamblaje",
+    "brand": "Lopez Pangue",
+    "type": "otro",
+    "price": 29350,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/lopez-pangue-gran-mezcla-ensamblaje-6018/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Chocalan Reserva Carménère",
+    "brand": "Chocalan",
+    "type": "tinto",
+    "price": 5590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/chocalan-reserva-carmenere-5926/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Dagaz Rayen del Itata",
+    "brand": "Dagaz",
+    "type": "otro",
+    "price": 38990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/dagaz-rayen-del-itata/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Lopez Pangue Gran Carmenere",
+    "brand": "Lopez Pangue",
+    "type": "tinto",
+    "price": 44990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/lopez-pangue-gran-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Podio Dorado Red Blend",
+    "brand": "Punti Ferrer",
+    "type": "otro",
+    "price": 18990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-podio-dorado-blend/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Requingua Mantoro Chardonnay",
+    "brand": "Requingua",
+    "type": "blanco",
+    "price": 7990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/requingua-mantoro-chardonnay/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Requingua Mantoro Cabernet Sauvignon",
+    "brand": "Requingua",
+    "type": "tinto",
+    "price": 7990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/requingua-mantoro-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Requingua Mantoro Carmenere",
+    "brand": "Requingua",
+    "type": "tinto",
+    "price": 7990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/requingua-mantoro-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Requingua Mantoro Red Blend",
+    "brand": "Requingua",
+    "type": "otro",
+    "price": 7990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/requingua-mantoro-red-blend/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viñedos Lo Abarca N°7 Riesling Kabinett",
+    "brand": "Viñedos Lo Abarca",
+    "type": "blanco",
+    "price": 24990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/vinedos-lo-abarca-n7-riesling-kabinett/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viñedos Lo Abarca N°1 Pinot Noir",
+    "brand": "Viñedos Lo Abarca",
+    "type": "tinto",
+    "price": 13990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/vinedos-lo-abarca-n1-pinot-noir/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viñedos Lo Abarca N°6 Rosé",
+    "brand": "Viñedos Lo Abarca",
+    "type": "rosado",
+    "price": 19990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/vinedos-lo-abarca-n6-rose/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viñedos Lo Abarca N°4 Garnacha",
+    "brand": "Viñedos Lo Abarca",
+    "type": "tinto",
+    "price": 19990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/vinedos-lo-abarca-n4-garnacha/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viñedos Lo Abarca N°3 Garnacha - Syrah",
+    "brand": "Viñedos Lo Abarca",
+    "type": "tinto",
+    "price": 19990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/vinedos-lo-abarca-n3-garnacha-syrah/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viñedos Lo Abarca N°2 Sauvignon Blanc",
+    "brand": "Viñedos Lo Abarca",
+    "type": "blanco",
+    "price": 10990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/vinedos-lo-abarca-n2-sauvignon-blanc/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Clos de Luz Boho Chardonnay",
+    "brand": "Clos de Luz",
+    "type": "blanco",
+    "price": 14990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/clos-de-luz-boho-chardonnay/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Clos de Luz Boho Syrah-Garnacha-Carignan",
+    "brand": "Clos de Luz",
+    "type": "tinto",
+    "price": 14990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/clos-de-luz-boho-syrah-garnacha-carignan/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Clos de Luz Boho Viognier",
+    "brand": "Clos de Luz",
+    "type": "blanco",
+    "price": 14990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/clos-de-luz-boho-viognier/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Garcés Silva Amayna Côte D´Mar Ensamblaje",
+    "brand": "Garces Silva",
+    "type": "otro",
+    "price": 19990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/garces-silva-cote-dmar-ensamblaje/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Maquis Viola Carmenere",
+    "brand": "Maquis",
+    "type": "tinto",
+    "price": 115990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/maquis-viola-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Maquis Lien Blend",
+    "brand": "Maquis",
+    "type": "otro",
+    "price": 35490,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/maquis-lien-blend/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Maquis Revela Carmenere",
+    "brand": "Maquis",
+    "type": "tinto",
+    "price": 16990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/maquis-revela-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Maquis Revela Cabernet Franc",
+    "brand": "Maquis",
+    "type": "tinto",
+    "price": 16990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/maquis-revela-cabernet-franc/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Calcu FUTA Cabernet Sauvignon",
+    "brand": "Calcu",
+    "type": "tinto",
+    "price": 99990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/calcu-futa-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Calcu Winemaker´s Selection Blend",
+    "brand": "Calcu",
+    "type": "otro",
+    "price": 28490,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/calcu-winemakers-selection-blend/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Calcu Tiny Blocks Cabernet Sauvignon",
+    "brand": "Calcu",
+    "type": "tinto",
+    "price": 13990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/calcu-tiny-blocks-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Calcu Tiny Blocks Sauvignon Blanc Semillón",
+    "brand": "Calcu",
+    "type": "blanco",
+    "price": 13990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/calcu-tiny-blocks-sauvignon-blanc-semillon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Conforme Cabernet Sauvignon",
+    "brand": "Punti Ferrer",
+    "type": "tinto",
+    "price": 18900,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-conforme-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Conforme Carmenere",
+    "brand": "Punti Ferrer",
+    "type": "tinto",
+    "price": 18900,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-conforme-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Serie Tinajas Malbec",
+    "brand": "Punti Ferrer",
+    "type": "tinto",
+    "price": 15990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-serie-tinajas-malbec/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Serie Tinajas Ensamblaje",
+    "brand": "Punti Ferrer",
+    "type": "otro",
+    "price": 15990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-serie-tinajas-ensamblaje/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Huevos de Loco Sauvignon Blanc",
+    "brand": "Punti Ferrer",
+    "type": "blanco",
+    "price": 9990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-huevos-de-loco-sauvignon-blanc/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Gran Reserva Sauvignon Blanc",
+    "brand": "Punti Ferrer",
+    "type": "blanco",
+    "price": 9990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-gran-reserva-sauvignon-blanc/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Gran Reserva Malbec",
+    "brand": "Punti Ferrer",
+    "type": "tinto",
+    "price": 9990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-gran-reserva-malbec/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Gran Reserva Cabernet Sauvignon",
+    "brand": "Punti Ferrer",
+    "type": "tinto",
+    "price": 9990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-gran-reserva-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Reserva Pinot Noir",
+    "brand": "Punti Ferrer",
+    "type": "tinto",
+    "price": 3990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-reserva-pinot-noir/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Reserva Cabernet Sauvignon",
+    "brand": "Punti Ferrer",
+    "type": "tinto",
+    "price": 3990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-reserva-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Signature Cabernet Sauvignon",
+    "brand": "Punti Ferrer",
+    "type": "tinto",
+    "price": 4590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-signature-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Signature Merlot",
+    "brand": "Punti Ferrer",
+    "type": "tinto",
+    "price": 4590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-signature-merlot/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Signature Chardonnay",
+    "brand": "Punti Ferrer",
+    "type": "blanco",
+    "price": 4590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-signature-chardonnay/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Signature Sauvignon Blanc",
+    "brand": "Punti Ferrer",
+    "type": "blanco",
+    "price": 4590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-signature-sauvignon-blanc/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Leyda Lot 5 Chardonnay",
+    "brand": "Leyda",
+    "type": "blanco",
+    "price": 18890,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/leyda-lot5-chardonnay/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Leyda Lot 21 Pinot Noir",
+    "brand": "Leyda",
+    "type": "tinto",
+    "price": 31490,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/leyda-lot21-pinot-noir/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Leyda Coastal Vineyards Sauvignon Blanc",
+    "brand": "Leyda",
+    "type": "blanco",
+    "price": 13690,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/leyda-coastal-vineyards-sauvignon-blanc/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Leyda Coastal Vineyards Pinot Noir",
+    "brand": "Leyda",
+    "type": "tinto",
+    "price": 13690,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/leyda-coastal-vineyards-pinot-noir/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Montes Outer Limits Albariño",
+    "brand": "Montes",
+    "type": "blanco",
+    "price": 25190,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/montes-outer-limits-albariño/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Casa Bauzá Isabel Carmenere",
+    "brand": "Casa Bauzá",
+    "type": "tinto",
+    "price": 55990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/casa-bauza-icono-isabel-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Casa Bauzá Valiente Cabernet Sauvignon",
+    "brand": "Casa Bauzá",
+    "type": "tinto",
+    "price": 14490,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/casa-bauza-valiente-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "von Siebenthal Orocoipo Carmenere",
+    "brand": "Von Siebenthal",
+    "type": "tinto",
+    "price": 44990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/von-siebenthal-orocoipo-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Clos de Luz Massal 1945 Carménère",
+    "brand": "Clos de Luz",
+    "type": "tinto",
+    "price": 119940,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/clos-de-luz-massal-1945-carmenere-8090/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Mix Casa Marín",
+    "brand": "Casa Marin",
+    "type": "otro",
+    "price": 82970,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/mix-casa-marin/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Quebrada de Macul Stella Aurea Cabernet Sauvignon",
+    "brand": "Quebrada de Macul",
+    "type": "tinto",
+    "price": 169990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/quebrada-de-macul-stella-aurea-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Quebrada de Macul TEZ Ensamblaje",
+    "brand": "Quebrada de Macul",
+    "type": "otro",
+    "price": 263990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/quebrada-de-macul-tez-ensamblaje/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Garcés Silva Agapes Sauvignon Blanc",
+    "brand": "Garces Silva",
+    "type": "blanco",
+    "price": 38990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/garces-silva-agapes-sauvignon-blanc/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Undurraga Trama Pinot Noir",
+    "brand": "Undurraga",
+    "type": "tinto",
+    "price": 32090,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/undurraga-trama-pinot-noir/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Morandé El Cabernet de Ranquil",
+    "brand": "Morandé",
+    "type": "tinto",
+    "price": 63590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/morande-el-cabernet-de-ranquil/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Valdivieso Caballo Loco Experimental Granitico",
+    "brand": "Valdivieso",
+    "type": "otro",
+    "price": 52490,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/valdivieso-caballo-loco-experimental-granitico/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Casas de Bucalemu Fósiles Pinot Noir",
+    "brand": "Casas de Bucalemu",
+    "type": "tinto",
+    "price": 23090,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/casas-de-bucalemu-fosiles-pinot-noir/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Garzón Reserva Tannat",
+    "brand": "Garzón",
+    "type": "tinto",
+    "price": 138540,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/garzon-reserva-tannat-x6/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Chocalan Vitrum Carménère",
+    "brand": "Chocalan",
+    "type": "tinto",
+    "price": 17990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/chocalan-vitrum-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Luigi Bosca Paraíso",
+    "brand": "Luigi Bosca",
+    "type": "otro",
+    "price": 120790,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/luigi-bosca-paraiso/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Luigi Bosca De Sangre Cabernet Franc",
+    "brand": "Luigi Bosca",
+    "type": "tinto",
+    "price": 20790,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/luigi-bosca-de-sangre-cabernet-franc/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Clos de Luz Agras País",
+    "brand": "Clos de Luz",
+    "type": "otro",
+    "price": 11990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/clos-de-luz-agras-pais/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Clos de Luz Azuda Garnacha",
+    "brand": "Clos de Luz",
+    "type": "tinto",
+    "price": 15990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/clos-de-luz-azuda-garnacha/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Clos de Luz Massal 1945 Malbec",
+    "brand": "Clos de Luz",
+    "type": "tinto",
+    "price": 15990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/clos-de-luz-massal-1945-malbec/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Clos de Luz Massal 1945 Cabernet Sauvignon",
+    "brand": "Clos de Luz",
+    "type": "tinto",
+    "price": 15990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/clos-de-luz-massal-1945-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Lapostolle Cuvee Alexandre Merlot",
+    "brand": "Lapostolle",
+    "type": "tinto",
+    "price": 22790,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/lapostolle-cuvee-alexandre-merlot/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Lapostolle Clos Apalta",
+    "brand": "Lapostolle",
+    "type": "otro",
+    "price": 175990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/lapostolle-clos-apalta/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Lapostolle Cuvee Alexandre Carménère",
+    "brand": "Lapostolle",
+    "type": "tinto",
+    "price": 22790,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/lapostolle-cuvee-alexandre-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Lapostolle Cuvee Alexandre Cabernet Sauvignon",
+    "brand": "Lapostolle",
+    "type": "tinto",
+    "price": 22790,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/lapostolle-cuvee-alexandre-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viu Manent Single Vineyard Carménère",
+    "brand": "Viu Manent",
+    "type": "tinto",
+    "price": 21030,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/viu-manent-single-vineyard-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viu Manent Tiny Trials Chardonnay",
+    "brand": "Viu Manent",
+    "type": "blanco",
+    "price": 15110,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/viu-manent-tiny-trials-chardonnay/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viu Manent Secreto Rosé",
+    "brand": "Viu Manent",
+    "type": "rosado",
+    "price": 11750,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/viu-manent-secreto-rose/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viu Manent Gran Reserva Cabernet Sauvignon",
+    "brand": "Viu Manent",
+    "type": "tinto",
+    "price": 11750,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/viu-manent-gran-reserva-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viu Manent Gran Reserva Carménère",
+    "brand": "Viu Manent",
+    "type": "tinto",
+    "price": 11750,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/viu-manent-gran-reserva-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viu Manent Viu 1",
+    "brand": "Viu Manent",
+    "type": "otro",
+    "price": 120470,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/viu-manent-viu-1/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "A Cabernet Nouveau",
+    "brand": "VIK",
+    "type": "tinto",
+    "price": 21590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/a-cabernet-nouveau/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Casas del Bosque Botanic Series Chardonnay",
+    "brand": "Casas del Bosque",
+    "type": "blanco",
+    "price": 67150,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/casas-del-bosque-botanic-series-chardonnay-x6/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Casas del Bosque Botanic Series Pinot Noir",
+    "brand": "Casas del Bosque",
+    "type": "tinto",
+    "price": 67150,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/casas-del-bosque-botanic-series-pinot-noir-x6/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Casas del Bosque Botanic Series Pinot Noir",
+    "brand": "Casas del Bosque",
+    "type": "tinto",
+    "price": 14590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/casas-del-bosque-botanic-series-pinot-noir/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Casas del Bosque Botanic Series Chardonnay",
+    "brand": "Casas del Bosque",
+    "type": "blanco",
+    "price": 11670,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/casas-del-bosque-botanic-series-chardonnay/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Garcés Silva Amayna Garden Blend White",
+    "brand": "Garces Silva",
+    "type": "otro",
+    "price": 23190,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/garces-silva-amayna-garden-blend-white/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Garzón Balasto Ensamblaje",
+    "brand": "Garzón",
+    "type": "otro",
+    "price": 124790,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/garzon-balasto-ensamblaje/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Garzón Petit Clos Tannat",
+    "brand": "Garzón",
+    "type": "tinto",
+    "price": 53590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/garzon-petit-clos-tannat/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Garzón Single Vineyard Tannat",
+    "brand": "Garzón",
+    "type": "tinto",
+    "price": 33590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/garzon-single-vineyard-tannat/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Garzón Single Vineyard Petit Verdot",
+    "brand": "Garzón",
+    "type": "tinto",
+    "price": 32790,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/garzon-single-vineyard-petit-verdot/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Garzón Reserva Marselan",
+    "brand": "Garzón",
+    "type": "otro",
+    "price": 14690,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/garzon-reserva-marselan/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Garzón Reserva Albariño",
+    "brand": "Garzón",
+    "type": "blanco",
+    "price": 13990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/garzon-reserva-albarino/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Garzón Estate Cabernet de Corte",
+    "brand": "Garzón",
+    "type": "tinto",
+    "price": 16790,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/garzon-estate-cabernet-de-corte/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Veramonte Orgánico Gran Reserva Rosé",
+    "brand": "Veramonte",
+    "type": "rosado",
+    "price": 8390,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/veramonte-organico-gran-reserva-rose/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Veramonte Tesis de Primus Blend",
+    "brand": "Veramonte",
+    "type": "otro",
+    "price": 12630,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/veramonte-tesis-de-primus-blend/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Veramonte Tesis de Primus Cabernet Sauvignon",
+    "brand": "Veramonte",
+    "type": "tinto",
+    "price": 12630,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/veramonte-tesis-de-primus-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Veramonte Tesis de Primus Carménère",
+    "brand": "Veramonte",
+    "type": "tinto",
+    "price": 12630,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/veramonte-tesis-de-primus-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Veramonte Orgánico Gran Reserva Cabernet Sauvignon",
+    "brand": "Veramonte",
+    "type": "tinto",
+    "price": 8390,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/veramonte-organico-gran-reserva-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Veramonte Orgánico Gran Reserva Pinot Noir",
+    "brand": "Veramonte",
+    "type": "tinto",
+    "price": 8390,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/veramonte-organico-gran-reserva-pinot-noir/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Veramonte Orgánico Gran Reserva Chardonnay",
+    "brand": "Veramonte",
+    "type": "blanco",
+    "price": 8390,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/veramonte-organico-gran-reserva-chardonnay/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Veramonte Orgánico Gran Reserva Sauvignon Blanc",
+    "brand": "Veramonte",
+    "type": "blanco",
+    "price": 8390,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/veramonte-organico-gran-reserva-sauvignon-blanc/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "StoneVIK",
+    "brand": "VIK",
+    "type": "otro",
+    "price": 210990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/stonevik/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Montes Wings Carménère",
+    "brand": "Montes",
+    "type": "tinto",
+    "price": 63030,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/montes-wings-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Montes Special Cuvee Carménère",
+    "brand": "Montes",
+    "type": "tinto",
+    "price": 29350,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/montes-special-cuvee-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Cabernario Special Selection",
+    "brand": "Santa Rita",
+    "type": "otro",
+    "price": 14310,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/cabernario-special-selection/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Cabernario Red",
+    "brand": "Santa Rita",
+    "type": "otro",
+    "price": 8870,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/cabernario-red/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Cabernario N°8",
+    "brand": "Santa Rita",
+    "type": "otro",
+    "price": 8870,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/cabernario-n8/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Carmen Gran Reserva Petit Sirah",
+    "brand": "Santa Rita",
+    "type": "otro",
+    "price": 9190,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/carmen-gran-reserva-petit-sirah/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Carmen Gran Reserva Grande Vidure - Cabernet Sauvignon",
+    "brand": "Santa Rita",
+    "type": "tinto",
+    "price": 9190,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/carmen-gran-reserva-grande-vidure-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Carmen Gran Reserva Cabernet Sauvignon",
+    "brand": "Santa Rita",
+    "type": "tinto",
+    "price": 9190,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/carmen-gran-reserva-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Carmen Gran Reserva Carignan",
+    "brand": "Santa Rita",
+    "type": "tinto",
+    "price": 9190,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/carmen-gran-reserva-carignan/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Venus in Furs Ensamblaje",
+    "brand": "Nobel",
+    "type": "otro",
+    "price": 14310,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/venus-in-furs-ensamblaje/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Lopez Pangue Mezcla Ensamblaje",
+    "brand": "Lopez Pangue",
+    "type": "otro",
+    "price": 81550,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/lopez-pangue-mezcla-ensamblaje-7735/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Caliterra Pétreo Malbec",
+    "brand": "Caliterra",
+    "type": "tinto",
+    "price": 26870,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/caliterra-petreo-malbec-6627/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Casa Marin Cartagena Sauvignon Blanc",
+    "brand": "Casa Marin",
+    "type": "blanco",
+    "price": 12630,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/casa-marin-cartagena-sauvignon-blanc/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Casa Marin Cipreses Sauvignon Blanc",
+    "brand": "Casa Marin",
+    "type": "blanco",
+    "price": 22310,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/casa-marin-cipreses-sauvignon-blanc-486/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Catena Zapata Angelica Zapata Malbec",
+    "brand": "Catena Zapata",
+    "type": "tinto",
+    "price": 59190,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/catena-zapata-angelica-zapata-malbec-6062/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Morandé Black Series Syrah",
+    "brand": "Morandé",
+    "type": "tinto",
+    "price": 16950,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/morande-black-series-syrah-6897/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Doña Dominga Gran Reserva Carménère",
+    "brand": "Casa Silva",
+    "type": "tinto",
+    "price": 13190,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/dona-dominga-gran-reserva-carmenere-6612/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Ema Reserva Carménere",
+    "brand": "Santa Ema",
+    "type": "tinto",
+    "price": 5110,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-ema-reserva-carmenere-7553/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Ema Reserva Sauvignon Blanc",
+    "brand": "Santa Ema",
+    "type": "blanco",
+    "price": 5110,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-ema-sauvignon-blanc-7552/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Ema Reserva Blend",
+    "brand": "Santa Ema",
+    "type": "otro",
+    "price": 5110,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-ema-reserva-blend-7551/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Ema Reserva Cabernet Sauvignon",
+    "brand": "Santa Ema",
+    "type": "tinto",
+    "price": 5110,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-ema-reserva-cabernet-sauvignon-7554/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Chocalan Vitrum Mediterráneo",
+    "brand": "Chocalan",
+    "type": "otro",
+    "price": 14390,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/chocalan-vitrum-mediterraneo-6809/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Chocalan Guillermo Ensamblaje",
+    "brand": "Chocalan",
+    "type": "otro",
+    "price": 60000,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/chocalan-guillermo-ensamblaje-6808/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Gran Enemigo Cabernet Franc",
+    "brand": "El Enemigo",
+    "type": "tinto",
+    "price": 117590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/gran-enemigo-cabernet-franc-6805/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "El Enemigo Chardonnay",
+    "brand": "El Enemigo",
+    "type": "blanco",
+    "price": 34470,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/el-enemigo-chardonnay-6270/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Morandé Casa Tinta Malbec",
+    "brand": "Morandé",
+    "type": "tinto",
+    "price": 28790,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/morande-casa-tinta-malbec-7159/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Ema Cuarto Elemento Cabernet Sauvignon",
+    "brand": "Santa Ema",
+    "type": "tinto",
+    "price": 16990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-ema-cuarto-elemento-cabernet-sauvignon-7171/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Ema Cuarto Elemento Cabernet Franc",
+    "brand": "Santa Ema",
+    "type": "tinto",
+    "price": 10490,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-ema-cuarto-elemento-cabernet-franc-7169/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Ema Felix",
+    "brand": "Santa Ema",
+    "type": "otro",
+    "price": 37590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-ema-felix/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Rita Carmen DO Loma Seca",
+    "brand": "Santa Rita",
+    "type": "otro",
+    "price": 21030,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-rita-carmen-do-loma-seca/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Rita Carmen DO Quijada",
+    "brand": "Santa Rita",
+    "type": "otro",
+    "price": 20630,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-rita-carmen-do-quijada/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Luigi Bosca De Sangre Cabernet Sauvignon",
+    "brand": "Luigi Bosca",
+    "type": "tinto",
+    "price": 18390,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/luigi-bosca-de-sangre-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Montes Alpha Chardonnay",
+    "brand": "Montes",
+    "type": "blanco",
+    "price": 18470,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/montes-alpha-chardonnay/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Montes Taita",
+    "brand": "Montes",
+    "type": "otro",
+    "price": 293990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/montes-taita/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Montes Outer Limits Pinot Noir",
+    "brand": "Montes",
+    "type": "tinto",
+    "price": 21830,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/montes-outer-limits-pinot-noir/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Montes Alpha M Cabernet Sauvignon",
+    "brand": "Montes",
+    "type": "tinto",
+    "price": 134390,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/montes-alpha-m-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Montes Alpha Cabernet Sauvignon",
+    "brand": "Montes",
+    "type": "tinto",
+    "price": 18470,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/montes-alpha-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Rita Carmen Winemakers Black Carménère",
+    "brand": "Santa Rita",
+    "type": "tinto",
+    "price": 13430,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-rita-carmen-winemakers-black-carmenere-6823/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Rita Pewen Carménère",
+    "brand": "Santa Rita",
+    "type": "tinto",
+    "price": 63030,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-rita-pewen-carmenere-6818/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Rita Floresta Chardonnay",
+    "brand": "Santa Rita",
+    "type": "blanco",
+    "price": 26290,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-rita-floresta-chardonnay-6817/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Rita Floresta Cabernet Franc",
+    "brand": "Santa Rita",
+    "type": "tinto",
+    "price": 21030,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-rita-floresta-cabernet-franc-6816/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Rita Carmen Delanz Apalta",
+    "brand": "Santa Rita",
+    "type": "otro",
+    "price": 31910,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-rita-carmen-delanz-apalta-6815/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Rita Carmen Delanz Alto Jahuel",
+    "brand": "Santa Rita",
+    "type": "otro",
+    "price": 34470,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-rita-carmen-delanz-alto-jahuel-6814/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Rita Bougainville Petite Syrah",
+    "brand": "Santa Rita",
+    "type": "tinto",
+    "price": 63030,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-rita-bougainville-petite-syrah-6813/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Requingua Toro de Piedra Carménère Cabernet Sauvignon",
+    "brand": "Requingua",
+    "type": "tinto",
+    "price": 8690,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/requingua-toro-de-piedra-carmenere-cabernet-sauvignon-4942/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Requingua Toro de Piedra Sauvignon Blanc Costero",
+    "brand": "Requingua",
+    "type": "blanco",
+    "price": 10790,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/requingua-toro-de-piedra-rincon-sauvignon-blanc-costero-6480/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Requingua Toro de Piedra Rincón de los Vientos Carménère",
+    "brand": "Requingua",
+    "type": "tinto",
+    "price": 11890,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/requingua-toro-de-piedra-rincon-de-los-vientos-carmenere-6483/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Mionetto Prosecco",
+    "brand": "Mionetto",
+    "type": "espumoso",
+    "price": 11990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/mionetto-prosecco-6316/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Orube White Barrel Fermented",
+    "brand": "Solar Viejo",
+    "type": "otro",
+    "price": 11990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/orube-white-barrel-fermented-6322/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Catena Zapata Malbec Argentino",
+    "brand": "Catena Zapata",
+    "type": "tinto",
+    "price": 151190,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/catena-zapata-malbec-argentino/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Emiliana Signos de Origen Chardonnay/Roussanne",
+    "brand": "Emiliana",
+    "type": "blanco",
+    "price": 12630,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/emiliana-signos-de-origen-chardonnay-roussanne/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Emiliana Salvaje Syrah/Roussanne",
+    "brand": "Emiliana",
+    "type": "tinto",
+    "price": 10550,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/emiliana-salvaje-syrah-roussanne/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "La Dolce Vita Espumante Rose",
+    "brand": "La Dolce Vita",
+    "type": "espumoso",
+    "price": 4390,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/la-dolce-vita-espumante-rose/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Lopez Pangue Verdejo",
+    "brand": "Lopez Pangue",
+    "type": "blanco",
+    "price": 17890,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/lopez-pangue-verdejo-6020/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Chocalan Reserva Cabernet Sauvignon",
+    "brand": "Chocalan",
+    "type": "tinto",
+    "price": 5590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/chocalan-reserva-cabernet-sauvignon-5909/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Chocalan Reserva Syrah",
+    "brand": "Chocalan",
+    "type": "tinto",
+    "price": 5590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/chocalan-reserva-syrah-5914/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Chocalan Reserva Sauvignon Blanc",
+    "brand": "Chocalan",
+    "type": "blanco",
+    "price": 5590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/chocalan-reserva-sauvignon-blanc-5913/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Chocalan Reserva Merlot",
+    "brand": "Chocalan",
+    "type": "tinto",
+    "price": 5590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/chocalan-reserva-merlot-5912/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Chocalan Origen Gran Reserva Syrah",
+    "brand": "Chocalan",
+    "type": "tinto",
+    "price": 7990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/chocalan-origen-gran-reserva-syrah-5928/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Chocalan Origen Gran Reserva Cabernet Sauvignon",
+    "brand": "Chocalan",
+    "type": "tinto",
+    "price": 7990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/chocalan-origen-gran-reserva-cabernet-sauvignon-5910/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Chocalan Origen Gran Reserva Sauvignon Blanc",
+    "brand": "Chocalan",
+    "type": "blanco",
+    "price": 7990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/chocalan-origen-gran-reserva-sauvignon-blanc-5927/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Chocalan Vitrum Cabernet Sauvignon",
+    "brand": "Chocalan",
+    "type": "tinto",
+    "price": 14390,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/chocalan-vitrum-cabernet-sauvignon-5929/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Chocalan Vitrum Ensamblaje",
+    "brand": "Chocalan",
+    "type": "otro",
+    "price": 14390,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/chocalan-vitrum-ensamblaje-5905/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Chocalan Alexia Ensamblaje",
+    "brand": "Chocalan",
+    "type": "otro",
+    "price": 47990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/chocalan-alexia-ensamblaje-5904/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Valdivieso Caballo Loco Grand Cru Apalta",
+    "brand": "Valdivieso",
+    "type": "otro",
+    "price": 275940,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/valdivieso-caballo-loco-grand-cru-apalta/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Perez Cruz Chaski",
+    "brand": "Perez Cruz",
+    "type": "otro",
+    "price": 25590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/perez-cruz-chaski/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Casas del Bosque Edición Limitada Cab. Sauvignon",
+    "brand": "Casas del Bosque",
+    "type": "otro",
+    "price": 23490,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/casas-del-bosque-edicion-limitada-cab-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Calcu Tiny Blocks Carmenere",
+    "brand": "Calcu",
+    "type": "tinto",
+    "price": 13990,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/calcu-tiny-blocks-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Mixta Carmenere",
+    "brand": "Perez Cruz",
+    "type": "tinto",
+    "price": 65990,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/mixta-carmenere-8188/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Casas de Bucalemu Salinas Sauvignon Blanc",
+    "brand": "Casas de Bucalemu",
+    "type": "blanco",
+    "price": 8810,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/casas-de-bucalemu-salinas-sauvignon-blanc/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Lapostolle Cuvee Alexandre Chardonnay",
+    "brand": "Lapostolle",
+    "type": "blanco",
+    "price": 19190,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/lapostolle-cuvee-alexandre-chardonnay/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viu Manent Single Vineyard Malbec",
+    "brand": "Viu Manent",
+    "type": "tinto",
+    "price": 21030,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/viu-manent-single-vineyard-malbec/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viu Manent Single Vineyard Cabernet Sauvignon",
+    "brand": "Viu Manent",
+    "type": "tinto",
+    "price": 21030,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/viu-manent-single-vineyard-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viu Manent El Incidente",
+    "brand": "Viu Manent",
+    "type": "otro",
+    "price": 56310,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/viu-manent-el-incidente/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Garzón Estate Tannat de Corte",
+    "brand": "Garzón",
+    "type": "tinto",
+    "price": 16790,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/garzon-estate-tannat-de-corte/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Veramonte Orgánico Gran Reserva Merlot",
+    "brand": "Veramonte",
+    "type": "tinto",
+    "price": 8390,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/veramonte-organico-gran-reserva-merlot/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Veramonte Orgánico Gran Reserva Carménère",
+    "brand": "Veramonte",
+    "type": "tinto",
+    "price": 10490,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/veramonte-organico-gran-reserva-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Cabernario N°2",
+    "brand": "Santa Rita",
+    "type": "otro",
+    "price": 8870,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/cabernario-n2/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Casa Marin Cartagena Riesling",
+    "brand": "Casa Marin",
+    "type": "blanco",
+    "price": 15790,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/casa-marin-cartagena-riesling/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Chocalan Origen Laderas del Maipo",
+    "brand": "Chocalan",
+    "type": "otro",
+    "price": 7990,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/chocalan-origen-laderas-de-maipo-6807/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Rita Carmen DO Matorral Chileno",
+    "brand": "Santa Rita",
+    "type": "otro",
+    "price": 21030,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/santa-rita-carmen-do-matorral-chileno/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Montes Cabernet Sauvignon Carménère",
+    "brand": "Montes",
+    "type": "tinto",
+    "price": 9190,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/montes-cabernet-sauvignon-carmenere/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Gandolini Las 3 Marias Cabernet Sauvignon",
+    "brand": "Gandolini",
+    "type": "tinto",
+    "price": 188990,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/gandolini-las-3-marias-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Montes Purple Angel Carménère",
+    "brand": "Montes",
+    "type": "tinto",
+    "price": 189990,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/montes-purple-angel-carmenere-6833/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Rita Floresta Carménère",
+    "brand": "Santa Rita",
+    "type": "tinto",
+    "price": 14990,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/santa-rita-floresta-carmenere-6822/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Orube Crianza",
+    "brand": "Solar Viejo",
+    "type": "otro",
+    "price": 13590,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/orube-crianza-6321/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Rita Carmen Gold Cabernet Sauvignon",
+    "brand": "Santa Rita",
+    "type": "tinto",
+    "price": 89990,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/santa-rita-carmen-gold-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Emiliana Novas Garnacha/Syrah",
+    "brand": "Emiliana",
+    "type": "tinto",
+    "price": 9190,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/emiliana-novas-garnacha-syrah/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Emiliana Signos de Origen Cabernet Sauvignon",
+    "brand": "Emiliana",
+    "type": "tinto",
+    "price": 13990,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/emiliana-signos-de-origen-cabernet-sauvignon/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Emiliana Novas Viognier",
+    "brand": "Emiliana",
+    "type": "blanco",
+    "price": 9190,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/emiliana-novas-viognier/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Chocalan Reserva Chardonnay",
+    "brand": "Chocalan",
+    "type": "blanco",
+    "price": 5590,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/chocalan-reserva-chardonnay-5907/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Chocalan Vitrum Malbec",
+    "brand": "Chocalan",
+    "type": "tinto",
+    "price": 14390,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/chocalan-vitrum-malbec-5911/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Ema Cuvee N°1",
+    "brand": "Santa Ema",
+    "type": "espumoso",
+    "price": 9990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-ema-cuvee-espumante/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Jardin De L'Éden Cuvee 2 Brut",
+    "brand": "Jardin L Eden",
+    "type": "espumoso",
+    "price": 9190,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/jardin-l-eden-cuvee-2-brut-/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Freixenet Cordón Negro",
+    "brand": "Freixenet",
+    "type": "espumoso",
+    "price": 14230,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/freixenet-cordon-negro/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "La Dolce Vita Espumante Brut",
+    "brand": "La Dolce Vita",
+    "type": "espumoso",
+    "price": 4390,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/la-dolce-vita-espumante-brut/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Freixenet  Asti",
+    "brand": "Freixenet",
+    "type": "espumoso",
+    "price": 14490,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/freixenet-prosecco-asti/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Dussaillant Lehmann Brut",
+    "brand": "Dussaillant Lehmann",
+    "type": "espumoso",
+    "price": 10550,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/dussaillant-lehmann-brut/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Freixenet Prosecco",
+    "brand": "Freixenet",
+    "type": "espumoso",
+    "price": 20390,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/freixenet-prosecco-/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Magnolia Extra Brut",
+    "brand": "Vinos del Arte",
+    "type": "espumoso",
+    "price": 13430,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/magnolia-extra-brut/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Freixenet Cordón Rosado",
+    "brand": "Freixenet",
+    "type": "espumoso",
+    "price": 13590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/freixenet-cordon-rosado/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viñedos Lo Abarca N°5 Pét-Nat",
+    "brand": "Viñedos Lo Abarca",
+    "type": "espumoso",
+    "price": 24990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/vinedos-lo-abarca-n5-pet-nat/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Espumante Xtra Brut",
+    "brand": "Punti Ferrer",
+    "type": "espumoso",
+    "price": 9990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-espumante-xtra-brut/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Espumante Brut País",
+    "brand": "Punti Ferrer",
+    "type": "espumoso",
+    "price": 9990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-espumante-brut-pais/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Leyda Extra Brut Método Tradicional",
+    "brand": "Leyda",
+    "type": "espumoso",
+    "price": 20990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/leyda-extra-brut-metodo-tradicional/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Taittinger Nocturne",
+    "brand": "Taittinger",
+    "type": "espumoso",
+    "price": 154390,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/taittinger-nocturne/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Taittinger Brut Reserva",
+    "brand": "Taittinger",
+    "type": "espumoso",
+    "price": 129990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/taittinger-brut-reserva/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Montes Lúmina",
+    "brand": "Montes",
+    "type": "espumoso",
+    "price": 23090,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/montes-lumina-brut/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Freixenet Carta Nevada Medium Dry",
+    "brand": "Freixenet",
+    "type": "espumoso",
+    "price": 45990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/freixenet-carta-nevada-medium-dry-7928/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Champagne Pol Roger Sir Winston Churchill",
+    "brand": "Pol Roger",
+    "type": "espumoso",
+    "price": 391430,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/champagne-pol-roger-sir-winston-churchill-6269/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Freixenet Carta Nevada Medium Dry",
+    "brand": "Freixenet",
+    "type": "espumoso",
+    "price": 10390,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/freixenet-carta-nevada-medium-dry/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Freixenet Organic Brut",
+    "brand": "Freixenet",
+    "type": "espumoso",
+    "price": 14390,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/freixenet-organic-brut-3458/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "La Dolce Vita Espumante Dolce",
+    "brand": "La Dolce Vita",
+    "type": "espumoso",
+    "price": 5590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/la-dolce-vita-espumante-dolce/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "La Dolce Vita Espumante Brut Black",
+    "brand": "La Dolce Vita",
+    "type": "espumoso",
+    "price": 5590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/la-dolce-vita-espumante-brut-black1/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "VIK La Piu Belle Champagne",
+    "brand": "VIK",
+    "type": "espumoso",
+    "price": 168790,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/vik-la-piu-belle-champagne/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viñamar Brut Unique",
+    "brand": "San Pedro",
+    "type": "espumoso",
+    "price": 9190,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/vinamar-brut-unique/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Undurraga Extra Brut",
+    "brand": "Undurraga",
+    "type": "espumoso",
+    "price": 8630,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/undurraga-extra-brut-/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Undurraga Brut Royal",
+    "brand": "Undurraga",
+    "type": "espumoso",
+    "price": 7750,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/undurraga-brut-royal-/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Undurraga  Supreme Extra Brut",
+    "brand": "Undurraga",
+    "type": "espumoso",
+    "price": 13190,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/undurraga--supreme-extra-brut-/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Requingua Potro de Piedra Brut Nature",
+    "brand": "Requingua",
+    "type": "espumoso",
+    "price": 14990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/requingua-potro-de-piedra-brut-nature/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Freixenet Mia Fruity & Sweet Moscato",
+    "brand": "Freixenet",
+    "type": "espumoso",
+    "price": 11590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/freixenet-mia-fruity-and-sweet-moscato/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Freixenet Mia Delicate & Sweet Moscato",
+    "brand": "Freixenet",
+    "type": "espumoso",
+    "price": 14490,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/freixenet-mia-delicate--y-sweet-moscato/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Valdivieso Espumante Extra Brut",
+    "brand": "Valdivieso",
+    "type": "espumoso",
+    "price": 15110,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/valdivieso-espumante-extra-brut/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Valdivieso Espumante Blanc de Noirs",
+    "brand": "Valdivieso",
+    "type": "espumoso",
+    "price": 16790,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/valdivieso-espumante-blanc-de-noirs/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Valdivieso Espumante Limited Brut",
+    "brand": "Valdivieso",
+    "type": "espumoso",
+    "price": 9670,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/valdivieso-espumante-limited-brut/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Valdivieso Centenario Blanc de Blancs",
+    "brand": "Valdivieso",
+    "type": "espumoso",
+    "price": 34470,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/valdivieso-centenario-blanc-de-blancs/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Valdivieso Eclat Brut Rosé Cinsault",
+    "brand": "Valdivieso",
+    "type": "espumoso",
+    "price": 14310,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/valdivieso-eclat-brut-rose-cinsault/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Valdivieso Caballo Loco Grand Cru Blanc de Noirs",
+    "brand": "Valdivieso",
+    "type": "espumoso",
+    "price": 17990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/valdivieso-caballo-loco-grand-cru-blanc-de-noirs/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Valdivieso Caballo Loco Grand Cru Brut Nature",
+    "brand": "Valdivieso",
+    "type": "espumoso",
+    "price": 22790,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/valdivieso-caballo-loco-grand-cru-brut-nature/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Pol Roger Brut Reserve",
+    "brand": "Pol Roger",
+    "type": "espumoso",
+    "price": 97430,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/pol-roger-brut-reserve/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Casa Silva Espumante Dominga Brut",
+    "brand": "Casa Silva",
+    "type": "espumoso",
+    "price": 7590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/casa-silva-espumante-dominga-brut/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "AZUR Espumante Brut",
+    "brand": "Azur",
+    "type": "espumoso",
+    "price": 32590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/azur-espumante-brut/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Freixenet Alcohol Free Sparkling",
+    "brand": "Freixenet",
+    "type": "espumoso",
+    "price": 13590,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/freixenet-alcohol-free-sparkling/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Requingua Toro de Piedra Espumante Brut",
+    "brand": "Requingua",
+    "type": "espumoso",
+    "price": 11190,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/requingua-toro-de-piedra-espumante-brut/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Segura Viudas Brut Reserva Heredad",
+    "brand": "Segura Viudas",
+    "type": "espumoso",
+    "price": 31990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/segura-viudas-brut-reserva-heredad/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Casas Del Bosque Bo Extra Brut",
+    "brand": "Casas del Bosque",
+    "type": "espumoso",
+    "price": 29830,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/casas-del-bosque-bo-extra-brut/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Santa Ema Extra Brut",
+    "brand": "Santa Ema",
+    "type": "espumoso",
+    "price": 19990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/santa-ema-extra-brut/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Cono Sur Sparkling Brut",
+    "brand": "Cono Sur",
+    "type": "espumoso",
+    "price": 9190,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/cono-sur-sparkling-brut/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Freixenet Vintage Reserva Brut Nature",
+    "brand": "Freixenet",
+    "type": "espumoso",
+    "price": 15990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/freixenet-vintage-reserva-brut-nature/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Freixenet Ice",
+    "brand": "Freixenet",
+    "type": "espumoso",
+    "price": 15990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/freixenet-ice/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "La Linda Brut",
+    "brand": "Luigi Bosca",
+    "type": "espumoso",
+    "price": 17990,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/la-linda-brut-brut/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Luigi Bosca Brut Nature",
+    "brand": "Luigi Bosca",
+    "type": "espumoso",
+    "price": 29190,
+    "available": true,
+    "url": "https://www.lavinoteca.cl/luigi-bosca-brut-nature/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Puntí Ferrer Signature Rosé",
+    "brand": "Punti Ferrer",
+    "type": "espumoso",
+    "price": 4590,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/punti-ferrer-signature-rose/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Viñamar Brut",
+    "brand": "San Pedro",
+    "type": "espumoso",
+    "price": 9490,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/vinamar-brut/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Piper-Heidsieck Brut",
+    "brand": "Piper-Heidsieck",
+    "type": "espumoso",
+    "price": 69750,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/piper-heidsieck-brut/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Valdivieso Limited Brut Rosé - Cinsault",
+    "brand": "Valdivieso",
+    "type": "espumoso",
+    "price": 6870,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/valdivieso-limited-brut-rose-cinsault/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Antiyal Espumante Medianoche",
+    "brand": "Antiyal",
+    "type": "espumoso",
+    "price": 25590,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/antiyal-espumante-medianoche/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Segura Viudas Brut Reserva",
+    "brand": "Segura Viudas",
+    "type": "espumoso",
+    "price": 10190,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/segura-viudas-brut-reserva-/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Matetic Coastal Brut",
+    "brand": "Matetic",
+    "type": "espumoso",
+    "price": 27990,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/matetic-coastal-brut/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Cono Sur Sparkling Rosé",
+    "brand": "Cono Sur",
+    "type": "espumoso",
+    "price": 7190,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/cono-sur-sparkling-rose/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "La Linda Brut Rosé Malbec",
+    "brand": "Luigi Bosca",
+    "type": "espumoso",
+    "price": 7990,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/la-linda-brut-rose-malbec/p"
+  },
+  {
+    "retailer": "La Vinoteca",
+    "name": "Luigi Bosca Brut",
+    "brand": "Luigi Bosca",
+    "type": "espumoso",
+    "price": 19190,
+    "available": false,
+    "url": "https://www.lavinoteca.cl/luigi-bosca-brut/p"
+  }
+]

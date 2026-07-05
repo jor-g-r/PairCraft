@@ -1,0 +1,545 @@
+presence,retailers,type,name,brand,min_price,max_price,sample_url
+2,La Vinoteca; Descorcha,blanco,Viu Manent Tiny Trials Chardonnay,Viu Manent,10643,15110,https://www.lavinoteca.cl/viu-manent-tiny-trials-chardonnay/p
+2,Descorcha; VentaVinos,espumoso,Bestia Azul Reserva Espumante Brut,Bestias Wines,4893,6990,https://descorcha.com/products/bestia-azul-reserva-espumante-brut
+2,Descorcha; VentaVinos,tinto,Bestia Negra Reserva De Familia Merlot,Bestias Wines,7145,12990,https://descorcha.com/products/bestia-negra-reserva-de-familia-merlot
+2,La Vinoteca; Descorcha,tinto,Chocalan Reserva Carménère,Chocalan,5140,5590,https://www.lavinoteca.cl/chocalan-reserva-carmenere-5926/p
+2,La Vinoteca; Descorcha,tinto,Chocalan Vitrum Carménère,Chocalan,12912,17990,https://www.lavinoteca.cl/chocalan-vitrum-carmenere/p
+2,Descorcha; VentaVinos,tinto,Entre Toros Gran Reserva Carmenere,Bestias Wines,5994,8990,https://descorcha.com/products/entre-toros-gran-reserva-carmenere
+2,La Vinoteca; Descorcha,tinto,Montes Alpha Carménère,Montes,13467,14990,https://www.lavinoteca.cl/montes-alpha-carmenere/p
+2,La Vinoteca; Descorcha,tinto,Montes Alpha M Cabernet Sauvignon,Montes,127400,134390,https://www.lavinoteca.cl/montes-alpha-m-cabernet-sauvignon/p
+2,La Vinoteca; Descorcha,tinto,Santa Ema Reserva Carménere,Santa Ema,5110,8153,https://www.lavinoteca.cl/santa-ema-reserva-carmenere-7553/p
+2,Descorcha; VentaVinos,tinto,Vino Toreto Reserva De Familia Cabernet Sauvignon,Bestias Wines,8245,13990,https://descorcha.com/products/toreto-reserva-de-familia-c-sauv
+2,La Vinoteca; Descorcha,tinto,Viu Manent Gran Reserva Cabernet Sauvignon,Viu Manent,5084,11750,https://www.lavinoteca.cl/viu-manent-gran-reserva-cabernet-sauvignon/p
+2,La Vinoteca; Descorcha,tinto,Viu Manent Single Vineyard Carménère,Viu Manent,15982,21030,https://www.lavinoteca.cl/viu-manent-single-vineyard-carmenere/p
+1,Descorcha,blanco,1000 Stories Chardonnay,Comercial Peumo,23992,23992,https://descorcha.com/products/1000-stories-chardonnay
+1,Descorcha,blanco,20 Barrels Sauvignon Blanc,Comercial Peumo,9594,9594,https://descorcha.com/products/20-barrels-sauvignon-blanc
+1,Descorcha,blanco,Aila Heaven Gran Reserva Chardonnay,Santa Ema,4496,4496,https://descorcha.com/products/aila-heaven-gran-reserva-chardonnay
+1,Descorcha,blanco,Aila Heaven Gran Reserva Sauv. Blanc,Santa Ema,4496,4496,https://descorcha.com/products/aila-heaven-gran-reserva-sauv-blanc
+1,Descorcha,blanco,Alyan Family Ambassador Chardonnay,Alyan,8953,8953,https://descorcha.com/products/alyan-family-ambassador-chardonnay
+1,Descorcha,blanco,Amelia Chardonnay,Comercial Peumo,20994,20994,https://descorcha.com/products/amelia-chardonnay
+1,Descorcha,blanco,Amplus Chardonnay 750cc,La vinoteca,13140,13140,https://descorcha.com/products/amplus-chardonnay-750cc
+1,VentaVinos,blanco,Bestia Azul | Reserva | Sauvignon Blanc | Botella 750 cc,Bestias Wines,6392,6392,https://www.ventavinos.cl/products/bestia-verde-reserva-sauvignon-blanc-750-cc
+1,VentaVinos,blanco,Bestia Azul | Reserva | Sauvignon Blanc | Caja 6 Botellas 750 cc,Bestias Wines,32764,32764,https://www.ventavinos.cl/products/bestia-verde-reserva-sauvignon-blanc-caja-6-botellas
+1,VentaVinos,blanco,Bestia Negra | Reserva De Familia | Chardonnay | Caja 6 Botellas 750 cc,Bestias Wines,50364,50364,https://www.ventavinos.cl/products/bestia-negra-reserva-de-familia-chardonnay-caja-6-botellas
+1,Descorcha,blanco,Bestia Negra Chardonnay,Bestias Wines,7145,7145,https://descorcha.com/products/bestia-negra-reserva-de-familia-char
+1,Descorcha,blanco,Bicicleta Gewurztraminer,Comercial Peumo,3192,3192,https://descorcha.com/products/bicicleta-gewurztraminer
+1,Descorcha,blanco,Bodega Norton Reserva Chardonnay,Bodega Norton,10493,10493,https://descorcha.com/products/bodega-norton-reserva-chardonnay
+1,Descorcha,blanco,Bonterra Sauvignon Blanc,Comercial Peumo,26990,26990,https://descorcha.com/products/bonterra-sauvignon-blanc
+1,Descorcha,blanco,Bonterra The Roost,Comercial Peumo,99990,99990,https://descorcha.com/products/bonterra-the-roost
+1,La Vinoteca,blanco,Calcu Tiny Blocks Sauvignon Blanc Semillón,Calcu,13990,13990,https://www.lavinoteca.cl/calcu-tiny-blocks-sauvignon-blanc-semillon/p
+1,La Vinoteca,blanco,Casa Marin Cartagena Riesling,Casa Marin,15790,15790,https://www.lavinoteca.cl/casa-marin-cartagena-riesling/p
+1,La Vinoteca,blanco,Casa Marin Cartagena Sauvignon Blanc,Casa Marin,12630,12630,https://www.lavinoteca.cl/casa-marin-cartagena-sauvignon-blanc/p
+1,La Vinoteca,blanco,Casa Marin Cipreses Sauvignon Blanc,Casa Marin,22310,22310,https://www.lavinoteca.cl/casa-marin-cipreses-sauvignon-blanc-486/p
+1,La Vinoteca,blanco,Casas de Bucalemu Salinas Sauvignon Blanc,Casas de Bucalemu,8810,8810,https://www.lavinoteca.cl/casas-de-bucalemu-salinas-sauvignon-blanc/p
+1,La Vinoteca,blanco,Casas del Bosque Botanic Series Chardonnay,Casas del Bosque,67150,67150,https://www.lavinoteca.cl/casas-del-bosque-botanic-series-chardonnay-x6/p
+1,Descorcha,blanco,Casillero Del Diablo Belight Sauvignon Blanc,Comercial Peumo,3594,3594,https://descorcha.com/products/casillero-del-diablo-belight-sauvignon-blanc
+1,Descorcha,blanco,Casillero del Diablo Late Harvest,Comercial Peumo,3894,3894,https://descorcha.com/products/casillero-del-diablo-late-harvest
+1,Descorcha,blanco,Casillero del Diablo Reserva Pedro Jimenez,Comercial Peumo,3474,3474,https://descorcha.com/products/casillero-del-diablo-reserva-pedro-jimenez
+1,Descorcha,blanco,Casillero Devils Carnaval Phenomenal Sauvignon,Comercial Peumo,3594,3594,https://descorcha.com/products/casillero-devils-carnaval-phenomenal-sauvignon
+1,Descorcha,blanco,Casillero Devils Collection White Ensamblaje,Comercial Peumo,4794,4794,https://descorcha.com/products/casillero-devils-collection-white-ensamblaje
+1,Descorcha,blanco,Cayetana Sauvignon Blanc,Monte Toro,10650,10650,https://descorcha.com/products/cayetana-sauvignon-blanc
+1,La Vinoteca,blanco,Clos de Luz Boho Sauvignon Blanc,Clos de Luz,14990,14990,https://www.lavinoteca.cl/clos-de-luz-boho-sauvignon-blanc/p
+1,La Vinoteca,blanco,Clos de Luz Boho Viognier,Clos de Luz,14990,14990,https://www.lavinoteca.cl/clos-de-luz-boho-viognier/p
+1,Descorcha,blanco,Diablo Crystal Sauvignon Blanc,Comercial Peumo,4794,4794,https://descorcha.com/products/diablo-crystal-sauvignon-blanc
+1,Descorcha,blanco,Diablo Golden Chardonnay,Comercial Peumo,4794,4794,https://descorcha.com/products/diablo-golden-chardonnay
+1,La Vinoteca,blanco,El Enemigo Chardonnay,El Enemigo,34470,34470,https://www.lavinoteca.cl/el-enemigo-chardonnay-6270/p
+1,La Vinoteca,blanco,Emiliana Novas Viognier,Emiliana,9190,9190,https://www.lavinoteca.cl/emiliana-novas-viognier/p
+1,La Vinoteca,blanco,Emiliana Signos de Origen Chardonnay/Roussanne,Emiliana,12630,12630,https://www.lavinoteca.cl/emiliana-signos-de-origen-chardonnay-roussanne/p
+1,Descorcha,blanco,Equis Naranjo,Andes Cru,9594,9594,https://descorcha.com/products/equis-naranjo
+1,Descorcha,blanco,Explorador Sauvignon Blanc,Aresti,6494,6494,https://descorcha.com/products/explorador-sauvignon-blanc
+1,Descorcha,blanco,Exportación Selecto Frutal Frutilla Naranja,Comercial Peumo,21552,21552,https://descorcha.com/products/exportacion-selecto-frutal-frutilla-naranja
+1,Descorcha,blanco,Exportación Selecto Frutal Melvin,Comercial Peumo,21552,21552,https://descorcha.com/products/exportacion-selecto-frutal-melvin
+1,Descorcha,blanco,Exportación Selecto Frutal Naranja Manzana,Comercial Peumo,21552,21552,https://descorcha.com/products/exportacion-selecto-frutal-naranja-manzana
+1,La Vinoteca,blanco,Garcés Silva Agapes Sauvignon Blanc,Garces Silva,38990,38990,https://www.lavinoteca.cl/garces-silva-agapes-sauvignon-blanc/p
+1,Descorcha,blanco,Intrepido Patrimonial Ensamblaje Blanco,Aresti,4544,4544,https://descorcha.com/products/intrepido-patrimonial-ensamblaje-blanco
+1,Descorcha,blanco,Kaiken Terroir Series Torrontés,Premium Brands,8133,8133,https://descorcha.com/products/kaiken-terroir-series-torrontes
+1,Descorcha,blanco,Kiñe Ensamblaje,El Principal,13644,13644,https://descorcha.com/products/kine-ensamblaje
+1,Descorcha,blanco,Late Harvest Sauvignon Blanc,Comercial Peumo,3352,3352,https://descorcha.com/products/late-harvest-sauvignon-blanc
+1,La Vinoteca,blanco,Leyda Coastal Vineyards Sauvignon Blanc,Leyda,13690,13690,https://www.lavinoteca.cl/leyda-coastal-vineyards-sauvignon-blanc/p
+1,La Vinoteca,blanco,Leyda Lot 5 Chardonnay,Leyda,18890,18890,https://www.lavinoteca.cl/leyda-lot5-chardonnay/p
+1,La Vinoteca,blanco,Lopez Pangue Verdejo,Lopez Pangue,17890,17890,https://www.lavinoteca.cl/lopez-pangue-verdejo-6020/p
+1,Descorcha,blanco,Lucido - Catarratto (Italia),Diego Edwards,18000,18000,https://descorcha.com/products/lucido-catarratto-italia
+1,Descorcha,blanco,Montes Classic Series Sauvignon Blanc,Premium Brands,6871,6871,https://descorcha.com/products/montes-classic-series-sauvignon-blanc
+1,La Vinoteca,blanco,Montes Outer Limits Albariño,Montes,25190,25190,https://www.lavinoteca.cl/montes-outer-limits-albariño/p
+1,La Vinoteca,blanco,Montes Outer Limits Zapallar Sauvignon Blanc,Montes,17670,17670,https://www.lavinoteca.cl/montes-outer-limits-zapallar-sauvignon-blanc/p
+1,Descorcha,blanco,Novas Viognier,Emiliana,5394,5394,https://descorcha.com/products/novas-viognier
+1,Descorcha,blanco,Origen Sauvignon Blanc,Chocalan,6893,6893,https://descorcha.com/products/origen-sauvignon-blanc
+1,Descorcha,blanco,Outer Limits Cinsault,Premium Brands,12081,12081,https://descorcha.com/products/outer-limits-cinsault
+1,Descorcha,blanco,Patagonia Chardonnay,Comercial Peumo,5394,5394,https://descorcha.com/products/patagonia-chardonnay
+1,La Vinoteca,blanco,Puntí Ferrer Huevos de Loco Sauvignon Blanc,Punti Ferrer,9990,9990,https://www.lavinoteca.cl/punti-ferrer-huevos-de-loco-sauvignon-blanc/p
+1,La Vinoteca,blanco,Requingua Mantoro Chardonnay,Requingua,7990,7990,https://www.lavinoteca.cl/requingua-mantoro-chardonnay/p
+1,La Vinoteca,blanco,Requingua Toro de Piedra Sauvignon Blanc Costero,Requingua,10790,10790,https://www.lavinoteca.cl/requingua-toro-de-piedra-rincon-sauvignon-blanc-costero-6480/p
+1,Descorcha,blanco,Santa Emiliana Chardonnay 700 cc,Comercial Peumo,2994,2994,https://descorcha.com/products/santa-emiliana-chardonnay-700-cc
+1,La Vinoteca,blanco,Santa Rita Floresta Chardonnay,Santa Rita,26290,26290,https://www.lavinoteca.cl/santa-rita-floresta-chardonnay-6817/p
+1,Descorcha,blanco,Single Vineyard Riesling,Comercial Peumo,6594,6594,https://descorcha.com/products/single-vineyard-riesling
+1,Descorcha,blanco,Sol de Sol Sauvignon Blanc,Aquitania,17219,17219,https://descorcha.com/products/sol-de-sol-sauvignon-blanc
+1,Descorcha,blanco,Terrunyo Sauvignon Blanc,Comercial Peumo,17994,17994,https://descorcha.com/products/terrunyo-sauvignon-blanc
+1,VentaVinos,blanco,Toreto | Gran Reserva | Late Harvest | Botella 375 cc,Bestias Wines,5592,5592,https://www.ventavinos.cl/products/toreto-gran-reserva-late-harvest-botella-375cc
+1,VentaVinos,blanco,Toreto | Gran Reserva | Late Harvest | Caja 6 Botellas 375 cc,Bestias Wines,29990,29990,https://www.ventavinos.cl/products/toreto-gran-reserva-late-harvest-caja-12-botellas
+1,Descorcha,blanco,Trio Chardonnay,Comercial Peumo,3894,3894,https://descorcha.com/products/trio-chardonnay
+1,Descorcha,blanco,Trisquel Gewurztraminer,Aresti,6293,6293,https://descorcha.com/products/trisquel-gewurztraminer
+1,Descorcha,blanco,Trisquel Sauvignon Blanc,Aresti,6473,6473,https://descorcha.com/products/trisquel-sauvignon-blanc
+1,Descorcha,blanco,Trisquel Series Chardonnay,Aresti,9744,9744,https://descorcha.com/products/trisquel-series-chardonnay
+1,Descorcha,blanco,Trisquel Series Semillon,Aresti,9744,9744,https://descorcha.com/products/trisquel-series-semillon
+1,La Vinoteca,blanco,Viñedos Lo Abarca N°2 Sauvignon Blanc,Viñedos Lo Abarca,10990,10990,https://www.lavinoteca.cl/vinedos-lo-abarca-n2-sauvignon-blanc/p
+1,La Vinoteca,blanco,Viñedos Lo Abarca N°7 Riesling Kabinett,Viñedos Lo Abarca,24990,24990,https://www.lavinoteca.cl/vinedos-lo-abarca-n7-riesling-kabinett/p
+1,Descorcha,blanco,Vino Casas Del Toqui Reserva Coastal Series Sauvignon Blanc 750cc,Premium Brands,6011,6011,https://descorcha.com/products/vino-casas-del-toqui-reserva-coastal-series-sauvignon-blanc-750cc
+1,Descorcha,blanco,Vino Los Vascos Chardonnay Reserva,Premium Brands,5375,5375,https://descorcha.com/products/vino-los-vascos-chardonnay-reserva
+1,Descorcha,blanco,Vino Medalla Real Santa Rita Sauvignon Blanc,Comercial Zapata,4304,4304,https://descorcha.com/products/vino-medalla-real-santa-rita-sauvignon-blanc
+1,Descorcha,blanco,Vino Montgras Organic Sauvignon Blanc 750cc,Premium Brands,6081,6081,https://descorcha.com/products/vino-montgras-organic-sauvignon-blanc-750cc
+1,Descorcha,blanco,Vino Odfjell Armador Sauvignon Blanc,Premium Brands,6099,6099,https://descorcha.com/products/vino-odfjell-armador-sauvignon-blanc
+1,Descorcha,blanco,Vino Viu Manent Gran Reserva Noble Semillon,Premium Brands,8392,8392,https://descorcha.com/products/vino-viu-manent-gran-reserva-noble-semillon
+1,Descorcha,blanco,Vino Viu Manent Secreto Viognier,Premium Brands,8023,8023,https://descorcha.com/products/vino-viu-manent-secreto-viognier
+1,Descorcha,espumoso,Amaluna Organic Brut,Emiliana,7194,7194,https://descorcha.com/products/amaluna-organic-brut
+1,La Vinoteca,espumoso,Antiyal Espumante Medianoche,Antiyal,25590,25590,https://www.lavinoteca.cl/antiyal-espumante-medianoche/p
+1,Descorcha,espumoso,Azur Brut,Emiliana,16794,16794,https://descorcha.com/products/azur-brut
+1,Descorcha,espumoso,Azur Brut 1.500cc,Emiliana,32994,32994,https://descorcha.com/products/azur-brut-1-500cc
+1,La Vinoteca,espumoso,AZUR Espumante Brut,Azur,32590,32590,https://www.lavinoteca.cl/azur-espumante-brut/p
+1,VentaVinos,espumoso,Bestia | Espumante | Brut | Botella 750 cc,Bestias Wines,9990,9990,https://www.ventavinos.cl/products/bestia-espumante-1
+1,VentaVinos,espumoso,Bestia | Espumante | Brut | Caja 6 Botellas 750 cc,Bestias Wines,43990,43990,https://www.ventavinos.cl/products/bestia-espumante
+1,VentaVinos,espumoso,"Bestia Azul, Brut | Espumante | Caja 6 Botellas",Bestias Wines,32990,32990,https://www.ventavinos.cl/products/bestia-azul-brut-espumante-1
+1,Descorcha,espumoso,Bestia Lambrusco Rosso,Bestias Wines,5593,5593,https://descorcha.com/products/lambrusco-rosso
+1,La Vinoteca,espumoso,Casa Silva Espumante Dominga Brut,Casa Silva,7590,7590,https://www.lavinoteca.cl/casa-silva-espumante-dominga-brut/p
+1,La Vinoteca,espumoso,Casas Del Bosque Bo Extra Brut,Casas del Bosque,29830,29830,https://www.lavinoteca.cl/casas-del-bosque-bo-extra-brut/p
+1,Descorcha,espumoso,Casillero Devils Carnaval Fantastic Sweet,Comercial Peumo,3594,3594,https://descorcha.com/products/casillero-devils-carnaval-fantastic-sweet
+1,Descorcha,espumoso,Cava Vilarnau Brut Reserva Organico,Comercial Zapata,8226,8226,https://descorcha.com/products/cava-vilarnau-brut-reserva-organico
+1,Descorcha,espumoso,Cava Vilarnau Rose Reserva Organico,Comercial Zapata,9540,9540,https://descorcha.com/products/cava-vilarnau-rose-reserva-organico
+1,La Vinoteca,espumoso,Champagne Pol Roger Sir Winston Churchill,Pol Roger,391430,391430,https://www.lavinoteca.cl/champagne-pol-roger-sir-winston-churchill-6269/p
+1,Descorcha,espumoso,Cono Sur Brut 750cc,Comercial Peumo,4194,4194,https://descorcha.com/products/cono-sur-brut-750cc
+1,La Vinoteca,espumoso,Cono Sur Sparkling Brut,Cono Sur,9190,9190,https://www.lavinoteca.cl/cono-sur-sparkling-brut/p
+1,La Vinoteca,espumoso,Cono Sur Sparkling Rosé,Cono Sur,7190,7190,https://www.lavinoteca.cl/cono-sur-sparkling-rose/p
+1,Descorcha,espumoso,Diablo Sparkling Blanc,Comercial Peumo,4794,4794,https://descorcha.com/products/diablo-sparkling-blanc
+1,Descorcha,espumoso,Diablo Sparkling Rose,Comercial Peumo,4794,4794,https://descorcha.com/products/diablo-sparkling-rose
+1,La Vinoteca,espumoso,Dussaillant Lehmann Brut,Dussaillant Lehmann,10550,10550,https://www.lavinoteca.cl/dussaillant-lehmann-brut/p
+1,Descorcha,espumoso,Espumante Broccato Brut 750cc.,Comercial Peumo,4194,4194,https://descorcha.com/products/espumante-broccato-brut-750cc
+1,Descorcha,espumoso,Espumante Broccato Moscato 750cc.,Comercial Peumo,4194,4194,https://descorcha.com/products/espumante-broccato-moscato-750cc
+1,Descorcha,espumoso,Espumante Casillero del Diablo Zero,Comercial Peumo,4193,4193,https://descorcha.com/products/espumante-casillero-del-diablo-zero
+1,Descorcha,espumoso,Espumante CE Norton Extra Brut,Bodega Norton,9592,9592,https://descorcha.com/products/espumante-ce-norton-extra-brut
+1,Descorcha,espumoso,Espumante Chandon Brut,Premium Brands,9893,9893,https://descorcha.com/products/espumante-chandon-brut
+1,Descorcha,espumoso,Espumante Chandon Brut Nature Bot 750cc,Premium Brands,12063,12063,https://descorcha.com/products/espumante-chandon-brut-nature-bot-750cc
+1,Descorcha,espumoso,Espumante Chandon Demisec Bot 750cc,Premium Brands,9144,9144,https://descorcha.com/products/espumante-chandon-demisec-bot-750cc
+1,Descorcha,espumoso,Espumante Chandon Rose Bot 750cc,Premium Brands,10912,10912,https://descorcha.com/products/espumante-chandon-rose-bot-750cc
+1,Descorcha,espumoso,Espumante Cruzat Cuvee Brut Nature 750 cc.,Cruzat,10995,10995,https://descorcha.com/products/espumante-cruzat-cuvee-brut-nature-750-cc
+1,Descorcha,espumoso,Espumante Cruzat Cuvee Extra Brut 750 cc.,Cruzat,10995,10995,https://descorcha.com/products/espumante-cruzat-cuvee-extra-brut-750-cc
+1,Descorcha,espumoso,Espumante Cruzat Cuvee Extra Rose 750 cc.,Cruzat,10995,10995,https://descorcha.com/products/espumante-cruzat-cuvee-extra-rose-750-cc
+1,Descorcha,espumoso,Espumante Cruzat Finca La Dama Extra Brut 750 cc.,Cruzat,16315,16315,https://descorcha.com/products/espumante-cruzat-finca-la-dama-extra-brut-750-cc
+1,Descorcha,espumoso,Espumante Cruzat Millesime Blac de Blancs Brut Nature 750 cc,Cruzat,30674,30674,https://descorcha.com/products/espumante-cruzat-millesime-blac-de-blancs-brut-nature-750-cc
+1,Descorcha,espumoso,Espumante Cruzat Premier Brut Rose 750 cc.,Cruzat,8796,8796,https://descorcha.com/products/espumante-cruzat-premier-brut-rose-750-cc
+1,Descorcha,espumoso,Espumante Cruzat Premier Dulce,Cruzat,8795,8795,https://descorcha.com/products/espumante-cruzat-premier-dulce
+1,Descorcha,espumoso,Espumante Dominga Brut,Comercial Zapata,4395,4395,https://descorcha.com/products/espumante-dominga-brut
+1,Descorcha,espumoso,Espumante Martini Asti,Comercial Zapata,12487,12487,https://descorcha.com/products/espumante-martini-asti
+1,Descorcha,espumoso,Espumante Martini Brut,Comercial Zapata,11752,11752,https://descorcha.com/products/espumante-martini-brut
+1,Descorcha,espumoso,Espumante Martini Prosseco,Comercial Zapata,11592,11592,https://descorcha.com/products/espumante-martini-prosseco
+1,Descorcha,espumoso,Espumante Norton Brut Rose,Bodega Norton,7192,7192,https://descorcha.com/products/espumante-norton-brut-rose
+1,Descorcha,espumoso,Espumante Norton CE Brut Nature,Bodega Norton,10392,10392,https://descorcha.com/products/espumante-norton-ce-brut-nature
+1,Descorcha,espumoso,Espumante Norton CE Brut Rose,Bodega Norton,10392,10392,https://descorcha.com/products/espumante-norton-ce-brut-rose
+1,Descorcha,espumoso,Espumante Norton CE Vintage,Bodega Norton,17243,17243,https://descorcha.com/products/espumante-norton-ce-vintage
+1,Descorcha,espumoso,Espumante Norton Extra Brut,Bodega Norton,7192,7192,https://descorcha.com/products/espumante-norton-extra-brut
+1,Descorcha,espumoso,Espumante Undurraga Brut,Comercial Zapata,4792,4792,https://descorcha.com/products/espumante-undurraga-brut
+1,Descorcha,espumoso,Espumante Valdivieso Brut,Comercial Zapata,4415,4415,https://descorcha.com/products/espumante-valdivieso-brut
+1,Descorcha,espumoso,Espumante VCP Demi Sec 750ml,Premium Brands,80000,80000,https://descorcha.com/products/espumante-vcp-demi-sec-750ml
+1,Descorcha,espumoso,Espumante Viña Mar Brut,Comercial Zapata,5694,5694,https://descorcha.com/products/espumante-vina-mar-brut
+1,Descorcha,espumoso,Espumante Viña Mar Brut Metodo Tradicional,Comercial Zapata,9885,9885,https://descorcha.com/products/espumante-vina-mar-brut-metodo-tradicional
+1,Descorcha,espumoso,Espumante Viña Mar Extra Brut,Comercial Zapata,6171,6171,https://descorcha.com/products/espumante-vina-mar-extra-brut
+1,Descorcha,espumoso,Espumante Viña Mar Unique,Comercial Zapata,5994,5994,https://descorcha.com/products/espumante-vina-mar-unique
+1,Descorcha,espumoso,Espumante Viña Mar Zero Brut,Comercial Zapata,6417,6417,https://descorcha.com/products/espumante-vina-mar-zero-brut
+1,Descorcha,espumoso,Espumante Viña Mar Zero Rosé 750ml,Comercial Zapata,5990,5990,https://descorcha.com/products/espumante-vina-mar-zero-rose-750ml
+1,La Vinoteca,espumoso,Freixenet  Asti,Freixenet,14490,14490,https://www.lavinoteca.cl/freixenet-prosecco-asti/p
+1,La Vinoteca,espumoso,Freixenet Alcohol Free Sparkling,Freixenet,13590,13590,https://www.lavinoteca.cl/freixenet-alcohol-free-sparkling/p
+1,La Vinoteca,espumoso,Freixenet Carta Nevada Medium Dry,Freixenet,45990,45990,https://www.lavinoteca.cl/freixenet-carta-nevada-medium-dry-7928/p
+1,La Vinoteca,espumoso,Freixenet Cordón Negro,Freixenet,14230,14230,https://www.lavinoteca.cl/freixenet-cordon-negro/p
+1,La Vinoteca,espumoso,Freixenet Cordón Rosado,Freixenet,13590,13590,https://www.lavinoteca.cl/freixenet-cordon-rosado/p
+1,La Vinoteca,espumoso,Freixenet Ice,Freixenet,15990,15990,https://www.lavinoteca.cl/freixenet-ice/p
+1,La Vinoteca,espumoso,Freixenet Mia Delicate & Sweet Moscato,Freixenet,14490,14490,https://www.lavinoteca.cl/freixenet-mia-delicate--y-sweet-moscato/p
+1,La Vinoteca,espumoso,Freixenet Mia Fruity & Sweet Moscato,Freixenet,11590,11590,https://www.lavinoteca.cl/freixenet-mia-fruity-and-sweet-moscato/p
+1,La Vinoteca,espumoso,Freixenet Organic Brut,Freixenet,14390,14390,https://www.lavinoteca.cl/freixenet-organic-brut-3458/p
+1,La Vinoteca,espumoso,Freixenet Prosecco,Freixenet,20390,20390,https://www.lavinoteca.cl/freixenet-prosecco-/p
+1,La Vinoteca,espumoso,Freixenet Vintage Reserva Brut Nature,Freixenet,15990,15990,https://www.lavinoteca.cl/freixenet-vintage-reserva-brut-nature/p
+1,Descorcha,espumoso,Gemma Brut,Emiliana,7794,7794,https://descorcha.com/products/gemma-brut
+1,Descorcha,espumoso,Gemma Rose,Emiliana,7794,7794,https://descorcha.com/products/gemma-rose
+1,La Vinoteca,espumoso,Jardin De L'Éden Cuvee 2 Brut,Jardin L Eden,9190,9190,https://www.lavinoteca.cl/jardin-l-eden-cuvee-2-brut-/p
+1,La Vinoteca,espumoso,La Dolce Vita Espumante Brut,La Dolce Vita,4390,4390,https://www.lavinoteca.cl/la-dolce-vita-espumante-brut/p
+1,La Vinoteca,espumoso,La Dolce Vita Espumante Brut Black,La Dolce Vita,5590,5590,https://www.lavinoteca.cl/la-dolce-vita-espumante-brut-black1/p
+1,La Vinoteca,espumoso,La Dolce Vita Espumante Dolce,La Dolce Vita,5590,5590,https://www.lavinoteca.cl/la-dolce-vita-espumante-dolce/p
+1,La Vinoteca,espumoso,La Dolce Vita Espumante Rose,La Dolce Vita,4390,4390,https://www.lavinoteca.cl/la-dolce-vita-espumante-rose/p
+1,La Vinoteca,espumoso,La Linda Brut,Luigi Bosca,17990,17990,https://www.lavinoteca.cl/la-linda-brut-brut/p
+1,La Vinoteca,espumoso,La Linda Brut Rosé Malbec,Luigi Bosca,7990,7990,https://www.lavinoteca.cl/la-linda-brut-rose-malbec/p
+1,VentaVinos,espumoso,Lambrusco Rosso | Espumante Italiano |  750cc,Bestias Wines,7990,7990,https://www.ventavinos.cl/products/legion-carmenere-reserva-750cc-copia
+1,VentaVinos,espumoso,Lambrusco Rosso | Espumante Italiano |  Caja 6 Botellas 750cc,Bestias Wines,35964,35964,https://www.ventavinos.cl/products/mouline-floss-carmenere-gran-seleccion-caja-6-botellas-750cc-copia
+1,La Vinoteca,espumoso,Leyda Extra Brut Método Tradicional,Leyda,20990,20990,https://www.lavinoteca.cl/leyda-extra-brut-metodo-tradicional/p
+1,La Vinoteca,espumoso,Luigi Bosca Brut,Luigi Bosca,19190,19190,https://www.lavinoteca.cl/luigi-bosca-brut/p
+1,La Vinoteca,espumoso,Luigi Bosca Brut Nature,Luigi Bosca,29190,29190,https://www.lavinoteca.cl/luigi-bosca-brut-nature/p
+1,La Vinoteca,espumoso,Magnolia Extra Brut,Vinos del Arte,13430,13430,https://www.lavinoteca.cl/magnolia-extra-brut/p
+1,La Vinoteca,espumoso,Matetic Coastal Brut,Matetic,27990,27990,https://www.lavinoteca.cl/matetic-coastal-brut/p
+1,La Vinoteca,espumoso,Mionetto Prosecco,Mionetto,11990,11990,https://www.lavinoteca.cl/mionetto-prosecco-6316/p
+1,La Vinoteca,espumoso,Montes Lúmina,Montes,23090,23090,https://www.lavinoteca.cl/montes-lumina-brut/p
+1,VentaVinos,espumoso,Pack 6 Espumantes| Lo mejor en espumantes| 750cc,Bestias Wines,47558,47558,https://www.ventavinos.cl/products/pack-6-vinos-6-vinos-unicos-750cc-copia
+1,VentaVinos,espumoso,"Pack 6 Vinos |Lambrusco Rosso, Dark Abyss Chocolate| 750cc",Bestias Wines,31168,31168,https://www.ventavinos.cl/products/pack-6-vinos-lambrusco-rosso-dark-abyss-chocolate-750cc
+1,VentaVinos,espumoso,"Pack 6 vinos| Lambrusco Rosso, Toreto Gran Reserva| 750cc",Bestias Wines,34947,34947,https://www.ventavinos.cl/products/pack-6-vinos-lambrusco-rosso-toreto-gran-reserva-750cc
+1,VentaVinos,espumoso,"Pack 6 vinos|Lambrusco Rosso, Bestia Sweet| 750cc",Bestias Wines,35960,35960,https://www.ventavinos.cl/products/pack-6-vinos-lambrusco-rosso-bestia-sweet-750cc
+1,La Vinoteca,espumoso,Piper-Heidsieck Brut,Piper-Heidsieck,69750,69750,https://www.lavinoteca.cl/piper-heidsieck-brut/p
+1,La Vinoteca,espumoso,Pol Roger Brut Reserve,Pol Roger,97430,97430,https://www.lavinoteca.cl/pol-roger-brut-reserve/p
+1,La Vinoteca,espumoso,Puntí Ferrer Espumante Brut País,Punti Ferrer,9990,9990,https://www.lavinoteca.cl/punti-ferrer-espumante-brut-pais/p
+1,La Vinoteca,espumoso,Puntí Ferrer Espumante Xtra Brut,Punti Ferrer,9990,9990,https://www.lavinoteca.cl/punti-ferrer-espumante-xtra-brut/p
+1,La Vinoteca,espumoso,Puntí Ferrer Signature Rosé,Punti Ferrer,4590,4590,https://www.lavinoteca.cl/punti-ferrer-signature-rose/p
+1,La Vinoteca,espumoso,Requingua Potro de Piedra Brut Nature,Requingua,14990,14990,https://www.lavinoteca.cl/requingua-potro-de-piedra-brut-nature/p
+1,La Vinoteca,espumoso,Requingua Toro de Piedra Espumante Brut,Requingua,11190,11190,https://www.lavinoteca.cl/requingua-toro-de-piedra-espumante-brut/p
+1,La Vinoteca,espumoso,Santa Ema Cuvee N°1,Santa Ema,9990,9990,https://www.lavinoteca.cl/santa-ema-cuvee-espumante/p
+1,La Vinoteca,espumoso,Santa Ema Extra Brut,Santa Ema,19990,19990,https://www.lavinoteca.cl/santa-ema-extra-brut/p
+1,Descorcha,espumoso,SBX Brut,Comercial Peumo,3894,3894,https://descorcha.com/products/sbx-brut
+1,Descorcha,espumoso,SBX Demi Sec,Comercial Peumo,3894,3894,https://descorcha.com/products/sbx-demi-sec
+1,Descorcha,espumoso,SBX Moscato,Comercial Peumo,3295,3295,https://descorcha.com/products/sbx-moscato
+1,Descorcha,espumoso,Sbx Rose,Comercial Peumo,3894,3894,https://descorcha.com/products/sbx-rose
+1,La Vinoteca,espumoso,Segura Viudas Brut Reserva,Segura Viudas,10190,10190,https://www.lavinoteca.cl/segura-viudas-brut-reserva-/p
+1,La Vinoteca,espumoso,Segura Viudas Brut Reserva Heredad,Segura Viudas,31990,31990,https://www.lavinoteca.cl/segura-viudas-brut-reserva-heredad/p
+1,Descorcha,espumoso,Sol de Sol Brut Nature Brut Nature,Aquitania,32494,32494,https://descorcha.com/products/sol-de-sol-brut-nature-brut-nature
+1,La Vinoteca,espumoso,Taittinger Brut Reserva,Taittinger,129990,129990,https://www.lavinoteca.cl/taittinger-brut-reserva/p
+1,La Vinoteca,espumoso,Taittinger Nocturne,Taittinger,154390,154390,https://www.lavinoteca.cl/taittinger-nocturne/p
+1,La Vinoteca,espumoso,Undurraga  Supreme Extra Brut,Undurraga,13190,13190,https://www.lavinoteca.cl/undurraga--supreme-extra-brut-/p
+1,La Vinoteca,espumoso,Undurraga Brut Royal,Undurraga,7750,7750,https://www.lavinoteca.cl/undurraga-brut-royal-/p
+1,La Vinoteca,espumoso,Undurraga Extra Brut,Undurraga,8630,8630,https://www.lavinoteca.cl/undurraga-extra-brut-/p
+1,La Vinoteca,espumoso,Valdivieso Caballo Loco Grand Cru Blanc de Noirs,Valdivieso,17990,17990,https://www.lavinoteca.cl/valdivieso-caballo-loco-grand-cru-blanc-de-noirs/p
+1,La Vinoteca,espumoso,Valdivieso Caballo Loco Grand Cru Brut Nature,Valdivieso,22790,22790,https://www.lavinoteca.cl/valdivieso-caballo-loco-grand-cru-brut-nature/p
+1,La Vinoteca,espumoso,Valdivieso Centenario Blanc de Blancs,Valdivieso,34470,34470,https://www.lavinoteca.cl/valdivieso-centenario-blanc-de-blancs/p
+1,La Vinoteca,espumoso,Valdivieso Eclat Brut Rosé Cinsault,Valdivieso,14310,14310,https://www.lavinoteca.cl/valdivieso-eclat-brut-rose-cinsault/p
+1,La Vinoteca,espumoso,Valdivieso Espumante Blanc de Noirs,Valdivieso,16790,16790,https://www.lavinoteca.cl/valdivieso-espumante-blanc-de-noirs/p
+1,La Vinoteca,espumoso,Valdivieso Espumante Extra Brut,Valdivieso,15110,15110,https://www.lavinoteca.cl/valdivieso-espumante-extra-brut/p
+1,La Vinoteca,espumoso,Valdivieso Espumante Limited Brut,Valdivieso,9670,9670,https://www.lavinoteca.cl/valdivieso-espumante-limited-brut/p
+1,La Vinoteca,espumoso,Valdivieso Limited Brut Rosé - Cinsault,Valdivieso,6870,6870,https://www.lavinoteca.cl/valdivieso-limited-brut-rose-cinsault/p
+1,Descorcha,espumoso,Veuve Clicquot Brut Yellow Label C/Est. 750cc,Premium Brands,91012,91012,https://descorcha.com/products/veuve-clicquot-brut-yellow-label-c-est-750cc
+1,Descorcha,espumoso,Veuve Clicquot La Grande Dame,Premium Brands,210000,210000,https://descorcha.com/products/veuve-clicquot-la-grande-dame
+1,La Vinoteca,espumoso,VIK La Piu Belle Champagne,VIK,168790,168790,https://www.lavinoteca.cl/vik-la-piu-belle-champagne/p
+1,La Vinoteca,espumoso,Viñamar Brut,San Pedro,9490,9490,https://www.lavinoteca.cl/vinamar-brut/p
+1,La Vinoteca,espumoso,Viñamar Brut Unique,San Pedro,9190,9190,https://www.lavinoteca.cl/vinamar-brut-unique/p
+1,La Vinoteca,espumoso,Viñedos Lo Abarca N°5 Pét-Nat,Viñedos Lo Abarca,24990,24990,https://www.lavinoteca.cl/vinedos-lo-abarca-n5-pet-nat/p
+1,Descorcha,espumoso,Vino Castillo Molina Gran Reserva Cabernet Sauvignon,Comercial Zapata,7145,7145,https://descorcha.com/products/vino-castillo-molina-gran-reserva-cabernet-sauvignon
+1,Descorcha,rosado,Adobe Rose,Comercial Peumo,3894,3894,https://descorcha.com/products/adobe-rose
+1,Descorcha,rosado,Bicicleta Frutal Rose Berries,Comercial Peumo,2394,2394,https://descorcha.com/products/bicicleta-frutal-rose-berries
+1,Descorcha,rosado,Bicicleta Rose,Comercial Peumo,2753,2753,https://descorcha.com/products/bicicleta-rose
+1,Descorcha,rosado,Casillero del Diablo Reserva Rose,Comercial Peumo,3594,3594,https://descorcha.com/products/casillero-del-diablo-reserva-rose
+1,Descorcha,rosado,Concha y Toro Rose,Comercial Peumo,3192,3192,https://descorcha.com/products/concha-y-toro-rose
+1,Descorcha,rosado,Diablo Luminous Rose,Comercial Peumo,4794,4794,https://descorcha.com/products/diablo-luminous-rose
+1,Descorcha,rosado,Dom Perignon Rose Vintage 750cc Rose,Premium Brands,504591,504591,https://descorcha.com/products/dom-perignon-rose-vintage-750cc-rose
+1,Descorcha,rosado,Late Harvest Rose,Comercial Peumo,3352,3352,https://descorcha.com/products/late-harvest-rose
+1,Descorcha,rosado,Lof Rutero Rosado,LOF,10400,10400,https://descorcha.com/products/lof-rutero-rosado
+1,La Vinoteca,rosado,Lopez Pangue Rosado,Lopez Pangue,11190,11190,https://www.lavinoteca.cl/lopez-pangue-rosado/p
+1,Descorcha,rosado,Marques de Casa Concha Rose Cinsault,Comercial Peumo,9594,9594,https://descorcha.com/products/marques-de-casa-concha-rose-cinsault
+1,Descorcha,rosado,Moët & Chandon Rose Imperial,Premium Brands,77804,77804,https://descorcha.com/products/moet-chandon-rose-imperial
+1,Descorcha,rosado,Tais Rose Pinot Noir,Emiliana,6594,6594,https://descorcha.com/products/tais-rose-pinot-noir
+1,La Vinoteca,rosado,Veramonte Orgánico Gran Reserva Rosé,Veramonte,8390,8390,https://www.lavinoteca.cl/veramonte-organico-gran-reserva-rose/p
+1,La Vinoteca,rosado,Viñedos Lo Abarca N°6 Rosé,Viñedos Lo Abarca,19990,19990,https://www.lavinoteca.cl/vinedos-lo-abarca-n6-rose/p
+1,Descorcha,rosado,Vino Los Vascos Rose Reserva,Premium Brands,5662,5662,https://descorcha.com/products/vino-los-vascos-rose-reserva
+1,Descorcha,rosado,Vino Vik La Piu Belle Rosé,Comercial Zapata,14063,14063,https://descorcha.com/products/vino-vik-la-piu-belle-rose
+1,La Vinoteca,rosado,Viu Manent Secreto Rosé,Viu Manent,11750,11750,https://www.lavinoteca.cl/viu-manent-secreto-rose/p
+1,Descorcha,tinto,1000 Stories Zinfandel,Comercial Peumo,23992,23992,https://descorcha.com/products/1000-stories-zinfandel
+1,Descorcha,tinto,57 Rocas Carmenere,Emiliana,11394,11394,https://descorcha.com/products/57-rocas-carmenere
+1,VentaVinos,tinto,6 x Bestia Origen|Premium| Carignan|  750cc,Bestias Wines,99000,99000,https://www.ventavinos.cl/products/6-x-bestia-origen-premium-carignan-750cc-copia
+1,La Vinoteca,tinto,A Cabernet Franc,VIK,17990,17990,https://www.lavinoteca.cl/a-cabernet-franc-7557/p
+1,La Vinoteca,tinto,A Cabernet Nouveau,VIK,21590,21590,https://www.lavinoteca.cl/a-cabernet-nouveau/p
+1,La Vinoteca,tinto,A Carménère,VIK,21590,21590,https://www.lavinoteca.cl/vik-a-carmenere-6774/p
+1,Descorcha,tinto,Adobe Carmenere,Comercial Peumo,4193,4193,https://descorcha.com/products/adobe-carmenere
+1,Descorcha,tinto,Albahra - Tintorera (España),Diego Edwards,17010,17010,https://descorcha.com/products/albahra-tintorera-espana
+1,Descorcha,tinto,Almaviva Ensamblaje,Comercial Peumo,280000,280000,https://descorcha.com/products/almaviva-ensamblaje-2022
+1,Descorcha,tinto,Almaviva EPU Ensamblaje,Comercial Peumo,59990,59990,https://descorcha.com/products/almaviva-epu-ensamblaje
+1,Descorcha,tinto,Alto Tajamar Syrah,Comercial Peumo,79992,79992,https://descorcha.com/products/alto-tajamar-syrah
+1,Descorcha,tinto,Alyan Gran Cuvee Cabernet Sauvignon,Alyan,7494,7494,https://descorcha.com/products/alyan-gran-cuvee-cabernet-sauvignon
+1,Descorcha,tinto,Alyan Gran Reserva Merlot,Alyan,5753,5753,https://descorcha.com/products/alyan-gran-reserva-merlot
+1,Descorcha,tinto,Alyan Panacea Ensamblaje,Alyan,16443,16443,https://descorcha.com/products/alyan-panacea-ensamblaje
+1,Descorcha,tinto,Amplus Carignan 750cc,La vinoteca,14094,14094,https://descorcha.com/products/amplus-carignan-750cc
+1,Descorcha,tinto,Andes Soul Ensamblaje,Emiliana,8534,8534,https://descorcha.com/products/andes-soul-ensamblaje
+1,Descorcha,tinto,Aquitania Carmenere,Aquitania,10320,10320,https://descorcha.com/products/aquitania-carmenere
+1,Descorcha,tinto,Argento Estate Organic Malbec,Emiliana,5318,5318,https://descorcha.com/products/argento-estate-organic-malbec
+1,Descorcha,tinto,Armador Carmenere,Premium Brands,6094,6094,https://descorcha.com/products/armador-carmenere
+1,Descorcha,tinto,Barrel Reserve,La vinoteca,7194,7194,https://descorcha.com/products/barrel-reserve
+1,VentaVinos,tinto,Bestia | Icono | Strong Red Wine | Estuche Madera | 750 cc,Bestias Wines,34993,34993,https://www.ventavinos.cl/products/bestia-icono
+1,VentaVinos,tinto,Bestia Azul | Reserva | Cepas Tintas | Botella 750 cc,Bestias Wines,6990,6990,https://www.ventavinos.cl/products/bestia-azul-reserva-1
+1,VentaVinos,tinto,Bestia Azul | Reserva | Cepas Tintas | Caja 6 Botellas 750 cc,Bestias Wines,32990,32990,https://www.ventavinos.cl/products/bestia-azul-reserva
+1,Descorcha,tinto,Bestia Azul Reserva Superior Merlot,Bestias Wines,4614,4614,https://descorcha.com/products/bestia-azul-reserva-superior-merlot
+1,VentaVinos,tinto,Bestia Gold | Limited Edition | Carmenere| Caja Madera 6 botellas 750 cc,Bestias Wines,97990,97990,https://www.ventavinos.cl/products/bestia-gold-limited-edition-caja-madera
+1,Descorcha,tinto,Bestia Gold Grand Cru Carmenere,Bestias Wines,12095,12095,https://descorcha.com/products/bestia-gold-grand-cru-carmenere
+1,Descorcha,tinto,Bestia Icono 666 Syrah/C.Sauv,Bestias Wines,29994,29994,https://descorcha.com/products/bestia-icono-666-syrah-c-sauv
+1,VentaVinos,tinto,Bestia Love | Gran Reserva | Blend | 750 cc,Bestias Wines,7990,7990,https://www.ventavinos.cl/products/bestia-love-reserva-blend-750-cc
+1,VentaVinos,tinto,Bestia Love | Gran Reserva | Blend | Caja 6 Botellas 750 cc,Bestias Wines,37990,37990,https://www.ventavinos.cl/products/bestia-love-reserva-blend-caja-6-bot
+1,VentaVinos,tinto,Bestia Negra | Reserva De Familia | Cepas Tintas | Botella 750 cc,Bestias Wines,13990,13990,https://www.ventavinos.cl/products/bestia-negra-reserva-de-familia-1
+1,VentaVinos,tinto,Bestia Negra | Reserva De Familia | Cepas Tintas | Caja 6 Botellas 750 cc,Bestias Wines,54400,54400,https://www.ventavinos.cl/products/bestia-negra-reserva-de-familia
+1,VentaVinos,tinto,Bestia Origen|Premium| Carignan|  750cc,Bestias Wines,18990,18990,https://www.ventavinos.cl/products/bestia-origen-premium-carignan-750cc
+1,VentaVinos,tinto,Bestia Rock | Gran Reserva | Blend | Botella 750 cc,Bestias Wines,7990,7990,https://www.ventavinos.cl/products/bestia-rock-gran-reserva-blend-caja-6-botellas-750-cc
+1,VentaVinos,tinto,Bestia Rock | Gran Reserva | Blend | Caja 6 Botellas 750 cc,Bestias Wines,37964,37964,https://www.ventavinos.cl/products/bestia-rock-gran-reserva-blend-caja-6-botellas-750-cc-1
+1,VentaVinos,tinto,Bestia Roja | Gran Reserva | Cepas Tintas | Botella 750 cc,Bestias Wines,8990,8990,https://www.ventavinos.cl/products/bestia-roja-gran-reserva-1
+1,VentaVinos,tinto,Bestia Roja | Gran Reserva | Cepas Tintas | Caja 6 Botellas 750 cc,Bestias Wines,37425,37425,https://www.ventavinos.cl/products/bestia-roja-gran-reserva
+1,VentaVinos,tinto,Bestia Roja Cabernet Sauvignon | Gran Reserva | Caja 12 Botellas 750 cc,Bestias Wines,69500,69500,https://www.ventavinos.cl/products/bestia-roja-cabernet-sauvignon-gran-reserva-caja-12-botellas-750-cc
+1,Descorcha,tinto,Bestia Roja Merlot,Bestias Wines,5994,5994,https://descorcha.com/products/bestia-roja-gran-reserva-merlot
+1,VentaVinos,tinto,Bestia Sweet Reserva | Red Blend|  Caja 6 Botellas 750cc,Bestias Wines,32990,32990,https://www.ventavinos.cl/products/bestia-sweet-reserva-red-blend-caja-6-botellas-750cc
+1,VentaVinos,tinto,Bestia Sweet|Reserva| Red Blend|  750cc,Bestias Wines,7990,7990,https://www.ventavinos.cl/products/bestia-sweet-reserva-red-blend-750cc
+1,Descorcha,tinto,Bicicleta Cabernet Sauvignon,Comercial Peumo,2793,2793,https://descorcha.com/products/bicicleta-cabernet-sauvignon
+1,Descorcha,tinto,Bicicleta Frutal Frutos del Bosque,Comercial Peumo,2394,2394,https://descorcha.com/products/bicicleta-frutal-frutos-del-bosque
+1,Descorcha,tinto,Bicicleta Red Blend,Comercial Peumo,2594,2594,https://descorcha.com/products/bicicleta-red-blend
+1,Descorcha,tinto,Bodega Norton Barrel Select,Bodega Norton,7920,7920,https://descorcha.com/products/bodega-norton-barrel-select
+1,Descorcha,tinto,Bodega Norton Lote Negro,Bodega Norton,23992,23992,https://descorcha.com/products/bodega-norton-lote-negro
+1,Descorcha,tinto,Bodega Norton Privada Malbec,Bodega Norton,22493,22493,https://descorcha.com/products/bodega-norton-privada-malbec
+1,Descorcha,tinto,Bodega Norton Private Family Blend,Bodega Norton,17243,17243,https://descorcha.com/products/bodega-norton-private-family-blend
+1,Descorcha,tinto,Bonterra The Butler,Comercial Peumo,89990,89990,https://descorcha.com/products/bonterra-the-butler
+1,Descorcha,tinto,Bonterra Zinfandel,Comercial Peumo,26990,26990,https://descorcha.com/products/bonterra-zinfandel
+1,Descorcha,tinto,Cabo De Hornos Cabernet Sauvignon,Comercial Zapata,52493,52493,https://descorcha.com/products/cabo-de-hornos-cabernet-sauvignon
+1,VentaVinos,tinto,Caja 6 Botellas Royal One | Gran Reserva  | Cabernet Sauvignon | 750 cc,Bestias Wines,29970,29970,https://www.ventavinos.cl/products/caja-6-botellas-royal-one-gran-reserva-cabernet-sauvignon-750-cc
+1,VentaVinos,tinto,Caja 6 TORETO | Reserva Đ Familia | Merlot | 750 cc,Bestias Wines,53970,53970,https://www.ventavinos.cl/products/caja-6-toreto-reserva-d-familia-merlot-750-cc
+1,VentaVinos,tinto,Caja 6 TORETO | Reserva Đ Familia | PACK VARIEDADES | 750 cc,Bestias Wines,53970,53970,https://www.ventavinos.cl/products/caja-6-toreto-reserva-d-familia-pack-variedades-750-cc
+1,VentaVinos,tinto,Caja 6 vinos Royal One | Gran Reserva  | Carmenere | 750 cc,Bestias Wines,29970,29970,https://www.ventavinos.cl/products/caja-6-vinos-royal-one-gran-reserva-carmenere-750-cc-copia
+1,La Vinoteca,tinto,Calcu FUTA Cabernet Sauvignon,Calcu,99990,99990,https://www.lavinoteca.cl/calcu-futa-cabernet-sauvignon/p
+1,La Vinoteca,tinto,Calcu Tiny Blocks Cabernet Sauvignon,Calcu,13990,13990,https://www.lavinoteca.cl/calcu-tiny-blocks-cabernet-sauvignon/p
+1,Descorcha,tinto,Calicanto Ensamblaje,El Principal,13993,13993,https://descorcha.com/products/calicanto-ensamblaje
+1,La Vinoteca,tinto,Caliterra Pétreo Malbec,Caliterra,26870,26870,https://www.lavinoteca.cl/caliterra-petreo-malbec-6627/p
+1,Descorcha,tinto,Capo Nativo Cabernet Sauvignon,Comercial Peumo,2796,2796,https://descorcha.com/products/capo-nativo-cabernet-sauvignon
+1,La Vinoteca,tinto,Carmen Gran Reserva Cabernet Sauvignon,Santa Rita,9190,9190,https://www.lavinoteca.cl/carmen-gran-reserva-cabernet-sauvignon/p
+1,La Vinoteca,tinto,Carmen Gran Reserva Carignan,Santa Rita,9190,9190,https://www.lavinoteca.cl/carmen-gran-reserva-carignan/p
+1,La Vinoteca,tinto,Carmen Gran Reserva Grande Vidure - Cabernet Sauvignon,Santa Rita,9190,9190,https://www.lavinoteca.cl/carmen-gran-reserva-grande-vidure-cabernet-sauvignon/p
+1,Descorcha,tinto,Carmin de Peumo Carmenere,Comercial Peumo,95200,95200,https://descorcha.com/products/carmin-de-peumo-carmenere
+1,La Vinoteca,tinto,Casa Bauzá Isabel Carmenere,Casa Bauzá,55990,55990,https://www.lavinoteca.cl/casa-bauza-icono-isabel-carmenere/p
+1,La Vinoteca,tinto,Casa Bauzá Valiente Cabernet Sauvignon,Casa Bauzá,14490,14490,https://www.lavinoteca.cl/casa-bauza-valiente-cabernet-sauvignon/p
+1,La Vinoteca,tinto,Casas de Bucalemu Fósiles Pinot Noir,Casas de Bucalemu,23090,23090,https://www.lavinoteca.cl/casas-de-bucalemu-fosiles-pinot-noir/p
+1,Descorcha,tinto,Casas Del Toqui Barrel Series Cabernet Sauvignon,Premium Brands,6335,6335,https://descorcha.com/products/casas-del-toqui-barrel-series-cabernet-sauvignon
+1,Descorcha,tinto,Casas Del Toqui Gran Reserva Carmenere,Premium Brands,7992,7992,https://descorcha.com/products/casas-del-toqui-gran-reserva-carmenere
+1,Descorcha,tinto,Casillero del Diablo Belight Red,Comercial Peumo,3594,3594,https://descorcha.com/products/casillero-del-diablo-belight-red
+1,Descorcha,tinto,Casillero del Diablo Red Blend Ensamblaje,Comercial Peumo,3594,3594,https://descorcha.com/products/casillero-del-diablo-red-blend-ensamblaje
+1,Descorcha,tinto,Casillero del Diablo Reserva Merlot,Comercial Peumo,3594,3594,https://descorcha.com/products/casillero-del-diablo-reserva-merlot
+1,Descorcha,tinto,Casillero del Diablo Reserva Privada Cabernet Sauvignon,Comercial Peumo,5994,5994,https://descorcha.com/products/casillero-del-diablo-reserva-privada-cabernet-sauvignon
+1,Descorcha,tinto,Casillero Devils Carnaval Fabulous Red,Comercial Peumo,3594,3594,https://descorcha.com/products/casillero-devils-carnaval-fabulous-red
+1,Descorcha,tinto,Casillero Devils Carnaval Spectacular Cabernet,Comercial Peumo,3594,3594,https://descorcha.com/products/casillero-devils-carnaval-spectacular-cabernet
+1,Descorcha,tinto,Casillero Devils Collection Red Ensamblaje,Comercial Peumo,4794,4794,https://descorcha.com/products/casillero-devils-collection-red-ensamblaje
+1,Descorcha,tinto,Catalina 750cc,La vinoteca,29994,29994,https://descorcha.com/products/catalina-750cc
+1,La Vinoteca,tinto,Catena Zapata Angelica Zapata Malbec,Catena Zapata,59190,59190,https://www.lavinoteca.cl/catena-zapata-angelica-zapata-malbec-6062/p
+1,La Vinoteca,tinto,Catena Zapata Malbec Argentino,Catena Zapata,151190,151190,https://www.lavinoteca.cl/catena-zapata-malbec-argentino/p
+1,Descorcha,tinto,Chateau Grand Village - Merlot (Francia),Diego Edwards,14700,14700,https://descorcha.com/products/chateau-grand-village-merlot-francia
+1,Descorcha,tinto,Chocalan Alexia Ensamblaje,Chocalan,33573,33573,https://descorcha.com/products/chocalan-alexia-ensamblaje
+1,La Vinoteca,tinto,Chocalan Origen Gran Reserva Syrah,Chocalan,7990,7990,https://www.lavinoteca.cl/chocalan-origen-gran-reserva-syrah-5928/p
+1,Descorcha,tinto,Chocalan Vitrum Ensamblaje,Chocalan,12743,12743,https://descorcha.com/products/chocalan-vitrum-ensamblaje
+1,La Vinoteca,tinto,Clos de Luz Azuda Concreto Carménère,Clos de Luz,12990,12990,https://www.lavinoteca.cl/clos-de-luz-azuda-concreto-carmenere/p
+1,La Vinoteca,tinto,Clos de Luz Azuda Garnacha,Clos de Luz,15990,15990,https://www.lavinoteca.cl/clos-de-luz-azuda-garnacha/p
+1,La Vinoteca,tinto,Clos de Luz Azuda Syrah,Clos de Luz,13490,13490,https://www.lavinoteca.cl/clos-de-luz-azuda-syrah/p
+1,La Vinoteca,tinto,Clos de Luz Boho Syrah-Garnacha-Carignan,Clos de Luz,14990,14990,https://www.lavinoteca.cl/clos-de-luz-boho-syrah-garnacha-carignan/p
+1,La Vinoteca,tinto,Clos de Luz Carménère,Clos de Luz,38990,38990,https://www.lavinoteca.cl/clos-de-luz-carmenere/p
+1,La Vinoteca,tinto,Clos de Luz Massal 1945 Carménère,Clos de Luz,12990,12990,https://www.lavinoteca.cl/clos-de-luz-massal-1945-carmenere/p
+1,Descorcha,tinto,Código 380 Assemblage 750cc,Diego Edwards,39593,39593,https://descorcha.com/products/codigo-380-assemblage-750cc
+1,Descorcha,tinto,Codigo Del Toqui Ensamblaje,Premium Brands,23192,23192,https://descorcha.com/products/codigo-del-toqui-ensamblaje
+1,Descorcha,tinto,Concha y Toro The Wine Malbec,Comercial Peumo,6045,6045,https://descorcha.com/products/concha-y-toro-the-wine-malbec
+1,VentaVinos,tinto,Conde De Marras | Gran Reserva | Cabernet Sauvignon | Botella 750 Cc,Conde de Marras,9990,9990,https://www.ventavinos.cl/products/conde-de-marras-gran-reserva-1
+1,VentaVinos,tinto,Conde De Marras | Gran Reserva | Cabernet Sauvignon | Caja 6 Botellas 750 cc,Conde de Marras,38970,38970,https://www.ventavinos.cl/products/conde-de-marras-gran-reserva
+1,Descorcha,tinto,Cono Sur Organico Ensamblaje,Comercial Peumo,4794,4794,https://descorcha.com/products/cono-sur-organico-ensamblaje
+1,Descorcha,tinto,Cono Sur Organico Pinot Noir,Comercial Peumo,4795,4795,https://descorcha.com/products/cono-sur-organico-pinot-noir
+1,Descorcha,tinto,Coyam Ensamblaje,Emiliana,14295,14295,https://descorcha.com/products/coyam-ensamblaje
+1,Descorcha,tinto,Coyam Ensamblaje 1.500 cc,Emiliana,31194,31194,https://descorcha.com/products/coyam-ensamblaje-1-500-cc
+1,VentaVinos,tinto,Dark Abyss | Chocolate | Botella 750 cc,Bestias Wines,7990,7990,https://www.ventavinos.cl/products/dark-abyss-chocolate-750cc
+1,VentaVinos,tinto,Dark Abyss | Chocolate | Caja 6 Botellas 750 cc,Bestias Wines,32990,32990,https://www.ventavinos.cl/products/dark-abyss-chocolate-caja-6-botellas
+1,Descorcha,tinto,Day One Pinot Noir,Premium Brands,6232,6232,https://descorcha.com/products/day-one-pinot-noir
+1,Descorcha,tinto,De Jose Cabernet Sauvignon,Emiliana,23994,23994,https://descorcha.com/products/de-jose-cabernet-sauvignon
+1,Descorcha,tinto,Diablo Black Cabernet Sauvignon,Comercial Peumo,4794,4794,https://descorcha.com/products/diablo-black-cabernet-sauvignon
+1,Descorcha,tinto,Diablo Dark Red Ensamblaje,Comercial Peumo,4794,4794,https://descorcha.com/products/diablo-dark-red-ensamblaje
+1,Descorcha,tinto,Diablo Deep Carmenere,Comercial Peumo,4794,4794,https://descorcha.com/products/diablo-deep-carmenere
+1,Descorcha,tinto,Diablo Hard Fire,Comercial Peumo,5994,5994,https://descorcha.com/products/diablo-hard-fire
+1,Descorcha,tinto,Diablo Purple Malbec,Comercial Peumo,4794,4794,https://descorcha.com/products/diablo-purple-malbec
+1,Descorcha,tinto,Diablo Velvet Merlot,Comercial Peumo,4794,4794,https://descorcha.com/products/diablo-velvet-merlot
+1,Descorcha,tinto,Diablo Volcanic Cabernet,Comercial Peumo,5994,5994,https://descorcha.com/products/diablo-volcanic-cabernet
+1,Descorcha,tinto,Dolcetto d’Alba - Dolcetto (Italia),Diego Edwards,16240,16240,https://descorcha.com/products/dolcetto-d-alba-dolcetto-italia
+1,Descorcha,tinto,Don Melchor 2022 Cabernet Sauvignon,Comercial Peumo,250000,250000,https://descorcha.com/products/don-melchor-2022-cabernet-sauvignon
+1,La Vinoteca,tinto,Doña Dominga Gran Reserva Carménère,Casa Silva,13190,13190,https://www.lavinoteca.cl/dona-dominga-gran-reserva-carmenere-6612/p
+1,Descorcha,tinto,El Principal Andetelmo Ensamblaje,El Principal,80994,80994,https://descorcha.com/products/el-principal-andetelmo-ensamblaje
+1,Descorcha,tinto,EMA 750cc,La vinoteca,19194,19194,https://descorcha.com/products/ema-750cc
+1,La Vinoteca,tinto,Emiliana Novas Garnacha/Syrah,Emiliana,9190,9190,https://www.lavinoteca.cl/emiliana-novas-garnacha-syrah/p
+1,La Vinoteca,tinto,Emiliana Salvaje Syrah/Roussanne,Emiliana,10550,10550,https://www.lavinoteca.cl/emiliana-salvaje-syrah-roussanne/p
+1,La Vinoteca,tinto,Emiliana Signos de Origen Cabernet Sauvignon,Emiliana,13990,13990,https://www.lavinoteca.cl/emiliana-signos-de-origen-cabernet-sauvignon/p
+1,VentaVinos,tinto,Entre Toros | Gran Reserva | Cabernet Sauvignon | Caja 6 Botellas 750 cc,VentaVinos,38964,38964,https://www.ventavinos.cl/products/entre-toros-gran-reserva-cabernet-sauvignon-caja-6-botellas-750-cc
+1,Descorcha,tinto,Eolo Malbec,Comercial Peumo,64990,64990,https://descorcha.com/products/eolo-malbec
+1,Descorcha,tinto,Equis Pais/Garnacha,Andes Cru,9594,9594,https://descorcha.com/products/equis-pais-garnacha
+1,Descorcha,tinto,Excava Cabernet Sauvignon,Andes Cru,8994,8994,https://descorcha.com/products/excava-cabernet-sauvignon
+1,Descorcha,tinto,Family Collection Ensamblaje,Aresti,14094,14094,https://descorcha.com/products/family-collection-ensamblaje
+1,Descorcha,tinto,Fetzer Cabernet Sauvignon,Comercial Peumo,11994,11994,https://descorcha.com/products/fetzer-cabernet-sauvignon
+1,Descorcha,tinto,Fetzer Zinfandel,Comercial Peumo,11994,11994,https://descorcha.com/products/fetzer-zinfandel
+1,La Vinoteca,tinto,Gandolini Las 3 Marias Cabernet Sauvignon,Gandolini,188990,188990,https://www.lavinoteca.cl/gandolini-las-3-marias-cabernet-sauvignon/p
+1,La Vinoteca,tinto,Garzón Estate Cabernet de Corte,Garzón,16790,16790,https://www.lavinoteca.cl/garzon-estate-cabernet-de-corte/p
+1,La Vinoteca,tinto,Garzón Petit Clos Tannat,Garzón,53590,53590,https://www.lavinoteca.cl/garzon-petit-clos-tannat/p
+1,La Vinoteca,tinto,Garzón Reserva Tannat,Garzón,14690,14690,https://www.lavinoteca.cl/garzon-reserva-tannat/p
+1,La Vinoteca,tinto,Garzón Single Vineyard Petit Verdot,Garzón,32790,32790,https://www.lavinoteca.cl/garzon-single-vineyard-petit-verdot/p
+1,La Vinoteca,tinto,Garzón Single Vineyard Tannat,Garzón,33590,33590,https://www.lavinoteca.cl/garzon-single-vineyard-tannat/p
+1,Descorcha,tinto,Ge Ensamblaje,Emiliana,74993,74993,https://descorcha.com/products/ge-ensamblaje
+1,La Vinoteca,tinto,Gran Enemigo Cabernet Franc,El Enemigo,117590,117590,https://www.lavinoteca.cl/gran-enemigo-cabernet-franc-6805/p
+1,Descorcha,tinto,Grappa - Ensamblaje (Italia),Premium Brands,40600,40600,https://descorcha.com/products/grappa-ensamblaje-italia
+1,Descorcha,tinto,Icono Vineyards Cabernet Sauvignon,Premium Brands,58491,58491,https://descorcha.com/products/icono-vineyards-cabernet-sauvignon
+1,Descorcha,tinto,Kaiken Obertura Cabernet Franc,Premium Brands,29962,29962,https://descorcha.com/products/kaiken-obertura-cabernet-franc
+1,Descorcha,tinto,Kaiken Reserva Malbec,Premium Brands,7625,7625,https://descorcha.com/products/kaiken-reserva-malbec
+1,Descorcha,tinto,Kaiken Terroir Series Malbec,Premium Brands,9483,9483,https://descorcha.com/products/kaiken-terroir-series-malbec
+1,Descorcha,tinto,Kaiken Ultra Cabernet Sauvignon,Premium Brands,12292,12292,https://descorcha.com/products/kaiken-ultra-cabernet-sauvignon
+1,La Vinoteca,tinto,Lapostolle Cuvee Alexandre Merlot,Lapostolle,22790,22790,https://www.lavinoteca.cl/lapostolle-cuvee-alexandre-merlot/p
+1,Descorcha,tinto,Lazuli Cabernet Sauvignon,Aquitania,77693,77693,https://descorcha.com/products/lazuli-cabernet-sauvignon
+1,Descorcha,tinto,Les Temps Est Venu - Garnacha (Francia),Diego Edwards,17280,17280,https://descorcha.com/products/les-temps-est-venu-garnacha-francia
+1,La Vinoteca,tinto,Leyda Lot 21 Pinot Noir,Leyda,31490,31490,https://www.lavinoteca.cl/leyda-lot21-pinot-noir/p
+1,Descorcha,tinto,Leyenda Del Toqui Ensamblaje,Premium Brands,39832,39832,https://descorcha.com/products/leyenda-del-toqui-ensamblaje
+1,Descorcha,tinto,Lof Syrah,LOF,11694,11694,https://descorcha.com/products/lof-syrah
+1,Descorcha,tinto,Los Vascos Le Dix,Premium Brands,62035,62035,https://descorcha.com/products/los-vascos-le-dix
+1,La Vinoteca,tinto,Luigi Bosca De Sangre Cabernet Franc,Luigi Bosca,20790,20790,https://www.lavinoteca.cl/luigi-bosca-de-sangre-cabernet-franc/p
+1,La Vinoteca,tinto,Luigi Bosca De Sangre Cabernet Sauvignon,Luigi Bosca,18390,18390,https://www.lavinoteca.cl/luigi-bosca-de-sangre-cabernet-sauvignon/p
+1,La Vinoteca,tinto,Maquis Revela Cabernet Franc,Maquis,16990,16990,https://www.lavinoteca.cl/maquis-revela-cabernet-franc/p
+1,La Vinoteca,tinto,Maquis Revela Carmenere,Maquis,16990,16990,https://www.lavinoteca.cl/maquis-revela-carmenere/p
+1,La Vinoteca,tinto,Maquis Viola Carmenere,Maquis,115990,115990,https://www.lavinoteca.cl/maquis-viola-carmenere/p
+1,Descorcha,tinto,Marques de Casa Concha Blue Carmenere,Comercial Peumo,13794,13794,https://descorcha.com/products/marques-de-casa-concha-blue-carmenere
+1,Descorcha,tinto,Marques de Casa Concha Gold Cabernet Sauvignon,Comercial Peumo,13794,13794,https://descorcha.com/products/marques-de-casa-concha-gold-cabernet-sauvignon
+1,Descorcha,tinto,Marques de Casa Concha Merlot,Comercial Peumo,9594,9594,https://descorcha.com/products/marques-de-casa-concha-merlot
+1,Descorcha,tinto,Marques de Casa Concha Noble Blend,Comercial Peumo,9594,9594,https://descorcha.com/products/marques-de-casa-concha-blend
+1,VentaVinos,tinto,Marqués De Cazaux | Gran Reserva | Cabernet Sauvignon | Caja 6 Botellas 750 cc,Bestias Wines,43164,43164,https://www.ventavinos.cl/products/marques-de-cazaux-gran-reserva-750cc
+1,VentaVinos,tinto,Marqués De Cazaux | Reserva | Cabernet Sauvignon | Botella 750 cc,Marques de Cazaux,5990,5990,https://www.ventavinos.cl/products/marques-de-cazaux-reserva-1
+1,Descorcha,tinto,Marques Heritage Ensamblaje,Comercial Peumo,32000,32000,https://descorcha.com/products/marques-heritage-ensamblaje
+1,La Vinoteca,tinto,Matetic Corralillo Garnacha,Matetic,14490,14490,https://www.lavinoteca.cl/matetic-corralillo-garnacha-6761/p
+1,Descorcha,tinto,Max Reserva Carmenere,Comercial Zapata,9081,9081,https://descorcha.com/products/max-reserva-carmenere
+1,Descorcha,tinto,Memorias Ensamblaje,El Principal,19794,19794,https://descorcha.com/products/memorias-ensamblaje
+1,Descorcha,tinto,Miguel Torres Gran Reserva Carmenere,Santa Ema,8263,8263,https://descorcha.com/products/miguel-torres-gran-reserva-carmenere
+1,VentaVinos,tinto,Mix Deluxe Bestias Wines | Cepas Tintas | Caja Madera 6 botellas 750 cc,Bestias Wines,59990,59990,https://www.ventavinos.cl/products/mix-deluxe-bestias-wines-caja-madera
+1,La Vinoteca,tinto,Mixta Carmenere,Perez Cruz,65990,65990,https://www.lavinoteca.cl/mixta-carmenere-8188/p
+1,La Vinoteca,tinto,Montes Cabernet Sauvignon Carménère,Montes,9190,9190,https://www.lavinoteca.cl/montes-cabernet-sauvignon-carmenere/p
+1,Descorcha,tinto,Montes Outer Limits Ensamblaje,Premium Brands,14660,14660,https://descorcha.com/products/montes-outer-limits-ensamblaje
+1,La Vinoteca,tinto,Montes Purple Angel Carménère,Montes,117590,117590,https://www.lavinoteca.cl/montes-purple-angel-carmenere/p
+1,La Vinoteca,tinto,Montes Special Cuvee Cabernet Sauvignon,Montes,29350,29350,https://www.lavinoteca.cl/montes-special-cuvee-cabernet-sauvignon/p
+1,Descorcha,tinto,Montes Twins Ensamblaje,Premium Brands,6893,6893,https://descorcha.com/products/montes-twins-ensamblaje
+1,La Vinoteca,tinto,Montes Wings Carménère,Montes,63030,63030,https://www.lavinoteca.cl/montes-wings-carmenere/p
+1,Descorcha,tinto,Montgras Organic Ensamblaje,Premium Brands,6011,6011,https://descorcha.com/products/montgras-organic-ensamblaje
+1,Descorcha,tinto,Montgras Pinot Noir,Premium Brands,6312,6312,https://descorcha.com/products/montgras-pinot-noir
+1,La Vinoteca,tinto,Morandé Black Series Syrah,Morandé,16950,16950,https://www.lavinoteca.cl/morande-black-series-syrah-6897/p
+1,La Vinoteca,tinto,Morandé Casa Tinta Malbec,Morandé,28790,28790,https://www.lavinoteca.cl/morande-casa-tinta-malbec-7159/p
+1,La Vinoteca,tinto,Morandé El Cabernet de Ranquil,Morandé,63590,63590,https://www.lavinoteca.cl/morande-el-cabernet-de-ranquil/p
+1,Descorcha,tinto,Novas Carmenere,Emiliana,5994,5994,https://descorcha.com/products/novas-carmenere
+1,Descorcha,tinto,Novas Stellar Collection Cab/Syr/Carig,Emiliana,5394,5394,https://descorcha.com/products/novas-stellar-collection-cab-syr-carig
+1,Descorcha,tinto,Novas Stellar Collection Garnacha/Syrah,Emiliana,5394,5394,https://descorcha.com/products/novas-stellar-collection-garnacha-syrah
+1,Descorcha,tinto,Novas Stellar Collection Syrah/Mourvedre,Emiliana,5994,5994,https://descorcha.com/products/novas-stellar-collection-syrah-mourvedre
+1,Descorcha,tinto,Ocio Pinot Noir,Comercial Peumo,26000,26000,https://descorcha.com/products/ocio-pinot-noir
+1,Descorcha,tinto,Odfjell Aliara Ensamblaje,Premium Brands,23482,23482,https://descorcha.com/products/odfjell-aliara-ensamblaje
+1,Descorcha,tinto,Odfjell Capitulo Ensamblaje,Premium Brands,6894,6894,https://descorcha.com/products/odfjell-capitulo-ensamblaje
+1,Descorcha,tinto,Odfjell Orzada Carignan,Premium Brands,10125,10125,https://descorcha.com/products/odfjell-orzada-carignan
+1,Descorcha,tinto,Odfjell Vigno Carignan,Premium Brands,17632,17632,https://descorcha.com/products/odfjell-vigno-carignan
+1,Descorcha,tinto,Orzada Merlot,Premium Brands,10392,10392,https://descorcha.com/products/orzada-merlot
+1,VentaVinos,tinto,Pack 12 vinos| 12 La selección del enólogo| 750cc,Bestias Wines,74940,74940,https://www.ventavinos.cl/products/pack-12-vinos-12-la-seleccion-del-enologo-750cc
+1,VentaVinos,tinto,Pack 12 vinos| 12 vinos lo mejor de Toreto| 750cc,Bestias Wines,78240,78240,https://www.ventavinos.cl/products/pack-12-vinos-12-vinos-lo-mejor-de-toreto-750cc
+1,VentaVinos,tinto,Pack 12 vinos| 12 Vinos Pasión por las Bestias  | 750cc,Bestias Wines,79716,79716,https://www.ventavinos.cl/products/pack-12-vinos-12-vinos-pasion-por-las-bestias-750cc
+1,VentaVinos,tinto,Pack 12 vinos| Reserva y Gran Reserva | Carmenere|,Bestias Wines,66000,66000,https://www.ventavinos.cl/products/pack-12-vinos-reserva-y-gran-reserva-bestias-wines
+1,VentaVinos,tinto,Pack 12 vinos|12 vinos para brindar sin reglas |,Bestias Wines,79780,79780,https://www.ventavinos.cl/products/pack-12-vinos-12-vinos-para-brindar-sin-reglas
+1,VentaVinos,tinto,Pack 12 vinos|Pack 12 Vinos Intensidad & Celebración | 750cc,Bestias Wines,72864,72864,https://www.ventavinos.cl/products/pack-12-vinos-pack-12-vinos-intensidad-celebracion-750cc
+1,VentaVinos,tinto,Pack 3 vinos|Vinos Iconos y super premium |,Bestias Wines,79182,79182,https://www.ventavinos.cl/products/pack-3-vinos-vinos-iconos-y-super-premium
+1,VentaVinos,tinto,Pack 6 vinos| 6 Vinos únicos|  750cc,Bestias Wines,35994,35994,https://www.ventavinos.cl/products/pack-12-vinos-seleccion-del-enologo-750cc-copia
+1,VentaVinos,tinto,"PAck 6 vinos| Bestia Roja Carmenere,Toreto Gran Reserva Carmenere| 750cc",Bestias Wines,40000,40000,https://www.ventavinos.cl/products/pack-6-vinos-bestia-roja-carmenere-toreto-gran-reserva-carmenere-750cc
+1,VentaVinos,tinto,Pack 6 vinos| Las Bestias indomables| 750cc,Bestias Wines,35200,35200,https://www.ventavinos.cl/products/pack-6-vinos-las-bestias-indomables-750cc
+1,VentaVinos,tinto,Pack 6 vinos|Vinos Refrescantes| 750cc,Bestias Wines,34950,34950,https://www.ventavinos.cl/products/pack-6-vinos-vinos-tintos-diferentes-750cc-copia
+1,VentaVinos,tinto,Pack 6 vinos|Vinos Tintos Diferentes| 750cc,Bestias Wines,40590,40590,https://www.ventavinos.cl/products/pack-6-vinos-las-bestias-indomables-750cc-copia
+1,VentaVinos,tinto,Pack 6 vinos|Vinos unicos| 750cc,Bestias Wines,37750,37750,https://www.ventavinos.cl/products/pack-6-vinos-vinos-unicos-750cc
+1,Descorcha,tinto,Pack Cayetana,Descorcha,18000,18000,https://descorcha.com/products/pack-cayetana
+1,VentaVinos,tinto,Pack Mix Bestias - Toreto | Cabernet Sauvignon | Caja 6 Botellas 750 cc,Bestias Wines,41394,41394,https://www.ventavinos.cl/products/pack-mix-bestias-toreto
+1,VentaVinos,tinto,Pack Mix Bestias Wines | Cepas Tintas | Caja 6 Botellas 750 cc,Bestias Wines,41394,41394,https://www.ventavinos.cl/products/pack-mix-bestias-wines-cepas-tintas
+1,VentaVinos,tinto,Pack Mix Toreto | Cepas Tintas | Caja 6 Botellas 750 cc,Bestias Wines,42204,42204,https://www.ventavinos.cl/products/pack-mix-toreto-cepas-tintas
+1,VentaVinos,tinto,PACK ROCK AND LOVE | Gran Reserva | Blend | Caja 6 Botellas 750cc,Bestias Wines,38990,38990,https://www.ventavinos.cl/products/bestia-love-gran-reserva-blend-caja-6-botellas-750-cc-copia
+1,Descorcha,tinto,Palo Alto I Ensamblaje,Comercial Peumo,2754,2754,https://descorcha.com/products/palo-alto-i-ensamblaje
+1,Descorcha,tinto,Palo Alto II Ensamblaje,Comercial Peumo,2754,2754,https://descorcha.com/products/palo-alto-ii-ensamblaje
+1,VentaVinos,tinto,Parrales | Reserva | Carmenere | Botella 750 cc,Bestias Wines,6990,6990,https://www.ventavinos.cl/products/parrales-reserva-carmenere-botella-750-cc
+1,VentaVinos,tinto,Parrales | Reserva | Carmenere | Caja 6 Botellas 750 cc,Bestias Wines,32364,32364,https://www.ventavinos.cl/products/copia-de-parrales-reserva-carmenere-botella-750-cc
+1,Descorcha,tinto,Porto Tawny - Touriga Franca (Portugal),Diego Edwards,13440,13440,https://descorcha.com/products/porto-tawny-touriga-franca-portugal
+1,La Vinoteca,tinto,Puntí Ferrer Conforme Cabernet Sauvignon,Punti Ferrer,18900,18900,https://www.lavinoteca.cl/punti-ferrer-conforme-cabernet-sauvignon/p
+1,La Vinoteca,tinto,Puntí Ferrer Gran Reserva Carmenere,Punti Ferrer,9990,9990,https://www.lavinoteca.cl/punti-ferrer-gran-reserva-carmenere/p
+1,La Vinoteca,tinto,Puntí Ferrer Serie Tinajas Malbec,Punti Ferrer,15990,15990,https://www.lavinoteca.cl/punti-ferrer-serie-tinajas-malbec/p
+1,La Vinoteca,tinto,Puntí Ferrer Signature Carmenere,Punti Ferrer,4590,4590,https://www.lavinoteca.cl/punti-ferrer-signature-carmenere/p
+1,Descorcha,tinto,Purple Angel Carmenere,Premium Brands,99600,99600,https://descorcha.com/products/purple-angel-carmenere
+1,La Vinoteca,tinto,Quebrada de Macul Stella Aurea Cabernet Sauvignon,Quebrada de Macul,169990,169990,https://www.lavinoteca.cl/quebrada-de-macul-stella-aurea-cabernet-sauvignon/p
+1,La Vinoteca,tinto,Requingua Toro de Piedra Carménère Cabernet Sauvignon,Requingua,8690,8690,https://www.lavinoteca.cl/requingua-toro-de-piedra-carmenere-cabernet-sauvignon-4942/p
+1,La Vinoteca,tinto,Requingua Toro de Piedra Rincón de los Vientos Carménère,Requingua,11890,11890,https://www.lavinoteca.cl/requingua-toro-de-piedra-rincon-de-los-vientos-carmenere-6483/p
+1,Descorcha,tinto,Rivalta 750cc,La vinoteca,64900,64900,https://descorcha.com/products/rivalta-750cc
+1,VentaVinos,tinto,Royal One | Gran Reserva  | Carmenere | 750 cc,Bestias Wines,6990,6990,https://www.ventavinos.cl/products/royal-one-gran-reserva-carmenere-750-cc
+1,Descorcha,tinto,Salvaje Syrah,Emiliana,6814,6814,https://descorcha.com/products/salvaje-syrah
+1,VentaVinos,tinto,Santa Agustina | Reserva | Carmenere | Botella 750 Cc,Santa Agustina,5990,5990,https://www.ventavinos.cl/products/santa-agustina-reserva-1
+1,VentaVinos,tinto,Santa Agustina | Reserva | Carmenere | Caja 6 Botellas 750 cc,Santa Agustina,25164,25164,https://www.ventavinos.cl/products/santa-agustina-reserva
+1,La Vinoteca,tinto,Santa Ema Cuarto Elemento Cabernet Franc,Santa Ema,10490,10490,https://www.lavinoteca.cl/santa-ema-cuarto-elemento-cabernet-franc-7169/p
+1,La Vinoteca,tinto,Santa Ema Cuarto Elemento Carménère,Santa Ema,10490,10490,https://www.lavinoteca.cl/santa-ema-cuarto-elemento-carmenere-7168/p
+1,La Vinoteca,tinto,Santa Rita Bougainville Petite Syrah,Santa Rita,63030,63030,https://www.lavinoteca.cl/santa-rita-bougainville-petite-syrah-6813/p
+1,La Vinoteca,tinto,Santa Rita Carmen Gold Cabernet Sauvignon,Santa Rita,89990,89990,https://www.lavinoteca.cl/santa-rita-carmen-gold-cabernet-sauvignon/p
+1,La Vinoteca,tinto,Santa Rita Carmen Winemakers Black Carménère,Santa Rita,13430,13430,https://www.lavinoteca.cl/santa-rita-carmen-winemakers-black-carmenere-6823/p
+1,La Vinoteca,tinto,Santa Rita Floresta Cabernet Franc,Santa Rita,21030,21030,https://www.lavinoteca.cl/santa-rita-floresta-cabernet-franc-6816/p
+1,La Vinoteca,tinto,Santa Rita Pewen Carménère,Santa Rita,63030,63030,https://www.lavinoteca.cl/santa-rita-pewen-carmenere-6818/p
+1,Descorcha,tinto,Signos de origen Syrah,Emiliana,9540,9540,https://descorcha.com/products/signos-de-origen-syrah
+1,Descorcha,tinto,Silencio Cabernet Sauvignon,Comercial Peumo,60000,60000,https://descorcha.com/products/silencio-cabernet-sauvignon
+1,Descorcha,tinto,Single Vineyard 8 Grapes,Comercial Peumo,6594,6594,https://descorcha.com/products/single-vineyard-8-grapes
+1,Descorcha,tinto,Single Vineyard Carignan,Descorcha CL,10290,10290,https://descorcha.com/products/single-vineyard-carignan
+1,Descorcha,tinto,Single Vineyard Carmenere,Comercial Peumo,6594,6594,https://descorcha.com/products/single-vineyard-carmenere
+1,Descorcha,tinto,Tarapaca Gran Reserva Etiqueta Azul Ensamblaje,Comercial Zapata,23394,23394,https://descorcha.com/products/tarapaca-gran-reserva-etiqueta-azul-ensamblaje
+1,Descorcha,tinto,Tarapaca Gran Reserva Etiqueta Negra Carmenere,Comercial Zapata,11586,11586,https://descorcha.com/products/tarapaca-gran-reserva-etiqueta-negra-carmenere
+1,Descorcha,tinto,Tarapacá Reserva Carmenere,Comercial Zapata,4493,4493,https://descorcha.com/products/tarapaca-reserva-carmenere
+1,Descorcha,tinto,Terrado Cabernet Sauvignon,Andes Cru,11994,11994,https://descorcha.com/products/terrado-cabernet-sauvignon
+1,VentaVinos,tinto,Toreto | Gran Reserva | Cepas Tintas | Botella 750 cc,Bestias Wines,11190,11190,https://www.ventavinos.cl/products/toreto-gran-reserva-cepas-tintas-botella
+1,VentaVinos,tinto,Toreto | Gran Reserva | Cepas Tintas | Caja 6 Botellas 750 cc,Bestias Wines,42990,42990,https://www.ventavinos.cl/products/toreto-gran-reserva-cepas-tintas
+1,VentaVinos,tinto,Toreto | Reserva Privada | Cepas Tintas | Botella 750 cc,Bestias Wines,7990,7990,https://www.ventavinos.cl/products/toreto-reserva-privada-cepas-tintas-1
+1,VentaVinos,tinto,Toreto | Reserva Privada | Cepas Tintas | Caja 6 Botellas 750 cc,Bestias Wines,32990,32990,https://www.ventavinos.cl/products/toreto-reserva-privada-cepas-tintas
+1,Descorcha,tinto,Trisquel Ensamblaje,Aresti,6594,6594,https://descorcha.com/products/trisquel-ensamblaje
+1,Descorcha,tinto,Trivento Gaudeo Malbec,Comercial Peumo,22392,22392,https://descorcha.com/products/trivento-gaudeo-malbec
+1,Descorcha,tinto,Trivento Golden Reserve Cabernet Franc,Comercial Peumo,14990,14990,https://descorcha.com/products/trivento-golden-reserve-cabernet-franc
+1,Descorcha,tinto,Trivento Golden Reserve Malbec,Comercial Peumo,9594,9594,https://descorcha.com/products/trivento-golden-reserve-malbec
+1,Descorcha,tinto,Trivento Lejanamente Juntos Malbec,Comercial Peumo,22392,22392,https://descorcha.com/products/trivento-lejanamente-juntos-malbec
+1,Descorcha,tinto,Trivento Reserve Malbec,Comercial Peumo,4794,4794,https://descorcha.com/products/trivento-reserve-malbec
+1,La Vinoteca,tinto,Undurraga Trama Pinot Noir,Undurraga,32090,32090,https://www.lavinoteca.cl/undurraga-trama-pinot-noir/p
+1,Descorcha,tinto,Unrated Cabernet Sauvignon,Comercial Peumo,6595,6595,https://descorcha.com/products/unrated-cabernet-sauvignon
+1,La Vinoteca,tinto,Veramonte Orgánico Gran Reserva Cabernet Sauvignon,Veramonte,8390,8390,https://www.lavinoteca.cl/veramonte-organico-gran-reserva-cabernet-sauvignon/p
+1,La Vinoteca,tinto,Veramonte Tesis de Primus Cabernet Sauvignon,Veramonte,12630,12630,https://www.lavinoteca.cl/veramonte-tesis-de-primus-cabernet-sauvignon/p
+1,Descorcha,tinto,Vicus Orbis Cool Wind Ensamblaje,Vicus Orbis,6792,6792,https://descorcha.com/products/vicus-orbis-cool-wind-ensamblaje
+1,Descorcha,tinto,Vicus Orbis Icono Ensamblaje,Vicus Orbis,13993,13993,https://descorcha.com/products/vicus-orbis-icono-ensamblaje
+1,Descorcha,tinto,Vicus Orbis Premium Carmenere,Vicus Orbis,10643,10643,https://descorcha.com/products/vicus-orbis-premium-carmenere
+1,Descorcha,tinto,Vicus Orbis Premium Petit Verdot,Vicus Orbis,10793,10793,https://descorcha.com/products/vicus-orbis-premium-petit-verdot
+1,Descorcha,tinto,Vigno Carignan,Emiliana,9540,9540,https://descorcha.com/products/vigno-carignan
+1,La Vinoteca,tinto,Viñedos Lo Abarca N°1 Pinot Noir,Viñedos Lo Abarca,13990,13990,https://www.lavinoteca.cl/vinedos-lo-abarca-n1-pinot-noir/p
+1,La Vinoteca,tinto,Viñedos Lo Abarca N°3 Garnacha - Syrah,Viñedos Lo Abarca,19990,19990,https://www.lavinoteca.cl/vinedos-lo-abarca-n3-garnacha-syrah/p
+1,La Vinoteca,tinto,Viñedos Lo Abarca N°4 Garnacha,Viñedos Lo Abarca,19990,19990,https://www.lavinoteca.cl/vinedos-lo-abarca-n4-garnacha/p
+1,Descorcha,tinto,Vino 1865 Desert Valley Syrah,Comercial Zapata,17394,17394,https://descorcha.com/products/vino-1865-desert-valley-syrah
+1,Descorcha,tinto,Vino 1865 Double Barrel Cabernet Sauvignon,Comercial Zapata,17394,17394,https://descorcha.com/products/vino-1865-double-barrel-cabernet-sauvignon
+1,Descorcha,tinto,Vino 1865 Old Vines Cabernet Sauvignon,Comercial Zapata,17394,17394,https://descorcha.com/products/vino-1865-old-vines-cabernet-sauvignon
+1,Descorcha,tinto,Vino 1865 Single Master Blend,Comercial Zapata,15294,15294,https://descorcha.com/products/vino-1865-single-master-blend
+1,Descorcha,tinto,Vino 1865 Single Vineyard Cabernet Sauvignon,Comercial Zapata,13194,13194,https://descorcha.com/products/vino-1865-single-vineyard-cabernet-sauvignon
+1,Descorcha,tinto,Vino Caballo Loco Grand Cru Apalta,Comercial Zapata,24594,24594,https://descorcha.com/products/vino-caballo-loco-grand-cru-apalta
+1,Descorcha,tinto,Vino Caballo Loco Grand Cru Maipo,Comercial Zapata,24594,24594,https://descorcha.com/products/vino-caballo-loco-grand-cru-maipo
+1,Descorcha,tinto,Vino Casa Real Cabernet Sauvignon,Comercial Zapata,10794,10794,https://descorcha.com/products/vino-casa-real-cabernet-sauvignon
+1,Descorcha,tinto,Vino Casa Silva 5ta Generacion Blend,Comercial Zapata,16080,16080,https://descorcha.com/products/vino-casa-silva-5ta-generacion-blend
+1,Descorcha,tinto,Vino Casa Silva Gran Terroir Cabernet Sauvignon,Comercial Zapata,9294,9294,https://descorcha.com/products/vino-casa-silva-gran-terroir-cabernet-sauvignon
+1,Descorcha,tinto,Vino Casa Silva Micro Terroir Carmenere,Comercial Zapata,42250,42250,https://descorcha.com/products/vino-casa-silva-micro-terroir-carmenere
+1,Descorcha,tinto,Vino Casa Silva S38 Single Block Cabernet Sauvignon,Comercial Zapata,18774,18774,https://descorcha.com/products/vino-casa-silva-s38-single-block-cabernet-sauvignon
+1,Descorcha,tinto,Vino Casa Silva S7 Single Block Carmenere,Comercial Zapata,19133,19133,https://descorcha.com/products/vino-casa-silva-s7-single-block-carmenere
+1,Descorcha,tinto,Vino Casas Del Toqui Gran Toqui Syrah,Premium Brands,10262,10262,https://descorcha.com/products/vino-casas-del-toqui-gran-toqui-syrah
+1,Descorcha,tinto,Vino Kaiken Mai Malbec,Premium Brands,89672,89672,https://descorcha.com/products/vino-kaiken-mai-malbec
+1,Descorcha,tinto,Vino La Joya Gran Reserva Cabernet Sauvignon,Comercial Zapata,6494,6494,https://descorcha.com/products/vino-la-joya-gran-reserva-cabernet-sauvignon
+1,Descorcha,tinto,Vino Los Vascos Los Cromas Carmenere,Premium Brands,10132,10132,https://descorcha.com/products/vino-los-vascos-los-cromas-carmenere
+1,Descorcha,tinto,Vino Misiones Reserva Cuvee Merlot,Comercial Zapata,6152,6152,https://descorcha.com/products/vino-misiones-reserva-cuvee-merlot
+1,Descorcha,tinto,Vino Montes Alpha Special Cuvee Cabernet Sauvignon,Premium Brands,19470,19470,https://descorcha.com/products/vino-montes-alpha-special-cuvee-cabernet-sauvignon
+1,Descorcha,tinto,Vino Norton Malbec DOC,Bodega Norton,7992,7992,https://descorcha.com/products/vino-norton-malbec-doc
+1,Descorcha,tinto,Vino Norton Malbec Reserva,Bodega Norton,9592,9592,https://descorcha.com/products/vino-norton-malbec-reserva
+1,Descorcha,tinto,Vino Ocio Pinot Noir 1.5L 2016,Comercial Peumo,80990,80990,https://descorcha.com/products/vino-ocio-pinot-noir-1-5l-2016
+1,Descorcha,tinto,Vino Pérez Cruz Chaski Petit Verdot,Comercial Zapata,22493,22493,https://descorcha.com/products/vino-perez-cruz-chaski-petit-verdot
+1,Descorcha,tinto,Vino Pérez Cruz Gran Reserva Cabernet Sauvignon,Comercial Zapata,8388,8388,https://descorcha.com/products/vino-perez-cruz-gran-reserva-cabernet-sauvignon
+1,Descorcha,tinto,Vino Pérez Cruz Liguai Ensamblaje,Comercial Zapata,31491,31491,https://descorcha.com/products/vino-perez-cruz-liguai-ensamblaje
+1,Descorcha,tinto,Vino Pérez Cruz Limited Edition Cabernet Franc,Comercial Zapata,14392,14392,https://descorcha.com/products/vino-perez-cruz-limited-edition-cabernet-franc
+1,Descorcha,tinto,Vino Pérez Cruz Limited Edition Cot,Comercial Zapata,13483,13483,https://descorcha.com/products/vino-perez-cruz-limited-edition-cot
+1,Descorcha,tinto,Vino Pérez Cruz Limited Edition Syrah,Comercial Zapata,14392,14392,https://descorcha.com/products/vino-perez-cruz-limited-edition-syrah
+1,Descorcha,tinto,Vino Pérez Cruz Piedra Seca Cabernet Sauvignon,Comercial Zapata,16743,16743,https://descorcha.com/products/vino-perez-cruz-piedra-seca-cabernet-sauvignon
+1,Descorcha,tinto,Vino Pérez Cruz Pircas Cabernet Sauvignon,Comercial Zapata,58500,58500,https://descorcha.com/products/vino-perez-cruz-pircas-cabernet-sauvignon
+1,Descorcha,tinto,Vino Pérez Cruz Quelen Ensamble,Comercial Zapata,40491,40491,https://descorcha.com/products/vino-perez-cruz-quelen-ensamble
+1,Descorcha,tinto,Vino Rayos Uva Tempranillo,Diego Edwards,15120,15120,https://descorcha.com/products/vino-rayos-uva-tempranillo
+1,Descorcha,tinto,Vino Sideral Blend,Comercial Zapata,21594,21594,https://descorcha.com/products/vino-sideral-blend
+1,Descorcha,tinto,Vino Tarapa Gran Reserva Merlot,Comercial Zapata,6894,6894,https://descorcha.com/products/vino-tarapa-gran-reserva-merlot
+1,Descorcha,tinto,Vino Tierras Moradas Carmenere,Comercial Zapata,34194,34194,https://descorcha.com/products/vino-tierras-moradas-carmenere
+1,Descorcha,tinto,Vino Toreto Gran Reserva Merlot,Bestias Wines,6210,6210,https://descorcha.com/products/toreto-gran-reserva-merlot
+1,Descorcha,tinto,Vino Toreto Reserva Privada Cabernet Sauvignon,Bestias Wines,4794,4794,https://descorcha.com/products/toreto-reserva-privada-c-sauv
+1,Descorcha,tinto,Vino Toro de Piedra Gran Reserva Syrah/Cabernet,Comercial Zapata,6774,6774,https://descorcha.com/products/vino-toro-de-piedra-gran-reserva-syrah-cabernet
+1,Descorcha,tinto,Vino Veramonte Primus Cabernet Sauvignon,Comercial Zapata,9620,9620,https://descorcha.com/products/vino-veramonte-primus-cabernet-sauvignon
+1,Descorcha,tinto,Vino Veramonte Primus The Blend,Comercial Zapata,9620,9620,https://descorcha.com/products/vino-veramonte-primus-the-blend
+1,Descorcha,tinto,Vino Veramonte Reserva Colores Cabernet Sauvignon,Comercial Zapata,4118,4118,https://descorcha.com/products/vino-veramonte-reserva-colores-cabernet-sauvignon
+1,Descorcha,tinto,Vino Vik A,Comercial Zapata,14513,14513,https://descorcha.com/products/vino-vik-a
+1,Descorcha,tinto,Vino Vik Milla Calla Ensamblaje,Comercial Zapata,26915,26915,https://descorcha.com/products/vino-vik-milla-calla-ensamblaje
+1,Descorcha,tinto,Vino Viu Manent Incidente Carmenere,Premium Brands,37164,37164,https://descorcha.com/products/vino-viu-manent-incidente-carmenere
+1,Descorcha,tinto,Vino Viu Manent Infinito Blend,Premium Brands,31844,31844,https://descorcha.com/products/vino-viu-manent-infinito-blend
+1,Descorcha,tinto,Vino Viu Manent Malportado Fortificado,Premium Brands,30392,30392,https://descorcha.com/products/vino-viu-manent-malportado-fortificado
+1,Descorcha,tinto,Vino Viu Manent Red Blend,Premium Brands,9872,9872,https://descorcha.com/products/vino-viu-manent-red-blend
+1,Descorcha,tinto,Vino Viu Manent Secreto Syrah,Premium Brands,8023,8023,https://descorcha.com/products/vino-viu-manent-secreto-syrah
+1,Descorcha,tinto,Vino Viu Manent Tiny Trials Cinsault 750ml,Premium Brands,10643,10643,https://descorcha.com/products/vino-viu-manent-tiny-trials-cinsault-750ml
+1,Descorcha,tinto,Vino Viu Manent Vibo Punta de Viento Blend 750ml,Premium Brands,12461,12461,https://descorcha.com/products/vino-viu-manent-vibo-punta-de-viento-blend-750ml
+1,Descorcha,tinto,Vino Viu Manent Vibo Viñedo Centenario Blend 750ml,Premium Brands,12461,12461,https://descorcha.com/products/vino-viu-manent-vibo-vinedo-centenario-blend-750ml
+1,Descorcha,tinto,Vino Viu Manent Viu 1 Malbec,Premium Brands,86394,86394,https://descorcha.com/products/vino-viu-manent-viu-1-malbec
+1,La Vinoteca,tinto,von Siebenthal Orocoipo Carmenere,Von Siebenthal,44990,44990,https://www.lavinoteca.cl/von-siebenthal-orocoipo-carmenere/p
+1,Descorcha,tinto,Xitus Assamblage,Andes Cru,14994,14994,https://descorcha.com/products/xitus-assamblage
+1,Descorcha,tinto,Xitus Cabernet Sauvignon,Andes Cru,14994,14994,https://descorcha.com/products/xitus-cabernet-sauvignon

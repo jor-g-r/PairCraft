@@ -1,0 +1,91 @@
+{
+  "mionetto-prosecco-brut": {
+    "name": "Mionetto Prosecco Brut",
+    "foundAt": []
+  },
+  "castillo-de-molina-sauvignon-blanc": {
+    "name": "Castillo de Molina Sauvignon Blanc Reserva",
+    "foundAt": []
+  },
+  "catena-malbec": {
+    "name": "Catena Malbec",
+    "foundAt": [
+      {
+        "retailer": "Jumbo",
+        "level": "cuvee",
+        "name": "Vino Tinto Malbec 750 Cc D.v. Catena L'Esploratore",
+        "price": 32450,
+        "url": "https://www.jumbo.com.ar/vino-esploratore-salta-x-750-cc-d-v-catena/p"
+      },
+      {
+        "retailer": "Día",
+        "level": "cuvee",
+        "name": "Vino Malbec Dv Catena Catena Zapata 750 Ml.",
+        "price": 22900,
+        "url": "https://diaonline.supermercadosdia.com.ar/vino-malbec-dv-catena-catena-zapata-750-ml-313288/p"
+      },
+      {
+        "retailer": "ChangoMás",
+        "level": "cuvee",
+        "name": "Vino Tinto Dv Catena Malbec 750 Ml",
+        "price": 31469,
+        "url": "https://www.masonline.com.ar/vino-tinto-malbec-dv-catena-750-ml-2/p"
+      },
+      {
+        "retailer": "Winery",
+        "level": "cuvee",
+        "name": "Catena Malbec Argentino",
+        "price": 0,
+        "url": "https://tiendadevinos.ar/catena-malbec-argentino/"
+      }
+    ]
+  },
+  "gato-negro-blanco-dulce": {
+    "name": "Gato Negro Blanco Dulce",
+    "foundAt": [
+      {
+        "retailer": "Jumbo",
+        "level": "producer",
+        "name": "Vino Gato Negro Cabernet Merlot",
+        "price": 5,
+        "url": "https://www.jumbo.com.ar/vino-gato-negro-cabernet-merlot/p"
+      }
+    ]
+  },
+  "garzon-marselan-reserva": {
+    "name": "Garzón Marselan Reserva",
+    "foundAt": [
+      {
+        "retailer": "Jumbo",
+        "level": "producer",
+        "name": "Garzon Single Vineyard Petit Verdot X 750cc",
+        "price": null,
+        "url": "https://www.jumbo.com.ar/garzon-single-vineyard-petit-verdot-x-750cc/p"
+      }
+    ]
+  },
+  "leyda-pinot-noir": {
+    "name": "Leyda Pinot Noir",
+    "foundAt": []
+  },
+  "piccini-chianti-riserva": {
+    "name": "Piccini Chianti Riserva",
+    "foundAt": []
+  },
+  "1865-cabernet-sauvignon": {
+    "name": "1865 Cabernet Sauvignon",
+    "foundAt": []
+  },
+  "pazo-barrantes-albarino": {
+    "name": "Pazo Barrantes Albariño",
+    "foundAt": []
+  },
+  "ramon-bilbao-crianza": {
+    "name": "Ramón Bilbao Crianza",
+    "foundAt": []
+  },
+  "enate-chardonnay": {
+    "name": "Enate Chardonnay",
+    "foundAt": []
+  }
+}

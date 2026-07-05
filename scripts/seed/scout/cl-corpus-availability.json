@@ -1,0 +1,94 @@
+{
+  "mionetto-prosecco-brut": {
+    "name": "Mionetto Prosecco Brut",
+    "foundAt": [
+      {
+        "retailer": "La Vinoteca",
+        "level": "producer",
+        "name": "Mionetto Prosecco",
+        "price": 11990,
+        "url": "https://www.lavinoteca.cl/mionetto-prosecco-6316/p"
+      }
+    ]
+  },
+  "castillo-de-molina-sauvignon-blanc": {
+    "name": "Castillo de Molina Sauvignon Blanc Reserva",
+    "foundAt": [
+      {
+        "retailer": "Descorcha",
+        "level": "producer",
+        "name": "Vino Castillo Molina Gran Reserva Cabernet Sauvignon",
+        "price": 7145,
+        "url": "https://descorcha.com/products/vino-castillo-molina-gran-reserva-cabernet-sauvignon"
+      }
+    ]
+  },
+  "catena-malbec": {
+    "name": "Catena Malbec",
+    "foundAt": [
+      {
+        "retailer": "La Vinoteca",
+        "level": "cuvee",
+        "name": "Catena Zapata Angelica Zapata Malbec",
+        "price": 59190,
+        "url": "https://www.lavinoteca.cl/catena-zapata-angelica-zapata-malbec-6062/p"
+      }
+    ]
+  },
+  "gato-negro-blanco-dulce": {
+    "name": "Gato Negro Blanco Dulce",
+    "foundAt": []
+  },
+  "garzon-marselan-reserva": {
+    "name": "Garzón Marselan Reserva",
+    "foundAt": [
+      {
+        "retailer": "La Vinoteca",
+        "level": "cuvee",
+        "name": "Garzón Reserva Marselan",
+        "price": 14690,
+        "url": "https://www.lavinoteca.cl/garzon-reserva-marselan/p"
+      }
+    ]
+  },
+  "leyda-pinot-noir": {
+    "name": "Leyda Pinot Noir",
+    "foundAt": [
+      {
+        "retailer": "La Vinoteca",
+        "level": "cuvee",
+        "name": "Leyda Lot 21 Pinot Noir",
+        "price": 31490,
+        "url": "https://www.lavinoteca.cl/leyda-lot21-pinot-noir/p"
+      }
+    ]
+  },
+  "piccini-chianti-riserva": {
+    "name": "Piccini Chianti Riserva",
+    "foundAt": []
+  },
+  "1865-cabernet-sauvignon": {
+    "name": "1865 Cabernet Sauvignon",
+    "foundAt": [
+      {
+        "retailer": "Descorcha",
+        "level": "cuvee",
+        "name": "Vino 1865 Old Vines Cabernet Sauvignon",
+        "price": 17394,
+        "url": "https://descorcha.com/products/vino-1865-old-vines-cabernet-sauvignon"
+      }
+    ]
+  },
+  "pazo-barrantes-albarino": {
+    "name": "Pazo Barrantes Albariño",
+    "foundAt": []
+  },
+  "ramon-bilbao-crianza": {
+    "name": "Ramón Bilbao Crianza",
+    "foundAt": []
+  },
+  "enate-chardonnay": {
+    "name": "Enate Chardonnay",
+    "foundAt": []
+  }
+}

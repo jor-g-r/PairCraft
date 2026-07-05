@@ -33,7 +33,7 @@ interface Row {
   name: string;
   brand: string;
   type: WineType;
-  priceCop: number | null;
+  price: number | null; // local currency of the market (COP/CLP/ARS)
   available: boolean;
   url: string;
 }
@@ -51,9 +51,20 @@ interface WooSource {
   name: string;
   slug: string;
   home: string;
+  // Wine-only stores whose categories are per-bodega (Winery) need a full
+  // catalog walk; mixed stores (El Kiosco) filter by wine categories.
+  allProducts?: boolean;
 }
 
-type Source = VtexSource | WooSource;
+// Shopify: pages /products.json (public), keeps only wine product_types.
+interface ShopifySource {
+  platform: 'shopify';
+  name: string;
+  slug: string;
+  home: string;
+}
+
+type Source = VtexSource | WooSource | ShopifySource;
 
 // Category paths discovered via /api/catalog_system/pub/category/tree/3 per
 // store (see playbook §3). `mixto` = store lumps all wine types together;
@@ -106,6 +117,56 @@ const MARKETS: Record<string, Source[]> = {
       platform: 'woocommerce', name: 'Vinos El Kiosco', slug: 'el-kiosco', home: 'https://www.vinoselkiosco.com',
     },
   ],
+  // CL supermarkets (Líder, Jumbo.cl, Santa Isabel, Unimarc, Tottus) are all
+  // custom platforms or bot-blocked — wine data comes from specialists, which
+  // in wine-country Chile carry the deeper catalogs anyway. See playbook §CL.
+  CL: [
+    {
+      platform: 'vtex', name: 'La Vinoteca', slug: 'lavinoteca', home: 'https://www.lavinoteca.cl',
+      categories: [
+        // Still wines are organized by grape (Cepa); querying the parent
+        // returns all of them, type inferred from the varietal in the name.
+        { type: 'mixto', path: 'home/cepa' },
+        { type: 'espumoso', path: 'home/vina/espumantes' },
+      ],
+    },
+    { platform: 'shopify', name: 'Descorcha', slug: 'descorcha', home: 'https://descorcha.com' },
+    { platform: 'shopify', name: 'VentaVinos', slug: 'ventavinos', home: 'https://www.ventavinos.cl' },
+  ],
+  // Jumbo/Disco/Vea share one Cencosud catalog (identical product IDs) —
+  // scraping Jumbo covers all three banners; counting them separately would
+  // inflate presence. Carrefour AR (Cloudflare) and Coto (custom) blocked.
+  AR: [
+    {
+      platform: 'vtex', name: 'Jumbo', slug: 'jumbo', home: 'https://www.jumbo.com.ar',
+      categories: [
+        { type: 'tinto', path: 'bebidas/vinos/vinos-tintos' },
+        { type: 'blanco', path: 'bebidas/vinos/vinos-blancos' },
+        { type: 'rosado', path: 'bebidas/vinos/vinos-rosados' },
+        { type: 'espumoso', path: 'bebidas/vinos/vinos-frizantes' },
+        { type: 'espumoso', path: 'bebidas/espumantes' },
+      ],
+    },
+    {
+      platform: 'vtex', name: 'Día', slug: 'dia', home: 'https://diaonline.supermercadosdia.com.ar',
+      categories: [
+        { type: 'tinto', path: 'bebidas/bodega/vino-tinto' },
+        { type: 'blanco', path: 'bebidas/bodega/vino-blanco' },
+        { type: 'rosado', path: 'bebidas/bodega/vino-rosado' },
+        { type: 'espumoso', path: 'bebidas/bodega/espumantes' },
+      ],
+    },
+    {
+      platform: 'vtex', name: 'ChangoMás', slug: 'changomas', home: 'https://www.masonline.com.ar',
+      categories: [
+        { type: 'tinto', path: 'vinos-y-espumantes/vino-tinto' },
+        { type: 'blanco', path: 'vinos-y-espumantes/vino-blanco' },
+        { type: 'rosado', path: 'vinos-y-espumantes/vino-rosado' },
+        { type: 'espumoso', path: 'vinos-y-espumantes/espumantes' },
+      ],
+    },
+    { platform: 'woocommerce', name: 'Winery', slug: 'winery', home: 'https://tiendadevinos.ar', allProducts: true },
+  ],
 };
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -128,11 +189,11 @@ function normalizeText(s: string): string {
 
 function inferType(name: string): WineType {
   const n = normalizeText(name);
-  if (/(espum|champa|prosecco|lambrusco|\bcava\b|\bbrut\b|asti|frizzante)/.test(n)) return 'espumoso';
+  if (/(espum|champa|prosecco|lambrusco|\bcava\b|\bbrut\b|asti|frizzante|frizante|\bsidra\b)/.test(n)) return 'espumoso';
   if (/(rosad|\brose\b)/.test(n)) return 'rosado';
-  if (/(sangria|oporto|jerez|vermouth|vermut|cocina|manzanilla|aperitivo)/.test(n)) return 'otro';
-  if (/(blanco|sauvignon blanc|chardonnay|albarin|riesling|verdejo|moscato|torrontes|gewurz|pinot gri)/.test(n)) return 'blanco';
-  if (/(tinto|malbec|cabernet|carmener|merlot|syrah|shiraz|pinot noir|tempranillo|rioja|chianti|bonarda|tannat|zinfandel|garnacha|sangiovese)/.test(n)) return 'tinto';
+  if (/(sangria|oporto|jerez|vermouth|vermut|cocina|manzanilla|aperitivo|vinagre)/.test(n)) return 'otro';
+  if (/(blanco|sauvignon blanc|chardonnay|albarin|riesling|verdejo|moscato|moscatel|torrontes|gewurz|pinot gri|viognier|semillon|chenin)/.test(n)) return 'blanco';
+  if (/(tinto|malbec|cabernet|carmener|merlot|syrah|shiraz|pinot noir|tempranillo|rioja|chianti|bonarda|tannat|zinfandel|garnacha|sangiovese|carignan|cinsault|petit verdot)/.test(n)) return 'tinto';
   return 'otro';
 }
 
@@ -160,7 +221,7 @@ async function scrapeVtex(src: VtexSource): Promise<Row[]> {
           name,
           brand: String(p.brand ?? '').trim(),
           type: cat.type === 'mixto' ? inferType(name) : cat.type,
-          priceCop: typeof offer?.Price === 'number' && offer.Price > 0 ? Math.round(offer.Price) : null,
+          price: typeof offer?.Price === 'number' && offer.Price > 0 ? Math.round(offer.Price) : null,
           available: (offer?.AvailableQuantity ?? 0) > 0,
           url: p.linkText ? `${src.home}/${p.linkText}/p` : src.home,
         });
@@ -176,14 +237,18 @@ async function scrapeVtex(src: VtexSource): Promise<Row[]> {
 }
 
 async function scrapeWoo(src: WooSource): Promise<Row[]> {
-  const cats = (await getJson(`${src.home}/wp-json/wc/store/v1/products/categories?per_page=100`)) as any[];
-  const wineCats = cats.filter((c) => /vino|tinto|blanco|rosado|espum|champa/i.test(String(c.name)));
+  const wineCats = src.allProducts
+    ? [{ id: null, name: 'all' }]
+    : ((await getJson(`${src.home}/wp-json/wc/store/v1/products/categories?per_page=100`)) as any[]).filter((c) =>
+        /vino|tinto|blanco|rosado|espum|champa/i.test(String(c.name)),
+      );
   const rows: Row[] = [];
   const seen = new Set<number>();
   for (const cat of wineCats) {
     let count = 0;
     for (let page = 1; page <= 25; page++) {
-      const url = `${src.home}/wp-json/wc/store/v1/products?category=${cat.id}&per_page=100&page=${page}`;
+      const catParam = cat.id === null ? '' : `category=${cat.id}&`;
+      const url = `${src.home}/wp-json/wc/store/v1/products?${catParam}per_page=100&page=${page}`;
       let data: any;
       try {
         data = await getJson(url);
@@ -204,7 +269,7 @@ async function scrapeWoo(src: WooSource): Promise<Row[]> {
           name,
           brand: '',
           type: inferType(`${cat.name} ${name}`),
-          priceCop: Number.isFinite(raw) ? Math.round(raw / 10 ** minor) : null,
+          price: Number.isFinite(raw) ? Math.round(raw / 10 ** minor) : null,
           available: p.is_in_stock !== false,
           url: String(p.permalink ?? src.home),
         });
@@ -216,6 +281,46 @@ async function scrapeWoo(src: WooSource): Promise<Row[]> {
     console.log(`  ${src.name} / ${cat.name}: ${count} products`);
     await sleep(DELAY_MS);
   }
+  return rows;
+}
+
+async function scrapeShopify(src: ShopifySource): Promise<Row[]> {
+  const rows: Row[] = [];
+  let kept = 0;
+  for (let page = 1; page <= 40; page++) {
+    const url = `${src.home}/products.json?limit=250&page=${page}`;
+    let data: any;
+    try {
+      data = await getJson(url);
+    } catch (e) {
+      console.warn(`  ! ${src.name} page ${page}: ${(e as Error).message}`);
+      break;
+    }
+    const products = data?.products;
+    if (!Array.isArray(products) || products.length === 0) break;
+    for (const p of products) {
+      const productType = String(p.product_type ?? '');
+      // Shopify stores mix wine with beer/spirits/accessories — keep wine only.
+      if (!/vino|espum|champa/i.test(productType)) continue;
+      const name = String(p.title ?? '').trim();
+      if (!name) continue;
+      const variant = p.variants?.[0];
+      const raw = Number(variant?.price ?? NaN);
+      rows.push({
+        retailer: src.name,
+        name,
+        brand: String(p.vendor ?? '').trim(),
+        type: inferType(`${productType} ${name}`),
+        price: Number.isFinite(raw) ? Math.round(raw) : null,
+        available: variant?.available !== false,
+        url: p.handle ? `${src.home}/products/${p.handle}` : src.home,
+      });
+      kept++;
+    }
+    if (products.length < 250) break;
+    await sleep(DELAY_MS);
+  }
+  console.log(`  ${src.name} / products.json: ${kept} wine products kept`);
   return rows;
 }
 /* eslint-enable @typescript-eslint/no-explicit-any */
@@ -255,13 +360,42 @@ function csvField(v: string | number | null): string {
   return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
 }
 
-async function loadCorpusWines(): Promise<{ slug: string; name: string; tokens: string[] }[]> {
+// Words that distinguish a specific cuvée from its producer. A producer-only
+// hit ("Leyda Lot 5 Chardonnay" for leyda-pinot-noir) proves the brand ships
+// to the market, NOT that our wine does — never tag markets from producer-
+// level matches. Grapes and style words behave differently: an EXTRA grape in
+// the listing disqualifies (a Cabernet-Malbec blend is not our Malbec), while
+// extra style words are harmless.
+const GRAPES = new Set([
+  'malbec', 'cabernet', 'sauvignon', 'blanc', 'chardonnay', 'pinot', 'noir', 'albarino', 'marselan',
+  'prosecco', 'chianti', 'merlot', 'syrah', 'shiraz', 'tempranillo', 'carmenere', 'bonarda', 'tannat',
+  'verdejo', 'torrontes', 'riesling', 'viognier', 'semillon', 'moscato', 'moscatel', 'garnacha',
+  'sangiovese', 'carignan', 'cinsault', 'chenin',
+]);
+const STYLES = new Set(['tinto', 'blanco', 'rosado', 'espumoso', 'brut', 'dulce', 'riserva', 'reserva', 'crianza']);
+
+interface CorpusWine {
+  slug: string;
+  name: string;
+  producerTokens: string[];
+  grapeTokens: string[];
+  styleTokens: string[];
+}
+
+async function loadCorpusWines(): Promise<CorpusWine[]> {
   const files = (await readdir(WINES_DIR)).filter((f) => f.endsWith('.yaml'));
-  const wines = [];
+  const wines: CorpusWine[] = [];
   for (const f of files) {
     const doc = parseYaml(await readFile(path.join(WINES_DIR, f), 'utf8')) as { name?: string };
     const name = doc?.name ?? f;
-    wines.push({ slug: f.replace(/\.yaml$/, ''), name, tokens: significantTokens(name) });
+    const raw = normalizeText(name).split(' ').filter(Boolean);
+    wines.push({
+      slug: f.replace(/\.yaml$/, ''),
+      name,
+      producerTokens: significantTokens(name),
+      grapeTokens: raw.filter((t) => GRAPES.has(t)),
+      styleTokens: raw.filter((t) => STYLES.has(t)),
+    });
   }
   return wines;
 }
@@ -285,7 +419,10 @@ for (const src of sources) {
   const outFile = path.join(OUT_DIR, `${marketCode.toLowerCase()}-${src.slug}.json`);
   if (useCache) {
     try {
-      const rows = JSON.parse(await readFile(outFile, 'utf8')) as Row[];
+      // priceCop → price: reads caches written before the field went generic.
+      const rows = (JSON.parse(await readFile(outFile, 'utf8')) as (Row & { priceCop?: number | null })[]).map(
+        (r) => ({ ...r, price: r.price ?? r.priceCop ?? null }),
+      );
       allRows.push(...rows);
       console.log(`→ ${src.name}: ${rows.length} rows (cached)`);
       continue;
@@ -294,7 +431,10 @@ for (const src of sources) {
     }
   }
   console.log(`\n→ ${src.name} (${src.platform})`);
-  const rows = src.platform === 'vtex' ? await scrapeVtex(src) : await scrapeWoo(src);
+  const rows =
+    src.platform === 'vtex' ? await scrapeVtex(src)
+    : src.platform === 'woocommerce' ? await scrapeWoo(src)
+    : await scrapeShopify(src);
   allRows.push(...rows);
   await writeFile(outFile, JSON.stringify(rows, null, 2));
   console.log(`  saved ${rows.length} rows → ${path.relative(ROOT, outFile)}`);
@@ -326,10 +466,10 @@ const candidates = [...bySig.values()].sort(
   (a, b) => b.retailers.size - a.retailers.size || a.type.localeCompare(b.type) || a.name.localeCompare(b.name),
 );
 
-const header = 'presence,retailers,type,name,brand,min_price_cop,max_price_cop,sample_url';
+const header = 'presence,retailers,type,name,brand,min_price,max_price,sample_url';
 const csvLines = candidates.map((c) => {
   const rows = [...c.retailers.values()];
-  const prices = rows.map((r) => r.priceCop).filter((p): p is number => p !== null);
+  const prices = rows.map((r) => r.price).filter((p): p is number => p !== null);
   return [
     c.retailers.size,
     [...c.retailers.keys()].join('; '),
@@ -345,18 +485,34 @@ const csvFile = path.join(OUT_DIR, `${marketCode.toLowerCase()}-candidates.csv`)
 await writeFile(csvFile, [header, ...csvLines].join('\n') + '\n');
 
 // --- Corpus cross-check: which of our wines does each retailer stock?
+// Two levels: 'cuvee' (producer + all descriptors → this wine) vs 'producer'
+// (brand present, different bottling → market-tag NO, brand-signal yes).
+type MatchLevel = 'cuvee' | 'producer';
 const corpus = await loadCorpusWines();
-const availability: Record<string, { name: string; foundAt: { retailer: string; name: string; priceCop: number | null; url: string }[] }> = {};
+const availability: Record<
+  string,
+  { name: string; foundAt: { retailer: string; level: MatchLevel; name: string; price: number | null; url: string }[] }
+> = {};
 for (const wine of corpus) {
-  const hits = allRows.filter((row) => {
-    const rowTokens = new Set(significantTokens(row.name));
-    return wine.tokens.length > 0 && wine.tokens.every((t) => rowTokens.has(t));
-  });
-  const byRetailer = new Map<string, Row>();
-  for (const h of hits) if (!byRetailer.has(h.retailer)) byRetailer.set(h.retailer, h);
+  if (wine.producerTokens.length === 0) continue;
+  const byRetailer = new Map<string, { row: Row; level: MatchLevel }>();
+  for (const row of allRows) {
+    const rowTokens = new Set(normalizeText(row.name).split(' ').filter(Boolean));
+    if (!wine.producerTokens.every((t) => rowTokens.has(t))) continue;
+    const rowGrapes = [...rowTokens].filter((t) => GRAPES.has(t));
+    const isCuvee =
+      wine.grapeTokens.every((t) => rowTokens.has(t)) &&
+      wine.styleTokens.every((t) => rowTokens.has(t)) &&
+      rowGrapes.every((t) => wine.grapeTokens.includes(t));
+    const level: MatchLevel = isCuvee ? 'cuvee' : 'producer';
+    const prev = byRetailer.get(row.retailer);
+    if (!prev || (prev.level === 'producer' && level === 'cuvee')) byRetailer.set(row.retailer, { row, level });
+  }
   availability[wine.slug] = {
     name: wine.name,
-    foundAt: [...byRetailer.values()].map((r) => ({ retailer: r.retailer, name: r.name, priceCop: r.priceCop, url: r.url })),
+    foundAt: [...byRetailer.values()].map(({ row, level }) => ({
+      retailer: row.retailer, level, name: row.name, price: row.price, url: row.url,
+    })),
   };
 }
 const availFile = path.join(OUT_DIR, `${marketCode.toLowerCase()}-corpus-availability.json`);
@@ -365,8 +521,11 @@ await writeFile(availFile, JSON.stringify(availability, null, 2));
 console.log(`\n${allRows.length} rows total → ${candidates.length} unique candidates`);
 console.log(`candidates: ${path.relative(ROOT, csvFile)}`);
 console.log(`corpus availability: ${path.relative(ROOT, availFile)}`);
-console.log('\nCorpus wines found in this market:');
+console.log('\nCorpus wines in this market (✓ cuvée · ~ producer-only):');
 for (const [slug, info] of Object.entries(availability)) {
-  const at = info.foundAt.map((f) => f.retailer).join(', ');
-  console.log(`  ${info.foundAt.length > 0 ? '✓' : '✗'} ${slug}${at ? ` — ${at}` : ''}`);
+  const cuvee = info.foundAt.filter((f) => f.level === 'cuvee').map((f) => f.retailer);
+  const prod = info.foundAt.filter((f) => f.level === 'producer').map((f) => f.retailer);
+  const mark = cuvee.length ? '✓' : prod.length ? '~' : '✗';
+  const parts = [cuvee.length ? cuvee.join(', ') : '', prod.length ? `(producer-only: ${prod.join(', ')})` : ''].filter(Boolean);
+  console.log(`  ${mark} ${slug}${parts.length ? ' — ' + parts.join(' ') : ''}`);
 }

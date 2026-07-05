@@ -35,6 +35,9 @@ pedagogicalRole: LATAM regional bonus; teaches lesser-known grape and modern
 availability:
   note: Seen in Colombia specialty retail examples such as Vinos El Kiosco
   sourceUrl: https://www.vinoselkiosco.com/tienda/marselan-reserva/
+markets:
+  - CO
+  - CL
 recommendedPairings:
   - grilled meats
   - lamb

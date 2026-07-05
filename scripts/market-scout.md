@@ -51,8 +51,13 @@ request time. Executor: Claude session + `scripts/scout-retailers.ts`.
 5. **Review the artifacts.**
    - `presence` in candidates.csv = how many retailers carry the wine. 3+ =
      genuine market staple; strong signal for corpus candidacy.
-   - Corpus cross-check tells you which existing wines to tag with this market
-     and gives retail URLs for `availability.sourceUrl`.
+   - Corpus cross-check reports two match levels: **cuvée** (producer + our
+     grapes/style, and no extra grapes — "Cabernet y Malbec" blends don't pass
+     as Malbec) vs **producer-only** (brand ships to the market, different
+     bottling). Only cuvée-level hits justify a `wine.markets` tag; even then,
+     eyeball the matched name — same producer + same grape can still be a
+     different line (Angélica Zapata Malbec ≠ Catena Malbec; DV Catena ≠
+     Catena Clásica).
    - Update `src/content/markets/<mkt>.mdx` `retailers` with verified names+URLs.
 
 6. **Human selection gate (do not skip).** New wines go through Jorge's review
@@ -93,9 +98,36 @@ licorerías (e.g. Licores Mundiales, El Mundo del Licor — verify first) via
 step 2 probes; expect more agent-browser, less API. Corpus was verified
 manually by Jorge 2026-06-18 — the scout would add retailers + URLs.
 
-### CL / AR (pending)
+### CL — Chile (run 2026-07-05)
 
-Both have strong VTEX presence (Cencosud: jumbo.cl; Coto/others in AR — verify
-with step 1 searches, don't assume). Domestic-market wine catalogs will be
-much deeper than CO's import shelf; expect higher candidate counts and tune
-selection accordingly.
+- **Landscape:** Walmart (Líder) ~44%, Cencosud (Jumbo, Santa Isabel) ~33%,
+  SMU (Unimarc) ~16%, Tottus ~7%. **Every supermarket site is custom-platform
+  or bot-blocked** (Líder/Santa Isabel custom SPA, Unimarc 403, Tottus 503,
+  jumbo.cl SPA shell) — wine data comes from specialists, which in wine-country
+  Chile carry the deeper catalogs anyway.
+- **Scouted:** La Vinoteca (VTEX, 277 — still wines organized by *Cepa/grape*,
+  queried at the parent with name-inferred types), Descorcha (Shopify, 527),
+  VentaVinos (Shopify, 84). Total 888 rows → **544 candidates** (prices CLP).
+- **Corpus check:** cuvée-level: Garzón Reserva Marselan (La Vinoteca → earned
+  the CL tag), Leyda Pinot Noir, 1865 Old Vines Cab (already CL-tagged).
+  Producer-only: Mionetto Prosecco sin "brut" (Jorge: eyeball for CL tag),
+  Castillo de Molina (Cabernet, not our SB). **Known blind spot:** supermarket
+  value brands (Gato Negro) don't surface in specialist catalogs — their CL
+  tags rest on domestic-production confidence, not scout evidence.
+
+### AR — Argentina (run 2026-07-05)
+
+- **Landscape:** Coto ~18%, Cencosud 17.5%, Carrefour (leader, in sale
+  process). **Jumbo/Disco/Vea return byte-identical catalogs** (one Cencosud
+  backend) — scrape Jumbo only or presence inflates 3×. Carrefour AR
+  (Cloudflare 403) and Coto (custom) blocked. Espacio Vino and Vinoteca Ligier
+  (Magento) not scrapeable without browser work.
+- **Scouted:** Jumbo (VTEX, 4502), Día (VTEX, 266), ChangoMás (VTEX, 1547),
+  Winery (WooCommerce `allProducts` mode — its categories are per-bodega, so
+  the wine-category filter found nothing; full walk got 287). Total 6602 rows
+  → **4111 candidates** (prices ARS). Domestic catalogs run deep, as expected.
+- **Corpus check:** Catena Malbec cuvée-confirmed at all 4 (incl. "Catena
+  Malbec Argentino" at Winery; supermarket hits are the DV Catena line —
+  same house, different label, hence the eyeball rule in §5). Gato Negro and
+  Garzón are producer-only at Jumbo (other bottlings). Everything European in
+  the corpus is absent — the protectionist shelf ar.mdx describes is real.
