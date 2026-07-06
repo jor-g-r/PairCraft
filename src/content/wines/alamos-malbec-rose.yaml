@@ -1,0 +1,34 @@
+name: Alamos Malbec Rosé
+color: rose
+region: mendoza
+grapes:
+  - grape: malbec
+    percentage: 100
+tagline: Mendoza Malbec stripped to its fruit — watermelon, dried rose, and a
+  clean bitter finish that keeps it honest.
+summary: Alamos makes this rosé from high-altitude Mendoza Malbec, pressing
+  early to capture vivid strawberry and watermelon without the grape's heavy
+  pigment or tannin. It runs off-dry in style, with enough acidity to stay
+  lively at the table. Drink it cold, drink it young — this is not a wine to sit
+  on.
+sensoryProfile:
+  sweetness: 2
+  acidity: 3
+  tannin: 0
+  body: 2
+flavouring:
+  primary:
+    - watermelon
+    - strawberry
+    - dried rose petal
+    - pomegranate
+  secondary:
+    - light cream
+    - subtle yeast
+  tertiary: []
+availability:
+  note: Confirmed in Colombia retail via market scout (2026-07-05)
+  sourceUrl: https://www.exito.com/vrose-774065/p
+markets:
+  - CO
+  - AR

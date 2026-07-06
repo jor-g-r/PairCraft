@@ -1,0 +1,34 @@
+name: Trapiche Broquel Torrontés
+tagline: Salta's aromatic firepower bottled cheap — jasmine, white peach, and
+  grapefruit zest with acid that keeps it honest.
+summary: Broquel Torrontés is the entry point for understanding why Argentina's
+  north produces the world's most perfumed white grape. Fermented cold to lock
+  in aromatics, it delivers explosive floral attack balanced by genuine acidity
+  — rare for the variety. Drink it within two years, ice-cold, with something
+  that can stand up to the scent.
+color: white
+region: salta
+grapes:
+  - grape: torrontes
+    percentage: 100
+sensoryProfile:
+  sweetness: 1
+  acidity: 3
+  tannin: 0
+  body: 2
+flavouring:
+  primary:
+    - jasmine
+    - white peach
+    - grapefruit zest
+    - rose petal
+    - lychee
+  secondary:
+    - neutral — stainless steel only
+  tertiary: []
+availability:
+  note: Confirmed in Colombia retail via market scout (2026-07-05)
+  sourceUrl: https://www.exito.com/vino-blanco-broquel-torrontes-trapiche-750-ml-3015082/p
+markets:
+  - CO
+  - AR

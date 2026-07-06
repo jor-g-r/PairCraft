@@ -1,0 +1,38 @@
+name: Moët & Chandon Brut Impérial
+tagline: The house that built Champagne's global image — green apple, brioche,
+  white peach, and relentless mousse.
+summary: "Non-vintage Champagne built on consistency at scale: Pinot Noir drives
+  the structure, Chardonnay the lift, Meunier the approachability. Drink it
+  cold, drink it now, drink it at the party — this wine does not reward
+  cellaring."
+color: sparkling
+region: champagne
+grapes:
+  - grape: pinot-noir
+    percentage: 40
+  - grape: chardonnay
+    percentage: 30
+  - grape: pinot-meunier
+    percentage: 30
+sensoryProfile:
+  sweetness: 1
+  acidity: 4
+  tannin: 0
+  body: 2
+flavouring:
+  primary:
+    - green apple
+    - white peach
+    - pear
+    - lemon zest
+  secondary:
+    - brioche
+    - cream
+    - toasted almond
+  tertiary: []
+availability:
+  note: Confirmed in Colombia retail via market scout (2026-07-05)
+  sourceUrl: https://www.exito.com/champagne-brut-imperial-x-750ml-920400/p
+markets:
+  - CO
+  - FR

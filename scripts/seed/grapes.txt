@@ -3,3 +3,7 @@
 #
 # Already in corpus: malbec, albarino
 
+Carmenère
+Torrontés
+Merlot
+Pinot Meunier

@@ -1,0 +1,37 @@
+name: JP Chenet Merlot
+tagline: Supermarket Merlot done honestly — soft plum, a whisper of oak, and
+  zero pretension. Drink it, don't study it.
+summary: "JP Chenet Merlot is a high-volume Pays d'Oc red built for immediate
+  drinking: soft tannins, ripe plum fruit, and just enough structure to hold a
+  weeknight meal together. It is not a wine for cellaring or contemplation. Open
+  it, pour it, move on."
+color: red
+region: pays-doc
+grapes:
+  - grape: merlot
+    percentage: 100
+sensoryProfile:
+  sweetness: 1
+  acidity: 2
+  tannin: 2
+  body: 2
+flavouring:
+  primary:
+    - red plum
+    - black cherry
+    - raspberry
+  secondary:
+    - vanilla
+    - light oak
+  tertiary: []
+tanninProfile:
+  softness: 4
+  astringency: 1
+  complexity: 1
+  structure: 2
+availability:
+  note: Confirmed in Colombia retail via market scout (2026-07-05)
+  sourceUrl: https://www.exito.com/vino-tinto-merlot-jp-chenet-x-750ml-304718/p
+markets:
+  - CO
+  - FR

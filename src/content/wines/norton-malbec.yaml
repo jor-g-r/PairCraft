@@ -1,0 +1,39 @@
+name: Norton Malbec
+color: red
+region: mendoza
+grapes:
+  - grape: malbec
+    percentage: 100
+tagline: Mendoza at its most accessible — dark plum, violet, and a smack of
+  mocha without the pretension.
+summary: "Norton's entry-level Malbec is the benchmark for what Mendoza does at
+  volume without cutting corners: ripe, dark-fruited, and oak-touched but not
+  buried in it. Drink it now, with food, at the table — this is not a cellar
+  candidate."
+sensoryProfile:
+  sweetness: 1
+  acidity: 3
+  tannin: 3
+  body: 4
+flavouring:
+  primary:
+    - black plum
+    - blueberry
+    - violet
+    - blackberry
+  secondary:
+    - mocha
+    - vanilla
+    - cedar
+  tertiary: []
+tanninProfile:
+  softness: 3
+  astringency: 2
+  complexity: 2
+  structure: 3
+availability:
+  note: Confirmed in Colombia retail via market scout (2026-07-05)
+  sourceUrl: https://www.exito.com/vino-tinto-malbec-x-750ml-408750/p
+markets:
+  - CO
+  - AR

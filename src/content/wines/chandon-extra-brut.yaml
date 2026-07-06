@@ -1,0 +1,39 @@
+name: Chandon Extra Brut
+tagline: Mendoza bubbles with backbone — green apple, brioche, and a citrus snap
+  that earns its keep at the table.
+summary: Chandon Argentina's Extra Brut is a high-altitude sparkling built for
+  food, not ceremony. Pinot Noir and Chardonnay deliver crisp green fruit and
+  lees-driven biscuit character with genuine freshness. Drink it cold, drink it
+  now, drink it with something salty.
+color: sparkling
+region: mendoza
+grapes:
+  - grape: pinot-noir
+    percentage: 50
+  - grape: chardonnay
+    percentage: 35
+  - grape: pinot-meunier
+    percentage: 15
+sensoryProfile:
+  sweetness: 1
+  acidity: 4
+  tannin: 0
+  body: 2
+flavouring:
+  primary:
+    - green apple
+    - lemon zest
+    - white peach
+    - grapefruit pith
+  secondary:
+    - brioche
+    - toasted almond
+    - cream
+    - yeast
+  tertiary: []
+availability:
+  note: Confirmed in Colombia retail via market scout (2026-07-05)
+  sourceUrl: https://www.exito.com/vino-espumoso-extra-brut-x-750ml-778693/p
+markets:
+  - CO
+  - AR
