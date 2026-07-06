@@ -122,7 +122,7 @@ request time. Executor: Claude session + `scripts/scout-retailers.ts`.
   VentaVinos (Shopify, 84). Total 888 rows → **544 candidates** (prices CLP).
 - **Corpus check:** cuvée-level: Garzón Reserva Marselan (La Vinoteca → earned
   the CL tag), Leyda Pinot Noir, 1865 Old Vines Cab (already CL-tagged).
-  Producer-only: Mionetto Prosecco sin "brut" (Jorge: eyeball for CL tag),
+  Producer-only resolved: Mionetto+CL confirmed by Jorge 2026-07-06 (base listing = Treviso Brut);
   Castillo de Molina (Cabernet, not our SB). **Known blind spot:** supermarket
   value brands (Gato Negro) don't surface in specialist catalogs — their CL
   tags rest on domestic-production confidence, not scout evidence.
