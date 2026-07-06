@@ -115,6 +115,42 @@ manually by Jorge 2026-06-18 — the scout would add retailers + URLs.
   value brands (Gato Negro) don't surface in specialist catalogs — their CL
   tags rest on domestic-production confidence, not scout evidence.
 
+### ES — Spain (run 2026-07-05 — retailers only, catalogs blocked)
+
+- **Landscape:** specialists dominate online wine (Vinissimus ~16k refs,
+  Bodeboca, Decántalo) alongside Carrefour ES and El Corte Inglés.
+- **Platforms:** ALL blocked or custom — Bodeboca/Decántalo/Carrefour/El Corte
+  Inglés return 403 (Datadome/Akamai-class bot protection), Vinissimus is a
+  custom stack with no public product JSON. **No catalog scrape**; retailer
+  URLs verified live and recorded in `es.mdx`. Agent-browser is the path if
+  candidate depth is ever needed.
+- **Tags:** Ramón Bilbao, Enate, Pazo Barrantes carry ES on domestic-production
+  confidence (the CL/AR rule) — no scout evidence needed or available.
+
+### FR — France (run 2026-07-05 — retailers only, catalogs blocked)
+
+- **Landscape:** cavistes rule online (Nicolas ~500 stores, Vinatis,
+  Millésima for fine wine); supermarkets carry volume but weak e-comm APIs.
+- **Platforms:** Vinatis 403; Nicolas and Millésima custom stacks. No scrape.
+  Retailer URLs verified live, recorded in `fr.mdx`.
+- **Corpus:** zero French wines → **feed deliberately empty** (grape-card
+  fallback, the VE pattern). First French bottles are an editorial decision;
+  don't force them through a scout that can't run.
+
+### AE — United Arab Emirates / Dubai (run 2026-07-05 — retailers only)
+
+- **Landscape:** alcohol retail is a **licensed duopoly**: MMI (21 Dubai
+  outlets) and African + Eastern (largest Gulf importer), both with real
+  e-commerce (2-hour delivery). Residents need a license; tourists don't.
+  "Dubai" is modeled as country code AE — Vercel geo resolves countries.
+- **Platforms:** MMI is a Next.js SPA (catch-all HTML on every route, no
+  public data routes, no exposed buildId); A+E bot-protected. No scrape;
+  retailer URLs verified live, recorded in `ae.mdx`.
+- **Tags:** none — import-only market, so domestic logic can't apply and
+  there's no scout evidence. Feed shows grape fallback until curated.
+- **Why it's here despite the data gap:** Jorge's diversification call +
+  the CUHELAV angle (LATAM hospitality alumni staff Dubai hotels).
+
 ### AR — Argentina (run 2026-07-05)
 
 - **Landscape:** Coto ~18%, Cencosud 17.5%, Carrefour (leader, in sale
