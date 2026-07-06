@@ -117,6 +117,14 @@ const MARKETS: Record<string, Source[]> = {
       platform: 'woocommerce', name: 'Vinos El Kiosco', slug: 'el-kiosco', home: 'https://www.vinoselkiosco.com',
     },
   ],
+  // VE has no scrapeable supermarket e-comm (Gama/Sigo custom SPAs) and the
+  // biggest licorerías are bot-blocked (Licores Mundiales 403, Prodelsur 406)
+  // — the scrapeable slice is specialist e-shops. See playbook §VE.
+  VE: [
+    { platform: 'woocommerce', name: 'Licoteca', slug: 'licoteca', home: 'https://licotecaonline.com' },
+    { platform: 'shopify', name: 'El Catador', slug: 'el-catador', home: 'https://elcatador.com' },
+    { platform: 'woocommerce', name: 'Curda 24', slug: 'curda24', home: 'https://curda24.com' },
+  ],
   // CL supermarkets (Líder, Jumbo.cl, Santa Isabel, Unimarc, Tottus) are all
   // custom platforms or bot-blocked — wine data comes from specialists, which
   // in wine-country Chile carry the deeper catalogs anyway. See playbook §CL.
@@ -301,7 +309,10 @@ async function scrapeShopify(src: ShopifySource): Promise<Row[]> {
     for (const p of products) {
       const productType = String(p.product_type ?? '');
       // Shopify stores mix wine with beer/spirits/accessories — keep wine only.
-      if (!/vino|espum|champa/i.test(productType)) continue;
+      // Type vocab varies by store: Descorcha uses "Vinos Tintos", El Catador
+      // uses "Champagne"/"Tinto"; spirits carry their own types (Tequila,
+      // Destilado), so color words at the type level are safe.
+      if (!/vino|espum|champa|tinto|blanco|rosado|ros[eé]/i.test(productType)) continue;
       const name = String(p.title ?? '').trim();
       if (!name) continue;
       const variant = p.variants?.[0];

@@ -1,0 +1,148 @@
+{
+  "mionetto-prosecco-brut": {
+    "name": "Mionetto Prosecco Brut",
+    "foundAt": []
+  },
+  "castillo-de-molina-sauvignon-blanc": {
+    "name": "Castillo de Molina Sauvignon Blanc Reserva",
+    "foundAt": []
+  },
+  "catena-malbec": {
+    "name": "Catena Malbec",
+    "foundAt": []
+  },
+  "gato-negro-blanco-dulce": {
+    "name": "Gato Negro Blanco Dulce",
+    "foundAt": [
+      {
+        "retailer": "Curda 24",
+        "level": "producer",
+        "name": "Vino Gato Negro Cabernet Sauvignon",
+        "price": 8,
+        "url": "https://curda24.com/tienda/licoreria-delivery/licores/vino-gato-negro-cabernet-sauvignon/"
+      }
+    ]
+  },
+  "chandon-extra-brut": {
+    "name": "Chandon Extra Brut",
+    "foundAt": []
+  },
+  "garzon-marselan-reserva": {
+    "name": "Garzón Marselan Reserva",
+    "foundAt": []
+  },
+  "leyda-pinot-noir": {
+    "name": "Leyda Pinot Noir",
+    "foundAt": []
+  },
+  "moet-chandon-brut-imperial": {
+    "name": "Moët & Chandon Brut Impérial",
+    "foundAt": [
+      {
+        "retailer": "Licoteca",
+        "level": "cuvee",
+        "name": "Moet Chandon Imperial Brut 0.75L",
+        "price": 45,
+        "url": "https://licotecaonline.com/producto/moet-chandon-imperial-brut-075l/"
+      },
+      {
+        "retailer": "El Catador",
+        "level": "cuvee",
+        "name": "Moët & Chandon Brut Impérial Box Pharell Williams",
+        "price": 6900,
+        "url": "https://elcatador.com/products/moet-chandon-brut-imperial-box-pharell-williams"
+      }
+    ]
+  },
+  "jp-chenet-merlot": {
+    "name": "JP Chenet Merlot",
+    "foundAt": []
+  },
+  "alamos-malbec-rose": {
+    "name": "Alamos Malbec Rosé",
+    "foundAt": []
+  },
+  "protos-roble": {
+    "name": "Protos Roble",
+    "foundAt": [
+      {
+        "retailer": "Licoteca",
+        "level": "cuvee",
+        "name": "Vino Protos Roble 0.75L",
+        "price": 8,
+        "url": "https://licotecaonline.com/producto/protos-roble/"
+      },
+      {
+        "retailer": "El Catador",
+        "level": "cuvee",
+        "name": "Protos Roble",
+        "price": 1430,
+        "url": "https://elcatador.com/products/protos-roble"
+      }
+    ]
+  },
+  "piccini-chianti-riserva": {
+    "name": "Piccini Chianti Riserva",
+    "foundAt": []
+  },
+  "norton-malbec": {
+    "name": "Norton Malbec",
+    "foundAt": [
+      {
+        "retailer": "El Catador",
+        "level": "cuvee",
+        "name": "Norton Reserva Malbec",
+        "price": 1490,
+        "url": "https://elcatador.com/products/norton-reserva-malbec"
+      }
+    ]
+  },
+  "1865-cabernet-sauvignon": {
+    "name": "1865 Cabernet Sauvignon",
+    "foundAt": []
+  },
+  "pazo-barrantes-albarino": {
+    "name": "Pazo Barrantes Albariño",
+    "foundAt": [
+      {
+        "retailer": "El Catador",
+        "level": "producer",
+        "name": "Marqués De Murrieta Pazo de Barrantes",
+        "price": 5100,
+        "url": "https://elcatador.com/products/marques-de-murrieta-pazo-de-barrantes"
+      }
+    ]
+  },
+  "santa-carolina-reservado-carmenere": {
+    "name": "Santa Carolina Reservado Carmenère",
+    "foundAt": []
+  },
+  "ramon-bilbao-crianza": {
+    "name": "Ramón Bilbao Crianza",
+    "foundAt": [
+      {
+        "retailer": "Licoteca",
+        "level": "cuvee",
+        "name": "Vino Ramon Bilbao Crianza Ed.Limitada 1.5L",
+        "price": 24,
+        "url": "https://licotecaonline.com/producto/ramon-bilbao-crianza-ed-limitada-1-5l/"
+      }
+    ]
+  },
+  "enate-chardonnay": {
+    "name": "Enate Chardonnay",
+    "foundAt": [
+      {
+        "retailer": "Licoteca",
+        "level": "cuvee",
+        "name": "Vino Enate Chardonnay",
+        "price": 9,
+        "url": "https://licotecaonline.com/producto/enate-chardonnay/"
+      }
+    ]
+  },
+  "trapiche-broquel-torrontes": {
+    "name": "Trapiche Broquel Torrontés",
+    "foundAt": []
+  }
+}

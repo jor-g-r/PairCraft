@@ -1,0 +1,155 @@
+[
+  {
+    "retailer": "Curda 24",
+    "name": "Espumante Alexander 0,70 &#8211; Brut",
+    "brand": "",
+    "type": "espumoso",
+    "price": 7,
+    "available": true,
+    "url": "https://curda24.com/tienda/licoreria-delivery/licores/espumante-alexander-070-brut/"
+  },
+  {
+    "retailer": "Curda 24",
+    "name": "Foss Marai 0,75L &#8211; Marai De Marai",
+    "brand": "",
+    "type": "espumoso",
+    "price": 24,
+    "available": true,
+    "url": "https://curda24.com/tienda/licoreria-delivery/licores/foss-marai-075l-marai-de-marai/"
+  },
+  {
+    "retailer": "Curda 24",
+    "name": "Espumante Cantinger Manzana 0,70",
+    "brand": "",
+    "type": "espumoso",
+    "price": 6,
+    "available": true,
+    "url": "https://curda24.com/tienda/licoreria-delivery/licores/espumante-cantinger-manzana-070/"
+  },
+  {
+    "retailer": "Curda 24",
+    "name": "Espumante Cantinger Ice 0.70",
+    "brand": "",
+    "type": "espumoso",
+    "price": 6,
+    "available": true,
+    "url": "https://curda24.com/tienda/licoreria-delivery/licores/espumante-cantinger-ice-0-70/"
+  },
+  {
+    "retailer": "Curda 24",
+    "name": "Veuve Du Vernay 0.75L &#8211; Ice Demi Sec",
+    "brand": "",
+    "type": "espumoso",
+    "price": 18,
+    "available": true,
+    "url": "https://curda24.com/tienda/licoreria-delivery/licores/veuve-du-vernay-0-75l-ice-demi-sec/"
+  },
+  {
+    "retailer": "Curda 24",
+    "name": "Sensacion Brut Espumante",
+    "brand": "",
+    "type": "espumoso",
+    "price": 8,
+    "available": true,
+    "url": "https://curda24.com/tienda/licoreria-delivery/licores/sensacion-brut-0-75l-espumante/"
+  },
+  {
+    "retailer": "Curda 24",
+    "name": "Louis Pedrier Brut",
+    "brand": "",
+    "type": "espumoso",
+    "price": 10,
+    "available": true,
+    "url": "https://curda24.com/tienda/licoreria-delivery/licores/louis-pedrier-brut/"
+  },
+  {
+    "retailer": "Curda 24",
+    "name": "Combo x2 Vino Fuego",
+    "brand": "",
+    "type": "otro",
+    "price": 20,
+    "available": true,
+    "url": "https://curda24.com/tienda/licoreria-delivery/licores/combo-x2-vino-fuego/"
+  },
+  {
+    "retailer": "Curda 24",
+    "name": "La Vanguardia Blanc",
+    "brand": "",
+    "type": "otro",
+    "price": 12,
+    "available": true,
+    "url": "https://curda24.com/tienda/licoreria-delivery/licores/la-vanguardia-blanc/"
+  },
+  {
+    "retailer": "Curda 24",
+    "name": "La Vanguardia Malbec",
+    "brand": "",
+    "type": "tinto",
+    "price": 12,
+    "available": true,
+    "url": "https://curda24.com/tienda/licoreria-delivery/licores/la-vanguardia-malbec/"
+  },
+  {
+    "retailer": "Curda 24",
+    "name": "La Vanguardia Red Wine",
+    "brand": "",
+    "type": "otro",
+    "price": 12,
+    "available": true,
+    "url": "https://curda24.com/tienda/licoreria-delivery/licores/la-vanguardia-red-wine/"
+  },
+  {
+    "retailer": "Curda 24",
+    "name": "Louis Pedrier Brut Rose",
+    "brand": "",
+    "type": "espumoso",
+    "price": 10,
+    "available": true,
+    "url": "https://curda24.com/tienda/licoreria-delivery/licores/louis-pedrier-brut-rose/"
+  },
+  {
+    "retailer": "Curda 24",
+    "name": "Fuego Austral Cabernet Sauvignon 2019",
+    "brand": "",
+    "type": "tinto",
+    "price": 10,
+    "available": true,
+    "url": "https://curda24.com/tienda/licoreria-delivery/licores/fuego-austral-cabernet-sauvignon-2019/"
+  },
+  {
+    "retailer": "Curda 24",
+    "name": "Fuego Austral Merlot 2019",
+    "brand": "",
+    "type": "tinto",
+    "price": 10,
+    "available": true,
+    "url": "https://curda24.com/tienda/licoreria-delivery/licores/fuego-austral-merlot-2019/"
+  },
+  {
+    "retailer": "Curda 24",
+    "name": "Fuego Austral Sauvignon Blanc 2019",
+    "brand": "",
+    "type": "blanco",
+    "price": 10,
+    "available": true,
+    "url": "https://curda24.com/tienda/licoreria-delivery/licores/fuego-austral-sauvignon-blanc-2019/"
+  },
+  {
+    "retailer": "Curda 24",
+    "name": "Vino Cruz Del Sur",
+    "brand": "",
+    "type": "otro",
+    "price": 9,
+    "available": true,
+    "url": "https://curda24.com/tienda/licoreria-delivery/licores/vino-cruz-del-sur/"
+  },
+  {
+    "retailer": "Curda 24",
+    "name": "Vino Gato Negro Cabernet Sauvignon",
+    "brand": "",
+    "type": "tinto",
+    "price": 8,
+    "available": true,
+    "url": "https://curda24.com/tienda/licoreria-delivery/licores/vino-gato-negro-cabernet-sauvignon/"
+  }
+]

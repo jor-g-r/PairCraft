@@ -1,0 +1,789 @@
+presence,retailers,type,name,brand,min_price,max_price,sample_url
+1,El Catador,blanco,Abadía de San Campio Albariño,Terras Gauda,1590,1590,https://elcatador.com/products/abadia-de-san-campio-albarino
+1,El Catador,blanco,Adegas Galegas Veigadares,Adegas Galegas,2350,2350,https://elcatador.com/products/adegas-galegas-veigadares
+1,El Catador,blanco,Altos de Torona Albariño,Altos de Torona,1550,1550,https://elcatador.com/products/altos-de-torona-albarino
+1,El Catador,blanco,Antinori Cervaro Della Sala,Antinori,6800,6800,https://elcatador.com/products/antinori-cervaro-della-sala
+1,El Catador,blanco,Antinori Conte Della Vipera,Antinori,2795,2795,https://elcatador.com/products/antinori-conte-della-vipera
+1,El Catador,blanco,Antinori San Giovanni Della Sala,Antinori,2150,2150,https://elcatador.com/products/antinori-san-giovanni-della-sala
+1,El Catador,blanco,Antinori Vermentino,Antinori,2100,2100,https://elcatador.com/products/antinori-vermentino-1
+1,El Catador,blanco,Antinori Villa Antinori Blanco,Antinori,1590,1590,https://elcatador.com/products/antinori-villa-antinori-blanco
+1,El Catador,blanco,Arzuaga Fan D'Oro,Arzuaga,1890,1890,https://elcatador.com/products/arzuaga-fan-doro
+1,El Catador,blanco,Banfi Principessa Gavi,Banfi,1750,1750,https://elcatador.com/products/banfi-principessa-gavi
+1,El Catador,blanco,Baron Philippe de Rothschild Sauternes 375ml,Baron Philippe de Rothschild,1820,1820,https://elcatador.com/products/baron-philippe-de-rothschild-sauternes-375ml
+1,El Catador,blanco,Batasiolo Gavi di Gavi,Batasiolo,1650,1650,https://elcatador.com/products/batasiolo-gavi-di-gavi
+1,El Catador,blanco,Belle Glos Chardonnay,Copper Cane,4550,4550,https://elcatador.com/products/belle-glos-chardonnay
+1,El Catador,blanco,Beringer California Chardonnay,Beringer,870,870,https://elcatador.com/products/beringer-california-chardonnay
+1,El Catador,blanco,Beringer California Moscato,Beringer,870,870,https://elcatador.com/products/beringer-california-moscato
+1,El Catador,blanco,Beringer California Pinot Grigio,Beringer,870,870,https://elcatador.com/products/beringer-california-pinot-grigio
+1,El Catador,blanco,Chateau Ste Michelle Columbia Riesling,Chateau Ste Michelle,1550,1550,https://elcatador.com/products/chateau-st-michelle-columbia-riesling
+1,El Catador,blanco,Cinco Islas Albariño,Cinco Islas,1750,1750,https://elcatador.com/products/cinco-islas-albarino
+1,El Catador,blanco,Cloudy Bay Te Koko Sauvignon Blanc,Cloudy Bay,8800,8800,https://elcatador.com/products/cloudy-bay-te-koko-sauvignon-blanc
+1,El Catador,blanco,Conundrum Blanco,Wagner Family of Wines,2250,2250,https://elcatador.com/products/conundrum-blanco
+1,El Catador,blanco,Darioush Viognier,Darioush,5780,5780,https://elcatador.com/products/darioush-viognier
+1,El Catador,blanco,De Ladoucette Baron de L,De Ladoucette,8500,8500,https://elcatador.com/products/de-ladoucette-baron-de-l
+1,El Catador,blanco,De Ladoucette Pouilly Fumé,De Ladoucette,3790,3790,https://elcatador.com/products/de-ladoucette-pouilly-fume
+1,El Catador,blanco,De Ladoucette Sancerre Blanc Comte Lafond,De Ladoucette,3590,3590,https://elcatador.com/products/de-ladoucette-sancerre-blanc-comte-lafond
+1,Licoteca,blanco,Don Luciano Blue Moscato 0.75L,,3,3,https://licotecaonline.com/producto/don-luciano-blue-moscato-0-75-l/
+1,El Catador,blanco,Don Pedro de Soutomaior,Adegas Galegas,1650,1650,https://elcatador.com/products/don-pedro-de-soutomaior
+1,El Catador,blanco,Donnafugata Anthìlia,Donnafugata,1595,1595,https://elcatador.com/products/donnafugata-anthilia
+1,El Catador,blanco,Duckhorn Decoy Chardonnay,Duckhorn,2390,2390,https://elcatador.com/products/duckhorn-decoy-chardonnay
+1,El Catador,blanco,E. Guigal La Doriane Condrieu,E. Guigal,11400,11400,https://elcatador.com/products/e-guigal-la-doriane-condrieu
+1,El Catador,blanco,El Coto Blanco,El Coto,890,890,https://elcatador.com/products/el-coto-blanco
+1,El Catador,blanco,Emilio Moro El Zarzal,Emilio Moro,2150,2150,https://elcatador.com/products/emilio-moro-el-zarzal
+1,El Catador,blanco,Emilio Moro La Revelía,Emilio Moro,3380,3380,https://elcatador.com/products/emilio-moro-la-revelia
+1,El Catador,blanco,Emilio Moro Polvorete,Emilio Moro,1680,1680,https://elcatador.com/products/emilio-moro-polvorete
+1,Licoteca,blanco,Estuche Vino Habla de Ti 0.75L 2 botellas + 2 copas,,38,38,https://licotecaonline.com/producto/estuche-habla-de-ti-2-botellas-2-copas/
+1,Licoteca,blanco,Estuche Vino Martin Codax 0.7L 2 botellas,,28,28,https://licotecaonline.com/producto/estuche-vino-martin-codax-0-7l-2-botellas/
+1,El Catador,blanco,Far Niente Chardonnay,Far Niente,7980,7980,https://elcatador.com/products/far-niente-chardonnay
+1,El Catador,blanco,Fefiñanes Albariño,Fefiñanes,2390,2390,https://elcatador.com/products/fefinanes-albarino
+1,El Catador,blanco,Flor de Muga Blanco,Muga,3650,3650,https://elcatador.com/products/flor-de-muga-blanco
+1,El Catador,blanco,Flor de Vetus,Flor de Vetus,1450,1450,https://elcatador.com/products/flor-de-vetus
+1,El Catador,blanco,Flor de Vetus Verdejo,Flor de Vetus,1195,1195,https://elcatador.com/products/flor-de-vetus-verdejo
+1,El Catador,blanco,"Flowers Chardonnay, Sonoma",Flowers,4500,4500,https://elcatador.com/products/flowers-chardonnay-sonoma
+1,El Catador,blanco,Frontera Pinot Grigio,Frontera,595,595,https://elcatador.com/products/frontera-pinot-grigio
+1,El Catador,blanco,Frontera Sauvignon Blanc 1.5 litros,Concha y Toro,1150,1150,https://elcatador.com/products/frontera-sauvignon-blanc-1-5-litros
+1,El Catador,blanco,Gotas de Mar Albariño,Hammeken,1750,1750,https://elcatador.com/products/gotas-de-mar-albarino-1
+1,El Catador,blanco,Granbazán Albariño Etiqueta Ámbar,Granbazán,2450,2450,https://elcatador.com/products/granbazan-albarino-etiqueta-ambar
+1,El Catador,blanco,Granbazán Albariño Etiqueta Verde,Granbazán,1690,1690,https://elcatador.com/products/granbazan-albarino-etiqueta-verde
+1,El Catador,blanco,Grand Regnard Chablis,Régnard,4850,4850,https://elcatador.com/products/grand-regnard-chablis
+1,El Catador,blanco,Hess Collection Chardonnay,Hess,3490,3490,https://elcatador.com/products/hess-collection-chardonnay
+1,El Catador,blanco,Hess Select Chardonnay,Hess,1650,1650,https://elcatador.com/products/hess-select-chardonnay
+1,El Catador,blanco,Hugel Gewürztraminer,Hugel,2280,2280,https://elcatador.com/products/hugel-gewurztraminer
+1,El Catador,blanco,Hugel Riesling Estate,Hugel,3350,3350,https://elcatador.com/products/hugel-riesling-estate
+1,El Catador,blanco,Izadi El Regalo Blanco,Izadi,4600,4600,https://elcatador.com/products/izadi-el-regalo-blanco
+1,El Catador,blanco,Izadi Selección Blanco,Izadi,1690,1690,https://elcatador.com/products/izadi-seleccion-blanco
+1,El Catador,blanco,Jermann Dreams,Jermann,6800,6800,https://elcatador.com/products/jermann-dreams
+1,El Catador,blanco,Jermann Pinot Grigio,Jermann,2890,2890,https://elcatador.com/products/jermann-pinot-grigio
+1,El Catador,blanco,Jermann Vintage Tunina,Jermann,7290,7290,https://elcatador.com/products/jermann-vintage-tunina
+1,El Catador,blanco,Joel Gott Sauvignon Blanc,Joel Gott,1580,1580,https://elcatador.com/products/joel-gott-sauvignon-blanc
+1,El Catador,blanco,Kistler Les Noisetiers Chardonnay,Kistler,7350,7350,https://elcatador.com/products/kistler-les-noisetiers-chardonnay
+1,El Catador,blanco,Kosta Browne One Sixteen Chardonnay,Kosta Browne,6950,6950,https://elcatador.com/products/kosta-browne-one-sixteen-chardonnay
+1,El Catador,blanco,La Caprichosa Verdejo,Palacio de Bornos,1350,1350,https://elcatador.com/products/la-caprichosa-verdejo
+1,El Catador,blanco,La Crema Russian River Valley Chardonnay,La Crema,3650,3650,https://elcatador.com/products/la-crema-russian-river-valley-chardonnay
+1,El Catador,blanco,La Crema Sonoma Coast Chardonnay,La Crema,2890,2890,https://elcatador.com/products/la-crema-sonoma-coast-chardonnay
+1,El Catador,blanco,La Scolca Gavi etiqueta blanca,La Scolca,1850,1850,https://elcatador.com/products/la-scolca-gavi-etiqueta-blanca
+1,El Catador,blanco,La Scolca Gavi Etiqueta Negra,La Scolca,3700,3700,https://elcatador.com/products/la-scolca-gavi-etiqueta-negra
+1,El Catador,blanco,Leira Albariño,Pazo Pondal,1450,1450,https://elcatador.com/products/leira-albarino
+1,El Catador,blanco,Livio Felluga Chardonnay,Livio Felluga,3250,3250,https://elcatador.com/products/livio-felluga-chardonnay
+1,El Catador,blanco,Livio Felluga Pinot Grigio,Livio Felluga,2980,2980,https://elcatador.com/products/livio-felluga-pinot-grigio
+1,El Catador,blanco,Louis Latour Chablis 375ml,Louis Latour,1620,1620,https://elcatador.com/products/louis-latour-chablis-375ml
+1,El Catador,blanco,Louis Latour Chablis Premier Cru,Louis Latour,5780,5780,https://elcatador.com/products/louis-latour-chablis-premier-cru
+1,El Catador,blanco,Louis Latour Chassagne Montrachet,Louis Latour,9500,9500,https://elcatador.com/products/louis-latour-chassagne-montrachet
+1,El Catador,blanco,Louis Latour Grand Ardèche Chardonnay,Louis Latour,2095,2095,https://elcatador.com/products/louis-latour-grand-ardeche-chardonnay
+1,El Catador,blanco,Louis Latour Pouilly Fuissé,Louis Latour,4390,4390,https://elcatador.com/products/louis-latour-pouilly-fuisse
+1,El Catador,blanco,Louis Latour Puligny Montrachet,Louis Latour,10980,10980,https://elcatador.com/products/louis-latour-puligny-montrachet
+1,El Catador,blanco,Marqués Casa Concha Chardonnay,Santa Rita,2190,2190,https://elcatador.com/products/marques-casa-concha-chardonnay
+1,El Catador,blanco,Marqués de Cáceres Antea Edición Limitada,Marqués de Cáceres,1450,1450,https://elcatador.com/products/marques-de-caceres-antea-edicion-limitada
+1,El Catador,blanco,Marqués de Cáceres Deusa Nai Albariño,Marqués de Cáceres,1690,1690,https://elcatador.com/products/marques-de-caceres-deusa-nai-albarino
+1,El Catador,blanco,Marqués de Cáceres Verdejo,Marqués de Cáceres,1080,1080,https://elcatador.com/products/marques-de-caceres-verdejo
+1,El Catador,blanco,Marqués de Murrieta Capellania,Marqués de Murrieta,8800,8800,https://elcatador.com/products/marques-de-murrieta-capellania
+1,El Catador,blanco,Marqués de Murrieta La Comtesse,Marqués de Murrieta,10800,10800,https://elcatador.com/products/marques-de-murrieta-la-comtesse
+1,El Catador,blanco,Marqués De Murrieta Pazo de Barrantes,Marqués de Murrieta,5100,5100,https://elcatador.com/products/marques-de-murrieta-pazo-de-barrantes
+1,El Catador,blanco,Marqués de Riscal Blanco,Marqués de Riscal,1190,1190,https://elcatador.com/products/marques-de-riscal-blanco
+1,El Catador,blanco,Marqués de Riscal Finca Montico Verdejo,Marqués de Riscal,1990,1990,https://elcatador.com/products/marques-de-riscal-finca-montico-verdejo
+1,El Catador,blanco,Marqués de Vizhoja,Marqués de Vizhoja,980,980,https://elcatador.com/products/marques-de-vizhoja
+1,El Catador,blanco,Matua Sauvignon Blanc,Matua,1750,1750,https://elcatador.com/products/matua-sauvignon-blanc
+1,El Catador,blanco,Menade Sauvignon Blanc,Menade,1390,1390,https://elcatador.com/products/menade-sauvignon-blanc
+1,El Catador,blanco,Menade Verdejo,Menade,1450,1450,https://elcatador.com/products/menade-verdejo
+1,El Catador,blanco,Mer Soleil Chardonnay,Mer Soleil,3300,3300,https://elcatador.com/products/mer-soleil-chardonnay
+1,El Catador,blanco,Montes Classic Series Chardonnay,Montes,1050,1050,https://elcatador.com/products/montes-classic-series-chardonnay
+1,El Catador,blanco,My Zero Blanco,Henkell,980,980,https://elcatador.com/products/my-zero-blanco
+1,El Catador,blanco,Nobilo Sauvignon Blanc,Nobilo,1750,1750,https://elcatador.com/products/nobilo-sauvignon-blanc
+1,El Catador,blanco,O Luar do Sil godello,Pago de los Capellanes,1980,1980,https://elcatador.com/products/o-luar-do-sil-godello
+1,El Catador,blanco,O Luar do Sil Sobre Lías Godello,Pago de los Capellanes,2850,2850,https://elcatador.com/products/o-luar-do-sil-sobre-lias-godello
+1,El Catador,blanco,Orben Chocolate,Orben,3500,3500,https://elcatador.com/products/orben-chocolate
+1,El Catador,blanco,Ossian Verdejo,Ossian,4150,4150,https://elcatador.com/products/ossian-verdejo
+1,El Catador,blanco,Palacio de Bornos Sauvignon Blanc,Palacio de Bornos,1250,1250,https://elcatador.com/products/palacio-de-bornos-sauvignon-blanc
+1,El Catador,blanco,Paul Hobbs Russian River Chardonnay,Paull Hobbs,5350,5350,https://elcatador.com/products/paul-hobbs-russian-river-chardonnay
+1,El Catador,blanco,Pazo Pondal Albariño,Pazo Pondal,1950,1950,https://elcatador.com/products/pazo-pondal-albarino
+1,El Catador,blanco,Pesquera Albillo Mayor,Alejandro Fernandez,8050,8050,https://elcatador.com/products/pesquera-albillo-mayor
+1,El Catador,blanco,Protos Verdejo Reserva,Protos,2680,2680,https://elcatador.com/products/protos-verdejo-reserva
+1,El Catador,blanco,Quarz Sauvignon Blanc,Cantina Terlano-Kellerei,5980,5980,https://elcatador.com/products/quarz-sauvignon-blanc
+1,El Catador,blanco,Quintaluna Verdejo,Ossian,1990,1990,https://elcatador.com/products/quintaluna-verdejo
+1,El Catador,blanco,Riesling Hugel,Hugel,2390,2390,https://elcatador.com/products/riesling-hugel
+1,El Catador,blanco,"Riporta Pinot Grigio, Italia",Riporta,1050,1050,https://elcatador.com/products/riporta-pinot-grigio-italia
+1,El Catador,blanco,Ruffino Orvieto Classico,Ruffino,1100,1100,https://elcatador.com/products/ruffino-orvieto-classico
+1,El Catador,blanco,Santa Margherita Pinot Grigio 375ml,Santa Margherita,860,860,https://elcatador.com/products/santa-margherita-pinot-grigio-375ml
+1,El Catador,blanco,Santa Rita 120 Sauvignon blanc 187ml,Santa Rita,260,260,https://elcatador.com/products/santa-rita-120-sauvignon-blanc-187ml
+1,El Catador,blanco,Sartori Soave,Sartori,820,820,https://elcatador.com/products/sartori-soave
+1,El Catador,blanco,Shafer Red Shoulder Ranch Chardonnay,Shafer,6980,6980,https://elcatador.com/products/shafer-red-shoulder-ranch-chardonnay
+1,El Catador,blanco,Stag's Leap Napa Valley Chardonnay,Stag's Leap Wine Cellars,4250,4250,https://elcatador.com/products/stags-leap-napa-valley-chardonnay
+1,El Catador,blanco,"Terlan Vorberg Pinot Bianco, Italia",Terlan,3980,3980,https://elcatador.com/products/terlan-vorberg-pinot-bianco-italia
+1,El Catador,blanco,Terlaner Classico,Terlan,2380,2380,https://elcatador.com/products/terlaner-classico
+1,El Catador,blanco,Terras Gauda Albariño,Terras Gauda,1980,1980,https://elcatador.com/products/terras-gauda-albarino
+1,El Catador,blanco,Torresella Pinot Grigio,Torresella,990,990,https://elcatador.com/products/torresella-pinot-grigio
+1,El Catador,blanco,Trapiche Pinot Grigio,Trapiche,680,680,https://elcatador.com/products/trapiche-pinot-grigio
+1,El Catador,blanco,Treana Chardonnay,Hope Family,2850,2850,https://elcatador.com/products/treana-chardonnay
+1,El Catador,blanco,Trimbach Réserve Riesling,19 Crimes,3450,3450,https://elcatador.com/products/trimbach-reserve-riesling
+1,Licoteca,blanco,Vino Albariño Martin Codax 0.75L,,12,12,https://licotecaonline.com/producto/albarino-martin-codax/
+1,Licoteca,blanco,Vino Albariño Pazo de Villarei 0.75L,,8,8,https://licotecaonline.com/producto/albarino-pazo-de-villarei/
+1,Licoteca,blanco,Vino Alma Blanco 0.75L,,4,4,https://licotecaonline.com/producto/alma-blanco/
+1,Licoteca,blanco,Vino Amor del Bueno 0.75L,,5,5,https://licotecaonline.com/producto/vino-amor-del-bueno-0-75-l/
+1,Licoteca,blanco,Vino Arabe Sauvignon 0.75L,,5,5,https://licotecaonline.com/producto/arabe-sauvignon/
+1,Licoteca,blanco,Vino Bach Extrisimo 0.75L,,4,4,https://licotecaonline.com/producto/vino-bach-extrisimo-0-75-l/
+1,Licoteca,blanco,Vino Barbadillo 0.75L,,5,5,https://licotecaonline.com/producto/vino-barbadillo-075-l/
+1,Licoteca,blanco,Vino Berberana Semi Sweet Dragon 0.75L,,3,3,https://licotecaonline.com/producto/vino-berberana-semi-sweet-dragon-0-75-l/
+1,Licoteca,blanco,Vino Circe Verdejo 0.75L,,9,9,https://licotecaonline.com/producto/vino-circe-verdejo-0-75-l/
+1,Licoteca,blanco,Vino Cuarenta Vendimias Verdejo 0.75L,,6,6,https://licotecaonline.com/producto/vino-cuarenta-vendimias-verdejo/
+1,Licoteca,blanco,Vino Dulce María 0.75L,,4,4,https://licotecaonline.com/producto/dulce-maria/
+1,Licoteca,blanco,Vino el Marido de mi Amiga 0.75L,,7,7,https://licotecaonline.com/producto/vino-el-marido-de-mi-amiga-0-75-l/
+1,Licoteca,blanco,Vino El Novio Perfecto 0.75L,,6,6,https://licotecaonline.com/producto/el-novio-perfecto/
+1,Licoteca,blanco,Vino Enate Chardonnay,,9,9,https://licotecaonline.com/producto/enate-chardonnay/
+1,Licoteca,blanco,Vino Finca la Estacada Blanco Manchego 0.75L,,4,4,https://licotecaonline.com/producto/vino-blanco-manchego-estacada-0-75l/
+1,Licoteca,blanco,Vino Habla de ti 0.75L,,10,10,https://licotecaonline.com/producto/habla-de-ti/
+1,Licoteca,blanco,Vino Habla del Mar 0.75L,,18,18,https://licotecaonline.com/producto/vino-habla-del-mar-0-75-l/
+1,Licoteca,blanco,Vino Habla Duende 0.70L,,27,27,https://licotecaonline.com/producto/habla-duende/
+1,Licoteca,blanco,Vino Jardin de Lucia 0.75L,,15,15,https://licotecaonline.com/producto/vino-jardin-de-lucia-0-75-l/
+1,Licoteca,blanco,Vino Jose Pariente Verdejo 0.75L,,10,10,https://licotecaonline.com/producto/jose-pariente-verdejo/
+1,Licoteca,blanco,Vino La Trucha Albariño 0.75L,,12,12,https://licotecaonline.com/producto/vino-la-trucha-albarino-0-75-l/
+1,Licoteca,blanco,Vino Mar de Frades Albariño 0.75L,,16,16,https://licotecaonline.com/producto/albarino-mar-de-frades/
+1,Licoteca,blanco,Vino Marina Alta Blanco 0.75L,,5,5,https://licotecaonline.com/producto/marina-alta-blanco-75-cl/
+1,Licoteca,blanco,Vino Marqués de Riscal Rueda Verdejo 0.75L,,8,8,https://licotecaonline.com/producto/marques-de-riscal-rueda-verdejo/
+1,Licoteca,blanco,Vino Melior Blanco Verdejo 0.75L,,5,5,https://licotecaonline.com/producto/melior-blanco-verdejo/
+1,Licoteca,blanco,Vino Menade Verdejo 0.75L,,9,9,https://licotecaonline.com/producto/vino-menade-verdejo-0-75-l/
+1,Licoteca,blanco,Vino Moriles Robles 0.75L,,4,4,https://licotecaonline.com/producto/moriles-robles/
+1,Licoteca,blanco,Vino Ossian 0.75L,,32,32,https://licotecaonline.com/producto/vino-ossian-0-75-l/
+1,Licoteca,blanco,Vino Paco y Lola Albariño 0.75L,,13,13,https://licotecaonline.com/producto/pacolola-albarino/
+1,Licoteca,blanco,Vino Palacio de Vivero Verdejo 0.75L,,5,5,https://licotecaonline.com/producto/rueda-palacio-de-vivero/
+1,Licoteca,blanco,Vino Pata Negra Verdejo 0.75L,,3,3,https://licotecaonline.com/producto/pata-negra-verdejo/
+1,Licoteca,blanco,Vino Pazo de San Mauro Albariño 0.75L,,17,17,https://licotecaonline.com/producto/vino-pazo-de-san-mauro-albarino-0-75-l/
+1,Licoteca,blanco,Vino Perro Verde Rueda Verdejo 0.75L,,11,11,https://licotecaonline.com/producto/rueda-verdejo-perro-verde/
+1,Licoteca,blanco,Vino Polvorete 0.75L,,11,11,https://licotecaonline.com/producto/vino-polvorete-0-75-l/
+1,Licoteca,blanco,Vino Protos Blanco Verdejo 0.75L,,6,6,https://licotecaonline.com/producto/protos-blanco-verdejo/
+1,Licoteca,blanco,Vino Quintaluna 0.75L,,14,14,https://licotecaonline.com/producto/vino-quintaluna-0-75l/
+1,Licoteca,blanco,Vino Ramon Bilbao blanco 0.75L,,7,7,https://licotecaonline.com/producto/vino-ramon-bilbao-blanco-075-l/
+1,Licoteca,blanco,Vino Señorio de los Llanos Blanco Airén 0.75L,,2,2,https://licotecaonline.com/producto/senorio-de-los-llanos-blanco-airen-tapon-verde/
+1,Licoteca,blanco,Vino Tio Pepe 0.75L,,7,7,https://licotecaonline.com/producto/tio-pepe/
+1,Licoteca,blanco,Vino Tomas Postigo Blanco 0.75L,,30,30,https://licotecaonline.com/producto/tomas-postigo-blanco/
+1,Licoteca,blanco,Vino Valquejigoso Mirlo Blanco 0.75L,,31,31,https://licotecaonline.com/producto/valquejigoso-mirlo-blanco/
+1,Licoteca,blanco,Vino Viña Esmeralda 0.75L,,8,8,https://licotecaonline.com/producto/vina-esmeralda/
+1,Licoteca,blanco,Vino Vionta Godello 0.75L,,9,9,https://licotecaonline.com/producto/vino-vionta-godello-0-75-l/
+1,Licoteca,blanco,Vino Vionta Rias Baixas Albariño 0.75L,,9,9,https://licotecaonline.com/producto/vionta-albarino-rias-baixas/
+1,Licoteca,blanco,Vino Yllera Blanco 0.75L,,6,6,https://licotecaonline.com/producto/yllera-blanco/
+1,Licoteca,blanco,Vino Zarzal Godello 0.75L,,16,16,https://licotecaonline.com/producto/vino-zarzal-godello/
+1,Licoteca,blanco,Vino Zubiaur Txakoli 0.75L,,6,6,https://licotecaonline.com/producto/vino-zubiaur-txakoli-0-75l/
+1,El Catador,blanco,"Zaccagnini Pinot Grigio, Italia",Zaccagnini,1390,1390,https://elcatador.com/products/zaccagnini-pinot-grigio-italia-1
+1,El Catador,espumoso,19 Crimes Cali Gold,19 Crimes,1780,1780,https://elcatador.com/products/19-crimes-cali-gold
+1,El Catador,espumoso,Agusti Torello Celler Kripta Brut Reserva,Agustí Torello Mata,1580,1580,https://elcatador.com/products/agusti-torello-celler-kripta-brut-reserva
+1,El Catador,espumoso,Astica Cabernet Sauvignon,Trapiche,495,495,https://elcatador.com/products/astica-cabernet-sauvignon
+1,El Catador,espumoso,Astica Sauvignon Blanc / Sémillon,Trapiche,495,495,https://elcatador.com/products/astica-sauvignon-blanc-semillon
+1,El Catador,espumoso,Billecart Salmon Blanc De Blancs Grand Cru,Billecart-Salmon,9500,9500,https://elcatador.com/products/billecart-salmon-blanc-de-blancs-grand-cru
+1,El Catador,espumoso,Billecart Salmon Brut Reserve,Billecart-Salmon,5980,5980,https://elcatador.com/products/billecart-salmon-brut-reserve
+1,El Catador,espumoso,Billecart Salmon Brut Reserve 1.5 litros,Billecart-Salmon,12800,12800,https://elcatador.com/products/billecart-salmon-brut-reserve-1-5-litros
+1,El Catador,espumoso,Billecart Salmon Brut Reserve 3 litros,Billecart-Salmon,22800,22800,https://elcatador.com/products/billecart-salmon-brut-reserve-3-litros
+1,El Catador,espumoso,Billecart Salmon Brut Rosé,Billecart-Salmon,9480,9480,https://elcatador.com/products/billecart-salmon-brut-rose
+1,El Catador,espumoso,Billecart Salmon Brut Rosé 1.5 litros,Billecart-Salmon,19650,19650,https://elcatador.com/products/billecart-salmon-brut-rose-1-5-litros
+1,El Catador,espumoso,Billecart Salmon Cuvée Nicolas François,Billecart-Salmon,14900,14900,https://elcatador.com/products/billecart-salmon-cuvee-nicolas-francois
+1,El Catador,espumoso,Billecart Salmon Demi Sec,Billecart-Salmon,6290,6290,https://elcatador.com/products/billecart-salmon-demi-sec
+1,El Catador,espumoso,Billecart Salmon Louis Salmon Blanc de Blancs Grand Cru 2008,Billecart-Salmon,16500,16500,https://elcatador.com/products/billecart-salmon-louis-salmon-blanc-de-blancs-grand-cru-2008
+1,El Catador,espumoso,Bottega Petalo Vino del Amore,Bottega Spa,1190,1190,https://elcatador.com/products/bottega-petalo-vino-del-amore
+1,El Catador,espumoso,Ca'del Bosco Franciacorta Cuvée Prestige,Ca'del Bosco,4590,4590,https://elcatador.com/products/cadel-bosco-franciacorta-cuvee-prestige
+1,Licoteca,espumoso,Cava Anna de Codorníu 0.75 L,,8,8,https://licotecaonline.com/producto/anna-de-codorniu-0-75-l/
+1,Licoteca,espumoso,Cava Brut Reserva Heredad Segura Viudas 0.75L,,17,17,https://licotecaonline.com/producto/cava-brut-reserva-heredad-segura-viudas/
+1,Licoteca,espumoso,Cava Codorniu Ice Edition,,9,9,https://licotecaonline.com/producto/cava-codorniu-ice-edition/
+1,Licoteca,espumoso,Cava Conde de Haro Brut 0.75L,,16,16,https://licotecaonline.com/producto/cava-conde-de-haro/
+1,Licoteca,espumoso,Cava Freixenet Brut Nature Reserva,,7,7,https://licotecaonline.com/producto/freixenet-brut-nature/
+1,Licoteca,espumoso,Cava Freixenet Gran Premier 0.75L,,7,7,https://licotecaonline.com/producto/cava-freixenet-gran-premier-0-75l/
+1,Licoteca,espumoso,Cava Freixenet Ice 0.7L,,7,7,https://licotecaonline.com/producto/cava-freixenet-ice-0-7-l/
+1,Licoteca,espumoso,Cava Freixenet Ice Rose 0.7L,,7,7,https://licotecaonline.com/producto/freixenet-ice-rose/
+1,Licoteca,espumoso,Cava Freixenet Reserva Real 0.75L,,13,13,https://licotecaonline.com/producto/reserva-real-freixenet-0-75l/
+1,Licoteca,espumoso,Cava Gramona Rosa Pinot Noir 2021 0.75L,,22,22,https://licotecaonline.com/producto/cava-gramona-rosa-pinot-noir-2021-0-75-l/
+1,Licoteca,espumoso,Cava Reymos 0.75L,,5,5,https://licotecaonline.com/producto/cava-reymos/
+1,Licoteca,espumoso,Cava Via de la Plata Brut 0.75L,,6,6,https://licotecaonline.com/producto/cava-via-de-la-plata-brut/
+1,Licoteca,espumoso,Cava Via de la Plata Semi Seco,,6,6,https://licotecaonline.com/producto/cava-via-de-la-plata-semi-seco/
+1,Licoteca,espumoso,Champagne Belaire Rose 0.75L,,26,26,https://licotecaonline.com/producto/champagne-belaire-rose-0-75-l/
+1,Licoteca,espumoso,Champagne Belaire Rose 1.5L,,68,68,https://licotecaonline.com/producto/champagne-belaire-rose-1-5-l/
+1,Licoteca,espumoso,Champagne Dom Perignon Blanc 0.75L,,270,270,https://licotecaonline.com/producto/dom-perignon-blanc-75-cl/
+1,Licoteca,espumoso,Champagne Laurent Perrier Rose 0.75L,,87,87,https://licotecaonline.com/producto/champagne-lauren-perrier-rose-0-75-l/
+1,Licoteca,espumoso,Champagne Louis Roederer Cristal 0.75L,,286,286,https://licotecaonline.com/producto/champagne-louis-roederer-cristal-0-75-l/
+1,Licoteca,espumoso,Champagne Moet Chandon Ice Imperial 0.75L,,60,60,https://licotecaonline.com/producto/champagne-moet-chandon-ice-imperial-0-75-l/
+1,Licoteca,espumoso,Champagne Moet Chandon NIR 0.75L,,65,65,https://licotecaonline.com/producto/moet-chandon-nir-70cl/
+1,Licoteca,espumoso,Champagne Moet Rose 0.75L,,54,54,https://licotecaonline.com/producto/moet-rose-75-cl/
+1,Licoteca,espumoso,Champín Sin Alcohol 0.75L,,4,4,https://licotecaonline.com/producto/champin-sin-alcohol-0-75-l/
+1,El Catador,espumoso,Dom Pérignon Plénitude 3 Blanc,Dom Pérignon,330000,330000,https://elcatador.com/products/dom-perignon-plenitude-3-blanc
+1,El Catador,espumoso,Dom Pérignon Rosé,Dom Pérignon,41900,41900,https://elcatador.com/products/dom-perignon-rose
+1,El Catador,espumoso,Dom Perignon Rosé Plénitude 2,Dom Pérignon,159000,159000,https://elcatador.com/products/dom-perignon-rose-plenitude-2
+1,El Catador,espumoso,Dom Pérignon Vintage,Dom Pérignon,23800,23800,https://elcatador.com/products/dom-perignon-vintage
+1,Curda 24,espumoso,"Espumante Alexander 0,70 &#8211; Brut",,7,7,https://curda24.com/tienda/licoreria-delivery/licores/espumante-alexander-070-brut/
+1,Curda 24,espumoso,Espumante Cantinger Ice 0.70,,6,6,https://curda24.com/tienda/licoreria-delivery/licores/espumante-cantinger-ice-0-70/
+1,Curda 24,espumoso,"Espumante Cantinger Manzana 0,70",,6,6,https://curda24.com/tienda/licoreria-delivery/licores/espumante-cantinger-manzana-070/
+1,Licoteca,espumoso,Est Cava Conde de Haro 2 Botellas+2 Copas,,37,37,https://licotecaonline.com/producto/est-cava-conde-de-haro-2-botellas-2-copas/
+1,Licoteca,espumoso,Estuche Cava Juve Camps R.Familia 0.75L,,20,20,https://licotecaonline.com/producto/cava-juve-camps/
+1,Licoteca,espumoso,Estuche Cava Mini Freixenet Semiseco Nevada 3 Bot,,6,6,https://licotecaonline.com/producto/estuche-cava-mini-freixenet-semiseco-nevada-3-bot/
+1,Licoteca,espumoso,Estuche Champagne G.H. Martel y Co 0.75L + 2 Copas,,38,38,https://licotecaonline.com/producto/estuche-champagne-g-h-martel-y-co-0-75l-2-copas/
+1,Curda 24,espumoso,"Foss Marai 0,75L &#8211; Marai De Marai",,24,24,https://curda24.com/tienda/licoreria-delivery/licores/foss-marai-075l-marai-de-marai/
+1,El Catador,espumoso,Gloria Ferrer Rosé Blanc de Noirs,Gloria Ferrer,2100,2100,https://elcatador.com/products/gloria-ferrer-rose-blanc-de-noirs
+1,El Catador,espumoso,Grug Grande Cuvée,Krug,25900,25900,https://elcatador.com/products/grug-grande-cuvee
+1,El Catador,espumoso,Henkell Rosé,Henkell,1040,1040,https://elcatador.com/products/henkell-rose
+1,El Catador,espumoso,Krug Rosé,Krug,37800,37800,https://elcatador.com/products/krug-rose
+1,El Catador,espumoso,Krug Vintage 2008,Krug,45000,45000,https://elcatador.com/products/krug-vintage-2008
+1,Curda 24,espumoso,Louis Pedrier Brut,,10,10,https://curda24.com/tienda/licoreria-delivery/licores/louis-pedrier-brut/
+1,Curda 24,espumoso,Louis Pedrier Brut Rose,,10,10,https://curda24.com/tienda/licoreria-delivery/licores/louis-pedrier-brut-rose/
+1,El Catador,espumoso,Louis Roederer Brut Rosé Vintage,Louis Roderer,7890,7890,https://elcatador.com/products/louis-roederer-brut-rose-vintage
+1,El Catador,espumoso,Louis Roederer Collection Brut,Louis Roderer,5750,5750,https://elcatador.com/products/louis-roederer-brut-premier
+1,El Catador,espumoso,Louis Roederer Cristal Brut,Louis Roderer,29000,29000,https://elcatador.com/products/louis-roederer-cristal-brut
+1,El Catador,espumoso,Louis Roederer Cristal Rosé,Louis Roderer,39800,39800,https://elcatador.com/products/louis-roederer-cristal-rose
+1,El Catador,espumoso,Marqués de Murrieta Castillo De Ygay,Marqués de Murrieta,26200,26200,https://elcatador.com/products/marques-de-murrieta-castillo-de-ygay
+1,El Catador,espumoso,Maschio Prosecco,Maschio,1150,1150,https://elcatador.com/products/maschio-prosecco
+1,El Catador,espumoso,Maschio Prosecco Superiore,Maschio,1480,1480,https://elcatador.com/products/maschio-prosecco-superiore
+1,El Catador,espumoso,Maschio Rosé,Maschio,1150,1150,https://elcatador.com/products/maschio-rose
+1,El Catador,espumoso,Moët & Chandon  Ice Impérial,Moët & Chandon,5980,5980,https://elcatador.com/products/moet-chandon-ice-imperial
+1,El Catador,espumoso,Moët & Chandon  Ice Impérial Rosé,Moët & Chandon,6980,6980,https://elcatador.com/products/moet-chandon-ice-imperial-rose
+1,El Catador,espumoso,Moët & Chandon  Ice Impérial Rosé 1.5 Lt,Moët & Chandon,11500,11500,https://elcatador.com/products/moet-chandon-ice-imperial-rose-1-5-lt
+1,El Catador,espumoso,Moët & Chandon  Ice Impérial Rosé Box Pharell Williams,Moët & Chandon,8400,8400,https://elcatador.com/products/moet-chandon-ice-imperial-rose-box-pharell-williams
+1,El Catador,espumoso,Moët & Chandon Brut Impérial,Moët & Chandon,5290,5290,https://elcatador.com/products/moet-chandon-brut-imperial
+1,El Catador,espumoso,Moët & Chandon Brut Impérial Box Pharell Williams,Moët & Chandon,6900,6900,https://elcatador.com/products/moet-chandon-brut-imperial-box-pharell-williams
+1,El Catador,espumoso,Moët & Chandon Grand Vintage,Moët & Chandon,7980,7980,https://elcatador.com/products/moet-chandon-grand-vintage
+1,El Catador,espumoso,Moët & Chandon Grand Vintage Rosé,Moët & Chandon,7300,7300,https://elcatador.com/products/moet-chandon-grand-vintage-rose
+1,El Catador,espumoso,Moët & Chandon Nectar Impérial,Moët & Chandon,5980,5980,https://elcatador.com/products/moet-chandon-nectar-imperial
+1,El Catador,espumoso,Moët & Chandon Nectar Rosé Impérial,Moët & Chandon,7400,7400,https://elcatador.com/products/moet-chandon-nectar-rose-imperial
+1,Licoteca,espumoso,Moet Chandon Imperial Brut 0.75L,,45,45,https://licotecaonline.com/producto/moet-chandon-imperial-brut-075l/
+1,El Catador,espumoso,Perrier-Jouët Belle Epoque Blanc,Perrier-Jouët,18500,18500,https://elcatador.com/products/perrier-jouet-belle-epoque-blanc
+1,El Catador,espumoso,Perrier-Jouët Belle Epoque Rosé,Perrier-Jouët,27500,27500,https://elcatador.com/products/perrier-jouet-belle-epoque-rose
+1,El Catador,espumoso,Perrier-Jouët Blanc de Blancs,Perrier-Jouët,8350,8350,https://elcatador.com/products/perrier-jouet-blanc-de-blancs
+1,El Catador,espumoso,Perrier-Jouët Blason Rosé,Perrier-Jouët,7980,7980,https://elcatador.com/products/perrier-jouet-blason-rose
+1,El Catador,espumoso,Perrier-Jouët Blason Rosé Magnum 1.5 litros,Perrier-Jouët,16800,16800,https://elcatador.com/products/perrier-jouet-blason-rose-magnum-1-5-litros
+1,El Catador,espumoso,Perrier-Jouët Grand Brut,Perrier-Jouët,6250,6250,https://elcatador.com/products/perrier-jouet-grand-brut
+1,El Catador,espumoso,Perrier-Jouët Grand Brut 1.5 litros,Perrier-Jouët,12600,12600,https://elcatador.com/products/perrier-jouet-grand-brut-1-5-litros
+1,El Catador,espumoso,Perrier-Jouët Grand Brut 3 litros,Perrier-Jouët,34000,34000,https://elcatador.com/products/perrier-jouet-grand-brut-3-litros
+1,El Catador,espumoso,Prosecchino 200ml,Maschio,360,360,https://elcatador.com/products/prosecchino-200ml
+1,El Catador,espumoso,Rigol Brut,Rigol,880,880,https://elcatador.com/products/rigol-brut
+1,El Catador,espumoso,Rigol Demi Sec,Rigol,850,850,https://elcatador.com/products/rigol-demi-sec
+1,El Catador,espumoso,Ruinart Blanc de Blancs,Ruinart,8980,8980,https://elcatador.com/products/ruinart-blanc-de-blancs
+1,El Catador,espumoso,Ruinart R Brut,Ruinart,6980,6980,https://elcatador.com/products/ruinart-r-brut
+1,El Catador,espumoso,Ruinart Rosé,Ruinart,9500,9500,https://elcatador.com/products/ruinart-rose
+1,El Catador,espumoso,Santa Margherita Prosecco Brut,Santa Margherita,1650,1650,https://elcatador.com/products/santa-margherita-prosecco-brut
+1,El Catador,espumoso,Santa Margherita Spumante Rosato,Santa Margherita,1650,1650,https://elcatador.com/products/santa-margherita-spumante-rosato
+1,El Catador,espumoso,Santero Moscato,Villa Jolanda,850,850,https://elcatador.com/products/santero-moscato
+1,El Catador,espumoso,Santero Moscato Fragola,Villa Jolanda,850,850,https://elcatador.com/products/santero-moscato-fragola
+1,El Catador,espumoso,Segura Viudas Brut Reserva,Seguras Viudas,1280,1280,https://elcatador.com/products/segura-viudas-brut-reserva
+1,El Catador,espumoso,Segura Viudas Brut Reserva Heredad,Segura Viudas,2790,2790,https://elcatador.com/products/segura-viudas-brut-reserva-heredad
+1,El Catador,espumoso,Segura Viudas Brut Reserva Magnum 1.5 litros,Segura Viudas,2440,2440,https://elcatador.com/products/segura-viudas-brut-reserva-magnum-1-5-litros
+1,El Catador,espumoso,Segura Viudas Brut Rosé,Seguras Viudas,1290,1290,https://elcatador.com/products/segura-viudas-brut-rose
+1,El Catador,espumoso,Segura Viudas Brut Vintage Gran Reserva,Segura Viudas,1690,1690,https://elcatador.com/products/segura-viudas-brut-vintage-gran-reserva
+1,Curda 24,espumoso,Sensacion Brut Espumante,,8,8,https://curda24.com/tienda/licoreria-delivery/licores/sensacion-brut-0-75l-espumante/
+1,Licoteca,espumoso,Sidra El Gaitero Rosé 0.75L,,4,4,https://licotecaonline.com/producto/sidra-el-gaitero-rose-0-75-l/
+1,Licoteca,espumoso,Sidra Gaitero Extra,,4,4,https://licotecaonline.com/producto/sidra-gaitero-extra/
+1,Licoteca,espumoso,Sidra Gaitero Semiseca 0.7L,,3,3,https://licotecaonline.com/producto/sidra-gaitero/
+1,El Catador,espumoso,Torresella Prosecco,Torresella,0,0,https://elcatador.com/products/torresella-prosecco
+1,El Catador,espumoso,Veuve Clicquot Demi Sec,Veuve Clicquot,6400,6400,https://elcatador.com/products/veuve-clicquot-demi-sec
+1,El Catador,espumoso,Veuve Clicquot La Grande Dame Rosé,Veuve Clicquot,36500,36500,https://elcatador.com/products/veuve-clicquot-la-grande-dame-rose
+1,El Catador,espumoso,Veuve Clicquot La Grande Dame Vintage,Veuve Clicquot,19800,19800,https://elcatador.com/products/veuve-clicquot-la-grande-dame-vintage
+1,El Catador,espumoso,Veuve Clicquot Rich,Veuve Clicquot,6700,6700,https://elcatador.com/products/veuve-clicquot-rich-1
+1,El Catador,espumoso,Veuve Clicquot Rich Rosé,Veuve Clicquot,7600,7600,https://elcatador.com/products/veuve-clicquot-rich-rose-1
+1,El Catador,espumoso,Veuve Clicquot Rosé,Veuve Clicquot,6980,6980,https://elcatador.com/products/veuve-clicquot-rose
+1,El Catador,espumoso,Veuve Clicquot Vintage Rosé,Veuve Clicquot,8400,8400,https://elcatador.com/products/veuve-clicquot-vintage-rose
+1,El Catador,espumoso,Veuve Cliquot Yellow Label,Veuve Clicquot,5980,5980,https://elcatador.com/products/veuve-cliquot-yellow-label
+1,Curda 24,espumoso,Veuve Du Vernay 0.75L &#8211; Ice Demi Sec,,18,18,https://curda24.com/tienda/licoreria-delivery/licores/veuve-du-vernay-0-75l-ice-demi-sec/
+1,El Catador,espumoso,Villa Jolanda Gold,Villa Jolanda,990,990,https://elcatador.com/products/villa-jolanda-gold
+1,Licoteca,espumoso,Vino Barbadillo VI Cool Frizzante 0.75L,,8,8,https://licotecaonline.com/producto/vino-barbadillo-vi-cool-frizzante-0-75-l/
+1,Licoteca,espumoso,Vino Belaire Luxe 0.75L,,30,30,https://licotecaonline.com/producto/vino-belaire-luxe-0-75-l/
+1,Licoteca,espumoso,Vino Lambrusco Rosado 0.75L,,3,3,https://licotecaonline.com/producto/vino-lambrusco-rosado-0-75-l/
+1,Licoteca,espumoso,Vino Libalis Blanco Frizzante 5.5 0.75L,,5,5,https://licotecaonline.com/producto/libalis-blanco-frizzante-55/
+1,Licoteca,espumoso,Vino Mayor de Castilla Roble 0.75L,,5,5,https://licotecaonline.com/producto/mayor-de-castilla-roble/
+1,Licoteca,espumoso,Vino Mayor de Castilla Verdejo 0.75L,,3,3,https://licotecaonline.com/producto/mayor-de-castilla-blanco/
+1,Licoteca,espumoso,Vino Vigna Senza Nome Moscato D&#8217;Asti 0.75L,,18,18,https://licotecaonline.com/producto/vigna-senza-nome-moscato-d-asti-075l/
+1,El Catador,rosado,19 Crimes Cali Rosé,19 Crimes,1550,1550,https://elcatador.com/products/19-crimes-cali-rose
+1,El Catador,rosado,Aire de Protos Rosado,Protos,1380,1380,https://elcatador.com/products/aire-de-protos-rosado
+1,El Catador,rosado,Antinori Calafuria Rosato,Antinori,1980,1980,https://elcatador.com/products/antinori-calafuria-rosato
+1,El Catador,rosado,Arzuaga Rosae,Arzuaga,1680,1680,https://elcatador.com/products/arzuaga-rosae
+1,El Catador,rosado,Batasiolo Rosato Micó,Batasiolo,1390,1390,https://elcatador.com/products/batasiolo-rosato-mico
+1,El Catador,rosado,Beringer California White Zinfandel,Beringer,790,790,https://elcatador.com/products/beringer-california-white-zinfandel
+1,El Catador,rosado,Beringer Dry Rosé,Beringer,750,750,https://elcatador.com/products/beringer-dry-rose
+1,El Catador,rosado,Beringer White Zinfandel 1.5 litros,Beringer,1650,1650,https://elcatador.com/products/beringer-white-zinfandel-1-5-litros
+1,El Catador,rosado,"Château Miraval Studio Côtes de Provence , Francia",Perrin & Fils,1630,1630,https://elcatador.com/products/chateau-miraval-studio-cotes-de-provence-francia
+1,El Catador,rosado,Domaine De La Croix Cuvee Irresistible Rosé,Domaine de la croix,1790,1790,https://elcatador.com/products/domaine-de-la-croix-cuvee-irresistible-rose
+1,El Catador,rosado,Domaines By Ott Rosé,Domaine OTT,2390,2390,https://elcatador.com/products/domaines-by-ott-rose
+1,El Catador,rosado,Domaines Ott Rosé Clos Mireille,Domaine OTT,4450,4450,https://elcatador.com/products/domaines-ott-rose-clos-mireille
+1,Licoteca,rosado,Don Luciano Pink Moscato 0.75L,,3,3,https://licotecaonline.com/producto/don-luciano-pink-moscato-0-75-l/
+1,El Catador,rosado,Frontera Rosé,Frontera,595,595,https://elcatador.com/products/frontera-rose
+1,El Catador,rosado,Izadi Larrosa Rosé,Izadi,1095,1095,https://elcatador.com/products/izadi-larrosa-rose
+1,El Catador,rosado,Lillet Rosé,Lillet,2250,2250,https://elcatador.com/products/lillet-rose
+1,El Catador,rosado,Santa Margherita Rosé,Santa Margherita,1680,1680,https://elcatador.com/products/santa-margherita-rose
+1,El Catador,rosado,Santa Margherita Stil Rosé,Santa Margherita,1550,1550,https://elcatador.com/products/santa-margherita-stil-rose
+1,El Catador,rosado,Viña Maipo Rosé,Viña Maipo,550,550,https://elcatador.com/products/vina-maipo-rose
+1,Licoteca,rosado,Vino Habla de Rita 0.75L,,19,19,https://licotecaonline.com/producto/habla-de-rita/
+1,Licoteca,rosado,Vino la Novia Ideal 0.75L,,6,6,https://licotecaonline.com/producto/la-novia-ideal-0-75-l/
+1,Licoteca,rosado,Vino Mateus Rose 0.75L,,4,4,https://licotecaonline.com/producto/mateus-rose/
+1,Licoteca,rosado,Vino Peñascal Rosado 0.75L,,4,4,https://licotecaonline.com/producto/vino-penascal-rosado-0-75-l/
+1,El Catador,tinto,19 Crimes Cali Red,19 Crimes,1650,1650,https://elcatador.com/products/19-crimes-cali-red
+1,El Catador,tinto,19 Crimes Red Wine,19 Crimes,1550,1550,https://elcatador.com/products/19-crimes-red-wine
+1,El Catador,tinto,19 Crimes The Banished,19 Crimes,1550,1550,https://elcatador.com/products/19-crimes-the-banished
+1,El Catador,tinto,19 Crimes The Uprising,19 Crimes,1550,1550,https://elcatador.com/products/19-crimes-the-uprising
+1,El Catador,tinto,19 Crimes The Warden,19 Crimes,2750,2750,https://elcatador.com/products/19-crimes-the-warden
+1,El Catador,tinto,Aiurri,Aiurri,4950,4950,https://elcatador.com/products/aiurri
+1,El Catador,tinto,Aiurri Landua,Aiurri,2890,2890,https://elcatador.com/products/aiurri-landua
+1,El Catador,tinto,Aiurri Salas,Aiurri,8500,8500,https://elcatador.com/products/la-grandeza-de-un-vinedo-unico-en-rioja-con-el-sello-de-pago-de-carraovejas
+1,El Catador,tinto,Ali Toscana,Donna Laura,1200,1200,https://elcatador.com/products/ali-toscana
+1,El Catador,tinto,Alpha M Assemblage,Montes,8450,8450,https://elcatador.com/products/alpha-m-assemblage
+1,El Catador,tinto,Alvaro Palacios Dofi,Alvaro Palacios,9900,9900,https://elcatador.com/products/alvaro-palacios-dofi
+1,El Catador,tinto,Alvaro Palacios Les Terrasses,Alvaro Palacios,4050,4050,https://elcatador.com/products/alvaro-palacios-les-terrasses
+1,El Catador,tinto,Antinori Guado Al Tasso,Antinori,13500,13500,https://elcatador.com/products/antinori-guado-al-tasso
+1,El Catador,tinto,Antinori Il Bruciato,Antinori,3100,3100,https://elcatador.com/products/antinori-il-bruciato
+1,El Catador,tinto,Antinori Marchese Chianti Reserva,Antinori,4180,4180,https://elcatador.com/products/antinori-marchese-chianti-reserva
+1,El Catador,tinto,Antinori Peppoli,Antinori,2450,2450,https://elcatador.com/products/antinori-peppoli
+1,El Catador,tinto,Antinori Santa Cristina Sangiovese,Antinori,1390,1390,https://elcatador.com/products/antinori-santa-cristina-sangiovese
+1,El Catador,tinto,Antinori Tignanello,Antinori,12600,12600,https://elcatador.com/products/antinori-tignanelo
+1,El Catador,tinto,Antinori Tignanelo 1.5 litros,Antinori,24500,24500,https://elcatador.com/products/antinori-tignanelo-1-5-litros
+1,El Catador,tinto,Antinori Villa Antinori Rosso IGT,Antinori,2180,2180,https://elcatador.com/products/antinori-villa-antinori-rosso-igt
+1,El Catador,tinto,Argiano Brunello di Montalcino 2019,Argiano,6800,6800,https://elcatador.com/products/argiano-brunello-di-montalcino
+1,El Catador,tinto,Argiano Non Confunditur Toscana IGT,Argiano,1950,1950,https://elcatador.com/products/argiano-non-confunditur-toscana-igt
+1,El Catador,tinto,Argiano Solengo Toscana IGT,Argiano,7200,7200,https://elcatador.com/products/argiano-solengo-toscana-igt
+1,El Catador,tinto,Argiano Solengo Toscana IGT 1.5 litros,Argiano,12600,12600,https://elcatador.com/products/argiano-solengo-toscana-igt-1-5-litros
+1,El Catador,tinto,Argiano Solengo Toscana IGT 3 litros,Argiano,19800,19800,https://elcatador.com/products/argiano-solengo-toscana-igt-3-litros
+1,El Catador,tinto,Arienzo Crianza,Marqués de Riscal,1250,1250,https://elcatador.com/products/arienzo-crianza
+1,El Catador,tinto,Artadi El Sequé,El Sequé,3300,3300,https://elcatador.com/products/artadi-el-seque
+1,El Catador,tinto,Artadi Viñas De Gain,Artadi,2800,2800,https://elcatador.com/products/artadi-vinas-de-gain
+1,El Catador,tinto,Arzuaga Crianza,Arzuaga,2790,2790,https://elcatador.com/products/arzuaga-crianza-1
+1,El Catador,tinto,Arzuaga Crianza Jeroboam 3 litros,Arzuaga,13900,13900,https://elcatador.com/products/arzuaga-crianza-jeroboam-3-litros
+1,El Catador,tinto,Arzuaga La Planta,Arzuaga,1450,1450,https://elcatador.com/products/arzuaga-la-planta
+1,El Catador,tinto,Arzuaga Reserva 3 litros,Arzuaga,19800,19800,https://elcatador.com/products/arzuaga-reserva-3-litros
+1,El Catador,tinto,Austin Cabernet Sauvignon,Hope Family,2980,2980,https://elcatador.com/products/austin-cabernet-sauvignon
+1,El Catador,tinto,Austin Hope Cabernet Sauvignon,Hope Family,6980,6980,https://elcatador.com/products/austin-hope-cabernet-sauvignon
+1,El Catador,tinto,Austin Hope Reserve Cabernet Sauvignon,Hope Family,11500,11500,https://elcatador.com/products/austin-hope-reserve-cabernet-sauvignon
+1,El Catador,tinto,Avalon Red Blend,Avalon,1380,1380,https://elcatador.com/products/avalon-red-blend-1
+1,El Catador,tinto,Banfi Brunello Di Montalcino,Banfi,5500,5500,https://elcatador.com/products/banfi-brunello-di-montalcino
+1,El Catador,tinto,Banfi Chianti Classico,Banfi,1950,1950,https://elcatador.com/products/banfi-chianti-classico
+1,El Catador,tinto,Banfi Chianti Reserva,Banfi,2690,2690,https://elcatador.com/products/banfi-chianti-reserva
+1,El Catador,tinto,Banfi Cum Laude,Banfi,3040,3040,https://elcatador.com/products/banfi-cum-laude
+1,El Catador,tinto,Banfi Rosso Di Montalcino,Banfi,2680,2680,https://elcatador.com/products/banfi-rosso-di-montalcino
+1,El Catador,tinto,Banfi Summus,Banfi,6250,6250,https://elcatador.com/products/banfi-summus
+1,El Catador,tinto,Banfi Vigna Marrucheto Brunello di Montalcino,Banfi,9200,9200,https://elcatador.com/products/banfi-vigna-marrucheto-brunello-di-montalcino
+1,El Catador,tinto,"Bardos Crianza, Ribera del Duero",Lopez de Haro,1650,1650,https://elcatador.com/products/bardos-crianza-ribera-del-duero
+1,El Catador,tinto,Baron Philippe de Rothschild Cabernet Sauvignon,Baron Philippe de Rothschild,1190,1190,https://elcatador.com/products/baron-philippe-de-rothschild-cabernet-sauvignon
+1,El Catador,tinto,Baron Philippe Mouton Cadet Reserva Medoc,Baron Philippe de Rothschild,2190,2190,https://elcatador.com/products/baron-philippe-mouton-cadet-reserva-medoc
+1,El Catador,tinto,Batasiolo Barolo Briccolina,Batasiolo,6590,6590,https://elcatador.com/products/batasiolo-barolo-briccolina
+1,El Catador,tinto,Batasiolo Langhe Rosso,Batasiolo,1760,1760,https://elcatador.com/products/batasiolo-langhe-rosso
+1,El Catador,tinto,Beringer Bros Red Blend,Beringer,1650,1650,https://elcatador.com/products/beringer-bros-red-blend
+1,El Catador,tinto,Beringer California Red Crush,Beringer,870,870,https://elcatador.com/products/beringer-california-red-crush
+1,El Catador,tinto,Beringer Founders Estate Merlot,Beringer,1450,1450,https://elcatador.com/products/beringer-founders-estate-merlot
+1,El Catador,tinto,Beringer Knights Valley Cabernet Sauvignon,Beringer,3810,3810,https://elcatador.com/products/beringer-knights-valley-cabernet-sauvignon
+1,El Catador,tinto,Boen California Pinot Noir,Boen,2590,2590,https://elcatador.com/products/boen-california-pinot-noir
+1,El Catador,tinto,Bogle Essential Red,Bogle,1550,1550,https://elcatador.com/products/bogle-essential-red
+1,El Catador,tinto,Bogle Old Vine Zinfandel,Bogle,1690,1690,https://elcatador.com/products/bogle-old-vine-zinfandel
+1,El Catador,tinto,Bogle Phantom,Bogle,2680,2680,https://elcatador.com/products/bogle-phantom
+1,El Catador,tinto,Bogle Pinot Noir,Bogle,1620,1620,https://elcatador.com/products/bogle-pinot-noir
+1,El Catador,tinto,Bonanza Cabernet Sauvignon,Wagner Family of Wines,2380,2380,https://elcatador.com/products/bonanza-cabernet-sauvignon
+1,El Catador,tinto,Borgo del Mandorlo Primitivo di Manduria,Borgo del Mandorlo,1450,1450,https://elcatador.com/products/borgo-del-mandorlo-primitivo-di-manduria
+1,El Catador,tinto,Borsao Selección,Borsao,890,890,https://elcatador.com/products/borsao-seleccion
+1,El Catador,tinto,Borsao Tres Picos,Borsao,2100,2100,https://elcatador.com/products/borsao-tres-picos
+1,El Catador,tinto,Bosque de Matasnos,Bosque de Matasnos,4100,4100,https://elcatador.com/products/bosque-de-matasnos
+1,El Catador,tinto,Bosque de Matasnos Edición Limitada,Bosque de Matasnos,5390,5390,https://elcatador.com/products/bosque-de-matasnos-edicion-limitada
+1,El Catador,tinto,"Bramare Paul Hobbs Malbec, Argentina",Viña Cobos,4900,4900,https://elcatador.com/products/bramare-paul-hobbs-malbec-argentina
+1,El Catador,tinto,Carmelo Rodero Crianza,Carmelo Rodero,3180,3180,https://elcatador.com/products/carmelo-rodero-crianza
+1,El Catador,tinto,Carmelo Rodero Crianza 1.5 litros,Carmelo Rodero,6200,6200,https://elcatador.com/products/carmelo-rodero-crianza-1-5-litros
+1,El Catador,tinto,Carmelo Rodero Pago De Valtarreña,Carmelo Rodero,7300,7300,https://elcatador.com/products/carmelo-rodero-pago-de-valtarrena
+1,El Catador,tinto,Carmelo Rodero Raza Reserva,Carmelo Rodero,4980,4980,https://elcatador.com/products/carmelo-rodero-raza-reserva-2
+1,El Catador,tinto,Carmelo Rodero Roble 9 Meses,Carmelo Rodero,1980,1980,https://elcatador.com/products/carmelo-rodero-roble-9-meses
+1,El Catador,tinto,Carmelo Rodero TSM 2017,Carmelo Rodero,8600,8600,https://elcatador.com/products/carmelo-rodero-tsm
+1,El Catador,tinto,Casanova di Neri Brunello Di Montalcino 2016,Casanova di Neri,7400,7400,https://elcatador.com/products/casanova-di-neri-brunello-di-montalcino
+1,El Catador,tinto,Casanova di Neri Irrosso,Casanova di Neri,2590,2590,https://elcatador.com/products/casanova-di-neri-irrosso
+1,El Catador,tinto,Casanova di Neri Tenuta Nuova,Casanova di Neri,12900,12900,https://elcatador.com/products/casanova-di-neri-tenuta-nuova
+1,El Catador,tinto,Casillero del Diablo Merlot,Casillero del Diablo,980,980,https://elcatador.com/products/casillero-del-diablo-merlot
+1,El Catador,tinto,Casillero del Diablo Red Blend,Casillero del Diablo,980,980,https://elcatador.com/products/casillero-del-diablo-red-blend
+1,El Catador,tinto,Caymus Cabernet Sauvignon,Caymus,8980,8980,https://elcatador.com/products/caymus-cabernet-sauvignon
+1,El Catador,tinto,Caymus California Cabernet Sauvignon,Wagner Family of Wines,5750,5750,https://elcatador.com/products/caymus-california-cabernet-sauvignon
+1,El Catador,tinto,Caymus Special Selection Cabernet Sauvignon,Caymus,21900,21900,https://elcatador.com/products/caymus-special-selection-cabernet-sauvignon
+1,El Catador,tinto,Caymus Suisun Grand Durif,Caymus,7180,7180,https://elcatador.com/products/caymus-suisun-grand-durif
+1,El Catador,tinto,Caymus the Walking Fool,Caymus,4680,4680,https://elcatador.com/products/caymus-the-walking-fool
+1,El Catador,tinto,Cepa 21,Cepa 21,2590,2590,https://elcatador.com/products/cepa-21
+1,El Catador,tinto,Château Branaire Ducru 2014,Château Branaire Ducru,6700,6700,https://elcatador.com/products/chateau-branaire-ducru-2014
+1,El Catador,tinto,Château Cantenac Brown 2017,Château Cantenac Brown,6900,6900,https://elcatador.com/products/chateau-cantenac-brown-2018
+1,El Catador,tinto,Château Clos de l'Oratoire 2016,Château Clos de l'Oratoire,5700,5700,https://elcatador.com/products/chateau-clos-de-loratoire-2016
+1,El Catador,tinto,Château Dauzac 2016,Château Dauzac,5980,5980,https://elcatador.com/products/chateau-dauzac-2016
+1,El Catador,tinto,Château De Pez 2016,Chateau Pez,5200,5200,https://elcatador.com/products/chateau-de-pez-2010
+1,El Catador,tinto,Château Gloria 2020,Château Gloria,5900,5900,https://elcatador.com/products/chateau-gloria-2020
+1,El Catador,tinto,Château Greysac 2020,Château Greysac,2190,2190,https://elcatador.com/products/chateau-greysac-2020
+1,El Catador,tinto,CHÂTEAU HAUT-BRISSON 2018,Haut-Brisson,3280,3280,https://elcatador.com/products/chateau-haut-brisson-2018
+1,El Catador,tinto,Château Meyne,Château Meyney,3980,3980,https://elcatador.com/products/chateau-meyne
+1,El Catador,tinto,Château Pierre 1er,Château Pierre 1er,2780,2780,https://elcatador.com/products/chateau-pierre-1er-1
+1,El Catador,tinto,Château Potensac 2015,Château Potensac,4100,4100,https://elcatador.com/products/chateau-potensac-2016
+1,El Catador,tinto,Château Sénéjac 2020,Château Sénéjac,2680,2680,https://elcatador.com/products/chateau-senejac-2020
+1,El Catador,tinto,Chateau Ste Michelle Columbia Cabernet Sauvignon,Chateau Ste Michelle,1950,1950,https://elcatador.com/products/chateau-ste-michelle-columbia-cabernet-sauvignon
+1,El Catador,tinto,Chateau Ste. Michelle Indian Wells Cabernet Sauvignon,Chateau Ste Michelle,2490,2490,https://elcatador.com/products/chateau-st-michelle-indian-wells-cabernet-sauvignon
+1,El Catador,tinto,Château Tour de Pez 2017,Chateau Pez,2580,2580,https://elcatador.com/products/chateau-tour-de-pez-2017
+1,El Catador,tinto,Clos de L'Oratoire 2018,Château Clos de l'Oratoire,5500,5500,https://elcatador.com/products/clos-de-loratoire-2019
+1,El Catador,tinto,Clos De Los Siete,Clos de los siete,2650,2650,https://elcatador.com/products/clos-de-los-siete
+1,El Catador,tinto,Clos de Papes,Clos des Papes,9500,9500,https://elcatador.com/products/clos-de-papes
+1,El Catador,tinto,Cloudy Bay Pinot Noir,Cloudy Bay,5800,5800,https://elcatador.com/products/cloudy-bay-pinot-noir
+1,El Catador,tinto,Colección Benjamín Romeo,Contador,65000,65000,https://elcatador.com/products/coleccion-benjamin-romeo
+1,El Catador,tinto,Condado De Haza Crianza,Condado de Haza,1950,1950,https://elcatador.com/products/condado-de-haza-crianza
+1,El Catador,tinto,Contador,Contador,26500,26500,https://elcatador.com/products/contador
+1,El Catador,tinto,Continuum Estate  2018,Continuum,31500,31500,https://elcatador.com/products/continuum-estate
+1,El Catador,tinto,Conundrum Red Blend,Conundrum,2250,2250,https://elcatador.com/products/conundrum-red-blend
+1,El Catador,tinto,Corte Fiore Italian Red Blend,Lupi Reali,1550,1550,https://elcatador.com/products/corte-fiore-italian-red-blend-1
+1,El Catador,tinto,Cosme Palacio Crianza,Glorioso,2290,2290,https://elcatador.com/products/cosme-palacio-crianza
+1,El Catador,tinto,Crognolo,Tenuta Sette Ponti,2790,2790,https://elcatador.com/products/crognolo
+1,El Catador,tinto,Culmen Reserva 2015,LAN,5890,5890,https://elcatador.com/products/culmen-reserva-2015
+1,El Catador,tinto,Cupcake Red Velvet,Cupcake,1350,1350,https://elcatador.com/products/cupcake-red-velvet
+1,El Catador,tinto,Daou Cabernet Sauvignon 375 ml,Daou,1550,1550,https://elcatador.com/products/daou-cabernet-sauvignon-1-2-bot
+1,El Catador,tinto,Daou Reserve Cabernet Sauvignon 2015,Daou,5000,5000,https://elcatador.com/products/daou-reserve-cabernet-sauvignon-2017
+1,El Catador,tinto,Daou Soul of a Lion,Daou,11980,11980,https://elcatador.com/products/daou-soul-of-a-lion
+1,El Catador,tinto,Darioush Cabernet Sauvignon,Darioush,11800,11800,https://elcatador.com/products/darioush-cabernet-sauvignon
+1,El Catador,tinto,Darioush Caravan Cabernet Sauvignon,Darioush,6390,6390,https://elcatador.com/products/darioush-caravan-cabernet-sauvignon
+1,El Catador,tinto,Darioush Darius II,Darioush,27500,27500,https://elcatador.com/products/darioush-darius-ii
+1,El Catador,tinto,"Darioush Duel Cabernet Sauvignon, Napa Valley",Darioush,5890,5890,https://elcatador.com/products/darioush-duel-cabernet-sauvignon-napa-valley
+1,El Catador,tinto,Decoy Cabernet Sauv. 1/2 bot,Decoy,1480,1480,https://elcatador.com/products/decoy-cabernet-sauv-1-2-bot
+1,El Catador,tinto,des,Ménage à Trois,1290,1290,https://elcatador.com/products/des
+1,El Catador,tinto,Domaine de Chevalier Rouge 2014,Domaine de Chevalier,7900,7900,https://elcatador.com/products/domaine-de-chevalier-rouge-2015
+1,El Catador,tinto,Don Melchor 2022,Concha y Toro,15980,15980,https://elcatador.com/products/don-melchor-2017
+1,El Catador,tinto,Doña Paula EstateMalbec,Doña Paula,1350,1350,https://elcatador.com/products/dona-paula-estatemalbec
+1,El Catador,tinto,Donnafugata Sedàra,Donnafugata,1595,1595,https://elcatador.com/products/donnafugata-sedara
+1,El Catador,tinto,Double Diamiond Oakville Cabernet Sauvignon 2019 375 ml,Double Diamond,5200,5200,https://elcatador.com/products/double-diamiond-oakville-cabernet-sauvignon-2019-375-ml
+1,El Catador,tinto,Double Diamond Oakville Cabernet Sauvignon,Double Diamond,9980,9980,https://elcatador.com/products/double-diamond-oakville-cabernet-sauvignon
+1,El Catador,tinto,Duckhorn Cabernet Sauvignon 375ml,Duckhorn,3520,3520,https://elcatador.com/products/duckhorn-cabernet-sauvignon-375ml
+1,El Catador,tinto,Duckhorn Decoy Red Wine,Duckhorn,2690,2690,https://elcatador.com/products/duckhorn-decoy-red-wine
+1,El Catador,tinto,Duckhorn Goldeneye Estate Pinot Noir,Duckhorn,6100,6100,https://elcatador.com/products/duckhorn-goldeneye-estate-pinot-noir
+1,El Catador,tinto,Duckhorn Napa Valley Merlot,Duckhorn,5480,5480,https://elcatador.com/products/duckhorn-napa-valley-merlot
+1,El Catador,tinto,Duckhorn Paraduxx,Paraduxx,5300,5300,https://elcatador.com/products/duckhorn-paraduxx
+1,El Catador,tinto,Duckhorn Postmark Cabernet Sauvignon,Duckhorn,3150,3150,https://elcatador.com/products/duckhorn-postmark-cabernet-sauv-napa-valley
+1,El Catador,tinto,Duckhorn Three Palms Merlot,Duckhorn,10900,10900,https://elcatador.com/products/duckhorn-three-palms-merlot
+1,El Catador,tinto,Due Di Due Blend Italiano,Lupo Meraviglia,1050,1050,https://elcatador.com/products/due-di-due-blend-italiano
+1,El Catador,tinto,E. Guigal Brune & Blonde Côte-Rôtie,E. Guigal,7900,7900,https://elcatador.com/products/e-guigal-brune-blonde-cote-rotie-1
+1,El Catador,tinto,E. Guigal Château d'Ampuis 2016,E. Guigal,10500,10500,https://elcatador.com/products/e-guigal-chateau-dampuis
+1,El Catador,tinto,E. Guigal Côtes du Rhône Rouge,E. Guigal,1800,1800,https://elcatador.com/products/e-guigal-cotes-du-rhone-rouge
+1,El Catador,tinto,E.Guigal Châteauneuf-du-Pape,E. Guigal,5300,5300,https://elcatador.com/products/e-guigal-chateauneuf-du-pape
+1,El Catador,tinto,El Andén de la Estación,Muga,1590,1590,https://elcatador.com/products/el-anden-de-la-estacion
+1,El Catador,tinto,El Vínculo Crianza,Alejandro Fernandez,1590,1590,https://elcatador.com/products/el-vinculo-crianza
+1,El Catador,tinto,Emilio Moro 375 ml,Emilio Moro,1550,1550,https://elcatador.com/products/emilio-moro-375-ml
+1,El Catador,tinto,Emilio Moro Finca Resalso,Emilio Moro,1495,1495,https://elcatador.com/products/emilio-moro-finca-resalso
+1,El Catador,tinto,Emilio Moro Malleolus,Emilio Moro,4590,4590,https://elcatador.com/products/emilio-moro-malleolus
+1,El Catador,tinto,Emilio Moro Malleolus 1.5 litros,Emilio Moro,10400,10400,https://elcatador.com/products/emilio-moro-malleolus-1-5-litros
+1,El Catador,tinto,Emilio Moro Malleolus 3 litros,Emilio Moro,18500,18500,https://elcatador.com/products/emilio-moro-malleolus-3-litros
+1,El Catador,tinto,Emilio Moro Malleolus de Sanchomartín,Emilio Moro,17200,17200,https://elcatador.com/products/emilio-moro-malleolus-de-sanchomartin
+1,El Catador,tinto,Emilio Moro Malleolus de Sanchomartín 1.5 litros,Emilio Moro,25800,25800,https://elcatador.com/products/emilio-moro-malleolus-de-sanchomartin-1-5-litros
+1,El Catador,tinto,Emilio Moro Malleolus de Valderramiro,Emilio Moro,11980,11980,https://elcatador.com/products/emilio-moro-malleolus-de-valderramiro
+1,El Catador,tinto,Emmolo Napa Valley Merlot,Wagner Family of Wines,5800,5800,https://elcatador.com/products/emmolo-napa-valley-merlot
+1,Licoteca,tinto,Estuche Habla del Silencio 2 botellas + 2 copas,,41,41,https://licotecaonline.com/producto/estuche-habla-del-silencio-2-botellas-2-copas/
+1,Licoteca,tinto,Estuche Madera Matarromera 0.75L Crianza 2 botellas,,43,43,https://licotecaonline.com/producto/estuche-madera-matarromera-0-75l-crianza-2-botellas/
+1,Licoteca,tinto,Estuche Marqués de Cáceres Rioja 0.75L 3 Botellas,,17,17,https://licotecaonline.com/producto/estuche-marques-de-caceres-rioja-3/
+1,Licoteca,tinto,Estuche Metálico Marqués de Riscal 0.75L,,16,16,https://licotecaonline.com/producto/estuche-metalico-marques-de-riscal-0-75-l/
+1,Licoteca,tinto,Estuche Muga Crianza 3 botellas,,50,50,https://licotecaonline.com/producto/estuche-muga-crianza-3-botellas/
+1,Licoteca,tinto,Estuche Pago de Carraovejas 0.75L 3 Botellas,,120,120,https://licotecaonline.com/producto/estuche-3-botellas-pago-carraovejas-2018/
+1,Licoteca,tinto,Estuche Protos 0.75L Reserva 2 botellas y 2 copas,,54,54,https://licotecaonline.com/producto/estuche-protos-reserva-5-ano-2-botellas-2-copas/
+1,Licoteca,tinto,Estuche Protos Reserva 0.75L + Copa,,26,26,https://licotecaonline.com/producto/estuche-protos-reserva-0-75l-copa/
+1,Licoteca,tinto,Estuche Vino Carmelo Rodero 9 Meses 3 Botellas,,50,50,https://licotecaonline.com/producto/estuche-vino-carmelo-rodero-9-meses-3-botellas/
+1,Licoteca,tinto,Estuche Vino Cepa 21 0.75 + Copa,,19,19,https://licotecaonline.com/producto/estuche-vino-cepa-21-0-75-copa/
+1,Licoteca,tinto,Estuche Vino Hito 0.75L + copa,,14,14,https://licotecaonline.com/producto/estuche-hito-copa/
+1,Licoteca,tinto,Estuche Vino Malleolus 1 botella+2 copas+sacacorchos,,45,45,https://licotecaonline.com/producto/estuche-vino-malleolus-1-botella2-copassacacorchos/
+1,Licoteca,tinto,Estuche Vino Muga Selección Especial 0.75L,,57,57,https://licotecaonline.com/producto/estuche-muga-reserva-madera-2-botellas/
+1,Licoteca,tinto,Estuche Vino Muga Selección Especial 0.75L 2 Bot + 2C,,63,63,https://licotecaonline.com/producto/estuche-muga-selecion-especial-0-75-l-2-bot-2-c/
+1,Licoteca,tinto,Estuche Vino Pruno 1.5L Metálico,,33,33,https://licotecaonline.com/producto/estuche-vino-pruno-1-5-l-metalico/
+1,Licoteca,tinto,Estuche Vino viña Tondonia Metálico 0.75L,,45,45,https://licotecaonline.com/producto/vino-vina-tondonia-estuche-metalico/
+1,El Catador,tinto,Far Niente Napa Valley Cabernet Sauvignon 2018,Far Niente,12980,12980,https://elcatador.com/products/far-niente-napa-valley-cabernet-sauvignon
+1,El Catador,tinto,Finca Villacreces,Finca Villacreces,3095,3095,https://elcatador.com/products/finca-villacreces
+1,El Catador,tinto,Finca Villacreces Pruno,Finca Villacreces,1650,1650,https://elcatador.com/products/finca-villacreces-pruno
+1,El Catador,tinto,Flaccianello Della Pieve 2018,Fontodi,14450,14450,https://elcatador.com/products/flaccianello-della-pieve
+1,El Catador,tinto,Fontodi Chianti Classico,Fontodi,4450,4450,https://elcatador.com/products/fontodi-chianti-classico
+1,El Catador,tinto,Fontodi Vigna Del Sorbo,Fontodi,7680,7680,https://elcatador.com/products/fontodi-vigna-del-sorbo
+1,El Catador,tinto,Four Vines The Biker Old Vine Zinfandel,Four Vines,1790,1790,https://elcatador.com/products/four-vines-the-biker-old-vine-zinfandel
+1,El Catador,tinto,Frontera After Midnight Red Blend,Concha y Toro,595,595,https://elcatador.com/products/frontera-after-midnight-red-blend
+1,El Catador,tinto,Frontera Merlot,Concha y Toro,595,595,https://elcatador.com/products/frontera-merlot
+1,El Catador,tinto,Frontera Sweet Red,Concha y Toro,595,595,https://elcatador.com/products/frontera-sweet-red
+1,Curda 24,tinto,Fuego Austral Cabernet Sauvignon 2019,,10,10,https://curda24.com/tienda/licoreria-delivery/licores/fuego-austral-cabernet-sauvignon-2019/
+1,El Catador,tinto,Georges Duboeuf Beaujolais Villages,Georges Duboeuf,1690,1690,https://elcatador.com/products/georges-duboeuf-beaujolais-villages
+1,El Catador,tinto,Georges Duboeuf Chateauneuf du Pape,Georges Duboeuf,4750,4750,https://elcatador.com/products/georges-duboeuf-chateauneuf-du-pape
+1,El Catador,tinto,Georges Duboeuf Côtes du Rhône,Georges Duboeuf,1290,1290,https://elcatador.com/products/georges-duboeuf-cotes-du-rhone
+1,El Catador,tinto,Georges Duboeuf Juliénas,Georges Duboeuf,1540,1540,https://elcatador.com/products/georges-duboeuf-julienas
+1,El Catador,tinto,Glorioso Gran Reserva,Glorioso,3450,3450,https://elcatador.com/products/glorioso-gran-reserva
+1,El Catador,tinto,Glorioso Selección Especial 100 Años,Glorioso,1550,1550,https://elcatador.com/products/glorioso-seleccion-especial-100-anos
+1,El Catador,tinto,Goulée by Cos d'Estournel,Château Cos d'Estournel,3800,3800,https://elcatador.com/products/goulee-by-cos-destournel-1
+1,El Catador,tinto,Graham's 20 Years,Graham's,6700,6700,https://elcatador.com/products/grahams-20-years
+1,El Catador,tinto,Graham's Fine Ruby,Graham's,1950,1950,https://elcatador.com/products/grahams-fine-ruby
+1,El Catador,tinto,Graham's Tawny,Graham's,1950,1950,https://elcatador.com/products/grahams-tawny
+1,El Catador,tinto,Graham's Tawny 10 años,Graham's,4150,4150,https://elcatador.com/products/grahams-tawny-10-anos
+1,El Catador,tinto,Graham's Vintage Port 2000,Graham's,10500,10500,https://elcatador.com/products/grahams-vintage-port-2000
+1,El Catador,tinto,Hacienda Monasterio 1.5 Lt,Hacienda Monasterio,9800,9800,https://elcatador.com/products/hacienda-monasterio-1-5-lt
+1,El Catador,tinto,Hacienda Monasterio 3 litros,Hacienda Monasterio,23900,23900,https://elcatador.com/products/hacienda-monasterio-3-litros
+1,El Catador,tinto,Hacienda Monasterio Reserva,Hacienda Monasterio,7900,7900,https://elcatador.com/products/hacienda-monasterio-reserva
+1,El Catador,tinto,Heraclio Alfaro Crianza,Terras Gauda,1095,1095,https://elcatador.com/products/heraclio-alfaro-crianza
+1,El Catador,tinto,Hess Allomi Cabernet Sauvignon,Hess,5500,5500,https://elcatador.com/products/hess-allomi-cabernet-sauvignon
+1,El Catador,tinto,Hito,Cepa 21,1650,1650,https://elcatador.com/products/hito
+1,El Catador,tinto,Joel Gott 815 Cabernet Sauvignon,Joel Gott,1980,1980,https://elcatador.com/products/joel-gott-815-cabernet-sauvignon
+1,El Catador,tinto,Joseph Phelps Insignia,Joseph Phelps,27500,27500,https://elcatador.com/products/joseph-phelps-insignia-2018
+1,El Catador,tinto,Joseph Phelps Napa Valley Cabernet Sauvignon,Joseph Phelps,9500,9500,https://elcatador.com/products/joseph-phelps-napa-valley-cabernet-sauvignon
+1,El Catador,tinto,Kaiken Reserva Malbec,Kaiken,1150,1150,https://elcatador.com/products/kaiken-reserva-malbec
+1,El Catador,tinto,Kaiken UltraMalbec,Kaiken,2390,2390,https://elcatador.com/products/kaiken-ultramalbec
+1,El Catador,tinto,Kendall Jackson Grand Reserve Cabernet Sauvignon,Kendall Jackson,3950,3950,https://elcatador.com/products/kendall-jackson-grand-reserve-cabernet-sauvignon
+1,El Catador,tinto,Kendall Jackson Vintner's Reserve Merlot,Kendall Jackson,2890,2890,https://elcatador.com/products/kendall-jackson-vintners-reserve-merlot
+1,El Catador,tinto,Kistler Russian River  Pinot Noir,Kistler,7590,7590,https://elcatador.com/products/kistler-russian-river-pinot-noir
+1,El Catador,tinto,La Capilla Crianza,Marqués de Cáceres,2350,2350,https://elcatador.com/products/la-capilla-crianza
+1,El Catador,tinto,La Cueva del Contador 2018,Contador,9340,9340,https://elcatador.com/products/la-cueva-del-contador
+1,El Catador,tinto,La Fiole Châteauneuf-du-Pape,La Fiole,3400,3400,https://elcatador.com/products/la-fiole-chateauneuf-du-pape
+1,El Catador,tinto,La Fiole Côtes du Rhône,La Fiole,1100,1100,https://elcatador.com/products/la-fiole-cotes-du-rhone
+1,El Catador,tinto,La Fiole Réserve Côtes du Rhône,La Fiole,1750,1750,https://elcatador.com/products/la-fiole-reserve-cotes-du-rhone
+1,Curda 24,tinto,La Vanguardia Malbec,,12,12,https://curda24.com/tienda/licoreria-delivery/licores/la-vanguardia-malbec/
+1,El Catador,tinto,LAN 7 metros,LAN,1750,1750,https://elcatador.com/products/lan-7-metros
+1,El Catador,tinto,Lan A Mano Edición Limitada,LAN,3980,3980,https://elcatador.com/products/lan-a-mano-edicion-limitada
+1,El Catador,tinto,Lan Crianza,LAN,1270,1270,https://elcatador.com/products/lan-crianza
+1,El Catador,tinto,Le Macchiole Bolgheri Rosso,Le Macchiole,3290,3290,https://elcatador.com/products/le-macchiole-bolgheri-rosso
+1,El Catador,tinto,Le Macchiole Messorio,Le Macchiole,23500,23500,https://elcatador.com/products/le-macchiole-messorio
+1,El Catador,tinto,Le Macchiole Paleo Rosso,Le Macchiole,11500,11500,https://elcatador.com/products/le-macchiole-paleo-rosso
+1,El Catador,tinto,Le Serre Nuove dell' Ornellaia,Ornellaia,6280,6280,https://elcatador.com/products/le-serre-nuove-dell-ornellaia
+1,El Catador,tinto,Liberty School Reserve Cabernet Sauvignon,Hope Family,2690,2690,https://elcatador.com/products/liberty-school-reserve-cabernet-sauvignon
+1,El Catador,tinto,Lillet Tinto,Lillet,1920,1920,https://elcatador.com/products/lillet-tinto
+1,El Catador,tinto,Lopez de Haro Crianza,Lopez de Haro,990,990,https://elcatador.com/products/lopez-de-haro-crianza
+1,El Catador,tinto,Lopez de Haro Edición Limitada,Lopez de Haro,1390,1390,https://elcatador.com/products/lopez-de-haro-edicion-limitada
+1,El Catador,tinto,Louis Latour Gevrey Chambertin,Louis Latour,8980,8980,https://elcatador.com/products/louis-latour-gevrey-chambertin
+1,El Catador,tinto,Louis Latour Nuit St. Georges Premier Cru Le Crots,Louis Latour,9500,9500,https://elcatador.com/products/louis-latour-nuit-st-georges-premier-cru-le-crots
+1,El Catador,tinto,Louis Latour Pinot Noir,Louis Latour,2350,2350,https://elcatador.com/products/louis-latour-pinot-noir
+1,El Catador,tinto,Louis Latour Vosne Romanée,Louis Latour,9400,9400,https://elcatador.com/products/louis-latour-vosne-romanee
+1,El Catador,tinto,Luigi Bosca De Sangre,Luigi Bosca,2390,2390,https://elcatador.com/products/luigi-bosca-de-sangre
+1,El Catador,tinto,Luigi Bosca Finca Los Nobles,Luigi Bosca,5400,5400,https://elcatador.com/products/luigi-bosca-finca-los-nobles
+1,El Catador,tinto,Luigi Bosca Malbec,Luigi Bosca,1750,1750,https://elcatador.com/products/luigi-bosca-reserva-malbec
+1,El Catador,tinto,Malabrigo,Cepa 21,4690,4690,https://elcatador.com/products/malabrigo-1
+1,El Catador,tinto,Marchese Di Borgosole Salice Salentino Riserva,Marchese di Borgosole,1280,1280,https://elcatador.com/products/marchese-di-borgosole-salice-salentino-riserva
+1,El Catador,tinto,Marqués de Cáceres Excellens Cuvée Especial,Marqués de Cáceres,1650,1650,https://elcatador.com/products/marques-de-caceres-excellens-cuvee-especial
+1,El Catador,tinto,Marqués de Cáceres Gaudium Reserva,Marqués de Cáceres,6800,6800,https://elcatador.com/products/marques-de-caceres-gaudium-reserva
+1,El Catador,tinto,Marqués de Cáceres Gran Reserva,Marqués de Cáceres,3250,3250,https://elcatador.com/products/marques-de-caceres-gran-reserva
+1,El Catador,tinto,Marqués de Murrieta Dalmau,Marqués de Murrieta,19900,19900,https://elcatador.com/products/marques-de-murrieta-dalmau
+1,El Catador,tinto,Marqués de Murrieta Reserva,Marqués de Murrieta,2980,2980,https://elcatador.com/products/marques-de-murrieta-reserva
+1,El Catador,tinto,Marqués de Murrieta Reserva  12 litros,Marqués de Murrieta,49800,49800,https://elcatador.com/products/marques-de-murrieta-reserva-12-litros
+1,El Catador,tinto,Marqués de Murrieta Reserva 1.5 litros,Marqués de Murrieta,6350,6350,https://elcatador.com/products/marques-de-murrieta-reserva-1-5-litros
+1,El Catador,tinto,Marqués de Murrieta Reserva 3 litros,Marqués de Murrieta,14900,14900,https://elcatador.com/products/marques-de-murrieta-reserva-3-litros
+1,El Catador,tinto,Marqués de Murrieta Reserva 6 litros,Marqués de Murrieta,27900,27900,https://elcatador.com/products/marques-de-murrieta-reserva-6-litros
+1,El Catador,tinto,Marqués de Riscal Baron De Chirel,Marqués de Riscal,11500,11500,https://elcatador.com/products/marques-de-riscal-baron-de-chirel
+1,El Catador,tinto,Marqués de Riscal Proximo,Marqués de Riscal,920,920,https://elcatador.com/products/marques-de-riscal-proximo
+1,El Catador,tinto,Marqués de Riscal Reserva XR,Marqués de Riscal,3450,3450,https://elcatador.com/products/marques-de-riscal-reserva-xr
+1,Licoteca,tinto,Marqués de Riscal XR 0.75L,,22,22,https://licotecaonline.com/producto/marques-de-riscal-xr-0-75l/
+1,El Catador,tinto,Masi Amarone Riserva di Costasera,Masi,6700,6700,https://elcatador.com/products/masi-amarone-riserva-di-costasera
+1,El Catador,tinto,Masi Brolo di Campofiorin Verona,Masi,3090,3090,https://elcatador.com/products/masi-brolo-di-campofiorin-verona
+1,El Catador,tinto,Masi Costasera Amarone Classico,Masi,6950,6950,https://elcatador.com/products/masi-costasera-amarone-classico
+1,El Catador,tinto,Meiomi Pinot Noir,Meiomi,2690,2690,https://elcatador.com/products/meiomi-pinot-noir
+1,El Catador,tinto,Meiomi Red Blend,Meiomi,2495,2495,https://elcatador.com/products/meiomi-red-blend
+1,El Catador,tinto,Ménage à T7814rois Silk Soft Red Blend,Ménage à Trois,1280,1280,https://elcatador.com/products/menage-a-trois-silk-soft-red-blend
+1,El Catador,tinto,Ménage à Trois Decadence Cabernet Sauvignon,Ménage à Trois,1290,1290,https://elcatador.com/products/menage-a-trois-decadence-cabernet-sauvignon
+1,El Catador,tinto,Ménage à Trois Midnight Dark Red Blend,Ménage à Trois,1290,1290,https://elcatador.com/products/menage-a-trois-midnight-dark-red-blend
+1,El Catador,tinto,Ménage à Trois Red Blend,Ménage à Trois,1280,1280,https://elcatador.com/products/menage-a-trois-red-blend
+1,El Catador,tinto,Mer Soleil Reserve Pinot Noir,Mer Soleil,3980,3980,https://elcatador.com/products/mer-soleil-reserve-pinot-noir
+1,El Catador,tinto,Milsetentayseis,Pago de Carraovejas,6490,6490,https://elcatador.com/products/milsetentayseis
+1,El Catador,tinto,"Monteabellón 14 Meses, Ribera del Duero",Monteabellón,1980,1980,https://elcatador.com/products/monteabellon-14-meses-ribera-del-duero-1
+1,El Catador,tinto,"Monteabellón 5 Meses, Ribera del Duero",Monteabellón,1350,1350,https://elcatador.com/products/monteabellon-5-meses-ribera-del-duero-1
+1,El Catador,tinto,Monteabellón Finca Matambres,Monteabellón,3600,3600,https://elcatador.com/products/monteabellon-finca-matambres
+1,El Catador,tinto,Montecastro Reserva,Montecastro,3350,3350,https://elcatador.com/products/montecastro-reserva
+1,El Catador,tinto,Montes Alpha Carmenere,Montes,2450,2450,https://elcatador.com/products/montes-alpha-carmenere
+1,El Catador,tinto,Montes Purple Angel,Montes,8490,8490,https://elcatador.com/products/montes-purple-angel
+1,El Catador,tinto,Montevertine,19 Crimes,6900,6900,https://elcatador.com/products/montevertine
+1,El Catador,tinto,Mouton Cadet Reserva Saint Emilion,Baron Philippe de Rothschild,2650,2650,https://elcatador.com/products/mouton-cadet-reserva-saint-emilion
+1,El Catador,tinto,Mouton Cadet Tinto,Baron Philippe de Rothschild,1650,1650,https://elcatador.com/products/mouton-cadet-tinto
+1,El Catador,tinto,Muga Reserva,Muga,2950,2950,https://elcatador.com/products/muga-reserva
+1,El Catador,tinto,Napa Cellars Cabernet Sauvignon,Napa Cellars,2980,2980,https://elcatador.com/products/napa-cellars-cabernet-sauvignon
+1,El Catador,tinto,Norton Malbec DOC,Norton,1040,1040,https://elcatador.com/products/norton-malbec-doc
+1,El Catador,tinto,Norton Privada Estate Reserve,Norton,2500,2500,https://elcatador.com/products/norton-privada-estate-reserve
+1,El Catador,tinto,Norton Syrah Reserva,Norton,1360,1360,https://elcatador.com/products/norton-syrah-reserva
+1,El Catador,tinto,Numanthia,Numanthia,6500,6500,https://elcatador.com/products/numanthia
+1,El Catador,tinto,Numanthia Termes,Numanthia,3700,3700,https://elcatador.com/products/numanthia-termes
+1,El Catador,tinto,Opus One,Opus One,40500,40500,https://elcatador.com/products/opus-one
+1,El Catador,tinto,Orben,Orben,2890,2890,https://elcatador.com/products/orben
+1,El Catador,tinto,Orben Malpuesto,Orben,4950,4950,https://elcatador.com/products/orben-malpuesto
+1,El Catador,tinto,Oreno,Oreno,7400,7400,https://elcatador.com/products/oreno
+1,El Catador,tinto,Ornellaia 2018,Ornellaia,28900,28900,https://elcatador.com/products/ornellaia
+1,El Catador,tinto,Pago de Carraovejas,Pago de Carraovejas,4980,4980,https://elcatador.com/products/pago-de-carraovejas
+1,El Catador,tinto,Pago de Carraovejas 1.5 litros,Pago de Carraovejas,10900,10900,https://elcatador.com/products/pago-de-carraovejas-1-5-litros
+1,El Catador,tinto,Pago de Carraovejas 3 litros,Pago de Carraovejas,23500,23500,https://elcatador.com/products/pago-de-carraovejas-3-litros
+1,El Catador,tinto,Pago de Carraovejas Cuesta de las Liebres,Pago de Carraovejas,19800,19800,https://elcatador.com/products/pago-de-carraovejas-cuesta-de-las-liebres
+1,El Catador,tinto,Pago de Carraovejas El Anejon,Pago de Carraovejas,9980,9980,https://elcatador.com/products/pago-de-carraovejas-el-anejon
+1,El Catador,tinto,Pago de los Capellanes Crianza,Pago de los Capellanes,3750,3750,https://elcatador.com/products/pago-de-los-capellanes-crianza
+1,El Catador,tinto,Pago de los Capellanes Doroteo,Pago de los Capellanes,8980,8980,https://elcatador.com/products/pago-de-los-capellanes-doroteo
+1,El Catador,tinto,Pago de los Capellanes El Nogal,Pago de los Capellanes,7980,7980,https://elcatador.com/products/pago-de-los-capellanes-el-nogal
+1,El Catador,tinto,Pago de los Capellanes El Picón,Pago de los Capellanes,20800,20800,https://elcatador.com/products/pago-de-los-capellanes-el-picon
+1,El Catador,tinto,Pago de los Capellanes Roble,Pago de los Capellanes,2150,2150,https://elcatador.com/products/pago-de-los-capellanes-roble
+1,El Catador,tinto,Pago Florentino,Arzuaga,1690,1690,https://elcatador.com/products/pago-florentino
+1,El Catador,tinto,Palo Alto Reserva Cabernet I,Palo Alto,860,860,https://elcatador.com/products/palo-alto-reserva-cabernet-i
+1,El Catador,tinto,Palo Alto Reserva II,Palo Alto,860,860,https://elcatador.com/products/palo-alto-reserva-ii
+1,El Catador,tinto,Paul Hobbs Crossbarn Cabernet Sauvignon,Paul Hobbs,6700,6700,https://elcatador.com/products/paul-hobbs-crossbarn-cabernet-sauvignon
+1,El Catador,tinto,PaulaMalbec,Doña Paula,920,920,https://elcatador.com/products/paulamalbec
+1,El Catador,tinto,Penfold's Bin 389 Cabernet/Shiraz,Penfolds,8900,8900,https://elcatador.com/products/penfolds-bin-389-cabernet-shiraz
+1,El Catador,tinto,Penfold's Koonunga Hill Shiraz/Cabernet Sauvignon,Penfolds,1980,1980,https://elcatador.com/products/penfolds-koonunga-hill-shiraz-cabernet-sauvignon
+1,El Catador,tinto,Pesquera Millenium Gran Reserva,Alejandro Fernandez,9980,9980,https://elcatador.com/products/pesquera-millenium-gran-reserva
+1,El Catador,tinto,Pesquera MXI,Pesquera,3450,3450,https://elcatador.com/products/pesquera-mxi
+1,El Catador,tinto,Pesquera Reserva,Alejandro Fernandez,4480,4480,https://elcatador.com/products/pesquera-reserva
+1,El Catador,tinto,Pessimist,Daou,2850,2850,https://elcatador.com/products/pessimist
+1,El Catador,tinto,Pesus,Viña Sastre,29500,29500,https://elcatador.com/products/pesus
+1,El Catador,tinto,Pio Cesare Barolo,Pio Cesare,6600,6600,https://elcatador.com/products/pio-cesare-barolo
+1,El Catador,tinto,Pittacum,Terras Gauda,1400,1400,https://elcatador.com/products/pittacum
+1,El Catador,tinto,Poggio Di Sotto Brunello di Montalcino Riserva,Poggio di Sotto,31500,31500,https://elcatador.com/products/poggio-di-sotto-brunello-di-montalcino-riserva
+1,El Catador,tinto,Post & Beam Cabernet Sauvignon,Far Niente,4580,4580,https://elcatador.com/products/post-beam-cabernet-sauvignon
+1,El Catador,tinto,Prado Enea Gran Reserva,Muga,7980,7980,https://elcatador.com/products/prado-enea-gran-reserva
+1,El Catador,tinto,Prado Enea Gran Reserva 1.5 litros,Muga,15500,15500,https://elcatador.com/products/prado-enea-gran-reserva-1-5-litros
+1,El Catador,tinto,Predicador Tinto,Benjamin Romeo,2980,2980,https://elcatador.com/products/predicador-tinto
+1,El Catador,tinto,Protos 27,Protos,2980,2980,https://elcatador.com/products/protos-27
+1,El Catador,tinto,PROTOS 9 MESES,Protos,1750,1750,https://elcatador.com/products/protos-9-meses
+1,El Catador,tinto,Protos Carroa,Protos,4980,4980,https://elcatador.com/products/protos-carroa
+1,El Catador,tinto,Protos Crianza,Protos,2550,2550,https://elcatador.com/products/protos-crianza-1
+1,El Catador,tinto,Protos Roble,Protos,1430,1430,https://elcatador.com/products/protos-roble
+1,El Catador,tinto,Prunotto Barolo,Prunotto,5550,5550,https://elcatador.com/products/prunotto-barolo
+1,El Catador,tinto,Red Schooner,Wagner Family of Wines,5500,5500,https://elcatador.com/products/red-schooner
+1,El Catador,tinto,Red Schooner Transit No. 1,Caymus,5500,5500,https://elcatador.com/products/red-schooner-transit-no-1
+1,El Catador,tinto,Renieri Brunello Di Montalcino,Renieri,10500,10500,https://elcatador.com/products/renieri-brunello-di-montalcino
+1,El Catador,tinto,Riporta Primitivo,Riporta,1050,1050,https://elcatador.com/products/riporta-primitivo
+1,El Catador,tinto,Robert Mondavi Bourbon Barrel Cabernet Sauvignon,Robert Mondavi Private Selection,1790,1790,https://elcatador.com/products/robert-mondavi-bourbon-barrel-cabernet-sauvignon
+1,El Catador,tinto,Robert Mondavi Napa Valley Cabernet Sauvignon,Robert Mondavi Winery,5980,5980,https://elcatador.com/products/robert-mondavi-napa-valley-cabernet-sauvignon
+1,El Catador,tinto,Robert Mondavi Oakville Cabernet Sauvignon,Robert Mondavi Winery,7300,7300,https://elcatador.com/products/robert-mondavi-oakville-cabernet-sauvignon
+1,El Catador,tinto,Robert Mondavi Private Selection Heritage Red,Robert Mondavi Private Selection,1395,1395,https://elcatador.com/products/robert-mondavi-private-selection-heritage-red
+1,El Catador,tinto,Robert Mondavi Private Selection Pinot Noir,Robert Mondavi Private Selection,1520,1520,https://elcatador.com/products/robert-mondavi-private-selection-pinot-noir
+1,El Catador,tinto,Robert Mondavi Reserve Cabernet Sauvignon,Robert Mondavi Winery,13800,13800,https://elcatador.com/products/robert-mondavi-reserve-cabernet-sauvignon
+1,El Catador,tinto,Ruffino Chianti,Ruffino,1290,1290,https://elcatador.com/products/ruffino-chianti
+1,El Catador,tinto,Ruffino Chianti Riserva Ducale Oro,Ruffino,3890,3890,https://elcatador.com/products/ruffino-chianti-riserva-ducale-oro
+1,El Catador,tinto,Rutini Malbec,Rutini,1980,1980,https://elcatador.com/products/rutinimalbec
+1,El Catador,tinto,Sandeman Ruby Porto,Sandeman,1290,1290,https://elcatador.com/products/sandeman-ruby-porto-1
+1,El Catador,tinto,Sandeman Tawny Porto,Sandeman,1290,1290,https://elcatador.com/products/sandeman-tawny-porto
+1,El Catador,tinto,Santa Rita Medalla Real Cabernet Sauvignon,Santa Rita,1880,1880,https://elcatador.com/products/santa-rita-medalla-real-cabernet-sauvignon
+1,El Catador,tinto,Santa Rita Reserva Merlot,Santa Rita,1290,1290,https://elcatador.com/products/santa-rita-reserva-merlot
+1,El Catador,tinto,Sardón,Terras Gauda,1550,1550,https://elcatador.com/products/sardon
+1,El Catador,tinto,Sartori Valpolicella,Sartori,890,890,https://elcatador.com/products/sartori-valpolicella
+1,El Catador,tinto,Secrets Red Blend,Secrets,1100,1100,https://elcatador.com/products/secrets-red-blend
+1,El Catador,tinto,Shafer Hillside Select Cabernet Sauvignon,Shafer,32500,32500,https://elcatador.com/products/shafer-hillside-select-cabernet-sauvignon
+1,El Catador,tinto,Shafer One Point Five Cabernet Sauvignon,Shafer,11700,11700,https://elcatador.com/products/shafer-one-point-five-cabernet-sauvignon
+1,El Catador,tinto,Shafer TD-9,Shafer,9600,9600,https://elcatador.com/products/shafer-td-9
+1,El Catador,tinto,Silk & Spice Red Blend,Sogrape Vinhos,1100,1100,https://elcatador.com/products/silk-spice-red-blend
+1,El Catador,tinto,Silver Oak Alexander Valley,Silver Oak,9980,9980,https://elcatador.com/products/silver-oak-alexander-valley
+1,El Catador,tinto,Stag's Leap Artemis Napa Valley Cabernet Sauvignon,Stag's Leap Wine Cellars,8980,8980,https://elcatador.com/products/stags-leap-artemis-napa-valley-cabernet-sauvignon
+1,El Catador,tinto,Stag's Leap S.L.V. Cabernet Sauvignon,Stag's Leap Wine Cellars,19800,19800,https://elcatador.com/products/stags-leap-s-l-v-cabernet-sauvignon
+1,El Catador,tinto,Termanthia,Numanthia,20800,20800,https://elcatador.com/products/termanthia
+1,El Catador,tinto,The Prisoner Red Wine,The Prisoner Wine Company,5800,5800,https://elcatador.com/products/the-prisoner-red-wine
+1,El Catador,tinto,Torre Muga  2016,Muga,8300,8300,https://elcatador.com/products/torre-muga
+1,El Catador,tinto,Trapiche Reserva Malbec,Trapiche,1050,1050,https://elcatador.com/products/trapiche-reserva-malbec
+1,El Catador,tinto,Trivento Golden Reserve Malbec,Trivento,2450,2450,https://elcatador.com/products/trivento-golden-reserve-malbec
+1,El Catador,tinto,Trivento Reserva Malbec,Trivento,1190,1190,https://elcatador.com/products/trivento-reserva-malbec
+1,El Catador,tinto,Tua Rita Perlato del Bosco Rosso,Tua Rita,4200,4200,https://elcatador.com/products/tua-rita-perlato-del-bosco-rosso
+1,El Catador,tinto,Uno Malbec,Antigal,1690,1690,https://elcatador.com/products/uno-malbec
+1,El Catador,tinto,"Unshackled Cabernet Sauvignon, Napa Valley",The Prisoner Wine Company,2990,2990,https://elcatador.com/products/unshackled-cabernet-sauvignon-napa-valley
+1,El Catador,tinto,Viña Maipo Cabernet Sauvignon 1.5 litros,Viña Maipo,1050,1050,https://elcatador.com/products/vina-maipo-cabernet-sauvignon-1-5-litros
+1,El Catador,tinto,Viña Maipo Classic Series Sweet Red,Viña Maipo,550,550,https://elcatador.com/products/vina-maipo-classic-series-sweet-red
+1,El Catador,tinto,Viña Maipo Merlot,Viña Maipo,550,550,https://elcatador.com/products/vina-maipo-merlot
+1,El Catador,tinto,Viña Sastre Crianza,Viña Sastre,2850,2850,https://elcatador.com/products/vina-sastre-crianza
+1,El Catador,tinto,Viña Sastre Pago De Santa Cruz,Viña Sastre,7350,7350,https://elcatador.com/products/vina-sastre-pago-de-santa-cruz
+1,El Catador,tinto,Viña Sastre Regina Vides,Viña Sastre,8950,8950,https://elcatador.com/products/vina-sastre-regina-vides
+1,El Catador,tinto,Viña Sastre Roble,Viña Sastre,1750,1750,https://elcatador.com/products/vina-sastre-roble
+1,Licoteca,tinto,Vino Aalto 0.75L,,44,44,https://licotecaonline.com/producto/vino-aalto-0-75-l/
+1,Licoteca,tinto,Vino Abadia Retuerta Seleccion Especial 0.75L,,28,28,https://licotecaonline.com/producto/vino-abadia-retuerta-seleccion-especial-0-75l/
+1,Licoteca,tinto,Vino Alma Exun 0.75L,,10,10,https://licotecaonline.com/producto/vino-exun-0-75-l/
+1,Licoteca,tinto,Vino Antaño Rioja 0.75L,,4,4,https://licotecaonline.com/producto/rioja-antano/
+1,Licoteca,tinto,Vino Arco Viejo 0.75L,,5,5,https://licotecaonline.com/producto/arco-viejo-tinto/
+1,Licoteca,tinto,Vino Arzuaga Crianza 0.75L,,18,18,https://licotecaonline.com/producto/arzuaga-crianza/
+1,Licoteca,tinto,Vino Arzuaga Crianza 1.5L,,44,44,https://licotecaonline.com/producto/vino-arzuaga-crianza-1-5-l/
+1,Licoteca,tinto,Vino Azpilicueta Crianza 0.75L,,8,8,https://licotecaonline.com/producto/rioja-azpilicueta/
+1,Licoteca,tinto,Vino Berberana Red Dragon 0.75L,,3,3,https://licotecaonline.com/producto/vino-berberana-red-dragon-0-75-l/
+1,Licoteca,tinto,Vino Beronia Crianza 0.75 L,,7,7,https://licotecaonline.com/producto/vino-beronia-crianza-0-75-l/
+1,Licoteca,tinto,Vino Bosque De Matasnos 0.75L,,29,29,https://licotecaonline.com/producto/bosque-de-matasnos-2016/
+1,Licoteca,tinto,Vino Carmelo Rodero 9 meses 0.75L,,13,13,https://licotecaonline.com/producto/carmelo-rodero-9-meses-0-75-l/
+1,Licoteca,tinto,Vino Carmelo Rodero Crianza 0.75L,,22,22,https://licotecaonline.com/producto/vino-carmelo-rodero-crianza-0-75l/
+1,Licoteca,tinto,Vino Carramimbre Roble 0.75L,,8,8,https://licotecaonline.com/producto/carramimbre-roble-2017/
+1,Licoteca,tinto,Vino Cepa 21 0.75L,,17,17,https://licotecaonline.com/producto/cepa-21/
+1,Licoteca,tinto,Vino Cesar Muñoz Magallanes Crianza 0.75L,,30,30,https://licotecaonline.com/producto/vino-cesar-munoz-magallanes-crianza-0-75-l/
+1,Licoteca,tinto,Vino Cillar de Silos 0.75L,,17,17,https://licotecaonline.com/producto/vino-cillar-de-silos-0-75l-crianza-ribera-duero/
+1,Licoteca,tinto,Vino Condado de Haza Crianza 0.75L,,11,11,https://licotecaonline.com/producto/condado-de-haza-crianza/
+1,Licoteca,tinto,Vino Cune Crianza 0.75L,,6,6,https://licotecaonline.com/producto/cune-crianza/
+1,Licoteca,tinto,Vino Cune Crianza 1.5L,,15,15,https://licotecaonline.com/producto/cune-rioja-1-5l/
+1,Licoteca,tinto,Vino Cune Rioja Reserva 0.75L,,11,11,https://licotecaonline.com/producto/vino-cune-rioja-reserva-0-75-l/
+1,Licoteca,tinto,Vino Dehesa de los Canonigos 0.75L,,18,18,https://licotecaonline.com/producto/dehesa-de-los-canonigos/
+1,Licoteca,tinto,Vino Dehesa la Granja 0.75L,,8,8,https://licotecaonline.com/producto/dehesa-la-granja/
+1,Licoteca,tinto,Vino Dehesa Valquejigoso 0.75L,,20,20,https://licotecaonline.com/producto/dehesa-valqueijoso/
+1,Licoteca,tinto,Vino Dos de Mayo 0.75L,,5,5,https://licotecaonline.com/producto/vino-dos-de-mayo-0-75-l/
+1,Licoteca,tinto,Vino el Coto Crianza 0.75L,,6,6,https://licotecaonline.com/producto/vino-el-coto-crianza-0-75-l/
+1,Licoteca,tinto,Vino El Ilusionista Crianza 0.75L,,10,10,https://licotecaonline.com/producto/vino-el-ilusionista-crianza-0-75-l/
+1,Licoteca,tinto,Vino El Ilusionista Roble 0.75L,,8,8,https://licotecaonline.com/producto/vino-el-ilusionista-roble-75-l/
+1,Licoteca,tinto,Vino Elias Mora Crianza 0.75L,,15,15,https://licotecaonline.com/producto/vino-elias-mora-crianza-0-75-l/
+1,Licoteca,tinto,Vino Emilio Moro 0.75L,,19,19,https://licotecaonline.com/producto/emilio-moro/
+1,Licoteca,tinto,Vino Emilio Moro 1.5L,,38,38,https://licotecaonline.com/producto/vino-emilio-moro-1-5-l/
+1,Licoteca,tinto,Vino Emilio Moro Malleolus 0.75L,,32,32,https://licotecaonline.com/producto/vino-emilio-moro-malleolus-comprar-vino-malleolus-online-emilio-moro/
+1,Licoteca,tinto,Vino Emilio Moro Malleolus 1.5L,,66,66,https://licotecaonline.com/producto/vino-emilio-moro-malleolus-1-5-l/
+1,Licoteca,tinto,Vino Emilio Moro Malleolus de Valderramiro 0.75L,,90,90,https://licotecaonline.com/producto/vino-emilio-moro-malleolus-de-valderramiro-0-75-l/
+1,Licoteca,tinto,Vino Emilio Moro Vendimia Seleccionada 0.75L,,26,26,https://licotecaonline.com/producto/emilio-moro-2017-vendimia-seleccionada/
+1,Licoteca,tinto,Vino Enate Crianza 0.75L,,9,9,https://licotecaonline.com/producto/enate-crianza/
+1,Licoteca,tinto,Vino Estola Reserva 0.75L,,4,4,https://licotecaonline.com/producto/vino-estola-reserva-0-75l/
+1,Licoteca,tinto,Vino Faustino I 0.75L,,21,21,https://licotecaonline.com/producto/faustino-i/
+1,Licoteca,tinto,Vino Figueroa Crianza 0.75L,,6,6,https://licotecaonline.com/producto/figueroa-crianza/
+1,Licoteca,tinto,Vino Finca La Estacada 12 meses 0.75L,,5,5,https://licotecaonline.com/producto/vino-tinto-la-estacada-12-meses/
+1,Licoteca,tinto,Vino Finca La Estacada 18 Meses 0.75L,,5,5,https://licotecaonline.com/producto/finca-la-estacada-18-meses/
+1,Licoteca,tinto,Vino Finca la Estacada 6 Meses 0.75L,,4,4,https://licotecaonline.com/producto/finca-la-estacada-6-meses/
+1,Licoteca,tinto,Vino Finca la Estacada Sequa Cabernet 0.75L,,12,12,https://licotecaonline.com/producto/vino-finca-estacada-sequa-cabernet-0-75-l/
+1,Licoteca,tinto,Vino Finca la Montesa Crianza 0.75L,,16,16,https://licotecaonline.com/producto/vino-finca-la-montesa-crianza/
+1,Licoteca,tinto,Vino Finca Resalso 0.75L,,9,9,https://licotecaonline.com/producto/finca-resalso-2017/
+1,Licoteca,tinto,Vino Fino Quinta Osborne 0.75L,,6,6,https://licotecaonline.com/producto/vino-fino-quinta-osborne-0-75-l/
+1,Licoteca,tinto,Vino Fuentespina 3 Meses 0.75L,,6,6,https://licotecaonline.com/producto/fuentespina-3-meses-0-75l/
+1,Licoteca,tinto,Vino Fuentespina Crianza 0.75L,,7,7,https://licotecaonline.com/producto/fuentespina-crianza/
+1,Curda 24,tinto,Vino Gato Negro Cabernet Sauvignon,,8,8,https://curda24.com/tienda/licoreria-delivery/licores/vino-gato-negro-cabernet-sauvignon/
+1,Licoteca,tinto,Vino Gran Condal Crianza 0.75L,,3,3,https://licotecaonline.com/producto/vino-gran-condal-crianza-0-75l/
+1,Licoteca,tinto,Vino Habla de la Tierra 0.75L,,8,8,https://licotecaonline.com/producto/habla-de-la-tierra/
+1,Licoteca,tinto,Vino Habla del Silencio 0.75L,,12,12,https://licotecaonline.com/producto/habla-del-silencio/
+1,Licoteca,tinto,Vino Heroico Mencía 0.75L,,6,6,https://licotecaonline.com/producto/vino-heroico-mencia-0-75-l/
+1,Licoteca,tinto,Vino Hito 0.75L,,12,12,https://licotecaonline.com/producto/vino-hito-0-75-l/
+1,Licoteca,tinto,Vino Juan Gil Plata Monastrell 0.75L,,12,12,https://licotecaonline.com/producto/juan-gil-plata-monastrell-2015/
+1,Licoteca,tinto,Vino Jumilla Juan Gil 0.75L,,7,7,https://licotecaonline.com/producto/jumilla-juan-gil/
+1,Licoteca,tinto,Vino Kina San Clemente 0.75L,,6,6,https://licotecaonline.com/producto/vino-kina-san-clemente-0-75-l/
+1,Licoteca,tinto,Vino La Felisa 0.75L,,25,25,https://licotecaonline.com/producto/la-felisa/
+1,Licoteca,tinto,Vino La Planta 0.75L,,9,9,https://licotecaonline.com/producto/la-planta/
+1,Licoteca,tinto,Vino La Planta 1.5L,,16,16,https://licotecaonline.com/producto/vino-la-planta-1-5-l/
+1,Licoteca,tinto,Vino Luis Cañas Rioja Reserva 0.7L,,17,17,https://licotecaonline.com/producto/rioja-luis-canas-reserva/
+1,Licoteca,tinto,Vino Macán Clásico Cosecha 2020 0.75L,,41,41,https://licotecaonline.com/producto/vino-macan-clasico-cosecha-2020-75-cl/
+1,Licoteca,tinto,Vino Macan Cosecha 2017 0.75L,,65,65,https://licotecaonline.com/producto/macan-cosecha-2017-0-75-l/
+1,Licoteca,tinto,Vino Mácula 0.75L,,13,13,https://licotecaonline.com/producto/vino-macula-0-75-l/
+1,Licoteca,tinto,Vino Malabrigo cosecha 0.75L,,30,30,https://licotecaonline.com/producto/vino-malabrigo-cosecha-0-75-l/
+1,Licoteca,tinto,Vino Malaga Virgen 0.75L,,8,8,https://licotecaonline.com/producto/malaga-virgen/
+1,Licoteca,tinto,Vino Marques de Caceres Reserva 0.75L,,10,10,https://licotecaonline.com/producto/marques-de-caceres-reserva/
+1,Licoteca,tinto,Vino Marques de Murrieta Reserva 0.75L,,21,21,https://licotecaonline.com/producto/marques-de-murrieta-reserva-2013/
+1,Licoteca,tinto,Vino Marques de Riscal Reserva 0.75L,,15,15,https://licotecaonline.com/producto/marques-de-riscal-reserva-0-75-l/
+1,Licoteca,tinto,Vino Marques de Riscal Reserva 1.5L,,36,36,https://licotecaonline.com/producto/vino-marques-de-riscal-reserva-1-5-l/
+1,Licoteca,tinto,Vino Matarromera Crianza 0.375L,,12,12,https://licotecaonline.com/producto/matarromera-crianza-375-cl/
+1,Licoteca,tinto,Vino Matarromera Crianza 1.5L,,45,45,https://licotecaonline.com/producto/vino-matarromera-crianza-1-5l/
+1,Licoteca,tinto,Vino Matsu el Pícaro 0.75L,,9,9,https://licotecaonline.com/producto/vino-matsu-el-picaro-0-75-l/
+1,Licoteca,tinto,Vino Matsu el Recio 0.75L,,16,16,https://licotecaonline.com/producto/matsu-el-recio/
+1,Licoteca,tinto,Vino Matsu el Viejo 0.75L,,33,33,https://licotecaonline.com/producto/matsu-el-viejo/
+1,Licoteca,tinto,Vino Mauro Cosecha 0.75L,,37,37,https://licotecaonline.com/producto/mauro-cosecha/
+1,Licoteca,tinto,Vino Mauro Magnum 1.5L,,79,79,https://licotecaonline.com/producto/vino-magnum-mauro-1-5-l/
+1,Licoteca,tinto,Vino Melior Tempranillo 0.75L,,7,7,https://licotecaonline.com/producto/melior-tempranillo/
+1,Licoteca,tinto,Vino Montecillo Edición Limitada 0.75L,,12,12,https://licotecaonline.com/producto/vino-montecillo-edicion-limitada-0-75-l/
+1,Licoteca,tinto,Vino Muga Rioja Crianza 0.75L,,18,18,https://licotecaonline.com/producto/rioja-muga-crianza/
+1,Licoteca,tinto,Vino Muga Seleccion Especial 0.75L,,32,32,https://licotecaonline.com/producto/muga-reserva/
+1,Licoteca,tinto,Vino Muga Seleccion Especial 1.5L,,61,61,https://licotecaonline.com/producto/vino-muga-seleccion-especial-1-5-l/
+1,Licoteca,tinto,Vino Oremus Furmint Mandolas Cosecha 2023 0.75L,,18,18,https://licotecaonline.com/producto/vino-oremus-furmit-mandolas-cosecha-2023-0-75l/
+1,Licoteca,tinto,Vino Pago de Capellanes Reserva 0.75L,,38,38,https://licotecaonline.com/producto/vino-pago-de-capellanes-reserva-0-75-l/
+1,Licoteca,tinto,Vino Pago de Carraovejas 0.75L,,36,36,https://licotecaonline.com/producto/vino-pago-de-carraovejas-0-75l/
+1,Licoteca,tinto,Vino Pago de Carraovejas 150 CL,,75,75,https://licotecaonline.com/producto/vino-pago-de-carraovejas-150-cl/
+1,Licoteca,tinto,Vino Pago de carraovejas anejon 0.75L,,82,82,https://licotecaonline.com/producto/vino-pago-de-carraovejas-anejon/
+1,Licoteca,tinto,Vino Pago de Carraovejas Cuesta de las Liebres 0.75L,,155,155,https://licotecaonline.com/producto/vino-pago-de-carraovejas-cuesta-de-las-liebres-0-75-l/
+1,Licoteca,tinto,Vino Pata Negra Crianza 0.75L,,2,2,https://licotecaonline.com/producto/pata-negra-crianza/
+1,Licoteca,tinto,Vino Pata Negra Rioja Crianza 0.75L,,4,4,https://licotecaonline.com/producto/vino-pata-negra-rioja-crianza-0-75-l/
+1,Licoteca,tinto,Vino Pata Negra Roble La Mancha 0.75L,,3,3,https://licotecaonline.com/producto/vino-pata-negra-roble-la-mancha-0-75-l/
+1,Licoteca,tinto,Vino Pata Negra Toro Tempranillo 0.75L,,4,4,https://licotecaonline.com/producto/pata-negra-toro-tempranillo/
+1,Licoteca,tinto,Vino Pedro Ximenez Nectar 0.75L,,10,10,https://licotecaonline.com/producto/pedro-ximenez-nectar/
+1,Licoteca,tinto,Vino Perrogatoraton 0.75L,,15,15,https://licotecaonline.com/producto/perro-gato-raton/
+1,Licoteca,tinto,Vino Pesquera Crianza 0.75L,,19,19,https://licotecaonline.com/producto/pesquera-crianza-vino-pesquera-crianza/
+1,Licoteca,tinto,Vino Petalos Bierzo 0.75L,,15,15,https://licotecaonline.com/producto/petalos-bierzo/
+1,Licoteca,tinto,Vino Petit Pittacum 0.75L,,6,6,https://licotecaonline.com/producto/petit-pittacum/
+1,Licoteca,tinto,Vino Pittacum 0.75L,,10,10,https://licotecaonline.com/producto/vino-pittacum-0-75-l/
+1,Licoteca,tinto,Vino Prado Enea Gran Reserva 0.75L,,65,65,https://licotecaonline.com/producto/vino-prado-enea-gran-reserva-0-75-l/
+1,Licoteca,tinto,Vino Prado Rey 0.75L,,7,7,https://licotecaonline.com/producto/prado-rey/
+1,Licoteca,tinto,Vino Predicador Rioja 0.75L,,22,22,https://licotecaonline.com/producto/vino-predicador-rioja-0-75l-onlie-rioja-vino-predicador/
+1,Licoteca,tinto,Vino Protos Crianza 0.75L,,15,15,https://licotecaonline.com/producto/vino-protos-crianza-0-75-l/
+1,Licoteca,tinto,Vino Protos Roble 0.75L,,8,8,https://licotecaonline.com/producto/protos-roble/
+1,Licoteca,tinto,Vino Pruno 0.75L,,12,12,https://licotecaonline.com/producto/pruno-2017/
+1,Licoteca,tinto,Vino Puerta de Alcalá Crianza 0.75L,,4,4,https://licotecaonline.com/producto/vino-puerta-de-alcala-crianza-0-75-l/
+1,Licoteca,tinto,Vino Ramon Bilbao Crianza 1.5L,,16,16,https://licotecaonline.com/producto/magnum-r-bilbao-crianza/
+1,Licoteca,tinto,Vino Ramon Bilbao Crianza Ed.Limitada 1.5L,,24,24,https://licotecaonline.com/producto/ramon-bilbao-crianza-ed-limitada-1-5l/
+1,Licoteca,tinto,Vino Ramon Bilbao Edicion Limitada 0.75L,,13,13,https://licotecaonline.com/producto/ramon-bilbao-edicion-limitada-070-cl/
+1,Licoteca,tinto,Vino Ribera Traslascuestas Roble 0.75L,,8,8,https://licotecaonline.com/producto/ribera-traslascuestas/
+1,Licoteca,tinto,Vino Sangue di Guida Cortesole 0.75L,,5,5,https://licotecaonline.com/producto/vino-sangue-di-guida-cortesol-0-75-l/
+1,Licoteca,tinto,Vino Señorio de Los Llanos Crianza 0.75L,,2,2,https://licotecaonline.com/producto/senorio-de-los-llanos-crianza/
+1,Licoteca,tinto,Vino Solera 1847 0.75L,,7,7,https://licotecaonline.com/producto/solera-1847/
+1,Licoteca,tinto,Vino Terras Gaudas 0.75L,,14,14,https://licotecaonline.com/producto/terras-gaudas/
+1,Licoteca,tinto,Vino Tomas Postigo 5º año 0.75L,,58,58,https://licotecaonline.com/producto/tomas-postigo-5-ano/
+1,Licoteca,tinto,Vino Traslascuestas Crianza 0.75L,,13,13,https://licotecaonline.com/producto/traslascuestas-crianza/
+1,Licoteca,tinto,Vino Tres Picos 0.75L,,15,15,https://licotecaonline.com/producto/vino-tres-picos-0-75-l/
+1,Licoteca,tinto,Vino Valle del Terso 0.75L,,1,1,https://licotecaonline.com/producto/vino-valle-del-terso-0-75-l/
+1,Licoteca,tinto,Vino Valquejigoso V2 0.75L,,48,48,https://licotecaonline.com/producto/vino-valqueijoso-v2-0-75-l/
+1,Licoteca,tinto,Vino Villacreces 0.75L,,26,26,https://licotecaonline.com/producto/vino-villacreces-0-75-l/
+1,Licoteca,tinto,Vino Viña Albali Reserva 0.75L,,4,4,https://licotecaonline.com/producto/albali-reserva/
+1,Licoteca,tinto,Vino Viña Albina Reserva 0.75L,,7,7,https://licotecaonline.com/producto/vina-albina-reserva/
+1,Licoteca,tinto,Vino Viña Ardanza Reserva 0.75L,,24,24,https://licotecaonline.com/producto/vina-ardanza-reserva/
+1,Licoteca,tinto,Vino Viña Mayor Crianza 0.75L,,8,8,https://licotecaonline.com/producto/vina-mayor-crianza/
+1,Licoteca,tinto,Vino Viña Mayor Roble 0.75L,,6,6,https://licotecaonline.com/producto/vina-mayor/
+1,Licoteca,tinto,Vino Viña Pomal Crianza 0.75L,,7,7,https://licotecaonline.com/producto/vina-pomal-crianza/
+1,Licoteca,tinto,Vino Viña Sastre Tinto Crianza 0.75L,,25,25,https://licotecaonline.com/producto/vina-sastre-tinto-crianza/
+1,Licoteca,tinto,Vino Viña Tondonia Reserva 0.75L,,43,43,https://licotecaonline.com/producto/vino-vina-tondonia-reserva-0-75-l/
+1,El Catador,tinto,Woodbridge Merlot,Robert Mondavi Woodbridge,890,890,https://elcatador.com/products/woodbridge-merlot
+1,El Catador,tinto,Woodbridge Red Blend,Woodbridge,950,950,https://elcatador.com/products/woodbridge-red-blend
+1,El Catador,tinto,Yellow Tail Shiraz,Yellow Tail,970,970,https://elcatador.com/products/yellow-tail-shiraz
+1,El Catador,tinto,Zaccagnini Montepulciano,Zaccagnini,1390,1390,https://elcatador.com/products/zaccagnini-montepulciano

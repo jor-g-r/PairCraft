@@ -91,12 +91,24 @@ request time. Executor: Claude session + `scripts/scout-retailers.ts`.
   taken verbatim from their tree API, works. El Kiosco attaches everything to
   parent category "Vino" (970 products); subcategories are empty.
 
-### VE — Venezuela (pending)
+### VE — Venezuela (run 2026-07-05)
 
-No national supermarket e-commerce at CO's scale. Likely path: specialist
-licorerías (e.g. Licores Mundiales, El Mundo del Licor — verify first) via
-step 2 probes; expect more agent-browser, less API. Corpus was verified
-manually by Jorge 2026-06-18 — the scout would add retailers + URLs.
+- **Landscape:** no scrapeable supermarket e-comm (Gama en Línea and Sigo
+  Costazul are custom SPAs); the two biggest licorerías are bot-blocked
+  (Licores Mundiales 403, Prodelsur 406). The scrapeable slice is specialist
+  e-shops — dollarized prices, delivery-first, Caracas-centric.
+- **Scouted:** Licoteca (WooCommerce, 266 — "Vinos" 235 + subcats), El Catador
+  (Shopify, 664 — surprisingly deep fine-wine catalog; product_type vocab is
+  per-store: "Champagne"/"Tinto", which forced widening the Shopify type
+  filter to color words), Curda 24 (WooCommerce, 17 — small but real). Total
+  947 rows → **788 candidates** (prices USD).
+- **Corpus check:** Jorge's 6 manual VE tags (2026-06-18) stand — the scout
+  sees 3 e-shops, not the full market, so absence here is NOT counter-
+  evidence. Scout-earned cuvée tags: **Moët Brut Impérial (Licoteca $45 +
+  El Catador), Protos Roble (both), Enate Chardonnay (Licoteca)**. Rejected
+  by the eyeball rule: Norton "Reserva" Malbec (tier above our Norton Malbec
+  — same call as DV Catena in AR). Ramón Bilbao Crianza corroborated
+  (magnum Ed. Limitada listing — fuzzy but the tag rests on Jorge anyway).
 
 ### CL — Chile (run 2026-07-05)
 

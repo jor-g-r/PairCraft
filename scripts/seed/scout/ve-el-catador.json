@@ -1,0 +1,5978 @@
+[
+  {
+    "retailer": "El Catador",
+    "name": "Veuve Clicquot Rich Rosé",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "price": 7600,
+    "available": false,
+    "url": "https://elcatador.com/products/veuve-clicquot-rich-rose-1"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Moët & Chandon  Ice Impérial Rosé Box Pharell Williams",
+    "brand": "Moët & Chandon",
+    "type": "espumoso",
+    "price": 8400,
+    "available": true,
+    "url": "https://elcatador.com/products/moet-chandon-ice-imperial-rose-box-pharell-williams"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Moët & Chandon Brut Impérial Box Pharell Williams",
+    "brand": "Moët & Chandon",
+    "type": "espumoso",
+    "price": 6900,
+    "available": true,
+    "url": "https://elcatador.com/products/moet-chandon-brut-imperial-box-pharell-williams"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Moët & Chandon  Ice Impérial Rosé 1.5 Lt",
+    "brand": "Moët & Chandon",
+    "type": "espumoso",
+    "price": 11500,
+    "available": true,
+    "url": "https://elcatador.com/products/moet-chandon-ice-imperial-rose-1-5-lt"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Trimbach Réserve Riesling",
+    "brand": "19 Crimes",
+    "type": "blanco",
+    "price": 3450,
+    "available": true,
+    "url": "https://elcatador.com/products/trimbach-reserve-riesling"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Cáceres Gran Reserva",
+    "brand": "Marqués de Cáceres",
+    "type": "tinto",
+    "price": 3250,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-caceres-gran-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Napa Cellars Cabernet Sauvignon",
+    "brand": "Napa Cellars",
+    "type": "tinto",
+    "price": 2980,
+    "available": true,
+    "url": "https://elcatador.com/products/napa-cellars-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Izadi El Regalo Blanco",
+    "brand": "Izadi",
+    "type": "blanco",
+    "price": 4600,
+    "available": false,
+    "url": "https://elcatador.com/products/izadi-el-regalo-blanco"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Veuve Clicquot Rich",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "price": 6700,
+    "available": true,
+    "url": "https://elcatador.com/products/veuve-clicquot-rich-1"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Antinori Villa Antinori Blanco",
+    "brand": "Antinori",
+    "type": "blanco",
+    "price": 1590,
+    "available": true,
+    "url": "https://elcatador.com/products/antinori-villa-antinori-blanco"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Izadi Selección Blanco",
+    "brand": "Izadi",
+    "type": "blanco",
+    "price": 1690,
+    "available": true,
+    "url": "https://elcatador.com/products/izadi-seleccion-blanco"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Emilio Moro La Revelía",
+    "brand": "Emilio Moro",
+    "type": "blanco",
+    "price": 3380,
+    "available": false,
+    "url": "https://elcatador.com/products/emilio-moro-la-revelia"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Bramare Paul Hobbs Malbec, Argentina",
+    "brand": "Viña Cobos",
+    "type": "tinto",
+    "price": 4900,
+    "available": true,
+    "url": "https://elcatador.com/products/bramare-paul-hobbs-malbec-argentina"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Cáceres Reserva",
+    "brand": "Marqués de Cáceres",
+    "type": "tinto",
+    "price": 1890,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-caceres-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Adegas Galegas Veigadares",
+    "brand": "Adegas Galegas",
+    "type": "blanco",
+    "price": 2350,
+    "available": false,
+    "url": "https://elcatador.com/products/adegas-galegas-veigadares"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Napa Cellars Merlot",
+    "brand": "Napa Cellars",
+    "type": "tinto",
+    "price": 2650,
+    "available": false,
+    "url": "https://elcatador.com/products/napa-cellars-merlot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Napa Cellars Chardonnay",
+    "brand": "Napa Cellars",
+    "type": "blanco",
+    "price": 2200,
+    "available": false,
+    "url": "https://elcatador.com/products/napa-cellars-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Joel Gott Sauvignon Blanc",
+    "brand": "Joel Gott",
+    "type": "blanco",
+    "price": 1580,
+    "available": false,
+    "url": "https://elcatador.com/products/joel-gott-sauvignon-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Protos Verdejo Reserva",
+    "brand": "Protos",
+    "type": "blanco",
+    "price": 2680,
+    "available": false,
+    "url": "https://elcatador.com/products/protos-verdejo-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Napa Cellars Pinot Noir",
+    "brand": "Napa Cellars",
+    "type": "tinto",
+    "price": 1980,
+    "available": false,
+    "url": "https://elcatador.com/products/napa-cellars-pinot-noir"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Orben Chocolate",
+    "brand": "Orben",
+    "type": "blanco",
+    "price": 3500,
+    "available": true,
+    "url": "https://elcatador.com/products/orben-chocolate"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Carmelo Rodero Raza Reserva",
+    "brand": "Carmelo Rodero",
+    "type": "tinto",
+    "price": 4980,
+    "available": true,
+    "url": "https://elcatador.com/products/carmelo-rodero-raza-reserva-2"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Carmelo Rodero Raza Reserva",
+    "brand": "Carmelo Rodero",
+    "type": "tinto",
+    "price": 4980,
+    "available": true,
+    "url": "https://elcatador.com/products/carmelo-rodero-raza-reserva-1"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Arzuaga Crianza",
+    "brand": "Arzuaga",
+    "type": "tinto",
+    "price": 2790,
+    "available": true,
+    "url": "https://elcatador.com/products/arzuaga-crianza-1"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Termanthia",
+    "brand": "Numanthia",
+    "type": "tinto",
+    "price": 20800,
+    "available": true,
+    "url": "https://elcatador.com/products/termanthia"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Numanthia",
+    "brand": "Numanthia",
+    "type": "tinto",
+    "price": 6500,
+    "available": true,
+    "url": "https://elcatador.com/products/numanthia"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Numanthia Termes",
+    "brand": "Numanthia",
+    "type": "tinto",
+    "price": 3700,
+    "available": false,
+    "url": "https://elcatador.com/products/numanthia-termes"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Cloudy Bay Te Koko Sauvignon Blanc",
+    "brand": "Cloudy Bay",
+    "type": "blanco",
+    "price": 8800,
+    "available": true,
+    "url": "https://elcatador.com/products/cloudy-bay-te-koko-sauvignon-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Cloudy Bay Pinot Noir",
+    "brand": "Cloudy Bay",
+    "type": "tinto",
+    "price": 5800,
+    "available": false,
+    "url": "https://elcatador.com/products/cloudy-bay-pinot-noir"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Cloudy Bay Sauvignon Blanc",
+    "brand": "Cloudy Bay",
+    "type": "blanco",
+    "price": 4600,
+    "available": true,
+    "url": "https://elcatador.com/products/cloudy-bay-sauvignon-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Nobilo Sauvignon Blanc",
+    "brand": "Nobilo",
+    "type": "blanco",
+    "price": 1750,
+    "available": false,
+    "url": "https://elcatador.com/products/nobilo-sauvignon-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Beringer California Pinot Grigio",
+    "brand": "Beringer",
+    "type": "blanco",
+    "price": 870,
+    "available": true,
+    "url": "https://elcatador.com/products/beringer-california-pinot-grigio"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Veuve Clicquot Rich Rosé",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "price": 7600,
+    "available": true,
+    "url": "https://elcatador.com/products/veuve-clicquot-rich-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Dom Pérignon Plénitude 3 Blanc",
+    "brand": "Dom Pérignon",
+    "type": "espumoso",
+    "price": 330000,
+    "available": true,
+    "url": "https://elcatador.com/products/dom-perignon-plenitude-3-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Veuve Clicquot La Grande Dame Rosé",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "price": 36500,
+    "available": true,
+    "url": "https://elcatador.com/products/veuve-clicquot-la-grande-dame-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Veuve Clicquot Demi Sec",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "price": 6400,
+    "available": false,
+    "url": "https://elcatador.com/products/veuve-clicquot-demi-sec"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Veuve Clicquot Rich",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "price": 6700,
+    "available": true,
+    "url": "https://elcatador.com/products/veuve-clicquot-rich"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Veuve Clicquot La Grande Dame Vintage",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "price": 19800,
+    "available": false,
+    "url": "https://elcatador.com/products/veuve-clicquot-la-grande-dame-vintage"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Veuve Clicquot Rosé",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "price": 6980,
+    "available": false,
+    "url": "https://elcatador.com/products/veuve-clicquot-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Ruinart Rosé",
+    "brand": "Ruinart",
+    "type": "espumoso",
+    "price": 9500,
+    "available": true,
+    "url": "https://elcatador.com/products/ruinart-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Ruinart R Brut",
+    "brand": "Ruinart",
+    "type": "espumoso",
+    "price": 6980,
+    "available": true,
+    "url": "https://elcatador.com/products/ruinart-r-brut"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Ruinart Blanc de Blancs",
+    "brand": "Ruinart",
+    "type": "espumoso",
+    "price": 8980,
+    "available": false,
+    "url": "https://elcatador.com/products/ruinart-blanc-de-blancs"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Moët & Chandon Nectar Rosé Impérial",
+    "brand": "Moët & Chandon",
+    "type": "espumoso",
+    "price": 7400,
+    "available": false,
+    "url": "https://elcatador.com/products/moet-chandon-nectar-rose-imperial"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Moët & Chandon Nectar Impérial",
+    "brand": "Moët & Chandon",
+    "type": "espumoso",
+    "price": 5980,
+    "available": true,
+    "url": "https://elcatador.com/products/moet-chandon-nectar-imperial"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Krug Vintage 2008",
+    "brand": "Krug",
+    "type": "espumoso",
+    "price": 45000,
+    "available": false,
+    "url": "https://elcatador.com/products/krug-vintage-2008"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Krug Rosé",
+    "brand": "Krug",
+    "type": "espumoso",
+    "price": 37800,
+    "available": true,
+    "url": "https://elcatador.com/products/krug-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Krug Vintage 2006",
+    "brand": "Krug",
+    "type": "espumoso",
+    "price": 37800,
+    "available": false,
+    "url": "https://elcatador.com/products/krug-vintage-2006"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Grug Grande Cuvée",
+    "brand": "Krug",
+    "type": "espumoso",
+    "price": 25900,
+    "available": true,
+    "url": "https://elcatador.com/products/grug-grande-cuvee"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Moët & Chandon Grand Vintage",
+    "brand": "Moët & Chandon",
+    "type": "espumoso",
+    "price": 7980,
+    "available": true,
+    "url": "https://elcatador.com/products/moet-chandon-grand-vintage"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Moët & Chandon Brut Impérial",
+    "brand": "Moët & Chandon",
+    "type": "espumoso",
+    "price": 5290,
+    "available": true,
+    "url": "https://elcatador.com/products/moet-chandon-brut-imperial"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Dom Pérignon Rosé",
+    "brand": "Dom Pérignon",
+    "type": "espumoso",
+    "price": 41900,
+    "available": true,
+    "url": "https://elcatador.com/products/dom-perignon-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Dom Pérignon Vintage",
+    "brand": "Dom Pérignon",
+    "type": "espumoso",
+    "price": 23800,
+    "available": true,
+    "url": "https://elcatador.com/products/dom-perignon-vintage"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Krug Vintage 2011",
+    "brand": "Krug",
+    "type": "espumoso",
+    "price": 32700,
+    "available": false,
+    "url": "https://elcatador.com/products/krug-vintage-2011"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Dom Perignon Rosé Plénitude 2",
+    "brand": "Dom Pérignon",
+    "type": "espumoso",
+    "price": 159000,
+    "available": false,
+    "url": "https://elcatador.com/products/dom-perignon-rose-plenitude-2"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Veuve Clicquot Vintage Rosé",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "price": 8400,
+    "available": false,
+    "url": "https://elcatador.com/products/veuve-clicquot-vintage-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Moët & Chandon Grand Vintage Rosé",
+    "brand": "Moët & Chandon",
+    "type": "espumoso",
+    "price": 7300,
+    "available": true,
+    "url": "https://elcatador.com/products/moet-chandon-grand-vintage-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Moët & Chandon  Ice Impérial",
+    "brand": "Moët & Chandon",
+    "type": "espumoso",
+    "price": 5980,
+    "available": true,
+    "url": "https://elcatador.com/products/moet-chandon-ice-imperial"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Moët & Chandon  Ice Impérial Rosé",
+    "brand": "Moët & Chandon",
+    "type": "espumoso",
+    "price": 6980,
+    "available": true,
+    "url": "https://elcatador.com/products/moet-chandon-ice-imperial-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Veuve Cliquot Yellow Label",
+    "brand": "Veuve Clicquot",
+    "type": "espumoso",
+    "price": 5980,
+    "available": true,
+    "url": "https://elcatador.com/products/veuve-cliquot-yellow-label"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santa Rita 120 Sauvignon blanc 187ml",
+    "brand": "Santa Rita",
+    "type": "blanco",
+    "price": 260,
+    "available": true,
+    "url": "https://elcatador.com/products/santa-rita-120-sauvignon-blanc-187ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Antinori Calafuria Rosato",
+    "brand": "Antinori",
+    "type": "rosado",
+    "price": 1980,
+    "available": true,
+    "url": "https://elcatador.com/products/antinori-calafuria-rosato"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Carmelo Rodero Roble 9 Meses",
+    "brand": "Carmelo Rodero",
+    "type": "tinto",
+    "price": 1980,
+    "available": true,
+    "url": "https://elcatador.com/products/carmelo-rodero-roble-9-meses"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Tua Rita Perlato del Bosco Rosso",
+    "brand": "Tua Rita",
+    "type": "tinto",
+    "price": 4200,
+    "available": false,
+    "url": "https://elcatador.com/products/tua-rita-perlato-del-bosco-rosso"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Cáceres Gaudium Reserva",
+    "brand": "Marqués de Cáceres",
+    "type": "tinto",
+    "price": 6800,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-caceres-gaudium-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Cáceres Deusa Nai Albariño",
+    "brand": "Marqués de Cáceres",
+    "type": "blanco",
+    "price": 1690,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-caceres-deusa-nai-albarino"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Cáceres Blanco",
+    "brand": "Marqués de Cáceres",
+    "type": "blanco",
+    "price": 1250,
+    "available": false,
+    "url": "https://elcatador.com/products/marques-de-caceres-blanco"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Cáceres Antea Edición Limitada",
+    "brand": "Marqués de Cáceres",
+    "type": "blanco",
+    "price": 1450,
+    "available": false,
+    "url": "https://elcatador.com/products/marques-de-caceres-antea-edicion-limitada"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "La Capilla Crianza",
+    "brand": "Marqués de Cáceres",
+    "type": "tinto",
+    "price": 2350,
+    "available": false,
+    "url": "https://elcatador.com/products/la-capilla-crianza"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Joel Gott Pinot Noir",
+    "brand": "Joel Gott",
+    "type": "tinto",
+    "price": 1980,
+    "available": true,
+    "url": "https://elcatador.com/products/joel-gott-pinot-noir"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Joel Gott 815 Cabernet Sauvignon",
+    "brand": "Joel Gott",
+    "type": "tinto",
+    "price": 1980,
+    "available": true,
+    "url": "https://elcatador.com/products/joel-gott-815-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Fefiñanes Albariño",
+    "brand": "Fefiñanes",
+    "type": "blanco",
+    "price": 2390,
+    "available": true,
+    "url": "https://elcatador.com/products/fefinanes-albarino"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "La Fiole Côtes du Rhône",
+    "brand": "La Fiole",
+    "type": "tinto",
+    "price": 1100,
+    "available": true,
+    "url": "https://elcatador.com/products/la-fiole-cotes-du-rhone"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "La Fiole Châteauneuf-du-Pape",
+    "brand": "La Fiole",
+    "type": "tinto",
+    "price": 3400,
+    "available": true,
+    "url": "https://elcatador.com/products/la-fiole-chateauneuf-du-pape"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Bosque de Matasnos",
+    "brand": "Bosque de Matasnos",
+    "type": "tinto",
+    "price": 4100,
+    "available": false,
+    "url": "https://elcatador.com/products/bosque-de-matasnos"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Montevertine",
+    "brand": "19 Crimes",
+    "type": "tinto",
+    "price": 6900,
+    "available": false,
+    "url": "https://elcatador.com/products/montevertine"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Grand Regnard Chablis",
+    "brand": "Régnard",
+    "type": "blanco",
+    "price": 4850,
+    "available": true,
+    "url": "https://elcatador.com/products/grand-regnard-chablis"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Hacienda Monasterio 1.5 Lt",
+    "brand": "Hacienda Monasterio",
+    "type": "tinto",
+    "price": 9800,
+    "available": true,
+    "url": "https://elcatador.com/products/hacienda-monasterio-1-5-lt"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Sardón",
+    "brand": "Terras Gauda",
+    "type": "tinto",
+    "price": 1550,
+    "available": true,
+    "url": "https://elcatador.com/products/sardon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Flor de Vetus",
+    "brand": "Flor de Vetus",
+    "type": "blanco",
+    "price": 1450,
+    "available": true,
+    "url": "https://elcatador.com/products/flor-de-vetus"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Aiurri",
+    "brand": "Aiurri",
+    "type": "tinto",
+    "price": 4950,
+    "available": true,
+    "url": "https://elcatador.com/products/aiurri"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Izadi El Regalo",
+    "brand": "Izadi",
+    "type": "tinto",
+    "price": 4400,
+    "available": true,
+    "url": "https://elcatador.com/products/izadi-el-regalo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Finca Villacreces Pruno",
+    "brand": "Finca Villacreces",
+    "type": "tinto",
+    "price": 1650,
+    "available": true,
+    "url": "https://elcatador.com/products/finca-villacreces-pruno"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Palacio de Bornos Sauvignon Blanc",
+    "brand": "Palacio de Bornos",
+    "type": "blanco",
+    "price": 1250,
+    "available": true,
+    "url": "https://elcatador.com/products/palacio-de-bornos-sauvignon-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Vizhoja",
+    "brand": "Marqués de Vizhoja",
+    "type": "blanco",
+    "price": 980,
+    "available": false,
+    "url": "https://elcatador.com/products/marques-de-vizhoja"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Borsao Tres Picos",
+    "brand": "Borsao",
+    "type": "tinto",
+    "price": 2100,
+    "available": false,
+    "url": "https://elcatador.com/products/borsao-tres-picos"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Murrieta Reserva 1.5 litros",
+    "brand": "Marqués de Murrieta",
+    "type": "tinto",
+    "price": 6350,
+    "available": false,
+    "url": "https://elcatador.com/products/marques-de-murrieta-reserva-1-5-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Agusti Torello Celler Kripta Brut Reserva",
+    "brand": "Agustí Torello Mata",
+    "type": "espumoso",
+    "price": 1580,
+    "available": false,
+    "url": "https://elcatador.com/products/agusti-torello-celler-kripta-brut-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Caymus the Walking Fool",
+    "brand": "Caymus",
+    "type": "tinto",
+    "price": 4680,
+    "available": false,
+    "url": "https://elcatador.com/products/caymus-the-walking-fool"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Austin Cabernet Sauvignon",
+    "brand": "Hope Family",
+    "type": "tinto",
+    "price": 2980,
+    "available": true,
+    "url": "https://elcatador.com/products/austin-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Milsetentayseis",
+    "brand": "Pago de Carraovejas",
+    "type": "tinto",
+    "price": 6490,
+    "available": true,
+    "url": "https://elcatador.com/products/milsetentayseis"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Four Vines The Biker Old Vine Zinfandel",
+    "brand": "Four Vines",
+    "type": "tinto",
+    "price": 1790,
+    "available": true,
+    "url": "https://elcatador.com/products/four-vines-the-biker-old-vine-zinfandel"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Post & Beam Cabernet Sauvignon",
+    "brand": "Far Niente",
+    "type": "tinto",
+    "price": 4580,
+    "available": true,
+    "url": "https://elcatador.com/products/post-beam-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Bardos Crianza, Ribera del Duero",
+    "brand": "Lopez de Haro",
+    "type": "tinto",
+    "price": 1650,
+    "available": false,
+    "url": "https://elcatador.com/products/bardos-crianza-ribera-del-duero"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Louis Roederer Cristal Rosé",
+    "brand": "Louis Roderer",
+    "type": "espumoso",
+    "price": 39800,
+    "available": false,
+    "url": "https://elcatador.com/products/louis-roederer-cristal-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Antinori Tignanelo 1.5 litros",
+    "brand": "Antinori",
+    "type": "tinto",
+    "price": 24500,
+    "available": true,
+    "url": "https://elcatador.com/products/antinori-tignanelo-1-5-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Viña Sastre Roble",
+    "brand": "Viña Sastre",
+    "type": "tinto",
+    "price": 1750,
+    "available": true,
+    "url": "https://elcatador.com/products/vina-sastre-roble"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Uno Malbec",
+    "brand": "Antigal",
+    "type": "tinto",
+    "price": 1690,
+    "available": true,
+    "url": "https://elcatador.com/products/uno-malbec"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Shafer TD-9",
+    "brand": "Shafer",
+    "type": "tinto",
+    "price": 9600,
+    "available": false,
+    "url": "https://elcatador.com/products/shafer-td-9"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Riesling Hugel",
+    "brand": "Hugel",
+    "type": "blanco",
+    "price": 2390,
+    "available": false,
+    "url": "https://elcatador.com/products/riesling-hugel"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Norton Privada Estate Reserve",
+    "brand": "Norton",
+    "type": "tinto",
+    "price": 2500,
+    "available": true,
+    "url": "https://elcatador.com/products/norton-privada-estate-reserve"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Montecastro Reserva",
+    "brand": "Montecastro",
+    "type": "tinto",
+    "price": 3350,
+    "available": true,
+    "url": "https://elcatador.com/products/montecastro-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Masi Amarone Riserva di Costasera",
+    "brand": "Masi",
+    "type": "tinto",
+    "price": 6700,
+    "available": false,
+    "url": "https://elcatador.com/products/masi-amarone-riserva-di-costasera"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marchese Di Borgosole Salice Salentino Riserva",
+    "brand": "Marchese di Borgosole",
+    "type": "tinto",
+    "price": 1280,
+    "available": false,
+    "url": "https://elcatador.com/products/marchese-di-borgosole-salice-salentino-riserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Caymus Suisun Grand Durif",
+    "brand": "Caymus",
+    "type": "tinto",
+    "price": 7180,
+    "available": true,
+    "url": "https://elcatador.com/products/caymus-suisun-grand-durif"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Arzuaga Fan D'Oro",
+    "brand": "Arzuaga",
+    "type": "blanco",
+    "price": 1890,
+    "available": true,
+    "url": "https://elcatador.com/products/arzuaga-fan-doro"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Antinori Conte Della Vipera",
+    "brand": "Antinori",
+    "type": "blanco",
+    "price": 2795,
+    "available": false,
+    "url": "https://elcatador.com/products/antinori-conte-della-vipera"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Lopez de Haro Edición Limitada",
+    "brand": "Lopez de Haro",
+    "type": "tinto",
+    "price": 1390,
+    "available": true,
+    "url": "https://elcatador.com/products/lopez-de-haro-edicion-limitada"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Cinco Islas Albariño",
+    "brand": "Cinco Islas",
+    "type": "blanco",
+    "price": 1750,
+    "available": false,
+    "url": "https://elcatador.com/products/cinco-islas-albarino"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Boen California Pinot Noir",
+    "brand": "Boen",
+    "type": "tinto",
+    "price": 2590,
+    "available": true,
+    "url": "https://elcatador.com/products/boen-california-pinot-noir"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santa Margherita Prosecco Brut",
+    "brand": "Santa Margherita",
+    "type": "espumoso",
+    "price": 1650,
+    "available": true,
+    "url": "https://elcatador.com/products/santa-margherita-prosecco-brut"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Billecart Salmon Brut Reserve",
+    "brand": "Billecart-Salmon",
+    "type": "espumoso",
+    "price": 5980,
+    "available": true,
+    "url": "https://elcatador.com/products/billecart-salmon-brut-reserve"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Perrier-Jouët Blason Rosé",
+    "brand": "Perrier-Jouët",
+    "type": "espumoso",
+    "price": 7980,
+    "available": true,
+    "url": "https://elcatador.com/products/perrier-jouet-blason-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Perrier-Jouët Grand Brut",
+    "brand": "Perrier-Jouët",
+    "type": "espumoso",
+    "price": 6250,
+    "available": true,
+    "url": "https://elcatador.com/products/perrier-jouet-grand-brut"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Billecart Salmon Brut Rosé",
+    "brand": "Billecart-Salmon",
+    "type": "espumoso",
+    "price": 9480,
+    "available": true,
+    "url": "https://elcatador.com/products/billecart-salmon-brut-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Segura Viudas Brut Vintage Gran Reserva",
+    "brand": "Segura Viudas",
+    "type": "espumoso",
+    "price": 1690,
+    "available": true,
+    "url": "https://elcatador.com/products/segura-viudas-brut-vintage-gran-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Emilio Moro 375 ml",
+    "brand": "Emilio Moro",
+    "type": "tinto",
+    "price": 1550,
+    "available": true,
+    "url": "https://elcatador.com/products/emilio-moro-375-ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Emilio Moro Malleolus de Valderramiro",
+    "brand": "Emilio Moro",
+    "type": "tinto",
+    "price": 11980,
+    "available": true,
+    "url": "https://elcatador.com/products/emilio-moro-malleolus-de-valderramiro"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Emilio Moro Malleolus 1.5 litros",
+    "brand": "Emilio Moro",
+    "type": "tinto",
+    "price": 10400,
+    "available": false,
+    "url": "https://elcatador.com/products/emilio-moro-malleolus-1-5-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Arzuaga Reserva Especial",
+    "brand": "Arzuaga",
+    "type": "tinto",
+    "price": 6980,
+    "available": true,
+    "url": "https://elcatador.com/products/arzuaga-reserva-especial"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Abadía de San Campio Albariño",
+    "brand": "Terras Gauda",
+    "type": "blanco",
+    "price": 1590,
+    "available": true,
+    "url": "https://elcatador.com/products/abadia-de-san-campio-albarino"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Cepa 21",
+    "brand": "Cepa 21",
+    "type": "tinto",
+    "price": 2590,
+    "available": true,
+    "url": "https://elcatador.com/products/cepa-21"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Monteabellón 14 Meses, Ribera del Duero",
+    "brand": "Monteabellón",
+    "type": "tinto",
+    "price": 1980,
+    "available": true,
+    "url": "https://elcatador.com/products/monteabellon-14-meses-ribera-del-duero-1"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Cáceres Excellens Cuvée Especial",
+    "brand": "Marqués de Cáceres",
+    "type": "tinto",
+    "price": 1650,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-caceres-excellens-cuvee-especial"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pazo Pondal Albariño",
+    "brand": "Pazo Pondal",
+    "type": "blanco",
+    "price": 1950,
+    "available": false,
+    "url": "https://elcatador.com/products/pazo-pondal-albarino"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Perrier-Jouët Blanc de Blancs",
+    "brand": "Perrier-Jouët",
+    "type": "espumoso",
+    "price": 8350,
+    "available": true,
+    "url": "https://elcatador.com/products/perrier-jouet-blanc-de-blancs"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Menade Sauvignon Blanc",
+    "brand": "Menade",
+    "type": "blanco",
+    "price": 1390,
+    "available": true,
+    "url": "https://elcatador.com/products/menade-sauvignon-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "LAN 7 metros",
+    "brand": "LAN",
+    "type": "tinto",
+    "price": 1750,
+    "available": true,
+    "url": "https://elcatador.com/products/lan-7-metros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "My Zero Blanco",
+    "brand": "Henkell",
+    "type": "blanco",
+    "price": 980,
+    "available": true,
+    "url": "https://elcatador.com/products/my-zero-blanco"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Cáceres Verdejo",
+    "brand": "Marqués de Cáceres",
+    "type": "blanco",
+    "price": 1080,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-caceres-verdejo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Emilio Moro Malleolus",
+    "brand": "Emilio Moro",
+    "type": "tinto",
+    "price": 4590,
+    "available": true,
+    "url": "https://elcatador.com/products/emilio-moro-malleolus"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Viña Sastre Pago De Santa Cruz",
+    "brand": "Viña Sastre",
+    "type": "tinto",
+    "price": 7350,
+    "available": true,
+    "url": "https://elcatador.com/products/vina-sastre-pago-de-santa-cruz"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Bonanza Cabernet Sauvignon",
+    "brand": "Wagner Family of Wines",
+    "type": "tinto",
+    "price": 2380,
+    "available": true,
+    "url": "https://elcatador.com/products/bonanza-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "O Luar do Sil Sobre Lías Godello",
+    "brand": "Pago de los Capellanes",
+    "type": "blanco",
+    "price": 2850,
+    "available": true,
+    "url": "https://elcatador.com/products/o-luar-do-sil-sobre-lias-godello"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pago de los Capellanes El Nogal",
+    "brand": "Pago de los Capellanes",
+    "type": "tinto",
+    "price": 7980,
+    "available": true,
+    "url": "https://elcatador.com/products/pago-de-los-capellanes-el-nogal"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "O Luar do Sil godello",
+    "brand": "Pago de los Capellanes",
+    "type": "blanco",
+    "price": 1980,
+    "available": true,
+    "url": "https://elcatador.com/products/o-luar-do-sil-godello"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Granbazán Albariño Etiqueta Ámbar",
+    "brand": "Granbazán",
+    "type": "blanco",
+    "price": 2450,
+    "available": true,
+    "url": "https://elcatador.com/products/granbazan-albarino-etiqueta-ambar"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Austin Hope Cabernet Sauvignon",
+    "brand": "Hope Family",
+    "type": "tinto",
+    "price": 6980,
+    "available": true,
+    "url": "https://elcatador.com/products/austin-hope-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Argiano Solengo Toscana IGT",
+    "brand": "Argiano",
+    "type": "tinto",
+    "price": 7200,
+    "available": true,
+    "url": "https://elcatador.com/products/argiano-solengo-toscana-igt"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Viña Sastre Crianza",
+    "brand": "Viña Sastre",
+    "type": "tinto",
+    "price": 2850,
+    "available": true,
+    "url": "https://elcatador.com/products/vina-sastre-crianza"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Protos 27",
+    "brand": "Protos",
+    "type": "tinto",
+    "price": 2980,
+    "available": true,
+    "url": "https://elcatador.com/products/protos-27"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pesquera Reserva",
+    "brand": "Alejandro Fernandez",
+    "type": "tinto",
+    "price": 4480,
+    "available": true,
+    "url": "https://elcatador.com/products/pesquera-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Carmelo Rodero Crianza",
+    "brand": "Carmelo Rodero",
+    "type": "tinto",
+    "price": 3180,
+    "available": true,
+    "url": "https://elcatador.com/products/carmelo-rodero-crianza"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Arienzo Crianza",
+    "brand": "Marqués de Riscal",
+    "type": "tinto",
+    "price": 1250,
+    "available": true,
+    "url": "https://elcatador.com/products/arienzo-crianza"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Arzuaga Reserva",
+    "brand": "Arzuaga",
+    "type": "tinto",
+    "price": 4650,
+    "available": true,
+    "url": "https://elcatador.com/products/arzuaga-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Muga Reserva",
+    "brand": "Muga",
+    "type": "tinto",
+    "price": 2950,
+    "available": true,
+    "url": "https://elcatador.com/products/muga-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Domaines By Ott Rosé",
+    "brand": "Domaine OTT",
+    "type": "rosado",
+    "price": 2390,
+    "available": true,
+    "url": "https://elcatador.com/products/domaines-by-ott-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Hacienda Monasterio Reserva",
+    "brand": "Hacienda Monasterio",
+    "type": "tinto",
+    "price": 7900,
+    "available": true,
+    "url": "https://elcatador.com/products/hacienda-monasterio-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Billecart Salmon Blanc De Blancs Grand Cru",
+    "brand": "Billecart-Salmon",
+    "type": "espumoso",
+    "price": 9500,
+    "available": true,
+    "url": "https://elcatador.com/products/billecart-salmon-blanc-de-blancs-grand-cru"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Cosme Palacio Crianza",
+    "brand": "Glorioso",
+    "type": "tinto",
+    "price": 2290,
+    "available": true,
+    "url": "https://elcatador.com/products/cosme-palacio-crianza"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Hacienda Monasterio",
+    "brand": "Hacienda Monasterio",
+    "type": "tinto",
+    "price": 5150,
+    "available": true,
+    "url": "https://elcatador.com/products/hacienda-monasterio"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Culmen Reserva 2015",
+    "brand": "LAN",
+    "type": "tinto",
+    "price": 5890,
+    "available": false,
+    "url": "https://elcatador.com/products/culmen-reserva-2015"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Riscal Baron De Chirel",
+    "brand": "Marqués de Riscal",
+    "type": "tinto",
+    "price": 11500,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-riscal-baron-de-chirel"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pago de Carraovejas 1.5 litros",
+    "brand": "Pago de Carraovejas",
+    "type": "tinto",
+    "price": 10900,
+    "available": true,
+    "url": "https://elcatador.com/products/pago-de-carraovejas-1-5-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Prado Enea Gran Reserva",
+    "brand": "Muga",
+    "type": "tinto",
+    "price": 7980,
+    "available": true,
+    "url": "https://elcatador.com/products/prado-enea-gran-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Terras Gauda Albariño",
+    "brand": "Terras Gauda",
+    "type": "blanco",
+    "price": 1980,
+    "available": true,
+    "url": "https://elcatador.com/products/terras-gauda-albarino"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Borsao Selección",
+    "brand": "Borsao",
+    "type": "tinto",
+    "price": 890,
+    "available": false,
+    "url": "https://elcatador.com/products/borsao-seleccion"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Ménage à Trois Midnight Dark Red Blend",
+    "brand": "Ménage à Trois",
+    "type": "tinto",
+    "price": 1290,
+    "available": true,
+    "url": "https://elcatador.com/products/menage-a-trois-midnight-dark-red-blend"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Ménage à Trois Decadence Cabernet Sauvignon",
+    "brand": "Ménage à Trois",
+    "type": "tinto",
+    "price": 1290,
+    "available": true,
+    "url": "https://elcatador.com/products/menage-a-trois-decadence-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Ménage à T7814rois Silk Soft Red Blend",
+    "brand": "Ménage à Trois",
+    "type": "tinto",
+    "price": 1280,
+    "available": true,
+    "url": "https://elcatador.com/products/menage-a-trois-silk-soft-red-blend"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "des",
+    "brand": "Ménage à Trois",
+    "type": "tinto",
+    "price": 1290,
+    "available": false,
+    "url": "https://elcatador.com/products/des"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Ménage à Trois Red Blend",
+    "brand": "Ménage à Trois",
+    "type": "tinto",
+    "price": 1280,
+    "available": true,
+    "url": "https://elcatador.com/products/menage-a-trois-red-blend"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pago de los Capellanes Crianza",
+    "brand": "Pago de los Capellanes",
+    "type": "tinto",
+    "price": 3750,
+    "available": true,
+    "url": "https://elcatador.com/products/pago-de-los-capellanes-crianza"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "La Fiole Réserve Côtes du Rhône",
+    "brand": "La Fiole",
+    "type": "tinto",
+    "price": 1750,
+    "available": true,
+    "url": "https://elcatador.com/products/la-fiole-reserve-cotes-du-rhone"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "PROTOS 9 MESES",
+    "brand": "Protos",
+    "type": "tinto",
+    "price": 1750,
+    "available": true,
+    "url": "https://elcatador.com/products/protos-9-meses"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Altos de Torona Albariño",
+    "brand": "Altos de Torona",
+    "type": "blanco",
+    "price": 1550,
+    "available": false,
+    "url": "https://elcatador.com/products/altos-de-torona-albarino"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Argiano Non Confunditur Toscana IGT",
+    "brand": "Argiano",
+    "type": "tinto",
+    "price": 1950,
+    "available": true,
+    "url": "https://elcatador.com/products/argiano-non-confunditur-toscana-igt"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pesquera Crianza",
+    "brand": "Alejandro Fernandez",
+    "type": "tinto",
+    "price": 2690,
+    "available": true,
+    "url": "https://elcatador.com/products/pesquera-crianza"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Montecastro",
+    "brand": "Montecastro",
+    "type": "tinto",
+    "price": 2450,
+    "available": true,
+    "url": "https://elcatador.com/products/montecastro"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Condado De Haza Crianza",
+    "brand": "Condado de Haza",
+    "type": "tinto",
+    "price": 1950,
+    "available": false,
+    "url": "https://elcatador.com/products/condado-de-haza-crianza"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Carmelo Rodero Crianza 1.5 litros",
+    "brand": "Carmelo Rodero",
+    "type": "tinto",
+    "price": 6200,
+    "available": false,
+    "url": "https://elcatador.com/products/carmelo-rodero-crianza-1-5-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Poggio Di Sotto Brunello di Montalcino Riserva",
+    "brand": "Poggio di Sotto",
+    "type": "tinto",
+    "price": 31500,
+    "available": true,
+    "url": "https://elcatador.com/products/poggio-di-sotto-brunello-di-montalcino-riserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pago de los Capellanes Doroteo",
+    "brand": "Pago de los Capellanes",
+    "type": "tinto",
+    "price": 8980,
+    "available": true,
+    "url": "https://elcatador.com/products/pago-de-los-capellanes-doroteo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pago de los Capellanes El Picón",
+    "brand": "Pago de los Capellanes",
+    "type": "tinto",
+    "price": 20800,
+    "available": true,
+    "url": "https://elcatador.com/products/pago-de-los-capellanes-el-picon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pago de los Capellanes Reserva",
+    "brand": "Pago de los Capellanes",
+    "type": "tinto",
+    "price": 5480,
+    "available": true,
+    "url": "https://elcatador.com/products/pago-de-los-capellanes-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pago de los Capellanes Roble",
+    "brand": "Pago de los Capellanes",
+    "type": "tinto",
+    "price": 2150,
+    "available": true,
+    "url": "https://elcatador.com/products/pago-de-los-capellanes-roble"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Robert Mondavi Reserve Cabernet Sauvignon",
+    "brand": "Robert Mondavi Winery",
+    "type": "tinto",
+    "price": 13800,
+    "available": false,
+    "url": "https://elcatador.com/products/robert-mondavi-reserve-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Murrieta La Comtesse",
+    "brand": "Marqués de Murrieta",
+    "type": "blanco",
+    "price": 10800,
+    "available": false,
+    "url": "https://elcatador.com/products/marques-de-murrieta-la-comtesse"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Artadi Viñas De Gain",
+    "brand": "Artadi",
+    "type": "tinto",
+    "price": 2800,
+    "available": false,
+    "url": "https://elcatador.com/products/artadi-vinas-de-gain"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Protos Carroa",
+    "brand": "Protos",
+    "type": "tinto",
+    "price": 4980,
+    "available": true,
+    "url": "https://elcatador.com/products/protos-carroa"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Jermann Vintage Tunina",
+    "brand": "Jermann",
+    "type": "blanco",
+    "price": 7290,
+    "available": true,
+    "url": "https://elcatador.com/products/jermann-vintage-tunina"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pesquera Millenium Gran Reserva",
+    "brand": "Alejandro Fernandez",
+    "type": "tinto",
+    "price": 9980,
+    "available": false,
+    "url": "https://elcatador.com/products/pesquera-millenium-gran-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Flor de Muga Blanco",
+    "brand": "Muga",
+    "type": "blanco",
+    "price": 3650,
+    "available": false,
+    "url": "https://elcatador.com/products/flor-de-muga-blanco"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Aiurri Salas",
+    "brand": "Aiurri",
+    "type": "tinto",
+    "price": 8500,
+    "available": false,
+    "url": "https://elcatador.com/products/la-grandeza-de-un-vinedo-unico-en-rioja-con-el-sello-de-pago-de-carraovejas"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Ossian Verdejo",
+    "brand": "Ossian",
+    "type": "blanco",
+    "price": 4150,
+    "available": true,
+    "url": "https://elcatador.com/products/ossian-verdejo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Muga Blanco",
+    "brand": "Muga",
+    "type": "blanco",
+    "price": 1490,
+    "available": true,
+    "url": "https://elcatador.com/products/muga-blanco"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Luigi Bosca Finca Los Nobles",
+    "brand": "Luigi Bosca",
+    "type": "tinto",
+    "price": 5400,
+    "available": false,
+    "url": "https://elcatador.com/products/luigi-bosca-finca-los-nobles"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Fontodi Chianti Classico",
+    "brand": "Fontodi",
+    "type": "tinto",
+    "price": 4450,
+    "available": false,
+    "url": "https://elcatador.com/products/fontodi-chianti-classico"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Darioush Viognier",
+    "brand": "Darioush",
+    "type": "blanco",
+    "price": 5780,
+    "available": false,
+    "url": "https://elcatador.com/products/darioush-viognier"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Don Melchor 2022",
+    "brand": "Concha y Toro",
+    "type": "tinto",
+    "price": 15980,
+    "available": true,
+    "url": "https://elcatador.com/products/don-melchor-2017"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Artadi El Sequé",
+    "brand": "El Sequé",
+    "type": "tinto",
+    "price": 3300,
+    "available": false,
+    "url": "https://elcatador.com/products/artadi-el-seque"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Shafer Hillside Select Cabernet Sauvignon",
+    "brand": "Shafer",
+    "type": "tinto",
+    "price": 32500,
+    "available": false,
+    "url": "https://elcatador.com/products/shafer-hillside-select-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Astica Sauvignon Blanc / Sémillon",
+    "brand": "Trapiche",
+    "type": "espumoso",
+    "price": 495,
+    "available": true,
+    "url": "https://elcatador.com/products/astica-sauvignon-blanc-semillon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Viña Maipo Rosé",
+    "brand": "Viña Maipo",
+    "type": "rosado",
+    "price": 550,
+    "available": true,
+    "url": "https://elcatador.com/products/vina-maipo-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Viña Maipo Merlot",
+    "brand": "Viña Maipo",
+    "type": "tinto",
+    "price": 550,
+    "available": true,
+    "url": "https://elcatador.com/products/vina-maipo-merlot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Viña Maipo Cabernet Sauvignon 1.5 litros",
+    "brand": "Viña Maipo",
+    "type": "tinto",
+    "price": 1050,
+    "available": true,
+    "url": "https://elcatador.com/products/vina-maipo-cabernet-sauvignon-1-5-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santa Rita 120 Sauvignon Blanc  375ml",
+    "brand": "Santa Rita",
+    "type": "blanco",
+    "price": 480,
+    "available": true,
+    "url": "https://elcatador.com/products/santa-rita-120-sauvignon-blanc-375ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santa Rita 120 Merlot",
+    "brand": "Santa Rita",
+    "type": "tinto",
+    "price": 790,
+    "available": true,
+    "url": "https://elcatador.com/products/santa-rita-120-merlot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santa Rita 120 Cabernet Sauvignon 187ml",
+    "brand": "Santa Rita",
+    "type": "tinto",
+    "price": 260,
+    "available": true,
+    "url": "https://elcatador.com/products/santa-rita-120-cabernet-sauvignon-187ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santa Rita 120 Cabernet Sauvignon 375ml",
+    "brand": "Santa Rita",
+    "type": "tinto",
+    "price": 460,
+    "available": true,
+    "url": "https://elcatador.com/products/santa-rita-120-cabernet-sauvignon-375ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Ruffino Chianti Riserva Ducale Oro",
+    "brand": "Ruffino",
+    "type": "tinto",
+    "price": 3890,
+    "available": true,
+    "url": "https://elcatador.com/products/ruffino-chianti-riserva-ducale-oro"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Rigol Demi Sec",
+    "brand": "Rigol",
+    "type": "espumoso",
+    "price": 850,
+    "available": true,
+    "url": "https://elcatador.com/products/rigol-demi-sec"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Frontera Sweet Red",
+    "brand": "Concha y Toro",
+    "type": "tinto",
+    "price": 595,
+    "available": true,
+    "url": "https://elcatador.com/products/frontera-sweet-red"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Frontera Sauvignon Blanc 1.5 litros",
+    "brand": "Concha y Toro",
+    "type": "blanco",
+    "price": 1150,
+    "available": true,
+    "url": "https://elcatador.com/products/frontera-sauvignon-blanc-1-5-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Casillero del Diablo Merlot",
+    "brand": "Casillero del Diablo",
+    "type": "tinto",
+    "price": 980,
+    "available": true,
+    "url": "https://elcatador.com/products/casillero-del-diablo-merlot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "19 Crimes The Warden",
+    "brand": "19 Crimes",
+    "type": "tinto",
+    "price": 2750,
+    "available": true,
+    "url": "https://elcatador.com/products/19-crimes-the-warden"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Izadi Reserva",
+    "brand": "Izadi",
+    "type": "tinto",
+    "price": 1590,
+    "available": true,
+    "url": "https://elcatador.com/products/izadi-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Aiurri Landua",
+    "brand": "Aiurri",
+    "type": "tinto",
+    "price": 2890,
+    "available": true,
+    "url": "https://elcatador.com/products/aiurri-landua"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Henkell Rosé",
+    "brand": "Henkell",
+    "type": "espumoso",
+    "price": 1040,
+    "available": false,
+    "url": "https://elcatador.com/products/henkell-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Château Sénéjac 2020",
+    "brand": "Château Sénéjac",
+    "type": "tinto",
+    "price": 2680,
+    "available": false,
+    "url": "https://elcatador.com/products/chateau-senejac-2020"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pesquera MXI",
+    "brand": "Pesquera",
+    "type": "tinto",
+    "price": 3450,
+    "available": false,
+    "url": "https://elcatador.com/products/pesquera-mxi"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Château Greysac 2020",
+    "brand": "Château Greysac",
+    "type": "tinto",
+    "price": 2190,
+    "available": true,
+    "url": "https://elcatador.com/products/chateau-greysac-2020"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Château Gloria 2020",
+    "brand": "Château Gloria",
+    "type": "tinto",
+    "price": 5900,
+    "available": false,
+    "url": "https://elcatador.com/products/chateau-gloria-2020"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "El Vínculo Crianza",
+    "brand": "Alejandro Fernandez",
+    "type": "tinto",
+    "price": 1590,
+    "available": true,
+    "url": "https://elcatador.com/products/el-vinculo-crianza"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "E.Guigal Châteauneuf-du-Pape",
+    "brand": "E. Guigal",
+    "type": "tinto",
+    "price": 5300,
+    "available": false,
+    "url": "https://elcatador.com/products/e-guigal-chateauneuf-du-pape"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Bosque de Matasnos Edición Limitada",
+    "brand": "Bosque de Matasnos",
+    "type": "tinto",
+    "price": 5390,
+    "available": false,
+    "url": "https://elcatador.com/products/bosque-de-matasnos-edicion-limitada"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Caymus California Cabernet Sauvignon",
+    "brand": "Wagner Family of Wines",
+    "type": "tinto",
+    "price": 5750,
+    "available": true,
+    "url": "https://elcatador.com/products/caymus-california-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Château Tour de Pez 2017",
+    "brand": "Chateau Pez",
+    "type": "tinto",
+    "price": 2580,
+    "available": false,
+    "url": "https://elcatador.com/products/chateau-tour-de-pez-2017"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Banfi Vigna Marrucheto Brunello di Montalcino",
+    "brand": "Banfi",
+    "type": "tinto",
+    "price": 9200,
+    "available": false,
+    "url": "https://elcatador.com/products/banfi-vigna-marrucheto-brunello-di-montalcino"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Liberty School Reserve Cabernet Sauvignon",
+    "brand": "Hope Family",
+    "type": "tinto",
+    "price": 2690,
+    "available": true,
+    "url": "https://elcatador.com/products/liberty-school-reserve-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Finca Villacreces",
+    "brand": "Finca Villacreces",
+    "type": "tinto",
+    "price": 3095,
+    "available": true,
+    "url": "https://elcatador.com/products/finca-villacreces"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Banfi Cum Laude",
+    "brand": "Banfi",
+    "type": "tinto",
+    "price": 3040,
+    "available": false,
+    "url": "https://elcatador.com/products/banfi-cum-laude"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Izadi Larrosa Rosé",
+    "brand": "Izadi",
+    "type": "rosado",
+    "price": 1095,
+    "available": false,
+    "url": "https://elcatador.com/products/izadi-larrosa-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Menade Verdejo",
+    "brand": "Menade",
+    "type": "blanco",
+    "price": 1450,
+    "available": true,
+    "url": "https://elcatador.com/products/menade-verdejo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pesquera Albillo Mayor",
+    "brand": "Alejandro Fernandez",
+    "type": "blanco",
+    "price": 8050,
+    "available": false,
+    "url": "https://elcatador.com/products/pesquera-albillo-mayor"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pittacum",
+    "brand": "Terras Gauda",
+    "type": "tinto",
+    "price": 1400,
+    "available": true,
+    "url": "https://elcatador.com/products/pittacum"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "La Scolca Gavi etiqueta blanca",
+    "brand": "La Scolca",
+    "type": "blanco",
+    "price": 1850,
+    "available": true,
+    "url": "https://elcatador.com/products/la-scolca-gavi-etiqueta-blanca"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "La Scolca Gavi Etiqueta Negra",
+    "brand": "La Scolca",
+    "type": "blanco",
+    "price": 3700,
+    "available": true,
+    "url": "https://elcatador.com/products/la-scolca-gavi-etiqueta-negra"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "E. Guigal Côtes du Rhône Rouge",
+    "brand": "E. Guigal",
+    "type": "tinto",
+    "price": 1800,
+    "available": false,
+    "url": "https://elcatador.com/products/e-guigal-cotes-du-rhone-rouge"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Banfi Summus",
+    "brand": "Banfi",
+    "type": "tinto",
+    "price": 6250,
+    "available": false,
+    "url": "https://elcatador.com/products/banfi-summus"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Perrier-Jouët Belle Epoque Rosé",
+    "brand": "Perrier-Jouët",
+    "type": "espumoso",
+    "price": 27500,
+    "available": true,
+    "url": "https://elcatador.com/products/perrier-jouet-belle-epoque-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Perrier-Jouët Belle Epoque Blanc",
+    "brand": "Perrier-Jouët",
+    "type": "espumoso",
+    "price": 18500,
+    "available": true,
+    "url": "https://elcatador.com/products/perrier-jouet-belle-epoque-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Riscal Finca Montico Verdejo",
+    "brand": "Marqués de Riscal",
+    "type": "blanco",
+    "price": 1990,
+    "available": false,
+    "url": "https://elcatador.com/products/marques-de-riscal-finca-montico-verdejo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Orben Malpuesto",
+    "brand": "Orben",
+    "type": "tinto",
+    "price": 4950,
+    "available": true,
+    "url": "https://elcatador.com/products/orben-malpuesto"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "La Caprichosa Verdejo",
+    "brand": "Palacio de Bornos",
+    "type": "blanco",
+    "price": 1350,
+    "available": false,
+    "url": "https://elcatador.com/products/la-caprichosa-verdejo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Double Diamond Oakville Cabernet Sauvignon",
+    "brand": "Double Diamond",
+    "type": "tinto",
+    "price": 9980,
+    "available": false,
+    "url": "https://elcatador.com/products/double-diamond-oakville-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Flor de Vetus Verdejo",
+    "brand": "Flor de Vetus",
+    "type": "blanco",
+    "price": 1195,
+    "available": true,
+    "url": "https://elcatador.com/products/flor-de-vetus-verdejo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Izadi Selección",
+    "brand": "Izadi",
+    "type": "tinto",
+    "price": 1980,
+    "available": true,
+    "url": "https://elcatador.com/products/izadi-seleccion"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Orben",
+    "brand": "Orben",
+    "type": "tinto",
+    "price": 2890,
+    "available": true,
+    "url": "https://elcatador.com/products/orben"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Granbazán Albariño Etiqueta Verde",
+    "brand": "Granbazán",
+    "type": "blanco",
+    "price": 1690,
+    "available": true,
+    "url": "https://elcatador.com/products/granbazan-albarino-etiqueta-verde"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Terlan Vorberg Pinot Bianco, Italia",
+    "brand": "Terlan",
+    "type": "blanco",
+    "price": 3980,
+    "available": false,
+    "url": "https://elcatador.com/products/terlan-vorberg-pinot-bianco-italia"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pago de Carraovejas El Anejon",
+    "brand": "Pago de Carraovejas",
+    "type": "tinto",
+    "price": 9980,
+    "available": true,
+    "url": "https://elcatador.com/products/pago-de-carraovejas-el-anejon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Far Niente Chardonnay",
+    "brand": "Far Niente",
+    "type": "blanco",
+    "price": 7980,
+    "available": true,
+    "url": "https://elcatador.com/products/far-niente-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Louis Latour Chablis 375ml",
+    "brand": "Louis Latour",
+    "type": "blanco",
+    "price": 1620,
+    "available": true,
+    "url": "https://elcatador.com/products/louis-latour-chablis-375ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Lopez de Haro Crianza",
+    "brand": "Lopez de Haro",
+    "type": "tinto",
+    "price": 990,
+    "available": true,
+    "url": "https://elcatador.com/products/lopez-de-haro-crianza"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Graham's Fine Ruby",
+    "brand": "Graham's",
+    "type": "tinto",
+    "price": 1950,
+    "available": true,
+    "url": "https://elcatador.com/products/grahams-fine-ruby"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Double Diamiond Oakville Cabernet Sauvignon 2019 375 ml",
+    "brand": "Double Diamond",
+    "type": "tinto",
+    "price": 5200,
+    "available": false,
+    "url": "https://elcatador.com/products/double-diamiond-oakville-cabernet-sauvignon-2019-375-ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Jermann Pinot Grigio",
+    "brand": "Jermann",
+    "type": "blanco",
+    "price": 2890,
+    "available": false,
+    "url": "https://elcatador.com/products/jermann-pinot-grigio"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santa Margherita Rosé",
+    "brand": "Santa Margherita",
+    "type": "rosado",
+    "price": 1680,
+    "available": true,
+    "url": "https://elcatador.com/products/santa-margherita-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Jermann Dreams",
+    "brand": "Jermann",
+    "type": "blanco",
+    "price": 6800,
+    "available": false,
+    "url": "https://elcatador.com/products/jermann-dreams"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Duckhorn Napa Valley Merlot",
+    "brand": "Duckhorn",
+    "type": "tinto",
+    "price": 5480,
+    "available": true,
+    "url": "https://elcatador.com/products/duckhorn-napa-valley-merlot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Arzuaga Rosae",
+    "brand": "Arzuaga",
+    "type": "rosado",
+    "price": 1680,
+    "available": true,
+    "url": "https://elcatador.com/products/arzuaga-rosae"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Villa Jolanda Gold",
+    "brand": "Villa Jolanda",
+    "type": "espumoso",
+    "price": 990,
+    "available": true,
+    "url": "https://elcatador.com/products/villa-jolanda-gold"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Trivento Reserva Malbec",
+    "brand": "Trivento",
+    "type": "tinto",
+    "price": 1190,
+    "available": true,
+    "url": "https://elcatador.com/products/trivento-reserva-malbec"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Treana Chardonnay",
+    "brand": "Hope Family",
+    "type": "blanco",
+    "price": 2850,
+    "available": false,
+    "url": "https://elcatador.com/products/treana-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Silver Oak Alexander Valley",
+    "brand": "Silver Oak",
+    "type": "tinto",
+    "price": 9980,
+    "available": true,
+    "url": "https://elcatador.com/products/silver-oak-alexander-valley"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Segura Viudas Brut Reserva Magnum 1.5 litros",
+    "brand": "Segura Viudas",
+    "type": "espumoso",
+    "price": 2440,
+    "available": false,
+    "url": "https://elcatador.com/products/segura-viudas-brut-reserva-magnum-1-5-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santa Margherita Stil Rosé",
+    "brand": "Santa Margherita",
+    "type": "rosado",
+    "price": 1550,
+    "available": false,
+    "url": "https://elcatador.com/products/santa-margherita-stil-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Robert Mondavi Oakville Cabernet Sauvignon",
+    "brand": "Robert Mondavi Winery",
+    "type": "tinto",
+    "price": 7300,
+    "available": true,
+    "url": "https://elcatador.com/products/robert-mondavi-oakville-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Red Schooner Transit No. 1",
+    "brand": "Caymus",
+    "type": "tinto",
+    "price": 5500,
+    "available": false,
+    "url": "https://elcatador.com/products/red-schooner-transit-no-1"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Quintaluna Verdejo",
+    "brand": "Ossian",
+    "type": "blanco",
+    "price": 1990,
+    "available": true,
+    "url": "https://elcatador.com/products/quintaluna-verdejo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Perrier-Jouët Grand Brut 3 litros",
+    "brand": "Perrier-Jouët",
+    "type": "espumoso",
+    "price": 34000,
+    "available": false,
+    "url": "https://elcatador.com/products/perrier-jouet-grand-brut-3-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Perrier-Jouët Blason Rosé Magnum 1.5 litros",
+    "brand": "Perrier-Jouët",
+    "type": "espumoso",
+    "price": 16800,
+    "available": false,
+    "url": "https://elcatador.com/products/perrier-jouet-blason-rose-magnum-1-5-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Paul Hobbs Crossbarn Cabernet Sauvignon",
+    "brand": "Paul Hobbs",
+    "type": "tinto",
+    "price": 6700,
+    "available": false,
+    "url": "https://elcatador.com/products/paul-hobbs-crossbarn-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Oreno",
+    "brand": "Oreno",
+    "type": "tinto",
+    "price": 7400,
+    "available": false,
+    "url": "https://elcatador.com/products/oreno"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Montes Classic Series Chardonnay",
+    "brand": "Montes",
+    "type": "blanco",
+    "price": 1050,
+    "available": true,
+    "url": "https://elcatador.com/products/montes-classic-series-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Mer Soleil Reserve Pinot Noir",
+    "brand": "Mer Soleil",
+    "type": "tinto",
+    "price": 3980,
+    "available": false,
+    "url": "https://elcatador.com/products/mer-soleil-reserve-pinot-noir"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Mer Soleil Chardonnay",
+    "brand": "Mer Soleil",
+    "type": "blanco",
+    "price": 3300,
+    "available": true,
+    "url": "https://elcatador.com/products/mer-soleil-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Meiomi Red Blend",
+    "brand": "Meiomi",
+    "type": "tinto",
+    "price": 2495,
+    "available": false,
+    "url": "https://elcatador.com/products/meiomi-red-blend"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Le Macchiole Paleo Rosso",
+    "brand": "Le Macchiole",
+    "type": "tinto",
+    "price": 11500,
+    "available": true,
+    "url": "https://elcatador.com/products/le-macchiole-paleo-rosso"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Le Macchiole Bolgheri Rosso",
+    "brand": "Le Macchiole",
+    "type": "tinto",
+    "price": 3290,
+    "available": true,
+    "url": "https://elcatador.com/products/le-macchiole-bolgheri-rosso"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "La Cueva del Contador 2018",
+    "brand": "Contador",
+    "type": "tinto",
+    "price": 9340,
+    "available": false,
+    "url": "https://elcatador.com/products/la-cueva-del-contador"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Kendall Jackson Grand Reserve Cabernet Sauvignon",
+    "brand": "Kendall Jackson",
+    "type": "tinto",
+    "price": 3950,
+    "available": false,
+    "url": "https://elcatador.com/products/kendall-jackson-grand-reserve-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Hito",
+    "brand": "Cepa 21",
+    "type": "tinto",
+    "price": 1650,
+    "available": true,
+    "url": "https://elcatador.com/products/hito"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Heraclio Alfaro Crianza",
+    "brand": "Terras Gauda",
+    "type": "tinto",
+    "price": 1095,
+    "available": false,
+    "url": "https://elcatador.com/products/heraclio-alfaro-crianza"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Duckhorn Postmark Cabernet Sauvignon",
+    "brand": "Duckhorn",
+    "type": "tinto",
+    "price": 3150,
+    "available": false,
+    "url": "https://elcatador.com/products/duckhorn-postmark-cabernet-sauv-napa-valley"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Duckhorn Paraduxx",
+    "brand": "Paraduxx",
+    "type": "tinto",
+    "price": 5300,
+    "available": true,
+    "url": "https://elcatador.com/products/duckhorn-paraduxx"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Donnafugata Sedàra",
+    "brand": "Donnafugata",
+    "type": "tinto",
+    "price": 1595,
+    "available": false,
+    "url": "https://elcatador.com/products/donnafugata-sedara"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Donnafugata Anthìlia",
+    "brand": "Donnafugata",
+    "type": "blanco",
+    "price": 1595,
+    "available": false,
+    "url": "https://elcatador.com/products/donnafugata-anthilia"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Domaine De La Croix Cuvee Irresistible Rosé",
+    "brand": "Domaine de la croix",
+    "type": "rosado",
+    "price": 1790,
+    "available": true,
+    "url": "https://elcatador.com/products/domaine-de-la-croix-cuvee-irresistible-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Darioush Duel Cabernet Sauvignon, Napa Valley",
+    "brand": "Darioush",
+    "type": "tinto",
+    "price": 5890,
+    "available": false,
+    "url": "https://elcatador.com/products/darioush-duel-cabernet-sauvignon-napa-valley"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Darioush Caravan Cabernet Sauvignon",
+    "brand": "Darioush",
+    "type": "tinto",
+    "price": 6390,
+    "available": true,
+    "url": "https://elcatador.com/products/darioush-caravan-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Crognolo",
+    "brand": "Tenuta Sette Ponti",
+    "type": "tinto",
+    "price": 2790,
+    "available": true,
+    "url": "https://elcatador.com/products/crognolo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Conundrum Red Blend",
+    "brand": "Conundrum",
+    "type": "tinto",
+    "price": 2250,
+    "available": true,
+    "url": "https://elcatador.com/products/conundrum-red-blend"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Chateau Ste Michelle Columbia Cabernet Sauvignon",
+    "brand": "Chateau Ste Michelle",
+    "type": "tinto",
+    "price": 1950,
+    "available": true,
+    "url": "https://elcatador.com/products/chateau-ste-michelle-columbia-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Casillero del Diablo Carmenere",
+    "brand": "Casillero del Diablo",
+    "type": "tinto",
+    "price": 980,
+    "available": true,
+    "url": "https://elcatador.com/products/casillero-del-diablo-carmenere"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Carmelo Rodero Pago De Valtarreña",
+    "brand": "Carmelo Rodero",
+    "type": "tinto",
+    "price": 7300,
+    "available": true,
+    "url": "https://elcatador.com/products/carmelo-rodero-pago-de-valtarrena"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Billecart Salmon Brut Reserve 1.5 litros",
+    "brand": "Billecart-Salmon",
+    "type": "espumoso",
+    "price": 12800,
+    "available": true,
+    "url": "https://elcatador.com/products/billecart-salmon-brut-reserve-1-5-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Beringer Knights Valley Cabernet Sauvignon",
+    "brand": "Beringer",
+    "type": "tinto",
+    "price": 3810,
+    "available": false,
+    "url": "https://elcatador.com/products/beringer-knights-valley-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Belle Glos Chardonnay",
+    "brand": "Copper Cane",
+    "type": "blanco",
+    "price": 4550,
+    "available": false,
+    "url": "https://elcatador.com/products/belle-glos-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Batasiolo Langhe Rosso",
+    "brand": "Batasiolo",
+    "type": "tinto",
+    "price": 1760,
+    "available": false,
+    "url": "https://elcatador.com/products/batasiolo-langhe-rosso"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Batasiolo Gavi di Gavi",
+    "brand": "Batasiolo",
+    "type": "blanco",
+    "price": 1650,
+    "available": false,
+    "url": "https://elcatador.com/products/batasiolo-gavi-di-gavi"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Batasiolo Barolo Briccolina",
+    "brand": "Batasiolo",
+    "type": "tinto",
+    "price": 6590,
+    "available": false,
+    "url": "https://elcatador.com/products/batasiolo-barolo-briccolina"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Alvaro Palacios Dofi",
+    "brand": "Alvaro Palacios",
+    "type": "tinto",
+    "price": 9900,
+    "available": false,
+    "url": "https://elcatador.com/products/alvaro-palacios-dofi"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Ali Toscana",
+    "brand": "Donna Laura",
+    "type": "tinto",
+    "price": 1200,
+    "available": false,
+    "url": "https://elcatador.com/products/ali-toscana"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Far Niente Napa Valley Cabernet Sauvignon 2018",
+    "brand": "Far Niente",
+    "type": "tinto",
+    "price": 12980,
+    "available": true,
+    "url": "https://elcatador.com/products/far-niente-napa-valley-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Murrieta Reserva 3 litros",
+    "brand": "Marqués de Murrieta",
+    "type": "tinto",
+    "price": 14900,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-murrieta-reserva-3-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Murrieta Reserva 6 litros",
+    "brand": "Marqués de Murrieta",
+    "type": "tinto",
+    "price": 27900,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-murrieta-reserva-6-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Murrieta Reserva  12 litros",
+    "brand": "Marqués de Murrieta",
+    "type": "tinto",
+    "price": 49800,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-murrieta-reserva-12-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Hacienda Monasterio 3 litros",
+    "brand": "Hacienda Monasterio",
+    "type": "tinto",
+    "price": 23900,
+    "available": false,
+    "url": "https://elcatador.com/products/hacienda-monasterio-3-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Austin Hope Reserve Cabernet Sauvignon",
+    "brand": "Hope Family",
+    "type": "tinto",
+    "price": 11500,
+    "available": false,
+    "url": "https://elcatador.com/products/austin-hope-reserve-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Le Macchiole Messorio",
+    "brand": "Le Macchiole",
+    "type": "tinto",
+    "price": 23500,
+    "available": true,
+    "url": "https://elcatador.com/products/le-macchiole-messorio"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Joseph Phelps Napa Valley Cabernet Sauvignon",
+    "brand": "Joseph Phelps",
+    "type": "tinto",
+    "price": 9500,
+    "available": true,
+    "url": "https://elcatador.com/products/joseph-phelps-napa-valley-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Joseph Phelps Insignia",
+    "brand": "Joseph Phelps",
+    "type": "tinto",
+    "price": 27500,
+    "available": true,
+    "url": "https://elcatador.com/products/joseph-phelps-insignia-2018"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Hacienda Monasterio Reserva Especial",
+    "brand": "Hacienda Monasterio",
+    "type": "tinto",
+    "price": 11800,
+    "available": false,
+    "url": "https://elcatador.com/products/hacienda-monasterio-reserva-especial"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "CHÂTEAU HAUT-BRISSON 2018",
+    "brand": "Haut-Brisson",
+    "type": "tinto",
+    "price": 3280,
+    "available": false,
+    "url": "https://elcatador.com/products/chateau-haut-brisson-2018"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Riscal Blanco",
+    "brand": "Marqués de Riscal",
+    "type": "blanco",
+    "price": 1190,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-riscal-blanco"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Antinori Guado Al Tasso",
+    "brand": "Antinori",
+    "type": "tinto",
+    "price": 13500,
+    "available": true,
+    "url": "https://elcatador.com/products/antinori-guado-al-tasso"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Batasiolo Rosato Micó",
+    "brand": "Batasiolo",
+    "type": "rosado",
+    "price": 1390,
+    "available": false,
+    "url": "https://elcatador.com/products/batasiolo-rosato-mico"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "19 Crimes Cali Gold",
+    "brand": "19 Crimes",
+    "type": "espumoso",
+    "price": 1780,
+    "available": false,
+    "url": "https://elcatador.com/products/19-crimes-cali-gold"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Clos de Papes",
+    "brand": "Clos des Papes",
+    "type": "tinto",
+    "price": 9500,
+    "available": false,
+    "url": "https://elcatador.com/products/clos-de-papes"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Murrieta Castillo De Ygay",
+    "brand": "Marqués de Murrieta",
+    "type": "espumoso",
+    "price": 26200,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-murrieta-castillo-de-ygay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Daou Soul of a Lion",
+    "brand": "Daou",
+    "type": "tinto",
+    "price": 11980,
+    "available": false,
+    "url": "https://elcatador.com/products/daou-soul-of-a-lion"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Antinori Santa Cristina Sangiovese",
+    "brand": "Antinori",
+    "type": "tinto",
+    "price": 1390,
+    "available": true,
+    "url": "https://elcatador.com/products/antinori-santa-cristina-sangiovese"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Monteabellón Finca Matambres",
+    "brand": "Monteabellón",
+    "type": "tinto",
+    "price": 3600,
+    "available": true,
+    "url": "https://elcatador.com/products/monteabellon-finca-matambres"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Billecart Salmon Louis Salmon Blanc de Blancs Grand Cru 2008",
+    "brand": "Billecart-Salmon",
+    "type": "espumoso",
+    "price": 16500,
+    "available": true,
+    "url": "https://elcatador.com/products/billecart-salmon-louis-salmon-blanc-de-blancs-grand-cru-2008"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Perrier-Jouët Grand Brut 1.5 litros",
+    "brand": "Perrier-Jouët",
+    "type": "espumoso",
+    "price": 12600,
+    "available": true,
+    "url": "https://elcatador.com/products/perrier-jouet-grand-brut-1-5-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Secrets Red Blend",
+    "brand": "Secrets",
+    "type": "tinto",
+    "price": 1100,
+    "available": true,
+    "url": "https://elcatador.com/products/secrets-red-blend"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Frontera Pinot Grigio",
+    "brand": "Frontera",
+    "type": "blanco",
+    "price": 595,
+    "available": true,
+    "url": "https://elcatador.com/products/frontera-pinot-grigio"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Frontera Merlot",
+    "brand": "Concha y Toro",
+    "type": "tinto",
+    "price": 595,
+    "available": true,
+    "url": "https://elcatador.com/products/frontera-merlot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Frontera Carmenere",
+    "brand": "Frontera",
+    "type": "tinto",
+    "price": 595,
+    "available": true,
+    "url": "https://elcatador.com/products/frontera-carmenere"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Frontera Merlot 1.5 litros",
+    "brand": "Concha y Toro",
+    "type": "tinto",
+    "price": 1150,
+    "available": true,
+    "url": "https://elcatador.com/products/frontera-merlot-1-5-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Frontera Chardonnay",
+    "brand": "Concha y Toro",
+    "type": "blanco",
+    "price": 595,
+    "available": true,
+    "url": "https://elcatador.com/products/frontera-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pago de Carraovejas 3 litros",
+    "brand": "Pago de Carraovejas",
+    "type": "tinto",
+    "price": 23500,
+    "available": false,
+    "url": "https://elcatador.com/products/pago-de-carraovejas-3-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Malabrigo",
+    "brand": "Cepa 21",
+    "type": "tinto",
+    "price": 4690,
+    "available": true,
+    "url": "https://elcatador.com/products/malabrigo-1"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "El Andén de la Estación",
+    "brand": "Muga",
+    "type": "tinto",
+    "price": 1590,
+    "available": false,
+    "url": "https://elcatador.com/products/el-anden-de-la-estacion"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Emilio Moro Finca Resalso",
+    "brand": "Emilio Moro",
+    "type": "tinto",
+    "price": 1495,
+    "available": true,
+    "url": "https://elcatador.com/products/emilio-moro-finca-resalso"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Emilio Moro",
+    "brand": "Emilio Moro",
+    "type": "tinto",
+    "price": 2750,
+    "available": true,
+    "url": "https://elcatador.com/products/emilio-moro"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Emilio Moro El Zarzal",
+    "brand": "Emilio Moro",
+    "type": "blanco",
+    "price": 2150,
+    "available": false,
+    "url": "https://elcatador.com/products/emilio-moro-el-zarzal"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Emilio Moro Polvorete",
+    "brand": "Emilio Moro",
+    "type": "blanco",
+    "price": 1680,
+    "available": true,
+    "url": "https://elcatador.com/products/emilio-moro-polvorete"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Emilio Moro Malleolus de Sanchomartín",
+    "brand": "Emilio Moro",
+    "type": "tinto",
+    "price": 17200,
+    "available": false,
+    "url": "https://elcatador.com/products/emilio-moro-malleolus-de-sanchomartin"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Emilio Moro Malleolus de Sanchomartín 1.5 litros",
+    "brand": "Emilio Moro",
+    "type": "tinto",
+    "price": 25800,
+    "available": false,
+    "url": "https://elcatador.com/products/emilio-moro-malleolus-de-sanchomartin-1-5-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Emilio Moro Malleolus 3 litros",
+    "brand": "Emilio Moro",
+    "type": "tinto",
+    "price": 18500,
+    "available": true,
+    "url": "https://elcatador.com/products/emilio-moro-malleolus-3-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Antinori Il Bruciato",
+    "brand": "Antinori",
+    "type": "tinto",
+    "price": 3100,
+    "available": true,
+    "url": "https://elcatador.com/products/antinori-il-bruciato"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Protos Crianza",
+    "brand": "Protos",
+    "type": "tinto",
+    "price": 2550,
+    "available": true,
+    "url": "https://elcatador.com/products/protos-crianza-1"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Daou Reserve Cabernet Sauvignon 2015",
+    "brand": "Daou",
+    "type": "tinto",
+    "price": 5000,
+    "available": false,
+    "url": "https://elcatador.com/products/daou-reserve-cabernet-sauvignon-2017"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Château Pierre 1er",
+    "brand": "Château Pierre 1er",
+    "type": "tinto",
+    "price": 2780,
+    "available": false,
+    "url": "https://elcatador.com/products/chateau-pierre-1er-1"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Château Sénéjac 2018",
+    "brand": "Château Sénéjac",
+    "type": "tinto",
+    "price": 2250,
+    "available": false,
+    "url": "https://elcatador.com/products/chateau-senejac-2019"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Antinori Vermentino",
+    "brand": "Antinori",
+    "type": "blanco",
+    "price": 2100,
+    "available": false,
+    "url": "https://elcatador.com/products/antinori-vermentino-1"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Château Cantenac Brown 2017",
+    "brand": "Château Cantenac Brown",
+    "type": "tinto",
+    "price": 6900,
+    "available": false,
+    "url": "https://elcatador.com/products/chateau-cantenac-brown-2018"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Clos de L'Oratoire 2018",
+    "brand": "Château Clos de l'Oratoire",
+    "type": "tinto",
+    "price": 5500,
+    "available": false,
+    "url": "https://elcatador.com/products/clos-de-loratoire-2019"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Viña Maipo Classic Series Sweet Red",
+    "brand": "Viña Maipo",
+    "type": "tinto",
+    "price": 550,
+    "available": false,
+    "url": "https://elcatador.com/products/vina-maipo-classic-series-sweet-red"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Trapiche Reserva Malbec",
+    "brand": "Trapiche",
+    "type": "tinto",
+    "price": 1050,
+    "available": true,
+    "url": "https://elcatador.com/products/trapiche-reserva-malbec"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santa Rita 120 Sauvignon Blanc",
+    "brand": "Santa Rita",
+    "type": "blanco",
+    "price": 790,
+    "available": true,
+    "url": "https://elcatador.com/products/santa-rita-120-sauvignon-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Penfold's Koonunga Hill Shiraz/Cabernet Sauvignon",
+    "brand": "Penfolds",
+    "type": "tinto",
+    "price": 1980,
+    "available": true,
+    "url": "https://elcatador.com/products/penfolds-koonunga-hill-shiraz-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Frontera Sauvignon Blanc",
+    "brand": "Concha y Toro",
+    "type": "blanco",
+    "price": 595,
+    "available": true,
+    "url": "https://elcatador.com/products/frontera-sauvignon-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "El Coto Blanco",
+    "brand": "El Coto",
+    "type": "blanco",
+    "price": 890,
+    "available": true,
+    "url": "https://elcatador.com/products/el-coto-blanco"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Louis Latour Grand Ardèche Chardonnay",
+    "brand": "Louis Latour",
+    "type": "blanco",
+    "price": 2095,
+    "available": false,
+    "url": "https://elcatador.com/products/louis-latour-grand-ardeche-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Flor De Muga Rosado",
+    "brand": "Muga",
+    "type": "rosado",
+    "price": 2850,
+    "available": false,
+    "url": "https://elcatador.com/products/flor-de-muga-rosado"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Astica Cabernet Sauvignon",
+    "brand": "Trapiche",
+    "type": "espumoso",
+    "price": 495,
+    "available": true,
+    "url": "https://elcatador.com/products/astica-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Rigol Brut",
+    "brand": "Rigol",
+    "type": "espumoso",
+    "price": 880,
+    "available": true,
+    "url": "https://elcatador.com/products/rigol-brut"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Frontera Cabernet Sauvignon",
+    "brand": "Concha y Toro",
+    "type": "tinto",
+    "price": 595,
+    "available": true,
+    "url": "https://elcatador.com/products/frontera-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Casillero del Diablo Sauvignon Blanc",
+    "brand": "Casillero del Diablo",
+    "type": "blanco",
+    "price": 980,
+    "available": true,
+    "url": "https://elcatador.com/products/casillero-del-diablo-sauvignon-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Beringer California White Zinfandel",
+    "brand": "Beringer",
+    "type": "rosado",
+    "price": 790,
+    "available": true,
+    "url": "https://elcatador.com/products/beringer-california-white-zinfandel"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Viña Maipo Sauvignon Blanc",
+    "brand": "Viña Maipo",
+    "type": "blanco",
+    "price": 550,
+    "available": true,
+    "url": "https://elcatador.com/products/vina-maipo-sauvignon-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Louis Latour Gevrey Chambertin",
+    "brand": "Louis Latour",
+    "type": "tinto",
+    "price": 8980,
+    "available": true,
+    "url": "https://elcatador.com/products/louis-latour-gevrey-chambertin"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "De Ladoucette Baron de L",
+    "brand": "De Ladoucette",
+    "type": "blanco",
+    "price": 8500,
+    "available": false,
+    "url": "https://elcatador.com/products/de-ladoucette-baron-de-l"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Viña Maipo Cabernet Sauvignon",
+    "brand": "Viña Maipo",
+    "type": "tinto",
+    "price": 550,
+    "available": true,
+    "url": "https://elcatador.com/products/vina-maipo-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Norton Syrah Reserva",
+    "brand": "Norton",
+    "type": "tinto",
+    "price": 1360,
+    "available": false,
+    "url": "https://elcatador.com/products/norton-syrah-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Avalon Red Blend",
+    "brand": "Avalon",
+    "type": "tinto",
+    "price": 1380,
+    "available": false,
+    "url": "https://elcatador.com/products/avalon-red-blend-1"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Colección Benjamín Romeo",
+    "brand": "Contador",
+    "type": "tinto",
+    "price": 65000,
+    "available": true,
+    "url": "https://elcatador.com/products/coleccion-benjamin-romeo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Goulée by Cos d'Estournel",
+    "brand": "Château Cos d'Estournel",
+    "type": "tinto",
+    "price": 3800,
+    "available": false,
+    "url": "https://elcatador.com/products/goulee-by-cos-destournel-1"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Domaine de Chevalier Rouge 2014",
+    "brand": "Domaine de Chevalier",
+    "type": "tinto",
+    "price": 7900,
+    "available": false,
+    "url": "https://elcatador.com/products/domaine-de-chevalier-rouge-2015"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Meiomi Pinot Noir",
+    "brand": "Meiomi",
+    "type": "tinto",
+    "price": 2690,
+    "available": true,
+    "url": "https://elcatador.com/products/meiomi-pinot-noir"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Sandeman Ruby Porto",
+    "brand": "Sandeman",
+    "type": "tinto",
+    "price": 1290,
+    "available": true,
+    "url": "https://elcatador.com/products/sandeman-ruby-porto-1"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Sandeman Tawny Porto",
+    "brand": "Sandeman",
+    "type": "tinto",
+    "price": 1290,
+    "available": true,
+    "url": "https://elcatador.com/products/sandeman-tawny-porto"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "E. Guigal Brune & Blonde Côte-Rôtie",
+    "brand": "E. Guigal",
+    "type": "tinto",
+    "price": 7900,
+    "available": false,
+    "url": "https://elcatador.com/products/e-guigal-brune-blonde-cote-rotie-1"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Corte Fiore Italian Red Blend",
+    "brand": "Lupi Reali",
+    "type": "tinto",
+    "price": 1550,
+    "available": true,
+    "url": "https://elcatador.com/products/corte-fiore-italian-red-blend-1"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Gotas de Mar Albariño",
+    "brand": "Hammeken",
+    "type": "blanco",
+    "price": 1750,
+    "available": true,
+    "url": "https://elcatador.com/products/gotas-de-mar-albarino-1"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Zaccagnini Pinot Grigio, Italia",
+    "brand": "Zaccagnini",
+    "type": "blanco",
+    "price": 1390,
+    "available": true,
+    "url": "https://elcatador.com/products/zaccagnini-pinot-grigio-italia-1"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Château Potensac 2015",
+    "brand": "Château Potensac",
+    "type": "tinto",
+    "price": 4100,
+    "available": false,
+    "url": "https://elcatador.com/products/chateau-potensac-2016"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Riporta Pinot Grigio, Italia",
+    "brand": "Riporta",
+    "type": "blanco",
+    "price": 1050,
+    "available": true,
+    "url": "https://elcatador.com/products/riporta-pinot-grigio-italia"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Argiano Brunello di Montalcino 2019",
+    "brand": "Argiano",
+    "type": "tinto",
+    "price": 6800,
+    "available": true,
+    "url": "https://elcatador.com/products/argiano-brunello-di-montalcino"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Riporta Primitivo",
+    "brand": "Riporta",
+    "type": "tinto",
+    "price": 1050,
+    "available": true,
+    "url": "https://elcatador.com/products/riporta-primitivo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Antinori Il Bruciato 375ml",
+    "brand": "Antinori",
+    "type": "tinto",
+    "price": 1680,
+    "available": false,
+    "url": "https://elcatador.com/products/antinori-il-bruciato-375ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Woodbridge Merlot",
+    "brand": "Robert Mondavi Woodbridge",
+    "type": "tinto",
+    "price": 890,
+    "available": false,
+    "url": "https://elcatador.com/products/woodbridge-merlot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santero Moscato",
+    "brand": "Villa Jolanda",
+    "type": "espumoso",
+    "price": 850,
+    "available": true,
+    "url": "https://elcatador.com/products/santero-moscato"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santa Rita Reserva Merlot",
+    "brand": "Santa Rita",
+    "type": "tinto",
+    "price": 1290,
+    "available": true,
+    "url": "https://elcatador.com/products/santa-rita-reserva-merlot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santa Rita Medalla Real Cabernet Sauvignon",
+    "brand": "Santa Rita",
+    "type": "tinto",
+    "price": 1880,
+    "available": true,
+    "url": "https://elcatador.com/products/santa-rita-medalla-real-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Robert Mondavi Napa Valley Cabernet Sauvignon",
+    "brand": "Robert Mondavi Winery",
+    "type": "tinto",
+    "price": 5980,
+    "available": true,
+    "url": "https://elcatador.com/products/robert-mondavi-napa-valley-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Protos Crianza 375ml",
+    "brand": "Protos",
+    "type": "tinto",
+    "price": 1290,
+    "available": true,
+    "url": "https://elcatador.com/products/protos-crianza-375ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Duckhorn Goldeneye Estate Pinot Noir",
+    "brand": "Duckhorn",
+    "type": "tinto",
+    "price": 6100,
+    "available": false,
+    "url": "https://elcatador.com/products/duckhorn-goldeneye-estate-pinot-noir"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Casillero del Diablo Cabernet Sauvignon",
+    "brand": "Casillero del Diablo",
+    "type": "tinto",
+    "price": 980,
+    "available": true,
+    "url": "https://elcatador.com/products/casillero-del-diablo-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Banfi Rosso Di Montalcino",
+    "brand": "Banfi",
+    "type": "tinto",
+    "price": 2680,
+    "available": true,
+    "url": "https://elcatador.com/products/banfi-rosso-di-montalcino"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Château Branaire Ducru 2014",
+    "brand": "Château Branaire Ducru",
+    "type": "tinto",
+    "price": 6700,
+    "available": true,
+    "url": "https://elcatador.com/products/chateau-branaire-ducru-2014"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Robert Mondavi Private Selection Pinot Noir",
+    "brand": "Robert Mondavi Private Selection",
+    "type": "tinto",
+    "price": 1520,
+    "available": true,
+    "url": "https://elcatador.com/products/robert-mondavi-private-selection-pinot-noir"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Robert Mondavi Private Selection Heritage Red",
+    "brand": "Robert Mondavi Private Selection",
+    "type": "tinto",
+    "price": 1395,
+    "available": false,
+    "url": "https://elcatador.com/products/robert-mondavi-private-selection-heritage-red"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Opus One",
+    "brand": "Opus One",
+    "type": "tinto",
+    "price": 40500,
+    "available": true,
+    "url": "https://elcatador.com/products/opus-one"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Leira Albariño",
+    "brand": "Pazo Pondal",
+    "type": "blanco",
+    "price": 1450,
+    "available": true,
+    "url": "https://elcatador.com/products/leira-albarino"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pio Cesare Barolo",
+    "brand": "Pio Cesare",
+    "type": "tinto",
+    "price": 6600,
+    "available": false,
+    "url": "https://elcatador.com/products/pio-cesare-barolo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santero Moscato Fragola",
+    "brand": "Villa Jolanda",
+    "type": "espumoso",
+    "price": 850,
+    "available": true,
+    "url": "https://elcatador.com/products/santero-moscato-fragola"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Frontera Rosé",
+    "brand": "Frontera",
+    "type": "rosado",
+    "price": 595,
+    "available": true,
+    "url": "https://elcatador.com/products/frontera-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Norton Reserva Malbec",
+    "brand": "Norton",
+    "type": "tinto",
+    "price": 1490,
+    "available": true,
+    "url": "https://elcatador.com/products/norton-reserva-malbec"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Norton Cabernet Sauvignon",
+    "brand": "Norton",
+    "type": "tinto",
+    "price": 920,
+    "available": true,
+    "url": "https://elcatador.com/products/norton-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Woodbridge Chardonnay",
+    "brand": "Robert Mondavi Woodbridge",
+    "type": "blanco",
+    "price": 890,
+    "available": true,
+    "url": "https://elcatador.com/products/woodbridge-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Woodbridge Cabernet Sauvignon",
+    "brand": "Robert Mondavi Woodbridge",
+    "type": "tinto",
+    "price": 890,
+    "available": true,
+    "url": "https://elcatador.com/products/woodbridge-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Viña Sastre Regina Vides",
+    "brand": "Viña Sastre",
+    "type": "tinto",
+    "price": 8950,
+    "available": true,
+    "url": "https://elcatador.com/products/vina-sastre-regina-vides"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Trivento Golden Reserve Malbec",
+    "brand": "Trivento",
+    "type": "tinto",
+    "price": 2450,
+    "available": false,
+    "url": "https://elcatador.com/products/trivento-golden-reserve-malbec"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Trapiche Malbec",
+    "brand": "Trapiche",
+    "type": "tinto",
+    "price": 680,
+    "available": true,
+    "url": "https://elcatador.com/products/trapiche-malbec"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Trapiche Cabernet Sauvignon",
+    "brand": "Trapiche",
+    "type": "tinto",
+    "price": 680,
+    "available": true,
+    "url": "https://elcatador.com/products/trapiche-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Torresella Pinot Grigio",
+    "brand": "Torresella",
+    "type": "blanco",
+    "price": 990,
+    "available": true,
+    "url": "https://elcatador.com/products/torresella-pinot-grigio"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "The Prisoner Red Wine",
+    "brand": "The Prisoner Wine Company",
+    "type": "tinto",
+    "price": 5800,
+    "available": true,
+    "url": "https://elcatador.com/products/the-prisoner-red-wine"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Stag's Leap S.L.V. Cabernet Sauvignon",
+    "brand": "Stag's Leap Wine Cellars",
+    "type": "tinto",
+    "price": 19800,
+    "available": false,
+    "url": "https://elcatador.com/products/stags-leap-s-l-v-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Stag's Leap Napa Valley Chardonnay",
+    "brand": "Stag's Leap Wine Cellars",
+    "type": "blanco",
+    "price": 4250,
+    "available": false,
+    "url": "https://elcatador.com/products/stags-leap-napa-valley-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Segura Viudas Brut Rosé",
+    "brand": "Seguras Viudas",
+    "type": "espumoso",
+    "price": 1290,
+    "available": true,
+    "url": "https://elcatador.com/products/segura-viudas-brut-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Louis Latour Puligny Montrachet",
+    "brand": "Louis Latour",
+    "type": "blanco",
+    "price": 10980,
+    "available": true,
+    "url": "https://elcatador.com/products/louis-latour-puligny-montrachet"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Louis Latour Pouilly Fuissé",
+    "brand": "Louis Latour",
+    "type": "blanco",
+    "price": 4390,
+    "available": true,
+    "url": "https://elcatador.com/products/louis-latour-pouilly-fuisse"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Sartori Valpolicella",
+    "brand": "Sartori",
+    "type": "tinto",
+    "price": 890,
+    "available": true,
+    "url": "https://elcatador.com/products/sartori-valpolicella"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Sartori Soave",
+    "brand": "Sartori",
+    "type": "blanco",
+    "price": 820,
+    "available": true,
+    "url": "https://elcatador.com/products/sartori-soave"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santa Rita 120 Cabernet Sauvignon",
+    "brand": "Santa Rita",
+    "type": "tinto",
+    "price": 790,
+    "available": true,
+    "url": "https://elcatador.com/products/santa-rita-120-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santa Margherita Pinot Grigio 375ml",
+    "brand": "Santa Margherita",
+    "type": "blanco",
+    "price": 860,
+    "available": true,
+    "url": "https://elcatador.com/products/santa-margherita-pinot-grigio-375ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santa Margherita Chardonnay",
+    "brand": "Santa Margherita",
+    "type": "blanco",
+    "price": 1450,
+    "available": true,
+    "url": "https://elcatador.com/products/santa-margherita-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Lillet Tinto",
+    "brand": "Lillet",
+    "type": "tinto",
+    "price": 1920,
+    "available": false,
+    "url": "https://elcatador.com/products/lillet-tinto"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Rutini Malbec",
+    "brand": "Rutini",
+    "type": "tinto",
+    "price": 1980,
+    "available": true,
+    "url": "https://elcatador.com/products/rutinimalbec"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Rutini Cabernet/Malbec",
+    "brand": "Rutini",
+    "type": "tinto",
+    "price": 1895,
+    "available": false,
+    "url": "https://elcatador.com/products/rutini-cabernet-malbec"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Ruffino Chianti",
+    "brand": "Ruffino",
+    "type": "tinto",
+    "price": 1290,
+    "available": true,
+    "url": "https://elcatador.com/products/ruffino-chianti"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Lan Crianza",
+    "brand": "LAN",
+    "type": "tinto",
+    "price": 1270,
+    "available": true,
+    "url": "https://elcatador.com/products/lan-crianza"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Red Schooner",
+    "brand": "Wagner Family of Wines",
+    "type": "tinto",
+    "price": 5500,
+    "available": true,
+    "url": "https://elcatador.com/products/red-schooner"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Kendall Jackson Vintner's Reserve Merlot",
+    "brand": "Kendall Jackson",
+    "type": "tinto",
+    "price": 2890,
+    "available": true,
+    "url": "https://elcatador.com/products/kendall-jackson-vintners-reserve-merlot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Protos Roble",
+    "brand": "Protos",
+    "type": "tinto",
+    "price": 1430,
+    "available": true,
+    "url": "https://elcatador.com/products/protos-roble"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Kaiken Reserva Malbec",
+    "brand": "Kaiken",
+    "type": "tinto",
+    "price": 1150,
+    "available": true,
+    "url": "https://elcatador.com/products/kaiken-reserva-malbec"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Prosecchino 200ml",
+    "brand": "Maschio",
+    "type": "espumoso",
+    "price": 360,
+    "available": true,
+    "url": "https://elcatador.com/products/prosecchino-200ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "PaulaMalbec",
+    "brand": "Doña Paula",
+    "type": "tinto",
+    "price": 920,
+    "available": true,
+    "url": "https://elcatador.com/products/paulamalbec"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Palo Alto Reserva II",
+    "brand": "Palo Alto",
+    "type": "tinto",
+    "price": 860,
+    "available": false,
+    "url": "https://elcatador.com/products/palo-alto-reserva-ii"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pago de Carraovejas Cuesta de las Liebres",
+    "brand": "Pago de Carraovejas",
+    "type": "tinto",
+    "price": 19800,
+    "available": true,
+    "url": "https://elcatador.com/products/pago-de-carraovejas-cuesta-de-las-liebres"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Ornellaia 2018",
+    "brand": "Ornellaia",
+    "type": "tinto",
+    "price": 28900,
+    "available": false,
+    "url": "https://elcatador.com/products/ornellaia"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Norton Malbec",
+    "brand": "Norton",
+    "type": "tinto",
+    "price": 920,
+    "available": true,
+    "url": "https://elcatador.com/products/norton-malbec"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Muga Reserva 375ml",
+    "brand": "Muga",
+    "type": "tinto",
+    "price": 1520,
+    "available": true,
+    "url": "https://elcatador.com/products/muga-reserva-375ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Emmolo Napa Valley Merlot",
+    "brand": "Wagner Family of Wines",
+    "type": "tinto",
+    "price": 5800,
+    "available": false,
+    "url": "https://elcatador.com/products/emmolo-napa-valley-merlot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "E. Guigal La Doriane Condrieu",
+    "brand": "E. Guigal",
+    "type": "blanco",
+    "price": 11400,
+    "available": false,
+    "url": "https://elcatador.com/products/e-guigal-la-doriane-condrieu"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Montes Alpha Carmenere",
+    "brand": "Montes",
+    "type": "tinto",
+    "price": 2450,
+    "available": false,
+    "url": "https://elcatador.com/products/montes-alpha-carmenere"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Duckhorn Napa Valley Chardonnay",
+    "brand": "Duckhorn",
+    "type": "blanco",
+    "price": 4300,
+    "available": true,
+    "url": "https://elcatador.com/products/duckhorn-napa-valley-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Duckhorn Decoy Chardonnay",
+    "brand": "Duckhorn",
+    "type": "blanco",
+    "price": 2390,
+    "available": true,
+    "url": "https://elcatador.com/products/duckhorn-decoy-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Masi Costasera Amarone Classico",
+    "brand": "Masi",
+    "type": "tinto",
+    "price": 6950,
+    "available": true,
+    "url": "https://elcatador.com/products/masi-costasera-amarone-classico"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Don Pedro de Soutomaior",
+    "brand": "Adegas Galegas",
+    "type": "blanco",
+    "price": 1650,
+    "available": true,
+    "url": "https://elcatador.com/products/don-pedro-de-soutomaior"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Maschio Prosecco Superiore",
+    "brand": "Maschio",
+    "type": "espumoso",
+    "price": 1480,
+    "available": true,
+    "url": "https://elcatador.com/products/maschio-prosecco-superiore"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "De Ladoucette Pouilly Fumé",
+    "brand": "De Ladoucette",
+    "type": "blanco",
+    "price": 3790,
+    "available": true,
+    "url": "https://elcatador.com/products/de-ladoucette-pouilly-fume"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Riscal Proximo",
+    "brand": "Marqués de Riscal",
+    "type": "tinto",
+    "price": 920,
+    "available": false,
+    "url": "https://elcatador.com/products/marques-de-riscal-proximo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Riscal Gran Reserva",
+    "brand": "Marqués de Riscal",
+    "type": "tinto",
+    "price": 6980,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-riscal-gran-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Cupcake Red Velvet",
+    "brand": "Cupcake",
+    "type": "tinto",
+    "price": 1350,
+    "available": false,
+    "url": "https://elcatador.com/products/cupcake-red-velvet"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Murrieta Capellania",
+    "brand": "Marqués de Murrieta",
+    "type": "blanco",
+    "price": 8800,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-murrieta-capellania"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Luigi Bosca De Sangre",
+    "brand": "Luigi Bosca",
+    "type": "tinto",
+    "price": 2390,
+    "available": false,
+    "url": "https://elcatador.com/products/luigi-bosca-de-sangre"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Louis Latour Vosne Romanée",
+    "brand": "Louis Latour",
+    "type": "tinto",
+    "price": 9400,
+    "available": false,
+    "url": "https://elcatador.com/products/louis-latour-vosne-romanee"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Louis Latour Pinot Noir",
+    "brand": "Louis Latour",
+    "type": "tinto",
+    "price": 2350,
+    "available": true,
+    "url": "https://elcatador.com/products/louis-latour-pinot-noir"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Le Serre Nuove dell' Ornellaia",
+    "brand": "Ornellaia",
+    "type": "tinto",
+    "price": 6280,
+    "available": false,
+    "url": "https://elcatador.com/products/le-serre-nuove-dell-ornellaia"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Bottega Petalo Vino del Amore",
+    "brand": "Bottega Spa",
+    "type": "espumoso",
+    "price": 1190,
+    "available": true,
+    "url": "https://elcatador.com/products/bottega-petalo-vino-del-amore"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "La Crema Sonoma Coast Chardonnay",
+    "brand": "La Crema",
+    "type": "blanco",
+    "price": 2890,
+    "available": true,
+    "url": "https://elcatador.com/products/la-crema-sonoma-coast-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "La Crema Russian River Valley Chardonnay",
+    "brand": "La Crema",
+    "type": "blanco",
+    "price": 3650,
+    "available": false,
+    "url": "https://elcatador.com/products/la-crema-russian-river-valley-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Kosta Browne One Sixteen Chardonnay",
+    "brand": "Kosta Browne",
+    "type": "blanco",
+    "price": 6950,
+    "available": false,
+    "url": "https://elcatador.com/products/kosta-browne-one-sixteen-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Kistler Les Noisetiers Chardonnay",
+    "brand": "Kistler",
+    "type": "blanco",
+    "price": 7350,
+    "available": true,
+    "url": "https://elcatador.com/products/kistler-les-noisetiers-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Kendall Jackson Vintner's Reserve Cabernet Sauvignon",
+    "brand": "Kendall Jackson",
+    "type": "tinto",
+    "price": 2890,
+    "available": true,
+    "url": "https://elcatador.com/products/kendall-jackson-vintners-reserve-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Kendall Jackson Grand Reserve Chardonnay",
+    "brand": "Kendall Jackson",
+    "type": "blanco",
+    "price": 2750,
+    "available": true,
+    "url": "https://elcatador.com/products/kendall-jackson-grand-reserve-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Jerez La Ina",
+    "brand": "La Ina",
+    "type": "otro",
+    "price": 1550,
+    "available": true,
+    "url": "https://elcatador.com/products/jerez-la-ina"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Beringer California Chardonnay",
+    "brand": "Beringer",
+    "type": "blanco",
+    "price": 870,
+    "available": true,
+    "url": "https://elcatador.com/products/beringer-california-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Hess Select Chardonnay",
+    "brand": "Hess",
+    "type": "blanco",
+    "price": 1650,
+    "available": true,
+    "url": "https://elcatador.com/products/hess-select-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Hess Collection Chardonnay",
+    "brand": "Hess",
+    "type": "blanco",
+    "price": 3490,
+    "available": true,
+    "url": "https://elcatador.com/products/hess-collection-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Hess Allomi Cabernet Sauvignon",
+    "brand": "Hess",
+    "type": "tinto",
+    "price": 5500,
+    "available": true,
+    "url": "https://elcatador.com/products/hess-allomi-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Baron Philippe de Rothschild Sauternes 375ml",
+    "brand": "Baron Philippe de Rothschild",
+    "type": "blanco",
+    "price": 1820,
+    "available": true,
+    "url": "https://elcatador.com/products/baron-philippe-de-rothschild-sauternes-375ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Glorioso Selección Especial 100 Años",
+    "brand": "Glorioso",
+    "type": "tinto",
+    "price": 1550,
+    "available": true,
+    "url": "https://elcatador.com/products/glorioso-seleccion-especial-100-anos"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Flaccianello Della Pieve 2018",
+    "brand": "Fontodi",
+    "type": "tinto",
+    "price": 14450,
+    "available": false,
+    "url": "https://elcatador.com/products/flaccianello-della-pieve"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Emmolo Napa Valley Sauvignon Blanc",
+    "brand": "Emmolo",
+    "type": "blanco",
+    "price": 2790,
+    "available": true,
+    "url": "https://elcatador.com/products/emmolo-napa-valley-sauvignon-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "E. Guigal Château d'Ampuis 2016",
+    "brand": "E. Guigal",
+    "type": "tinto",
+    "price": 10500,
+    "available": false,
+    "url": "https://elcatador.com/products/e-guigal-chateau-dampuis"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Duckhorn Decoy Pinot Noir",
+    "brand": "Duckhorn",
+    "type": "tinto",
+    "price": 2650,
+    "available": true,
+    "url": "https://elcatador.com/products/duckhorn-decoy-pinot-noir"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Duckhorn Cabernet Sauvignon 375ml",
+    "brand": "Duckhorn",
+    "type": "tinto",
+    "price": 3520,
+    "available": false,
+    "url": "https://elcatador.com/products/duckhorn-cabernet-sauvignon-375ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Domaines Ott Rosé Clos Mireille",
+    "brand": "Domaine OTT",
+    "type": "rosado",
+    "price": 4450,
+    "available": true,
+    "url": "https://elcatador.com/products/domaines-ott-rose-clos-mireille"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Château Clos de l'Oratoire 2016",
+    "brand": "Château Clos de l'Oratoire",
+    "type": "tinto",
+    "price": 5700,
+    "available": false,
+    "url": "https://elcatador.com/products/chateau-clos-de-loratoire-2016"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Château Meyne",
+    "brand": "Château Meyney",
+    "type": "tinto",
+    "price": 3980,
+    "available": false,
+    "url": "https://elcatador.com/products/chateau-meyne"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "De Ladoucette Sancerre Blanc Comte Lafond",
+    "brand": "De Ladoucette",
+    "type": "blanco",
+    "price": 3590,
+    "available": true,
+    "url": "https://elcatador.com/products/de-ladoucette-sancerre-blanc-comte-lafond"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Darioush Darius II",
+    "brand": "Darioush",
+    "type": "tinto",
+    "price": 27500,
+    "available": true,
+    "url": "https://elcatador.com/products/darioush-darius-ii"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Darioush Cabernet Sauvignon",
+    "brand": "Darioush",
+    "type": "tinto",
+    "price": 11800,
+    "available": true,
+    "url": "https://elcatador.com/products/darioush-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués Casa Concha Chardonnay",
+    "brand": "Santa Rita",
+    "type": "blanco",
+    "price": 2190,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-casa-concha-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Château Dauzac 2016",
+    "brand": "Château Dauzac",
+    "type": "tinto",
+    "price": 5980,
+    "available": false,
+    "url": "https://elcatador.com/products/chateau-dauzac-2016"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Contador",
+    "brand": "Contador",
+    "type": "tinto",
+    "price": 26500,
+    "available": false,
+    "url": "https://elcatador.com/products/contador"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Argiano Solengo Toscana IGT 1.5 litros",
+    "brand": "Argiano",
+    "type": "tinto",
+    "price": 12600,
+    "available": false,
+    "url": "https://elcatador.com/products/argiano-solengo-toscana-igt-1-5-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Argiano Solengo Toscana IGT 3 litros",
+    "brand": "Argiano",
+    "type": "tinto",
+    "price": 19800,
+    "available": false,
+    "url": "https://elcatador.com/products/argiano-solengo-toscana-igt-3-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Chateau Ste Michelle Columbia Riesling",
+    "brand": "Chateau Ste Michelle",
+    "type": "blanco",
+    "price": 1550,
+    "available": true,
+    "url": "https://elcatador.com/products/chateau-st-michelle-columbia-riesling"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Château De Pez 2016",
+    "brand": "Chateau Pez",
+    "type": "tinto",
+    "price": 5200,
+    "available": true,
+    "url": "https://elcatador.com/products/chateau-de-pez-2010"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Caymus Special Selection Cabernet Sauvignon",
+    "brand": "Caymus",
+    "type": "tinto",
+    "price": 21900,
+    "available": true,
+    "url": "https://elcatador.com/products/caymus-special-selection-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Caymus Cabernet Sauvignon",
+    "brand": "Caymus",
+    "type": "tinto",
+    "price": 8980,
+    "available": true,
+    "url": "https://elcatador.com/products/caymus-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Silk & Spice Red Blend",
+    "brand": "Sogrape Vinhos",
+    "type": "tinto",
+    "price": 1100,
+    "available": true,
+    "url": "https://elcatador.com/products/silk-spice-red-blend"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Casillero del Diablo Red Blend",
+    "brand": "Casillero del Diablo",
+    "type": "tinto",
+    "price": 980,
+    "available": true,
+    "url": "https://elcatador.com/products/casillero-del-diablo-red-blend"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Renieri Brunello Di Montalcino",
+    "brand": "Renieri",
+    "type": "tinto",
+    "price": 10500,
+    "available": false,
+    "url": "https://elcatador.com/products/renieri-brunello-di-montalcino"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Casanova di Neri Tenuta Nuova",
+    "brand": "Casanova di Neri",
+    "type": "tinto",
+    "price": 12900,
+    "available": true,
+    "url": "https://elcatador.com/products/casanova-di-neri-tenuta-nuova"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Carmelo Rodero TSM 2017",
+    "brand": "Carmelo Rodero",
+    "type": "tinto",
+    "price": 8600,
+    "available": true,
+    "url": "https://elcatador.com/products/carmelo-rodero-tsm"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Daou Cabernet Sauvignon 375 ml",
+    "brand": "Daou",
+    "type": "tinto",
+    "price": 1550,
+    "available": false,
+    "url": "https://elcatador.com/products/daou-cabernet-sauvignon-1-2-bot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués Casa Concha Cabernet Sauvignon",
+    "brand": "Concha y Toro",
+    "type": "tinto",
+    "price": 2190,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-casa-concha-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "19 Crimes Cali Red",
+    "brand": "19 Crimes",
+    "type": "tinto",
+    "price": 1650,
+    "available": true,
+    "url": "https://elcatador.com/products/19-crimes-cali-red"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Bogle Old Vine Zinfandel",
+    "brand": "Bogle",
+    "type": "tinto",
+    "price": 1690,
+    "available": true,
+    "url": "https://elcatador.com/products/bogle-old-vine-zinfandel"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Bogle Essential Red",
+    "brand": "Bogle",
+    "type": "tinto",
+    "price": 1550,
+    "available": true,
+    "url": "https://elcatador.com/products/bogle-essential-red"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Billecart Salmon Brut Rosé 375ml",
+    "brand": "Billecart-Salmon",
+    "type": "espumoso",
+    "price": 4690,
+    "available": true,
+    "url": "https://elcatador.com/products/billecart-salmon-brut-rose-375ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Beringer Dry Rosé",
+    "brand": "Beringer",
+    "type": "rosado",
+    "price": 750,
+    "available": false,
+    "url": "https://elcatador.com/products/beringer-dry-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Perrier-Jouët Grand Brut 375 ml",
+    "brand": "Perrier-Jouët",
+    "type": "espumoso",
+    "price": 3180,
+    "available": true,
+    "url": "https://elcatador.com/products/perrier-jouet-grand-brut-375-ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Banfi Chianti Reserva",
+    "brand": "Banfi",
+    "type": "tinto",
+    "price": 2690,
+    "available": true,
+    "url": "https://elcatador.com/products/banfi-chianti-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Banfi Brunello Di Montalcino",
+    "brand": "Banfi",
+    "type": "tinto",
+    "price": 5500,
+    "available": true,
+    "url": "https://elcatador.com/products/banfi-brunello-di-montalcino"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Baron Philippe de Rothschild Cabernet Sauvignon",
+    "brand": "Baron Philippe de Rothschild",
+    "type": "tinto",
+    "price": 1190,
+    "available": true,
+    "url": "https://elcatador.com/products/baron-philippe-de-rothschild-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Baron Philippe Mouton Cadet Reserva Medoc",
+    "brand": "Baron Philippe de Rothschild",
+    "type": "tinto",
+    "price": 2190,
+    "available": true,
+    "url": "https://elcatador.com/products/baron-philippe-mouton-cadet-reserva-medoc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Arzuaga Reserva 3 litros",
+    "brand": "Arzuaga",
+    "type": "tinto",
+    "price": 19800,
+    "available": true,
+    "url": "https://elcatador.com/products/arzuaga-reserva-3-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Arzuaga La Planta",
+    "brand": "Arzuaga",
+    "type": "tinto",
+    "price": 1450,
+    "available": true,
+    "url": "https://elcatador.com/products/arzuaga-la-planta"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Arzuaga Crianza Jeroboam 3 litros",
+    "brand": "Arzuaga",
+    "type": "tinto",
+    "price": 13900,
+    "available": true,
+    "url": "https://elcatador.com/products/arzuaga-crianza-jeroboam-3-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Arzuaga Crianza 375ml",
+    "brand": "Arzuaga",
+    "type": "tinto",
+    "price": 1550,
+    "available": true,
+    "url": "https://elcatador.com/products/arzuaga-crianza-375ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Flowers Chardonnay, Sonoma",
+    "brand": "Flowers",
+    "type": "blanco",
+    "price": 4500,
+    "available": false,
+    "url": "https://elcatador.com/products/flowers-chardonnay-sonoma"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Decoy Cabernet Sauv. 1/2 bot",
+    "brand": "Decoy",
+    "type": "tinto",
+    "price": 1480,
+    "available": false,
+    "url": "https://elcatador.com/products/decoy-cabernet-sauv-1-2-bot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Unshackled Cabernet Sauvignon, Napa Valley",
+    "brand": "The Prisoner Wine Company",
+    "type": "tinto",
+    "price": 2990,
+    "available": true,
+    "url": "https://elcatador.com/products/unshackled-cabernet-sauvignon-napa-valley"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Louis Latour Chassagne Montrachet",
+    "brand": "Louis Latour",
+    "type": "blanco",
+    "price": 9500,
+    "available": true,
+    "url": "https://elcatador.com/products/louis-latour-chassagne-montrachet"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Alpha M Assemblage",
+    "brand": "Montes",
+    "type": "tinto",
+    "price": 8450,
+    "available": false,
+    "url": "https://elcatador.com/products/alpha-m-assemblage"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Yellow Tail Shiraz",
+    "brand": "Yellow Tail",
+    "type": "tinto",
+    "price": 970,
+    "available": false,
+    "url": "https://elcatador.com/products/yellow-tail-shiraz"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Woodbridge Sauvignon Blanc",
+    "brand": "Robert Mondavi Woodbridge",
+    "type": "blanco",
+    "price": 890,
+    "available": true,
+    "url": "https://elcatador.com/products/woodbridge-sauvignon-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Trapiche Pinot Grigio",
+    "brand": "Trapiche",
+    "type": "blanco",
+    "price": 680,
+    "available": true,
+    "url": "https://elcatador.com/products/trapiche-pinot-grigio"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Torresella Prosecco",
+    "brand": "Torresella",
+    "type": "espumoso",
+    "price": 0,
+    "available": false,
+    "url": "https://elcatador.com/products/torresella-prosecco"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Torre Muga  2016",
+    "brand": "Muga",
+    "type": "tinto",
+    "price": 8300,
+    "available": true,
+    "url": "https://elcatador.com/products/torre-muga"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pessimist",
+    "brand": "Daou",
+    "type": "tinto",
+    "price": 2850,
+    "available": true,
+    "url": "https://elcatador.com/products/pessimist"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Shafer Red Shoulder Ranch Chardonnay",
+    "brand": "Shafer",
+    "type": "blanco",
+    "price": 6980,
+    "available": true,
+    "url": "https://elcatador.com/products/shafer-red-shoulder-ranch-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Shafer One Point Five Cabernet Sauvignon",
+    "brand": "Shafer",
+    "type": "tinto",
+    "price": 11700,
+    "available": true,
+    "url": "https://elcatador.com/products/shafer-one-point-five-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Segura Viudas Brut Reserva Heredad",
+    "brand": "Segura Viudas",
+    "type": "espumoso",
+    "price": 2790,
+    "available": true,
+    "url": "https://elcatador.com/products/segura-viudas-brut-reserva-heredad"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Segura Viudas Brut Reserva",
+    "brand": "Seguras Viudas",
+    "type": "espumoso",
+    "price": 1280,
+    "available": true,
+    "url": "https://elcatador.com/products/segura-viudas-brut-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Segura Viudas 200ml",
+    "brand": "Seguras Viudas",
+    "type": "espumoso",
+    "price": 390,
+    "available": true,
+    "url": "https://elcatador.com/products/segura-viudas-200ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santa Rita Reserva Cabernet Sauvignon",
+    "brand": "Santa Rita",
+    "type": "tinto",
+    "price": 1270,
+    "available": true,
+    "url": "https://elcatador.com/products/santa-rita-reserva-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santa Margherita Spumante Rosato",
+    "brand": "Santa Margherita",
+    "type": "espumoso",
+    "price": 1650,
+    "available": false,
+    "url": "https://elcatador.com/products/santa-margherita-spumante-rosato"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santa Margherita Pinot Grigio",
+    "brand": "Santa Margherita",
+    "type": "blanco",
+    "price": 1750,
+    "available": true,
+    "url": "https://elcatador.com/products/santa-margherita-pinot-grigio"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Ruffino Orvieto Classico",
+    "brand": "Ruffino",
+    "type": "blanco",
+    "price": 1100,
+    "available": true,
+    "url": "https://elcatador.com/products/ruffino-orvieto-classico"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Robert Mondavi Private Selection Merlot",
+    "brand": "Robert Mondavi Private Selection",
+    "type": "tinto",
+    "price": 1520,
+    "available": true,
+    "url": "https://elcatador.com/products/robert-mondavi-private-selection-merlot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Robert Mondavi Napa Valley Pinot Noir",
+    "brand": "Robert Mondavi Winery",
+    "type": "tinto",
+    "price": 4290,
+    "available": true,
+    "url": "https://elcatador.com/products/robert-mondavi-napa-valley-pinot-noir"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Robert Mondavi Napa Valley Chardonnay",
+    "brand": "Robert Mondavi Winery",
+    "type": "blanco",
+    "price": 3950,
+    "available": true,
+    "url": "https://elcatador.com/products/robert-mondavi-napa-valley-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Robert Mondavi Bourbon Barrel Cabernet Sauvignon",
+    "brand": "Robert Mondavi Private Selection",
+    "type": "tinto",
+    "price": 1790,
+    "available": true,
+    "url": "https://elcatador.com/products/robert-mondavi-bourbon-barrel-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Quarz Sauvignon Blanc",
+    "brand": "Cantina Terlano-Kellerei",
+    "type": "blanco",
+    "price": 5980,
+    "available": false,
+    "url": "https://elcatador.com/products/quarz-sauvignon-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Prunotto Barolo",
+    "brand": "Prunotto",
+    "type": "tinto",
+    "price": 5550,
+    "available": true,
+    "url": "https://elcatador.com/products/prunotto-barolo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Predicador Tinto",
+    "brand": "Benjamin Romeo",
+    "type": "tinto",
+    "price": 2980,
+    "available": false,
+    "url": "https://elcatador.com/products/predicador-tinto"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Prado Enea Gran Reserva 1.5 litros",
+    "brand": "Muga",
+    "type": "tinto",
+    "price": 15500,
+    "available": false,
+    "url": "https://elcatador.com/products/prado-enea-gran-reserva-1-5-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pesus",
+    "brand": "Viña Sastre",
+    "type": "tinto",
+    "price": 29500,
+    "available": true,
+    "url": "https://elcatador.com/products/pesus"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Penfold's Bin 389 Cabernet/Shiraz",
+    "brand": "Penfolds",
+    "type": "tinto",
+    "price": 8900,
+    "available": false,
+    "url": "https://elcatador.com/products/penfolds-bin-389-cabernet-shiraz"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Paul Hobbs Russian River Chardonnay",
+    "brand": "Paull Hobbs",
+    "type": "blanco",
+    "price": 5350,
+    "available": false,
+    "url": "https://elcatador.com/products/paul-hobbs-russian-river-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Palo Alto Reserva Cabernet I",
+    "brand": "Palo Alto",
+    "type": "tinto",
+    "price": 860,
+    "available": false,
+    "url": "https://elcatador.com/products/palo-alto-reserva-cabernet-i"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Norton Malbec DOC",
+    "brand": "Norton",
+    "type": "tinto",
+    "price": 1040,
+    "available": false,
+    "url": "https://elcatador.com/products/norton-malbec-doc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Muga Selección Especial",
+    "brand": "Muga",
+    "type": "tinto",
+    "price": 4450,
+    "available": false,
+    "url": "https://elcatador.com/products/muga-seleccion-especial"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Muga Rosado",
+    "brand": "Muga",
+    "type": "rosado",
+    "price": 1550,
+    "available": true,
+    "url": "https://elcatador.com/products/muga-rosado"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Mouton Cadet Tinto",
+    "brand": "Baron Philippe de Rothschild",
+    "type": "tinto",
+    "price": 1650,
+    "available": true,
+    "url": "https://elcatador.com/products/mouton-cadet-tinto"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Mouton Cadet Reserva Saint Emilion",
+    "brand": "Baron Philippe de Rothschild",
+    "type": "tinto",
+    "price": 2650,
+    "available": true,
+    "url": "https://elcatador.com/products/mouton-cadet-reserva-saint-emilion"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Mouton Cadet Blanco",
+    "brand": "Baron Philippe de Rothschild",
+    "type": "blanco",
+    "price": 1550,
+    "available": true,
+    "url": "https://elcatador.com/products/mouton-cadet-blanco"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Montes Purple Angel",
+    "brand": "Montes",
+    "type": "tinto",
+    "price": 8490,
+    "available": true,
+    "url": "https://elcatador.com/products/montes-purple-angel"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Montes Alpha Chardonnay",
+    "brand": "Montes",
+    "type": "blanco",
+    "price": 2550,
+    "available": true,
+    "url": "https://elcatador.com/products/montes-alpha-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Montes Alpha Cabernet Sauvignon",
+    "brand": "Montes",
+    "type": "tinto",
+    "price": 2450,
+    "available": true,
+    "url": "https://elcatador.com/products/montes-alpha-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Masi Brolo di Campofiorin Verona",
+    "brand": "Masi",
+    "type": "tinto",
+    "price": 3090,
+    "available": false,
+    "url": "https://elcatador.com/products/masi-brolo-di-campofiorin-verona"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Maschio Rosé",
+    "brand": "Maschio",
+    "type": "espumoso",
+    "price": 1150,
+    "available": true,
+    "url": "https://elcatador.com/products/maschio-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Maschio Rosé 200ml",
+    "brand": "Maschio",
+    "type": "espumoso",
+    "price": 320,
+    "available": true,
+    "url": "https://elcatador.com/products/maschio-rose-200ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Maschio Prosecco",
+    "brand": "Maschio",
+    "type": "espumoso",
+    "price": 1150,
+    "available": true,
+    "url": "https://elcatador.com/products/maschio-prosecco"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Riscal Tempranillo",
+    "brand": "Marqués de Riscal",
+    "type": "tinto",
+    "price": 1090,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-riscal-tempranillo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Riscal Rosado",
+    "brand": "Marqués de Riscal",
+    "type": "rosado",
+    "price": 1290,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-riscal-rosado"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués De Murrieta Pazo de Barrantes",
+    "brand": "Marqués de Murrieta",
+    "type": "blanco",
+    "price": 5100,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-murrieta-pazo-de-barrantes"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Murrieta Dalmau",
+    "brand": "Marqués de Murrieta",
+    "type": "tinto",
+    "price": 19900,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-murrieta-dalmau"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Riscal Reserva 375ml",
+    "brand": "Marqués de Riscal",
+    "type": "tinto",
+    "price": 1280,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-riscal-reserva-375ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Louis Roederer Cristal Brut",
+    "brand": "Louis Roderer",
+    "type": "espumoso",
+    "price": 29000,
+    "available": true,
+    "url": "https://elcatador.com/products/louis-roederer-cristal-brut"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Louis Roederer Brut Rosé Vintage",
+    "brand": "Louis Roderer",
+    "type": "espumoso",
+    "price": 7890,
+    "available": false,
+    "url": "https://elcatador.com/products/louis-roederer-brut-rose-vintage"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Louis Roederer Collection Brut",
+    "brand": "Louis Roderer",
+    "type": "espumoso",
+    "price": 5750,
+    "available": true,
+    "url": "https://elcatador.com/products/louis-roederer-brut-premier"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Louis Latour Nuit St. Georges Premier Cru Le Crots",
+    "brand": "Louis Latour",
+    "type": "tinto",
+    "price": 9500,
+    "available": false,
+    "url": "https://elcatador.com/products/louis-latour-nuit-st-georges-premier-cru-le-crots"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Louis Latour Chablis Premier Cru",
+    "brand": "Louis Latour",
+    "type": "blanco",
+    "price": 5780,
+    "available": true,
+    "url": "https://elcatador.com/products/louis-latour-chablis-premier-cru"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Lopez de Haro Reserva",
+    "brand": "Lopez de Haro",
+    "type": "tinto",
+    "price": 1580,
+    "available": true,
+    "url": "https://elcatador.com/products/lopez-de-haro-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Livio Felluga Chardonnay",
+    "brand": "Livio Felluga",
+    "type": "blanco",
+    "price": 3250,
+    "available": false,
+    "url": "https://elcatador.com/products/livio-felluga-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Lillet Rosé",
+    "brand": "Lillet",
+    "type": "rosado",
+    "price": 2250,
+    "available": true,
+    "url": "https://elcatador.com/products/lillet-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "La Crema Sonoma Coast Pinot Noir",
+    "brand": "La Crema",
+    "type": "tinto",
+    "price": 3350,
+    "available": true,
+    "url": "https://elcatador.com/products/la-crema-sonoma-coast-pinot-noir"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "La Crema Russian River Valley Pinot Noir",
+    "brand": "La Crema",
+    "type": "tinto",
+    "price": 5450,
+    "available": true,
+    "url": "https://elcatador.com/products/la-crema-russian-river-valley-pinot-noir"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Kistler Russian River  Pinot Noir",
+    "brand": "Kistler",
+    "type": "tinto",
+    "price": 7590,
+    "available": true,
+    "url": "https://elcatador.com/products/kistler-russian-river-pinot-noir"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Kendall Jackson Vintner's Reserve Sauvignon Blanc",
+    "brand": "Kendall Jackson",
+    "type": "blanco",
+    "price": 1880,
+    "available": true,
+    "url": "https://elcatador.com/products/kendall-jackson-vintners-reserve-sauvignon-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Kendall Jackson Vintner's Reserve Pinot Noir",
+    "brand": "Kendall Jackson",
+    "type": "tinto",
+    "price": 2550,
+    "available": true,
+    "url": "https://elcatador.com/products/kendall-jackson-vintners-reserve-pinot-noir"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Kaiken UltraMalbec",
+    "brand": "Kaiken",
+    "type": "tinto",
+    "price": 2390,
+    "available": true,
+    "url": "https://elcatador.com/products/kaiken-ultramalbec"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Kendall Jackson Vintner's Reserve Chardonnay 375ml",
+    "brand": "Kendall Jackson",
+    "type": "blanco",
+    "price": 990,
+    "available": true,
+    "url": "https://elcatador.com/products/kendall-jackson-vintners-reserve-chardonnay-375ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Hugel Riesling Estate",
+    "brand": "Hugel",
+    "type": "blanco",
+    "price": 3350,
+    "available": false,
+    "url": "https://elcatador.com/products/hugel-riesling-estate"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Graham's Tawny",
+    "brand": "Graham's",
+    "type": "tinto",
+    "price": 1950,
+    "available": true,
+    "url": "https://elcatador.com/products/grahams-tawny"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Graham's 20 Years",
+    "brand": "Graham's",
+    "type": "tinto",
+    "price": 6700,
+    "available": true,
+    "url": "https://elcatador.com/products/grahams-20-years"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Graham's Vintage Port 2000",
+    "brand": "Graham's",
+    "type": "tinto",
+    "price": 10500,
+    "available": true,
+    "url": "https://elcatador.com/products/grahams-vintage-port-2000"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Graham's Tawny 10 años",
+    "brand": "Graham's",
+    "type": "tinto",
+    "price": 4150,
+    "available": false,
+    "url": "https://elcatador.com/products/grahams-tawny-10-anos"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Glorioso Gran Reserva",
+    "brand": "Glorioso",
+    "type": "tinto",
+    "price": 3450,
+    "available": false,
+    "url": "https://elcatador.com/products/glorioso-gran-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Glorioso Crianza",
+    "brand": "Glorioso",
+    "type": "tinto",
+    "price": 1250,
+    "available": true,
+    "url": "https://elcatador.com/products/glorioso-crianza"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Glorioso Crianza 375 ml",
+    "brand": "Glorioso",
+    "type": "tinto",
+    "price": 720,
+    "available": true,
+    "url": "https://elcatador.com/products/glorioso-crianza-375-ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Gloria Ferrer Rosé Blanc de Noirs",
+    "brand": "Gloria Ferrer",
+    "type": "espumoso",
+    "price": 2100,
+    "available": false,
+    "url": "https://elcatador.com/products/gloria-ferrer-rose-blanc-de-noirs"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Hugel Gewürztraminer",
+    "brand": "Hugel",
+    "type": "blanco",
+    "price": 2280,
+    "available": false,
+    "url": "https://elcatador.com/products/hugel-gewurztraminer"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Georges Duboeuf Côtes du Rhône",
+    "brand": "Georges Duboeuf",
+    "type": "tinto",
+    "price": 1290,
+    "available": false,
+    "url": "https://elcatador.com/products/georges-duboeuf-cotes-du-rhone"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Georges Duboeuf Chateauneuf du Pape",
+    "brand": "Georges Duboeuf",
+    "type": "tinto",
+    "price": 4750,
+    "available": true,
+    "url": "https://elcatador.com/products/georges-duboeuf-chateauneuf-du-pape"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Georges Duboeuf Beaujolais Villages",
+    "brand": "Georges Duboeuf",
+    "type": "tinto",
+    "price": 1690,
+    "available": true,
+    "url": "https://elcatador.com/products/georges-duboeuf-beaujolais-villages"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Georges Duboeuf Juliénas",
+    "brand": "Georges Duboeuf",
+    "type": "tinto",
+    "price": 1540,
+    "available": false,
+    "url": "https://elcatador.com/products/georges-duboeuf-julienas"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Frontera Cabernet Sauvignon 1.5 litros",
+    "brand": "Concha y Toro",
+    "type": "tinto",
+    "price": 1180,
+    "available": true,
+    "url": "https://elcatador.com/products/frontera-cabernet-sauvignon-1-5-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Frontera After Midnight Red Blend",
+    "brand": "Concha y Toro",
+    "type": "tinto",
+    "price": 595,
+    "available": true,
+    "url": "https://elcatador.com/products/frontera-after-midnight-red-blend"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Fontodi Vigna Del Sorbo",
+    "brand": "Fontodi",
+    "type": "tinto",
+    "price": 7680,
+    "available": false,
+    "url": "https://elcatador.com/products/fontodi-vigna-del-sorbo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "El Coto Crianza",
+    "brand": "El Coto",
+    "type": "tinto",
+    "price": 1150,
+    "available": false,
+    "url": "https://elcatador.com/products/el-coto-crianza"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Due Di Due Blend Italiano",
+    "brand": "Lupo Meraviglia",
+    "type": "tinto",
+    "price": 1050,
+    "available": true,
+    "url": "https://elcatador.com/products/due-di-due-blend-italiano"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Duckhorn Three Palms Merlot",
+    "brand": "Duckhorn",
+    "type": "tinto",
+    "price": 10900,
+    "available": true,
+    "url": "https://elcatador.com/products/duckhorn-three-palms-merlot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Duckhorn Napa Valley Sauvignon Blanc",
+    "brand": "Duckhorn",
+    "type": "blanco",
+    "price": 3280,
+    "available": true,
+    "url": "https://elcatador.com/products/duckhorn-napa-valley-sauvignon-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Duckhorn Napa Valley Cabernet Sauvignon",
+    "brand": "Duckhorn",
+    "type": "tinto",
+    "price": 5980,
+    "available": true,
+    "url": "https://elcatador.com/products/duckhorn-napa-valley-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Doña Paula EstateMalbec",
+    "brand": "Doña Paula",
+    "type": "tinto",
+    "price": 1350,
+    "available": true,
+    "url": "https://elcatador.com/products/dona-paula-estatemalbec"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Protos Gran Reserva",
+    "brand": "Protos",
+    "type": "tinto",
+    "price": 6400,
+    "available": true,
+    "url": "https://elcatador.com/products/protos-gran-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Daou Reserve Cabernet Sauvignon",
+    "brand": "Daou",
+    "type": "tinto",
+    "price": 6190,
+    "available": true,
+    "url": "https://elcatador.com/products/daou-reserve-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Conundrum Blanco",
+    "brand": "Wagner Family of Wines",
+    "type": "blanco",
+    "price": 2250,
+    "available": true,
+    "url": "https://elcatador.com/products/conundrum-blanco"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Woodbridge Red Blend",
+    "brand": "Woodbridge",
+    "type": "tinto",
+    "price": 950,
+    "available": true,
+    "url": "https://elcatador.com/products/woodbridge-red-blend"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Clos De Los Siete",
+    "brand": "Clos de los siete",
+    "type": "tinto",
+    "price": 2650,
+    "available": true,
+    "url": "https://elcatador.com/products/clos-de-los-siete"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Chateau Ste. Michelle Indian Wells Cabernet Sauvignon",
+    "brand": "Chateau Ste Michelle",
+    "type": "tinto",
+    "price": 2490,
+    "available": false,
+    "url": "https://elcatador.com/products/chateau-st-michelle-indian-wells-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Ca'del Bosco Franciacorta Cuvée Prestige",
+    "brand": "Ca'del Bosco",
+    "type": "espumoso",
+    "price": 4590,
+    "available": false,
+    "url": "https://elcatador.com/products/cadel-bosco-franciacorta-cuvee-prestige"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Bogle Pinot Noir",
+    "brand": "Bogle",
+    "type": "tinto",
+    "price": 1620,
+    "available": true,
+    "url": "https://elcatador.com/products/bogle-pinot-noir"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pago de Carraovejas",
+    "brand": "Pago de Carraovejas",
+    "type": "tinto",
+    "price": 4980,
+    "available": true,
+    "url": "https://elcatador.com/products/pago-de-carraovejas"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Bogle Merlot",
+    "brand": "Bogle",
+    "type": "tinto",
+    "price": 1620,
+    "available": true,
+    "url": "https://elcatador.com/products/bogle-merlot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués De Riscal Sauvignon Blanc",
+    "brand": "Marqués de Riscal",
+    "type": "blanco",
+    "price": 1450,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-riscal-sauvignon-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Bogle Chardonnay",
+    "brand": "Bogle",
+    "type": "blanco",
+    "price": 1620,
+    "available": true,
+    "url": "https://elcatador.com/products/bogle-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Riscal Reserva XR",
+    "brand": "Marqués de Riscal",
+    "type": "tinto",
+    "price": 3450,
+    "available": false,
+    "url": "https://elcatador.com/products/marques-de-riscal-reserva-xr"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Riscal Reserva",
+    "brand": "Marqués de Riscal",
+    "type": "tinto",
+    "price": 2350,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-riscal-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Billecart Salmon Demi Sec",
+    "brand": "Billecart-Salmon",
+    "type": "espumoso",
+    "price": 6290,
+    "available": false,
+    "url": "https://elcatador.com/products/billecart-salmon-demi-sec"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Lan Reserva",
+    "brand": "LAN",
+    "type": "tinto",
+    "price": 1950,
+    "available": true,
+    "url": "https://elcatador.com/products/lan-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Billecart Salmon Cuvée Nicolas François",
+    "brand": "Billecart-Salmon",
+    "type": "espumoso",
+    "price": 14900,
+    "available": true,
+    "url": "https://elcatador.com/products/billecart-salmon-cuvee-nicolas-francois"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Billecart Salmon Brut Reserve 3 litros",
+    "brand": "Billecart-Salmon",
+    "type": "espumoso",
+    "price": 22800,
+    "available": false,
+    "url": "https://elcatador.com/products/billecart-salmon-brut-reserve-3-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Zaccagnini Montepulciano",
+    "brand": "Zaccagnini",
+    "type": "tinto",
+    "price": 1390,
+    "available": true,
+    "url": "https://elcatador.com/products/zaccagnini-montepulciano"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Beringer Founders Estate Merlot",
+    "brand": "Beringer",
+    "type": "tinto",
+    "price": 1450,
+    "available": true,
+    "url": "https://elcatador.com/products/beringer-founders-estate-merlot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Beringer Founders Estate Cabernet Sauvignon",
+    "brand": "Beringer",
+    "type": "tinto",
+    "price": 1395,
+    "available": true,
+    "url": "https://elcatador.com/products/beringer-founders-estate-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Terlaner Classico",
+    "brand": "Terlan",
+    "type": "blanco",
+    "price": 2380,
+    "available": true,
+    "url": "https://elcatador.com/products/terlaner-classico"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Beringer White Zinfandel 1.5 litros",
+    "brand": "Beringer",
+    "type": "rosado",
+    "price": 1650,
+    "available": true,
+    "url": "https://elcatador.com/products/beringer-white-zinfandel-1-5-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Beringer California Red Crush",
+    "brand": "Beringer",
+    "type": "tinto",
+    "price": 870,
+    "available": false,
+    "url": "https://elcatador.com/products/beringer-california-red-crush"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Robert Mondavi Private Selection Chardonnay",
+    "brand": "Robert Mondavi Private Selection",
+    "type": "blanco",
+    "price": 1480,
+    "available": true,
+    "url": "https://elcatador.com/products/robert-mondavi-private-selction-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Beringer California Moscato",
+    "brand": "Beringer",
+    "type": "blanco",
+    "price": 870,
+    "available": true,
+    "url": "https://elcatador.com/products/beringer-california-moscato"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Robert Mondavi Private Selection Cabernet Sauvignon",
+    "brand": "Robert Mondavi Private Selection",
+    "type": "tinto",
+    "price": 1520,
+    "available": true,
+    "url": "https://elcatador.com/products/robert-mondavi-private-selection-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Beringer California Merlot",
+    "brand": "Beringer",
+    "type": "tinto",
+    "price": 870,
+    "available": true,
+    "url": "https://elcatador.com/products/beringer-california-merlot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Protos Verdejo",
+    "brand": "Protos",
+    "type": "blanco",
+    "price": 1220,
+    "available": true,
+    "url": "https://elcatador.com/products/protos-verdejo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Beringer California Cabernet Sauvignon",
+    "brand": "Beringer",
+    "type": "tinto",
+    "price": 870,
+    "available": true,
+    "url": "https://elcatador.com/products/beringer-california-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Protos Reserva",
+    "brand": "Protos",
+    "type": "tinto",
+    "price": 3950,
+    "available": true,
+    "url": "https://elcatador.com/products/protos-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Borgo del Mandorlo Primitivo di Manduria",
+    "brand": "Borgo del Mandorlo",
+    "type": "tinto",
+    "price": 1450,
+    "available": true,
+    "url": "https://elcatador.com/products/borgo-del-mandorlo-primitivo-di-manduria"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Pago Florentino",
+    "brand": "Arzuaga",
+    "type": "tinto",
+    "price": 1690,
+    "available": true,
+    "url": "https://elcatador.com/products/pago-florentino"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Belle Glos Pinot Noir",
+    "brand": "Copper Cane",
+    "type": "tinto",
+    "price": 5100,
+    "available": true,
+    "url": "https://elcatador.com/products/belle-glos-eulenloch"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Matua Sauvignon Blanc",
+    "brand": "Matua",
+    "type": "blanco",
+    "price": 1750,
+    "available": true,
+    "url": "https://elcatador.com/products/matua-sauvignon-blanc"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Murrieta Reserva",
+    "brand": "Marqués de Murrieta",
+    "type": "tinto",
+    "price": 2980,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-murrieta-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Banfi Principessa Gavi",
+    "brand": "Banfi",
+    "type": "blanco",
+    "price": 1750,
+    "available": true,
+    "url": "https://elcatador.com/products/banfi-principessa-gavi"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Luigi Bosca Malbec",
+    "brand": "Luigi Bosca",
+    "type": "tinto",
+    "price": 1750,
+    "available": true,
+    "url": "https://elcatador.com/products/luigi-bosca-reserva-malbec"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Louis Latour Chablis",
+    "brand": "Louis Latour",
+    "type": "blanco",
+    "price": 3380,
+    "available": true,
+    "url": "https://elcatador.com/products/louis-latour-chablis"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Banfi Chianti Classico",
+    "brand": "Banfi",
+    "type": "tinto",
+    "price": 1950,
+    "available": true,
+    "url": "https://elcatador.com/products/banfi-chianti-classico"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Livio Felluga Pinot Grigio",
+    "brand": "Livio Felluga",
+    "type": "blanco",
+    "price": 2980,
+    "available": true,
+    "url": "https://elcatador.com/products/livio-felluga-pinot-grigio"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Baron Philippe de Rothschild Chardonnay",
+    "brand": "Baron Philippe de Rothschild",
+    "type": "blanco",
+    "price": 1150,
+    "available": true,
+    "url": "https://elcatador.com/products/baron-philippe-de-rothschild-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Lan A Mano Edición Limitada",
+    "brand": "LAN",
+    "type": "tinto",
+    "price": 3980,
+    "available": true,
+    "url": "https://elcatador.com/products/lan-a-mano-edicion-limitada"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Baron Philippe de Rothschild Merlot",
+    "brand": "Baron Philippe de Rothschild",
+    "type": "tinto",
+    "price": 1190,
+    "available": true,
+    "url": "https://elcatador.com/products/baron-philippe-de-rothschild-merlot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Kendall Jackson Vintner's Reserve Chardonnay",
+    "brand": "Kendall Jackson",
+    "type": "blanco",
+    "price": 2100,
+    "available": true,
+    "url": "https://elcatador.com/products/kendall-jackson-vintners-reserve-chardonnay"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Hess Select Cabernet Sauvignon",
+    "brand": "Hess",
+    "type": "tinto",
+    "price": 2250,
+    "available": true,
+    "url": "https://elcatador.com/products/hess-select-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Arzuaga Gran Reserva",
+    "brand": "Arzuaga",
+    "type": "tinto",
+    "price": 10980,
+    "available": true,
+    "url": "https://elcatador.com/products/arzuaga-gran-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Glorioso Reserva",
+    "brand": "Glorioso",
+    "type": "tinto",
+    "price": 1880,
+    "available": true,
+    "url": "https://elcatador.com/products/glorioso-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Duckhorn Decoy Red Wine",
+    "brand": "Duckhorn",
+    "type": "tinto",
+    "price": 2690,
+    "available": true,
+    "url": "https://elcatador.com/products/duckhorn-decoy-red-wine"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Daou Cabernet Sauvignon",
+    "brand": "Daou",
+    "type": "tinto",
+    "price": 2850,
+    "available": true,
+    "url": "https://elcatador.com/products/daou-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Casanova di Neri Irrosso",
+    "brand": "Casanova di Neri",
+    "type": "tinto",
+    "price": 2590,
+    "available": false,
+    "url": "https://elcatador.com/products/casanova-di-neri-irrosso"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Antinori Villa Antinori Rosso IGT",
+    "brand": "Antinori",
+    "type": "tinto",
+    "price": 2180,
+    "available": true,
+    "url": "https://elcatador.com/products/antinori-villa-antinori-rosso-igt"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Casanova di Neri Brunello Di Montalcino 2016",
+    "brand": "Casanova di Neri",
+    "type": "tinto",
+    "price": 7400,
+    "available": true,
+    "url": "https://elcatador.com/products/casanova-di-neri-brunello-di-montalcino"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Antinori Tignanello",
+    "brand": "Antinori",
+    "type": "tinto",
+    "price": 12600,
+    "available": false,
+    "url": "https://elcatador.com/products/antinori-tignanelo"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Antinori San Giovanni Della Sala",
+    "brand": "Antinori",
+    "type": "blanco",
+    "price": 2150,
+    "available": true,
+    "url": "https://elcatador.com/products/antinori-san-giovanni-della-sala"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Antinori Peppoli",
+    "brand": "Antinori",
+    "type": "tinto",
+    "price": 2450,
+    "available": true,
+    "url": "https://elcatador.com/products/antinori-peppoli"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Bogle Phantom",
+    "brand": "Bogle",
+    "type": "tinto",
+    "price": 2680,
+    "available": true,
+    "url": "https://elcatador.com/products/bogle-phantom"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Antinori Marchese Chianti Reserva",
+    "brand": "Antinori",
+    "type": "tinto",
+    "price": 4180,
+    "available": true,
+    "url": "https://elcatador.com/products/antinori-marchese-chianti-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Bogle Cabernet Sauvignon",
+    "brand": "Bogle",
+    "type": "tinto",
+    "price": 1620,
+    "available": true,
+    "url": "https://elcatador.com/products/bogle-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Beringer Bros Red Blend",
+    "brand": "Beringer",
+    "type": "tinto",
+    "price": 1650,
+    "available": true,
+    "url": "https://elcatador.com/products/beringer-bros-red-blend"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Antinori Cervaro Della Sala",
+    "brand": "Antinori",
+    "type": "blanco",
+    "price": 6800,
+    "available": true,
+    "url": "https://elcatador.com/products/antinori-cervaro-della-sala"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Alvaro Palacios Les Terrasses",
+    "brand": "Alvaro Palacios",
+    "type": "tinto",
+    "price": 4050,
+    "available": false,
+    "url": "https://elcatador.com/products/alvaro-palacios-les-terrasses"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Aire de Protos Rosado",
+    "brand": "Protos",
+    "type": "rosado",
+    "price": 1380,
+    "available": true,
+    "url": "https://elcatador.com/products/aire-de-protos-rosado"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "19 Crimes The Uprising",
+    "brand": "19 Crimes",
+    "type": "tinto",
+    "price": 1550,
+    "available": true,
+    "url": "https://elcatador.com/products/19-crimes-the-uprising"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "19 Crimes The Banished",
+    "brand": "19 Crimes",
+    "type": "tinto",
+    "price": 1550,
+    "available": true,
+    "url": "https://elcatador.com/products/19-crimes-the-banished"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "19 Crimes Red Wine",
+    "brand": "19 Crimes",
+    "type": "tinto",
+    "price": 1550,
+    "available": true,
+    "url": "https://elcatador.com/products/19-crimes-red-wine"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Monteabellón 5 Meses, Ribera del Duero",
+    "brand": "Monteabellón",
+    "type": "tinto",
+    "price": 1350,
+    "available": true,
+    "url": "https://elcatador.com/products/monteabellon-5-meses-ribera-del-duero-1"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "19 Crimes Cali Rosé",
+    "brand": "19 Crimes",
+    "type": "rosado",
+    "price": 1550,
+    "available": false,
+    "url": "https://elcatador.com/products/19-crimes-cali-rose"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Château Miraval Studio Côtes de Provence , Francia",
+    "brand": "Perrin & Fils",
+    "type": "rosado",
+    "price": 1630,
+    "available": false,
+    "url": "https://elcatador.com/products/chateau-miraval-studio-cotes-de-provence-francia"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Santa Margherita Merlot",
+    "brand": "Santa Margherita",
+    "type": "tinto",
+    "price": 1480,
+    "available": true,
+    "url": "https://elcatador.com/products/santa-margherita-merlot"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Stag's Leap Artemis Napa Valley Cabernet Sauvignon",
+    "brand": "Stag's Leap Wine Cellars",
+    "type": "tinto",
+    "price": 8980,
+    "available": true,
+    "url": "https://elcatador.com/products/stags-leap-artemis-napa-valley-cabernet-sauvignon"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Mouton Cadet Tinto 375ml",
+    "brand": "Baron Philippe de Rothschild",
+    "type": "tinto",
+    "price": 850,
+    "available": true,
+    "url": "https://elcatador.com/products/mouton-cadet-tinto-375ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Marqués de Murrieta Gran Reserva",
+    "brand": "Marqués de Murrieta",
+    "type": "tinto",
+    "price": 6500,
+    "available": true,
+    "url": "https://elcatador.com/products/marques-de-murrieta-gran-reserva"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Duckhorn Merlot 375ml",
+    "brand": "Duckhorn",
+    "type": "tinto",
+    "price": 2630,
+    "available": true,
+    "url": "https://elcatador.com/products/duckhorn-merlot-375ml"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Continuum Estate  2018",
+    "brand": "Continuum",
+    "type": "tinto",
+    "price": 31500,
+    "available": true,
+    "url": "https://elcatador.com/products/continuum-estate"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Billecart Salmon Brut Rosé 1.5 litros",
+    "brand": "Billecart-Salmon",
+    "type": "espumoso",
+    "price": 19650,
+    "available": true,
+    "url": "https://elcatador.com/products/billecart-salmon-brut-rose-1-5-litros"
+  },
+  {
+    "retailer": "El Catador",
+    "name": "Beringer Founders Estate Chardonnay",
+    "brand": "Beringer",
+    "type": "blanco",
+    "price": 1450,
+    "available": true,
+    "url": "https://elcatador.com/products/beringer-founders-estate-chardonnay"
+  }
+]
