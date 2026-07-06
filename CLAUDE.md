@@ -114,7 +114,7 @@ Working tree clean, `main` in sync with origin, prod deployed and responding. Tw
 
 The pause is deliberate; when work resumes, these are the live threads in rough priority order:
 
-1. **Do the Day-21 demo** (overdue since 2026-06-02). It's shippable from `main` as-is. Prep = draft the 3-question feedback script for Teo + profesora (`paircraft-mvp-v2.md §6`) + a dry-run walk of the site in demo register.
+1. **Do the Day-21 demo** (overdue since 2026-06-02) — **explicit TO DO for next session (deferred 2026-07-06)**. It's shippable from `main` as-is. The 3-question feedback script is DRAFTED: `Bootstrap/paircraft-demo-feedback-script.md` (B2B-vs-B2C question, tier-credibility question, open what's-missing question + observational note). Remaining prep: Jorge schedules with profesor + Teo; optional Claude dry-run of the site in demo register before they see it. Post-demo: re-anchor Day-35/Day-60 dates (both lapsed).
 2. **Post-demo: tier-engine tuning** with real feedback (see engine note above). This also unblocks the Day-36+ numeric-score decision.
 3. **Market-scout playbook: all 4 LATAM markets done** (`scripts/market-scout.md`; CO/CL/AR/VE scraped 2026-07-05 — 16 retailers, ~7900 unique candidates in `scripts/seed/scout/*-candidates.csv`). ES/FR/AE retailer-verified but catalogs bot-blocked → agent-browser if depth ever needed. French corpus wines remain an editorial decision (FR feed shows Moët + JP Chenet).
 4. **Offline tasks** (see below — domain purchase deadline already lapsed).
