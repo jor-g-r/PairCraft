@@ -13,6 +13,7 @@ This is the v1 product of "Wedge B" — AI tools for hospitality/F&B in LATAM, l
 
 - `/Users/user/LocalDocuments/sideprojects/Bootstrap/paircraft-mvp-v2.md` — **CANONICAL operational plan (since 2026-05-13)**. Entity-graph model, MVP-demo-first for profesor + Teo, tier-only scoring. Supersedes v1.
 - `/Users/user/LocalDocuments/sideprojects/Bootstrap/paircraft-mvp.md` — v1 plan, preserved for traceability. §14 (CUHELAV affiliate) and §15 (Hugh Johnson voice + IP) are inherited unchanged by v2.
+- `/Users/user/LocalDocuments/sideprojects/Bootstrap/paircraft-capacitor-spec.md` — **native-app wrap spec (2026-07-05, DRAFT).** Capacitor over React Native (decision record inside), Android-first sequencing, scenarios + precautions (Apple 4.2, Ventura/Xcode blocker for iOS, store-vs-demo-gating conflict, payments stay on web). Execution gated on the Day-21 demo; v0.2/v0.3 horizon.
 - `/Users/user/LocalDocuments/sideprojects/Bootstrap/Paircraft-—-Product-&-System-Description.txt` — original 12-month vision (symmetric food/wine model; superseded).
 - `/Users/user/LocalDocuments/sideprojects/Bootstrap/README.md` — financial framing ($200/mo floor → $2000/mo aspiration, Pieter-Levels-style portfolio).
 - `/Users/user/LocalDocuments/sideprojects/Bootstrap/offer-candidates.md` — portfolio context.
@@ -35,7 +36,7 @@ Always read `paircraft-mvp-v2.md` first if context is needed beyond what's here.
 - **Data layer: Astro Content Collections** (YAML/MDX, Zod schemas, cross-references). Supabase deferred to v0.2.
 - **Product language: English at launch.** Spanish reserved as v0.2 i18n.
 - **Auth: none in v1.** Demo is unlisted/password-gated. Public launch (Day 60) introduces hybrid signup wall at magic moment.
-- **Mobile-first PWA.** Native wrap via Capacitor reserved for v0.2/v0.3.
+- **Mobile-first PWA.** Native wrap via Capacitor reserved for v0.2/v0.3 — spec'd 2026-07-05 (`Bootstrap/paircraft-capacitor-spec.md`); React Native evaluated and rejected there.
 - **Pricing:** $9/month or $79/year (provisional). Activates at Day 60, not at MVP-demo.
 
 ## Visual identity (locked)
