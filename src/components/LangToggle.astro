@@ -1,0 +1,50 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className = '' } = Astro.props;
+---
+
+<div
+  class={`lang-toggle-wrap relative inline-flex items-center rounded-full border border-neutral-900 bg-white p-0.5 ${className}`}
+  role="group"
+  aria-label="Select language"
+  data-active="en"
+>
+  <div
+    class="lang-toggle-indicator absolute left-0.5 top-0.5 h-[calc(100%-4px)] w-[calc(50%-2px)] rounded-full bg-[var(--color-accent)] transition-transform duration-200 ease-out"
+    aria-hidden="true"
+  >
+  </div>
+  <button
+    type="button"
+    class="lang-toggle-btn relative z-10 rounded-full px-3 py-1 text-sm font-medium transition-colors"
+    data-lang="en"
+    aria-pressed="true"
+  >
+    EN
+  </button>
+  <button
+    type="button"
+    class="lang-toggle-btn relative z-10 rounded-full px-3 py-1 text-sm font-medium transition-colors"
+    data-lang="es"
+    aria-pressed="false"
+  >
+    ES
+  </button>
+</div>
+
+<style>
+  .lang-toggle-wrap[data-active='es'] .lang-toggle-indicator {
+    transform: translateX(100%);
+  }
+  .lang-toggle-wrap[data-active='en'] .lang-toggle-btn[data-lang='en'],
+  .lang-toggle-wrap[data-active='es'] .lang-toggle-btn[data-lang='es'] {
+    color: white;
+  }
+  .lang-toggle-wrap[data-active='en'] .lang-toggle-btn[data-lang='es'],
+  .lang-toggle-wrap[data-active='es'] .lang-toggle-btn[data-lang='en'] {
+    color: rgb(23 23 23); /* neutral-900 */
+  }
+</style>

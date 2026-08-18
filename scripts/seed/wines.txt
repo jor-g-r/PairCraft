@@ -6,13 +6,11 @@
 # (or will be drafted earlier in this run). Add to grapes.txt / regions.txt
 # first if needed — the script processes regions → grapes → wines → dishes.
 #
-# Already in corpus: catena-malbec-2021, pazo-albarino-2022
+# Already in corpus: catena-malbec, pazo-barrantes-albarino, and the 2026-07-05
+# scout batch (santa-carolina-reservado-carmenere, norton-malbec,
+# trapiche-broquel-torrontes, chandon-extra-brut, moet-chandon-brut-imperial,
+# jp-chenet-merlot, protos-roble, alamos-malbec-rose).
 
-Santa Carolina Reservado Carmenère
-Norton Malbec
-Trapiche Broquel Torrontés
-Chandon Extra Brut
-Moët & Chandon Brut Impérial
-JP Chenet Merlot
-Protos Roble
-Alamos Malbec Rosé
+# 2026-07-17 LATAM-depth batch (scout presence-verified, gap-fill):
+Casillero del Diablo Reserva Cabernet Sauvignon
+Angélica Zapata Malbec

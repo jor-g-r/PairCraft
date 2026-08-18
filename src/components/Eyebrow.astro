@@ -12,10 +12,12 @@
 interface Props {
   /** Extra utilities, e.g. tone override "text-neutral-400" or spacing "mb-1". */
   class?: string;
+  /** Additional HTML attributes to pass through, e.g. data-i18n. */
+  'data-i18n'?: string;
 }
-const { class: className = '' } = Astro.props;
+const { class: className = '', 'data-i18n': dataI18n } = Astro.props;
 ---
 
-<p class={`text-[10px] uppercase tracking-widest text-neutral-500 ${className}`}>
+<p class={`text-[10px] uppercase tracking-widest text-neutral-500 ${className}`} data-i18n={dataI18n}>
   <slot />
 </p>

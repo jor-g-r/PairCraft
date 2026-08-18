@@ -24,19 +24,24 @@ const wines = allWines.filter((w) => w.data.region.id === region.id);
 
     <header class="mt-2">
       <h1 class="font-display text-4xl md:text-5xl font-bold tracking-tight">{region.data.name}</h1>
-      <p class="mt-2 font-display text-lg italic text-neutral-700">{region.data.tagline}</p>
+      <p class="mt-2 font-display text-lg italic text-neutral-700" data-es-value={region.data.taglineEs}>{region.data.tagline}</p>
     </header>
 
     <p class="mt-6 text-sm text-neutral-600 italic">{region.data.climate}</p>
 
-    <article class="prose prose-neutral mt-8 max-w-none text-neutral-800 leading-relaxed [&_p]:mt-4">
+    <article class="prose prose-neutral mt-8 max-w-none text-neutral-800 leading-relaxed [&_p]:mt-4" data-lang-content="en">
       <Content />
     </article>
+    {
+      region.data.bodyEs && (
+        <article class="prose prose-neutral mt-8 max-w-none text-neutral-800 leading-relaxed [&_p]:mt-4 hidden" data-lang-content="es" set:html={region.data.bodyEs} />
+      )
+    }
 
     {
       signatureGrapes.length > 0 && (
         <section class="mt-12">
-          <h2 class="font-display text-2xl font-semibold">Signature grapes</h2>
+          <h2 class="font-display text-2xl font-semibold" data-i18n="region.signatureGrapes">Signature grapes</h2>
           <ul class="mt-3 flex flex-wrap gap-2">
             {signatureGrapes.map(
               (g) =>
@@ -57,8 +62,8 @@ const wines = allWines.filter((w) => w.data.region.id === region.id);
     }
 
     <section class="mt-12">
-      <h2 class="font-display text-2xl font-semibold">Wines</h2>
-      {wines.length === 0 && <p class="mt-4 text-neutral-500">No wines yet.</p>}
+      <h2 class="font-display text-2xl font-semibold" data-i18n="region.wines">Wines</h2>
+      {wines.length === 0 && <p class="mt-4 text-neutral-500" data-i18n="region.noWines">No wines yet.</p>}
       <ul class="mt-4 space-y-3">
         {
           wines.map((wine) => (
@@ -73,7 +78,7 @@ const wines = allWines.filter((w) => w.data.region.id === region.id);
                     <span class="font-normal text-neutral-500"> {wine.data.vintage}</span>
                   )}
                 </p>
-                <p class="mt-1 text-sm italic text-neutral-700">{wine.data.tagline}</p>
+                <p class="mt-1 text-sm italic text-neutral-700" data-es-value={wine.data.taglineEs}>{wine.data.tagline}</p>
               </a>
             </li>
           ))

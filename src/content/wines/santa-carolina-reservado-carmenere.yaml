@@ -1,10 +1,6 @@
 name: Santa Carolina Reservado Carmenère
-tagline: Chile's signature grape at its most honest — blackberry, green pepper,
-  and smoked meat without apology.
-summary: "This is entry-level Carmenère done right: dark fruit up front, that
-  unmistakable pyrazine spine, and enough oak to round the edges without burying
-  the grape. Drink it now with something off the grill — it does not need
-  cellaring and does not pretend to."
+tagline: Chile's signature grape at its most honest — blackberry, green pepper, and smoked meat without apology.
+summary: "This is entry-level Carmenère done right: dark fruit up front, that unmistakable pyrazine spine, and enough oak to round the edges without burying the grape. Drink it now with something off the grill — it does not need cellaring and does not pretend to."
 color: red
 region: central-valley
 grapes:
@@ -34,6 +30,9 @@ tanninProfile:
 availability:
   note: Confirmed in Colombia retail via market scout (2026-07-05)
   sourceUrl: https://www.exito.com/vino-tinto-carmenere-reservado-x-750ml-449324/p
+  noteEs: Confirmado en retail colombiano mediante sondeo de mercado (05-07-2026)
 markets:
   - CO
   - CL
+taglineEs: ""
+summaryEs: "Este es un Carmenère de entrada de gama bien resuelto: fruta oscura en primer plano, esa inconfundible columna vertebral de pirazinas y la madera justa para redondear aristas sin sepultar la uva. Bébase ahora con algo a la parrilla — no necesita guarda y no pretende necesitarla."

@@ -1,11 +1,6 @@
 name: Castillo de Molina Sauvignon Blanc Reserva
-tagline: Chile's Andes-cooled answer to Sancerre — grapefruit pith, cut grass,
-  and a blade of acid.
-summary: "Castillo de Molina Reserva is a textbook high-wire act: grapefruit,
-  green herb, and green apple held together by acid sharp enough to strip fat
-  off a plate. Drink it cold, drink it fast, drink it with ceviche or raw
-  oysters — acid cuts through everything. This is the wine that teaches you why
-  acidity is a food tool, not a flaw."
+tagline: Chile's Andes-cooled answer to Sancerre — grapefruit pith, cut grass, and a blade of acid.
+summary: "Castillo de Molina Reserva is a textbook high-wire act: grapefruit, green herb, and green apple held together by acid sharp enough to strip fat off a plate. Drink it cold, drink it fast, drink it with ceviche or raw oysters — acid cuts through everything. This is the wine that teaches you why acidity is a food tool, not a flaw."
 color: white
 region: central-valley
 grapes:
@@ -29,11 +24,11 @@ flavouring:
   secondary: []
   tertiary: []
 style: Chilean Sauvignon Blanc
-pedagogicalRole: High-acid herbaceous white; teaches acid, freshness, seafood
-  and ceviche pairings
+pedagogicalRole: High-acid herbaceous white; teaches acid, freshness, seafood and ceviche pairings
 availability:
   note: Listed in Colombia retail examples such as Dislicores
   sourceUrl: https://www.dislicores.com/vino-blanco-castillo-de-molina-sauvignon-blanc-reserva-ref100073/p
+  noteEs: Disponible en puntos de venta minoristas de Colombia, como Dislicores
 markets:
   - CO
   - VE
@@ -44,3 +39,7 @@ recommendedPairings:
   - salads
   - white fish
   - shellfish
+taglineEs: "La respuesta chilena, refrescada por los Andes, al Sancerre: pomelo amargo, hierba recién cortada y una cuchilla de acidez."
+summaryEs: "Castillo de Molina Reserva es un ejercicio de equilibrio de manual: pomelo, hierba verde y manzana verde sostenidos por una acidez lo bastante afilada como para limpiar la grasa de un plato. Sírvalo frío, bébaselo rápido, acompáñelo con ceviche u ostras crudas: la acidez lo atraviesa todo. Este es el vino que enseña por qué la acidez es una herramienta gastronómica, no un defecto."
+styleEs: Sauvignon Blanc chileno
+pedagogicalRoleEs: Blanco herbáceo de alta acidez; ideal para aprender sobre acidez, frescura y maridajes con mariscos y ceviche

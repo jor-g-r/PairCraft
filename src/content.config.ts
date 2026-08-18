@@ -5,9 +5,12 @@ const wines = defineCollection({
   loader: glob({ pattern: '**/*.yaml', base: './src/content/wines' }),
   schema: z.object({
     name: z.string(),
+    nameEs: z.string().optional(),
     vintage: z.number().int().min(1800).max(2100).optional(),
     tagline: z.string().max(140),
+    taglineEs: z.string().max(140).optional(),
     summary: z.string(),
+    summaryEs: z.string().optional(),
     color: z.enum(['red', 'white', 'rose', 'orange', 'sparkling']),
     region: reference('regions'),
     grapes: z
@@ -46,14 +49,18 @@ const wines = defineCollection({
     // Strategic fields preserved from editorial corpus. All optional so legacy
     // wines (catena-malbec-2021, pazo-albarino-2022) keep validating.
     style: z.string().optional(),
+    styleEs: z.string().optional(),
     pedagogicalRole: z.string().optional(),
+    pedagogicalRoleEs: z.string().optional(),
     availability: z
       .object({
         note: z.string(),
+        noteEs: z.string().optional(),
         sourceUrl: z.string().url().optional(),
       })
       .optional(),
     recommendedPairings: z.array(z.string()).default([]),
+    recommendedPairingsEs: z.array(z.string()).default([]),
     // Markets (ISO-3166 alpha-2) where this wine is stocked. Defaults to ['CO']
     // so the launch corpus is Colombia-available without per-file edits; the
     // home feed gates on the visitor's market against this list.
@@ -66,10 +73,13 @@ const grapes = defineCollection({
   loader: glob({ pattern: '**/*.mdx', base: './src/content/grapes' }),
   schema: z.object({
     name: z.string(),
+    nameEs: z.string().optional(),
     aliases: z.array(z.string()).default([]),
     color: z.enum(['red', 'white']),
     origin: z.string(),
     tagline: z.string().max(140),
+    taglineEs: z.string().max(140).optional(),
+    bodyEs: z.string().optional(),
     signatureRegions: z.array(reference('regions')).default([]),
   }),
 });
@@ -78,10 +88,13 @@ const regions = defineCollection({
   loader: glob({ pattern: '**/*.mdx', base: './src/content/regions' }),
   schema: z.object({
     name: z.string(),
+    nameEs: z.string().optional(),
     country: z.string(),
     climate: z.string(),
     signatureGrapes: z.array(reference('grapes')).default([]),
     tagline: z.string().max(140),
+    taglineEs: z.string().max(140).optional(),
+    bodyEs: z.string().optional(),
   }),
 });
 
@@ -142,7 +155,9 @@ const dishes = defineCollection({
   loader: glob({ pattern: '**/*.yaml', base: './src/content/dishes' }),
   schema: z.object({
     name: z.string(),
+    nameEs: z.string().optional(),
     description: z.string(),
+    descriptionEs: z.string().optional(),
     protein: z.array(z.enum(PROTEIN)).min(1),
     cookingMethod: z.array(z.enum(COOKING_METHOD)).default([]),
     flavorProfile: z.array(z.enum(FLAVOR_PROFILE)).default([]),
@@ -151,9 +166,13 @@ const dishes = defineCollection({
     // Strategic editorial fields from CSV corpus. All optional so legacy
     // dishes (ribeye-grilled, oysters-raw, etc.) keep validating.
     category: z.string().optional(),
+    categoryEs: z.string().optional(),
     cuisineContext: z.string().optional(),
+    cuisineContextEs: z.string().optional(),
     pairingLogic: z.string().optional(),
+    pairingLogicEs: z.string().optional(),
     recommendedWineStyles: z.array(z.string()).default([]),
+    recommendedWineStylesEs: z.array(z.string()).default([]),
     notesForDemo: z.string().optional(),
   }),
 });
@@ -164,6 +183,7 @@ const pairings = defineCollection({
     wine: reference('wines'),
     dish: reference('dishes'),
     explanation: z.string(),
+    explanationEs: z.string().optional(),
   }),
 });
 
@@ -175,7 +195,10 @@ const markets = defineCollection({
   schema: z.object({
     code: z.string(),
     name: z.string(),
+    nameEs: z.string().optional(),
     tagline: z.string().max(140).optional(),
+    taglineEs: z.string().max(140).optional(),
+    bodyEs: z.string().optional(),
     dominantGrapes: z.array(reference('grapes')).default([]),
     dominantOrigins: z.array(z.string()).default([]),
     retailers: z

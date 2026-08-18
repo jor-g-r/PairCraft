@@ -26,28 +26,33 @@ const winesWithRegion = await Promise.all(
   description={grape.data.tagline}
 >
   <main class="mx-auto max-w-2xl px-6 py-10 md:py-16">
-    <p class="text-sm text-neutral-500 capitalize">{grape.data.color} grape · {grape.data.origin}</p>
+    <p class="text-sm text-neutral-500 capitalize">{grape.data.color} <span data-i18n="grape.grape">grape</span> · {grape.data.origin}</p>
 
     <header class="mt-2">
       <h1 class="font-display text-4xl md:text-5xl font-bold tracking-tight">{grape.data.name}</h1>
-      <p class="mt-2 font-display text-lg italic text-neutral-700">{grape.data.tagline}</p>
+      <p class="mt-2 font-display text-lg italic text-neutral-700" data-es-value={grape.data.taglineEs}>{grape.data.tagline}</p>
       {
         grape.data.aliases.length > 0 && (
           <p class="mt-2 text-sm text-neutral-500">
-            Also called: {grape.data.aliases.join(', ')}
+            <span data-i18n="grape.alsoCalled">Also called:</span>{' '}{grape.data.aliases.join(', ')}
           </p>
         )
       }
     </header>
 
-    <article class="prose prose-neutral mt-8 max-w-none text-neutral-800 leading-relaxed [&_p]:mt-4">
+    <article class="prose prose-neutral mt-8 max-w-none text-neutral-800 leading-relaxed [&_p]:mt-4" data-lang-content="en">
       <Content />
     </article>
+    {
+      grape.data.bodyEs && (
+        <article class="prose prose-neutral mt-8 max-w-none text-neutral-800 leading-relaxed [&_p]:mt-4 hidden" data-lang-content="es" set:html={grape.data.bodyEs} />
+      )
+    }
 
     {
       signatureRegions.length > 0 && (
         <section class="mt-12">
-          <h2 class="font-display text-2xl font-semibold">Signature regions</h2>
+          <h2 class="font-display text-2xl font-semibold" data-i18n="grape.signatureRegions">Signature regions</h2>
           <ul class="mt-3 flex flex-wrap gap-2">
             {signatureRegions.map(
               (r) =>
@@ -68,8 +73,8 @@ const winesWithRegion = await Promise.all(
     }
 
     <section class="mt-12">
-      <h2 class="font-display text-2xl font-semibold">Wines</h2>
-      {winesWithRegion.length === 0 && <p class="mt-4 text-neutral-500">No wines yet.</p>}
+      <h2 class="font-display text-2xl font-semibold" data-i18n="grape.wines">Wines</h2>
+      {winesWithRegion.length === 0 && <p class="mt-4 text-neutral-500" data-i18n="grape.noWines">No wines yet.</p>}
       <ul class="mt-4 space-y-3">
         {
           winesWithRegion.map(({ wine, region }) => (
@@ -84,7 +89,7 @@ const winesWithRegion = await Promise.all(
                     <span class="font-normal text-neutral-500"> {wine.data.vintage}</span>
                   )}
                 </p>
-                <p class="mt-1 text-sm italic text-neutral-700">{wine.data.tagline}</p>
+                <p class="mt-1 text-sm italic text-neutral-700" data-es-value={wine.data.taglineEs}>{wine.data.tagline}</p>
                 {region && (
                   <p class="mt-1 text-xs text-neutral-500">
                     {region.data.name}, {region.data.country}

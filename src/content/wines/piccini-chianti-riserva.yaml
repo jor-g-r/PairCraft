@@ -1,11 +1,6 @@
 name: Piccini Chianti Riserva
-tagline: Tuscany in a glass — sour cherry, dried herbs, and the acid that makes
-  tomato sing.
-summary: "Piccini's Chianti Riserva is Sangiovese doing exactly what Sangiovese
-  was born to do: high acid, savory depth, and a spine of tannin that demands
-  food. Drink it with anything that has a tomato base or a char on it — the wine
-  sharpens both. This is the benchmark for understanding why Italian reds and
-  Italian cooking are inseparable."
+tagline: Tuscany in a glass — sour cherry, dried herbs, and the acid that makes tomato sing.
+summary: "Piccini's Chianti Riserva is Sangiovese doing exactly what Sangiovese was born to do: high acid, savory depth, and a spine of tannin that demands food. Drink it with anything that has a tomato base or a char on it — the wine sharpens both. This is the benchmark for understanding why Italian reds and Italian cooking are inseparable."
 color: red
 region: tuscany
 grapes:
@@ -33,8 +28,13 @@ pedagogicalRole: Acidic red; teaches why Sangiovese works with tomato and savory
 availability:
   note: Listed in Colombia retail examples such as Dislicores
   sourceUrl: https://www.dislicores.com/vino-tinto-docg-piccini-chianti-ref153031/p
+  noteEs: Disponible en puntos de venta minoristas de Colombia como Dislicores
 recommendedPairings:
   - pasta with tomato sauce
   - pizza
   - pork
   - aged cheese
+taglineEs: "La Toscana en copa: cereza ácida, hierbas secas y esa acidez que hace cantar al tomate."
+summaryEs: "El Chianti Riserva de Piccini es el Sangiovese haciendo exactamente lo que el Sangiovese nació para hacer: alta acidez, profundidad sabrosa y una columna de taninos que exige comida. Bébaselo con cualquier cosa que lleve base de tomate o tenga marcas de brasa; el vino potencia ambas. Este es el punto de referencia para entender por qué los tintos italianos y la cocina italiana son inseparables."
+styleEs: Chianti Riserva
+pedagogicalRoleEs: Tinto ácido; enseña por qué el Sangiovese funciona con el tomate y los platos sabrosos

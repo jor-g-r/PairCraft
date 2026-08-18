@@ -4,12 +4,8 @@ region: mendoza
 grapes:
   - grape: malbec
     percentage: 100
-tagline: Mendoza at its most accessible — dark plum, violet, and a smack of
-  mocha without the pretension.
-summary: "Norton's entry-level Malbec is the benchmark for what Mendoza does at
-  volume without cutting corners: ripe, dark-fruited, and oak-touched but not
-  buried in it. Drink it now, with food, at the table — this is not a cellar
-  candidate."
+tagline: Mendoza at its most accessible — dark plum, violet, and a smack of mocha without the pretension.
+summary: "Norton's entry-level Malbec is the benchmark for what Mendoza does at volume without cutting corners: ripe, dark-fruited, and oak-touched but not buried in it. Drink it now, with food, at the table — this is not a cellar candidate."
 sensoryProfile:
   sweetness: 1
   acidity: 3
@@ -34,6 +30,9 @@ tanninProfile:
 availability:
   note: Confirmed in Colombia retail via market scout (2026-07-05)
   sourceUrl: https://www.exito.com/vino-tinto-malbec-x-750ml-408750/p
+  noteEs: Confirmado en retail de Colombia a través de explorador de mercado (2026-07-05)
 markets:
   - CO
   - AR
+taglineEs: "Mendoza en su expresión más accesible: ciruela oscura, violeta y un toque de moca sin pretensiones."
+summaryEs: "El Malbec de entrada de Norton es el referente de lo que Mendoza logra en volumen sin recortar atajos: maduro, de fruta oscura y con presencia de roble, pero sin quedar sepultado en él. Bébase ahora, con comida, en la mesa — no es un candidato para la bodega."

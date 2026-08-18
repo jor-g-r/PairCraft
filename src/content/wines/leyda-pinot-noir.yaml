@@ -1,10 +1,6 @@
 name: Leyda Pinot Noir
 tagline: Pacific fog in a glass — cherry, earth, and spice from Chile's coolest corner.
-summary: "Leyda sits twelve miles from the Pacific and it shows: this is Pinot
-  Noir with genuine tension, not the jammy imposter that warmer Chilean valleys
-  produce. Drink it with seared salmon or roast duck breast — low tannin, bright
-  acid, and it holds its line. The grape's whole argument for versatility is
-  made right here."
+summary: "Leyda sits twelve miles from the Pacific and it shows: this is Pinot Noir with genuine tension, not the jammy imposter that warmer Chilean valleys produce. Drink it with seared salmon or roast duck breast — low tannin, bright acid, and it holds its line. The grape's whole argument for versatility is made right here."
 color: red
 region: leyda-valley
 grapes:
@@ -32,6 +28,7 @@ pedagogicalRole: Light red; teaches lower tannin, acidity and versatility with p
 availability:
   note: Listed in Colombia retail examples such as Dislicores
   sourceUrl: https://www.dislicores.com/vino-tinto-leyda-pinot-noir-ref121090/p
+  noteEs: Disponible en puntos de venta minorista en Colombia, como Dislicores
 markets:
   - CO
   - VE
@@ -41,3 +38,7 @@ recommendedPairings:
   - pork
   - mushroom risotto
   - roasted chicken
+taglineEs: "Niebla del Pacífico en copa: cereza, tierra y especias desde el rincón más fresco de Chile."
+summaryEs: "Leyda se encuentra a veinte kilómetros del Pacífico, y se nota: este es un Pinot Noir de tensión genuina, no el impostor afrutado y confitado que producen los valles chilenos más cálidos. Sírvalo con salmón a la plancha o pechuga de pato asada: taninos bajos, acidez viva, y mantiene el tipo hasta el final. El argumento completo de esta uva a favor de la versatilidad se expone aquí mismo."
+styleEs: Pinot Noir chileno de clima frío
+pedagogicalRoleEs: Tinto ligero; ilustra los taninos bajos, la acidez y la versatilidad con aves y pescados

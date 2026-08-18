@@ -83,7 +83,7 @@ const countries = [
     </header>
 
     <section class="relative mt-10 md:mt-14">
-      <label for="search-input" class="sr-only">Search wines, grapes, dishes, or regions</label>
+      <label for="search-input" class="sr-only" data-i18n="home.searchLabel">Search wines, grapes, dishes, or regions</label>
       <div class="relative">
         <svg
           class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-neutral-400"
@@ -108,6 +108,7 @@ const countries = [
           aria-autocomplete="list"
           aria-controls="search-results"
           aria-expanded="false"
+          data-i18n-placeholder="home.searchPlaceholder"
         />
       </div>
       <ul
@@ -118,7 +119,7 @@ const countries = [
       </ul>
 
       <div class="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm">
-        <span class="text-neutral-500">Try:</span>
+        <span class="text-neutral-500" data-i18n="home.try">Try:</span>
         <a
           href="/grape/malbec"
           class="rounded-full border border-neutral-300 px-3 py-1 hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition"
@@ -139,13 +140,13 @@ const countries = [
 
     <div class="mt-12 flex items-center gap-3 text-xs uppercase tracking-widest text-neutral-500">
       <div class="flex-1 border-t border-neutral-200"></div>
-      <span>or browse</span>
+      <span data-i18n="home.orBrowse">or browse</span>
       <div class="flex-1 border-t border-neutral-200"></div>
     </div>
 
     <section class="mt-6">
       <div class="flex flex-wrap items-center justify-center gap-2 text-sm">
-        <label for="market-select" class="text-neutral-500">Showing wines available in</label>
+        <label for="market-select" class="text-neutral-500" data-i18n="home.marketLabel">Showing wines available in</label>
         <div class="relative">
           <select
             id="market-select"
@@ -180,7 +181,7 @@ const countries = [
       {
         winesWithRegion.length > 0 ? (
           <>
-            <p class="mt-6 text-xs uppercase tracking-widest text-neutral-500">Origin</p>
+            <p class="mt-6 text-xs uppercase tracking-widest text-neutral-500" data-i18n="home.origin">Origin</p>
             <div
               class="mt-2 flex flex-wrap gap-2"
               id="region-pills"
@@ -192,6 +193,7 @@ const countries = [
                 class="region-pill is-active rounded-full border px-3 py-1 text-sm transition"
                 data-country=""
                 aria-pressed="true"
+                data-i18n="home.all"
               >
                 All
               </button>
@@ -228,22 +230,23 @@ const countries = [
                         {region.data.name}, {region.data.country}
                       </p>
                     )}
-                    <p class="mt-3 text-sm italic text-neutral-700 leading-snug">
+                    <p class="mt-3 text-sm italic text-neutral-700 leading-snug" data-es-value={wine.data.taglineEs}>
                       {wine.data.tagline}
                     </p>
                   </a>
                 </li>
               ))}
             </ul>
-            <p id="grid-empty" class="mt-6 hidden text-center text-sm text-neutral-500 italic">
+            <p id="grid-empty" class="mt-6 hidden text-center text-sm text-neutral-500 italic" data-i18n="home.noWinesOrigin">
               No wines from this origin yet.
             </p>
           </>
         ) : (
           <div class="mt-8 text-center">
             <p class="text-sm italic text-neutral-600">
-              No bottles curated for {market?.data.name ?? 'this market'} yet — start from a grape
-              that's widely poured here:
+              <span data-i18n="home.noBottles">No bottles curated for</span>{' '}
+              {market?.data.name ?? 'this market'}{' '}
+              <span data-i18n="home.noBottlesFallback">yet — start from a grape that's widely poured here:</span>
             </p>
             <ul class="mt-5 grid gap-3 sm:grid-cols-2 text-left">
               {fallbackGrapes.map((g) => (
@@ -355,7 +358,7 @@ const countries = [
                   <span class="font-display text-base font-semibold block truncate">${escapeHtml(m.name)}</span>
                   ${m.meta ? `<span class="block text-xs text-neutral-500 truncate">${escapeHtml(m.meta)}</span>` : ''}
                 </span>
-                <span class="shrink-0 text-[10px] uppercase tracking-wider text-neutral-400 border border-neutral-200 rounded px-1.5 py-0.5">${TYPE_LABEL[m.type]}</span>
+                <span class="shrink-0 text-[10px] uppercase tracking-wider text-neutral-400 border border-neutral-200 rounded px-1.5 py-0.5" data-i18n-search-type="${m.type}">${TYPE_LABEL[m.type]}</span>
               </a>
             </li>`,
           )

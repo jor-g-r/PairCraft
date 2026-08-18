@@ -1,6 +1,5 @@
 name: Lomo / punta de anca a la parrilla
-description: Thick sirloin cap or loin strip off live fire — charred crust, pink
-  centre, coarse salt finish.
+description: Thick sirloin cap or loin strip off live fire — charred crust, pink centre, coarse salt finish.
 protein:
   - beef
 cookingMethod:
@@ -22,3 +21,6 @@ recommendedWineStyles:
   - Rioja Crianza
   - Marselan
 notesForDemo: Best core dish for explaining tannin plus protein and intensity matching
+descriptionEs: ""
+cuisineContextEs: Asador / restaurante formal latinoamericano
+pairingLogicEs: La proteína y la grasa suavizan el tanino; los sabores de la reacción de Maillard se fusionan con la madera y la fruta oscura

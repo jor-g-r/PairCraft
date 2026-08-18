@@ -1,11 +1,6 @@
 name: Ramón Bilbao Crianza
-tagline: Rioja in its working clothes — red cherry, vanilla oak, and leather
-  doing exactly what crianza promised.
-summary: "Ramón Bilbao Crianza is Tempranillo with a year in American oak and a
-  year in bottle, and it shows: red cherry and plum up front, vanilla and spice
-  in the middle, leather at the finish. Drink it with lamb chops or aged
-  manchego, not a moment's hesitation. This is the wine that explains why Rioja
-  built its reputation on the crianza system."
+tagline: Rioja in its working clothes — red cherry, vanilla oak, and leather doing exactly what crianza promised.
+summary: "Ramón Bilbao Crianza is Tempranillo with a year in American oak and a year in bottle, and it shows: red cherry and plum up front, vanilla and spice in the middle, leather at the finish. Drink it with lamb chops or aged manchego, not a moment's hesitation. This is the wine that explains why Rioja built its reputation on the crianza system."
 color: red
 region: rioja
 grapes:
@@ -33,6 +28,7 @@ pedagogicalRole: Classic Old World red; teaches oak, crianza, red fruit and bala
 availability:
   note: Listed in Colombia retail examples such as Dislicores
   sourceUrl: https://www.dislicores.com/vino-tinto-ramon-bilbao-crianza-tempranillo-ref147000/p
+  noteEs: Disponible en puntos de venta minoristas en Colombia, como Dislicores
 markets:
   - CO
   - VE
@@ -43,3 +39,7 @@ recommendedPairings:
   - manchego
   - roasted vegetables
   - tomato-based dishes
+taglineEs: "Rioja en ropa de trabajo: cereza roja, roble con vainilla y cuero haciendo exactamente lo que la crianza prometió."
+summaryEs: "Ramón Bilbao Crianza es Tempranillo con un año en roble americano y un año en botella, y se nota: cereza roja y ciruela en la entrada, vainilla y especias en el medio, cuero en el final. Sírvalo con chuletas de cordero o manchego curado, sin dudarlo un instante. Este es el vino que explica por qué Rioja construyó su reputación sobre el sistema de crianza."
+styleEs: Rioja Crianza
+pedagogicalRoleEs: Tinto clásico del Viejo Mundo; enseña roble, crianza, fruta roja y tanino equilibrado

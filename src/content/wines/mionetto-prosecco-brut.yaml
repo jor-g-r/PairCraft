@@ -1,11 +1,6 @@
 name: Mionetto Prosecco Brut
-tagline: Northern Italy's aperitif workhorse — green apple, pear, and relentless
-  bubbles at a price that demands no apology.
-summary: "Glera from the Veneto, made by the Charmat method: fresh, low-alcohol,
-  built for the first pour of the evening. Drink it cold, drink it fast, drink
-  it with fried calamari or prosciutto and melon — acid cuts fat, bubbles reset
-  the palate. This is the wine that teaches you why sparkling exists before
-  dinner, not during."
+tagline: Northern Italy's aperitif workhorse — green apple, pear, and relentless bubbles at a price that demands no apology.
+summary: "Glera from the Veneto, made by the Charmat method: fresh, low-alcohol, built for the first pour of the evening. Drink it cold, drink it fast, drink it with fried calamari or prosciutto and melon — acid cuts fat, bubbles reset the palate. This is the wine that teaches you why sparkling exists before dinner, not during."
 color: sparkling
 region: veneto
 grapes:
@@ -33,6 +28,7 @@ pedagogicalRole: Sparkling wine; teaches bubbles, freshness, fried food and aper
 availability:
   note: Listed in Colombia retail examples such as Dislicores
   sourceUrl: https://www.dislicores.com/vino-espumoso-prosecco-mionetto-brut-glera-ref140015/p
+  noteEs: Disponible en puntos de venta minoristas de Colombia como Dislicores
 recommendedPairings:
   - fried appetizers
   - seafood
@@ -42,3 +38,7 @@ recommendedPairings:
 markets:
   - CO
   - CL
+taglineEs: "El caballo de batalla aperitivo del norte de Italia: manzana verde, pera y burbujas incansables a un precio que no pide disculpas."
+summaryEs: "Glera del Véneto, elaborado por el método Charmat: fresco, de bajo alcohol, concebido para la primera copa de la tarde. Sírvalo frío, bébalo rápido, acompáñelo con calamares fritos o prosciutto con melón: la acidez corta la grasa, las burbujas reinician el paladar. Este es el vino que enseña por qué el espumoso existe antes de la cena, no durante ella."
+styleEs: Prosecco Brut
+pedagogicalRoleEs: Vino espumoso; introduce las burbujas, la frescura, los fritos y los maridajes de aperitivo

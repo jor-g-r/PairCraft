@@ -1,10 +1,6 @@
 name: 1865 Cabernet Sauvignon
-tagline: Maipo muscle — blackcurrant, cedar, and tobacco with tannins that mean
-  business.
-summary: "This is Chilean Cabernet at its most direct: dark fruit, a spine of
-  cedar, and grip that demands protein. Open it with a ribeye or a leg of lamb
-  and the tannins snap into place. It earns its place on the shelf by being
-  exactly what it says it is."
+tagline: Maipo muscle — blackcurrant, cedar, and tobacco with tannins that mean business.
+summary: "This is Chilean Cabernet at its most direct: dark fruit, a spine of cedar, and grip that demands protein. Open it with a ribeye or a leg of lamb and the tannins snap into place. It earns its place on the shelf by being exactly what it says it is."
 color: red
 region: maipo-valley
 grapes:
@@ -32,6 +28,7 @@ pedagogicalRole: Classic tannic red; teaches tannin plus protein/fat interaction
 availability:
   note: Listed in Colombia retail examples such as Dislicores
   sourceUrl: https://www.dislicores.com/vino-tinto-1865-cabernet-sauvignon-ref100218/p
+  noteEs: Disponible en puntos de venta minorista en Colombia, como Dislicores
 markets:
   - CO
   - VE
@@ -41,3 +38,7 @@ recommendedPairings:
   - lamb
   - short ribs
   - aged hard cheese
+taglineEs: "Músculo del Maipo: grosella negra, cedro y tabaco con taninos que van en serio."
+summaryEs: "Este es el Cabernet chileno en su expresión más directa: fruta oscura, una columna vertebral de cedro y una estructura tánica que exige proteína. Ábralo con un rib-eye o una pierna de cordero y los taninos encajan a la perfección. Se gana su lugar en el estante siendo exactamente lo que promete ser."
+styleEs: Cabernet Sauvignon chileno
+pedagogicalRoleEs: Tinto clásico tánico; ilustra la interacción entre taninos y proteína/grasa

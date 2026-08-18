@@ -1,6 +1,5 @@
 name: "Tabla de quesos: fresco, manchego y azul"
-description: "Three cheeses, three fights: fresh needs acid, manchego needs
-  tannin, blue needs sweetness — pick your battle."
+description: "Three cheeses, three fights: fresh needs acid, manchego needs tannin, blue needs sweetness — pick your battle."
 protein:
   - cheese-fresh
   - cheese-aged
@@ -18,12 +17,13 @@ intensity: 3
 weight: medium
 category: cheese
 cuisineContext: Wine education / restaurant appetizer
-pairingLogic: "Different cheeses test different rules: freshness with acid, aged
-  cheese with tannin, blue cheese with sweetness"
+pairingLogic: "Different cheeses test different rules: freshness with acid, aged cheese with tannin, blue cheese with sweetness"
 recommendedWineStyles:
   - Sauvignon Blanc
   - Rioja Crianza
   - sweet white
   - sparkling brut
-notesForDemo: High educational value because one board demonstrates multiple
-  pairing principles
+notesForDemo: High educational value because one board demonstrates multiple pairing principles
+descriptionEs: "Tres quesos, tres batallas: el fresco pide acidez, el manchego pide tanino, el azul pide dulzor — elige tu combate."
+cuisineContextEs: Educación vinícola / aperitivo de restaurante
+pairingLogicEs: "Distintos quesos ponen a prueba distintas reglas: el fresco con acidez, el curado con tanino, el queso azul con dulzor"

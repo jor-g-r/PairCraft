@@ -1,9 +1,6 @@
 name: Protos Roble
-tagline: Ribera entry-level done right — red cherry, cedar dust, and enough grip
-  to demand a plate of food.
-summary: Young Tempranillo from Ribera del Duero aged briefly in American and
-  French oak, giving structure without weight. Drink it with something off the
-  grill; this wine is built for the table, not the cellar.
+tagline: Ribera entry-level done right — red cherry, cedar dust, and enough grip to demand a plate of food.
+summary: Young Tempranillo from Ribera del Duero aged briefly in American and French oak, giving structure without weight. Drink it with something off the grill; this wine is built for the table, not the cellar.
 color: red
 region: ribera-del-duero
 grapes:
@@ -33,7 +30,10 @@ tanninProfile:
 availability:
   note: Confirmed in Colombia retail via market scout (2026-07-05)
   sourceUrl: https://www.exito.com/vino-tinto-roble-ribera-del-duero-x-750ml-374598/p
+  noteEs: Confirmado en retail de Colombia por explorador de mercado (2026-07-05)
 markets:
   - CO
   - ES
   - VE
+taglineEs: ""
+summaryEs: Tempranillo joven de Ribera del Duero con una breve crianza en roble americano y francés, que aporta estructura sin pesadez. Sírvalo con algo a la parrilla; este vino está hecho para la mesa, no para la bodega.

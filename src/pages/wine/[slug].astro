@@ -35,12 +35,20 @@ const allPairings = await getCollection('pairings');
 const pairingMap = new Map(
   allPairings.map((p) => [`${p.data.wine.id}__${p.data.dish.id}`, p.data.explanation]),
 );
+const pairingMapEs = new Map(
+  allPairings.map((p) => [`${p.data.wine.id}__${p.data.dish.id}`, p.data.explanationEs]),
+);
 
 const MODES: readonly Mode[] = ['harmony', 'contrast', 'enhancement'] as const;
 const MODE_LABEL: Record<Mode, string> = {
   harmony: 'by Harmony',
   contrast: 'by Contrast',
   enhancement: 'by Enhancement',
+};
+const MODE_I18N: Record<Mode, string> = {
+  harmony: 'mode.harmony',
+  contrast: 'mode.contrast',
+  enhancement: 'mode.enhancement',
 };
 const TIER_ORDER: Record<Tier, number> = {
   decisive: 0,
@@ -66,16 +74,16 @@ const pairingsByMode = MODES.map((mode) => ({
 }));
 
 const SENSORY_AXES = [
-  { key: 'sweetness', label: 'Sweetness' },
-  { key: 'acidity', label: 'Acidity' },
-  { key: 'tannin', label: 'Tannin' },
-  { key: 'body', label: 'Body' },
+  { key: 'sweetness', label: 'Sweetness', i18n: 'wine.sweetness' },
+  { key: 'acidity', label: 'Acidity', i18n: 'wine.acidity' },
+  { key: 'tannin', label: 'Tannin', i18n: 'wine.tannin' },
+  { key: 'body', label: 'Body', i18n: 'wine.body' },
 ] as const;
 
 const NOTE_TIERS = [
-  { key: 'primary', label: 'Primary notes' },
-  { key: 'secondary', label: 'Secondary notes' },
-  { key: 'tertiary', label: 'Tertiary notes' },
+  { key: 'primary', label: 'Primary notes', i18n: 'wine.primaryNotes' },
+  { key: 'secondary', label: 'Secondary notes', i18n: 'wine.secondaryNotes' },
+  { key: 'tertiary', label: 'Tertiary notes', i18n: 'wine.tertiaryNotes' },
 ] as const;
 ---
 
@@ -114,13 +122,13 @@ const NOTE_TIERS = [
         {wine.data.name}
         {wine.data.vintage && <span class="font-normal text-neutral-500"> {wine.data.vintage}</span>}
       </h1>
-      <p class="mt-4 font-display text-xl md:text-2xl italic text-neutral-700 leading-snug">
+      <p class="mt-4 font-display text-xl md:text-2xl italic text-neutral-700 leading-snug" data-es-value={wine.data.taglineEs}>
         {wine.data.tagline}
       </p>
       {
         wine.data.style && (
           <p class="mt-5">
-            <span class="inline-block rounded-full bg-neutral-100 px-3 py-1 text-xs uppercase tracking-wider text-neutral-600">
+            <span class="inline-block rounded-full bg-neutral-100 px-3 py-1 text-xs uppercase tracking-wider text-neutral-600" data-es-value={wine.data.styleEs}>
               {wine.data.style}
             </span>
           </p>
@@ -128,12 +136,12 @@ const NOTE_TIERS = [
       }
     </header>
 
-    <p class="mt-6 text-neutral-800 leading-relaxed">{wine.data.summary}</p>
+    <p class="mt-6 text-neutral-800 leading-relaxed" data-es-value={wine.data.summaryEs}>{wine.data.summary}</p>
 
     {
       wine.data.pedagogicalRole && (
-        <p class="mt-4 border-l-2 border-neutral-300 pl-4 text-sm italic text-neutral-600 leading-relaxed">
-          <span class="block text-[10px] uppercase tracking-widest not-italic text-neutral-400 mb-1">
+        <p class="mt-4 border-l-2 border-neutral-300 pl-4 text-sm italic text-neutral-600 leading-relaxed" data-es-value={wine.data.pedagogicalRoleEs}>
+          <span class="block text-[10px] uppercase tracking-widest not-italic text-neutral-400 mb-1" data-i18n="wine.teachingNote">
             Teaching note
           </span>
           {wine.data.pedagogicalRole}
@@ -144,8 +152,8 @@ const NOTE_TIERS = [
     {
       wine.data.availability && (
         <section class="mt-8 rounded-lg border border-neutral-200 bg-neutral-50 px-5 py-4">
-          <Eyebrow>Where to find it</Eyebrow>
-          <p class="mt-1.5 text-sm text-neutral-800">{wine.data.availability.note}</p>
+          <Eyebrow data-i18n="wine.whereToFind">Where to find it</Eyebrow>
+          <p class="mt-1.5 text-sm text-neutral-800" data-es-value={wine.data.availability.noteEs}>{wine.data.availability.note}</p>
           {
             wine.data.availability.sourceUrl && (
               <a
@@ -154,7 +162,7 @@ const NOTE_TIERS = [
                 rel="noopener noreferrer"
                 class="mt-3 inline-flex items-center gap-1.5 rounded-md bg-[var(--color-accent)] px-3.5 py-2 text-sm font-medium text-white hover:opacity-90 transition"
               >
-                <span>View listing</span>
+                <span data-i18n="wine.viewListing">View listing</span>
                 <svg
                   class="h-3.5 w-3.5"
                   viewBox="0 0 24 24"
@@ -176,9 +184,9 @@ const NOTE_TIERS = [
     }
 
     <dl class="mt-8 grid grid-cols-[auto_1fr] gap-x-6 gap-y-2 text-sm">
-      <dt class="text-neutral-500">Colour</dt>
+      <dt class="text-neutral-500" data-i18n="wine.colour">Colour</dt>
       <dd class="capitalize">{wine.data.color}</dd>
-      <dt class="text-neutral-500">Grapes</dt>
+      <dt class="text-neutral-500" data-i18n="wine.grapes">Grapes</dt>
       <dd>
         {
           grapes.map((g, i) => (
@@ -199,14 +207,14 @@ const NOTE_TIERS = [
     </dl>
 
     <section class="mt-16 md:mt-20 reveal">
-      <h2 class="font-display text-2xl font-semibold">Sensory profile</h2>
+      <h2 class="font-display text-2xl font-semibold" data-i18n="wine.sensoryProfile">Sensory profile</h2>
       <dl class="mt-4 space-y-3">
         {
-          SENSORY_AXES.map(({ key, label }) => {
+          SENSORY_AXES.map(({ key, label, i18n }) => {
             const value = wine.data.sensoryProfile[key];
             return (
               <div class="flex items-center gap-4">
-                <dt class="w-24 text-sm text-neutral-600">{label}</dt>
+                <dt class="w-24 text-sm text-neutral-600" data-i18n={i18n}>{label}</dt>
                 <dd class="flex flex-1 gap-1">
                   {[1, 2, 3, 4, 5].map((step) => (
                     <span
@@ -216,7 +224,7 @@ const NOTE_TIERS = [
                       aria-hidden="true"
                     />
                   ))}
-                  <span class="sr-only">{value} out of 5</span>
+                  <span class="sr-only" data-i18n="wine.outOf5">{value} out of 5</span>
                 </dd>
               </div>
             );
@@ -229,12 +237,12 @@ const NOTE_TIERS = [
       wine.data.flavouring &&
         NOTE_TIERS.some(({ key }) => wine.data.flavouring?.[key]?.length) && (
           <section class="mt-12 reveal">
-            {NOTE_TIERS.map(({ key, label }, idx) => {
+            {NOTE_TIERS.map(({ key, label, i18n }, idx) => {
               const notes = wine.data.flavouring?.[key];
               if (!notes || notes.length === 0) return null;
               return (
                 <div class={idx === 0 ? '' : 'mt-5'}>
-                  <Eyebrow>{label}</Eyebrow>
+                  <Eyebrow data-i18n={i18n}>{label}</Eyebrow>
                   <ul class="mt-2 flex flex-wrap gap-2">
                     {notes.map((note) => (
                       <li class="inline-block rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs text-neutral-600">
@@ -252,7 +260,7 @@ const NOTE_TIERS = [
     {
       wine.data.recommendedPairings && wine.data.recommendedPairings.length > 0 && (
         <section class="mt-12 reveal">
-          <Eyebrow>Quick hints</Eyebrow>
+          <Eyebrow data-i18n="wine.quickHints">Quick hints</Eyebrow>
           <ul class="mt-2 flex flex-wrap gap-2">
             {wine.data.recommendedPairings.map((hint) => (
               <li class="inline-block rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs text-neutral-600">
@@ -265,17 +273,17 @@ const NOTE_TIERS = [
     }
 
     <section class="mt-16 md:mt-20 reveal">
-      <h2 class="font-display text-2xl font-semibold">Pairings</h2>
+      <h2 class="font-display text-2xl font-semibold" data-i18n="wine.pairings">Pairings</h2>
       {
         pairingsByMode.every(({ entries }) => entries.length === 0) && (
-          <p class="mt-4 text-neutral-500">No matching dishes seeded yet.</p>
+          <p class="mt-4 text-neutral-500" data-i18n="wine.noDishes">No matching dishes seeded yet.</p>
         )
       }
       {
         pairingsByMode.map(({ mode, entries }) =>
           entries.length === 0 ? null : (
             <div class="mt-8">
-              <h3 class="font-display text-xl italic text-neutral-800">{MODE_LABEL[mode]}</h3>
+              <h3 class="font-display text-xl italic text-neutral-800" data-i18n-mode={mode}>{MODE_LABEL[mode]}</h3>
               <ul class="mt-3 space-y-3">
                 {entries.map(({ dish, result, explanation }) => (
                   <li>
@@ -287,9 +295,9 @@ const NOTE_TIERS = [
                         <p class="font-display text-lg font-semibold">{dish.data.name}</p>
                         <TierBadge tier={result.tier} class="shrink-0" />
                       </div>
-                      <p class="mt-1 text-sm text-neutral-600">{dish.data.description}</p>
+                      <p class="mt-1 text-sm text-neutral-600" data-es-value={dish.data.descriptionEs}>{dish.data.description}</p>
                       {explanation && (
-                        <p class="mt-2 font-display text-base italic text-neutral-800 leading-snug">
+                        <p class="mt-2 font-display text-base italic text-neutral-800 leading-snug" data-es-value={pairingMapEs.get(`${wine.id}__${dish.id}`)}>
                           {explanation}
                         </p>
                       )}

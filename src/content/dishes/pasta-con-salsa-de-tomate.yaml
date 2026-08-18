@@ -1,6 +1,5 @@
 name: Pasta con salsa de tomate
-description: Pasta in bright tomato sauce — garlic-forward, herb-lifted, with a
-  sharp acidic edge and optional parmesan depth.
+description: Pasta in bright tomato sauce — garlic-forward, herb-lifted, with a sharp acidic edge and optional parmesan depth.
 protein:
   - none
   - cheese-aged
@@ -16,11 +15,13 @@ intensity: 3
 weight: medium
 category: pasta
 cuisineContext: Italian / international restaurant staple
-pairingLogic: Tomato acidity needs an acidic red; herbal notes bridge with
-  savory Sangiovese profile
+pairingLogic: Tomato acidity needs an acidic red; herbal notes bridge with savory Sangiovese profile
 recommendedWineStyles:
   - Chianti
   - Sangiovese
   - Rioja Crianza
   - Pinot Noir
 notesForDemo: Clear educational example for acid-to-acid matching
+descriptionEs: Pasta en salsa de tomate brillante — con protagonismo del ajo, realzada con hierbas, un marcado filo ácido y opcional profundidad de parmesano.
+cuisineContextEs: Clásico de restaurante italiano / internacional
+pairingLogicEs: La acidez del tomate pide un tinto ácido; las notas herbales conectan con el perfil sabroso del Sangiovese

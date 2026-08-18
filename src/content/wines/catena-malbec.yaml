@@ -1,9 +1,6 @@
 name: Catena Malbec
 tagline: Mendoza in a glass — black plum, violet, and the spine of the Andes.
-summary: "Catena Malbec is the benchmark: ripe blackberry and plum with a violet
-  lift, firm enough tannin to mean business, and oak that stays in its lane.
-  Drink it with charred ribeye or lamb shoulder — tannin meets protein, and the
-  fruit holds its ground. This is why Mendoza matters."
+summary: "Catena Malbec is the benchmark: ripe blackberry and plum with a violet lift, firm enough tannin to mean business, and oak that stays in its lane. Drink it with charred ribeye or lamb shoulder — tannin meets protein, and the fruit holds its ground. This is why Mendoza matters."
 color: red
 region: mendoza
 grapes:
@@ -27,11 +24,11 @@ flavouring:
   secondary: []
   tertiary: []
 style: Argentine Malbec
-pedagogicalRole: Canonical LATAM red; teaches body, ripe fruit, moderate tannin,
-  red meat pairings
+pedagogicalRole: Canonical LATAM red; teaches body, ripe fruit, moderate tannin, red meat pairings
 availability:
   note: Listed in Colombia retail examples such as Carulla
   sourceUrl: https://www.carulla.com/vino-tinto-malbec-catena-x-750ml-518133/p
+  noteEs: Presente en ejemplos del comercio minorista colombiano como Carulla
 markets:
   - CO
   - VE
@@ -41,3 +38,7 @@ recommendedPairings:
   - pork
   - pasta with meat sauce
   - aged cheese
+taglineEs: "Mendoza en una copa: ciruela negra, violeta y la columna vertebral de los Andes."
+summaryEs: "El Catena Malbec es la referencia indiscutible: mora y ciruela maduras con un toque violeta, taninos firmes que no admiten dudas, y una madera que sabe cuál es su lugar. Sírvalo con un ojo de bife a las brasas o un osobuco de cordero: el tanino abraza la proteína y la fruta no cede terreno. Por eso Mendoza importa."
+styleEs: Malbec argentino
+pedagogicalRoleEs: Tinto canónico de América Latina; enseña cuerpo, fruta madura, tanino moderado y maridajes con carnes rojas

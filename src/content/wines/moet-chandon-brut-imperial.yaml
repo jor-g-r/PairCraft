@@ -1,10 +1,6 @@
 name: Moët & Chandon Brut Impérial
-tagline: The house that built Champagne's global image — green apple, brioche,
-  white peach, and relentless mousse.
-summary: "Non-vintage Champagne built on consistency at scale: Pinot Noir drives
-  the structure, Chardonnay the lift, Meunier the approachability. Drink it
-  cold, drink it now, drink it at the party — this wine does not reward
-  cellaring."
+tagline: The house that built Champagne's global image — green apple, brioche, white peach, and relentless mousse.
+summary: "Non-vintage Champagne built on consistency at scale: Pinot Noir drives the structure, Chardonnay the lift, Meunier the approachability. Drink it cold, drink it now, drink it at the party — this wine does not reward cellaring."
 color: sparkling
 region: champagne
 grapes:
@@ -33,7 +29,10 @@ flavouring:
 availability:
   note: Confirmed in Colombia retail via market scout (2026-07-05)
   sourceUrl: https://www.exito.com/champagne-brut-imperial-x-750ml-920400/p
+  noteEs: Confirmado en el comercio minorista de Colombia mediante exploración de mercado (2026-07-05)
 markets:
   - CO
   - FR
   - VE
+taglineEs: "La casa que forjó la imagen global del Champagne: manzana verde, brioche, melocotón blanco y una mousse incansable."
+summaryEs: "Champagne sin añada construido sobre la consistencia a gran escala: el Pinot Noir aporta la estructura, el Chardonnay la elevación, el Meunier la accesibilidad. Sírvalo frío, bébaselo ahora, disfrútelo en la fiesta: este vino no premia la guarda."

@@ -4,13 +4,8 @@ region: mendoza
 grapes:
   - grape: malbec
     percentage: 100
-tagline: Mendoza Malbec stripped to its fruit — watermelon, dried rose, and a
-  clean bitter finish that keeps it honest.
-summary: Alamos makes this rosé from high-altitude Mendoza Malbec, pressing
-  early to capture vivid strawberry and watermelon without the grape's heavy
-  pigment or tannin. It runs off-dry in style, with enough acidity to stay
-  lively at the table. Drink it cold, drink it young — this is not a wine to sit
-  on.
+tagline: Mendoza Malbec stripped to its fruit — watermelon, dried rose, and a clean bitter finish that keeps it honest.
+summary: Alamos makes this rosé from high-altitude Mendoza Malbec, pressing early to capture vivid strawberry and watermelon without the grape's heavy pigment or tannin. It runs off-dry in style, with enough acidity to stay lively at the table. Drink it cold, drink it young — this is not a wine to sit on.
 sensoryProfile:
   sweetness: 2
   acidity: 3
@@ -29,6 +24,9 @@ flavouring:
 availability:
   note: Confirmed in Colombia retail via market scout (2026-07-05)
   sourceUrl: https://www.exito.com/vrose-774065/p
+  noteEs: Confirmado en retail de Colombia mediante sondeo de mercado (2026-07-05)
 markets:
   - CO
   - AR
+taglineEs: "Malbec de Mendoza reducido a su fruta: sandía, rosa seca y un final amargo y limpio que lo mantiene honesto."
+summaryEs: "Alamos elabora este rosado con Malbec de Mendoza de altura, prensando temprano para capturar una vívida fresa y sandía sin el pesado pigmento ni el tanino de la uva. Resulta semiseco en estilo, con la acidez suficiente para mantenerse animado en la mesa. Sírvase frío, sírvase joven: este no es un vino para guardar."

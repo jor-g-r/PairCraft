@@ -1,0 +1,42 @@
+name: Angélica Zapata Malbec
+tagline: Mendoza's benchmark Malbec — black plum, crushed violet, and serious oak structure that demands a decade of patience.
+summary: Catena's flagship single-varietal Malbec, sourced from high-altitude Adrianna and La Pirámide vineyards, built for the cellar not the couch. Dense, structured, and uncompromising — open it before 2027 only with a ribeye in hand. Give it ten years and it becomes something genuinely complex.
+color: red
+region: mendoza
+grapes:
+  - grape: malbec
+    percentage: 100
+sensoryProfile:
+  sweetness: 1
+  acidity: 3
+  tannin: 4
+  body: 5
+flavouring:
+  primary:
+    - black plum
+    - blackberry
+    - violet
+    - dark cherry
+  secondary:
+    - vanilla
+    - cedar
+    - dark chocolate
+    - toast
+  tertiary:
+    - tobacco
+    - leather
+    - dried fig
+tanninProfile:
+  softness: 2
+  astringency: 3
+  complexity: 4
+  structure: 5
+availability:
+  note: Confirmed in Colombia retail via market scout (2026-07-17) — present in 5 CO chains (Éxito, Carulla, Jumbo, Olímpica, Vinos El Kiosco).
+  sourceUrl: https://www.exito.com/vino-tinto-malbec-x-750ml-617663/p
+  noteEs: Confirmado en el comercio minorista de Colombia mediante exploración de mercado (17-07-2026) — presente en 5 cadenas CO (Éxito, Carulla, Jumbo, Olímpica, Vinos El Kiosco).
+markets:
+  - CO
+  - AR
+taglineEs: El Malbec de referencia de Mendoza — ciruela negra, violeta machacada y una sólida estructura de roble que exige una década de paciencia.
+summaryEs: El Malbec monovarietal insignia de Catena, procedente de los viñedos de altura Adrianna y La Pirámide, concebido para la bodega y no para el sofá. Denso, estructurado e intransigente — ábralo antes de 2027 solo con un ribeye en mano. Déjelo reposar diez años y se convierte en algo genuinamente complejo.

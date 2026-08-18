@@ -17,12 +17,20 @@ const allPairings = await getCollection('pairings');
 const pairingMap = new Map(
   allPairings.map((p) => [`${p.data.wine.id}__${p.data.dish.id}`, p.data.explanation]),
 );
+const pairingMapEs = new Map(
+  allPairings.map((p) => [`${p.data.wine.id}__${p.data.dish.id}`, p.data.explanationEs]),
+);
 
 const MODES: readonly Mode[] = ['harmony', 'contrast', 'enhancement'] as const;
 const MODE_LABEL: Record<Mode, string> = {
   harmony: 'by Harmony',
   contrast: 'by Contrast',
   enhancement: 'by Enhancement',
+};
+const MODE_I18N: Record<Mode, string> = {
+  harmony: 'mode.harmony',
+  contrast: 'mode.contrast',
+  enhancement: 'mode.enhancement',
 };
 const TIER_ORDER: Record<Tier, number> = {
   decisive: 0,
@@ -60,17 +68,17 @@ const TAGS = [
   <main class="mx-auto max-w-2xl px-6 py-10 md:py-16">
     <p class="text-sm text-neutral-500 capitalize">
       {dish.data.category && <span>{dish.data.category} · </span>}
-      {dish.data.weight} · intensity {dish.data.intensity}
+      {dish.data.weight} · <span data-i18n="dish.intensity">intensity</span> {dish.data.intensity}
     </p>
 
     <header class="mt-2">
       <h1 class="font-display text-4xl md:text-5xl font-bold tracking-tight">{dish.data.name}</h1>
       {
         dish.data.cuisineContext && (
-          <p class="mt-1 text-sm italic text-neutral-500">{dish.data.cuisineContext}</p>
+          <p class="mt-1 text-sm italic text-neutral-500" data-es-value={dish.data.cuisineContextEs}>{dish.data.cuisineContext}</p>
         )
       }
-      <p class="mt-3 text-neutral-800 leading-relaxed">{dish.data.description}</p>
+      <p class="mt-3 text-neutral-800 leading-relaxed" data-es-value={dish.data.descriptionEs}>{dish.data.description}</p>
     </header>
 
     {
@@ -88,8 +96,8 @@ const TAGS = [
     {
       dish.data.pairingLogic && (
         <aside class="mt-10 rounded-lg border-l-4 border-[var(--color-accent)] bg-neutral-50 px-5 py-4">
-          <Eyebrow>The pairing logic</Eyebrow>
-          <p class="mt-2 font-display text-lg italic text-neutral-800 leading-snug">
+          <Eyebrow data-i18n="dish.pairingLogic">The pairing logic</Eyebrow>
+          <p class="mt-2 font-display text-lg italic text-neutral-800 leading-snug" data-es-value={dish.data.pairingLogicEs}>
             {dish.data.pairingLogic}
           </p>
         </aside>
@@ -99,7 +107,7 @@ const TAGS = [
     {
       dish.data.recommendedWineStyles && dish.data.recommendedWineStyles.length > 0 && (
         <section class="mt-8">
-          <Eyebrow>Quick hints</Eyebrow>
+          <Eyebrow data-i18n="dish.quickHints">Quick hints</Eyebrow>
           <ul class="mt-2 flex flex-wrap gap-2">
             {dish.data.recommendedWineStyles.map((style) => (
               <li class="inline-block rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs text-neutral-600">
@@ -112,17 +120,17 @@ const TAGS = [
     }
 
     <section class="mt-12">
-      <h2 class="font-display text-2xl font-semibold">Wines for this dish</h2>
+      <h2 class="font-display text-2xl font-semibold" data-i18n="dish.winesForDish">Wines for this dish</h2>
       {
         winesByMode.every(({ entries }) => entries.length === 0) && (
-          <p class="mt-4 text-neutral-500">No wines pair well yet.</p>
+          <p class="mt-4 text-neutral-500" data-i18n="dish.noWines">No wines pair well yet.</p>
         )
       }
       {
         winesByMode.map(({ mode, entries }) =>
           entries.length === 0 ? null : (
             <div class="mt-8">
-              <h3 class="font-display text-xl italic text-neutral-800">{MODE_LABEL[mode]}</h3>
+              <h3 class="font-display text-xl italic text-neutral-800" data-i18n-mode={mode}>{MODE_LABEL[mode]}</h3>
               <ul class="mt-3 space-y-3">
                 {entries.map(({ wine, result, explanation }) => (
                   <li>
@@ -139,9 +147,9 @@ const TAGS = [
                         </p>
                         <TierBadge tier={result.tier} class="shrink-0" />
                       </div>
-                      <p class="mt-1 text-sm italic text-neutral-700">{wine.data.tagline}</p>
+                      <p class="mt-1 text-sm italic text-neutral-700" data-es-value={wine.data.taglineEs}>{wine.data.tagline}</p>
                       {explanation && (
-                        <p class="mt-2 font-display text-base italic text-neutral-800 leading-snug">
+                        <p class="mt-2 font-display text-base italic text-neutral-800 leading-snug" data-es-value={pairingMapEs.get(`${wine.id}__${dish.id}`)}>
                           {explanation}
                         </p>
                       )}
@@ -158,7 +166,7 @@ const TAGS = [
     {
       skipWines.length > 0 && (
         <section class="mt-12">
-          <h3 class="font-display text-xl italic text-neutral-500">Better choices elsewhere</h3>
+          <h3 class="font-display text-xl italic text-neutral-500" data-i18n="dish.betterChoices">Better choices elsewhere</h3>
           <ul class="mt-3 space-y-1.5 text-sm text-neutral-500">
             {skipWines.map(({ wine }) => (
               <li>

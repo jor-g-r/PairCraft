@@ -1,10 +1,6 @@
 name: Enate Chardonnay
-tagline: Somontano's answer to Burgundy — ripe apple, butter, and vanilla with
-  the body to back it up.
-summary: "Enate's Chardonnay is barrel-fermented Spanish sun in a glass:
-  pineapple and toasted oak riding a broad, creamy frame. Drink it with roast
-  chicken thighs or a plate of aged Idiazabal — fat needs fat. This is the wine
-  that teaches you what oak and lees actually do to texture."
+tagline: Somontano's answer to Burgundy — ripe apple, butter, and vanilla with the body to back it up.
+summary: "Enate's Chardonnay is barrel-fermented Spanish sun in a glass: pineapple and toasted oak riding a broad, creamy frame. Drink it with roast chicken thighs or a plate of aged Idiazabal — fat needs fat. This is the wine that teaches you what oak and lees actually do to texture."
 color: white
 region: somontano
 grapes:
@@ -32,6 +28,7 @@ pedagogicalRole: Textural white; teaches body, creaminess and oak in white wine
 availability:
   note: Listed in Colombia retail examples such as Dislicores
   sourceUrl: https://www.dislicores.com/vino-blanco-enate-chardonnay---ref259001/p
+  noteEs: Disponible en puntos de venta minoristas de Colombia como Dislicores
 markets:
   - CO
   - ES
@@ -41,3 +38,7 @@ recommendedPairings:
   - roasted chicken
   - creamy pasta
   - risotto
+taglineEs: "La respuesta del Somontano a Borgoña: manzana madura, mantequilla y vainilla con el cuerpo necesario para sostenerlos."
+summaryEs: "El Chardonnay de Enate es sol español fermentado en barrica embotellado en un vaso: piña y roble tostado cabalgando sobre una estructura amplia y cremosa. Bébaselo con muslos de pollo asado o una tabla de Idiazabal curado — la grasa pide grasa. Este es el vino que te enseña lo que el roble y las lías hacen realmente a la textura."
+styleEs: Chardonnay español
+pedagogicalRoleEs: Blanco de textura; enseña cuerpo, cremosidad y roble en el vino blanco

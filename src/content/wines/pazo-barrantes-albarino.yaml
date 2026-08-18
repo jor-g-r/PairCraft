@@ -1,10 +1,6 @@
 name: Pazo Barrantes Albariño
 tagline: Galicia in a glass — salt air, peach, and citrus that makes seafood inevitable.
-summary: "Pazo Barrantes is the benchmark Albariño: saline, taut, and driven by
-  acid that slices through anything the Atlantic pulls from the water. Drink it
-  cold, drink it young, drink it with percebes or grilled turbot and stop
-  overthinking it. This is the wine that teaches you why geography and grape
-  variety can be the same argument."
+summary: "Pazo Barrantes is the benchmark Albariño: saline, taut, and driven by acid that slices through anything the Atlantic pulls from the water. Drink it cold, drink it young, drink it with percebes or grilled turbot and stop overthinking it. This is the wine that teaches you why geography and grape variety can be the same argument."
 color: white
 region: rias-baixas
 grapes:
@@ -32,6 +28,7 @@ pedagogicalRole: High-acid coastal white; teaches salinity, seafood and acid-dri
 availability:
   note: Listed in Colombia retail examples such as Dislicores
   sourceUrl: https://www.dislicores.com/vino-blanco-pazo-barrantes-albarino-ref806001/p
+  noteEs: Disponible en puntos de venta minoristas de Colombia como Dislicores
 markets:
   - CO
   - ES
@@ -40,3 +37,7 @@ recommendedPairings:
   - shellfish
   - grilled fish
   - fresh cheese
+taglineEs: "Galicia en una copa: aire salino, melocotón y cítricos que hacen inevitable el marisco."
+summaryEs: "Pazo Barrantes es el Albariño de referencia: salino, tenso, impulsado por una acidez que corta limpio todo lo que el Atlántico saca del agua. Bébaselo frío, bébaselo joven, bébaselo con percebes o rodaballo a la plancha y deje de darle vueltas. Este es el vino que enseña por qué la geografía y la variedad de uva pueden ser el mismo argumento."
+styleEs: Albariño Rías Baixas
+pedagogicalRoleEs: Blanco costero de alta acidez; enseña salinidad, mariscos y maridajes conducidos por la acidez

@@ -1,6 +1,5 @@
 name: Cerdo asado / pork belly
-description: Roasted pork belly — crackling skin, molten fat layers,
-  salt-forward with a faint caramelised edge.
+description: Roasted pork belly — crackling skin, molten fat layers, salt-forward with a faint caramelised edge.
 protein:
   - pork
 cookingMethod:
@@ -22,3 +21,6 @@ recommendedWineStyles:
   - Chardonnay
   - Prosecco Brut
 notesForDemo: Useful for comparing contrast pairing versus complement pairing
+descriptionEs: Panceta de cerdo asada — piel crujiente, capas de grasa fundente, marcadamente salada con un leve toque caramelizado.
+cuisineContextEs: Plato principal de restaurante
+pairingLogicEs: La acidez y las burbujas cortan la grasa; los tintos afrutados complementan la dulzura del cerdo

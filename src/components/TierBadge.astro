@@ -18,6 +18,7 @@ const STYLES: Record<Tier, string> = {
 
 <span
   class={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium tracking-wide whitespace-nowrap ${STYLES[tier]} ${className}`}
+  data-i18n-tier={tier}
 >
   {TIER_LABEL[tier]}
 </span>

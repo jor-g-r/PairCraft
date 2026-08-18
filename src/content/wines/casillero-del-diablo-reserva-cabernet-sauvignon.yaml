@@ -1,0 +1,39 @@
+name: Casillero del Diablo Reserva Cabernet Sauvignon
+tagline: Central Valley workhorse — blackcurrant, cedar, and firm tannin at a price that has no right to be this low.
+summary: "Concha y Toro's flagship entry-level Cab delivers textbook Chilean Cabernet: dark fruit, green herb edge, and oak-driven structure that punches above its weight class. Drink it now with something fatty — it does not need cellaring and does not reward waiting. This is the bottle you open on a Tuesday without guilt."
+color: red
+region: central-valley
+grapes:
+  - grape: cabernet-sauvignon
+    percentage: 100
+sensoryProfile:
+  sweetness: 1
+  acidity: 3
+  tannin: 3
+  body: 3
+flavouring:
+  primary:
+    - blackcurrant
+    - black cherry
+    - green bell pepper
+    - dark plum
+  secondary:
+    - vanilla
+    - cedar
+    - toast
+    - mocha
+  tertiary: []
+tanninProfile:
+  softness: 3
+  astringency: 2
+  complexity: 2
+  structure: 3
+availability:
+  note: Confirmed in Colombia retail via market scout (2026-07-17) — Reserva line across 5 CO chains; Cabernet Sauvignon at Éxito + Carulla.
+  sourceUrl: https://www.exito.com/vino-tinto-cabernet-sauvignon-x-750ml-70691/p
+  noteEs: Confirmado en retail colombiano vía explorador de mercado (2026-07-17) — línea Reserva en 5 cadenas CO; Cabernet Sauvignon en Éxito + Carulla.
+markets:
+  - CO
+  - CL
+taglineEs: Caballo de batalla del Valle Central — grosella negra, cedro y taninos firmes a un precio que no merece ser tan bajo.
+summaryEs: "El Cabernet de entrada de gama insignia de Concha y Toro entrega un Cabernet chileno de manual: fruta oscura, matiz de hierba verde y estructura marcada por la madera que supera con creces su categoría. Bébaselo ya con algo graso — no necesita guarda y no premia la espera. Esta es la botella que se abre un martes sin remordimientos."

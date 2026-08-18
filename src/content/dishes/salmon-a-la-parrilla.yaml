@@ -1,6 +1,5 @@
 name: Salmón a la parrilla
-description: Salmon fillet, grill-marked and oily, with herb crust and a squeeze
-  of lemon — fat-rich flesh that demands acid to cut it.
+description: Salmon fillet, grill-marked and oily, with herb crust and a squeeze of lemon — fat-rich flesh that demands acid to cut it.
 protein:
   - fish
 cookingMethod:
@@ -16,11 +15,13 @@ intensity: 3
 weight: medium
 category: seafood
 cuisineContext: Formal casual restaurant
-pairingLogic: Fat needs acidity; moderate intensity allows both rich whites and
-  low-tannin reds
+pairingLogic: Fat needs acidity; moderate intensity allows both rich whites and low-tannin reds
 recommendedWineStyles:
   - Chardonnay
   - Pinot Noir
   - Albariño
   - sparkling brut
 notesForDemo: Excellent edge case because fish can pair with red wine if tannin is low
+descriptionEs: Filete de salmón, marcado a la parrilla y untuoso, con costra de hierbas y un chorrito de limón — carne grasa que exige acidez para equilibrarla.
+cuisineContextEs: Restaurante informal de ambiente cuidado
+pairingLogicEs: La grasa necesita acidez; la intensidad moderada admite tanto blancos con cuerpo como tintos de taninos suaves
