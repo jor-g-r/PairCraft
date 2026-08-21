@@ -129,14 +129,17 @@ const { title, description } = Astro.props;
     </script>
 
     <header class="sticky top-0 z-10 border-b border-neutral-200/60 bg-white/85 backdrop-blur supports-[backdrop-filter]:bg-white/70">
-      <div class="mx-auto flex max-w-2xl items-center justify-between px-6 py-3">
+      <div class="mx-auto flex max-w-2xl items-center justify-between gap-4 px-6 py-3">
         <a
           href="/"
-          class="font-display text-xl font-bold tracking-tight hover:text-neutral-600 transition-colors"
+          class="inline-flex min-w-0 items-center gap-2.5 text-neutral-900 transition-colors hover:text-neutral-600"
         >
-          Paircraft
+          <img src="/favicon.svg" alt="" class="h-9 w-9 shrink-0" />
+          <span class="min-w-0 font-display text-[clamp(1.9rem,8vw,4rem)] font-semibold leading-none tracking-tight">
+            Paircraft
+          </span>
         </a>
-        <LangToggle />
+        <LangToggle class="shrink-0" />
       </div>
     </header>
     <slot />
