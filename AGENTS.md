@@ -3,7 +3,9 @@
 Wine and food pairings with short, opinionated explanations — pocket guide style, inspired by Hugh Johnson's *Pocket Wine Book*.
 
 **Live:** https://pair-craft.vercel.app/ (auto-deploys on push to `main` — hosts the v2 entity-graph product; the v1 chat MVP is gone)
-**Status (2026-07-06, EOD):** Reactivated after a deliberate pause (2026-06-18 → 2026-07-05). Live: search-first home, visual system, market-gated feed across **7 markets** (CO/VE/CL/AR + ES/FR/AE), market-scout pipeline (CO/CL/AR/VE catalogs scraped; ~7900 candidates on file). **Corpus expanded 11→19 wines / 126→218 pairings (scout-driven selection) — committed + voice-reviewed 2026-07-05** (commit `7231b51`; the May-14 pattern of sample-read + re-roll off-voice was applied before commit). The **Day-21 demo for Teo + profesora has NOT happened** — original target 2026-06-02 lapsed, not cancelled; it remains the next milestone and the gate for tier-engine tuning. Canonical plan is `paircraft-mvp-v2.md` (v1 superseded).
+**Status (2026-09-14):** Live: search-first home, visual system, market-gated feed across **7 markets** (CO/VE/CL/AR + ES/FR/AE), market-scout pipeline (CO/CL/AR/VE catalogs scraped; ~7900 candidates on file). Corpus at **21 wines / 240 pairings** (scout-driven expansion 2026-07-05, commit `7231b51`; +2 wines in commit `f5f3dc8`). **Bilingual EN/ES shipped 2026-08-17** (commit `f5f3dc8`: `LangToggle` + `*Es` fields; entities 100% translated, pairings 72/240 — rest falls back to EN). Paircraft logo + favicon 2026-08-20 (commits `4542f3a`/`8ea098e`). The **Day-21 demo for Teo + profesora has NOT happened** — original target 2026-06-02 lapsed, not cancelled; it remains the next milestone and the gate for tier-engine tuning. Canonical plan is `paircraft-mvp-v2.md` (v1 superseded).
+
+**Dev agent stack:** OpenCode + Codex (since ~Sep 2026; Claude Code retired from this repo). This file is `AGENTS.md` — renamed from the former `CLAUDE.md` (2026-09-14) because OpenCode treats `AGENTS.md` as primary and Codex only reads `AGENTS.md`. The curation-time LLM remains the Anthropic SDK (see Stack).
 
 ---
 
@@ -34,7 +36,7 @@ Always read `paircraft-mvp-v2.md` first if context is needed beyond what's here.
 - **Voice anchor:** Hugh Johnson pocket-guide. Opinionated. One-sentence pairing explanations. "Drink this with that" — confidence > caveats. Test: would Hugh Johnson put this in a 200-page pocket guide, or save it for the encyclopedia? If encyclopedia-shaped, defer.
 - **LLM is a curation-time layer, not a runtime engine.** Anthropic SDK drafts entity copy and pairing prose; user reviews; output is committed to Content Collections. Per-query LLM cost approaches zero. Free-text dish parsing is the one runtime LLM use (and only on the dish-input affordance).
 - **Data layer: Astro Content Collections** (YAML/MDX, Zod schemas, cross-references). Supabase deferred to v0.2.
-- **Product language: English at launch.** Spanish reserved as v0.2 i18n.
+- **Product language: bilingual EN/ES since 2026-08-17** (originally locked as "English at launch, Spanish reserved for v0.2" — shipped early in commit `f5f3dc8`). Client-side toggle (`LangToggle.astro` pill in header) + optional `*Es` fields across all 6 collections. Per-field EN fallback where ES is missing — **168 of 240 pairings still lack `explanationEs`** (open i18n task).
 - **Auth: none in v1.** Demo is unlisted/password-gated. Public launch (Day 60) introduces hybrid signup wall at magic moment.
 - **Mobile-first PWA.** Native wrap via Capacitor reserved for v0.2/v0.3 — spec'd 2026-07-05 (`Bootstrap/paircraft-capacitor-spec.md`); React Native evaluated and rejected there.
 - **Pricing:** $9/month or $79/year (provisional). Activates at Day 60, not at MVP-demo.
@@ -44,7 +46,7 @@ Always read `paircraft-mvp-v2.md` first if context is needed beyond what's here.
 - **Headings/wine names:** Playfair Display Variable (`font-display`)
 - **Body:** Open Sans Variable (`font-sans`)
 - Self-hosted via `@fontsource-variable/*`. Theme tokens in `src/styles/global.css`.
-- Shipped foundations (2026-05-14): accent color token, view transitions, scroll reveals, editorial hero photography on home. Visual/branding work is the founder's personal creative outlet — don't plan it for them.
+- Shipped foundations (2026-05-14): accent color token, view transitions, scroll reveals, editorial hero photography on home. Visual/branding work is the founder's personal creative outlet — don't plan it for them. Paircraft logo in navbar + favicon shipped 2026-08-20 (commits `4542f3a`/`8ea098e`).
 - Mobile-first responsive. Reference wireframe: Merlot detail page (grape illustration + name + tagline + Sweet/Sour slider + 4 property cards + tri-modal pairing grid + Flavouring/Tannins detail). v0.1 ships only top section + tri-modal grid; rest is v0.2.
 
 ---
@@ -58,6 +60,7 @@ Always read `paircraft-mvp-v2.md` first if context is needed beyond what's here.
 - **@anthropic-ai/sdk** — Claude SDK for the pairing engine
 - **@fontsource-variable/playfair-display** + **@fontsource-variable/open-sans**
 - **Bun** runtime + package manager
+- **Dev agent stack: OpenCode + Codex** (Claude Code retired ~Sep 2026). Project memory file: this `AGENTS.md` (rename of `CLAUDE.md`, 2026-09-14).
 
 ## Conventions
 
@@ -78,9 +81,9 @@ Always read `paircraft-mvp-v2.md` first if context is needed beyond what's here.
 
 ---
 
-## Current state (2026-07-05 — on deliberate pause since 2026-06-18)
+## Current state (2026-09-14)
 
-Working tree clean, `main` in sync with origin, prod deployed and responding. Two work bursts happened after the last status note: **2026-05-14** (corpus commit + search-first home + visual system) and **2026-06-18** (market-gated feed). Nothing code-side blocks the demo — the open items are user-track.
+Working tree clean, `main` in sync with origin, prod deployed and responding. Work bursts to date: **2026-05-14** (corpus commit + search-first home + visual system), **2026-06-18** (market-gated feed), **2026-07-05** (scout-driven corpus expansion + ES/FR/AE markets), **2026-08-17** (EN/ES i18n + 2 wines, commit `f5f3dc8`), **2026-08-20** (logo/favicon, commits `4542f3a`/`8ea098e`). Nothing code-side blocks the demo — the open items are user-track.
 
 **Milestone check:** the Day-21 demo (target **2026-06-02**) **did not happen** — lapsed, not cancelled. It is still the next milestone. Consequence: no Teo/profesora feedback exists yet, so tier-engine tuning and the numeric-score decision (Day 36+) remain deliberately blocked.
 
@@ -88,6 +91,8 @@ Working tree clean, `main` in sync with origin, prod deployed and responding. Tw
 - Home `/` — **search-first and market-gated**. Typeahead search (global scope, cyclic keyboard nav, a11y-polished), origin pills, filterable wine grid. The grid shows only wines stocked in the visitor's **market**, resolved as: cookie `pc_market` > Vercel `x-vercel-ip-country` header > default `CO`. A visible `<select>` lets the visitor override (sets the cookie, reloads). Markets with no curated bottles fall back to dominant-grape cards. Home is the **only SSR page** (`export const prerender = false`); the rest of the site stays static.
 - `/wine/<slug>`, `/grape/<slug>`, `/region/<slug>`, `/dish/<slug>` — entity pages with cross-navigation, tri-modal pairing groups, Hugh-voice prose in italic Playfair. Wine pages surface flavour notes (primary/secondary/tertiary) and the strategic editorial fields; dish pages likewise.
 - Visual system shipped 2026-05-14: accent token, view transitions, scroll reveals, Catena editorial hero photo on home, `Eyebrow` and `WineGlass` components, site-wide footer with editorial quote + creator credit. Tier badges as chips (filled black Decisive / light Worth trying / outlined Risky / Skip hidden on wine pages, "Better choices elsewhere" on dish pages).
+- Bilingual EN/ES since 2026-08-17: `LangToggle.astro` pill in header; client-side i18n engine (`data-i18n` / `data-es-value` / `data-lang-content` attributes); `*Es` fields across all 6 collections; per-field EN fallback where ES is missing.
+- Paircraft logo in navbar + favicon since 2026-08-20.
 - Still demo-gated: `robots.txt` `Disallow: /` + meta `noindex, nofollow` site-wide. No `/debug` in prod.
 
 **Engine + infra:**
@@ -95,15 +100,16 @@ Working tree clean, `main` in sync with origin, prod deployed and responding. Tw
 - `src/lib/rules.ts` — 13 tri-modal rules with `{ mode, strength, predicate }`. Unchanged since May; `terroir-bridge` still always-false in v1 (re-activates in v0.2).
 - `src/lib/tier.ts` — pure-function tier engine. 6/6 unit tests pass (`bun test src/lib/tier.test.ts`). Unchanged since May.
 - `src/lib/prompt.ts` + `src/lib/curation.ts` — unchanged. `LLM_PROVIDER` env switch (`anthropic` default, `opencode-go` alternate; Anthropic wins on Hugh-voice quality).
-- Scripts: `draft-pairings.ts` (idempotent wine×dish orchestrator), `draft-entities.ts` (idempotent entity drafter from `scripts/seed/*.txt`, dep order regions→grapes→wines→dishes), `import-csv.ts` (one-shot Medellín CSV importer), `test-curation.ts` (print one pairing's prose without writing), and `backfill-region-grapes.ts` — idempotent, recomputes `signatureGrapes` per region from the wine corpus. **Already run: regions are backfilled** (commit 8b5c1f3).
+- Scripts: `draft-pairings.ts` (idempotent wine×dish orchestrator), `draft-entities.ts` (idempotent entity drafter from `scripts/seed/*.txt`, dep order regions→grapes→wines→dishes), `import-csv.ts` (one-shot Medellín CSV importer), `test-curation.ts` (print one pairing's prose without writing), and `backfill-region-grapes.ts` — idempotent, recomputes `signatureGrapes` per region from the wine corpus. **Already run: regions are backfilled** (commit 8b5c1f3). Translation scripts (2026-08-17): `translate-content.ts`, `translate-mdx.ts`, `translate-mdx-remaining.ts`. Caveat: `draft-pairings.ts` writes `explanation` only, no `explanationEs` — newly drafted pairings are EN-only until a translation pass runs.
 - `scripts/scout-retailers.ts` + **playbook `scripts/market-scout.md`** (added 2026-07-05) — market-scout pipeline for adding/refreshing a country: web-search retailer discovery → platform probe (supports VTEX, WooCommerce, Shopify; VTEX dominates LATAM; always query the category tree, never free-text — "vino tinto" matches bedspreads) → catalog scrape → `scripts/seed/scout/` artifacts: per-retailer JSONs, candidates CSV ranked by multi-retailer presence (3+ = market staple), corpus availability cross-check with **two match levels** (cuvée vs producer-only; only cuvée justifies a `wine.markets` tag). `--cached` re-ranks without re-scraping. Prices in local currency per market. Output is review material — new wines still go through Jorge + `import-csv.ts`; never auto-imports.
 
-**Corpus (stable since 2026-07-05 scout expansion):**
-- **19 wines, 15 grapes, 15 regions, 12 dishes, 218 pairings, 7 markets** (CO, VE, CL, AR + ES, FR, AE added 2026-07-05).
+**Corpus (as of 2026-09-14):**
+- **21 wines, 15 grapes, 15 regions, 12 dishes, 240 pairings, 7 markets** (CO, VE, CL, AR + ES, FR, AE added 2026-07-05).
 - **Corpus expansion 2026-07-05 (scout-driven, 8 wines):** Santa Carolina Reservado Carmenère (CL), Norton Malbec, Trapiche Broquel Torrontés, Chandon Extra Brut, Alamos Malbec Rosé (AR ×4), Moët & Chandon Brut Impérial, JP Chenet Merlot (FR ×2), Protos Roble (ES). Selection criteria: multi-retailer presence in CO (3-5 chains each, Éxito URLs in `availability.sourceUrl`) + corpus gaps (first rosado, first Champagne, first Carmenère/Torrontés/Merlot, second Spanish region). New grapes: carmenere, torrontes, merlot, pinot-meunier. New regions: salta, champagne, pays-doc, ribera-del-duero. 92 new pairings drafted (10 combos correctly skip). Feed effects: AR 1→5, FR 0→2, ES 3→4, CL 5→6, CO 11→19 wines.
+- **+2 wines 2026-08-17 (commit `f5f3dc8`, selection rationale not recorded):** Catena Angélica Zapata Malbec (`angelica-zapata-malbec`), Casillero del Diablo Reserva Cabernet Sauvignon (`casillero-del-diablo-reserva-cabernet-sauvignon`) — 11 pairings each (5 with ES). Corpus: 19→21 wines, 218→240 pairings.
 - Wines: Catena Malbec, 1865 Cab Sauv, Castillo de Molina Sauv Blanc, Enate Chardonnay, Leyda Pinot Noir, Mionetto Prosecco, Pazo Barrantes Albariño, Ramón Bilbao Crianza, Piccini Chianti Riserva, Gato Negro Blanco Dulce, Garzón Marselan Reserva. No vintages in slugs (producer/cuvée archetype, not bottlings). LATAM retail anchors in `availability.sourceUrl`.
 - Dishes: 4 legacy (ribeye-grilled, oysters-raw, aged-manchego, fried-calamari) + 8 Medellín (lomo-a-la-parrilla, cerdo-asado, salmon-a-la-parrilla, ceviche, pasta-con-salsa-de-tomate, risotto-de-hongos, pollo-con-mole, tabla-de-quesos).
-- 126 pairings LLM-drafted (Claude Sonnet 4.6, Hugh-voice); 6 tier=skip combos correctly have no file.
+- Pairings: 126 from the original 11-wine corpus + 92 from the 2026-07-05 expansion + 22 from the 2026-08-17 additions = **240 on file** (all LLM-drafted, Claude Sonnet 4.6, Hugh-voice; 6 tier=skip combos correctly have no file). **ES coverage: 72/240 have `explanationEs`; the other 168 fall back to EN** — completing this is the open i18n task.
 - **Market tags are deliberately conservative.** All wines are in CO (schema default). VE list **verified by Jorge 2026-06-18** (6 bottles: Catena, 1865, Castillo de Molina, Gato Negro, Leyda, Ramón Bilbao) **+ 3 scout-earned VE tags 2026-07-05: Moët, Protos Roble, Enate Chardonnay** (cuvée-level listings at Licoteca/El Catador; Norton "Reserva" rejected — tier mismatch). CL/AR/ES tag domestic bottles (grown there ⇒ high confidence; AR feed thin by design — only Catena; **ES tags added 2026-07-05: Ramón Bilbao, Enate, Pazo Barrantes**) **plus scout-verified cuvées: Garzón Marselan earned CL 2026-07-05** (exact listing at La Vinoteca). Mionetto+CL **confirmed by Jorge 2026-07-06** (La Vinoteca base listing = Treviso Brut). Piccini stays CO-only (producer-only in CO chains). FR/AE have zero tagged wines → grape-fallback feeds by design. Rule: **only cuvée-level scout matches or domestic production justify tags, never producer-only** (see playbook §5).
 - **Retailers (all verified 2026-07-05):** CO 6 (Carulla, Dislicores, Vinos El Kiosco, Éxito, Jumbo, Olímpica — **all 11 corpus wines confirmed in CO retail**; 3 Dislicores-only: Leyda, Pazo Barrantes, Enate), CL 3 (La Vinoteca, Descorcha, VentaVinos — specialists only; every CL supermarket site is custom/bot-blocked, so supermarket value brands are a known blind spot), AR 4 (Jumbo, Día, ChangoMás, Winery — Jumbo/Disco/Vea share one Cencosud catalog; Carrefour/Coto blocked), **VE 3 (Licoteca, El Catador, Curda 24 — specialist e-shops, scouted 2026-07-05; Licores Mundiales/Prodelsur bot-blocked, Gama/Sigo custom SPAs; Jorge's 6 manual VE wine tags stand — scout absence ≠ counter-evidence)**, **ES 5 / FR 3 / AE 2 (retailers verified live, catalogs NOT scraped — all bot-protected or custom stacks; agent-browser is the documented path if depth is needed, playbook §ES/§FR/§AE)**. Scout evidence + URLs live in `scripts/seed/scout/<mkt>-corpus-availability.json` (CO/CL/AR/VE). The future "Recommended Wines" ads slot keys off `markets.retailers`.
 - Market-selection policy: originally LATAM-first (2026-06-18; a market earns its place only with real curatable data OR a real user living there — Netherlands was a throwaway VPN-test market, added and removed same day). **Loosened by Jorge 2026-07-05: ES/FR/AE added as strategic global markets.** The honesty bar stays: verified retailers only, tags only with evidence or domestic logic, feeds allowed to be empty (FR/AE run on grape fallback).
@@ -112,16 +118,17 @@ Working tree clean, `main` in sync with origin, prod deployed and responding. Tw
 
 ## Reactivation starting points
 
-The pause is deliberate; when work resumes, these are the live threads in rough priority order:
+These are the live threads in rough priority order (as of 2026-09-14):
 
-1. **Do the Day-21 demo** (overdue since 2026-06-02) — **explicit TO DO for next session (deferred 2026-07-06)**. It's shippable from `main` as-is. The 3-question feedback script is DRAFTED: `Bootstrap/paircraft-demo-feedback-script.md` (B2B-vs-B2C question, tier-credibility question, open what's-missing question + observational note). Remaining prep: Jorge schedules with profesor + Teo; optional Claude dry-run of the site in demo register before they see it. Post-demo: re-anchor Day-35/Day-60 dates (both lapsed).
-2. **Post-demo: tier-engine tuning** with real feedback (see engine note above). This also unblocks the Day-36+ numeric-score decision.
-3. **Market-scout playbook: all 4 LATAM markets done** (`scripts/market-scout.md`; CO/CL/AR/VE scraped 2026-07-05 — 16 retailers, ~7900 unique candidates in `scripts/seed/scout/*-candidates.csv`). ES/FR/AE retailer-verified but catalogs bot-blocked → agent-browser if depth ever needed. French corpus wines remain an editorial decision (FR feed shows Moët + JP Chenet).
-4. **Offline tasks** (see below — domain purchase deadline already lapsed).
+1. **Do the Day-21 demo** (overdue since 2026-06-02) — **still pending as of 2026-09-14**. It's shippable from `main` as-is. The 3-question feedback script is DRAFTED: `Bootstrap/paircraft-demo-feedback-script.md` (B2B-vs-B2C question, tier-credibility question, open what's-missing question + observational note). Remaining prep: Jorge schedules with profesor + Teo; optional agent dry-run of the site in demo register before they see it. Post-demo: re-anchor Day-35/Day-60 dates (both lapsed).
+2. **Complete the ES translation of pairings** — 168 of 240 lack `explanationEs` (entities are 100% done). Run a translation pass over `src/content/pairings/*.yaml` in the same Hugh-voice register (see `scripts/translate-*.ts` for the pattern). Independent of the demo; can be done anytime.
+3. **Post-demo: tier-engine tuning** with real feedback (see engine note above). This also unblocks the Day-36+ numeric-score decision.
+4. **Market-scout playbook: all 4 LATAM markets done** (`scripts/market-scout.md`; CO/CL/AR/VE scraped 2026-07-05 — 16 retailers, ~7900 unique candidates in `scripts/seed/scout/*-candidates.csv`). ES/FR/AE retailer-verified but catalogs bot-blocked → agent-browser if depth ever needed. French corpus wines remain an editorial decision (FR feed shows Moët + JP Chenet).
+5. **Offline tasks** (see below — domain purchase deadline already lapsed).
 
 ---
 
-## Offline tasks (user-track; statuses as of 2026-07-05)
+## Offline tasks (user-track; statuses as of 2026-09-14)
 
 From `paircraft-mvp.md §12/§14/§15`:
 
@@ -130,4 +137,4 @@ From `paircraft-mvp.md §12/§14/§15`:
 - §12.3 — Fill 5 named B2C buyers in `paircraft-mvp.md §7 Pool B`. **Pending; deadline 2026-05-18 lapsed.**
 - §14.7 — Name 3 CUHELAV alumni for the Founder's Cut affiliate experiment. **Pending; deadline 2026-05-25 lapsed.** Top candidate already in doc: Teo (De la Capellanía).
 
-These are user-execution tasks; Claude doesn't need to drive them, but should surface the lapsed ones when the project reactivates.
+These are user-execution tasks; the agent doesn't need to drive them, but should surface the lapsed ones when the project reactivates.
