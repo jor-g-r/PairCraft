@@ -19,7 +19,7 @@ const { class: className = '' } = Astro.props;
   </div>
   <button
     type="button"
-    class="lang-toggle-btn relative z-10 rounded-full px-3 py-1 text-sm font-medium transition-colors"
+    class="lang-toggle-btn relative z-10 min-h-10 rounded-full px-3 py-1 text-sm font-medium transition-colors"
     data-lang="en"
     aria-pressed="true"
   >
@@ -27,7 +27,7 @@ const { class: className = '' } = Astro.props;
   </button>
   <button
     type="button"
-    class="lang-toggle-btn relative z-10 rounded-full px-3 py-1 text-sm font-medium transition-colors"
+    class="lang-toggle-btn relative z-10 min-h-10 rounded-full px-3 py-1 text-sm font-medium transition-colors"
     data-lang="es"
     aria-pressed="false"
   >
@@ -45,6 +45,6 @@ const { class: className = '' } = Astro.props;
   }
   .lang-toggle-wrap[data-active='en'] .lang-toggle-btn[data-lang='es'],
   .lang-toggle-wrap[data-active='es'] .lang-toggle-btn[data-lang='en'] {
-    color: rgb(23 23 23); /* neutral-900 */
+    color: var(--color-ink);
   }
 </style>

@@ -2,6 +2,8 @@
 import '../styles/global.css';
 import { ClientRouter } from 'astro:transitions';
 import LangToggle from '../components/LangToggle.astro';
+import ThemeToggle from '../components/ThemeToggle.astro';
+import brandMark from '../../public/favicon.svg?raw';
 import { UI_STRINGS } from '../lib/i18n';
 
 interface Props {
@@ -10,6 +12,12 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+const navigation = [
+  { href: '/wines', label: 'Wines', key: 'nav.wines', active: Astro.url.pathname.startsWith('/wine') },
+  { href: '/dishes', label: 'Dishes', key: 'nav.dishes', active: Astro.url.pathname.startsWith('/dish') },
+  { href: '/pair', label: 'Find a pairing', key: 'nav.pair', active: Astro.url.pathname === '/pair' },
+  { href: '/about', label: 'About', key: 'nav.about', active: Astro.url.pathname === '/about' },
+];
 ---
 
 <html lang="en">
@@ -19,7 +27,16 @@ const { title, description } = Astro.props;
     <link rel="icon" href="/favicon.ico" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#1a1a1a" />
+    <meta name="theme-color" content="#ffffff" />
+    <script is:inline>
+      (() => {
+        let preference;
+        try { preference = document.cookie.match(/(?:^|; )pc_theme=(light|dark)(?:;|$)/)?.[1] || localStorage.getItem('pc_theme'); } catch {}
+        const dark = preference === 'dark' || (preference !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.classList.toggle('dark', dark);
+        document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#1e1e1e' : '#ffffff');
+      })();
+    </script>
     <meta name="robots" content="noindex, nofollow" />
     {description && <meta name="description" content={description} />}
     <meta name="generator" content={Astro.generator} />
@@ -128,24 +145,28 @@ const { title, description } = Astro.props;
       })();
     </script>
 
-    <header class="sticky top-0 z-10 border-b border-neutral-200/60 bg-white/85 backdrop-blur supports-[backdrop-filter]:bg-white/70">
-      <div class="mx-auto flex max-w-2xl items-center justify-between gap-4 px-6 py-3">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-paper focus:p-4" data-i18n="nav.skip">Skip to content</a>
+    <header class="sticky top-0 z-30 border-b border-rule bg-paper">
+      <div class="mx-auto flex max-w-5xl items-center justify-between gap-3 px-5 py-3 sm:px-8">
         <a
           href="/"
           class="inline-flex min-w-0 items-start gap-2.5 text-neutral-900 transition-colors hover:text-neutral-600"
         >
-          <img src="/favicon.svg" alt="" class="h-11 w-11 shrink-0" />
-          <span class="min-w-0 pt-[6px] font-display text-[2.5rem] font-semibold leading-none tracking-tight">
+          <span class="brand-mark h-9 w-9 shrink-0" aria-hidden="true" set:html={brandMark} />
+          <span class="min-w-0 pt-1 font-display text-2xl font-semibold leading-none tracking-tight sm:text-3xl">
             Paircraft
           </span>
         </a>
-        <LangToggle class="shrink-0" />
+        <div class="flex shrink-0 items-center gap-2"><ThemeToggle /><LangToggle /></div>
       </div>
+      <nav aria-label="Main navigation" class="mx-auto flex max-w-5xl items-center justify-between gap-1 px-5 sm:justify-start sm:gap-8 sm:px-8">
+        {navigation.map((item) => <a href={item.href} aria-current={item.active ? 'page' : undefined} class:list={['flex min-h-11 items-center border-b-2 px-0.5 text-xs font-semibold sm:text-sm', item.active ? 'border-ink text-ink' : 'border-transparent text-muted hover:text-ink']} data-i18n={item.key}>{item.label}</a>)}
+      </nav>
     </header>
-    <slot />
+    <div id="main-content" tabindex="-1"><slot /></div>
 
     <footer class="mt-24 border-t border-neutral-200/80">
-      <div class="mx-auto max-w-2xl px-6 py-10 md:py-14">
+      <div class="mx-auto max-w-5xl px-5 py-10 sm:px-8 md:py-14">
         <div class="flex flex-col gap-3 text-sm text-neutral-500 md:flex-row md:items-baseline md:justify-between">
           <p class="font-display italic" data-i18n="site.tagline">"Drink this with that."</p>
           <p class="flex flex-wrap items-baseline gap-x-2">
@@ -177,6 +198,36 @@ const { title, description } = Astro.props;
         </div>
       </div>
     </footer>
+
+    <script>
+      function syncTheme(doc: Document = document) {
+        let preference: string | null | undefined;
+        try { preference = document.cookie.match(/(?:^|; )pc_theme=(light|dark)(?:;|$)/)?.[1] || localStorage.getItem('pc_theme'); } catch {}
+        const dark = preference === 'dark' || (preference !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+        doc.documentElement.classList.toggle('dark', dark);
+        doc.querySelector('#theme-toggle')?.setAttribute('aria-pressed', String(dark));
+        doc.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#1e1e1e' : '#ffffff');
+      }
+      document.addEventListener('click', (event) => {
+        if (!(event.target instanceof Element) || !event.target.closest('#theme-toggle')) return;
+        const theme = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+        try { localStorage.setItem('pc_theme', theme); } catch {}
+        document.cookie = `pc_theme=${theme}; path=/; max-age=31536000; samesite=lax`;
+        syncTheme();
+      });
+      document.addEventListener('astro:before-swap', (event) => syncTheme(event.newDocument));
+      document.addEventListener('astro:page-load', () => syncTheme());
+      function restoreCatalogLinks() {
+        try {
+          const saved = sessionStorage.getItem('pc_catalog_query');
+          if (saved) document.querySelectorAll<HTMLAnchorElement>('[data-catalog-return]').forEach((link) => link.href = `/wines?${new URLSearchParams(saved)}`);
+        } catch {}
+      }
+      document.addEventListener('astro:page-load', restoreCatalogLinks);
+      restoreCatalogLinks();
+      matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => syncTheme());
+      syncTheme();
+    </script>
 
     <script is:inline>
       // Scroll-reveal — promote elements with class="reveal" once they enter
@@ -221,3 +272,7 @@ const { title, description } = Astro.props;
     </script>
   </body>
 </html>
+<style is:global>
+  .brand-mark svg { width: 100%; height: 100%; }
+  .dark .brand-mark path:nth-of-type(2) { fill: #fafafa; }
+</style>

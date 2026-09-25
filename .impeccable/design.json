@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-25T18:52:24.723Z",
+  "title": "Design System: Paircraft",
+  "extensions": {
+    "colorMeta": {
+      "accent": { "role": "primary", "displayName": "Wine red · light", "tonalRamp": ["oklch(15% 0.1090 21.73)", "oklch(26.43% 0.1090 21.73)", "oklch(37.86% 0.1090 21.73)", "oklch(49.29% 0.1090 21.73)", "oklch(60.71% 0.1090 21.73)", "oklch(72.14% 0.1090 21.73)", "oklch(83.57% 0.1090 21.73)", "oklch(95% 0.1090 21.73)"] },
+      "paper": { "role": "neutral", "displayName": "White page ground", "tonalRamp": ["oklch(20.5% 0 0)", "oklch(26.9% 0 0)", "oklch(37.1% 0 0)", "oklch(43.9% 0 0)", "oklch(55.6% 0 0)", "oklch(70.8% 0 0)", "oklch(87% 0 0)", "oklch(97% 0 0)"] },
+      "surface": { "role": "neutral", "displayName": "Pale inset surface", "tonalRamp": ["oklch(20.5% 0 0)", "oklch(26.9% 0 0)", "oklch(37.1% 0 0)", "oklch(43.9% 0 0)", "oklch(55.6% 0 0)", "oklch(70.8% 0 0)", "oklch(87% 0 0)", "oklch(97% 0 0)"] },
+      "ink": { "role": "neutral", "displayName": "Charcoal text", "tonalRamp": ["oklch(20.5% 0 0)", "oklch(26.9% 0 0)", "oklch(37.1% 0 0)", "oklch(43.9% 0 0)", "oklch(55.6% 0 0)", "oklch(70.8% 0 0)", "oklch(87% 0 0)", "oklch(97% 0 0)"] },
+      "muted": { "role": "neutral", "displayName": "Supporting grey", "tonalRamp": ["oklch(20.5% 0 0)", "oklch(26.9% 0 0)", "oklch(37.1% 0 0)", "oklch(43.9% 0 0)", "oklch(55.6% 0 0)", "oklch(70.8% 0 0)", "oklch(87% 0 0)", "oklch(97% 0 0)"] },
+      "rule": { "role": "neutral", "displayName": "Light hairline", "tonalRamp": ["oklch(20.5% 0 0)", "oklch(26.9% 0 0)", "oklch(37.1% 0 0)", "oklch(43.9% 0 0)", "oklch(55.6% 0 0)", "oklch(70.8% 0 0)", "oklch(87% 0 0)", "oklch(97% 0 0)"] },
+      "on-accent": { "role": "neutral", "displayName": "Constant white on wine red", "tonalRamp": ["oklch(20.5% 0 0)", "oklch(26.9% 0 0)", "oklch(37.1% 0 0)", "oklch(43.9% 0 0)", "oklch(55.6% 0 0)", "oklch(70.8% 0 0)", "oklch(87% 0 0)", "oklch(97% 0 0)"] },
+      "accent-dark": { "role": "primary", "displayName": "Wine red · dark", "tonalRamp": ["oklch(15% 0.1609 22.88)", "oklch(26.43% 0.1609 22.88)", "oklch(37.86% 0.1609 22.88)", "oklch(49.29% 0.1609 22.88)", "oklch(60.71% 0.1609 22.88)", "oklch(72.14% 0.1609 22.88)", "oklch(83.57% 0.1609 22.88)", "oklch(95% 0.1609 22.88)"] },
+      "paper-dark": { "role": "neutral", "displayName": "Charcoal page ground", "tonalRamp": ["#111111", "#1e1e1e", "#292929", "#424242", "#5c5c5c", "#a3a3a3", "#d0d0d0", "#fafafa"] },
+      "surface-dark": { "role": "neutral", "displayName": "Deep inset surface", "tonalRamp": ["#111111", "#1e1e1e", "#292929", "#424242", "#5c5c5c", "#a3a3a3", "#d0d0d0", "#fafafa"] },
+      "ink-dark": { "role": "neutral", "displayName": "Soft white text", "tonalRamp": ["#111111", "#1e1e1e", "#292929", "#424242", "#5c5c5c", "#a3a3a3", "#d0d0d0", "#fafafa"] },
+      "muted-dark": { "role": "neutral", "displayName": "Supporting silver", "tonalRamp": ["#111111", "#1e1e1e", "#292929", "#424242", "#5c5c5c", "#a3a3a3", "#d0d0d0", "#fafafa"] },
+      "rule-dark": { "role": "neutral", "displayName": "Dark-mode hairline", "tonalRamp": ["#111111", "#1e1e1e", "#292929", "#424242", "#5c5c5c", "#a3a3a3", "#d0d0d0", "#fafafa"] },
+      "wine-gold": { "displayName": "Gold liquid · illustration only", "tonalRamp": ["oklch(15% 0.1135 100.11)", "oklch(26.43% 0.1135 100.11)", "oklch(37.86% 0.1135 100.11)", "oklch(49.29% 0.1135 100.11)", "oklch(60.71% 0.1135 100.11)", "oklch(72.14% 0.1135 100.11)", "oklch(83.57% 0.1135 100.11)", "oklch(95% 0.1135 100.11)"] },
+      "wine-rose": { "displayName": "Rosé liquid · illustration only", "tonalRamp": ["oklch(15% 0.0809 15.19)", "oklch(26.43% 0.0809 15.19)", "oklch(37.86% 0.0809 15.19)", "oklch(49.29% 0.0809 15.19)", "oklch(60.71% 0.0809 15.19)", "oklch(72.14% 0.0809 15.19)", "oklch(83.57% 0.0809 15.19)", "oklch(95% 0.0809 15.19)"] },
+      "wine-orange": { "displayName": "Amber liquid · illustration only", "tonalRamp": ["oklch(15% 0.1371 61.63)", "oklch(26.43% 0.1371 61.63)", "oklch(37.86% 0.1371 61.63)", "oklch(49.29% 0.1371 61.63)", "oklch(60.71% 0.1371 61.63)", "oklch(72.14% 0.1371 61.63)", "oklch(83.57% 0.1371 61.63)", "oklch(95% 0.1371 61.63)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Wine identity", "purpose": "Fluid wine-detail title; recorded vintage uses regular weight." },
+      "headline": { "displayName": "Page title · mobile", "purpose": "Catalog, dish, pairing-input and About headings." },
+      "headline-sm": { "displayName": "Page title · small breakpoint up", "purpose": "Responsive replacement for headline at 40rem." },
+      "section": { "displayName": "Ruled section heading", "purpose": "Semibold heading with a trailing flexible rule." },
+      "section-sm": { "displayName": "Section heading · small breakpoint up", "purpose": "Responsive replacement for section at 40rem." },
+      "title": { "displayName": "Property or pairing title", "purpose": "Property values and dish names in wine pairing rows." },
+      "pairing-prose": { "displayName": "Editorial explanation", "purpose": "Italic Playfair; one short recorded explanation when available." },
+      "body": { "displayName": "Reading copy", "purpose": "Relaxed descriptions; ordinary body defaults to 1.5 line-height." },
+      "label": { "displayName": "Action label", "purpose": "Semibold Open Sans for buttons and editorial links." },
+      "tier": { "displayName": "Qualitative verdict", "purpose": "Compact explicit tier label; no numeric pairing score." }
+    },
+    "shadows": [
+      { "name": "search-input", "value": "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)", "purpose": "Existing home search input only; Tailwind shadow-sm." },
+      { "name": "search-results", "value": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)", "purpose": "Floating home typeahead list; Tailwind shadow-lg. Reading rows remain flat." }
+    ],
+    "motion": [
+      { "name": "state-transition", "value": "150ms cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Default Tailwind opacity/color transitions on actions and links." },
+      { "name": "language-indicator", "value": "transform 200ms cubic-bezier(0, 0, 0.2, 1)", "purpose": "Selected EN/ES segment translates horizontally." },
+      { "name": "reveal-declaration", "value": "opacity 600ms cubic-bezier(0.22, 1, 0.36, 1), transform 600ms cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Declared in global.css but both states are already visible and unshifted. Not an implemented fade-up; reduced-motion disables this declaration." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "40rem" },
+      { "name": "md", "value": "48rem" },
+      { "name": "lg", "value": "64rem" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Wine-red pill used for pairing jumps and form submission; includes disabled and focus states.",
+      "html": "<button type=\"button\" class=\"ds-action\">Find a dish to pair</button>",
+      "css": ".ds-action { display:inline-flex; min-height:2.75rem; align-items:center; justify-content:center; gap:.5rem; border:0; border-radius:calc(infinity * 1px); background:var(--color-accent); color:var(--color-on-accent); padding:.625rem 1.25rem; font-family:var(--font-sans); font-size:.875rem; font-weight:600; line-height:1.25rem; transition:opacity 150ms cubic-bezier(.4,0,.2,1); } .ds-action:hover { opacity:.9; } .ds-action:disabled { cursor:wait; opacity:.6; } .ds-action:focus-visible { outline:2px solid var(--color-ink); outline-offset:4px; }"
+    },
+    {
+      "name": "Editorial link",
+      "kind": "button",
+      "refersTo": "editorial-link",
+      "description": "Understated secondary action, rendered as a semantic anchor.",
+      "html": "<a class=\"ds-editorial-link\" href=\"/wines\">All wines</a>",
+      "css": ".ds-editorial-link { display:inline-flex; min-height:2.75rem; align-items:center; gap:.5rem; color:var(--color-ink); font-family:var(--font-sans); font-size:.875rem; font-weight:600; line-height:1.25rem; text-decoration:underline; text-decoration-color:var(--color-rule); text-underline-offset:.22em; } .ds-editorial-link:hover { text-decoration-color:currentColor; } .ds-editorial-link:focus-visible { outline:2px solid var(--color-ink); outline-offset:4px; }"
+    },
+    {
+      "name": "Labeled field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Paper-filled catalog field with visible label and ink focus outline.",
+      "html": "<label class=\"ds-field-label\"><span>Find a wine</span><input class=\"ds-field\" type=\"search\" autocomplete=\"off\"></label>",
+      "css": ".ds-field-label { display:block; color:var(--color-ink); font-family:var(--font-sans); font-size:.875rem; line-height:1.25rem; } .ds-field { display:block; width:100%; margin-top:.5rem; border:1px solid var(--color-rule); border-radius:.75rem; background:var(--color-paper); color:var(--color-ink); padding:.75rem 1rem; font-family:var(--font-sans); font-size:1rem; line-height:1.5rem; caret-color:var(--color-ink); } .ds-field::placeholder { color:var(--color-muted); } .ds-field:focus-visible { outline:2px solid var(--color-ink); outline-offset:4px; }"
+    },
+    {
+      "name": "Top navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Second row of the sticky header. Parent catalog stays active on entity detail; the first brand/preferences row is documented in DESIGN.md.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"/wines\" aria-current=\"page\">Wines</a><a href=\"/dishes\">Dishes</a><a href=\"/pair\">Find a pairing</a><a href=\"/about\">About</a></nav>",
+      "css": ".ds-nav { display:flex; max-width:64rem; margin-inline:auto; align-items:center; justify-content:space-between; gap:.25rem; padding-inline:1.25rem; background:var(--color-paper); font-family:var(--font-sans); } .ds-nav a { display:flex; min-height:2.75rem; align-items:center; padding-inline:.125rem; border-bottom:2px solid transparent; color:var(--color-muted); font-size:.75rem; font-weight:600; line-height:1rem; text-decoration:none; } .ds-nav a[aria-current=page] { border-bottom-color:var(--color-ink); color:var(--color-ink); } .ds-nav a:hover { color:var(--color-ink); } .ds-nav a:focus-visible { outline:2px solid var(--color-ink); outline-offset:4px; } @media(min-width:40rem) { .ds-nav { justify-content:flex-start; gap:2rem; padding-inline:2rem; } .ds-nav a { font-size:.875rem; line-height:1.25rem; } }"
+    },
+    {
+      "name": "Tier chips",
+      "kind": "chip",
+      "refersTo": "tier-decisive",
+      "description": "Noninteractive qualitative labels; neutral variants use the application's theme-remapped Tailwind neutrals.",
+      "html": "<div class=\"ds-tiers\"><span class=\"ds-tier ds-tier-decisive\">Decisive match</span><span class=\"ds-tier ds-tier-worth\">Worth trying</span><span class=\"ds-tier ds-tier-risky\">Risky bridge</span><span class=\"ds-tier ds-tier-skip\">Skip</span></div>",
+      "css": ".ds-tiers { display:flex; flex-wrap:wrap; gap:.5rem; } .ds-tier { display:inline-flex; align-items:center; border-radius:calc(infinity * 1px); padding:.125rem .625rem; font-family:var(--font-sans); font-size:.75rem; font-weight:500; line-height:1rem; letter-spacing:.025em; white-space:nowrap; } .ds-tier-decisive { background:var(--color-accent); color:var(--color-on-accent); } .ds-tier-worth { background:var(--color-neutral-100); color:var(--color-neutral-900); } .ds-tier-risky { border:1px solid var(--color-neutral-300); color:var(--color-neutral-700); } .ds-tier-skip { color:var(--color-neutral-400); }"
+    },
+    {
+      "name": "Wine catalog row",
+      "kind": "card",
+      "refersTo": "wine-card",
+      "description": "Structural preview with explicit placeholder text, not a corpus record. SVG glass paths are copied from WineGlass.astro.",
+      "html": "<a href=\"/wines\" class=\"ds-wine-card\"><div class=\"ds-wine-identity\"><svg class=\"ds-wine-glass\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M7 3 C7 11 9 14 12 14 C15 14 17 11 17 3 Z\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><path d=\"M8.6 6 C8.6 11 10 13 12 13 C14 13 15.4 11 15.4 6 Z\" fill=\"var(--color-accent)\"/><path d=\"M12 14V20.5 M9 21H15\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/></svg><div><h2 class=\"ds-wine-title\">Wine name</h2><p class=\"ds-wine-origin\">Region · Country</p></div></div><p class=\"ds-wine-tagline\">Recorded tagline</p><span class=\"ds-wine-next\">What to eat with it</span></a>",
+      "css": ".ds-wine-card { display:flex; flex-direction:column; height:100%; border-top:1px solid var(--color-rule); padding-block:1.5rem; color:var(--color-ink); text-decoration:none; } .ds-wine-identity { display:flex; align-items:flex-start; gap:1rem; } .ds-wine-glass { width:2.25rem; height:2.25rem; flex-shrink:0; margin-top:.25rem; } .ds-wine-title { margin:0; font-family:var(--font-display); font-size:1.5rem; font-weight:600; line-height:1.25; } .ds-wine-origin { margin:.5rem 0 0; font-family:var(--font-sans); font-size:.75rem; line-height:1rem; color:var(--color-muted); } .ds-wine-tagline { margin:1rem 0 0; font-family:var(--font-display); font-size:1.125rem; font-style:italic; line-height:1.625; color:var(--color-muted); } .ds-wine-next { margin-top:1.25rem; font-family:var(--font-sans); font-size:.875rem; font-weight:600; line-height:1.25rem; } .ds-wine-card:hover .ds-wine-title { text-decoration:underline; text-underline-offset:.22em; } .ds-wine-card:focus-visible { outline:2px solid var(--color-ink); outline-offset:4px; }"
+    },
+    {
+      "name": "Wine property panels",
+      "kind": "custom",
+      "refersTo": "property",
+      "description": "Two-by-two mobile definition list, four columns at 48rem. Bracketed values are placeholders; the preview makes no bottle-specific claims. Featured serving panel uses the shipped accent fill.",
+      "html": "<dl class=\"ds-properties\"><div class=\"ds-property ds-property-featured\"><dt>Serve at</dt><dd>[Recorded range]<span class=\"ds-property-note\">Style guide if inferred</span></dd></div><div class=\"ds-property\"><dt>Body</dt><dd>[Body label]</dd></div><div class=\"ds-property\"><dt>Tannin</dt><dd>[Tannin label]</dd></div><div class=\"ds-property\"><dt>Finish</dt><dd class=\"ds-property-missing\">Not yet recorded</dd></div></dl>",
+      "css": ".ds-properties { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; margin:0; } .ds-property { display:flex; min-height:8rem; flex-direction:column; align-items:center; justify-content:center; gap:.5rem; padding:1.25rem 1rem; text-align:center; border-radius:50%; background:var(--color-surface); color:var(--color-ink); } .ds-property-featured { border-radius:.75rem; background:var(--color-accent); color:var(--color-on-accent); } .ds-property dt { font-family:var(--font-sans); font-size:.75rem; line-height:1rem; text-transform:uppercase; letter-spacing:.05em; } .ds-property dd { margin:0; font-family:var(--font-display); font-size:1.25rem; font-weight:600; line-height:1.75rem; } .ds-property-note { display:block; margin-top:.5rem; font-family:var(--font-sans); font-size:.75rem; font-weight:400; line-height:1rem; } .ds-property .ds-property-missing { font-family:var(--font-sans); font-size:.875rem; font-weight:400; line-height:1.25rem; color:var(--color-muted); } @media(min-width:48rem) { .ds-properties { grid-template-columns:repeat(4,minmax(0,1fr)); } }"
+    },
+    {
+      "name": "Independent sensory tracks",
+      "kind": "custom",
+      "refersTo": "sensory-track",
+      "description": "Illustrative read-only values, not data for a wine. Two independent scales; numbers describe sensory axes, never pairing quality.",
+      "html": "<div class=\"ds-sensory-grid\"><div class=\"ds-sensory\"><div class=\"ds-sensory-label\"><span>Sweetness</span><span class=\"ds-sensory-value\">1 out of 5</span></div><div class=\"ds-sensory-track\" aria-hidden=\"true\"><span class=\"ds-sensory-fill\" style=\"width:20%\"></span><span class=\"ds-sensory-dot\" style=\"left:calc(20% - 2px)\"></span></div></div><div class=\"ds-sensory\"><div class=\"ds-sensory-label\"><span>Acidity</span><span class=\"ds-sensory-value\">4 out of 5</span></div><div class=\"ds-sensory-track\" aria-hidden=\"true\"><span class=\"ds-sensory-fill\" style=\"width:80%\"></span><span class=\"ds-sensory-dot\" style=\"left:calc(80% - 8px)\"></span></div></div></div>",
+      "css": ".ds-sensory-grid { display:grid; gap:1.75rem; color:var(--color-ink); } .ds-sensory-label { display:flex; align-items:center; justify-content:space-between; gap:1rem; font-family:var(--font-sans); font-size:.875rem; line-height:1.25rem; } .ds-sensory-value { font-variant-numeric:tabular-nums; color:var(--color-muted); } .ds-sensory-track { position:relative; height:1px; margin-top:.75rem; background:var(--color-rule); } .ds-sensory-fill { position:absolute; top:0; bottom:0; left:0; background:var(--color-ink); } .ds-sensory-dot { position:absolute; top:50%; width:.625rem; height:.625rem; transform:translateY(-50%); border-radius:calc(infinity * 1px); background:var(--color-ink); } @media(min-width:40rem) { .ds-sensory-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }"
+    },
+    {
+      "name": "Manual theme toggle",
+      "kind": "button",
+      "refersTo": "theme-toggle",
+      "description": "Visual preview of the light-mode unpressed state; application persistence and switching live in Base.astro, not this HTML/CSS snippet.",
+      "html": "<button class=\"ds-theme\" type=\"button\" aria-label=\"Dark theme\" aria-pressed=\"false\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M20.5 13.2A8.7 8.7 0 0 1 10.8 3.5a8.7 8.7 0 1 0 9.7 9.7Z\"/></svg></button>",
+      "css": ".ds-theme { display:inline-flex; min-height:2.75rem; min-width:2.75rem; align-items:center; justify-content:center; padding:0; border:1px solid var(--color-rule); border-radius:calc(infinity * 1px); background:transparent; color:var(--color-ink); } .ds-theme svg { width:1.25rem; height:1.25rem; } .ds-theme:hover { background:var(--color-surface); } .ds-theme:focus-visible { outline:2px solid var(--color-ink); outline-offset:4px; }"
+    },
+    {
+      "name": "Ruled section heading",
+      "kind": "custom",
+      "refersTo": "section-heading",
+      "description": "Flexible trailing hairline and Playfair type establish hierarchy without a decorative kicker.",
+      "html": "<h2 class=\"ds-section-heading\">Pairings</h2>",
+      "css": ".ds-section-heading { display:flex; align-items:center; gap:1.25rem; margin:0; color:var(--color-ink); font-family:var(--font-display); font-size:1.5rem; font-weight:600; line-height:2rem; text-wrap:balance; } .ds-section-heading::after { content:''; height:1px; flex:1; background:var(--color-rule); } @media(min-width:40rem) { .ds-section-heading { font-size:1.875rem; line-height:2.25rem; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Wine Pocket Guide",
+    "overview": "Paircraft reads like a concise, opinionated pocket guide: Playfair wine names and editorial sentences, Open Sans controls, generous white or charcoal ground, and wine-red emphasis. The approved Merlot reference supplies the oval property panels, fine sensory tracks and ruled headings; existing Paircraft fonts and identity remain the anchors.\n\nDensity follows the task. Catalogs use scannable linked rows, while wine pages give identity and a pairing jump room to breathe before sensory detail. The primary journey is wine → food; the four added routes share the same visual vocabulary rather than introducing separate identities. EN/ES text and incomplete records must fit without invented copy or measurements.",
+    "keyCharacteristics": [
+      "Wine-red actions and verdicts on neutral, theme-aware ground.",
+      "Playfair identity and editorial prose; Open Sans controls and facts.",
+      "Ruled lists, oval properties, thin independent sensory tracks.",
+      "Mobile-first reading with explicit navigation and honest missing-data states."
+    ],
+    "rules": [
+      { "name": "The One Accent Rule", "body": "Use wine red for decisive emphasis and selected states; use neutral text and rules for ordinary navigation and reading.", "section": "colors" },
+      { "name": "The Two Voices Rule", "body": "Set names and concise editorial judgments in Playfair; set controls, supporting descriptions and factual labels in Open Sans.", "section": "typography" },
+      { "name": "The Flat Reading Rule", "body": "Separate reading content with rules and tonal surfaces; reserve floating depth for the existing search affordance and its results overlay.", "section": "elevation" },
+      { "name": "The Recorded Facts Rule", "body": "Show recorded values, label style-level guidance, and preserve explicit omissions instead of filling the reference layout with invented facts.", "section": "components" }
+    ],
+    "dos": [
+      "Do use semantic colors so page ground, text, rules and accent-filled controls remain coherent in both themes.",
+      "Do preserve Playfair names and editorial prose alongside Open Sans controls and facts.",
+      "Do keep wine properties in a mobile 2×2 grid and display sweetness and acidity independently.",
+      "Do use ruled, linked rows and native disclosures for readable pairing lists.",
+      "Do label style guidance, show missing finish honestly, and omit unrecorded optional detail.",
+      "Do retain visible keyboard focus, explicit state labels and room for English and Spanish."
+    ],
+    "donts": [
+      "Don't turn sensory scales into pairing scores or replace qualitative tiers with invented percentages.",
+      "Don't invent finish, tannin axes, temperature records, pairing prose or retail availability to fill a layout.",
+      "Don't use the dark-remapped white utility for text that must stay white on the accent.",
+      "Don't make literal wine-color illustration fills into competing interface accents.",
+      "Don't propagate legacy decorative eyebrows as a new heading style.",
+      "Don't promise filter restoration or a fade-up animation that the current implementation does not provide."
+    ]
+  }
+}
