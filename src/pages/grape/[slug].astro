@@ -25,11 +25,12 @@ const winesWithRegion = await Promise.all(
   title={`${grape.data.name} — Paircraft`}
   description={grape.data.tagline}
 >
-  <main class="mx-auto max-w-2xl px-6 py-10 md:py-16">
+  <main class="page-shell max-w-3xl">
+    <a href="/wines" class="editorial-link mb-6 text-muted" data-i18n="wine.back">All wines</a>
     <p class="text-sm text-neutral-500 capitalize">{grape.data.color} <span data-i18n="grape.grape">grape</span> · {grape.data.origin}</p>
 
     <header class="mt-2">
-      <h1 class="font-display text-4xl md:text-5xl font-bold tracking-tight">{grape.data.name}</h1>
+      <h1 class="page-title">{grape.data.name}</h1>
       <p class="mt-2 font-display text-lg italic text-neutral-700" data-es-value={grape.data.taglineEs}>{grape.data.tagline}</p>
       {
         grape.data.aliases.length > 0 && (
@@ -60,7 +61,7 @@ const winesWithRegion = await Promise.all(
                   <li>
                     <a
                       href={`/region/${r.id}`}
-                      class="inline-block rounded-full border border-neutral-300 px-3 py-1 text-sm hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition"
+                      class="inline-flex min-h-11 items-center rounded-full border border-rule px-4 py-2 text-sm hover:border-ink transition"
                     >
                       {r.data.name}
                     </a>
@@ -73,7 +74,7 @@ const winesWithRegion = await Promise.all(
     }
 
     <section class="mt-12">
-      <h2 class="font-display text-2xl font-semibold" data-i18n="grape.wines">Wines</h2>
+      <h2 class="section-title" data-i18n="grape.wines">Wines</h2>
       {winesWithRegion.length === 0 && <p class="mt-4 text-neutral-500" data-i18n="grape.noWines">No wines yet.</p>}
       <ul class="mt-4 space-y-3">
         {
@@ -81,7 +82,7 @@ const winesWithRegion = await Promise.all(
             <li>
               <a
                 href={`/wine/${wine.id}`}
-                class="block rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3 transition hover:border-neutral-400 hover:bg-white"
+                class="block border-t border-rule py-5 transition hover:border-ink"
               >
                 <p class="font-display text-lg font-semibold">
                   {wine.data.name}

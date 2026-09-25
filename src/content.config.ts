@@ -1,4 +1,5 @@
-import { defineCollection, reference, z } from 'astro:content';
+import { defineCollection, reference } from 'astro:content';
+import { z } from 'zod';
 import { glob } from 'astro/loaders';
 
 const wines = defineCollection({
@@ -38,12 +39,24 @@ const wines = defineCollection({
         tertiary: z.array(z.string()).default([]),
       })
       .optional(),
+    flavouringEs: z.object({
+      primary: z.array(z.string()).default([]),
+      secondary: z.array(z.string()).default([]),
+      tertiary: z.array(z.string()).default([]),
+    }).optional(),
+    servingTemperature: z.object({
+      minC: z.number().min(0).max(25),
+      maxC: z.number().min(0).max(25),
+    }).refine((value) => value.maxC >= value.minC).optional(),
+    aftertaste: z.string().optional(),
+    aftertasteEs: z.string().optional(),
     tanninProfile: z
       .object({
         softness: z.number().int().min(0).max(5),
         astringency: z.number().int().min(0).max(5),
         complexity: z.number().int().min(0).max(5),
         structure: z.number().int().min(0).max(5),
+        firmness: z.number().int().min(0).max(5).optional(),
       })
       .optional(),
     // Strategic fields preserved from editorial corpus. All optional so legacy

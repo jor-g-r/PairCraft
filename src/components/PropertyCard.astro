@@ -1,0 +1,8 @@
+---
+interface Props { label: string; i18n: string; featured?: boolean; }
+const { label, i18n, featured = false } = Astro.props;
+---
+<div class:list={['flex min-h-32 flex-col items-center justify-center gap-2 px-4 py-5 text-center', featured ? 'rounded-xl bg-accent text-on-accent' : 'rounded-[50%] bg-surface']}>
+  <dt class="text-xs uppercase tracking-wider" data-i18n={i18n}>{label}</dt>
+  <dd class="font-display text-xl font-semibold"><slot /></dd>
+</div>

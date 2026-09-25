@@ -6,6 +6,8 @@ export const prerender = false;
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import WineGlass from '../components/WineGlass.astro';
+import { Image } from 'astro:assets';
+import tableImage from '../assets/wine-at-table.webp';
 
 const wines = await getCollection('wines');
 const grapes = await getCollection('grapes');
@@ -48,11 +50,11 @@ interface SearchEntry {
 }
 
 const searchIndex: SearchEntry[] = [
-  ...winesWithRegion.map(({ wine, region }) => ({
+  ...wines.map((wine) => ({
     id: wine.id,
     type: 'wine' as const,
     name: wine.data.name,
-    meta: region ? `${region.data.name}, ${region.data.country}` : undefined,
+    meta: regions.find((region) => region.id === wine.data.region.id)?.data.name,
     color: wine.data.color,
   })),
   ...grapes.map((g) => ({ id: g.id, type: 'grape' as const, name: g.data.name })),
@@ -74,12 +76,15 @@ const countries = [
   title="Paircraft"
   description="A pocket guide to what pairs with what — wines, grapes, regions, dishes."
 >
-  <main class="mx-auto max-w-2xl px-6 py-10 md:py-16">
-    <header class="text-center">
-      <h1 class="font-display text-5xl md:text-7xl font-bold tracking-tight">Paircraft</h1>
-      <p class="mt-3 font-display text-lg md:text-xl italic text-neutral-700">
-        A pocket guide to what pairs with what.
+  <main class="page-shell">
+    <header class="grid items-center gap-8 sm:grid-cols-[1fr_180px] md:grid-cols-[1fr_240px]">
+      <div>
+      <h1 class="page-title max-w-xl" data-i18n="home.heading">Your bottle. Tonight’s table.</h1>
+      <p class="mt-5 max-w-lg text-lg leading-relaxed text-muted" data-i18n="home.intro">
+        Find your wine. Decide what goes on the plate.
       </p>
+      </div>
+      <Image src={tableImage} alt="Two glasses of wine at the table" class="hidden aspect-[4/5] w-full rounded-xl object-cover sm:block" widths={[240,480]} sizes="240px" loading="eager" />
     </header>
 
     <section class="relative mt-10 md:mt-14">
@@ -122,17 +127,17 @@ const countries = [
         <span class="text-neutral-500" data-i18n="home.try">Try:</span>
         <a
           href="/grape/malbec"
-          class="rounded-full border border-neutral-300 px-3 py-1 hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition"
+          class="inline-flex min-h-11 items-center rounded-full border border-rule px-3 py-1 hover:border-ink transition"
           >Malbec</a
         >
         <a
           href="/grape/albarino"
-          class="rounded-full border border-neutral-300 px-3 py-1 hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition"
+          class="inline-flex min-h-11 items-center rounded-full border border-rule px-3 py-1 hover:border-ink transition"
           >Albariño</a
         >
         <a
           href="/dish/ribeye-grilled"
-          class="rounded-full border border-neutral-300 px-3 py-1 hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition"
+          class="inline-flex min-h-11 items-center rounded-full border border-rule px-3 py-1 hover:border-ink transition"
           >Ribeye</a
         >
       </div>
@@ -150,14 +155,14 @@ const countries = [
         <div class="relative">
           <select
             id="market-select"
-            class="appearance-none rounded-full border border-neutral-300 bg-white py-1 pl-3 pr-8 font-medium text-neutral-900 focus:border-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-900/10 transition"
+            class="min-h-11 appearance-none rounded-full border border-rule bg-paper py-1 pl-3 pr-8 font-medium text-ink transition"
           >
             {
               markets
                 .slice()
                 .sort((a, b) => a.data.name.localeCompare(b.data.name))
                 .map((m) => (
-                  <option value={m.data.code} selected={m.data.code === marketCode}>
+                  <option value={m.data.code} selected={m.data.code === marketCode} data-es-value={m.data.nameEs}>
                     {m.data.name}
                   </option>
                 ))
@@ -190,7 +195,7 @@ const countries = [
             >
               <button
                 type="button"
-                class="region-pill is-active rounded-full border px-3 py-1 text-sm transition"
+                class="region-pill is-active min-h-11 rounded-full border px-3 py-1 text-sm transition"
                 data-country=""
                 aria-pressed="true"
                 data-i18n="home.all"
@@ -200,7 +205,7 @@ const countries = [
               {countries.map((c) => (
                 <button
                   type="button"
-                  class="region-pill rounded-full border px-3 py-1 text-sm transition"
+                  class="region-pill min-h-11 rounded-full border px-3 py-1 text-sm transition"
                   data-country={c}
                   aria-pressed="false"
                 >
@@ -209,12 +214,12 @@ const countries = [
               ))}
             </div>
 
-            <ul class="mt-5 grid gap-3 sm:grid-cols-2" id="wine-grid">
+            <ul class="mt-5 grid gap-x-8 gap-y-3 sm:grid-cols-2 lg:grid-cols-3" id="wine-grid">
               {winesWithRegion.map(({ wine, region }) => (
                 <li class="wine-card" data-country={region?.data.country ?? ''}>
                   <a
                     href={`/wine/${wine.id}`}
-                    class="block h-full rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-4 transition hover:border-neutral-400 hover:bg-white"
+                    class="block h-full border-t border-rule py-5 transition hover:border-ink"
                   >
                     <div class="flex items-start gap-2.5">
                       <WineGlass color={wine.data.color} class="shrink-0 mt-0.5 text-neutral-700" />
@@ -265,6 +270,10 @@ const countries = [
         )
       }
     </section>
+    <div class="mt-10 flex flex-wrap gap-6 border-t border-rule pt-6">
+      <a class="editorial-link" href="/wines" data-i18n="wine.back">All wines</a>
+      <a class="editorial-link" href="/pair" data-i18n="nav.pair">Find a pairing</a>
+    </div>
   </main>
 
   <script type="application/json" id="search-index" set:html={JSON.stringify(searchIndex)}></script>
@@ -275,6 +284,8 @@ const countries = [
       const input = document.getElementById('search-input');
       const results = document.getElementById('search-results');
       if (!indexEl || !input || !results) return;
+      if (input.dataset.ready) return;
+      input.dataset.ready = 'true';
 
       /** @type {Array<{id:string,type:string,name:string,meta?:string}>} */
       const entries = JSON.parse(indexEl.textContent || '[]');
@@ -339,6 +350,7 @@ const countries = [
       function render(matches) {
         currentMatches = matches;
         activeIndex = -1;
+        input.removeAttribute('aria-activedescendant');
         if (!matches.length) {
           results.hidden = true;
           results.classList.add('hidden');
@@ -358,7 +370,7 @@ const countries = [
                   <span class="font-display text-base font-semibold block truncate">${escapeHtml(m.name)}</span>
                   ${m.meta ? `<span class="block text-xs text-neutral-500 truncate">${escapeHtml(m.meta)}</span>` : ''}
                 </span>
-                <span class="shrink-0 text-[10px] uppercase tracking-wider text-neutral-400 border border-neutral-200 rounded px-1.5 py-0.5" data-i18n-search-type="${m.type}">${TYPE_LABEL[m.type]}</span>
+                <span class="shrink-0 text-xs text-neutral-600" data-i18n-search-type="${m.type}">${document.documentElement.lang === 'es' ? ({wine:'vino', grape:'uva', dish:'plato', region:'región'}[m.type]) : TYPE_LABEL[m.type]}</span>
               </a>
             </li>`,
           )
@@ -377,11 +389,11 @@ const countries = [
         items.forEach((el, idx) => {
           if (idx === i) {
             el.classList.add('bg-neutral-100');
-            el.setAttribute('aria-selected', 'true');
+            el.parentElement.setAttribute('aria-selected', 'true');
             input.setAttribute('aria-activedescendant', `search-opt-${i}`);
           } else {
             el.classList.remove('bg-neutral-100');
-            el.removeAttribute('aria-selected');
+            el.parentElement.setAttribute('aria-selected', 'false');
           }
         });
         activeIndex = i;
@@ -461,11 +473,11 @@ const countries = [
 
   <style>
     .region-pill {
-      border-color: rgb(212 212 212); /* neutral-300 */
-      color: rgb(64 64 64); /* neutral-700 */
+      border-color: var(--color-rule);
+      color: var(--color-muted);
     }
     .region-pill:hover {
-      border-color: rgb(23 23 23); /* neutral-900 */
+      border-color: var(--color-ink);
     }
     .region-pill.is-active {
       background-color: var(--color-accent);
