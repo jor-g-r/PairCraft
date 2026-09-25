@@ -25,3 +25,15 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 .vercel
+
+# Impeccable per-session artifacts (shared design records stay tracked)
+.impeccable/config.local.json
+.impeccable/hook.cache.json
+.impeccable/hook.pending.json
+.impeccable/review/
+.impeccable/questions/
+.impeccable/live/server.json
+.impeccable/live/sessions/
+.impeccable/live/previews/
+.impeccable/live/cache/
+.impeccable/*.png
