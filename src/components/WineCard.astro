@@ -1,0 +1,14 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import WineGlass from './WineGlass.astro';
+interface Props { wine: CollectionEntry<'wines'>; region?: CollectionEntry<'regions'>; }
+const { wine, region } = Astro.props;
+---
+<a href={`/wine/${wine.id}`} class="group flex h-full flex-col border-t border-rule py-6">
+  <div class="flex items-start gap-4">
+    <WineGlass color={wine.data.color} class="mt-1 h-9 w-9 shrink-0" />
+    <div><h2 class="font-display text-2xl font-semibold leading-tight group-hover:underline">{wine.data.name}</h2>{region && <p class="mt-2 text-xs text-muted">{region.data.name} · {region.data.country}</p>}</div>
+  </div>
+  <p class="mt-4 font-display text-lg italic leading-relaxed text-muted" data-es-value={wine.data.taglineEs}>{wine.data.tagline}</p>
+  <span class="mt-5 text-sm font-semibold" data-i18n="wine.jump">What to eat with it</span>
+</a>

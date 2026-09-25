@@ -1,0 +1,35 @@
+---
+import Base from '../layouts/Base.astro';
+import { Image } from 'astro:assets';
+import tableImage from '../assets/wine-at-table.webp';
+---
+<Base title="About — Paircraft" description="A pocket guide to a better match between glass and plate.">
+  <main class="page-shell">
+    <div class="grid items-start gap-10 md:grid-cols-2 md:gap-16">
+      <div>
+        <h1 class="page-title" data-es-value="El vino encuentra su mesa.">Wine finds its table.</h1>
+        <p class="mt-6 font-display text-2xl italic leading-relaxed" data-es-value="Una botella, un plato y una buena razón para juntarlos.">A bottle, a plate, and a good reason to put them together.</p>
+        <p class="mt-6 leading-relaxed text-muted" data-es-value="Paircraft es una guía de bolsillo para elegir qué comer con tu vino. Busca una botella, explora sus maridajes y sigue la curiosidad hacia las uvas y regiones que le dan carácter.">Paircraft is a pocket guide to what to eat with your wine. Find a bottle, explore its pairings, and follow your curiosity to the grapes and regions behind it.</p>
+        <a class="action mt-8" href="/wines" data-es-value="Encuentra tu botella">Find your bottle</a>
+      </div>
+      <figure>
+        <Image src={tableImage} alt="Two glasses of wine on a table" class="aspect-[4/5] w-full rounded-xl object-cover" widths={[480, 900]} sizes="(min-width: 768px) 450px, 100vw" loading="eager" />
+        <figcaption class="mt-3 text-xs text-muted"><a class="underline" href="https://unsplash.com/photos/zmH_rmAxOgE" target="_blank" rel="noopener noreferrer">Matthias Oberholzer / Unsplash</a></figcaption>
+      </figure>
+    </div>
+    <section class="mt-16 max-w-3xl">
+      <h2 class="section-title" data-es-value="Tres formas de encontrar el maridaje">Three ways to find the match</h2>
+      <dl class="mt-6 divide-y divide-rule">
+        <div class="py-5"><dt class="font-display text-2xl" data-es-value="Armonía">Harmony</dt><dd class="mt-2 leading-relaxed text-muted" data-es-value="Un plato con cuerpo pide un vino que le siga el paso. Intensidades y texturas encuentran un ritmo común.">A substantial dish wants a wine that can keep up. Weight and texture find a shared rhythm.</dd></div>
+        <div class="py-5"><dt class="font-display text-2xl" data-es-value="Contraste">Contrast</dt><dd class="mt-2 leading-relaxed text-muted" data-es-value="La acidez refresca una fritura; el tanino se encuentra con la proteína. La diferencia aporta equilibrio.">Acidity refreshes a fried bite; tannin meets protein. Difference brings balance.</dd></div>
+        <div class="py-5"><dt class="font-display text-2xl" data-es-value="Realce">Enhancement</dt><dd class="mt-2 leading-relaxed text-muted" data-es-value="Las notas terrosas de un vino acompañan a los hongos. Un sabor compartido hace que ambos se expresen mejor.">A wine’s earthy notes find a friend in mushrooms. A shared flavour brings out more in both.</dd></div>
+      </dl>
+    </section>
+    <section class="mt-12 max-w-3xl border-t border-rule pt-8">
+      <h2 class="font-display text-3xl" data-es-value="El porqué, en una frase">The why, in one sentence</h2>
+      <p class="mt-4 leading-relaxed text-muted" data-es-value="Cada maridaje tiene un veredicto —decisivo, vale la pena probar o puente arriesgado— y una explicación breve. El veredicto describe la relación entre plato y vino. La cocción, la salsa y tu gusto también cuentan.">Every pairing has a verdict—decisive, worth trying or risky bridge—and a short explanation. The verdict describes the relationship between plate and wine. Cooking, sauce and your own taste matter too.</p>
+      <p class="mt-4 leading-relaxed text-muted" data-es-value="Hecho por Jorge Rondón, desde su formación en hostelería en CUHELAV y su curiosidad por lo que ocurre en la mesa. La guía sigue creciendo botella a botella.">Made by Jorge Rondón, drawing on his hospitality background at CUHELAV and curiosity about what happens at the table. The guide grows bottle by bottle.</p>
+      <a href="/pair" class="editorial-link mt-5" data-es-value="¿Ya elegiste el plato?">Already chosen the dish?</a>
+    </section>
+  </main>
+</Base>

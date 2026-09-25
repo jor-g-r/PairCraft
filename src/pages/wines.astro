@@ -1,0 +1,65 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import WineCard from '../components/WineCard.astro';
+import { t } from '../lib/i18n';
+const wines = (await getCollection('wines')).sort((a,b) => a.data.name.localeCompare(b.data.name));
+const regions = new Map((await getCollection('regions')).map((r) => [r.id, r]));
+const markets = await getCollection('markets');
+const styles = [...new Map(wines.filter((w) => w.data.style).map((w) => [w.data.style!, w.data.styleEs])).entries()].sort(([a], [b]) => a.localeCompare(b));
+---
+<Base title="Wines — Paircraft" description="Find a bottle and what to eat with it.">
+  <main class="page-shell">
+    <header><h1 class="page-title" data-i18n="nav.wines">Wines</h1><p class="mt-4 text-lg text-muted" data-i18n="catalog.intro">Start with a bottle. Find its place at the table.</p></header>
+    <form id="wine-filters" class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" role="search">
+      <label class="space-y-2 text-sm"><span data-i18n="catalog.search">Find a wine</span><input class="field" type="search" name="q" autocomplete="off" /></label>
+      <label class="space-y-2 text-sm"><span data-i18n="catalog.market">Available in</span><select name="market" class="field"><option value="" data-i18n="catalog.allMarkets">Entire collection</option>{markets.map((m) => <option value={m.data.code} data-es-value={m.data.nameEs}>{m.data.name}</option>)}</select></label>
+      <label class="space-y-2 text-sm"><span data-i18n="catalog.color">Wine colour</span><select name="color" class="field"><option value="" data-i18n="catalog.allColors">All colours</option>{['red','white','rose','orange','sparkling'].map((color) => <option value={color} data-i18n={`color.${color}`}>{t(`color.${color}`)}</option>)}</select></label>
+      <label class="space-y-2 text-sm"><span data-i18n="catalog.style">Style</span><select name="style" class="field"><option value="" data-i18n="catalog.allStyles">All styles</option>{styles.map(([style, es]) => <option value={style} data-es-value={es}>{style}</option>)}</select></label>
+    </form>
+    <div class="mt-5 flex items-center justify-between gap-4 text-sm text-muted"><p aria-live="polite"><span id="wine-count">{wines.length}</span> <span data-i18n="catalog.count">wines</span></p><button type="button" id="reset-filters" class="min-h-11 underline" data-i18n="catalog.reset">Reset filters</button></div>
+    <p id="wine-empty" hidden class="my-10 max-w-prose text-muted" data-i18n="catalog.empty">No bottles match these filters. Try the entire collection or reset your search.</p>
+    <ul class="mt-4 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3" id="catalog-wines">
+      {wines.map((wine) => <li data-name={[wine.data.name, wine.data.nameEs, wine.data.style, wine.data.styleEs, regions.get(wine.data.region.id)?.data.name].filter(Boolean).join(' ')} data-markets={wine.data.markets.join(',')} data-color={wine.data.color} data-style={wine.data.style ?? ''}><WineCard wine={wine} region={regions.get(wine.data.region.id)} /></li>)}
+    </ul>
+    <noscript><p>All wines are shown. / Se muestran todos los vinos.</p></noscript>
+  </main>
+</Base>
+<script>
+  const normalize = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  function initCatalog() {
+    const form = document.querySelector<HTMLFormElement>('#wine-filters');
+    if (!form || form.dataset.ready) return;
+    form.dataset.ready = 'true';
+    const fields = ['q','market','color','style'] as const;
+    const controls = Object.fromEntries(fields.map((key) => [key, form.elements.namedItem(key)])) as Record<typeof fields[number], HTMLInputElement | HTMLSelectElement>;
+    const params = new URLSearchParams(location.search);
+    for (const key of fields) {
+      let value = params.get(key) ?? '';
+      if (key === 'market' && !params.has('market')) value = document.cookie.match(/(?:^|; )pc_market=([A-Z]{2})(?:;|$)/)?.[1] ?? 'CO';
+      controls[key].value = value;
+    }
+    function filter() {
+      const values = Object.fromEntries(fields.map((key) => [key, controls[key].value]));
+      let count = 0;
+      document.querySelectorAll<HTMLElement>('#catalog-wines > li').forEach((item) => {
+        const visible = normalize(item.dataset.name ?? '').includes(normalize(values.q)) && (!values.market || item.dataset.markets?.split(',').includes(values.market)) && (!values.color || item.dataset.color === values.color) && (!values.style || item.dataset.style === values.style);
+        item.hidden = !visible;
+        if (visible) count++;
+      });
+      document.querySelector('#wine-count')!.textContent = String(count);
+      document.querySelector<HTMLElement>('#wine-empty')!.hidden = count > 0;
+      const query = new URLSearchParams();
+      for (const key of fields) if (values[key] || key === 'market') query.set(key, values[key]);
+      history.replaceState(history.state, '', `${location.pathname}?${query}`);
+      try { sessionStorage.setItem('pc_catalog_query', query.toString()); } catch {}
+    }
+    form.addEventListener('input', filter);
+    form.addEventListener('change', filter);
+    form.addEventListener('submit', (event) => { event.preventDefault(); filter(); });
+    document.querySelector('#reset-filters')?.addEventListener('click', () => { fields.forEach((key) => controls[key].value = ''); filter(); });
+    filter();
+  }
+  document.addEventListener('astro:page-load', initCatalog);
+  initCatalog();
+</script>

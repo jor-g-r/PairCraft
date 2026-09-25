@@ -1,0 +1,74 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+const dishes = await getCollection('dishes');
+---
+<Base title="Find a pairing — Paircraft" description="Describe your dish and find a pairing in the guide.">
+  <main class="page-shell max-w-3xl">
+    <h1 class="page-title" data-i18n="pair.title">What’s on the plate?</h1>
+    <p class="mt-5 max-w-prose text-lg leading-relaxed text-muted" data-i18n="pair.intro">Tell us the main ingredient, how it’s cooked and the sauce. We’ll find a dish in our guide to start from.</p>
+    <form id="pair-form" class="mt-8" aria-describedby="pair-status">
+      <label for="pair-query" class="block text-sm font-semibold" data-i18n="pair.label">Describe your dish</label>
+      <textarea id="pair-query" name="query" rows="4" required minlength="3" maxlength="300" class="field mt-3 resize-y" placeholder="For example: grilled salmon with lemon and herbs" data-i18n-placeholder="pair.placeholder"></textarea>
+      <button id="pair-submit" type="submit" class="action mt-4" data-i18n="pair.submit">Find a dish to pair</button>
+    </form>
+    <p id="pair-status" role="status" aria-live="polite" class="mt-5 text-sm text-muted"></p>
+    <section id="pair-results" hidden class="mt-8" aria-labelledby="pair-result-title">
+      <h2 id="pair-result-title" class="font-display text-2xl" tabindex="-1"></h2>
+      <p id="pair-related-hint" class="mt-3 text-sm leading-relaxed text-muted" data-i18n="pair.relatedHint">These are starting points. A different sauce or cooking method can change the pairing.</p>
+      <ul class="mt-4 divide-y divide-rule border-y border-rule">
+        {dishes.map((dish) => <li hidden data-result-id={dish.id}><a href={`/dish/${dish.id}`} class="group block py-5"><h3 class="font-display text-xl font-semibold group-hover:underline" data-es-value={dish.data.nameEs}>{dish.data.name}</h3><p class="mt-2 text-sm leading-relaxed text-muted" data-es-value={dish.data.descriptionEs}>{dish.data.description}</p><span class="mt-3 block text-sm font-semibold" data-i18n="dish.winesForDish">Wines for this dish</span></a></li>)}
+      </ul>
+    </section>
+    <section class="mt-12 border-t border-rule pt-8"><h2 class="font-display text-2xl" data-es-value="O empieza por un plato conocido">Or start with a familiar dish</h2><ul class="mt-4 flex flex-wrap gap-x-6 gap-y-2">{dishes.slice(0, 6).map((dish) => <li><a href={`/dish/${dish.id}`} class="editorial-link" data-es-value={dish.data.nameEs}>{dish.data.name}</a></li>)}</ul><a href="/dishes" class="editorial-link mt-4" data-i18n="dishes.all">All dishes</a></section>
+    <noscript><p class="mt-5">Enable JavaScript to search, or use the dish links above. / Activa JavaScript para buscar o usa los enlaces de platos.</p></noscript>
+  </main>
+</Base>
+<script>
+  import { t, type Locale } from '../lib/i18n';
+  function initPair() {
+    const form = document.querySelector<HTMLFormElement>('#pair-form');
+    if (!form || form.dataset.ready) return;
+    form.dataset.ready = 'true';
+    const query = document.querySelector<HTMLTextAreaElement>('#pair-query')!;
+    const button = document.querySelector<HTMLButtonElement>('#pair-submit')!;
+    const status = document.querySelector<HTMLElement>('#pair-status')!;
+    const results = document.querySelector<HTMLElement>('#pair-results')!;
+    const title = document.querySelector<HTMLElement>('#pair-result-title')!;
+    let controller: AbortController | undefined;
+    const locale = () => (document.documentElement.lang === 'es' ? 'es' : 'en') as Locale;
+    document.addEventListener('astro:before-swap', () => controller?.abort(), { once: true });
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (button.disabled) return;
+      const text = query.value.trim();
+      if (text.length < 3 || text.length > 300) { status.textContent = t('pair.invalid', locale()); query.focus(); return; }
+      controller = new AbortController();
+      const timeout = setTimeout(() => controller?.abort(), 20000);
+      button.disabled = true;
+      form.setAttribute('aria-busy', 'true');
+      button.textContent = t('pair.loading', locale());
+      status.textContent = t('pair.loading', locale());
+      results.hidden = true;
+      document.querySelectorAll<HTMLElement>('[data-result-id]').forEach((item) => item.hidden = true);
+      try {
+        const response = await fetch('/api/pair', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ query: text }), signal: controller.signal });
+        if (!response.ok) throw new Error('Search failed');
+        const data = await response.json();
+        if (!Array.isArray(data.dishIds)) throw new Error('Invalid response');
+        let count = 0;
+        document.querySelectorAll<HTMLElement>('[data-result-id]').forEach((item) => { item.hidden = !data.dishIds.includes(item.dataset.resultId); if (!item.hidden) count++; });
+        status.textContent = count ? '' : t('pair.empty', locale());
+        if (count) {
+          title.textContent = t(data.kind === 'exact' ? 'pair.exact' : 'pair.related', locale());
+          document.querySelector<HTMLElement>('#pair-related-hint')!.hidden = data.kind === 'exact';
+          results.hidden = false;
+          title.focus();
+        }
+      } catch { status.textContent = t('pair.error', locale()); }
+      finally { clearTimeout(timeout); button.disabled = false; button.textContent = t('pair.submit', locale()); form.removeAttribute('aria-busy'); }
+    });
+  }
+  document.addEventListener('astro:page-load', initPair);
+  initPair();
+</script>
