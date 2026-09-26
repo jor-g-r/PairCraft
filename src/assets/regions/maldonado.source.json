@@ -1,0 +1,12 @@
+{
+  "type": "stock",
+  "author": "Leandro Hernández (@untropero)",
+  "source": "https://unsplash.com/photos/jHz2WyDBVyo",
+  "assetUrl": "https://images.unsplash.com/photo-1653918488348-17d2a707012f?fm=jpg&q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0",
+  "location": "Punta del Este, Maldonado, Uruguay (per author map pin)",
+  "license": "Unsplash License (free to use, attribution appreciated not required)",
+  "alt": "Sunset over Punta del Este and the ocean, Maldonado, Uruguay",
+  "original": "1600x1066 progressive JPEG from Unsplash CDN",
+  "suppliedBy": "agent, 2026-09-25 (sourced for Phase-2 imagery pass)",
+  "transformation": "Resized to 1600px wide and encoded as WebP (q80). Editorial scene photograph: never present as the specific bottle."
+}

@@ -1,20 +1,21 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
-import { Image } from 'astro:assets';
 import Base from '../../layouts/Base.astro';
 import DishPairing from '../../components/DishPairing.astro';
+import PhotoBand from '../../components/PhotoBand.astro';
 import WineGlass from '../../components/WineGlass.astro';
 import PropertyCard from '../../components/PropertyCard.astro';
 import SensoryDial from '../../components/SensoryDial.astro';
 import { computeTier, type Tier } from '../../lib/tier';
+import { regionImage } from '../../lib/region-images';
 import { t } from '../../lib/i18n';
-import mendozaImage from '../../assets/regions/mendoza-vineyard.jpg';
 
 export async function getStaticPaths() {
   return (await getCollection('wines')).map((wine) => ({ params: { slug: wine.id }, props: { wine } }));
 }
 const { wine } = Astro.props;
 const region = await getEntry(wine.data.region);
+const fromRegion = region ? regionImage(region.id) : undefined;
 const grapes = await Promise.all(wine.data.grapes.map(async (g) => ({ entry: await getEntry(g.grape), percentage: g.percentage })));
 const dishes = await getCollection('dishes');
 const explanations = new Map((await getCollection('pairings')).map((p) => [`${p.data.wine.id}__${p.data.dish.id}`, p.data]));
@@ -91,7 +92,17 @@ const tanninAxes = ['softness', 'astringency', 'complexity', 'structure', 'firmn
           {wine.data.style && <div><dt class="text-muted" data-i18n="catalog.style">Style</dt><dd class="mt-1" data-es-value={wine.data.styleEs}>{wine.data.style}</dd></div>}
         </dl>
       </div>
-      {wine.id === 'catena-malbec' && <figure class="mt-8"><Image src={mendozaImage} alt="Mendoza vineyard" class="aspect-[3/1] w-full rounded-xl object-cover" widths={[640, 1024]} sizes="(min-width: 1024px) 960px, 100vw" loading="lazy" /></figure>}
+      {fromRegion && (
+        <div class="mt-10">
+          <PhotoBand
+            src={fromRegion.image}
+            alt={fromRegion.alt ?? (region ? `${region.data.name} scene` : 'Wine region')}
+            label={region ? `From ${region.data.name}` : undefined}
+            labelEs={region ? `De ${region.data.nameEs ?? region.data.name}` : undefined}
+            credit={fromRegion.creditLine}
+          />
+        </div>
+      )}
     </section>
 
     {wine.data.flavouring && notes.some((key) => wine.data.flavouring?.[key]?.length) && <section class="mt-16">

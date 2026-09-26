@@ -1,0 +1,12 @@
+{
+  "type": "stock",
+  "author": "Adlan (@adlan7000)",
+  "source": "Unsplash photo page URL not recorded at sourcing time; assetUrl below is the durable fetch URL",
+  "assetUrl": "https://images.unsplash.com/photo-1762119955033-271d62e63cb4?fm=jpg&q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0",
+  "location": "Verzenay, Champagne (per author caption)",
+  "license": "Unsplash License (free to use, attribution appreciated not required)",
+  "alt": "Golden vineyard rows leading to a distant village, Champagne",
+  "original": "1600x960 progressive JPEG from Unsplash CDN",
+  "suppliedBy": "agent, 2026-09-25 (sourced for Phase-2 imagery pass)",
+  "transformation": "Resized to 1600px wide and encoded as WebP (q80). Editorial scene photograph: never present as the specific bottle."
+}

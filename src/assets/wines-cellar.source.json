@@ -1,0 +1,12 @@
+{
+  "type": "stock",
+  "author": "Raúl Mermans García (@raulmermans)",
+  "source": "https://unsplash.com/photos/MicjEve7e2Q",
+  "assetUrl": "https://images.unsplash.com/photo-1776191707458-d6cd07bd82c8?fm=jpg&q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0",
+  "location": "Unspecified wine cellar (scene, not a specific bodega)",
+  "license": "Unsplash License (free to use, attribution appreciated not required)",
+  "alt": "Rows of wooden wine barrels stacked in a dark cellar",
+  "original": "1600x2400 progressive JPEG from Unsplash CDN",
+  "suppliedBy": "agent, 2026-09-25 (sourced for Phase-2 imagery pass)",
+  "transformation": "1600px wide from CDN; encoded as WebP (q80). Editorial scene photograph, not a specific table or cellar."
+}

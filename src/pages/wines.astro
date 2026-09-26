@@ -1,7 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import PhotoBand from '../components/PhotoBand.astro';
 import WineCard from '../components/WineCard.astro';
+import cellarImage from '../assets/wines-cellar.webp';
 import { t } from '../lib/i18n';
 const wines = (await getCollection('wines')).sort((a,b) => a.data.name.localeCompare(b.data.name));
 const regions = new Map((await getCollection('regions')).map((r) => [r.id, r]));
@@ -11,6 +13,9 @@ const styles = [...new Map(wines.filter((w) => w.data.style).map((w) => [w.data.
 <Base title="Wines — Paircraft" description="Find a bottle and what to eat with it.">
   <main class="page-shell">
     <header><h1 class="page-title" data-i18n="nav.wines">Wines</h1><p class="mt-4 text-lg text-muted" data-i18n="catalog.intro">Start with a bottle. Find its place at the table.</p></header>
+    <div class="mt-8 md:mt-10">
+      <PhotoBand src={cellarImage} alt="Rows of wooden wine barrels stacked in a dark cellar" eager />
+    </div>
     <form id="wine-filters" class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" role="search">
       <label class="space-y-2 text-sm"><span data-i18n="catalog.search">Find a wine</span><input class="field" type="search" name="q" autocomplete="off" /></label>
       <label class="space-y-2 text-sm"><span data-i18n="catalog.market">Available in</span><select name="market" class="field"><option value="" data-i18n="catalog.allMarkets">Entire collection</option>{markets.map((m) => <option value={m.data.code} data-es-value={m.data.nameEs}>{m.data.name}</option>)}</select></label>

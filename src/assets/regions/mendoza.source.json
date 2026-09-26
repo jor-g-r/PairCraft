@@ -1,0 +1,11 @@
+{
+  "type": "stock",
+  "author": "Unrecorded",
+  "source": "Unrecorded (pre-existing repo asset, mendoza-vineyard.jpg, dated 2026-05-14)",
+  "location": "Mendoza, Argentina (assumed from filename — unverified)",
+  "license": "Unrecorded — flag: confirm provenance with Jorge before any public launch",
+  "alt": "Vineyard in Mendoza",
+  "suppliedBy": "Jorge, 2026-05-14",
+  "original": "mendoza-vineyard.jpg (2000x3000 JPEG)",
+  "transformation": "Resized to 1200px wide and encoded as WebP (q80)."
+}

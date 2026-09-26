@@ -1,0 +1,42 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  src: ImageMetadata;
+  alt: string;
+  /** Caption lead naming the scene, e.g. "From Mendoza". Rendered under the band. */
+  label?: string;
+  /** Spanish variant of label for the client-side i18n engine. */
+  labelEs?: string;
+  /** Visible credit line — rendered only for photos that require it (CC BY-SA). */
+  credit?: string;
+  /** band = wide editorial block; strip = thinner ribbon for grape pages. */
+  aspect?: 'band' | 'strip';
+  /** Load eagerly when the band is the page's above-the-fold anchor. */
+  eager?: boolean;
+  class?: string;
+}
+const { src, alt, label, labelEs, credit, aspect = 'band', eager = false, class: className = '' } = Astro.props;
+---
+
+<figure class:list={['photo-band', className]}>
+  <Image
+    src={src}
+    alt={alt}
+    class:list={[
+      'w-full rounded-xl object-cover dark:brightness-[0.87] dark:saturate-[0.94]',
+      aspect === 'strip' ? 'aspect-[3/1]' : 'aspect-[21/9]',
+    ]}
+    widths={[640, 1024, 1600]}
+    sizes="(min-width: 1024px) 1024px, 100vw"
+    loading={eager ? 'eager' : 'lazy'}
+  />
+  {(label || credit) && (
+    <figcaption class="mt-2 text-xs text-neutral-500">
+      {label && <span data-es-value={labelEs}>{label}</span>}
+      {label && credit && ' · '}
+      {credit}
+    </figcaption>
+  )}
+</figure>

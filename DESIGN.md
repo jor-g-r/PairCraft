@@ -135,6 +135,8 @@ components:
   section-heading:
     textColor: "{colors.ink}"
     typography: "{typography.section}"
+  photo-band:
+    rounded: "{rounded.xl}"
 ---
 
 # Design System: Paircraft
@@ -151,9 +153,10 @@ Density follows the task. Catalogs use scannable linked rows, while wine pages g
 - Wine-red actions and verdicts on neutral, theme-aware ground.
 - Playfair identity and editorial prose; Open Sans controls and facts.
 - Ruled lists, oval properties, thin independent sensory tracks.
+- Editorial scene photographs with recorded provenance; never the specific bottle.
 - Mobile-first reading with explicit navigation and honest missing-data states.
 
-Recorded from the current working-tree implementation on 2026-09-25, not from a production deployment or a fresh browser audit. Evidence: `src/styles/global.css`, `src/layouts/Base.astro`, `src/components/`, `src/pages/wine/[slug].astro`, the wines/dishes/pair/about routes, and sampled home/dish templates. `PRODUCT.md` and `.impeccable/surfaces/paircraft.md` establish approval; source code establishes implemented values. The sidecar's illustrative tonal ramps are panel aids, not additional application colors.
+Recorded from the current working-tree implementation on 2026-09-25, not from a production deployment or a fresh browser audit. Evidence: `src/styles/global.css`, `src/layouts/Base.astro`, `src/components/`, `src/pages/wine/[slug].astro`, the wines/dishes/pair/about routes, the region/grape/dish detail templates, `src/lib/region-images.ts`, and `src/assets/` scene imagery with its `*.source.json` provenance sidecars. `PRODUCT.md` and `.impeccable/surfaces/paircraft.md` establish approval; source code establishes implemented values. The sidecar's illustrative tonal ramps are panel aids, not additional application colors.
 
 ## Colors
 
@@ -210,6 +213,7 @@ The serif carries wine identity and opinion; the sans carries operation and evid
 - **Pairing groups:** one vertical stack on mobile, three mode columns at `lg`, with readable ruled rows within each group. Show the first three entries per mode, then a native disclosure for additional entries. A dish may occur in multiple modes when the engine supplies those activations.
 - **Catalogs:** wine filters use one / two / four columns at base / `sm` / `lg`; wine results use one / two / three. Dish results use one column then two at `sm`. Empty results remain explanatory text with an available next action.
 - **About:** one column becoming two at `md`, with a portrait editorial image (4:5). The same table photograph is a small supporting image on home, hidden below `sm`. It is not bottle or regional evidence.
+- **Editorial photo bands:** `/wines`, `/dishes` and `/pair` each carry one eager 21:9 band (`wines-cellar`, `dishes-table`, `pair-table`) directly under the page header or intro; region pages carry a 21:9 region band after the header; wine pages close the "In the glass" section with a 21:9 "From <region>" band; grape pages carry a 3:1 strip labeled "From <region>", sourced from the first signature region with an image. The home's catalog divider is a plain hairline, not a labeled kicker.
 
 `/wines` writes filter state to the query string, and the wine page's explicit “All wines” links (`data-catalog-return`) restore the last catalog query: the catalog saves its query to session storage (`pc_catalog_query`), and a page-load handler rewrites those links on every navigation. Catalog wine cards themselves link plainly, without carrying the query.
 
@@ -253,6 +257,10 @@ Decisive match is filled wine red with white text; Worth trying is neutral-fille
 
 `WineCard.astro` uses a top rule, vertical padding (1.5rem), a small SVG glass (2.25rem), Playfair title, optional origin, italic tagline and a next-step label. The title underlines on hover. Dish catalog rows use the same ruled reading model; pairing rows use slightly tighter vertical padding (1.25rem), a tier chip, dish title, description and optional italic explanation. The whole row is the link. A wine-to-dish link carries `?wine=<id>` so the dish page can show a contextual return link when it finds that wine.
 
+### Editorial photo bands
+
+`PhotoBand.astro` renders one `<Image>` from `src/assets/` inside a `<figure>`: the full-width band crops 21:9 and the grape strip crops 3:1, both at the `xl` radius, widths (640/1024/1600), `sizes` "(min-width: 1024px) 1024px, 100vw", lazy by default and eager on the three catalog bands. Dark mode dims and desaturates slightly (`brightness-[0.87]`, `saturate-[0.94]`). The caption is a small muted `figcaption` below the image: an optional label span (bilingual via `data-es-value`) plus a license credit where the license requires one. `src/lib/region-images.ts` resolves a region slug to its WebP and provenance sidecar; the sidecars are the single source of truth for alt text and credits.
+
 ### Wine properties and sensory tracks
 
 `PropertyCard.astro` is a definition-list pair with centered content. The serving panel is **accent-filled in the implemented build**, not the dark neutral described in the surface brief; body, tannin and finish use surface-filled ovals. The accent-filled variant is the documented current pattern, not a silently corrected reference.
@@ -266,12 +274,14 @@ Decisive match is filled wine red with white text; Worth trying is neutral-fille
 - Optional flavour-note categories, tannin detail, editorial notes and availability are conditional. Missing pairing prose is omitted, even if the engine provides a verdict. Missing translations fall back per field.
 - Origin links describe production geography; availability notes and market filters describe retail presence. Do not interchange them.
 - Keep SVG glasses schematic. The table photograph's recorded credit is Matthias Oberholzer / Unsplash (`src/assets/wine-at-table.source.json`); do not present it as an image of the selected bottle or its origin. This documentation does not assert corpus size, coverage or sensory values for any bottle.
+- Region and band photographs are scene imagery — places, cellars, laid tables — and their alt texts say so; they are never presented as the specific bottle, vintage or estate. Every asset carries a `*.source.json` provenance sidecar (author, source, license, transformation); alt text and captions read from it rather than from hand-written attributes.
+- Attribution follows the license: CC BY-SA images render a visible caption credit ("Foto: \<author\> / Wikimedia Commons, CC BY-SA \<version\>"); Unsplash and CC0 need no visible credit, only the sidecar record. The Mendoza band's provenance is unrecorded (flagged in its sidecar); confirm before any public launch.
 
 ### Ruled headings
 
 The shared section heading pairs semibold Playfair with a flexible trailing rule, separated by a gap (1.25rem). The rule is structural, not a decorative underline beneath every heading. Keep actual headings for content hierarchy.
 
-**Not canonized or repaired:** legacy `Eyebrow.astro` usages on dish detail and the home's decorative “or browse” kicker remain craft-floor defects, not a reusable heading tier; the reveal comment promises a fade-up absent from its CSS states. These are recorded for accuracy within this documentation-only scope. Functional property terms and origin-filter labels are not decorative kickers.
+**Retired, not canonized:** `Eyebrow.astro` was deleted rather than promoted into a heading tier; dish detail's former eyebrow labels are now italic Playfair (1.5rem) section headings like the pairing-mode headings, and the home's decorative "or browse" kicker is a plain hairline divider. The reveal comment still promises a fade-up absent from its CSS states; that remains unrepaired. Functional property terms and origin-filter labels are not decorative kickers.
 
 ## Do's and Don'ts
 

@@ -1,6 +1,8 @@
 ---
 import { getCollection, getEntry, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import PhotoBand from '../../components/PhotoBand.astro';
+import { regionImage } from '../../lib/region-images';
 
 export async function getStaticPaths() {
   const regions = await getCollection('regions');
@@ -9,6 +11,8 @@ export async function getStaticPaths() {
 
 const { region } = Astro.props;
 const { Content } = await render(region);
+
+const band = regionImage(region.id);
 
 const signatureGrapes = await Promise.all(
   region.data.signatureGrapes.map((ref) => getEntry(ref)),
@@ -27,6 +31,12 @@ const wines = allWines.filter((w) => w.data.region.id === region.id);
       <h1 class="page-title">{region.data.name}</h1>
       <p class="mt-2 font-display text-lg italic text-neutral-700" data-es-value={region.data.taglineEs}>{region.data.tagline}</p>
     </header>
+
+    {band && (
+      <div class="mt-8">
+        <PhotoBand src={band.image} alt={band.alt ?? region.data.name} credit={band.creditLine} />
+      </div>
+    )}
 
     <p class="mt-6 text-sm text-neutral-600 italic">{region.data.climate}</p>
 

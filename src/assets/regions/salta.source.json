@@ -1,0 +1,12 @@
+{
+  "type": "stock",
+  "author": "Nicolás Flor (@nicolasflor)",
+  "source": "Unsplash photo page URL not recorded at sourcing time; assetUrl below is the durable fetch URL",
+  "assetUrl": "https://images.unsplash.com/photo-1711841004592-d8d619331fe2?fm=jpg&q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0",
+  "location": "Cafayate, Salta (per author caption)",
+  "license": "Unsplash License (free to use, attribution appreciated not required)",
+  "alt": "Desert landscape with mountain range behind, Cafayate, Salta",
+  "original": "1600x2395 progressive JPEG from Unsplash CDN",
+  "suppliedBy": "agent, 2026-09-25 (sourced for Phase-2 imagery pass)",
+  "transformation": "Resized to 1600px wide and encoded as WebP (q80). Editorial scene photograph: never present as the specific bottle."
+}

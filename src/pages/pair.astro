@@ -1,13 +1,18 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import PhotoBand from '../components/PhotoBand.astro';
+import tableImage from '../assets/pair-table.webp';
 const dishes = await getCollection('dishes');
 ---
 <Base title="Find a pairing — Paircraft" description="Describe your dish and find a pairing in the guide.">
   <main class="page-shell max-w-3xl">
     <h1 class="page-title" data-i18n="pair.title">What’s on the plate?</h1>
     <p class="mt-5 max-w-prose text-lg leading-relaxed text-muted" data-i18n="pair.intro">Tell us the main ingredient, how it’s cooked and the sauce. We’ll find a dish in our guide to start from.</p>
-    <form id="pair-form" class="mt-8" aria-describedby="pair-status">
+    <div class="mt-8">
+      <PhotoBand src={tableImage} alt="A table set with wine glasses and plates of food" eager />
+    </div>
+    <form id="pair-form" class="mt-10" aria-describedby="pair-status">
       <label for="pair-query" class="block text-sm font-semibold" data-i18n="pair.label">Describe your dish</label>
       <textarea id="pair-query" name="query" rows="4" required minlength="3" maxlength="300" class="field mt-3 resize-y" placeholder="For example: grilled salmon with lemon and herbs" data-i18n-placeholder="pair.placeholder"></textarea>
       <button id="pair-submit" type="submit" class="action mt-4" data-i18n="pair.submit">Find a dish to pair</button>

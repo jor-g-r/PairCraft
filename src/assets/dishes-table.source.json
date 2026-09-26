@@ -1,0 +1,12 @@
+{
+  "type": "stock",
+  "author": "Neon Wang (@neonwangphotography)",
+  "source": "https://unsplash.com/photos/rlClfxPYxQM",
+  "assetUrl": "https://images.unsplash.com/photo-1763867641433-e7d2c0f62361?fm=jpg&q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.1.0",
+  "location": "Unspecified table setting (scene)",
+  "license": "Unsplash License (free to use, attribution appreciated not required)",
+  "alt": "Overhead view of a table set with gourmet dishes",
+  "original": "1600x1200 progressive JPEG from Unsplash CDN",
+  "suppliedBy": "agent, 2026-09-25 (sourced for Phase-2 imagery pass)",
+  "transformation": "1600px wide from CDN; encoded as WebP (q80). Editorial scene photograph, not a specific table or cellar."
+}

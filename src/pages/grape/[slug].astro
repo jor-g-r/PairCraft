@@ -1,6 +1,8 @@
 ---
 import { getCollection, getEntry, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import PhotoBand from '../../components/PhotoBand.astro';
+import { regionImage } from '../../lib/region-images';
 
 export async function getStaticPaths() {
   const grapes = await getCollection('grapes');
@@ -19,6 +21,9 @@ const wines = allWines.filter((w) => w.data.grapes.some((g) => g.grape.id === gr
 const winesWithRegion = await Promise.all(
   wines.map(async (w) => ({ wine: w, region: await getEntry(w.data.region) })),
 );
+
+const stripRegion = signatureRegions.find((r) => r && regionImage(r.id));
+const strip = stripRegion ? regionImage(stripRegion.id) : undefined;
 ---
 
 <Base
@@ -40,6 +45,19 @@ const winesWithRegion = await Promise.all(
         )
       }
     </header>
+
+    {strip && stripRegion && (
+      <div class="mt-8">
+        <PhotoBand
+          src={strip.image}
+          alt={strip.alt ?? stripRegion.data.name}
+          label={`From ${stripRegion.data.name}`}
+          labelEs={`De ${stripRegion.data.nameEs ?? stripRegion.data.name}`}
+          credit={strip.creditLine}
+          aspect="strip"
+        />
+      </div>
+    )}
 
     <article class="prose prose-neutral mt-8 max-w-none text-neutral-800 leading-relaxed [&_p]:mt-4" data-lang-content="en">
       <Content />
