@@ -5,12 +5,14 @@ import TierBadge from './TierBadge.astro';
 interface Props {
   dish: CollectionEntry<'dishes'>;
   wineId: string;
+  occasion: 'meal' | 'snack';
   tier: Tier;
   prose?: CollectionEntry<'pairings'>['data'];
 }
-const { dish, wineId, tier, prose } = Astro.props;
+const { dish, wineId, occasion, tier, prose } = Astro.props;
+const returnContext = new URLSearchParams({ wine: wineId, occasion });
 ---
-<a href={`/dish/${dish.id}?wine=${wineId}`} class="group block py-5">
+<a href={`/dish/${dish.id}?${returnContext}`} class="group block py-5">
   <TierBadge tier={tier} />
   <h4 class="mt-3 font-display text-xl font-semibold group-hover:underline" data-es-value={dish.data.nameEs}>{dish.data.name}</h4>
   <p class="mt-2 text-sm leading-relaxed text-muted" data-es-value={dish.data.descriptionEs}>{dish.data.description}</p>

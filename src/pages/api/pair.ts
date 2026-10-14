@@ -2,7 +2,7 @@ import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import { ANTHROPIC_API_KEY } from 'astro:env/server';
 import Anthropic from '@anthropic-ai/sdk';
-import { DishSearchInput, exactDishMatch, validatedDishIds } from '../../lib/dish-search';
+import { DishSearchInput, exactDishMatch, filterDishesByOccasion, validatedDishIds } from '../../lib/dish-search';
 
 export const prerender = false;
 
@@ -34,7 +34,10 @@ export const POST: APIRoute = async ({ request, url }) => {
     input = DishSearchInput.parse(JSON.parse(new TextDecoder().decode(body)));
   } catch { return json({ error: 'invalid' }, 400); }
 
-  const dishes = (await getCollection('dishes')).map(({ id, data }) => ({ id, ...data }));
+  const dishes = filterDishesByOccasion(
+    (await getCollection('dishes')).map(({ id, data }) => ({ id, ...data })),
+    input.occasion,
+  );
   const exact = exactDishMatch(input.query, dishes);
   if (exact.length) return json({ dishIds: exact, kind: 'exact' });
   if (!ANTHROPIC_API_KEY) return json({ error: 'unavailable' }, 503);

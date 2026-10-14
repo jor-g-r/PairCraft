@@ -1,0 +1,100 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import WineCard from '../components/WineCard.astro';
+import { t } from '../lib/i18n';
+
+const wines = await getCollection('wines');
+const regions = new Map((await getCollection('regions')).map((region) => [region.id, region]));
+const styleCorpus = wines.map(({ id, data }) => ({
+  id,
+  data: {
+    name: data.name,
+    color: data.color,
+    markets: data.markets,
+    sensoryProfile: data.sensoryProfile,
+  },
+}));
+---
+
+<Base title="Find by wine style — Paircraft" description="Find guide wines with a style similar to the bottle in your glass.">
+  <main class="page-shell max-w-4xl">
+    <a href="/wines" class="editorial-link mb-6 text-muted" data-i18n="wine.back">All wines</a>
+    <header class="max-w-2xl">
+      <h1 class="page-title" data-i18n="wineStyle.title">I can’t find my bottle</h1>
+      <p class="mt-5 text-lg leading-relaxed text-muted" data-i18n="wineStyle.intro">Choose the closest style. We’ll show similar wines in the guide; their pairings are examples, not a verdict on your exact bottle.</p>
+    </header>
+
+    <form id="wine-style-form" class="mt-10 border-y border-rule py-7" aria-describedby="wine-style-hint">
+      <p id="wine-style-hint" class="mb-6 text-sm text-muted" data-i18n="wineStyle.hint">Start with what you know. Leave the other descriptors open.</p>
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <label class="space-y-2 text-sm"><span data-i18n="wineStyle.color">Colour</span><select class="field" name="color" required><option value="" data-i18n="wineStyle.colorRequired">Choose a colour</option>{['red','white','rose','orange','sparkling'].map((color) => <option value={color} data-i18n={`color.${color}`}>{t(`color.${color}`)}</option>)}</select></label>
+        <label class="space-y-2 text-sm"><span data-i18n="wineStyle.body">Body</span><select class="field" name="body" required><option value="" data-i18n="wineStyle.bodyRequired">Choose a body</option><option value="light" data-i18n="wineStyle.light">Light</option><option value="medium" data-i18n="wineStyle.medium">Medium</option><option value="full" data-i18n="wineStyle.full">Full</option></select></label>
+        <label class="space-y-2 text-sm"><span data-i18n="wineStyle.sweetness">Sweetness</span><select class="field" name="sweetness"><option value="" data-i18n="wineStyle.anySweetness">Any sweetness</option><option value="dry" data-i18n="wineStyle.dry">Dry</option><option value="off-dry" data-i18n="wineStyle.offDry">Off-dry</option><option value="sweet" data-i18n="wineStyle.sweet">Sweet</option></select></label>
+        <label class="space-y-2 text-sm"><span data-i18n="wineStyle.acidity">Acidity</span><select class="field" name="acidity"><option value="" data-i18n="wineStyle.anyAcidity">Any acidity</option><option value="low" data-i18n="wineStyle.low">Low</option><option value="medium" data-i18n="wineStyle.medium">Medium</option><option value="high" data-i18n="wineStyle.high">High</option></select></label>
+        <label class="space-y-2 text-sm"><span data-i18n="wineStyle.tannin">Tannin</span><select class="field" name="tannin"><option value="" data-i18n="wineStyle.anyTannin">Any tannin</option><option value="soft" data-i18n="wineStyle.soft">Soft</option><option value="medium" data-i18n="wineStyle.medium">Medium</option><option value="firm" data-i18n="wineStyle.firm">Firm</option></select></label>
+      </div>
+      <button class="action mt-6" type="submit" data-i18n="wineStyle.submit">Find similar wines</button>
+    </form>
+
+    <section id="wine-style-results" class="mt-10" aria-labelledby="wine-style-results-title" hidden>
+      <h2 id="wine-style-results-title" class="section-title" tabindex="-1" data-i18n="wineStyle.results">Similar bottles in the guide</h2>
+      <p class="mt-4 max-w-prose text-sm leading-relaxed text-muted" data-i18n="wineStyle.disclaimer">Open a bottle to see its exact reviewed pairings. Use them as a style reference for your wine.</p>
+      <p id="wine-style-empty" class="mt-6 max-w-prose text-muted" data-i18n="wineStyle.empty" hidden>No similar bottles are listed in your market yet. Change a descriptor or browse the full catalogue.</p>
+      <ul id="wine-style-candidates" class="mt-5 grid gap-x-8 sm:grid-cols-2">
+        {wines.map((wine) => <li data-style-candidate={wine.id} hidden><WineCard wine={wine} region={regions.get(wine.data.region.id)} /></li>)}
+      </ul>
+      <a href="/wines" class="editorial-link mt-8" data-i18n="wineStyle.allWines">Browse all wines</a>
+    </section>
+    <noscript><p class="mt-8 text-sm text-muted">JavaScript is needed to compare style profiles. / Se necesita JavaScript para comparar perfiles de estilo.</p></noscript>
+    <script type="application/json" id="wine-style-corpus" set:html={JSON.stringify(styleCorpus)}></script>
+  </main>
+</Base>
+
+<script>
+  import { rankWineStyleExamples, type WineStyleRequest } from '../lib/wine-style';
+
+  function initWineStyleSearch() {
+    const form = document.querySelector<HTMLFormElement>('#wine-style-form');
+    if (!form || form.dataset.ready) return;
+    form.dataset.ready = 'true';
+
+    const fields = ['color', 'body', 'sweetness', 'acidity', 'tannin'] as const;
+    const controls = Object.fromEntries(fields.map((field) => [field, form.elements.namedItem(field)])) as Record<typeof fields[number], HTMLSelectElement>;
+    const corpus = JSON.parse(document.querySelector('#wine-style-corpus')?.textContent ?? '[]');
+    const cards = [...document.querySelectorAll<HTMLElement>('[data-style-candidate]')];
+    const results = document.querySelector<HTMLElement>('#wine-style-results')!;
+    const empty = document.querySelector<HTMLElement>('#wine-style-empty')!;
+    const search = (updateUrl: boolean) => {
+      if (!controls.color.value || !controls.body.value) return;
+      const request = Object.fromEntries(fields.map((field) => [field, controls[field].value || undefined])) as unknown as WineStyleRequest;
+      const market = document.cookie.match(/(?:^|; )pc_market=([A-Z]{2})(?:;|$)/)?.[1] ?? 'CO';
+      const ids = rankWineStyleExamples(request, corpus, market, 3);
+      cards.forEach((card) => { card.hidden = !ids.includes(card.dataset.styleCandidate ?? ''); });
+      empty.hidden = ids.length > 0;
+      results.hidden = false;
+      if (updateUrl) document.querySelector<HTMLElement>('#wine-style-results-title')?.focus();
+
+      if (updateUrl) {
+        const url = new URL(location.href);
+        fields.forEach((field) => {
+          const value = controls[field].value;
+          if (value) url.searchParams.set(field, value);
+          else url.searchParams.delete(field);
+        });
+        history.replaceState(history.state, '', url);
+      }
+    };
+
+    const params = new URLSearchParams(location.search);
+    for (const field of fields) {
+      const value = params.get(field);
+      if (value && [...controls[field].options].some((option) => option.value === value)) controls[field].value = value;
+    }
+    form.addEventListener('submit', (event) => { event.preventDefault(); search(true); });
+    if (controls.color.value && controls.body.value) search(false);
+  }
+
+  document.addEventListener('astro:page-load', initWineStyleSearch);
+  initWineStyleSearch();
+</script>

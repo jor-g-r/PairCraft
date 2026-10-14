@@ -122,6 +122,16 @@ export const RULES: Rule[] = [
       wine.sensoryProfile.sweetness >= 2 && dish.flavorProfile.includes('spicy'),
   },
   {
+    id: 'sweetness-meets-blue-cheese',
+    mode: 'contrast',
+    strength: 'strong',
+    name: 'Sweetness meets blue cheese',
+    description:
+      'A sweet wine meets blue cheese on its own terms: residual sugar softens the cheese’s salty, assertive edge while the salt draws ripe fruit forward.',
+    predicate: (wine, dish) =>
+      wine.sensoryProfile.sweetness >= 3 && dish.protein.includes('cheese-blue'),
+  },
+  {
     id: 'bubbles-cut-richness',
     mode: 'contrast',
     strength: 'strong',

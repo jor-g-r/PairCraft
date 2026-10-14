@@ -20,35 +20,35 @@ colors:
   wine-orange: "#cf7e2a"
 typography:
   display:
-    fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
+    fontFamily: '"Alegreya Variable", ui-serif, Georgia, serif'
     fontSize: "clamp(2.5rem, 7vw, 5.5rem)"
     fontWeight: 700
     lineHeight: 1.05
     letterSpacing: "-0.03em"
   headline:
-    fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
+    fontFamily: '"Alegreya Variable", ui-serif, Georgia, serif'
     fontSize: "2.25rem"
     fontWeight: 700
     lineHeight: 1.25
     letterSpacing: "-0.025em"
   headline-sm:
-    fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
+    fontFamily: '"Alegreya Variable", ui-serif, Georgia, serif'
     fontSize: "3.75rem"
     fontWeight: 700
     lineHeight: 1.25
     letterSpacing: "-0.025em"
   section:
-    fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
+    fontFamily: '"Alegreya Variable", ui-serif, Georgia, serif'
     fontSize: "1.5rem"
     fontWeight: 600
     lineHeight: "2rem"
   section-sm:
-    fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
+    fontFamily: '"Alegreya Variable", ui-serif, Georgia, serif'
     fontSize: "1.875rem"
     fontWeight: 600
     lineHeight: "2.25rem"
   title:
-    fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
+    fontFamily: '"Alegreya Variable", ui-serif, Georgia, serif'
     fontSize: "1.25rem"
     fontWeight: 600
     lineHeight: "1.75rem"
@@ -58,17 +58,17 @@ typography:
     fontWeight: 400
     lineHeight: 1.375
   body:
-    fontFamily: '"Open Sans Variable", ui-sans-serif, system-ui, sans-serif'
+    fontFamily: '"Source Sans 3 Variable", ui-sans-serif, system-ui, sans-serif'
     fontSize: "1rem"
     fontWeight: 400
     lineHeight: 1.625
   label:
-    fontFamily: '"Open Sans Variable", ui-sans-serif, system-ui, sans-serif'
+    fontFamily: '"Source Sans 3 Variable", ui-sans-serif, system-ui, sans-serif'
     fontSize: "0.875rem"
     fontWeight: 600
     lineHeight: "1.25rem"
   tier:
-    fontFamily: '"Open Sans Variable", ui-sans-serif, system-ui, sans-serif'
+    fontFamily: '"Source Sans 3 Variable", ui-sans-serif, system-ui, sans-serif'
     fontSize: "0.75rem"
     fontWeight: 500
     lineHeight: "1rem"
@@ -145,18 +145,18 @@ components:
 
 **Creative North Star: "The Wine Pocket Guide"**
 
-Paircraft reads like a concise, opinionated pocket guide: Playfair wine names and editorial sentences, Open Sans controls, generous white or charcoal ground, and wine-red emphasis. The approved Merlot reference supplies the oval property panels, fine sensory tracks and ruled headings; existing Paircraft fonts and identity remain the anchors.
+Paircraft reads like a concise, opinionated pocket guide: Alegreya carries wine identity and editorial prose; Source Sans 3 carries controls and facts. Generous white or charcoal ground, restrained wine-red emphasis, ruled lists, and scene photography keep the guide distinct from a generic wine catalogue. Editorial modularity takes cues from Kinfolk and The Modern House; Wine Folly informs wine-reference clarity and bottle prominence without borrowing its assets or layout wholesale.
 
-Density follows the task. Catalogs use scannable linked rows, while wine pages give identity and a pairing jump room to breathe before sensory detail. The primary journey is wine → food; the four added routes share the same visual vocabulary rather than introducing separate identities. EN/ES text and incomplete records must fit without invented copy or measurements.
+Density follows the task. Catalogs use scannable ruled rows, while wine pages give identity and an occasion choice room to breathe before sensory detail. Meal and snack remain distinct through wine, dish and free-text food lookup. `/wine-style` is a compact profile finder: body and color anchor the search; other recorded axes refine it; close matches link to exact catalogue examples and their reviewed pairings. EN/ES text and incomplete records must fit without invented copy or measurements.
 
 **Key Characteristics:**
 - Wine-red actions and verdicts on neutral, theme-aware ground.
-- Playfair identity and editorial prose; Open Sans controls and facts.
+- Alegreya identity and editorial prose; Source Sans 3 controls and facts.
 - Ruled lists, oval properties, thin independent sensory tracks.
 - Editorial scene photographs with recorded provenance; never the specific bottle.
 - Mobile-first reading with explicit navigation and honest missing-data states.
 
-Recorded from the current working-tree implementation on 2026-09-25, not from a production deployment or a fresh browser audit. Evidence: `src/styles/global.css`, `src/layouts/Base.astro`, `src/components/`, `src/pages/wine/[slug].astro`, the wines/dishes/pair/about routes, the region/grape/dish detail templates, `src/lib/region-images.ts`, and `src/assets/` scene imagery with its `*.source.json` provenance sidecars. `PRODUCT.md` and `.impeccable/surfaces/paircraft.md` establish approval; source code establishes implemented values. The sidecar's illustrative tonal ramps are panel aids, not additional application colors.
+Recorded from the current working-tree implementation on 2026-10-14, not from a production deployment or a real-device audit. Evidence: `src/styles/global.css`, `src/layouts/Base.astro`, `src/components/`, `/wine-style`, wine and food occasion flows, entity templates, `src/lib/region-images.ts`, and scene imagery with `*.source.json` provenance sidecars. `PRODUCT.md` and `.impeccable/surfaces/paircraft.md` establish product direction; source code establishes implemented values. The sidecar's illustrative tonal ramps are panel aids, not additional application colors.
 
 ## Colors
 
@@ -185,9 +185,9 @@ The `wine-gold`, `wine-rose` and `wine-orange` entries are categorical SVG liqui
 
 ## Typography
 
-**Display Font:** self-hosted Playfair Display Variable, with ui-serif / Georgia / serif fallbacks.
+**Display Font:** self-hosted Alegreya Variable, with ui-serif / Georgia / serif fallbacks.
 
-**Body Font:** self-hosted Open Sans Variable, with ui-sans-serif / system-ui / sans-serif fallbacks. Controls and labels share this family; there is no separate mono face.
+**Body Font:** self-hosted Source Sans 3 Variable, with ui-sans-serif / system-ui / sans-serif fallbacks. Controls and labels share this family; there is no separate mono face.
 
 The serif carries wine identity and opinion; the sans carries operation and evidence. This is an observed Tailwind size ladder plus a fluid wine title, not a newly imposed modular ratio.
 
@@ -195,13 +195,13 @@ The serif carries wine identity and opinion; the sans carries operation and evid
 
 - **Display:** `display` is the fluid wine-detail title. A recorded vintage is appended at regular weight; no vintage is supplied when absent.
 - **Headline:** `headline` becomes `headline-sm` at the small breakpoint. Used for catalog, dish, pairing-input and About titles; balanced wrapping and tight tracking are shared.
-- **Section:** `section` becomes `section-sm` at the small breakpoint and carries a trailing horizontal rule. Pairing-mode headings instead use italic Playfair (1.5rem) without that rule.
+- **Section:** `section` becomes `section-sm` at the small breakpoint and carries a trailing horizontal rule. Pairing-mode headings instead use italic Alegreya (1.5rem) without that rule.
 - **Title:** `title` covers property values and dish names in pairing rows. Catalog wine titles are larger (1.5rem), semibold, with tight line-height (1.25).
-- **Editorial prose:** `pairing-prose` is italic in `DishPairing.astro`. Wine taglines use italic Playfair (1.25rem, rising to 1.5rem at the small breakpoint) with relaxed line-height (1.625).
-- **Body:** `body` describes relaxed reading copy. Ordinary unmodified body text uses line-height (1.5); pairing descriptions use smaller Open Sans (0.875rem) with relaxed line-height. Long copy commonly stops at the prose measure (65ch).
+- **Editorial prose:** `pairing-prose` is italic in `DishPairing.astro`. Wine taglines use italic Alegreya (1.25rem, rising to 1.5rem at the small breakpoint) with relaxed line-height (1.625).
+- **Body:** `body` describes relaxed reading copy. Ordinary unmodified body text uses line-height (1.5); pairing descriptions use smaller Source Sans 3 (0.875rem) with relaxed line-height. Long copy commonly stops at the prose measure (65ch).
 - **Label:** `label` describes actions. Fields remain at readable base size (1rem); metadata and tier chips use smaller text (0.75rem). Property terms are functional uppercase labels (0.75rem, tracking 0.05em), not decorative section kickers.
 
-**The Two Voices Rule.** Set names and concise editorial judgments in Playfair; set controls, supporting descriptions and factual labels in Open Sans.
+**The Two Voices Rule.** Set names and concise editorial judgments in Alegreya; set controls, supporting descriptions and factual labels in Source Sans 3.
 
 ## Layout
 
@@ -209,13 +209,13 @@ The serif carries wine identity and opinion; the sans carries operation and evid
 - **Breakpoints:** `sm` (40rem), `md` (48rem), `lg` (64rem). These are Tailwind's existing breakpoints, not device classifications.
 - **Rhythm:** a quarter-rem base with frequent (0.5–1.5rem) internal gaps, (2rem) content introductions, and (3–5rem) section separation. The footer begins after (6rem) of separation.
 - **Header:** sticky, opaque, bordered and two-row at all breakpoints. Brand and theme/language controls occupy the first row; four navigation links occupy the second. Mobile navigation distributes links across the width; from `sm` it aligns left with (2rem) gaps. Header stacking level is (30); page scroll padding is (9rem).
-- **Wine detail:** centered identity, tagline, origin/grape links and a direct pairing jump. Sweetness and acidity stack on mobile and sit side by side at `sm`. The property definition list stays **2×2 on mobile**, with (1rem) gaps, becoming four columns at `md`. Serving temperature, body, tannin and finish keep this order.
-- **Pairing groups:** one vertical stack on mobile, three mode columns at `lg`, with readable ruled rows within each group. Show the first three entries per mode, then a native disclosure for additional entries. A dish may occur in multiple modes when the engine supplies those activations.
-- **Catalogs:** wine filters use one / two / four columns at base / `sm` / `lg`; wine results use one / two / three. Dish results use one column then two at `sm`. Empty results remain explanatory text with an available next action.
+- **Wine detail:** centered identity, tagline, origin/grape links and two direct occasion actions. Sweetness and acidity stack on mobile and sit side by side at `sm`. The property definition list stays **2×2 on mobile**, with (1rem) gaps, becoming four columns at `md`. Serving temperature, body, tannin and finish keep this order.
+- **Pairing feeds:** meal and snack selectors are persistent links. Meal recommendations retain tri-modal ruled groups; snack recommendations are a single food-first list ordered by qualitative tier, avoiding duplicate bites across rule modes. A guided board appears only when at least one component has curated pairing prose; every component retains its own tier and explanation, and uncurated components are labeled rather than averaged.
+- **Catalogs and finders:** wine filters use one / two / four columns at base / `sm` / `lg`; wine results use one / two / three. Dish results use one column then two at `sm`, with a separate occasion selector. `/wine-style` uses a compact multi-field form and ranked examples, without showing a numeric fit score. Empty results remain explanatory text with an available next action.
 - **About:** one column becoming two at `md`, with a portrait editorial image (4:5). The same table photograph is a small supporting image on home, hidden below `sm`. It is not bottle or regional evidence.
 - **Editorial photo bands:** `/wines`, `/dishes` and `/pair` each carry one eager 21:9 band (`wines-cellar`, `dishes-table`, `pair-table`) directly under the page header or intro; region pages carry a 21:9 region band after the header; wine pages close the "In the glass" section with a 21:9 "From <region>" band; grape pages carry a 3:1 strip labeled "From <region>", sourced from the first signature region with an image. The home's catalog divider is a plain hairline, not a labeled kicker.
 
-`/wines` writes filter state to the query string, and the wine page's explicit “All wines” links (`data-catalog-return`) restore the last catalog query: the catalog saves its query to session storage (`pc_catalog_query`), and a page-load handler rewrites those links on every navigation. Catalog wine cards themselves link plainly, without carrying the query.
+`/wines` writes filter state to the query string, and the wine page's explicit “All wines” links (`data-catalog-return`) restore the last catalog query: the catalog saves its query to session storage (`pc_catalog_query`), and a page-load handler rewrites those links on every navigation. Wine-card titles open the wine record; two distinct text links enter meal or snack pairings directly.
 
 ## Elevation & Depth
 
@@ -255,7 +255,7 @@ Decisive match is filled wine red with white text; Worth trying is neutral-fille
 
 ### Catalog and pairing rows
 
-`WineCard.astro` uses a top rule, vertical padding (1.5rem), a small SVG glass (2.25rem), Playfair title, optional origin, italic tagline and a next-step label. The title underlines on hover. Dish catalog rows use the same ruled reading model; pairing rows use slightly tighter vertical padding (1.25rem), a tier chip, dish title, description and optional italic explanation. The whole row is the link. A wine-to-dish link carries `?wine=<id>` so the dish page can show a contextual return link when it finds that wine.
+`WineCard.astro` uses a top rule, vertical padding (1.5rem), a small SVG glass (2.25rem), Alegreya title, optional origin, italic tagline and two direct occasion links. The title underlines on hover. Dish catalog rows use the same ruled reading model; pairing rows use slightly tighter vertical padding (1.25rem), a tier chip, food title, description and optional italic explanation. A wine-to-food link carries `?wine=<id>` so the food page can show a contextual return link when it finds that wine. `WineStyle` keeps candidate cards tied to specific catalogue wines and routes to that example's exact pairing feed.
 
 ### Editorial photo bands
 
@@ -279,15 +279,15 @@ Decisive match is filled wine red with white text; Worth trying is neutral-fille
 
 ### Ruled headings
 
-The shared section heading pairs semibold Playfair with a flexible trailing rule, separated by a gap (1.25rem). The rule is structural, not a decorative underline beneath every heading. Keep actual headings for content hierarchy.
+The shared section heading pairs semibold Alegreya with a flexible trailing rule, separated by a gap (1.25rem). The rule is structural, not a decorative underline beneath every heading. Keep actual headings for content hierarchy.
 
-**Retired, not canonized:** `Eyebrow.astro` was deleted rather than promoted into a heading tier; dish detail's former eyebrow labels are now italic Playfair (1.5rem) section headings like the pairing-mode headings, and the home's decorative "or browse" kicker is a plain hairline divider. The reveal comment still promises a fade-up absent from its CSS states; that remains unrepaired. Functional property terms and origin-filter labels are not decorative kickers.
+**Retired, not canonized:** `Eyebrow.astro` was deleted rather than promoted into a heading tier; dish detail's former eyebrow labels are now italic Alegreya (1.5rem) section headings like the pairing-mode headings, and the home's decorative "or browse" kicker is a plain hairline divider. The reveal comment still promises a fade-up absent from its CSS states; that remains unrepaired. Functional property terms and origin-filter labels are not decorative kickers.
 
 ## Do's and Don'ts
 
 ### Do:
 - **Do** use semantic colors so page ground, text, rules and accent-filled controls remain coherent in both themes.
-- **Do** preserve Playfair names and editorial prose alongside Open Sans controls and facts.
+- **Do** preserve Alegreya names and editorial prose alongside Source Sans 3 controls and facts.
 - **Do** keep wine properties in a mobile 2×2 grid and display sweetness and acidity independently.
 - **Do** use ruled, linked rows and native disclosures for readable pairing lists.
 - **Do** label style guidance, show missing finish honestly, and omit unrecorded optional detail.

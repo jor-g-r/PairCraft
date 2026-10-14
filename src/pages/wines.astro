@@ -12,7 +12,7 @@ const styles = [...new Map(wines.filter((w) => w.data.style).map((w) => [w.data.
 ---
 <Base title="Wines — Paircraft" description="Find a bottle and what to eat with it.">
   <main class="page-shell">
-    <header><h1 class="page-title" data-i18n="nav.wines">Wines</h1><p class="mt-4 text-lg text-muted" data-i18n="catalog.intro">Start with a bottle. Find its place at the table.</p></header>
+    <header><h1 class="page-title" data-i18n="nav.wines">Wines</h1><p class="mt-4 text-lg text-muted" data-i18n="catalog.intro">Start with a bottle. Find its place at the table.</p><a href="/wine-style" class="editorial-link mt-4" data-i18n="wineStyle.missingBottle">Not in the catalogue? Find an example by style.</a></header>
     <div class="mt-8 md:mt-10">
       <PhotoBand src={cellarImage} alt="Rows of wooden wine barrels stacked in a dark cellar" eager />
     </div>

@@ -1,5 +1,7 @@
 name: Fried calamari
+nameEs: Calamares fritos
 description: Squid rings in light batter, deep-fried to crisp gold, served with lemon.
+descriptionEs: Aros de calamar en una masa ligera, fritos hasta quedar dorados y crujientes; se sirven con limón.
 protein:
   - shellfish
 cookingMethod:
@@ -8,4 +10,6 @@ flavorProfile:
   - fatty
 intensity: 3
 weight: medium
-descriptionEs: ""
+occasion:
+  - snack
+format: bite

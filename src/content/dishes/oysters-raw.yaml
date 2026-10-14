@@ -1,5 +1,7 @@
 name: Oysters on the half-shell
+nameEs: Ostras en media concha
 description: Raw, briny, served with lemon and not much else.
+descriptionEs: Crudas, salinas y servidas con limón, sin mucho más.
 protein:
   - shellfish
 cookingMethod:
@@ -9,4 +11,6 @@ flavorProfile:
   - lean
 intensity: 2
 weight: light
-descriptionEs: ""
+occasion:
+  - snack
+format: bite

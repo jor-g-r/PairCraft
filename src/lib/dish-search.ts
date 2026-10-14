@@ -1,8 +1,16 @@
 import { z } from 'zod';
 
-export const DishSearchInput = z.object({ query: z.string().trim().min(3).max(300) }).strict();
+export const DishSearchInput = z.object({
+  query: z.string().trim().min(3).max(300),
+  occasion: z.enum(['meal', 'snack']).default('meal'),
+}).strict();
 export const DishMatchOutput = z.object({ dishIds: z.array(z.string()).max(1) }).strict();
 export interface SearchableDish { id: string; name: string; nameEs?: string; }
+export type Occasion = 'meal' | 'snack';
+
+export function filterDishesByOccasion<T extends { occasion: readonly Occasion[] }>(dishes: T[], occasion: Occasion): T[] {
+  return dishes.filter((dish) => dish.occasion.includes(occasion));
+}
 
 export function normalizeDish(value: string): string {
   return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();

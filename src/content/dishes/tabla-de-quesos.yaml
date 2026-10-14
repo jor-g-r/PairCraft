@@ -1,4 +1,5 @@
-name: "Tabla de quesos: fresco, manchego y azul"
+name: "Cheese board: fresh, Manchego and blue"
+nameEs: "Tabla de quesos: fresco, manchego y azul"
 description: "Three cheeses, three fights: fresh needs acid, manchego needs tannin, blue needs sweetness — pick your battle."
 protein:
   - cheese-fresh
@@ -27,3 +28,10 @@ notesForDemo: High educational value because one board demonstrates multiple pai
 descriptionEs: "Tres quesos, tres batallas: el fresco pide acidez, el manchego pide tanino, el azul pide dulzor — elige tu combate."
 cuisineContextEs: Educación vinícola / aperitivo de restaurante
 pairingLogicEs: "Distintos quesos ponen a prueba distintas reglas: el fresco con acidez, el curado con tanino, el queso azul con dulzor"
+occasion:
+  - snack
+format: board
+components:
+  - queso-fresco
+  - aged-manchego
+  - queso-azul

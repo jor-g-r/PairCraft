@@ -1,0 +1,16 @@
+name: Blue cheese
+nameEs: Queso azul
+description: A veined cheese with pronounced salt, savoury depth and a lingering, assertive finish.
+descriptionEs: Queso de vetas azules, sal marcado, profundidad sabrosa y un final persistente e intenso.
+protein:
+  - cheese-blue
+cookingMethod: []
+flavorProfile:
+  - salty
+  - umami
+  - creamy
+intensity: 5
+weight: heavy
+occasion:
+  - snack
+format: bite

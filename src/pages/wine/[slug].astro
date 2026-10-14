@@ -20,8 +20,20 @@ const grapes = await Promise.all(wine.data.grapes.map(async (g) => ({ entry: awa
 const dishes = await getCollection('dishes');
 const explanations = new Map((await getCollection('pairings')).map((p) => [`${p.data.wine.id}__${p.data.dish.id}`, p.data]));
 const tierOrder: Record<Tier, number> = { decisive: 0, 'worth-trying': 1, risky: 2, skip: 3 };
-const results = dishes.map((dish) => ({ dish, result: computeTier(wine.data, dish.data), prose: explanations.get(`${wine.id}__${dish.id}`) }));
-const groups = (['harmony', 'contrast', 'enhancement'] as const).map((mode) => ({ mode, entries: results.filter(({ result }) => result.tier !== 'skip' && result.activations.some((r) => r.mode === mode)).sort((a,b) => tierOrder[a.result.tier] - tierOrder[b.result.tier]) }));
+const results = dishes.filter((dish) => dish.data.format !== 'board').map((dish) => ({ dish, result: computeTier(wine.data, dish.data), prose: explanations.get(`${wine.id}__${dish.id}`) })).filter(({ prose }) => prose);
+const boardGuides = (await Promise.all(dishes.filter((dish) => dish.data.format === 'board').map(async (board) => {
+  const components = (await Promise.all(board.data.components.map(async (reference) => {
+    const dish = await getEntry(reference);
+    if (!dish) return undefined;
+    return { dish, result: computeTier(wine.data, dish.data), prose: explanations.get(`${wine.id}__${dish.id}`) };
+  }))).filter((component) => component !== undefined);
+  return { board, components };
+}))).filter(({ components }) => components.some(({ prose, result }) => prose && result.tier !== 'skip'));
+const feeds = (['meal', 'snack'] as const).map((occasion) => ({
+  occasion,
+  entries: results.filter(({ dish, result }) => dish.data.occasion.includes(occasion) && result.tier !== 'skip').sort((a,b) => tierOrder[a.result.tier] - tierOrder[b.result.tier]),
+  groups: (['harmony', 'contrast', 'enhancement'] as const).map((mode) => ({ mode, entries: results.filter(({ dish, result }) => dish.data.occasion.includes(occasion) && result.tier !== 'skip' && result.activations.some((r) => r.mode === mode)).sort((a,b) => tierOrder[a.result.tier] - tierOrder[b.result.tier]) })),
+}));
 const profile = wine.data.sensoryProfile;
 const bodyKey = profile.body <= 2 ? 'wine.light' : profile.body === 3 ? 'wine.medium' : 'wine.full';
 const tanninKey = profile.tannin === 0 ? 'wine.absent' : profile.tannin <= 2 ? 'wine.soft' : profile.tannin === 3 ? 'wine.medium' : 'wine.firm';
@@ -42,7 +54,10 @@ const tanninAxes = ['softness', 'astringency', 'complexity', 'structure', 'firmn
         {region && <a href={`/region/${region.id}`} class="underline hover:text-ink">{region.data.name}, {region.data.country}</a>}
         {grapes.map(({ entry, percentage }) => entry && <><span aria-hidden="true"> · </span><a href={`/grape/${entry.id}`} class="underline hover:text-ink">{entry.data.name}{percentage != null && grapes.length > 1 ? ` ${percentage}%` : ''}</a></>)}
       </p>
-      <a href="#pairings" class="action mt-6" data-i18n="wine.jump">What to eat with it</a>
+      <nav class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2" aria-label="Choose a pairing occasion">
+        <a href={`?occasion=meal#pairings`} class="action" data-i18n="wine.forMeal">For a meal</a>
+        <a href={`?occasion=snack#pairings`} class="action" data-i18n="wine.forSnack">For a snack</a>
+      </nav>
     </header>
 
     <section class="mx-auto mt-10 max-w-3xl" aria-label="Sensory profile">
@@ -67,17 +82,48 @@ const tanninAxes = ['softness', 'astringency', 'complexity', 'structure', 'firmn
 
     <section id="pairings" class="mt-16 md:mt-20">
       <h2 class="section-title" data-i18n="wine.pairings">Pairings</h2>
-      {groups.every((g) => !g.entries.length) && <p class="mt-6 text-muted" data-i18n="wine.noDishes">No matching dishes seeded yet.</p>}
-      <div class="mt-8 grid items-start gap-10 lg:grid-cols-3 lg:gap-6">
-        {groups.filter((g) => g.entries.length).map(({ mode, entries }) => <section>
-          <h3 class="font-display text-2xl italic" data-i18n={`mode.${mode}`}>{t(`mode.${mode}`)}</h3>
-          <p class="mt-2 text-sm text-muted" data-i18n={`mode.${mode}Hint`}>{t(`mode.${mode}Hint`)}</p>
-          <ul class="mt-4 divide-y divide-rule border-t border-rule">
-            {entries.slice(0, 3).map(({ dish, result, prose }) => <li><DishPairing dish={dish} wineId={wine.id} tier={result.tier} prose={prose} /></li>)}
-          </ul>
-          {entries.length > 3 && <details class="border-t border-rule"><summary class="cursor-pointer py-4 text-sm font-semibold" data-es-value={`Ver ${entries.length - 3} maridajes más`}>View {entries.length - 3} more pairings</summary><ul class="divide-y divide-rule">{entries.slice(3).map(({ dish, result, prose }) => <li><DishPairing dish={dish} wineId={wine.id} tier={result.tier} prose={prose} /></li>)}</ul></details>}
-        </section>)}
-      </div>
+      <nav class="mt-6 flex gap-6 border-b border-rule" aria-label="Choose a pairing occasion">
+        <a href="?occasion=meal#pairings" class="min-h-11 inline-flex items-center border-b-2 border-transparent text-sm font-semibold text-muted hover:text-ink" data-occasion-link="meal" data-i18n="wine.mealPairings">With a meal</a>
+        <a href="?occasion=snack#pairings" class="min-h-11 inline-flex items-center border-b-2 border-transparent text-sm font-semibold text-muted hover:text-ink" data-occasion-link="snack" data-i18n="wine.snackPairings">For a snack</a>
+      </nav>
+      {feeds.map(({ occasion, entries, groups }) => <div class="mt-8" data-occasion-feed={occasion} hidden>
+        {occasion === 'snack' ? <section>
+          <h3 class="font-display text-2xl italic" data-i18n="wine.snackSuggestions">Bites for this wine</h3>
+          {entries.length ? <ul class="mt-4 divide-y divide-rule border-t border-rule">{entries.map(({ dish, result, prose }) => <li><DishPairing dish={dish} wineId={wine.id} occasion="snack" tier={result.tier} prose={prose} /></li>)}</ul> : <p class="mt-4 text-muted" data-i18n="wine.noOccasionPairings">No pairings for this occasion have been curated yet.</p>}
+        </section> : <>
+          {groups.every((g) => !g.entries.length) && <p class="text-muted" data-i18n="wine.noOccasionPairings">No pairings for this occasion have been curated yet.</p>}
+          <div class="grid items-start gap-10 lg:grid-cols-3 lg:gap-6">
+            {groups.filter((g) => g.entries.length).map(({ mode, entries }) => <section>
+              <h3 class="font-display text-2xl italic" data-i18n={`mode.${mode}`}>{t(`mode.${mode}`)}</h3>
+              <p class="mt-2 text-sm text-muted" data-i18n={`mode.${mode}Hint`}>{t(`mode.${mode}Hint`)}</p>
+              <ul class="mt-4 divide-y divide-rule border-t border-rule">
+                {entries.slice(0, 3).map(({ dish, result, prose }) => <li><DishPairing dish={dish} wineId={wine.id} occasion="meal" tier={result.tier} prose={prose} /></li>)}
+              </ul>
+              {entries.length > 3 && <details class="border-t border-rule"><summary class="cursor-pointer py-4 text-sm font-semibold" data-es-value={`Ver ${entries.length - 3} maridajes más`}>View {entries.length - 3} more pairings</summary><ul class="divide-y divide-rule">{entries.slice(3).map(({ dish, result, prose }) => <li><DishPairing dish={dish} wineId={wine.id} occasion="meal" tier={result.tier} prose={prose} /></li>)}</ul></details>}
+            </section>)}
+          </div>
+        </>}
+        {occasion === 'snack' && boardGuides.length > 0 && <section class="mt-14 border-t border-rule pt-8">
+          <h3 class="font-display text-2xl font-semibold" data-i18n="wine.guidedBoards">Build a cheese board</h3>
+          <p class="mt-2 max-w-prose text-sm text-muted" data-i18n="wine.guidedBoardsNote">Each cheese keeps its own pairing; the board itself receives no averaged verdict.</p>
+          {boardGuides.map(({ board, components }) => {
+            const reviewedCount = components.filter(({ prose, result }) => prose && result.tier !== 'skip').length;
+            return <article class="mt-6 border-t border-rule pt-5">
+              <h4 class="font-display text-xl font-semibold" data-es-value={board.data.nameEs}>{board.data.name}</h4>
+              <p class="mt-1 text-sm text-muted" data-es-value={board.data.descriptionEs}>{board.data.description}</p>
+              <p class="mt-3 text-xs text-muted" data-es-value={`Maridajes revisados para ${reviewedCount} de ${components.length} componentes.`}>Reviewed pairings for {reviewedCount} of {components.length} components.</p>
+              <ul class="mt-3 divide-y divide-rule border-t border-rule">
+                {components.map(({ dish, result, prose }) => <li>
+                  {prose && result.tier !== 'skip' ? <DishPairing dish={dish} wineId={wine.id} occasion="snack" tier={result.tier} prose={prose} /> : <a href={`/dish/${dish.id}?wine=${wine.id}&occasion=snack`} class="block py-4">
+                    <span class="font-display text-lg font-semibold" data-es-value={dish.data.nameEs}>{dish.data.name}</span>
+                    <span class="mt-1 block text-sm text-muted" data-i18n="wine.componentNotReviewed">Pairing not reviewed yet</span>
+                  </a>}
+                </li>)}
+              </ul>
+            </article>;
+          })}
+        </section>}
+      </div>)}
     </section>
 
     <section class="mt-16">
@@ -125,3 +171,37 @@ const tanninAxes = ['softness', 'astringency', 'complexity', 'structure', 'firmn
     <a href="/wines" data-catalog-return class="editorial-link mt-10" data-i18n="wine.back">All wines</a>
   </main>
 </Base>
+<script>
+  function initPairingOccasion() {
+    const feeds = [...document.querySelectorAll<HTMLElement>('[data-occasion-feed]')];
+    const links = [...document.querySelectorAll<HTMLAnchorElement>('[data-occasion-link]')];
+    if (!feeds.length || !links.length) return;
+    const select = (occasion: string, updateUrl = false) => {
+      const selected = occasion === 'snack' ? 'snack' : 'meal';
+      feeds.forEach((feed) => { feed.hidden = feed.dataset.occasionFeed !== selected; });
+      links.forEach((link) => {
+        const active = link.dataset.occasionLink === selected;
+        link.setAttribute('aria-current', active ? 'page' : 'false');
+        link.classList.toggle('border-ink', active);
+        link.classList.toggle('text-ink', active);
+        link.classList.toggle('border-transparent', !active);
+      });
+      if (updateUrl) {
+        const url = new URL(location.href);
+        url.searchParams.set('occasion', selected);
+        url.hash = 'pairings';
+        history.replaceState(history.state, '', url);
+      }
+    };
+    links.forEach((link) => link.addEventListener('click', (event) => {
+      event.preventDefault();
+      select(link.dataset.occasionLink ?? 'meal', true);
+    }));
+    select(new URLSearchParams(location.search).get('occasion') ?? 'meal');
+    if (location.hash === '#pairings') {
+      requestAnimationFrame(() => requestAnimationFrame(() => document.querySelector('#pairings')?.scrollIntoView({ block: 'start' })));
+    }
+  }
+  document.addEventListener('astro:page-load', initPairingOccasion);
+  initPairingOccasion();
+</script>

@@ -1,12 +1,14 @@
 @import "tailwindcss";
-@import "@fontsource-variable/playfair-display";
-@import "@fontsource-variable/open-sans";
+@import "@fontsource-variable/alegreya";
+@import "@fontsource-variable/alegreya/wght-italic.css";
+@import "@fontsource-variable/source-sans-3";
+@import "@fontsource-variable/source-sans-3/wght-italic.css";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-sans: "Open Sans Variable", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Playfair Display Variable", ui-serif, Georgia, serif;
+  --font-sans: "Source Sans 3 Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Alegreya Variable", ui-serif, Georgia, serif;
 
   /* Single warm accent — used sparingly: tier=Decisive badges, primary CTAs,
    * signature callout borders, active region pill. Everything else stays

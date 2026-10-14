@@ -27,6 +27,7 @@ pnpm-debug.log*
 .vercel
 
 # Impeccable per-session artifacts (shared design records stay tracked)
+.agents/skills/impeccable/scripts/bin/
 .impeccable/config.local.json
 .impeccable/hook.cache.json
 .impeccable/hook.pending.json

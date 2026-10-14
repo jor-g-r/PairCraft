@@ -141,6 +141,7 @@ const navigation = [
         }
 
         applyI18n();
+        document.addEventListener('DOMContentLoaded', applyI18n, { once: true });
         document.addEventListener('astro:page-load', applyI18n);
       })();
     </script>

@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { DishSearchInput, exactDishMatch, validatedDishIds } from './dish-search';
+import { DishSearchInput, exactDishMatch, filterDishesByOccasion, validatedDishIds } from './dish-search';
 
 const dishes = [
   { id: 'salmon-grilled', name: 'Grilled salmon', nameEs: 'Salmón a la parrilla' },
@@ -16,10 +16,21 @@ describe('dish routing boundaries', () => {
     expect(DishSearchInput.safeParse({ query: '  ' }).success).toBe(false);
     expect(DishSearchInput.safeParse({ query: 'a'.repeat(301) }).success).toBe(false);
     expect(DishSearchInput.parse({ query: ' ceviche ' }).query).toBe('ceviche');
+    expect(DishSearchInput.parse({ query: 'queso azul', occasion: 'snack' }).occasion).toBe('snack');
+    expect(DishSearchInput.safeParse({ query: 'queso azul', occasion: 'board' }).success).toBe(false);
   });
   test('accepts no-match and a single supported dish', () => {
     expect(validatedDishIds({ dishIds: [] }, dishes)).toEqual([]);
     expect(validatedDishIds({ dishIds: ['ceviche'] }, dishes)).toEqual(['ceviche']);
+  });
+  test('keeps meal and snack suggestions in their selected occasion', () => {
+    const foods = [
+      { id: 'ceviche', occasion: ['meal', 'snack'] as const },
+      { id: 'risotto', occasion: ['meal'] as const },
+      { id: 'aged-manchego', occasion: ['snack'] as const },
+    ];
+    expect(filterDishesByOccasion(foods, 'meal').map(({ id }) => id)).toEqual(['ceviche', 'risotto']);
+    expect(filterDishesByOccasion(foods, 'snack').map(({ id }) => id)).toEqual(['ceviche', 'aged-manchego']);
   });
   test('rejects hallucinated ids and malformed model output', () => {
     expect(() => validatedDishIds({ dishIds: ['https://bad.example'] }, dishes)).toThrow();

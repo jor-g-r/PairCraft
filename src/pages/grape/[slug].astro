@@ -46,6 +46,23 @@ const strip = stripRegion ? regionImage(stripRegion.id) : undefined;
       }
     </header>
 
+    {winesWithRegion.length > 0 && <section class="mt-10 border-y border-rule py-6" aria-labelledby="featured-bottle-title">
+      <div class="grid gap-5 sm:grid-cols-[minmax(0,1fr)_minmax(14rem,0.8fr)] sm:items-end">
+        <div>
+          <h2 id="featured-bottle-title" class="font-display text-2xl font-semibold" data-i18n="grape.featuredBottle">A bottle to explore</h2>
+          <p class="mt-2 max-w-prose text-sm leading-relaxed text-muted" data-i18n="grape.featuredBottleNote">One expression of this grape, selected from bottles listed in your market.</p>
+        </div>
+        <div class="sm:text-right">
+          {winesWithRegion.map(({ wine, region }) => <article data-featured-bottle data-markets={wine.data.markets.join(',')} hidden>
+            <p class="font-display text-xl font-semibold"><a class="underline decoration-rule underline-offset-4 hover:decoration-current" href={`/wine/${wine.id}`}>{wine.data.name}</a></p>
+            {region && <p class="mt-1 text-sm text-muted">{region.data.name} · {region.data.country}</p>}
+            <p class="mt-2 font-display italic text-muted" data-es-value={wine.data.taglineEs}>{wine.data.tagline}</p>
+          </article>)}
+          <p data-no-market-bottle hidden class="text-sm text-muted" data-i18n="grape.noMarketBottle">No bottle of this grape is listed in your market yet.</p>
+        </div>
+      </div>
+    </section>}
+
     {strip && stripRegion && (
       <div class="mt-8">
         <PhotoBand
@@ -122,3 +139,16 @@ const strip = stripRegion ? regionImage(stripRegion.id) : undefined;
     </section>
   </main>
 </Base>
+<script>
+  function selectMarketBottle() {
+    const entries = [...document.querySelectorAll<HTMLElement>('[data-featured-bottle]')];
+    if (!entries.length) return;
+    const market = document.cookie.match(/(?:^|; )pc_market=([A-Z]{2})(?:;|$)/)?.[1] ?? 'CO';
+    const selected = entries.find((entry) => entry.dataset.markets?.split(',').includes(market));
+    entries.forEach((entry) => { entry.hidden = entry !== selected; });
+    const empty = document.querySelector<HTMLElement>('[data-no-market-bottle]');
+    if (empty) empty.hidden = Boolean(selected);
+  }
+  document.addEventListener('astro:page-load', selectMarketBottle);
+  selectMarketBottle();
+</script>

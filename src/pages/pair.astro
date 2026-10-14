@@ -4,17 +4,22 @@ import Base from '../layouts/Base.astro';
 import PhotoBand from '../components/PhotoBand.astro';
 import tableImage from '../assets/pair-table.webp';
 const dishes = await getCollection('dishes');
+const sortedDishes = dishes.sort((a, b) => a.data.name.localeCompare(b.data.name));
 ---
 <Base title="Find a pairing — Paircraft" description="Describe your dish and find a pairing in the guide.">
   <main class="page-shell max-w-3xl">
-    <h1 class="page-title" data-i18n="pair.title">What’s on the plate?</h1>
-    <p class="mt-5 max-w-prose text-lg leading-relaxed text-muted" data-i18n="pair.intro">Tell us the main ingredient, how it’s cooked and the sauce. We’ll find a dish in our guide to start from.</p>
+    <h1 class="page-title" data-i18n="pair.title">Find a food pairing</h1>
+    <p class="mt-5 max-w-prose text-lg leading-relaxed text-muted" data-i18n="pair.intro">Choose whether you’re pairing a meal or something to snack on, then tell us what food you have in mind.</p>
+    <nav class="mt-7 flex gap-6 border-b border-rule" aria-label="Choose a food occasion">
+      <a href="?occasion=meal" class="min-h-11 inline-flex items-center border-b-2 border-transparent text-sm font-semibold text-muted hover:text-ink" data-pair-occasion="meal" data-i18n="pair.forMeal">With a meal</a>
+      <a href="?occasion=snack" class="min-h-11 inline-flex items-center border-b-2 border-transparent text-sm font-semibold text-muted hover:text-ink" data-pair-occasion="snack" data-i18n="pair.forSnack">For a snack</a>
+    </nav>
     <div class="mt-8">
       <PhotoBand src={tableImage} alt="A table set with wine glasses and plates of food" eager />
     </div>
     <form id="pair-form" class="mt-10" aria-describedby="pair-status">
-      <label for="pair-query" class="block text-sm font-semibold" data-i18n="pair.label">Describe your dish</label>
-      <textarea id="pair-query" name="query" rows="4" required minlength="3" maxlength="300" class="field mt-3 resize-y" placeholder="For example: grilled salmon with lemon and herbs" data-i18n-placeholder="pair.placeholder"></textarea>
+      <label for="pair-query" id="pair-label" class="block text-sm font-semibold">Describe the food</label>
+      <textarea id="pair-query" name="query" rows="4" required minlength="3" maxlength="300" class="field mt-3 resize-y" placeholder="For example: grilled salmon with lemon and herbs"></textarea>
       <button id="pair-submit" type="submit" class="action mt-4" data-i18n="pair.submit">Find a dish to pair</button>
     </form>
     <p id="pair-status" role="status" aria-live="polite" class="mt-5 text-sm text-muted"></p>
@@ -25,12 +30,26 @@ const dishes = await getCollection('dishes');
         {dishes.map((dish) => <li hidden data-result-id={dish.id}><a href={`/dish/${dish.id}`} class="group block py-5"><h3 class="font-display text-xl font-semibold group-hover:underline" data-es-value={dish.data.nameEs}>{dish.data.name}</h3><p class="mt-2 text-sm leading-relaxed text-muted" data-es-value={dish.data.descriptionEs}>{dish.data.description}</p><span class="mt-3 block text-sm font-semibold" data-i18n="dish.winesForDish">Wines for this dish</span></a></li>)}
       </ul>
     </section>
-    <section class="mt-12 border-t border-rule pt-8"><h2 class="font-display text-2xl" data-es-value="O empieza por un plato conocido">Or start with a familiar dish</h2><ul class="mt-4 flex flex-wrap gap-x-6 gap-y-2">{dishes.slice(0, 6).map((dish) => <li><a href={`/dish/${dish.id}`} class="editorial-link" data-es-value={dish.data.nameEs}>{dish.data.name}</a></li>)}</ul><a href="/dishes" class="editorial-link mt-4" data-i18n="dishes.all">All dishes</a></section>
+    <section class="mt-12 border-t border-rule pt-8"><h2 class="font-display text-2xl" data-i18n="pair.familiar">Or start with a familiar food</h2><ul class="mt-4 flex flex-wrap gap-x-6 gap-y-2">{sortedDishes.map((dish) => <li data-familiar-occasion={dish.data.occasion.join(',')}><a href={`/dish/${dish.id}`} class="editorial-link" data-es-value={dish.data.nameEs}>{dish.data.name}</a></li>)}</ul><a href="/dishes" class="editorial-link mt-4" data-i18n="dishes.all">All dishes</a></section>
+    <aside class="mt-10 border-t border-rule pt-6">
+      <a href="/wine-style" class="editorial-link" data-i18n="wineStyle.missingBottle">Not in the catalogue? Find an example by style.</a>
+    </aside>
     <noscript><p class="mt-5">Enable JavaScript to search, or use the dish links above. / Activa JavaScript para buscar o usa los enlaces de platos.</p></noscript>
   </main>
 </Base>
 <script>
   import { t, type Locale } from '../lib/i18n';
+  function applyPairOccasionCopy() {
+    const occasion = new URLSearchParams(location.search).get('occasion') === 'snack' ? 'snack' : 'meal';
+    const lang = document.documentElement.lang === 'es' ? 'es' : 'en';
+    const dictionary = JSON.parse(document.querySelector('#i18n-dict')?.textContent ?? '{}');
+    const labelKey = occasion === 'snack' ? 'pair.labelSnack' : 'pair.label';
+    const placeholderKey = occasion === 'snack' ? 'pair.placeholderSnack' : 'pair.placeholder';
+    const label = document.querySelector<HTMLElement>('#pair-label');
+    const query = document.querySelector<HTMLTextAreaElement>('#pair-query');
+    if (label) label.textContent = dictionary[labelKey]?.[lang] ?? dictionary[labelKey]?.en ?? '';
+    if (query) query.placeholder = dictionary[placeholderKey]?.[lang] ?? dictionary[placeholderKey]?.en ?? '';
+  }
   function initPair() {
     const form = document.querySelector<HTMLFormElement>('#pair-form');
     if (!form || form.dataset.ready) return;
@@ -40,6 +59,17 @@ const dishes = await getCollection('dishes');
     const status = document.querySelector<HTMLElement>('#pair-status')!;
     const results = document.querySelector<HTMLElement>('#pair-results')!;
     const title = document.querySelector<HTMLElement>('#pair-result-title')!;
+    const occasion = new URLSearchParams(location.search).get('occasion') === 'snack' ? 'snack' : 'meal';
+    document.querySelectorAll<HTMLAnchorElement>('[data-pair-occasion]').forEach((link) => {
+      const active = link.dataset.pairOccasion === occasion;
+      link.setAttribute('aria-current', active ? 'page' : 'false');
+      link.classList.toggle('border-ink', active);
+      link.classList.toggle('text-ink', active);
+      link.classList.toggle('border-transparent', !active);
+    });
+    document.querySelectorAll<HTMLElement>('[data-familiar-occasion]').forEach((item) => {
+      item.hidden = !item.dataset.familiarOccasion?.split(',').includes(occasion);
+    });
     let controller: AbortController | undefined;
     const locale = () => (document.documentElement.lang === 'es' ? 'es' : 'en') as Locale;
     document.addEventListener('astro:before-swap', () => controller?.abort(), { once: true });
@@ -57,7 +87,7 @@ const dishes = await getCollection('dishes');
       results.hidden = true;
       document.querySelectorAll<HTMLElement>('[data-result-id]').forEach((item) => item.hidden = true);
       try {
-        const response = await fetch('/api/pair', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ query: text }), signal: controller.signal });
+        const response = await fetch('/api/pair', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ query: text, occasion }), signal: controller.signal });
         if (!response.ok) throw new Error('Search failed');
         const data = await response.json();
         if (!Array.isArray(data.dishIds)) throw new Error('Invalid response');
@@ -75,5 +105,8 @@ const dishes = await getCollection('dishes');
     });
   }
   document.addEventListener('astro:page-load', initPair);
+  document.addEventListener('astro:page-load', applyPairOccasionCopy);
+  document.addEventListener('DOMContentLoaded', applyPairOccasionCopy, { once: true });
   initPair();
+  applyPairOccasionCopy();
 </script>

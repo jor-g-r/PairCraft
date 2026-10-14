@@ -1,5 +1,7 @@
 name: Aged manchego
+nameEs: Manchego curado
 description: A hard sheep's-milk cheese aged twelve months or more — nutty, salty, with a crystalline crunch.
+descriptionEs: "Queso duro de leche de oveja, curado doce meses o más: notas de nuez, sal y cristales crujientes."
 protein:
   - cheese-aged
 cookingMethod: []
@@ -8,4 +10,6 @@ flavorProfile:
   - fatty
 intensity: 4
 weight: medium
-descriptionEs: ""
+occasion:
+  - snack
+format: bite

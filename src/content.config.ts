@@ -186,6 +186,9 @@ const dishes = defineCollection({
     pairingLogicEs: z.string().optional(),
     recommendedWineStyles: z.array(z.string()).default([]),
     recommendedWineStylesEs: z.array(z.string()).default([]),
+    occasion: z.array(z.enum(['meal', 'snack'])).default(['meal']),
+    format: z.enum(['dish', 'bite', 'board']).default('dish'),
+    components: z.array(reference('dishes')).default([]),
     notesForDemo: z.string().optional(),
   }),
 });

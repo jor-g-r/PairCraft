@@ -28,9 +28,9 @@
       "section": { "displayName": "Ruled section heading", "purpose": "Semibold heading with a trailing flexible rule." },
       "section-sm": { "displayName": "Section heading · small breakpoint up", "purpose": "Responsive replacement for section at 40rem." },
       "title": { "displayName": "Property or pairing title", "purpose": "Property values and dish names in wine pairing rows." },
-      "pairing-prose": { "displayName": "Editorial explanation", "purpose": "Italic Playfair; one short recorded explanation when available." },
+      "pairing-prose": { "displayName": "Editorial explanation", "purpose": "Italic Alegreya; one short recorded explanation when available." },
       "body": { "displayName": "Reading copy", "purpose": "Relaxed descriptions; ordinary body defaults to 1.5 line-height." },
-      "label": { "displayName": "Action label", "purpose": "Semibold Open Sans for buttons and editorial links." },
+      "label": { "displayName": "Action label", "purpose": "Semibold Source Sans 3 for buttons and editorial links." },
       "tier": { "displayName": "Qualitative verdict", "purpose": "Compact explicit tier label; no numeric pairing score." }
     },
     "shadows": [
@@ -93,9 +93,9 @@
       "name": "Wine catalog row",
       "kind": "card",
       "refersTo": "wine-card",
-      "description": "Structural preview with explicit placeholder text, not a corpus record. SVG glass paths are copied from WineGlass.astro.",
-      "html": "<a href=\"/wines\" class=\"ds-wine-card\"><div class=\"ds-wine-identity\"><svg class=\"ds-wine-glass\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M7 3 C7 11 9 14 12 14 C15 14 17 11 17 3 Z\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><path d=\"M8.6 6 C8.6 11 10 13 12 13 C14 13 15.4 11 15.4 6 Z\" fill=\"var(--color-accent)\"/><path d=\"M12 14V20.5 M9 21H15\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/></svg><div><h2 class=\"ds-wine-title\">Wine name</h2><p class=\"ds-wine-origin\">Region · Country</p></div></div><p class=\"ds-wine-tagline\">Recorded tagline</p><span class=\"ds-wine-next\">What to eat with it</span></a>",
-      "css": ".ds-wine-card { display:flex; flex-direction:column; height:100%; border-top:1px solid var(--color-rule); padding-block:1.5rem; color:var(--color-ink); text-decoration:none; } .ds-wine-identity { display:flex; align-items:flex-start; gap:1rem; } .ds-wine-glass { width:2.25rem; height:2.25rem; flex-shrink:0; margin-top:.25rem; } .ds-wine-title { margin:0; font-family:var(--font-display); font-size:1.5rem; font-weight:600; line-height:1.25; } .ds-wine-origin { margin:.5rem 0 0; font-family:var(--font-sans); font-size:.75rem; line-height:1rem; color:var(--color-muted); } .ds-wine-tagline { margin:1rem 0 0; font-family:var(--font-display); font-size:1.125rem; font-style:italic; line-height:1.625; color:var(--color-muted); } .ds-wine-next { margin-top:1.25rem; font-family:var(--font-sans); font-size:.875rem; font-weight:600; line-height:1.25rem; } .ds-wine-card:hover .ds-wine-title { text-decoration:underline; text-underline-offset:.22em; } .ds-wine-card:focus-visible { outline:2px solid var(--color-ink); outline-offset:4px; }"
+      "description": "Wine identity is linked by name; two separate, direct links open meal and snack pairing feeds. SVG glass paths are copied from WineGlass.astro.",
+      "html": "<article class=\"ds-wine-card\"><div class=\"ds-wine-identity\"><svg class=\"ds-wine-glass\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M7 3 C7 11 9 14 12 14 C15 14 17 11 17 3 Z\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linejoin=\"round\"/><path d=\"M8.6 6 C8.6 11 10 13 12 13 C14 13 15.4 11 15.4 6 Z\" fill=\"var(--color-accent)\"/><path d=\"M12 14V20.5 M9 21H15\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/></svg><div><h2 class=\"ds-wine-title\"><a href=\"/wine/example\">Wine name</a></h2><p class=\"ds-wine-origin\">Region · Country</p></div></div><p class=\"ds-wine-tagline\">Recorded tagline</p><nav class=\"ds-wine-occasions\" aria-label=\"Pairing occasions\"><a href=\"/wine/example?occasion=meal#pairings\">For a meal</a><a href=\"/wine/example?occasion=snack#pairings\">For a snack</a></nav></article>",
+      "css": ".ds-wine-card { display:flex; flex-direction:column; height:100%; border-top:1px solid var(--color-rule); padding-block:1.5rem; color:var(--color-ink); } .ds-wine-identity { display:flex; align-items:flex-start; gap:1rem; } .ds-wine-glass { width:2.25rem; height:2.25rem; flex-shrink:0; margin-top:.25rem; } .ds-wine-title { margin:0; font-family:var(--font-display); font-size:1.5rem; font-weight:600; line-height:1.25; } .ds-wine-title a:hover { text-decoration:underline; text-underline-offset:.22em; } .ds-wine-title a:focus-visible { outline:2px solid var(--color-ink); outline-offset:4px; } .ds-wine-origin { margin:.5rem 0 0; font-family:var(--font-sans); font-size:.75rem; line-height:1rem; color:var(--color-muted); } .ds-wine-tagline { margin:1rem 0 0; font-family:var(--font-display); font-size:1.125rem; font-style:italic; line-height:1.625; color:var(--color-muted); } .ds-wine-occasions { display:flex; flex-wrap:wrap; gap:.5rem 1.25rem; margin-top:auto; padding-top:1.25rem; font-family:var(--font-sans); font-size:.875rem; font-weight:600; line-height:1.25rem; } .ds-wine-occasions a { display:inline-flex; min-height:2.75rem; align-items:center; text-decoration:underline; text-decoration-color:var(--color-rule); text-underline-offset:.25em; }"
     },
     {
       "name": "Wine property panels",
@@ -125,29 +125,29 @@
       "name": "Ruled section heading",
       "kind": "custom",
       "refersTo": "section-heading",
-      "description": "Flexible trailing hairline and Playfair type establish hierarchy without a decorative kicker.",
+      "description": "Flexible trailing hairline and Alegreya type establish hierarchy without a decorative kicker.",
       "html": "<h2 class=\"ds-section-heading\">Pairings</h2>",
       "css": ".ds-section-heading { display:flex; align-items:center; gap:1.25rem; margin:0; color:var(--color-ink); font-family:var(--font-display); font-size:1.5rem; font-weight:600; line-height:2rem; text-wrap:balance; } .ds-section-heading::after { content:''; height:1px; flex:1; background:var(--color-rule); } @media(min-width:40rem) { .ds-section-heading { font-size:1.875rem; line-height:2.25rem; } }"
     }
   ],
   "narrative": {
     "northStar": "The Wine Pocket Guide",
-    "overview": "Paircraft reads like a concise, opinionated pocket guide: Playfair wine names and editorial sentences, Open Sans controls, generous white or charcoal ground, and wine-red emphasis. The approved Merlot reference supplies the oval property panels, fine sensory tracks and ruled headings; existing Paircraft fonts and identity remain the anchors.\n\nDensity follows the task. Catalogs use scannable linked rows, while wine pages give identity and a pairing jump room to breathe before sensory detail. The primary journey is wine → food; the four added routes share the same visual vocabulary rather than introducing separate identities. EN/ES text and incomplete records must fit without invented copy or measurements.",
+    "overview": "Paircraft reads like a concise, opinionated pocket guide: Alegreya carries wine identity and editorial prose; Source Sans 3 carries controls and facts. Generous white or charcoal ground, restrained wine-red emphasis, ruled lists, and scene photography keep the guide distinct from a generic wine catalogue. Editorial modularity takes cues from Kinfolk and The Modern House; Wine Folly informs wine-reference clarity and bottle prominence without borrowing its assets or layout wholesale.\n\nDensity follows the task. Catalogs use scannable linked rows, while wine pages offer distinct meal and snack pairing feeds before deeper sensory reading. EN/ES text and incomplete records must fit without invented copy or measurements.",
     "keyCharacteristics": [
       "Wine-red actions and verdicts on neutral, theme-aware ground.",
-      "Playfair identity and editorial prose; Open Sans controls and facts.",
+      "Alegreya identity and editorial prose; Source Sans 3 controls and facts.",
       "Ruled lists, oval properties, thin independent sensory tracks.",
       "Mobile-first reading with explicit navigation and honest missing-data states."
     ],
     "rules": [
       { "name": "The One Accent Rule", "body": "Use wine red for decisive emphasis and selected states; use neutral text and rules for ordinary navigation and reading.", "section": "colors" },
-      { "name": "The Two Voices Rule", "body": "Set names and concise editorial judgments in Playfair; set controls, supporting descriptions and factual labels in Open Sans.", "section": "typography" },
+      { "name": "The Two Voices Rule", "body": "Set names and concise editorial judgments in Alegreya; set controls, supporting descriptions and factual labels in Source Sans 3.", "section": "typography" },
       { "name": "The Flat Reading Rule", "body": "Separate reading content with rules and tonal surfaces; reserve floating depth for the existing search affordance and its results overlay.", "section": "elevation" },
       { "name": "The Recorded Facts Rule", "body": "Show recorded values, label style-level guidance, and preserve explicit omissions instead of filling the reference layout with invented facts.", "section": "components" }
     ],
     "dos": [
       "Do use semantic colors so page ground, text, rules and accent-filled controls remain coherent in both themes.",
-      "Do preserve Playfair names and editorial prose alongside Open Sans controls and facts.",
+      "Do preserve Alegreya names and editorial prose alongside Source Sans 3 controls and facts.",
       "Do keep wine properties in a mobile 2×2 grid and display sweetness and acidity independently.",
       "Do use ruled, linked rows and native disclosures for readable pairing lists.",
       "Do label style guidance, show missing finish honestly, and omit unrecorded optional detail.",

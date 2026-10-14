@@ -71,6 +71,30 @@ describe('computeTier', () => {
     expect(result.activations.map((r) => r.id)).toContain('bubbles-cut-richness');
   });
 
+  test('sweet white + blue cheese → decisive; dry wine does not activate the bridge', () => {
+    const blue = dish({
+      protein: ['cheese-blue'],
+      flavorProfile: ['salty', 'umami', 'creamy'],
+      intensity: 5,
+      weight: 'heavy',
+    });
+    const sweetWhite = wine({
+      color: 'white',
+      sensoryProfile: { sweetness: 5, acidity: 3, tannin: 0, body: 2 },
+      flavouring: { primary: ['peach', 'tropical fruit'], secondary: [], tertiary: [] },
+    });
+    const dryRed = wine({
+      color: 'red',
+      sensoryProfile: { sweetness: 0, acidity: 1, tannin: 1, body: 2 },
+      flavouring: { primary: ['blackcurrant'], secondary: [], tertiary: [] },
+    });
+
+    const sweetResult = computeTier(sweetWhite, blue);
+    expect(sweetResult.tier).toBe('decisive');
+    expect(sweetResult.activations.map((rule) => rule.id)).toContain('sweetness-meets-blue-cheese');
+    expect(computeTier(dryRed, blue).activations.map((rule) => rule.id)).not.toContain('sweetness-meets-blue-cheese');
+  });
+
   test('light citrusy white + delicate fish → decisive (1 strong + 1 moderate)', () => {
     const w = wine({
       color: 'white',

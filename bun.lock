@@ -8,8 +8,8 @@
         "@anthropic-ai/sdk": "^0.93.0",
         "@astrojs/mdx": "^5.0.5",
         "@astrojs/vercel": "^10.0.6",
-        "@fontsource-variable/open-sans": "^5.2.7",
-        "@fontsource-variable/playfair-display": "^5.2.8",
+        "@fontsource-variable/alegreya": "^5.3.0",
+        "@fontsource-variable/source-sans-3": "^5.3.1",
         "@tailwindcss/vite": "^4.2.4",
         "astro": "^6.2.2",
         "tailwindcss": "^4.2.4",
@@ -311,9 +311,9 @@
 
     "@esbuild/win32-x64": ["@esbuild/win32-x64@0.27.7", "", { "os": "win32", "cpu": "x64" }, "sha512-56hiAJPhwQ1R4i+21FVF7V8kSD5zZTdHcVuRFMW0hn753vVfQN8xlx4uOPT4xoGH0Z/oVATuR82AiqSTDIpaHg=="],
 
-    "@fontsource-variable/open-sans": ["@fontsource-variable/open-sans@5.2.7", "", {}, "sha512-wzCLm2STuekK9Fz58DiuBnk4GgJpvvVtAU85a4b06ACNG/UsVjQcCvkUd6R/ETlHfsaykCUZamLRvSXg4KtWuA=="],
+    "@fontsource-variable/alegreya": ["@fontsource-variable/alegreya@5.3.0", "", {}, "sha512-K+DFrm7tnqsG6di2w3eW/o4Ic6XNFLtZCKcPldeHEnE9f8uWy4llIp1CqQAu+ByI9MFfs1C7eLv4Rv84yEIerw=="],
 
-    "@fontsource-variable/playfair-display": ["@fontsource-variable/playfair-display@5.2.8", "", {}, "sha512-ZzVIXPOrL85yyOvZYoBzUszIJM+xKkHqni4IYn2CVLaGQQdJR8sBeC8yFNgjxSJ7ludTwta8qpULeOFuk5X75A=="],
+    "@fontsource-variable/source-sans-3": ["@fontsource-variable/source-sans-3@5.3.1", "", {}, "sha512-u0p5Z/PM2e1uxYOMiodLM6NVzxHwULcB6Oi7QSr2WU/sdoLBFP/BeOZ3YYHeJ6rHsjPZA1nZweZVaV7sf2MAyQ=="],
 
     "@img/colour": ["@img/colour@1.1.0", "", {}, "sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ=="],
 

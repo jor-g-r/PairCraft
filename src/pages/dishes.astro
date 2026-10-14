@@ -11,10 +11,14 @@ const dishes = (await getCollection('dishes')).sort((a,b) => a.data.name.localeC
     <div class="mt-8 md:mt-10">
       <PhotoBand src={tableImage} alt="Overhead view of a table set with gourmet dishes" eager />
     </div>
-    <label class="mt-8 block max-w-xl space-y-2 text-sm"><span data-i18n="dishes.search">Find a dish</span><input id="dish-search" class="field" type="search" /></label>
+    <nav class="mt-8 flex gap-6 border-b border-rule" aria-label="Choose a food occasion">
+      <a href="?occasion=meal" class="min-h-11 inline-flex items-center border-b-2 border-transparent text-sm font-semibold text-muted hover:text-ink" data-dish-occasion="meal" data-i18n="dishes.forMeal">For a meal</a>
+      <a href="?occasion=snack" class="min-h-11 inline-flex items-center border-b-2 border-transparent text-sm font-semibold text-muted hover:text-ink" data-dish-occasion="snack" data-i18n="dishes.forSnack">For a snack</a>
+    </nav>
+    <label class="mt-6 block max-w-xl space-y-2 text-sm"><span data-i18n="dishes.search">Find a dish</span><input id="dish-search" class="field" type="search" /></label>
     <p id="dish-empty" hidden class="mt-8 text-muted" role="status" data-i18n="dishes.empty">No dish found. Describe it and we’ll look for a related dish.</p>
     <ul id="dish-catalog" class="mt-8 grid gap-x-8 sm:grid-cols-2">
-      {dishes.map((dish) => <li data-search={`${dish.data.name} ${dish.data.nameEs ?? ''} ${dish.data.category ?? ''} ${dish.data.categoryEs ?? ''}`} class="border-t border-rule"><a href={`/dish/${dish.id}`} class="group block py-6"><h2 class="font-display text-2xl font-semibold group-hover:underline" data-es-value={dish.data.nameEs}>{dish.data.name}</h2><p class="mt-3 leading-relaxed text-muted" data-es-value={dish.data.descriptionEs}>{dish.data.description}</p><span class="mt-4 block text-sm font-semibold" data-i18n="dish.winesForDish">Wines for this dish</span></a></li>)}
+      {dishes.map((dish) => <li data-search={`${dish.data.name} ${dish.data.nameEs ?? ''} ${dish.data.category ?? ''} ${dish.data.categoryEs ?? ''}`} data-occasions={dish.data.occasion.join(',')} class="border-t border-rule"><a href={`/dish/${dish.id}`} class="group block py-6"><h2 class="font-display text-2xl font-semibold group-hover:underline" data-es-value={dish.data.nameEs}>{dish.data.name}</h2><p class="mt-3 leading-relaxed text-muted" data-es-value={dish.data.descriptionEs}>{dish.data.description}</p><span class="mt-4 block text-sm font-semibold" data-i18n={dish.data.format === 'board' ? 'dish.exploreBoard' : 'dish.exploreBite'}>{dish.data.format === 'board' ? 'Explore this board' : 'Explore this food'}</span></a></li>)}
     </ul>
     <aside class="mt-12 border-t border-rule pt-8"><h2 class="font-display text-2xl" data-i18n="dishes.custom">Something else on the menu?</h2><a href="/pair" class="action mt-5" data-i18n="nav.pair">Find a pairing</a></aside>
   </main>
@@ -22,14 +26,36 @@ const dishes = (await getCollection('dishes')).sort((a,b) => a.data.name.localeC
 <script>
   function initDishes() {
     const input = document.querySelector<HTMLInputElement>('#dish-search');
+    const links = [...document.querySelectorAll<HTMLAnchorElement>('[data-dish-occasion]')];
     if (!input || input.dataset.ready) return;
     input.dataset.ready = 'true';
     const normalize = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-    input.addEventListener('input', () => {
+    let occasion = new URLSearchParams(location.search).get('occasion') === 'snack' ? 'snack' : 'meal';
+    const filter = () => {
       let count = 0;
-      document.querySelectorAll<HTMLElement>('#dish-catalog > li').forEach((item) => { item.hidden = !normalize(item.dataset.search ?? '').includes(normalize(input.value)); if (!item.hidden) count++; });
+      document.querySelectorAll<HTMLElement>('#dish-catalog > li').forEach((item) => {
+        item.hidden = !item.dataset.occasions?.split(',').includes(occasion) || !normalize(item.dataset.search ?? '').includes(normalize(input.value));
+        if (!item.hidden) count++;
+      });
       document.querySelector<HTMLElement>('#dish-empty')!.hidden = count > 0;
-    });
+      links.forEach((link) => {
+        const active = link.dataset.dishOccasion === occasion;
+        link.setAttribute('aria-current', active ? 'page' : 'false');
+        link.classList.toggle('border-ink', active);
+        link.classList.toggle('text-ink', active);
+        link.classList.toggle('border-transparent', !active);
+      });
+    };
+    links.forEach((link) => link.addEventListener('click', (event) => {
+      event.preventDefault();
+      occasion = link.dataset.dishOccasion === 'snack' ? 'snack' : 'meal';
+      const url = new URL(location.href);
+      url.searchParams.set('occasion', occasion);
+      history.replaceState(history.state, '', url);
+      filter();
+    }));
+    input.addEventListener('input', filter);
+    filter();
   }
   document.addEventListener('astro:page-load', initDishes);
   initDishes();

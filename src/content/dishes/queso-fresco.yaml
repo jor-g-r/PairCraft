@@ -1,0 +1,15 @@
+name: Fresh soft cheese
+nameEs: Queso fresco
+description: Mild, moist cheese with a clean lactic finish; its salt and tang vary by style.
+descriptionEs: Queso suave y húmedo, de final lácteo limpio; su sal y acidez varían según el estilo.
+protein:
+  - cheese-fresh
+cookingMethod: []
+flavorProfile:
+  - creamy
+  - salty
+intensity: 1
+weight: light
+occasion:
+  - snack
+format: bite
