@@ -14,6 +14,7 @@ flavorProfile:
 intensity: 3
 weight: medium
 category: seafood
+categoryEs: pescados
 cuisineContext: Formal casual restaurant
 pairingLogic: Fat needs acidity; moderate intensity allows both rich whites and low-tannin reds
 recommendedWineStyles:
@@ -25,3 +26,8 @@ notesForDemo: Excellent edge case because fish can pair with red wine if tannin 
 descriptionEs: Filete de salmón, marcado a la parrilla y untuoso, con costra de hierbas y un chorrito de limón — carne grasa que exige acidez para equilibrarla.
 cuisineContextEs: Restaurante informal de ambiente cuidado
 pairingLogicEs: La grasa necesita acidez; la intensidad moderada admite tanto blancos con cuerpo como tintos de taninos suaves
+recommendedWineStylesEs:
+  - Chardonnay
+  - Pinot Noir
+  - Albariño
+  - espumoso brut

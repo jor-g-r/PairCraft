@@ -42,3 +42,17 @@ taglineEs: "La respuesta del Somontano a Borgoña: manzana madura, mantequilla y
 summaryEs: "El Chardonnay de Enate es sol español fermentado en barrica embotellado en un vaso: piña y roble tostado cabalgando sobre una estructura amplia y cremosa. Bébaselo con muslos de pollo asado o una tabla de Idiazabal curado — la grasa pide grasa. Este es el vino que te enseña lo que el roble y las lías hacen realmente a la textura."
 styleEs: Chardonnay español
 pedagogicalRoleEs: Blanco de textura; enseña cuerpo, cremosidad y roble en el vino blanco
+recommendedPairingsEs:
+  - salmón
+  - pollo asado
+  - pasta cremosa
+  - risotto
+flavouringEs:
+  primary:
+    - manzana madura
+    - piña
+    - mantequilla
+    - vainilla
+    - notas tostadas
+  secondary: []
+  tertiary: []

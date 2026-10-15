@@ -36,3 +36,14 @@ markets:
   - AR
 taglineEs: "Mendoza en su expresión más accesible: ciruela oscura, violeta y un toque de moca sin pretensiones."
 summaryEs: "El Malbec de entrada de Norton es el referente de lo que Mendoza logra en volumen sin recortar atajos: maduro, de fruta oscura y con presencia de roble, pero sin quedar sepultado en él. Bébase ahora, con comida, en la mesa — no es un candidato para la bodega."
+flavouringEs:
+  primary:
+    - ciruela negra
+    - arándano
+    - violeta
+    - mora
+  secondary:
+    - moca
+    - vainilla
+    - cedro
+  tertiary: []

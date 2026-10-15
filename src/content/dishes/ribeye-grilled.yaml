@@ -1,4 +1,5 @@
 name: Grilled ribeye
+nameEs: Ribeye a la parrilla
 description: A thick cut over open flame — charred crust, pink centre, finishing salt.
 protein:
   - beef
@@ -9,4 +10,4 @@ flavorProfile:
   - smoky
 intensity: 4
 weight: heavy
-descriptionEs: ""
+descriptionEs: "Un corte grueso sobre llama abierta: costra tostada, centro rosado y sal al final."

@@ -35,5 +35,16 @@ markets:
   - CO
   - ES
   - VE
-taglineEs: ""
+taglineEs: "La Ribera de entrada bien hecha: cereza roja, polvo de cedro y el agarre justo para pedir un plato de comida."
 summaryEs: Tempranillo joven de Ribera del Duero con una breve crianza en roble americano y francés, que aporta estructura sin pesadez. Sírvalo con algo a la parrilla; este vino está hecho para la mesa, no para la bodega.
+flavouringEs:
+  primary:
+    - cereza roja
+    - ciruela pasa
+    - mora
+    - violeta
+  secondary:
+    - cedro
+    - vainilla
+    - tostado ligero
+  tertiary: []

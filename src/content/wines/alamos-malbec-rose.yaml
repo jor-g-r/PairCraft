@@ -30,3 +30,13 @@ markets:
   - AR
 taglineEs: "Malbec de Mendoza reducido a su fruta: sandía, rosa seca y un final amargo y limpio que lo mantiene honesto."
 summaryEs: "Alamos elabora este rosado con Malbec de Mendoza de altura, prensando temprano para capturar una vívida fresa y sandía sin el pesado pigmento ni el tanino de la uva. Resulta semiseco en estilo, con la acidez suficiente para mantenerse animado en la mesa. Sírvase frío, sírvase joven: este no es un vino para guardar."
+flavouringEs:
+  primary:
+    - sandía
+    - fresa
+    - pétalo de rosa seco
+    - granada
+  secondary:
+    - crema ligera
+    - levadura sutil
+  tertiary: []

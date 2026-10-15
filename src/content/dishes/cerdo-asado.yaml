@@ -1,4 +1,5 @@
 name: Cerdo asado / pork belly
+nameEs: Cerdo asado / panceta
 description: Roasted pork belly — crackling skin, molten fat layers, salt-forward with a faint caramelised edge.
 protein:
   - pork
@@ -13,6 +14,7 @@ flavorProfile:
 intensity: 4
 weight: heavy
 category: meat
+categoryEs: carnes
 cuisineContext: Restaurant main course
 pairingLogic: Acidity and bubbles cut fat; fruity reds complement pork sweetness
 recommendedWineStyles:

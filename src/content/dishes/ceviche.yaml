@@ -16,6 +16,7 @@ flavorProfile:
 intensity: 4
 weight: light
 category: seafood
+categoryEs: pescados
 cuisineContext: LATAM coastal cuisine
 pairingLogic: High acid in food needs high-acid wine; freshness and salinity bridge with coastal whites
 recommendedWineStyles:

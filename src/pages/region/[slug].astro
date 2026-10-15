@@ -3,6 +3,7 @@ import { getCollection, getEntry, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import PhotoBand from '../../components/PhotoBand.astro';
 import { regionImage } from '../../lib/region-images';
+import { countryEs } from '../../lib/i18n';
 
 export async function getStaticPaths() {
   const regions = await getCollection('regions');
@@ -25,10 +26,10 @@ const wines = allWines.filter((w) => w.data.region.id === region.id);
 <Base title={`${region.data.name} — Paircraft`} description={region.data.tagline}>
   <main class="page-shell max-w-3xl">
     <a href="/wines" class="editorial-link mb-6 text-muted" data-i18n="wine.back">All wines</a>
-    <p class="text-sm text-neutral-500">{region.data.country}</p>
+    <p class="text-sm text-neutral-500" data-es-value={countryEs(region.data.country)}>{region.data.country}</p>
 
     <header class="mt-2">
-      <h1 class="page-title">{region.data.name}</h1>
+      <h1 class="page-title" data-es-value={region.data.nameEs}>{region.data.name}</h1>
       <p class="mt-2 font-display text-lg italic text-neutral-700" data-es-value={region.data.taglineEs}>{region.data.tagline}</p>
     </header>
 
@@ -38,7 +39,7 @@ const wines = allWines.filter((w) => w.data.region.id === region.id);
       </div>
     )}
 
-    <p class="mt-6 text-sm text-neutral-600 italic">{region.data.climate}</p>
+    <p class="mt-6 text-sm text-neutral-600 italic" data-es-value={region.data.climateEs}>{region.data.climate}</p>
 
     <article class="prose prose-neutral mt-8 max-w-none text-neutral-800 leading-relaxed [&_p]:mt-4" data-lang-content="en">
       <Content />
@@ -61,6 +62,7 @@ const wines = allWines.filter((w) => w.data.region.id === region.id);
                     <a
                       href={`/grape/${g.id}`}
                       class="inline-flex min-h-11 items-center rounded-full border border-rule px-4 py-2 text-sm hover:border-ink transition"
+                      data-es-value={g.data.nameEs}
                     >
                       {g.data.name}
                     </a>

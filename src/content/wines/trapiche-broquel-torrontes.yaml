@@ -30,3 +30,13 @@ markets:
   - AR
 taglineEs: "El poder aromático de Salta embotellado a buen precio: jazmín, durazno blanco y ralladura de pomelo con una acidez que lo mantiene honesto."
 summaryEs: Broquel Torrontés es la puerta de entrada para entender por qué el norte argentino produce la uva blanca más perfumada del mundo. Fermentado en frío para preservar los aromas, ofrece un ataque floral explosivo equilibrado por una acidez genuina, algo poco común en esta variedad. Bébase en los primeros dos años, bien helado, acompañado de algo que pueda hacerle frente a tanta fragancia.
+flavouringEs:
+  primary:
+    - jazmín
+    - melocotón blanco
+    - ralladura de pomelo
+    - pétalo de rosa
+    - lichi
+  secondary:
+    - "neutro: solo acero inoxidable"
+  tertiary: []

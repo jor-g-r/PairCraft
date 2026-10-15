@@ -36,3 +36,15 @@ markets:
   - AR
 taglineEs: Mendoza efervescente y con carácter — manzana verde, brioche y un toque cítrico que se gana su lugar en la mesa.
 summaryEs: El Extra Brut de Chandon Argentina es un espumante de altura concebido para la comida, no para la ceremonia. Pinot Noir y Chardonnay aportan fruta verde y fresca y un carácter a galleta impulsado por las lías, con genuina vivacidad. Sírvase bien frío, bébase ya, bébase con algo salado.
+flavouringEs:
+  primary:
+    - manzana verde
+    - ralladura de limón
+    - melocotón blanco
+    - piel blanca de pomelo
+  secondary:
+    - brioche
+    - almendra tostada
+    - crema
+    - levadura
+  tertiary: []

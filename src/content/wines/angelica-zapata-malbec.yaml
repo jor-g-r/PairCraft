@@ -40,3 +40,18 @@ markets:
   - AR
 taglineEs: El Malbec de referencia de Mendoza — ciruela negra, violeta machacada y una sólida estructura de roble que exige una década de paciencia.
 summaryEs: El Malbec monovarietal insignia de Catena, procedente de los viñedos de altura Adrianna y La Pirámide, concebido para la bodega y no para el sofá. Denso, estructurado e intransigente — ábralo antes de 2027 solo con un ribeye en mano. Déjelo reposar diez años y se convierte en algo genuinamente complejo.
+flavouringEs:
+  primary:
+    - ciruela negra
+    - mora
+    - violeta
+    - cereza oscura
+  secondary:
+    - vainilla
+    - cedro
+    - chocolate amargo
+    - tostado
+  tertiary:
+    - tabaco
+    - cuero
+    - higo seco

@@ -41,3 +41,17 @@ taglineEs: "El caballo oscuro de Uruguay: fruta roja, menta fresca y nervio mine
 summaryEs: "La Marselan es el cruce entre Cabernet Sauvignon y Garnacha, y la Reserva de Garzón muestra exactamente por qué el matrimonio funciona: la estructura de uno de los progenitores, la fruta del otro, afinadas por los vientos atlánticos que llegan desde Maldonado. Sírvala con chuletas de cordero a la brasa o un ribeye frotado con chimichurri: el tanino se encuentra con la proteína, la hierba con la hierba. Se gana su lugar en cualquier carta que presuma de mirar más allá de Francia y Argentina."
 styleEs: Marselan uruguaya
 pedagogicalRoleEs: Bono regional LATAM; introduce una uva poco conocida y la diversidad de las cartas de restaurantes modernos
+recommendedPairingsEs:
+  - carnes a la parrilla
+  - cordero
+  - verduras asadas
+  - queso semiduro
+flavouringEs:
+  primary:
+    - fruta roja
+    - mineral
+    - menta
+    - eucalipto
+    - especias
+  secondary: []
+  tertiary: []

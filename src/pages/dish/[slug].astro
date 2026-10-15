@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import { computeTier, type Tier } from '../../lib/tier.ts';
 import type { Mode } from '../../lib/rules.ts';
 import TierBadge from '../../components/TierBadge.astro';
+import { foodTagEs, t } from '../../lib/i18n';
 
 export async function getStaticPaths() {
   const dishes = await getCollection('dishes');
@@ -57,7 +58,8 @@ const TAGS = [
   ...dish.data.protein,
   ...dish.data.cookingMethod,
   ...dish.data.flavorProfile,
-];
+].filter((tag) => tag !== 'none');
+const weightKey = `dish.weight${dish.data.weight.charAt(0).toUpperCase()}${dish.data.weight.slice(1)}`;
 ---
 
 <Base title={`${dish.data.name} — Paircraft`} description={dish.data.description}>
@@ -67,8 +69,8 @@ const TAGS = [
       <a id="return-to-wine" hidden class="editorial-link"><span id="return-to-wine-label">Back to</span> <span id="return-to-wine-name"></span></a>
     </div>
     <p class="text-sm text-neutral-500 capitalize">
-      {dish.data.category && <span>{dish.data.category} · </span>}
-      {dish.data.weight} · <span data-i18n="dish.intensity">intensity</span> {dish.data.intensity}
+      {dish.data.category && <><span data-es-value={dish.data.categoryEs}>{dish.data.category}</span> · </>}
+      <span data-i18n={weightKey}>{t(weightKey)}</span> · <span data-i18n="dish.intensity">intensity</span> {dish.data.intensity}
     </p>
 
     <header class="mt-2">
@@ -85,7 +87,7 @@ const TAGS = [
       TAGS.length > 0 && (
         <ul class="mt-6 flex flex-wrap gap-2">
           {TAGS.map((tag) => (
-            <li class="inline-block rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs text-neutral-600 capitalize">
+            <li class="inline-block rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs text-neutral-600 first-letter:uppercase" data-es-value={foodTagEs(tag)}>
               {tag.replace(/-/g, ' ')}
             </li>
           ))}
@@ -122,8 +124,8 @@ const TAGS = [
         <section class="mt-8">
           <h2 class="font-display text-xl italic text-neutral-500" data-i18n="dish.quickHints">Quick hints</h2>
           <ul class="mt-2 flex flex-wrap gap-2">
-            {dish.data.recommendedWineStyles.map((style) => (
-              <li class="inline-block rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs text-neutral-600">
+            {dish.data.recommendedWineStyles.map((style, i) => (
+              <li class="inline-block rounded-full bg-neutral-100 px-2.5 py-0.5 text-xs text-neutral-600" data-es-value={dish.data.recommendedWineStylesEs[i]}>
                 {style}
               </li>
             ))}

@@ -42,3 +42,17 @@ taglineEs: "Niebla del Pacífico en copa: cereza, tierra y especias desde el rin
 summaryEs: "Leyda se encuentra a veinte kilómetros del Pacífico, y se nota: este es un Pinot Noir de tensión genuina, no el impostor afrutado y confitado que producen los valles chilenos más cálidos. Sírvalo con salmón a la plancha o pechuga de pato asada: taninos bajos, acidez viva, y mantiene el tipo hasta el final. El argumento completo de esta uva a favor de la versatilidad se expone aquí mismo."
 styleEs: Pinot Noir chileno de clima frío
 pedagogicalRoleEs: Tinto ligero; ilustra los taninos bajos, la acidez y la versatilidad con aves y pescados
+recommendedPairingsEs:
+  - salmón
+  - cerdo
+  - risotto de hongos
+  - pollo asado
+flavouringEs:
+  primary:
+    - cereza
+    - frambuesa
+    - especias
+    - tierra
+    - notas florales
+  secondary: []
+  tertiary: []

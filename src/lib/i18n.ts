@@ -35,6 +35,7 @@ export const UI_STRINGS: Record<string, Record<Locale, string>> = {
   'wineStyle.bodyRequired': { en: 'Choose a body', es: 'Elige un cuerpo' },
   'wineStyle.light': { en: 'Light', es: 'Ligero' },
   'wineStyle.medium': { en: 'Medium', es: 'Medio' },
+  'wineStyle.mediumAcidity': { en: 'Medium', es: 'Media' },
   'wineStyle.full': { en: 'Full', es: 'Con cuerpo' },
   'wineStyle.sweetness': { en: 'Sweetness', es: 'Dulzor' },
   'wineStyle.anySweetness': { en: 'Any sweetness', es: 'Cualquier dulzor' },
@@ -125,8 +126,8 @@ export const UI_STRINGS: Record<string, Record<Locale, string>> = {
     es: 'Busca vinos, uvas, platos o regiones',
   },
   'home.searchPlaceholder': {
-    en: 'Type a wine, dish, or grape. We do the rest.',
-    es: 'Escribe un vino, plato u uva. Nosotros hacemos el resto.',
+    en: 'Type a wine, dish or grape',
+    es: 'Escribe un vino, plato o uva',
   },
   'home.try': { en: 'Try:', es: 'Prueba:' },
   'home.orBrowse': { en: 'or browse', es: 'o explora' },
@@ -166,7 +167,8 @@ export const UI_STRINGS: Record<string, Record<Locale, string>> = {
   'wine.landscape': { en: 'landscape', es: 'paisaje' },
 
   // Grape page
-  'grape.grape': { en: 'grape', es: 'uva' },
+  'grape.red': { en: 'Red grape', es: 'Uva tinta' },
+  'grape.white': { en: 'White grape', es: 'Uva blanca' },
   'grape.alsoCalled': { en: 'Also called:', es: 'También llamada:' },
   'grape.signatureRegions': { en: 'Signature regions', es: 'Regiones emblemáticas' },
   'grape.wines': { en: 'Wines', es: 'Vinos' },
@@ -182,6 +184,9 @@ export const UI_STRINGS: Record<string, Record<Locale, string>> = {
 
   // Dish page
   'dish.intensity': { en: 'intensity', es: 'intensidad' },
+  'dish.weightLight': { en: 'light', es: 'ligero' },
+  'dish.weightMedium': { en: 'medium', es: 'medio' },
+  'dish.weightHeavy': { en: 'heavy', es: 'contundente' },
   'dish.pairingLogic': { en: 'The pairing logic', es: 'La lógica del maridaje' },
   'dish.quickHints': { en: 'Quick hints', es: 'Consejos rápidos' },
   'dish.winesForDish': { en: 'Wines for this dish', es: 'Vinos para este plato' },
@@ -207,3 +212,26 @@ export const UI_STRINGS: Record<string, Record<Locale, string>> = {
 export function t(key: string, locale: Locale = DEFAULT_LOCALE): string {
   return UI_STRINGS[key]?.[locale] ?? UI_STRINGS[key]?.[DEFAULT_LOCALE] ?? key;
 }
+
+const COUNTRY_ES: Record<string, string> = { France: 'Francia', Italy: 'Italia', Spain: 'España' };
+
+export const countryEs = (country: string) => COUNTRY_ES[country] ?? country;
+
+// A region named after its country reads once ("Chile", not "Chile, Chile").
+export function originLine(region: { name: string; nameEs?: string; country: string }, separator = ', ') {
+  const line = (name: string, country: string) => (name === country ? country : `${name}${separator}${country}`);
+  return { en: line(region.name, region.country), es: line(region.nameEs ?? region.name, countryEs(region.country)) };
+}
+
+const FOOD_TAG_ES: Record<string, string> = {
+  beef: 'res', pork: 'cerdo', lamb: 'cordero', game: 'caza', poultry: 'aves', fish: 'pescado', shellfish: 'mariscos',
+  'cured-meat': 'embutidos', 'cheese-aged': 'queso curado', 'cheese-fresh': 'queso fresco', 'cheese-blue': 'queso azul',
+  vegetable: 'verduras', legume: 'legumbres', mushroom: 'hongos', egg: 'huevo',
+  raw: 'crudo', cured: 'curado', grilled: 'a la parrilla', roasted: 'asado', braised: 'guisado', fried: 'frito',
+  steamed: 'al vapor', baked: 'horneado', smoked: 'ahumado', seared: 'sellado', poached: 'pochado', boiled: 'hervido',
+  simmered: 'a fuego lento', sauteed: 'salteado',
+  fatty: 'graso', lean: 'magro', acidic: 'ácido', sweet: 'dulce', spicy: 'picante', smoky: 'ahumado', umami: 'umami',
+  bitter: 'amargo', salty: 'salado', creamy: 'cremoso', earthy: 'terroso', herbal: 'herbal', citrusy: 'cítrico', briny: 'salino',
+};
+
+export const foodTagEs = (tag: string) => FOOD_TAG_ES[tag] ?? tag.replace(/-/g, ' ');

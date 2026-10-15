@@ -36,3 +36,14 @@ markets:
   - VE
 taglineEs: "La casa que forjó la imagen global del Champagne: manzana verde, brioche, melocotón blanco y una mousse incansable."
 summaryEs: "Champagne sin añada construido sobre la consistencia a gran escala: el Pinot Noir aporta la estructura, el Chardonnay la elevación, el Meunier la accesibilidad. Sírvalo frío, bébaselo ahora, disfrútelo en la fiesta: este vino no premia la guarda."
+flavouringEs:
+  primary:
+    - manzana verde
+    - melocotón blanco
+    - pera
+    - ralladura de limón
+  secondary:
+    - brioche
+    - crema
+    - almendra tostada
+  tertiary: []

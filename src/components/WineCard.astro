@@ -1,13 +1,15 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import WineGlass from './WineGlass.astro';
+import { originLine } from '../lib/i18n';
 interface Props { wine: CollectionEntry<'wines'>; region?: CollectionEntry<'regions'>; }
 const { wine, region } = Astro.props;
+const origin = region && originLine(region.data, ' · ');
 ---
 <article class="flex h-full flex-col border-t border-rule py-6">
   <div class="flex items-start gap-4">
     <WineGlass color={wine.data.color} class="mt-1 h-9 w-9 shrink-0" />
-    <div><h2 class="font-display text-2xl font-semibold leading-tight"><a href={`/wine/${wine.id}`} class="hover:underline">{wine.data.name}</a></h2>{region && <p class="mt-2 text-xs text-muted">{region.data.name} · {region.data.country}</p>}</div>
+    <div><h2 class="font-display text-2xl font-semibold leading-tight"><a href={`/wine/${wine.id}`} class="hover:underline">{wine.data.name}</a></h2>{origin && <p class="mt-2 text-xs text-muted" data-es-value={origin.es}>{origin.en}</p>}</div>
   </div>
   <p class="mt-4 font-display text-lg italic leading-relaxed text-muted" data-es-value={wine.data.taglineEs}>{wine.data.tagline}</p>
   <nav class="mt-auto flex flex-wrap gap-x-5 gap-y-2 pt-5 text-sm font-semibold" aria-label="Pairing occasions">

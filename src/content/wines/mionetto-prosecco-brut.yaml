@@ -42,3 +42,18 @@ taglineEs: "El caballo de batalla aperitivo del norte de Italia: manzana verde, 
 summaryEs: "Glera del Véneto, elaborado por el método Charmat: fresco, de bajo alcohol, concebido para la primera copa de la tarde. Sírvalo frío, bébalo rápido, acompáñelo con calamares fritos o prosciutto con melón: la acidez corta la grasa, las burbujas reinician el paladar. Este es el vino que enseña por qué el espumoso existe antes de la cena, no durante ella."
 styleEs: Prosecco Brut
 pedagogicalRoleEs: Vino espumoso; introduce las burbujas, la frescura, los fritos y los maridajes de aperitivo
+recommendedPairingsEs:
+  - entradas fritas
+  - frutos del mar
+  - ceviche
+  - queso fresco
+  - bocados salados
+flavouringEs:
+  primary:
+    - manzana verde
+    - pera
+    - flores blancas
+    - cítricos
+    - burbujas
+  secondary: []
+  tertiary: []

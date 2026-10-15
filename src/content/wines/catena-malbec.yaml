@@ -42,3 +42,17 @@ taglineEs: "Mendoza en una copa: ciruela negra, violeta y la columna vertebral d
 summaryEs: "El Catena Malbec es la referencia indiscutible: mora y ciruela maduras con un toque violeta, taninos firmes que no admiten dudas, y una madera que sabe cuál es su lugar. Sírvalo con un ojo de bife a las brasas o un osobuco de cordero: el tanino abraza la proteína y la fruta no cede terreno. Por eso Mendoza importa."
 styleEs: Malbec argentino
 pedagogicalRoleEs: Tinto canónico de América Latina; enseña cuerpo, fruta madura, tanino moderado y maridajes con carnes rojas
+recommendedPairingsEs:
+  - res a la parrilla
+  - cerdo
+  - pasta con salsa de carne
+  - queso curado
+flavouringEs:
+  primary:
+    - ciruela negra
+    - mora
+    - violeta
+    - especias
+    - roble sutil
+  secondary: []
+  tertiary: []

@@ -6,6 +6,7 @@ export const prerender = false;
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import WineGlass from '../components/WineGlass.astro';
+import { countryEs, originLine } from '../lib/i18n';
 import { Image } from 'astro:assets';
 import tableImage from '../assets/wine-at-table.webp';
 
@@ -211,6 +212,7 @@ const countries = [
                   class="region-pill min-h-11 rounded-full border px-3 py-1 text-sm transition"
                   data-country={c}
                   aria-pressed="false"
+                  data-es-value={countryEs(c)}
                 >
                   {c}
                 </button>
@@ -234,8 +236,8 @@ const countries = [
                       </p>
                     </div>
                     {region && (
-                      <p class="mt-1 text-xs text-neutral-500">
-                        {region.data.name}, {region.data.country}
+                      <p class="mt-1 text-xs text-neutral-500" data-es-value={originLine(region.data).es}>
+                        {originLine(region.data).en}
                       </p>
                     )}
                     <p class="mt-3 text-sm italic text-neutral-700 leading-snug" data-es-value={wine.data.taglineEs}>
@@ -263,8 +265,8 @@ const countries = [
                     href={`/grape/${g.id}`}
                     class="block h-full rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-4 transition hover:border-neutral-400 hover:bg-white"
                   >
-                    <p class="font-display text-xl font-semibold leading-tight">{g.data.name}</p>
-                    <p class="mt-1 text-sm italic text-neutral-700 leading-snug">{g.data.tagline}</p>
+                    <p class="font-display text-xl font-semibold leading-tight" data-es-value={g.data.nameEs}>{g.data.name}</p>
+                    <p class="mt-1 text-sm italic text-neutral-700 leading-snug" data-es-value={g.data.taglineEs}>{g.data.tagline}</p>
                   </a>
                 </li>
               ))}
@@ -416,11 +418,9 @@ const countries = [
           e.preventDefault();
           setActive(activeIndex <= 0 ? currentMatches.length - 1 : activeIndex - 1);
         } else if (e.key === 'Enter') {
-          if (activeIndex >= 0) {
-            e.preventDefault();
-            const m = currentMatches[activeIndex];
-            window.location.href = `/${TYPE_PATH[m.type]}/${m.id}`;
-          }
+          e.preventDefault();
+          const m = currentMatches[Math.max(activeIndex, 0)];
+          window.location.href = `/${TYPE_PATH[m.type]}/${m.id}`;
         } else if (e.key === 'Escape') {
           input.blur();
           render([]);

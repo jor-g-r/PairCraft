@@ -41,3 +41,16 @@ taglineEs: El favorito dulce de Chile — melocotón, fruta tropical con notas d
 summaryEs: Gato Negro Blanco Dulce es un vino blanco dulce suave y sin complicaciones, construido sobre melocotón maduro y fruta tropical con un final acaramelado que anuncia exactamente lo que es. Sírvase frío con tartas de fruta fresca o queso azul suave — lo dulce se encuentra con lo dulce, o el azúcar corta la sal. Es el punto de entrada donde los bebedores aprenden que la dulzura es una herramienta, no un defecto.
 styleEs: Vino blanco dulce
 pedagogicalRoleEs: Vino dulce accesible; introduce los maridajes con postres y la armonía por dulzura
+recommendedPairingsEs:
+  - postres de fruta
+  - platos ligeramente picantes
+  - queso azul
+  - pastelería
+flavouringEs:
+  primary:
+    - melocotón
+    - fruta tropical
+    - fruta melosa
+    - notas florales
+  secondary: []
+  tertiary: []

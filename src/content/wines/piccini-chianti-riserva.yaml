@@ -38,3 +38,17 @@ taglineEs: "La Toscana en copa: cereza ácida, hierbas secas y esa acidez que ha
 summaryEs: "El Chianti Riserva de Piccini es el Sangiovese haciendo exactamente lo que el Sangiovese nació para hacer: alta acidez, profundidad sabrosa y una columna de taninos que exige comida. Bébaselo con cualquier cosa que lleve base de tomate o tenga marcas de brasa; el vino potencia ambas. Este es el punto de referencia para entender por qué los tintos italianos y la cocina italiana son inseparables."
 styleEs: Chianti Riserva
 pedagogicalRoleEs: Tinto ácido; enseña por qué el Sangiovese funciona con el tomate y los platos sabrosos
+recommendedPairingsEs:
+  - pasta con salsa de tomate
+  - pizza
+  - cerdo
+  - queso curado
+flavouringEs:
+  primary:
+    - cereza ácida
+    - hierbas secas
+    - hoja de tomate
+    - cuero
+    - especias
+  secondary: []
+  tertiary: []

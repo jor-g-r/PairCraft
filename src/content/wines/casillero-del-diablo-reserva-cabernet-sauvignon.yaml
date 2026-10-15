@@ -37,3 +37,15 @@ markets:
   - CL
 taglineEs: Caballo de batalla del Valle Central — grosella negra, cedro y taninos firmes a un precio que no merece ser tan bajo.
 summaryEs: "El Cabernet de entrada de gama insignia de Concha y Toro entrega un Cabernet chileno de manual: fruta oscura, matiz de hierba verde y estructura marcada por la madera que supera con creces su categoría. Bébaselo ya con algo graso — no necesita guarda y no premia la espera. Esta es la botella que se abre un martes sin remordimientos."
+flavouringEs:
+  primary:
+    - grosella negra
+    - cereza negra
+    - pimiento verde
+    - ciruela oscura
+  secondary:
+    - vainilla
+    - cedro
+    - tostado
+    - moca
+  tertiary: []

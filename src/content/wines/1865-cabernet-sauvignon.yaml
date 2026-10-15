@@ -42,3 +42,17 @@ taglineEs: "Músculo del Maipo: grosella negra, cedro y tabaco con taninos que v
 summaryEs: "Este es el Cabernet chileno en su expresión más directa: fruta oscura, una columna vertebral de cedro y una estructura tánica que exige proteína. Ábralo con un rib-eye o una pierna de cordero y los taninos encajan a la perfección. Se gana su lugar en el estante siendo exactamente lo que promete ser."
 styleEs: Cabernet Sauvignon chileno
 pedagogicalRoleEs: Tinto clásico tánico; ilustra la interacción entre taninos y proteína/grasa
+recommendedPairingsEs:
+  - carne a la parrilla
+  - cordero
+  - costillas de res
+  - queso duro curado
+flavouringEs:
+  primary:
+    - grosella negra
+    - casis
+    - cedro
+    - tabaco
+    - especias
+  secondary: []
+  tertiary: []

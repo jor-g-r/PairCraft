@@ -16,7 +16,7 @@ const styles = [...new Map(wines.filter((w) => w.data.style).map((w) => [w.data.
       <a href="/wine-style" class="editorial-link mt-1 text-muted" data-i18n="wineStyle.missingBottle">Not in the catalogue? Find an example by style.</a>
       <label class="mt-4 flex max-w-2xl items-center gap-3 text-sm"><span class="shrink-0" data-i18n="catalog.market">Available in</span><select name="market" class="field min-w-0"><option value="" data-i18n="catalog.allMarkets">Entire collection</option>{markets.map((m) => <option value={m.data.code} data-es-value={m.data.nameEs}>{m.data.name}</option>)}</select></label>
       <details class="mt-3 max-w-2xl border-t border-rule pt-2">
-        <summary class="flex min-h-11 cursor-pointer items-center text-sm font-semibold" data-i18n="catalog.moreFilters">Colour and style filters</summary>
+        <summary class="min-h-11 cursor-pointer py-3 text-sm font-semibold" data-i18n="catalog.moreFilters">Colour and style filters</summary>
         <div class="grid gap-4 pt-3 sm:grid-cols-2">
           <label class="space-y-2 text-sm"><span data-i18n="catalog.color">Wine colour</span><select name="color" class="field"><option value="" data-i18n="catalog.allColors">All colours</option>{['red','white','rose','orange','sparkling'].map((color) => <option value={color} data-i18n={`color.${color}`}>{t(`color.${color}`)}</option>)}</select></label>
           <label class="space-y-2 text-sm"><span data-i18n="catalog.style">Style</span><select name="style" class="field"><option value="" data-i18n="catalog.allStyles">All styles</option>{styles.map(([style, es]) => <option value={style} data-es-value={es}>{style}</option>)}</select></label>

@@ -13,6 +13,7 @@ flavorProfile:
 intensity: 5
 weight: heavy
 category: meat
+categoryEs: carnes
 cuisineContext: LATAM steakhouse / formal restaurant
 pairingLogic: Protein and fat soften tannin; Maillard flavors bridge with oak and dark fruit
 recommendedWineStyles:
@@ -21,6 +22,6 @@ recommendedWineStyles:
   - Rioja Crianza
   - Marselan
 notesForDemo: Best core dish for explaining tannin plus protein and intensity matching
-descriptionEs: ""
+descriptionEs: "Punta de anca o lomo grueso a fuego vivo: costra tostada, centro rosado y final de sal gruesa."
 cuisineContextEs: Asador / restaurante formal latinoamericano
 pairingLogicEs: La proteína y la grasa suavizan el tanino; los sabores de la reacción de Maillard se fusionan con la madera y la fruta oscura

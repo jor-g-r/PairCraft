@@ -15,6 +15,7 @@ flavorProfile:
 intensity: 5
 weight: heavy
 category: poultry
+categoryEs: aves
 cuisineContext: Mexican / LATAM regional cuisine
 pairingLogic: Spice and bitterness can clash with high tannin; fruit and moderate sweetness can soften heat
 recommendedWineStyles:
@@ -23,6 +24,11 @@ recommendedWineStyles:
   - off-dry white
   - sparkling demi-sec
 notesForDemo: Good controlled case for explaining conflict avoidance with tannin and spice
-descriptionEs: ""
+descriptionEs: "Pollo guisado bajo el mole: capas de chile seco, cacao y semillas tostadas que levantan un picor entre amargo y dulce que cubre cada bocado."
 cuisineContextEs: Cocina regional mexicana / latinoamericana
 pairingLogicEs: El picante y el amargor pueden chocar con los taninos elevados; la fruta y una dulzura moderada pueden suavizar el calor
+recommendedWineStylesEs:
+  - Malbec
+  - Pinot Noir
+  - blanco semiseco
+  - espumoso demi-sec

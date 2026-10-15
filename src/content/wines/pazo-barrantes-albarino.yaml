@@ -41,3 +41,17 @@ taglineEs: "Galicia en una copa: aire salino, melocotón y cítricos que hacen i
 summaryEs: "Pazo Barrantes es el Albariño de referencia: salino, tenso, impulsado por una acidez que corta limpio todo lo que el Atlántico saca del agua. Bébaselo frío, bébaselo joven, bébaselo con percebes o rodaballo a la plancha y deje de darle vueltas. Este es el vino que enseña por qué la geografía y la variedad de uva pueden ser el mismo argumento."
 styleEs: Albariño Rías Baixas
 pedagogicalRoleEs: Blanco costero de alta acidez; enseña salinidad, mariscos y maridajes conducidos por la acidez
+recommendedPairingsEs:
+  - ceviche
+  - mariscos
+  - pescado a la parrilla
+  - queso fresco
+flavouringEs:
+  primary:
+    - cítricos
+    - melocotón
+    - flores blancas
+    - salino
+    - mineral
+  secondary: []
+  tertiary: []

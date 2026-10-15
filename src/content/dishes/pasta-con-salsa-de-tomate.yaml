@@ -14,6 +14,7 @@ flavorProfile:
 intensity: 3
 weight: medium
 category: pasta
+categoryEs: pasta
 cuisineContext: Italian / international restaurant staple
 pairingLogic: Tomato acidity needs an acidic red; herbal notes bridge with savory Sangiovese profile
 recommendedWineStyles:

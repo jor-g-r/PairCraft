@@ -34,3 +34,12 @@ markets:
   - FR
 taglineEs: "Merlot de supermercado elaborado con honestidad: ciruela suave, un susurro de roble y cero pretensión. Para beberlo, no para estudiarlo."
 summaryEs: "JP Chenet Merlot es un tinto de gran volumen del Pays d'Oc concebido para el consumo inmediato: taninos suaves, fruta madura de ciruela y la estructura justa para sostener una cena entre semana. No es un vino para guardar ni para la contemplación. Ábralo, sírvalo y siga adelante."
+flavouringEs:
+  primary:
+    - ciruela roja
+    - cereza negra
+    - frambuesa
+  secondary:
+    - vainilla
+    - roble ligero
+  tertiary: []

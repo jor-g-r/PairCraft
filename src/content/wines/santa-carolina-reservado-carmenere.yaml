@@ -34,5 +34,16 @@ availability:
 markets:
   - CO
   - CL
-taglineEs: ""
+taglineEs: "La uva insignia de Chile en su versión más honesta: mora, pimiento verde y carne ahumada sin disculpas."
 summaryEs: "Este es un Carmenère de entrada de gama bien resuelto: fruta oscura en primer plano, esa inconfundible columna vertebral de pirazinas y la madera justa para redondear aristas sin sepultar la uva. Bébase ahora con algo a la parrilla — no necesita guarda y no pretende necesitarla."
+flavouringEs:
+  primary:
+    - mora
+    - ciruela negra
+    - pimiento verde
+    - hierbas secas
+  secondary:
+    - vainilla
+    - cedro
+    - tostado ligero
+  tertiary: []

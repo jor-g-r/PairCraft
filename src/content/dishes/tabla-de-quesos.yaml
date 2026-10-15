@@ -17,6 +17,7 @@ flavorProfile:
 intensity: 3
 weight: medium
 category: cheese
+categoryEs: quesos
 cuisineContext: Wine education / restaurant appetizer
 pairingLogic: "Different cheeses test different rules: freshness with acid, aged cheese with tannin, blue cheese with sweetness"
 recommendedWineStyles:
@@ -35,3 +36,8 @@ components:
   - queso-fresco
   - aged-manchego
   - queso-azul
+recommendedWineStylesEs:
+  - Sauvignon Blanc
+  - Rioja Crianza
+  - blanco dulce
+  - espumoso brut
