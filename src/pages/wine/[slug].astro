@@ -107,16 +107,16 @@ const tanninAxes = ['softness', 'astringency', 'complexity', 'structure', 'firmn
           <h3 class="font-display text-2xl font-semibold" data-i18n="wine.guidedBoards">Build a cheese board</h3>
           <p class="mt-2 max-w-prose text-sm text-muted" data-i18n="wine.guidedBoardsNote">Each cheese keeps its own pairing; the board itself receives no averaged verdict.</p>
           {boardGuides.map(({ board, components }) => {
-            const reviewedCount = components.filter(({ prose, result }) => prose && result.tier !== 'skip').length;
+            const recommendedCount = components.filter(({ prose, result }) => prose && result.tier !== 'skip').length;
             return <article class="mt-6 border-t border-rule pt-5">
               <h4 class="font-display text-xl font-semibold" data-es-value={board.data.nameEs}>{board.data.name}</h4>
               <p class="mt-1 text-sm text-muted" data-es-value={board.data.descriptionEs}>{board.data.description}</p>
-              <p class="mt-3 text-xs text-muted" data-es-value={`Maridajes revisados para ${reviewedCount} de ${components.length} componentes.`}>Reviewed pairings for {reviewedCount} of {components.length} components.</p>
+              <p class="mt-3 text-xs text-muted" data-es-value={`Maridajes recomendados para ${recommendedCount} de ${components.length} componentes.`}>Recommended pairings for {recommendedCount} of {components.length} components.</p>
               <ul class="mt-3 divide-y divide-rule border-t border-rule">
                 {components.map(({ dish, result, prose }) => <li>
                   {prose && result.tier !== 'skip' ? <DishPairing dish={dish} wineId={wine.id} occasion="snack" tier={result.tier} prose={prose} /> : <a href={`/dish/${dish.id}?wine=${wine.id}&occasion=snack`} class="block py-4">
                     <span class="font-display text-lg font-semibold" data-es-value={dish.data.nameEs}>{dish.data.name}</span>
-                    <span class="mt-1 block text-sm text-muted" data-i18n="wine.componentNotReviewed">Pairing not reviewed yet</span>
+                    <span class="mt-1 block text-sm text-muted" data-i18n="wine.componentBetterElsewhere">Better with another wine</span>
                   </a>}
                 </li>)}
               </ul>

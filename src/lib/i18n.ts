@@ -68,7 +68,7 @@ export const UI_STRINGS: Record<string, Record<Locale, string>> = {
   'wine.snackSuggestions': { en: 'Bites for this wine', es: 'Bocados para este vino' },
   'wine.guidedBoards': { en: 'Build a cheese board', es: 'Arma una tabla de quesos' },
   'wine.guidedBoardsNote': { en: 'Each cheese keeps its own pairing; the board itself receives no averaged verdict.', es: 'Cada queso conserva su propio maridaje; la tabla completa no recibe un veredicto promedio.' },
-  'wine.componentNotReviewed': { en: 'Pairing not reviewed yet', es: 'Maridaje pendiente de revisión' },
+  'wine.componentBetterElsewhere': { en: 'Better with another wine', es: 'Mejor con otro vino' },
   'wine.back': { en: 'All wines', es: 'Todos los vinos' },
   'wine.temperature': { en: 'Serve at', es: 'Servir a' },
   'wine.temperatureGuide': { en: 'Style guide', es: 'Guía por estilo' },
