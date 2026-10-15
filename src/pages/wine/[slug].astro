@@ -6,7 +6,7 @@ import PhotoBand from '../../components/PhotoBand.astro';
 import WineGlass from '../../components/WineGlass.astro';
 import PropertyCard from '../../components/PropertyCard.astro';
 import SensoryDial from '../../components/SensoryDial.astro';
-import { computeTier, type Tier } from '../../lib/tier';
+import { computeTier, dominantMode, type Tier } from '../../lib/tier';
 import { regionImage } from '../../lib/region-images';
 import { originLine, t } from '../../lib/i18n';
 
@@ -32,8 +32,9 @@ const boardGuides = (await Promise.all(dishes.filter((dish) => dish.data.format 
 const feeds = (['meal', 'snack'] as const).map((occasion) => ({
   occasion,
   entries: results.filter(({ dish, result }) => dish.data.occasion.includes(occasion) && result.tier !== 'skip').sort((a,b) => tierOrder[a.result.tier] - tierOrder[b.result.tier]),
-  groups: (['harmony', 'contrast', 'enhancement'] as const).map((mode) => ({ mode, entries: results.filter(({ dish, result }) => dish.data.occasion.includes(occasion) && result.tier !== 'skip' && result.activations.some((r) => r.mode === mode)).sort((a,b) => tierOrder[a.result.tier] - tierOrder[b.result.tier]) })),
+  groups: (['harmony', 'contrast', 'enhancement'] as const).map((mode) => ({ mode, entries: results.filter(({ dish, result }) => dish.data.occasion.includes(occasion) && result.tier !== 'skip' && dominantMode(result.activations) === mode).sort((a,b) => tierOrder[a.result.tier] - tierOrder[b.result.tier]) })).filter((g) => g.entries.length),
 }));
+const groupGrid = ['', 'max-w-2xl', 'lg:grid-cols-2', 'lg:grid-cols-3'];
 const profile = wine.data.sensoryProfile;
 const bodyKey = profile.body <= 2 ? 'wine.light' : profile.body === 3 ? 'wine.medium' : 'wine.full';
 const tanninKey = profile.tannin === 0 ? 'wine.absent' : profile.tannin <= 2 ? 'wine.soft' : profile.tannin === 3 ? 'wine.medium' : 'wine.firm';
@@ -91,9 +92,9 @@ const tanninAxes = ['softness', 'astringency', 'complexity', 'structure', 'firmn
           <h3 class="font-display text-2xl italic" data-i18n="wine.snackSuggestions">Bites for this wine</h3>
           {entries.length ? <ul class="mt-4 divide-y divide-rule border-t border-rule">{entries.map(({ dish, result, prose }) => <li><DishPairing dish={dish} wineId={wine.id} occasion="snack" tier={result.tier} prose={prose} /></li>)}</ul> : <p class="mt-4 text-muted" data-i18n="wine.noOccasionPairings">No pairings for this occasion have been curated yet.</p>}
         </section> : <>
-          {groups.every((g) => !g.entries.length) && <p class="text-muted" data-i18n="wine.noOccasionPairings">No pairings for this occasion have been curated yet.</p>}
-          <div class="grid items-start gap-10 lg:grid-cols-3 lg:gap-6">
-            {groups.filter((g) => g.entries.length).map(({ mode, entries }) => <section>
+          {!groups.length && <p class="text-muted" data-i18n="wine.noOccasionPairings">No pairings for this occasion have been curated yet.</p>}
+          <div class={`grid items-start gap-10 lg:gap-6 ${groupGrid[groups.length]}`}>
+            {groups.map(({ mode, entries }) => <section>
               <h3 class="font-display text-2xl italic" data-i18n={`mode.${mode}`}>{t(`mode.${mode}`)}</h3>
               <p class="mt-2 text-sm text-muted" data-i18n={`mode.${mode}Hint`}>{t(`mode.${mode}Hint`)}</p>
               <ul class="mt-4 divide-y divide-rule border-t border-rule">
@@ -131,7 +132,7 @@ const tanninAxes = ['softness', 'astringency', 'complexity', 'structure', 'firmn
       <div class="mt-6 grid gap-8 md:grid-cols-[2fr_1fr]">
         <div>
           <p class="max-w-prose leading-relaxed text-muted" data-es-value={wine.data.summaryEs}>{wine.data.summary}</p>
-          {wine.data.pedagogicalRole && <details class="mt-5 border-y border-rule py-3"><summary class="cursor-pointer py-2 text-sm font-semibold" data-i18n="wine.teachingNote">Teaching note</summary><p class="pb-3 pt-2 text-sm leading-relaxed text-muted" data-es-value={wine.data.pedagogicalRoleEs}>{wine.data.pedagogicalRole}</p></details>}
+          {wine.data.pedagogicalRole && <details class="mt-5 border-y border-rule py-3"><summary class="cursor-pointer py-3 text-sm font-semibold" data-i18n="wine.teachingNote">Teaching note</summary><p class="pb-3 pt-2 text-sm leading-relaxed text-muted" data-es-value={wine.data.pedagogicalRoleEs}>{wine.data.pedagogicalRole}</p></details>}
         </div>
         <dl class="space-y-3 text-sm">
           <div><dt class="text-muted" data-i18n="wine.colour">Colour</dt><dd class="mt-1" data-i18n={`color.${wine.data.color}`}>{t(`color.${wine.data.color}`)}</dd></div>

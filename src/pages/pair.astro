@@ -14,10 +14,7 @@ const sortedDishes = dishes.sort((a, b) => a.data.name.localeCompare(b.data.name
       <a href="?occasion=meal" class="min-h-11 inline-flex items-center border-b-2 border-transparent text-sm font-semibold text-muted hover:text-ink" data-pair-occasion="meal" data-i18n="pair.forMeal">With a meal</a>
       <a href="?occasion=snack" class="min-h-11 inline-flex items-center border-b-2 border-transparent text-sm font-semibold text-muted hover:text-ink" data-pair-occasion="snack" data-i18n="pair.forSnack">For a snack</a>
     </nav>
-    <div class="mt-8">
-      <PhotoBand src={tableImage} alt="A table set with wine glasses and plates of food" eager />
-    </div>
-    <form id="pair-form" class="mt-10" aria-describedby="pair-status">
+    <form id="pair-form" class="mt-8" aria-describedby="pair-status">
       <label for="pair-query" id="pair-label" class="block text-sm font-semibold">Describe the food</label>
       <textarea id="pair-query" name="query" rows="4" required minlength="3" maxlength="300" class="field mt-3 resize-y" placeholder="For example: grilled salmon with lemon and herbs"></textarea>
       <button id="pair-submit" type="submit" class="action mt-4" data-i18n="pair.submit">Find a dish to pair</button>
@@ -34,6 +31,9 @@ const sortedDishes = dishes.sort((a, b) => a.data.name.localeCompare(b.data.name
     <aside class="mt-10 border-t border-rule pt-6">
       <a href="/wine-style" class="editorial-link" data-i18n="wineStyle.missingBottle">Not in the catalogue? Find an example by style.</a>
     </aside>
+    <div class="mt-12">
+      <PhotoBand src={tableImage} alt="A table set with wine glasses and plates of food" />
+    </div>
     <noscript><p class="mt-5">Enable JavaScript to search, or use the dish links above. / Activa JavaScript para buscar o usa los enlaces de platos.</p></noscript>
   </main>
 </Base>

@@ -1,5 +1,5 @@
 import type { CollectionEntry } from 'astro:content';
-import { RULES, type Rule } from './rules.ts';
+import { RULES, type Mode, type Rule } from './rules.ts';
 
 export type Tier = 'decisive' | 'worth-trying' | 'risky' | 'skip';
 
@@ -39,4 +39,15 @@ export function computeTier(wine: Wine, dish: Dish): TierResult {
   else tier = 'skip';
 
   return { tier, activations };
+}
+
+const STRENGTH_WEIGHT = { strong: 3, moderate: 2, mild: 1 } as const;
+const MODE_ORDER: Mode[] = ['harmony', 'contrast', 'enhancement'];
+
+// A pairing is listed once, under the mode with the most rule evidence, so
+// tri-modal groups never repeat the same dish and explanation.
+export function dominantMode(activations: Rule[]): Mode | undefined {
+  const weight = new Map<Mode, number>();
+  for (const rule of activations) weight.set(rule.mode, (weight.get(rule.mode) ?? 0) + STRENGTH_WEIGHT[rule.strength]);
+  return MODE_ORDER.filter((mode) => weight.has(mode)).sort((a, b) => weight.get(b)! - weight.get(a)!)[0];
 }

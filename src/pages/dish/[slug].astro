@@ -1,7 +1,7 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { computeTier, type Tier } from '../../lib/tier.ts';
+import { computeTier, dominantMode, type Tier } from '../../lib/tier.ts';
 import type { Mode } from '../../lib/rules.ts';
 import TierBadge from '../../components/TierBadge.astro';
 import { foodTagEs, t } from '../../lib/i18n';
@@ -47,7 +47,7 @@ const winesByMode = MODES.map((mode) => ({
   entries: wineResults
     .filter(
       ({ result }) =>
-        result.tier !== 'skip' && result.activations.some((r) => r.mode === mode),
+        result.tier !== 'skip' && dominantMode(result.activations) === mode,
     )
     .sort((a, b) => TIER_ORDER[a.result.tier] - TIER_ORDER[b.result.tier]),
 }));

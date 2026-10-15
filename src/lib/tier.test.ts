@@ -1,6 +1,7 @@
 import { describe, expect, test } from 'bun:test';
 import type { CollectionEntry } from 'astro:content';
-import { computeTier } from './tier.ts';
+import { computeTier, dominantMode } from './tier.ts';
+import type { Rule } from './rules.ts';
 
 type Wine = CollectionEntry<'wines'>['data'];
 type Dish = CollectionEntry<'dishes'>['data'];
@@ -162,5 +163,22 @@ describe('computeTier', () => {
     const result = computeTier(w, d);
     expect(result.tier).toBe('decisive');
     expect(result.activations.map((r) => r.id)).toContain('mineral-meets-brine');
+  });
+});
+
+describe('dominantMode', () => {
+  const rule = (mode: Rule['mode'], strength: Rule['strength']) => ({ mode, strength }) as Rule;
+
+  test('picks the mode with the most rule weight', () => {
+    expect(dominantMode([rule('harmony', 'strong'), rule('contrast', 'strong'), rule('contrast', 'moderate')])).toBe('contrast');
+  });
+
+  test('breaks ties in harmony, contrast, enhancement order', () => {
+    expect(dominantMode([rule('enhancement', 'moderate'), rule('contrast', 'moderate')])).toBe('contrast');
+    expect(dominantMode([rule('contrast', 'strong'), rule('harmony', 'strong')])).toBe('harmony');
+  });
+
+  test('returns undefined without activations', () => {
+    expect(dominantMode([])).toBeUndefined();
   });
 });
