@@ -1,9 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import PhotoBand from '../components/PhotoBand.astro';
 import WineCard from '../components/WineCard.astro';
-import cellarImage from '../assets/wines-cellar.webp';
 import { t } from '../lib/i18n';
 const wines = (await getCollection('wines')).sort((a,b) => a.data.name.localeCompare(b.data.name));
 const regions = new Map((await getCollection('regions')).map((r) => [r.id, r]));
@@ -12,17 +10,20 @@ const styles = [...new Map(wines.filter((w) => w.data.style).map((w) => [w.data.
 ---
 <Base title="Wines — Paircraft" description="Find a bottle and what to eat with it.">
   <main class="page-shell">
-    <header><h1 class="page-title" data-i18n="nav.wines">Wines</h1><p class="mt-4 text-lg text-muted" data-i18n="catalog.intro">Start with a bottle. Find its place at the table.</p><a href="/wine-style" class="editorial-link mt-4" data-i18n="wineStyle.missingBottle">Not in the catalogue? Find an example by style.</a></header>
-    <div class="mt-8 md:mt-10">
-      <PhotoBand src={cellarImage} alt="Rows of wooden wine barrels stacked in a dark cellar" eager />
-    </div>
-    <form id="wine-filters" class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" role="search">
-      <label class="space-y-2 text-sm"><span data-i18n="catalog.search">Find a wine</span><input class="field" type="search" name="q" autocomplete="off" /></label>
-      <label class="space-y-2 text-sm"><span data-i18n="catalog.market">Available in</span><select name="market" class="field"><option value="" data-i18n="catalog.allMarkets">Entire collection</option>{markets.map((m) => <option value={m.data.code} data-es-value={m.data.nameEs}>{m.data.name}</option>)}</select></label>
-      <label class="space-y-2 text-sm"><span data-i18n="catalog.color">Wine colour</span><select name="color" class="field"><option value="" data-i18n="catalog.allColors">All colours</option>{['red','white','rose','orange','sparkling'].map((color) => <option value={color} data-i18n={`color.${color}`}>{t(`color.${color}`)}</option>)}</select></label>
-      <label class="space-y-2 text-sm"><span data-i18n="catalog.style">Style</span><select name="style" class="field"><option value="" data-i18n="catalog.allStyles">All styles</option>{styles.map(([style, es]) => <option value={style} data-es-value={es}>{style}</option>)}</select></label>
+    <header><h1 class="page-title" data-i18n="nav.wines">Wines</h1><p class="mt-4 text-lg text-muted" data-i18n="catalog.intro">Start with a bottle. Find its place at the table.</p></header>
+    <form id="wine-filters" class="mt-6" role="search">
+      <label class="block max-w-2xl space-y-2 text-sm"><span data-i18n="catalog.search">Find a wine</span><input class="field" type="search" name="q" autocomplete="off" /></label>
+      <a href="/wine-style" class="editorial-link mt-1 text-muted" data-i18n="wineStyle.missingBottle">Not in the catalogue? Find an example by style.</a>
+      <label class="mt-4 flex max-w-2xl items-center gap-3 text-sm"><span class="shrink-0" data-i18n="catalog.market">Available in</span><select name="market" class="field min-w-0"><option value="" data-i18n="catalog.allMarkets">Entire collection</option>{markets.map((m) => <option value={m.data.code} data-es-value={m.data.nameEs}>{m.data.name}</option>)}</select></label>
+      <details class="mt-3 max-w-2xl border-t border-rule pt-2">
+        <summary class="flex min-h-11 cursor-pointer items-center text-sm font-semibold" data-i18n="catalog.moreFilters">Colour and style filters</summary>
+        <div class="grid gap-4 pt-3 sm:grid-cols-2">
+          <label class="space-y-2 text-sm"><span data-i18n="catalog.color">Wine colour</span><select name="color" class="field"><option value="" data-i18n="catalog.allColors">All colours</option>{['red','white','rose','orange','sparkling'].map((color) => <option value={color} data-i18n={`color.${color}`}>{t(`color.${color}`)}</option>)}</select></label>
+          <label class="space-y-2 text-sm"><span data-i18n="catalog.style">Style</span><select name="style" class="field"><option value="" data-i18n="catalog.allStyles">All styles</option>{styles.map(([style, es]) => <option value={style} data-es-value={es}>{style}</option>)}</select></label>
+        </div>
+      </details>
     </form>
-    <div class="mt-5 flex items-center justify-between gap-4 text-sm text-muted"><p aria-live="polite"><span id="wine-count">{wines.length}</span> <span data-i18n="catalog.count">wines</span></p><button type="button" id="reset-filters" class="min-h-11 underline" data-i18n="catalog.reset">Reset filters</button></div>
+    <div class="mt-5 flex items-center justify-between gap-4 text-sm text-muted"><p aria-live="polite"><span id="wine-count">{wines.length}</span> <span id="wine-count-label" data-i18n={wines.length === 1 ? 'catalog.countSingular' : 'catalog.countPlural'}>{t(wines.length === 1 ? 'catalog.countSingular' : 'catalog.countPlural')}</span></p><button type="button" id="reset-filters" class="min-h-11 underline" data-i18n="catalog.reset">Reset filters</button></div>
     <p id="wine-empty" hidden class="my-10 max-w-prose text-muted" data-i18n="catalog.empty">No bottles match these filters. Try the entire collection or reset your search.</p>
     <ul class="mt-4 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3" id="catalog-wines">
       {wines.map((wine) => <li data-name={[wine.data.name, wine.data.nameEs, wine.data.style, wine.data.styleEs, regions.get(wine.data.region.id)?.data.name].filter(Boolean).join(' ')} data-markets={wine.data.markets.join(',')} data-color={wine.data.color} data-style={wine.data.style ?? ''}><WineCard wine={wine} region={regions.get(wine.data.region.id)} /></li>)}
@@ -31,6 +32,7 @@ const styles = [...new Map(wines.filter((w) => w.data.style).map((w) => [w.data.
   </main>
 </Base>
 <script>
+  import { t } from '../lib/i18n';
   const normalize = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   function initCatalog() {
     const form = document.querySelector<HTMLFormElement>('#wine-filters');
@@ -44,6 +46,8 @@ const styles = [...new Map(wines.filter((w) => w.data.style).map((w) => [w.data.
       if (key === 'market' && !params.has('market')) value = document.cookie.match(/(?:^|; )pc_market=([A-Z]{2})(?:;|$)/)?.[1] ?? 'CO';
       controls[key].value = value;
     }
+    const moreFilters = form.querySelector<HTMLDetailsElement>('details');
+    if (moreFilters && (controls.color.value || controls.style.value)) moreFilters.open = true;
     function filter() {
       const values = Object.fromEntries(fields.map((key) => [key, controls[key].value]));
       let count = 0;
@@ -53,6 +57,10 @@ const styles = [...new Map(wines.filter((w) => w.data.style).map((w) => [w.data.
         if (visible) count++;
       });
       document.querySelector('#wine-count')!.textContent = String(count);
+      const countKey = count === 1 ? 'catalog.countSingular' : 'catalog.countPlural';
+      const countLabel = document.querySelector<HTMLElement>('#wine-count-label')!;
+      countLabel.dataset.i18n = countKey;
+      countLabel.textContent = t(countKey, document.documentElement.lang === 'es' ? 'es' : 'en');
       document.querySelector<HTMLElement>('#wine-empty')!.hidden = count > 0;
       const query = new URLSearchParams();
       for (const key of fields) if (values[key] || key === 'market') query.set(key, values[key]);
