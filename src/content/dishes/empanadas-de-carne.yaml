@@ -1,0 +1,17 @@
+name: Beef empanadas
+nameEs: Empanadas de carne
+description: Golden fried corn-dough empanadas filled with stewed beef and potato, eaten hot with a spoonful of ají.
+descriptionEs: "Empanadas de masa de maíz, fritas y doradas, rellenas de carne guisada y papa; se comen calientes con una cucharada de ají."
+protein:
+  - beef
+cookingMethod:
+  - fried
+flavorProfile:
+  - fatty
+  - salty
+  - spicy
+intensity: 3
+weight: medium
+occasion:
+  - snack
+format: bite

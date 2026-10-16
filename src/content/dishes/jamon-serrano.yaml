@@ -1,0 +1,17 @@
+name: Jamón serrano
+nameEs: Jamón serrano
+description: Thin slices of dry-cured Spanish ham — sweet and salty at once, with ribbons of soft fat that melt at room temperature.
+descriptionEs: "Lonchas finas de jamón curado español: dulce y salado a la vez, con vetas de grasa que se funden a temperatura ambiente."
+protein:
+  - cured-meat
+cookingMethod:
+  - cured
+flavorProfile:
+  - salty
+  - fatty
+  - umami
+intensity: 3
+weight: medium
+occasion:
+  - snack
+format: bite

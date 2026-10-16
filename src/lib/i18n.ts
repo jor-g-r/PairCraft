@@ -130,7 +130,6 @@ export const UI_STRINGS: Record<string, Record<Locale, string>> = {
     es: 'Escribe un vino, plato o uva',
   },
   'home.try': { en: 'Try:', es: 'Prueba:' },
-  'home.orBrowse': { en: 'or browse', es: 'o explora' },
   'home.marketLabel': { en: 'Showing wines available in', es: 'Mostrando vinos disponibles en' },
   'home.origin': { en: 'Origin', es: 'Origen' },
   'home.filterOrigin': { en: 'Filter by origin', es: 'Filtrar por origen' },

@@ -71,9 +71,10 @@ const searchIndex: SearchEntry[] = [
   ...dishes.map((d) => ({ id: d.id, type: 'dish' as const, name: d.data.name })),
 ];
 
-const countries = [
-  ...new Set(winesWithRegion.map(({ region }) => region?.data.country).filter(Boolean) as string[]),
-].sort();
+// Most-stocked origins first: an order that reads the same in English and Spanish.
+const countryCounts = new Map<string, number>();
+for (const { region } of winesWithRegion) if (region) countryCounts.set(region.data.country, (countryCounts.get(region.data.country) ?? 0) + 1);
+const countries = [...countryCounts.keys()].sort((a, b) => countryCounts.get(b)! - countryCounts.get(a)! || a.localeCompare(b));
 ---
 
 <Base

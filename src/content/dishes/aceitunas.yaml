@@ -1,0 +1,18 @@
+name: Marinated olives
+nameEs: Aceitunas aliñadas
+description: Cured green and black olives dressed with olive oil, garlic and citrus peel — briny, salty, with a bitter edge.
+descriptionEs: "Aceitunas verdes y negras curadas, aliñadas con aceite de oliva, ajo y piel de cítricos: salinas, saladas y con un borde amargo."
+protein:
+  - vegetable
+cookingMethod:
+  - cured
+flavorProfile:
+  - briny
+  - salty
+  - bitter
+  - citrusy
+intensity: 3
+weight: light
+occasion:
+  - snack
+format: bite

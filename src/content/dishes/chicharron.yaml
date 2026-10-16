@@ -1,0 +1,16 @@
+name: Chicharrón
+nameEs: Chicharrón
+description: Colombian pork crackling — thick pork belly fried until the skin puffs and shatters, finished with salt and a squeeze of lime.
+descriptionEs: "Chicharrón colombiano: tocino grueso de cerdo frito hasta que la piel se infla y cruje, terminado con sal y unas gotas de limón."
+protein:
+  - pork
+cookingMethod:
+  - fried
+flavorProfile:
+  - fatty
+  - salty
+intensity: 4
+weight: heavy
+occasion:
+  - snack
+format: bite

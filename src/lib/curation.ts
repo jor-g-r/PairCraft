@@ -164,6 +164,29 @@ export async function draftPairingProse(args: DraftArgs): Promise<string> {
   return block.text.trim().replace(/^["']|["']$/g, '').trim();
 }
 
+const TRANSLATION_SYSTEM = `Translate one wine-pairing note from English to Spanish for a pocket wine guide read in Latin America.
+
+Keep the register: declarative, terse, opinionated, the same number of sentences. Translate faithfully; never soften, strengthen or add a claim. Use the guide's established vocabulary: pomelo (not toronja), melocotón (not durazno), sandía, lichi, burbuja, grosella negra, cereza ácida, punta de anca. "Acid cuts fat" is "La acidez corta la grasa"; "Salt amplifies fruit" is "La sal amplifica la fruta"; "Tannin meets protein" is "El tanino encuentra la proteína". Imperatives use tú. Keep wine, grape and appellation names; translate generic geography (Maipo Valley → Valle del Maipo, Tuscany → Toscana). Never use: elegante, sedoso, refinado, exquisito, lujoso, hermoso, encantador, maravilloso.
+
+Output ONLY the Spanish sentence. No quotes, no preamble.`;
+
+export async function translatePairingProse(explanation: string, dishNameEs?: string): Promise<string> {
+  const { client, provider } = getClient();
+  const response = await client.messages.create({
+    model: MODEL_BY_PROVIDER[provider],
+    max_tokens: provider === 'opencode-go' ? 2000 : 300,
+    temperature: 0.2,
+    system: TRANSLATION_SYSTEM,
+    messages: [{ role: 'user', content: `${dishNameEs ? `The food's Spanish name is "${dishNameEs}".\n\n` : ''}${explanation}` }],
+  });
+
+  const block = response.content.find((b) => b.type === 'text');
+  if (!block || block.type !== 'text') {
+    throw new Error(`No text content in translation response (stop_reason: ${response.stop_reason})`);
+  }
+  return block.text.trim().replace(/^["']|["']$/g, '').trim();
+}
+
 // ---------- Entity drafting (wines, grapes, regions, dishes) ----------------
 //
 // Used by scripts/draft-entities.ts to expand the corpus from name lists.
