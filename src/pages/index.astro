@@ -5,7 +5,7 @@ export const prerender = false;
 
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import WineGlass from '../components/WineGlass.astro';
+import WineCard from '../components/WineCard.astro';
 import { countryEs, originLine } from '../lib/i18n';
 import { Image } from 'astro:assets';
 import tableImage from '../assets/wine-at-table.webp';
@@ -113,7 +113,7 @@ const countries = [...countryCounts.keys()].sort((a, b) => countryCounts.get(b)!
           type="search"
           role="combobox"
           autocomplete="off"
-          placeholder="Type a wine, dish, or grape. We do the rest."
+          placeholder="Type a wine, dish or grape"
           class="w-full rounded-xl border border-neutral-300 bg-white py-4 pl-12 pr-4 text-base md:text-lg shadow-sm focus:border-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-900/10 transition"
           aria-autocomplete="list"
           aria-controls="search-results"
@@ -220,31 +220,10 @@ const countries = [...countryCounts.keys()].sort((a, b) => countryCounts.get(b)!
               ))}
             </div>
 
-            <ul class="mt-5 grid gap-x-8 gap-y-3 sm:grid-cols-2 lg:grid-cols-3" id="wine-grid">
+            <ul class="mt-5 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3" id="wine-grid">
               {winesWithRegion.map(({ wine, region }) => (
                 <li class="wine-card" data-country={region?.data.country ?? ''}>
-                  <a
-                    href={`/wine/${wine.id}`}
-                    class="block h-full border-t border-rule py-5 transition hover:border-ink"
-                  >
-                    <div class="flex items-start gap-2.5">
-                      <WineGlass color={wine.data.color} class="shrink-0 mt-0.5 text-neutral-700" />
-                      <p class="font-display text-xl font-semibold leading-tight">
-                        {wine.data.name}
-                        {wine.data.vintage && (
-                          <span class="font-normal text-neutral-500"> {wine.data.vintage}</span>
-                        )}
-                      </p>
-                    </div>
-                    {region && (
-                      <p class="mt-1 text-xs text-neutral-500" data-es-value={originLine(region.data).es}>
-                        {originLine(region.data).en}
-                      </p>
-                    )}
-                    <p class="mt-3 text-sm italic text-neutral-700 leading-snug" data-es-value={wine.data.taglineEs}>
-                      {wine.data.tagline}
-                    </p>
-                  </a>
+                  <WineCard wine={wine} region={region} />
                 </li>
               ))}
             </ul>

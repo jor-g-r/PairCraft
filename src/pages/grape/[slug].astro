@@ -22,6 +22,13 @@ const wines = allWines.filter((w) => w.data.grapes.some((g) => g.grape.id === gr
 const winesWithRegion = await Promise.all(
   wines.map(async (w) => ({ wine: w, region: await getEntry(w.data.region) })),
 );
+// The page features the first bottle stocked in the visitor's market, so this order is the editorial
+// preference: the grape's own colour, then single-variety bottles, then the most widely stocked.
+const featuredOrder = [...winesWithRegion].sort((a, b) =>
+  Number(a.wine.data.color !== grape.data.color) - Number(b.wine.data.color !== grape.data.color) ||
+  a.wine.data.grapes.length - b.wine.data.grapes.length ||
+  b.wine.data.markets.length - a.wine.data.markets.length ||
+  a.wine.data.name.localeCompare(b.wine.data.name));
 
 const stripRegion = signatureRegions.find((r) => r && regionImage(r.id));
 const strip = stripRegion ? regionImage(stripRegion.id) : undefined;
@@ -33,11 +40,10 @@ const strip = stripRegion ? regionImage(stripRegion.id) : undefined;
 >
   <main class="page-shell max-w-3xl">
     <a href="/wines" class="editorial-link mb-6 text-muted" data-i18n="wine.back">All wines</a>
-    <p class="text-sm text-neutral-500"><span data-i18n={`grape.${grape.data.color}`}>{t(`grape.${grape.data.color}`)}</span> · <span data-es-value={grape.data.originEs}>{grape.data.origin}</span></p>
-
-    <header class="mt-2">
+    <header>
       <h1 class="page-title" data-es-value={grape.data.nameEs}>{grape.data.name}</h1>
       <p class="mt-2 font-display text-lg italic text-neutral-700" data-es-value={grape.data.taglineEs}>{grape.data.tagline}</p>
+      <p class="mt-3 text-sm text-neutral-500"><span data-i18n={`grape.${grape.data.color}`}>{t(`grape.${grape.data.color}`)}</span> · <span data-es-value={grape.data.originEs}>{grape.data.origin}</span></p>
       {
         grape.data.aliases.length > 0 && (
           <p class="mt-2 text-sm text-neutral-500">
@@ -54,7 +60,7 @@ const strip = stripRegion ? regionImage(stripRegion.id) : undefined;
           <p class="mt-2 max-w-prose text-sm leading-relaxed text-muted" data-i18n="grape.featuredBottleNote">One expression of this grape, selected from bottles listed in your market.</p>
         </div>
         <div class="sm:text-right">
-          {winesWithRegion.map(({ wine, region }) => <article data-featured-bottle data-markets={wine.data.markets.join(',')} hidden>
+          {featuredOrder.map(({ wine, region }) => <article data-featured-bottle data-markets={wine.data.markets.join(',')} hidden>
             <p class="font-display text-xl font-semibold"><a class="underline decoration-rule underline-offset-4 hover:decoration-current" href={`/wine/${wine.id}`}>{wine.data.name}</a></p>
             {region && <p class="mt-1 text-sm text-muted" data-es-value={originLine(region.data, ' · ').es}>{originLine(region.data, ' · ').en}</p>}
             <p class="mt-2 font-display italic text-muted" data-es-value={wine.data.taglineEs}>{wine.data.tagline}</p>

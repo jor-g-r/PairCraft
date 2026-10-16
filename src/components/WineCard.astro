@@ -12,6 +12,7 @@ const origin = region && originLine(region.data, ' · ');
     <div><h2 class="font-display text-2xl font-semibold leading-tight"><a href={`/wine/${wine.id}`} class="hover:underline">{wine.data.name}</a></h2>{origin && <p class="mt-2 text-xs text-muted" data-es-value={origin.es}>{origin.en}</p>}</div>
   </div>
   <p class="mt-4 font-display text-lg italic leading-relaxed text-muted" data-es-value={wine.data.taglineEs}>{wine.data.tagline}</p>
+  <slot />
   <nav class="mt-auto flex flex-wrap gap-x-5 gap-y-2 pt-5 text-sm font-semibold" aria-label="Pairing occasions">
     <a href={`/wine/${wine.id}?occasion=meal#pairings`} class="min-h-11 inline-flex items-center underline decoration-rule underline-offset-4 hover:decoration-current" data-i18n="wine.forMeal">For a meal</a>
     <a href={`/wine/${wine.id}?occasion=snack#pairings`} class="min-h-11 inline-flex items-center underline decoration-rule underline-offset-4 hover:decoration-current" data-i18n="wine.forSnack">For a snack</a>

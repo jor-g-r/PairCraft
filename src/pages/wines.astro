@@ -12,7 +12,7 @@ const styles = [...new Map(wines.filter((w) => w.data.style).map((w) => [w.data.
   <main class="page-shell">
     <header><h1 class="page-title" data-i18n="nav.wines">Wines</h1><p class="mt-4 text-lg text-muted" data-i18n="catalog.intro">Start with a bottle. Find its place at the table.</p></header>
     <form id="wine-filters" class="mt-6" role="search">
-      <label class="block max-w-2xl space-y-2 text-sm"><span data-i18n="catalog.search">Find a wine</span><input class="field" type="search" name="q" autocomplete="off" /></label>
+      <label class="block max-w-2xl space-y-2 text-sm"><span data-i18n="catalog.search">Find a wine</span><span class="relative block"><svg class="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-neutral-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg><input class="field pl-12" type="search" name="q" autocomplete="off" placeholder="Type a wine name" data-i18n-placeholder="catalog.searchPlaceholder" /></span></label>
       <a href="/wine-style" class="editorial-link mt-1 text-muted" data-i18n="wineStyle.missingBottle">Not in the catalogue? Find an example by style.</a>
       <label class="mt-4 flex max-w-2xl items-center gap-3 text-sm"><span class="shrink-0" data-i18n="catalog.market">Available in</span><select name="market" class="field min-w-0"><option value="" data-i18n="catalog.allMarkets">Entire collection</option>{markets.map((m) => <option value={m.data.code} data-es-value={m.data.nameEs}>{m.data.name}</option>)}</select></label>
       <details class="mt-3 max-w-2xl border-t border-rule pt-2">

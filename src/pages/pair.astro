@@ -24,7 +24,7 @@ const sortedDishes = dishes.sort((a, b) => a.data.name.localeCompare(b.data.name
       <h2 id="pair-result-title" class="font-display text-2xl" tabindex="-1"></h2>
       <p id="pair-related-hint" class="mt-3 text-sm leading-relaxed text-muted" data-i18n="pair.relatedHint">These are starting points. A different sauce or cooking method can change the pairing.</p>
       <ul class="mt-4 divide-y divide-rule border-y border-rule">
-        {dishes.map((dish) => <li hidden data-result-id={dish.id}><a href={`/dish/${dish.id}`} class="group block py-5"><h3 class="font-display text-xl font-semibold group-hover:underline" data-es-value={dish.data.nameEs}>{dish.data.name}</h3><p class="mt-2 text-sm leading-relaxed text-muted" data-es-value={dish.data.descriptionEs}>{dish.data.description}</p><span class="mt-3 block text-sm font-semibold" data-i18n="dish.winesForDish">Wines for this dish</span></a></li>)}
+        {dishes.map((dish) => <li hidden data-result-id={dish.id}><a href={`/dish/${dish.id}`} class="group block py-5"><h3 class="font-display text-xl font-semibold group-hover:underline" data-es-value={dish.data.nameEs}>{dish.data.name}</h3><p class="mt-2 text-sm leading-relaxed text-muted" data-es-value={dish.data.descriptionEs}>{dish.data.description}</p><span class="mt-3 block text-sm font-semibold" data-i18n={dish.data.format === 'bite' ? 'dish.winesForBite' : 'dish.winesForDish'}>{dish.data.format === 'bite' ? 'Wines for this bite' : 'Wines for this dish'}</span></a></li>)}
       </ul>
     </section>
     <section class="mt-12 border-t border-rule pt-8"><h2 class="font-display text-2xl" data-i18n="pair.familiar">Or start with a familiar food</h2><ul class="mt-4 flex flex-wrap gap-x-6 gap-y-2">{sortedDishes.map((dish) => <li data-familiar-occasion={dish.data.occasion.join(',')}><a href={`/dish/${dish.id}`} class="editorial-link" data-es-value={dish.data.nameEs}>{dish.data.name}</a></li>)}</ul><a href="/dishes" class="editorial-link mt-4" data-i18n="dishes.all">All dishes</a></section>
@@ -47,8 +47,11 @@ const sortedDishes = dishes.sort((a, b) => a.data.name.localeCompare(b.data.name
     const placeholderKey = occasion === 'snack' ? 'pair.placeholderSnack' : 'pair.placeholder';
     const label = document.querySelector<HTMLElement>('#pair-label');
     const query = document.querySelector<HTMLTextAreaElement>('#pair-query');
+    const submitKey = occasion === 'snack' ? 'pair.submitSnack' : 'pair.submit';
+    const submit = document.querySelector<HTMLButtonElement>('#pair-submit');
     if (label) label.textContent = dictionary[labelKey]?.[lang] ?? dictionary[labelKey]?.en ?? '';
     if (query) query.placeholder = dictionary[placeholderKey]?.[lang] ?? dictionary[placeholderKey]?.en ?? '';
+    if (submit) { submit.dataset.i18n = submitKey; submit.textContent = dictionary[submitKey]?.[lang] ?? dictionary[submitKey]?.en ?? ''; }
   }
   function initPair() {
     const form = document.querySelector<HTMLFormElement>('#pair-form');
@@ -95,13 +98,13 @@ const sortedDishes = dishes.sort((a, b) => a.data.name.localeCompare(b.data.name
         document.querySelectorAll<HTMLElement>('[data-result-id]').forEach((item) => { item.hidden = !data.dishIds.includes(item.dataset.resultId); if (!item.hidden) count++; });
         status.textContent = count ? '' : t('pair.empty', locale());
         if (count) {
-          title.textContent = t(data.kind === 'exact' ? 'pair.exact' : 'pair.related', locale());
+          title.textContent = t(`${data.kind === 'exact' ? 'pair.exact' : 'pair.related'}${occasion === 'snack' ? 'Snack' : ''}`, locale());
           document.querySelector<HTMLElement>('#pair-related-hint')!.hidden = data.kind === 'exact';
           results.hidden = false;
           title.focus();
         }
       } catch { status.textContent = t('pair.error', locale()); }
-      finally { clearTimeout(timeout); button.disabled = false; button.textContent = t('pair.submit', locale()); form.removeAttribute('aria-busy'); }
+      finally { clearTimeout(timeout); button.disabled = false; button.textContent = t(button.dataset.i18n ?? 'pair.submit', locale()); form.removeAttribute('aria-busy'); }
     });
   }
   document.addEventListener('astro:page-load', initPair);

@@ -53,7 +53,8 @@ typography:
     fontWeight: 600
     lineHeight: "1.75rem"
   pairing-prose:
-    fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
+    fontFamily: '"Alegreya Variable", ui-serif, Georgia, serif'
+    fontStyle: italic
     fontSize: "1.125rem"
     fontWeight: 400
     lineHeight: 1.375
@@ -211,7 +212,7 @@ The serif carries wine identity and opinion; the sans carries operation and evid
 - **Header:** sticky, opaque, bordered and two-row at all breakpoints. Brand and theme/language controls occupy the first row; four navigation links occupy the second. Mobile navigation distributes links across the width; from `sm` it aligns left with (2rem) gaps. Header stacking level is (30); page scroll padding is (9rem).
 - **Wine detail:** centered identity, tagline, origin/grape links and two direct occasion actions. Sweetness and acidity stack on mobile and sit side by side at `sm`. The property definition list stays **2×2 on mobile**, with (1rem) gaps, becoming four columns at `md`. Serving temperature, body, tannin and finish keep this order.
 - **Pairing feeds:** meal and snack selectors are persistent links. Meal recommendations retain tri-modal ruled groups, but each pairing appears once, under its dominant mode (the mode with the most rule weight, `dominantMode` in `src/lib/tier.ts`); on desktop the grid has one column per non-empty group, and a single group keeps a reading measure. Pairing rows show tier, food name and the explanation only; the food description lives on the food page. Snack recommendations are a single food-first list ordered by qualitative tier, avoiding duplicate bites across rule modes. A guided board appears only when at least one component has curated pairing prose; every component retains its own tier and explanation. A component without a curated pairing reads "Better with another wine" and links to its food page, which lists only the wines that do work; it is never averaged.
-- **Catalogs and finders:** `/wines` leads with full-width name search and a visible market selector; color/style filters live in a native disclosure so common search results appear before optional controls. Wine results use one / two / three columns at base / `sm` / `lg`. Dish results use one column then two at `sm`, with a separate occasion selector. `/wine-style` uses a compact multi-field form and ranked examples, without showing a numeric fit score. Empty results remain explanatory text with an available next action.
+- **Catalogs and finders:** `/wines` leads with full-width name search and a visible market selector; color/style filters live in a native disclosure so common search results appear before optional controls. Wine results use one / two / three columns at base / `sm` / `lg`. Dish results use one column then two at `sm`, with a separate occasion selector. `/wine-style` uses a compact multi-field form and ranked examples, without showing a numeric fit score; results open with a one-line summary of the chosen descriptors, and each example carries its best reviewed meal and snack pairing. A grape page features the first bottle stocked in the visitor's market, ordered by the grape's own colour, then single-variety bottles, then the most widely stocked. Empty results remain explanatory text with an available next action.
 - **About:** one column becoming two at `md`, with a portrait editorial image (4:5). The same table photograph is a small supporting image on home, hidden below `sm`. It is not bottle or regional evidence.
 - **Editorial photo bands:** `/dishes` and `/pair` each close with one lazy 21:9 band (`dishes-table`, `pair-table`), so the occasion choice sits directly under the instruction it answers; the `/wines` catalogue stays search-first without a decorative cellar image. Region pages carry a 21:9 region band after the header; wine pages close the "In the glass" section with a 21:9 "From <region>" band; grape pages carry a 3:1 strip labeled "From <region>", sourced from the first signature region with an image. The home's catalog divider is a plain hairline, not a labeled kicker.
 
@@ -239,7 +240,7 @@ Global keyboard focus uses an ink outline (2px) offset by (4px). Preserve semant
 
 ### Inputs and feedback
 
-The common field is full width, paper-filled, rule-bordered (1px) and softly rounded. Text and caret use ink; placeholders use muted. Catalog selects share this treatment. `/pair` uses a four-row, vertically resizable textarea with a visible label and a (3–300 character) constraint. Submission marks the form busy, disables and relabels the button, and announces status. Exact and related matches have distinct headings; related matches carry the qualification about sauce and cooking method. Successful results receive heading focus. Empty and failed requests use status copy, while familiar-dish links remain available. These are links into curated dishes, not generated wine verdicts.
+The common field is full width, paper-filled, rule-bordered (1px) and softly rounded. Text and caret use ink; placeholders use muted. Catalog selects share this treatment and draw their own muted chevron (`select.field`, no native arrow); catalog search fields (/wines, /dishes) carry the home search's magnifier and a placeholder. Every `<summary>` replaces the native marker with a currentColor chevron that turns 180° when open (transition only without reduced motion). `/pair` uses a four-row, vertically resizable textarea with a visible label and a (3–300 character) constraint. Submission marks the form busy, disables and relabels the button, and announces status. Exact and related matches have distinct headings; related matches carry the qualification about sauce and cooking method. Successful results receive heading focus. Empty and failed requests use status copy, while familiar-dish links remain available. These are links into curated dishes, not generated wine verdicts.
 
 ### Navigation and preferences
 
@@ -247,7 +248,7 @@ The top navigation is Wines (`/wines`), Dishes (`/dishes`), Find a pairing (`/pa
 
 The circular theme button uses a moon SVG and an accessible “Dark theme” label; `aria-pressed` expresses dark mode. The manual preference persists as `pc_theme` in a one-year cookie and local storage. Cookie wins over local storage; system preference is used when there is no explicit light/dark choice. An early head script applies the root `dark` class and browser theme color, and client navigation synchronizes the incoming document. A manual choice continues to win over subsequent system changes.
 
-The EN/ES segmented pill has a wine-red sliding selection and white selected text, with pressed states on the two buttons. Its individual buttons have minimum height (2.5rem), inside a padded border. `pc_lang` persists to cookie and local storage; switching reloads. Editorial fields fall back to English individually. Preserve room for longer Spanish labels.
+The EN/ES segmented pill has a wine-red sliding selection and white selected text, with pressed states on the two buttons. Its individual buttons are at least 2.75rem square, inside a padded border. `pc_lang` persists to cookie and local storage; switching reloads. Editorial fields fall back to English individually. Preserve room for longer Spanish labels.
 
 ### Tier chips
 
@@ -255,7 +256,7 @@ Decisive match is filled wine red with white text; Worth trying is neutral-fille
 
 ### Catalog and pairing rows
 
-`WineCard.astro` uses a top rule, vertical padding (1.5rem), a small SVG glass (2.25rem), Alegreya title, optional origin, italic tagline and two direct occasion links. The title underlines on hover. Dish catalog rows use the same ruled reading model; pairing rows use slightly tighter vertical padding (1.25rem), a tier chip, food title, description and optional italic explanation. A wine-to-food link carries `?wine=<id>` so the food page can show a contextual return link when it finds that wine. `WineStyle` keeps candidate cards tied to specific catalogue wines and routes to that example's exact pairing feed.
+`WineCard.astro` is the one wine card on home, `/wines` and `/wine-style`: a top rule, vertical padding (1.5rem), a small SVG glass (2.25rem), Alegreya title, optional origin, italic tagline, an optional slot (on `/wine-style`, the bottle's best reviewed meal and snack pairing with tier chips) and two direct occasion links ("For a meal" / "Para comer", "For a snack" / "Para picar"; the same two labels everywhere an occasion is chosen). The title underlines on hover. Dish catalog rows use the same ruled reading model; pairing rows use slightly tighter vertical padding (1.25rem), a tier chip, food title and optional italic explanation; the food description lives on the food page. A wine-to-food link carries `?wine=<id>` so the food page can show a contextual return link when it finds that wine. `WineStyle` keeps candidate cards tied to specific catalogue wines and routes to that example's exact pairing feed.
 
 ### Editorial photo bands
 
@@ -281,7 +282,7 @@ Decisive match is filled wine red with white text; Worth trying is neutral-fille
 
 The shared section heading pairs semibold Alegreya with a flexible trailing rule, separated by a gap (1.25rem). The rule is structural, not a decorative underline beneath every heading. Keep actual headings for content hierarchy.
 
-**Retired, not canonized:** `Eyebrow.astro` was deleted rather than promoted into a heading tier; dish detail's former eyebrow labels are now italic Alegreya (1.5rem) section headings like the pairing-mode headings, and the home's decorative "or browse" kicker is a plain hairline divider. The reveal comment still promises a fade-up absent from its CSS states; that remains unrepaired. Functional property terms and origin-filter labels are not decorative kickers.
+**Retired, not canonized:** `Eyebrow.astro` was deleted rather than promoted into a heading tier; dish detail's former eyebrow labels are now italic Alegreya (1.5rem) section headings like the pairing-mode headings; dish, grape and region facts lines (category · weight · intensity, grape colour · origin, country) sit below the h1, never above it, and the home's decorative "or browse" kicker is a plain hairline divider. The reveal comment still promises a fade-up absent from its CSS states; that remains unrepaired. Functional property terms and origin-filter labels are not decorative kickers.
 
 ## Do's and Don'ts
 

@@ -41,7 +41,7 @@ export function computeTier(wine: Wine, dish: Dish): TierResult {
   return { tier, activations };
 }
 
-const STRENGTH_WEIGHT = { strong: 3, moderate: 2, mild: 1 } as const;
+export const STRENGTH_WEIGHT = { strong: 3, moderate: 2, mild: 1 } as const;
 const MODE_ORDER: Mode[] = ['harmony', 'contrast', 'enhancement'];
 
 // A pairing is listed once, under the mode with the most rule evidence, so

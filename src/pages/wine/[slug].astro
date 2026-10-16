@@ -117,7 +117,7 @@ const tanninAxes = ['softness', 'astringency', 'complexity', 'structure', 'firmn
                 {components.map(({ dish, result, prose }) => <li>
                   {prose && result.tier !== 'skip' ? <DishPairing dish={dish} wineId={wine.id} occasion="snack" tier={result.tier} prose={prose} /> : <a href={`/dish/${dish.id}?wine=${wine.id}&occasion=snack`} class="block py-4">
                     <span class="font-display text-lg font-semibold" data-es-value={dish.data.nameEs}>{dish.data.name}</span>
-                    <span class="mt-1 block text-sm text-muted" data-i18n="wine.componentBetterElsewhere">Better with another wine</span>
+                    <span class="mt-1 block text-sm text-muted underline decoration-rule underline-offset-4" data-i18n="wine.componentBetterElsewhere">Better with another wine</span>
                   </a>}
                 </li>)}
               </ul>

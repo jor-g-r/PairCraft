@@ -68,12 +68,7 @@ const weightKey = `dish.weight${dish.data.weight.charAt(0).toUpperCase()}${dish.
       <a href="/dishes" class="editorial-link text-muted" data-i18n="dishes.all">All dishes</a>
       <a id="return-to-wine" hidden class="editorial-link"><span id="return-to-wine-label">Back to</span> <span id="return-to-wine-name"></span></a>
     </div>
-    <p class="text-sm text-neutral-500 capitalize">
-      {dish.data.category && <><span data-es-value={dish.data.categoryEs}>{dish.data.category}</span> · </>}
-      <span data-i18n={weightKey}>{t(weightKey)}</span> · <span data-i18n="dish.intensity">intensity</span> {dish.data.intensity}
-    </p>
-
-    <header class="mt-2">
+    <header>
       <h1 class="page-title" data-es-value={dish.data.nameEs}>{dish.data.name}</h1>
       {
         dish.data.cuisineContext && (
@@ -81,6 +76,10 @@ const weightKey = `dish.weight${dish.data.weight.charAt(0).toUpperCase()}${dish.
         )
       }
       <p class="mt-3 text-neutral-800 leading-relaxed" data-es-value={dish.data.descriptionEs}>{dish.data.description}</p>
+      <p class="mt-4 text-sm text-neutral-500 capitalize">
+        {dish.data.category && <><span data-es-value={dish.data.categoryEs}>{dish.data.category}</span> · </>}
+        <span data-i18n={weightKey}>{t(weightKey)}</span> · <span data-i18n="dish.intensity">intensity</span> {dish.data.intensity}
+      </p>
     </header>
 
     {
@@ -135,7 +134,7 @@ const weightKey = `dish.weight${dish.data.weight.charAt(0).toUpperCase()}${dish.
     }
 
     {dish.data.format !== 'board' && <section class="mt-12">
-      <h2 class="section-title" data-i18n="dish.winesForDish">Wines for this dish</h2>
+      <h2 class="section-title" data-i18n={dish.data.format === 'bite' ? 'dish.winesForBite' : 'dish.winesForDish'}>{dish.data.format === 'bite' ? 'Wines for this bite' : 'Wines for this dish'}</h2>
       {
         winesByMode.every(({ entries }) => entries.length === 0) && (
           <p class="mt-4 text-neutral-500" data-i18n="dish.noWines">No wines pair well yet.</p>

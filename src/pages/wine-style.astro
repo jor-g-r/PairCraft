@@ -2,9 +2,28 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import WineCard from '../components/WineCard.astro';
+import TierBadge from '../components/TierBadge.astro';
 import { t } from '../lib/i18n';
+import { computeTier, STRENGTH_WEIGHT, type Tier } from '../lib/tier';
 
 const wines = await getCollection('wines');
+const dishes = new Map((await getCollection('dishes')).map((dish) => [dish.id, dish]));
+const pairings = await getCollection('pairings');
+const tierOrder: Record<Tier, number> = { decisive: 0, 'worth-trying': 1, risky: 2, skip: 3 };
+// Each example bottle carries its best reviewed pairing per occasion, so the style match stays attached to evidence.
+const examplePairings = new Map(wines.map((wine) => {
+  const reviewed = pairings
+    .filter((p) => p.data.wine.id === wine.id)
+    .map((p) => dishes.get(p.data.dish.id))
+    .filter((dish) => dish && dish.data.format !== 'board')
+    .map((dish) => ({ dish: dish!, ...computeTier(wine.data, dish!.data) }))
+    .filter(({ tier }) => tier !== 'skip')
+    .map(({ dish, tier, activations }) => ({ dish, tier, evidence: activations.reduce((sum, rule) => sum + STRENGTH_WEIGHT[rule.strength], 0) }))
+    .sort((a, b) => tierOrder[a.tier] - tierOrder[b.tier] || b.evidence - a.evidence || a.dish.data.name.localeCompare(b.dish.data.name));
+  const meal = reviewed.find(({ dish }) => dish.data.occasion.includes('meal'));
+  const snack = reviewed.find(({ dish }) => dish.data.occasion.includes('snack') && dish.id !== meal?.dish.id);
+  return [wine.id, [meal && { ...meal, occasion: 'meal' as const }, snack && { ...snack, occasion: 'snack' as const }].filter((e) => e !== undefined)];
+}));
 const regions = new Map((await getCollection('regions')).map((region) => [region.id, region]));
 const styleCorpus = wines.map(({ id, data }) => ({
   id,
@@ -39,10 +58,18 @@ const styleCorpus = wines.map(({ id, data }) => ({
 
     <section id="wine-style-results" class="mt-10" aria-labelledby="wine-style-results-title" hidden>
       <h2 id="wine-style-results-title" class="section-title" tabindex="-1" data-i18n="wineStyle.results">Similar bottles in the guide</h2>
+      <p id="wine-style-summary" class="mt-3 text-sm font-semibold"></p>
       <p class="mt-4 max-w-prose text-sm leading-relaxed text-muted" data-i18n="wineStyle.disclaimer">Open a bottle to see its exact reviewed pairings. Use them as a style reference for your wine.</p>
       <p id="wine-style-empty" class="mt-6 max-w-prose text-muted" data-i18n="wineStyle.empty" hidden>No similar bottles are listed in your market yet. Change a descriptor or browse the full catalogue.</p>
       <ul id="wine-style-candidates" class="mt-5 grid gap-x-8 sm:grid-cols-2">
-        {wines.map((wine) => <li data-style-candidate={wine.id} hidden><WineCard wine={wine} region={regions.get(wine.data.region.id)} /></li>)}
+        {wines.map((wine) => <li data-style-candidate={wine.id} hidden><WineCard wine={wine} region={regions.get(wine.data.region.id)}>
+          {examplePairings.get(wine.id)!.length > 0 && <ul class="mt-4 space-y-1">
+            {examplePairings.get(wine.id)!.map(({ dish, tier, occasion }) => <li><a href={`/dish/${dish.id}?wine=${wine.id}&occasion=${occasion}`} class="group flex min-h-11 items-center justify-between gap-3">
+              <span><span class="text-sm text-muted" data-i18n={occasion === 'meal' ? 'wine.forMeal' : 'wine.forSnack'}>{t(occasion === 'meal' ? 'wine.forMeal' : 'wine.forSnack')}</span><span class="text-sm text-muted" aria-hidden="true"> · </span><span class="font-display text-base font-semibold underline decoration-rule underline-offset-4 group-hover:decoration-current" data-es-value={dish.data.nameEs}>{dish.data.name}</span></span>
+              <TierBadge tier={tier} class="shrink-0" />
+            </a></li>)}
+          </ul>}
+        </WineCard></li>)}
       </ul>
       <a href="/wines" class="editorial-link mt-8" data-i18n="wineStyle.allWines">Browse all wines</a>
     </section>
@@ -65,6 +92,17 @@ const styleCorpus = wines.map(({ id, data }) => ({
     const cards = [...document.querySelectorAll<HTMLElement>('[data-style-candidate]')];
     const results = document.querySelector<HTMLElement>('#wine-style-results')!;
     const empty = document.querySelector<HTMLElement>('#wine-style-empty')!;
+    const summary = document.querySelector<HTMLElement>('#wine-style-summary')!;
+    // Read labels from the dictionary, not the options: on first load the search can run before option text is localized.
+    const dictionary = JSON.parse(document.querySelector('#i18n-dict')?.textContent ?? '{}');
+    const updateSummary = () => {
+      const lang = document.documentElement.lang === 'es' ? 'es' : 'en';
+      summary.textContent = fields.filter((field) => controls[field].value).map((field) => {
+        const key = controls[field].selectedOptions[0]?.dataset.i18n ?? '';
+        return dictionary[key]?.[lang] ?? controls[field].selectedOptions[0]?.textContent?.trim();
+      }).join(' · ');
+    };
+    document.querySelectorAll('.lang-toggle-btn').forEach((button) => button.addEventListener('click', () => setTimeout(updateSummary)));
     const search = (updateUrl: boolean) => {
       if (!controls.color.value || !controls.body.value) return;
       const request = Object.fromEntries(fields.map((field) => [field, controls[field].value || undefined])) as unknown as WineStyleRequest;
@@ -72,6 +110,7 @@ const styleCorpus = wines.map(({ id, data }) => ({
       const ids = rankWineStyleExamples(request, corpus, market, 3);
       cards.forEach((card) => { card.hidden = !ids.includes(card.dataset.styleCandidate ?? ''); });
       empty.hidden = ids.length > 0;
+      updateSummary();
       results.hidden = false;
       if (updateUrl) document.querySelector<HTMLElement>('#wine-style-results-title')?.focus();
 
