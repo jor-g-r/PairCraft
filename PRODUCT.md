@@ -24,7 +24,7 @@ Astro Content Collections hold curated entities and prose. Food records carry an
 
 ## Brand Commitments
 
-Paircraft identity; concise, opinionated pocket-guide voice. Editorial frame informed by Kinfolk and The Modern House, with wine-reference clarity from Wine Folly; the product retains its own content, visual system and mark. Playfair Display (names, prose) and Open Sans (controls, facts) are the self-hosted type pair since 2026-10-23; Alegreya remains in the wordmark. The founder's dashboard comp (2026-10-23) is the authority for catalog surfaces. EN/ES with honest per-field fallback. Theme toggle, top navigation and per-theme wine-red accents are confirmed.
+Paircraft identity; concise, opinionated pocket-guide voice. Editorial frame informed by Kinfolk and The Modern House, with wine-reference clarity from Wine Folly; the product retains its own content, visual system and mark. Playfair Display (names, prose) and Open Sans (controls, facts) are the self-hosted type pair since 2026-10-23; Alegreya remains in the wordmark. The founder's dashboard comp (2026-10-23) is the authority for catalog surfaces. EN/ES with honest per-field fallback. Theme toggle and top navigation are confirmed; since 2026-10-23 one wine red (`#961623`) serves both themes, and light uses a stone ground (`#e9e9e7`) with white surfaces.
 
 ## Evidence on Hand
 

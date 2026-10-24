@@ -6,7 +6,7 @@ interface Props { wine: CollectionEntry<'wines'>; region?: CollectionEntry<'regi
 const { wine, region } = Astro.props;
 const origin = region && originLine(region.data, ' · ');
 ---
-<article class="relative flex h-full flex-col bg-surface shadow-[0_4px_4px_rgb(0_0_0/0.25)]">
+<article class="relative flex h-full flex-col bg-surface tile-shadow">
   <div class="px-[1.15rem] pb-[1.15rem] pt-5">
     <WineGlass color={wine.data.color} class="h-[2.6rem] w-[2.6rem] text-ink" />
     {/* The name link stretches over the tile; occasion links and slotted links sit above it. */}

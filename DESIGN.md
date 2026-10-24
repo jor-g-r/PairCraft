@@ -2,12 +2,12 @@
 name: Paircraft
 description: A wine-first pocket guide with photo-led catalog heroes, Playfair names, light Open Sans facts and restrained wine-red emphasis.
 colors:
-  accent: "#7b2d2f"
-  paper: "#ffffff"
-  surface: "#f9f9f9"
+  accent: "#961623"
+  paper: "#e9e9e7"
+  surface: "#ffffff"
   ink: "#171717"
-  muted: "#525252"
-  rule: "#d9d9d9"
+  muted: "#4a4a4a"
+  rule: "#d1d1ce"
   on-accent: "#ffffff"
   chrome: "#ffffff"
   on-photo: "#ffffff"
@@ -180,7 +180,7 @@ components:
 
 **Creative North Star: "The Wine Pocket Guide"**
 
-Paircraft reads like a concise, opinionated pocket guide: Playfair Display carries wine identity and editorial prose; Open Sans (mostly Light) carries controls and facts; Alegreya survives only in the wordmark. The 2026-10-23 dashboard comp (the founder's Figma file, mobile-first) sets the catalog language: a square-cornered photograph darkened to 35% brightness carries a centered Playfair headline with one red word, white outline fields, and outline pills below it. Dark is the reference theme; the light rendition is still to be designed. Editorial modularity takes cues from Kinfolk and The Modern House; Wine Folly informs wine-reference clarity and bottle prominence without borrowing its assets or layout wholesale.
+Paircraft reads like a concise, opinionated pocket guide: Playfair Display carries wine identity and editorial prose; Open Sans (mostly Light) carries controls and facts; Alegreya survives only in the wordmark. The 2026-10-23 dashboard comp (the founder's Figma file, mobile-first) sets the catalog language: a square-cornered photograph darkened to 35% brightness carries a centered Playfair headline with one red word, white outline fields, and outline pills below it. Dark is the reference theme. Light ("stone", chosen 2026-10-23 from three previews: paper, stone, veil) mirrors it: a `#e9e9e7` stone ground with white header, tiles and insets on it, the same dark photo heroes, and the same `#961623` red. Editorial modularity takes cues from Kinfolk and The Modern House; Wine Folly informs wine-reference clarity and bottle prominence without borrowing its assets or layout wholesale.
 
 Density follows the task. Catalogs use scannable ruled rows, while wine pages give identity and an occasion choice room to breathe before sensory detail. Meal and snack remain distinct through wine, dish and free-text food lookup. `/wine-style` is a compact profile finder: body and color anchor the search; other recorded axes refine it; close matches link to exact catalogue examples and their reviewed pairings. EN/ES text and incomplete records must fit without invented copy or measurements.
 
@@ -200,7 +200,7 @@ One wine-red accent carries emphasis; the rest is neutral except the small, lite
 
 ### Primary
 
-- **Wine red — `accent` / `accent-dark`:** primary actions, Decisive match badges, the featured serving panel, selected language segment and active origin filter. The dark value is an explicit approved choice, not an automatic inversion.
+- **Wine red — `accent` / `accent-dark`:** primary actions, Decisive match badges, the featured serving panel, selected language segment and selected filter pills. Since 2026-10-23 both themes use the comp's `#961623` (light previously used `#7b2d2f`).
 - **White on wine red — `on-accent`:** remains white in both themes. Use this role for accent-filled controls; the legacy `white` utility changes to charcoal in dark mode.
 
 ### Neutral
@@ -213,7 +213,7 @@ One wine-red accent carries emphasis; the rest is neutral except the small, lite
 | Supporting text | `muted` | `muted-dark` | Descriptions, metadata, placeholders |
 | Hairline | `rule` | `rule-dark` | Row separators, field borders, heading rules |
 
-Since 2026-10-23 dark surfaces are lighter than the page ground: page `#0e0e0e`, header (`chrome`), wine tiles and insets `#1e1e1e`. `on-photo` is a white that the dark theme never remaps; use it for anything set on a darkened photograph, because the legacy `white` utility turns charcoal in dark mode. `hero-accent` (`#bd0000`) is the red word in a hero headline; the comp's `#b50000` was nudged to reach 3:1 on the darkened photograph. Existing entity templates also use Tailwind neutrals: `global.css` remaps `white` and `neutral-50` through `neutral-900` in dark mode. Worth trying retains the `neutral-100`/`neutral-900` pairing; Risky bridge retains a `neutral-300` outline and `neutral-700` text. These utility mappings are distinct from the semantic palette; prefer semantic roles for new surfaces.
+Since 2026-10-23 surfaces are lighter than the page ground in both themes: dark has page `#0e0e0e` under `#1e1e1e` header (`chrome`), tiles and insets; light has page `#e9e9e7` under white. Tiles take their elevation from `--tile-shadow` (`.tile-shadow`), soft in light and denser in dark. `on-photo` is a white that the dark theme never remaps; use it for anything set on a darkened photograph, because the legacy `white` utility turns charcoal in dark mode. `hero-accent` (`#bd0000`) is the red word in a hero headline; the comp's `#b50000` was nudged to reach 3:1 on the darkened photograph. Existing entity templates also use Tailwind neutrals: `global.css` remaps `white` and `neutral-50` through `neutral-900` in dark mode. Worth trying retains the `neutral-100`/`neutral-900` pairing; Risky bridge retains a `neutral-300` outline and `neutral-700` text. These utility mappings are distinct from the semantic palette; prefer semantic roles for new surfaces.
 
 The `wine-gold`, `wine-rose` and `wine-orange` entries are categorical SVG liquid fills, not secondary action palettes. Red wine uses the accent; sparkling wine uses the gold fill in a flute. Outlines inherit text color.
 
