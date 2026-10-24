@@ -121,6 +121,11 @@
   .spec-list dt { @apply text-[0.8125rem] font-light text-muted; }
   .spec-list dd { @apply text-right font-display text-[1.15rem]; }
   .spec-list dd small { @apply block font-sans text-[0.6875rem] font-light text-muted; }
+  .spec-list dd::first-letter { text-transform: uppercase; }
+
+  /* Small outline labels: food tags, wine-style hints, wines better kept for another dish. */
+  .tag-pill { @apply inline-block rounded-full border border-rule px-3 py-[0.2rem] text-xs font-light leading-[1.2rem]; }
+  .tag-pill::first-letter { text-transform: uppercase; }
 
   /* Wine tiles: one per row on phones, then two and three. */
   .wine-tiles { @apply grid grid-cols-1 gap-[0.9rem] sm:grid-cols-2 sm:gap-5 lg:grid-cols-3; }

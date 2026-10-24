@@ -196,6 +196,9 @@ export const UI_STRINGS: Record<string, Record<Locale, string>> = {
   'region.noWines': { en: 'No wines yet.', es: 'Aún no hay vinos.' },
 
   // Dish page
+  'dish.category': { en: 'Category', es: 'Categoría' },
+  'dish.weight': { en: 'Weight', es: 'Peso' },
+  'dish.intensityLabel': { en: 'Intensity', es: 'Intensidad' },
   'dish.intensity': { en: 'intensity', es: 'intensidad' },
   'dish.weightLight': { en: 'light', es: 'ligero' },
   'dish.weightMedium': { en: 'medium', es: 'medio' },
