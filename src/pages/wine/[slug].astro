@@ -100,12 +100,12 @@ const tanninAxes = ['softness', 'astringency', 'complexity', 'structure', 'firmn
               <ul class="mt-4 divide-y divide-rule border-t border-rule">
                 {entries.slice(0, 3).map(({ dish, result, prose }) => <li><DishPairing dish={dish} wineId={wine.id} occasion="meal" tier={result.tier} prose={prose} /></li>)}
               </ul>
-              {entries.length > 3 && <details class="border-t border-rule"><summary class="cursor-pointer py-4 text-sm font-semibold" data-es-value={`Ver ${entries.length - 3} maridajes más`}>View {entries.length - 3} more pairings</summary><ul class="divide-y divide-rule">{entries.slice(3).map(({ dish, result, prose }) => <li><DishPairing dish={dish} wineId={wine.id} occasion="meal" tier={result.tier} prose={prose} /></li>)}</ul></details>}
+              {entries.length > 3 && <details class="border-t border-rule"><summary class="cursor-pointer py-4 text-sm font-semibold" data-es-value={entries.length - 3 === 1 ? 'Ver 1 maridaje más' : `Ver ${entries.length - 3} maridajes más`}>{entries.length - 3 === 1 ? 'View 1 more pairing' : `View ${entries.length - 3} more pairings`}</summary><ul class="divide-y divide-rule">{entries.slice(3).map(({ dish, result, prose }) => <li><DishPairing dish={dish} wineId={wine.id} occasion="meal" tier={result.tier} prose={prose} /></li>)}</ul></details>}
             </section>)}
           </div>
         </>}
-        {occasion === 'snack' && boardGuides.length > 0 && <section class="mt-14 border-t border-rule pt-8">
-          <h3 class="font-display text-2xl font-semibold" data-i18n="wine.guidedBoards">Build a cheese board</h3>
+        {occasion === 'snack' && boardGuides.length > 0 && <section class="mt-14">
+          <h3 class="section-title" data-i18n="wine.guidedBoards">Build a cheese board</h3>
           <p class="mt-2 max-w-prose text-sm text-muted" data-i18n="wine.guidedBoardsNote">Each cheese keeps its own pairing; the board itself receives no averaged verdict.</p>
           {boardGuides.map(({ board, components }) => {
             const recommendedCount = components.filter(({ prose, result }) => prose && result.tier !== 'skip').length;
