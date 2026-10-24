@@ -1,8 +1,8 @@
 import type { ImageMetadata } from 'astro';
+import { photoCredit, type PhotoSource } from './photo-credit';
 
-interface RegionSourceMeta {
+interface RegionSourceMeta extends PhotoSource {
   alt?: string;
-  creditLine?: string;
 }
 
 export interface RegionImage {
@@ -23,7 +23,7 @@ for (const [path, mod] of Object.entries(images)) {
   const slug = path.split('/').pop()?.replace(/\.webp$/, '') ?? '';
   if (!slug) continue;
   const meta = sources[path.replace(/\.webp$/, '.source.json')]?.default;
-  bySlug.set(slug, { slug, image: mod.default, alt: meta?.alt, creditLine: meta?.creditLine });
+  bySlug.set(slug, { slug, image: mod.default, alt: meta?.alt, creditLine: photoCredit(meta) });
 }
 
 export function regionImage(slug: string | null | undefined): RegionImage | undefined {

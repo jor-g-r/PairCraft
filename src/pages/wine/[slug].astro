@@ -58,7 +58,7 @@ const retailer = listingUrl ? markets.flatMap((market) => market.data.retailers)
         <WineGlass color={wine.data.color} class="mt-6 h-10 w-10 text-ink" />
         <h1 class="mt-4 text-balance font-display text-[clamp(2.35rem,6.5vw,4rem)] font-normal leading-[1.1]">{wine.data.name}{wine.data.vintage && <span> {wine.data.vintage}</span>}</h1>
         <p class="mt-[0.8rem] max-w-[36rem] font-display text-[1.15rem] italic leading-[1.5] text-muted" data-es-value={wine.data.taglineEs}>{wine.data.tagline}</p>
-        <p class="mt-[0.8rem] text-[0.8125rem] font-light [&_a]:underline [&_a]:underline-offset-[0.2em]">
+        <p class="mt-[0.5rem] text-[0.8125rem] font-light [&_a]:inline-block [&_a]:py-[0.3rem] [&_a]:underline [&_a]:underline-offset-[0.2em]">
           {region && <a href={`/region/${region.id}`} data-es-value={originLine(region.data).es}>{originLine(region.data).en}</a>}
           {grapes.map(({ entry, percentage }) => entry && <><span aria-hidden="true"> · </span><a href={`/grape/${entry.id}`} data-es-value={entry.data.nameEs && `${entry.data.nameEs}${percentage != null && grapes.length > 1 ? ` ${percentage}%` : ''}`}>{entry.data.name}{percentage != null && grapes.length > 1 ? ` ${percentage}%` : ''}</a></>)}
         </p>
@@ -136,7 +136,7 @@ const retailer = listingUrl ? markets.flatMap((market) => market.data.retailers)
       <div class="relative isolate flex min-h-[26rem] flex-col justify-end overflow-hidden bg-[#1e1e1e] px-[1.15rem] pb-[1.4rem] pt-5 text-on-photo shadow-[0_4px_4px_rgb(0_0_0/0.25)] md:min-h-[30rem] md:p-8">
         {fromRegion && <Image src={fromRegion.image} alt={fromRegion.alt ?? ''} class="absolute inset-0 -z-20 h-full w-full object-cover" widths={[640, 1024, 1600]} sizes="(min-width: 1024px) 1024px, 100vw" />}
         <div class="absolute inset-0 -z-10 bg-linear-to-t from-black/85 to-black/15" aria-hidden="true"></div>
-        {fromRegion?.creditLine && <span class="absolute right-[0.9rem] top-[0.7rem] text-[0.625rem] font-light text-on-photo/75">{fromRegion.creditLine}</span>}
+        {fromRegion?.creditLine && <span class="absolute right-[0.9rem] top-[0.7rem] text-[0.625rem] font-light text-on-photo/70">{fromRegion.creditLine}</span>}
         <h2 class="font-display text-[1.9rem] font-normal" data-i18n="wine.character">In the glass</h2>
         <p class="mt-[0.7rem] max-w-[38rem] text-[0.9375rem] font-light leading-[1.7]" data-es-value={wine.data.summaryEs}>{wine.data.summary}</p>
         {region && <a href={`/region/${region.id}`} class="relative mt-[0.9rem] self-start text-xs font-light underline underline-offset-[0.2em] after:absolute after:-inset-x-[0.3rem] after:-inset-y-3 after:content-['']" data-es-value={`De ${region.data.nameEs ?? region.data.name}`}>{`From ${region.data.name}`}</a>}

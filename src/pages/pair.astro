@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import CatalogHero from '../components/CatalogHero.astro';
+import { photoCredit } from '../lib/photo-credit';
 import tableImage from '../assets/pair-table.webp';
 import pairSource from '../assets/pair-table.source.json';
 const dishes = await getCollection('dishes');
@@ -9,7 +10,7 @@ const sortedDishes = dishes.sort((a, b) => a.data.name.localeCompare(b.data.name
 ---
 <Base title="Find a pairing — Paircraft" description="Describe your dish and find a pairing in the guide.">
   <main class="pair-page page-shell max-w-3xl pt-6 md:pt-10">
-    <CatalogHero image={tableImage} alt={pairSource.alt}>
+    <CatalogHero image={tableImage} alt={pairSource.alt} credit={photoCredit(pairSource)}>
       <Fragment slot="head">
         <h1 class="hero-title"><span data-i18n="pair.headingLead">Find a food</span> <em data-i18n="pair.headingAccent">pairing</em>.</h1>
         <p class="hero-intro" data-i18n="pair.intro">Choose whether you’re pairing a meal or something to snack on, then tell us what food you have in mind.</p>

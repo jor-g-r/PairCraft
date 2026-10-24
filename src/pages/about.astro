@@ -2,6 +2,10 @@
 import Base from '../layouts/Base.astro';
 import { Image } from 'astro:assets';
 import tableImage from '../assets/wine-at-table.webp';
+import tableSource from '../assets/wine-at-table.source.json';
+import { photoCredit } from '../lib/photo-credit';
+
+const credit = photoCredit(tableSource);
 ---
 <Base title="About — Paircraft" description="A pocket guide to a better match between glass and plate.">
   <main class="page-shell max-w-5xl">
@@ -9,7 +13,7 @@ import tableImage from '../assets/wine-at-table.webp';
       <div class="relative isolate -mx-5 -mt-8 flex aspect-[4/5] items-end overflow-hidden bg-black px-5 pb-[1.4rem] pt-5 text-on-photo sm:mx-0 sm:mt-0 sm:shadow-[0_4px_4px_rgb(0_0_0/0.25)] md:sticky md:top-36">
         <Image src={tableImage} alt="Two glasses of wine on a table" class="absolute inset-0 -z-20 h-full w-full object-cover" widths={[480, 900]} sizes="(min-width: 768px) 450px, 100vw" loading="eager" />
         <div class="absolute inset-0 -z-10 bg-linear-to-t from-black/80 to-black/15 to-65%" aria-hidden="true"></div>
-        <a class="absolute right-4 top-[0.9rem] text-[0.6875rem] font-light text-on-photo/75 underline underline-offset-[0.2em] after:absolute after:-inset-x-1 after:-inset-y-3 after:content-['']" href="https://unsplash.com/photos/zmH_rmAxOgE" target="_blank" rel="noopener noreferrer">Matthias Oberholzer / Unsplash</a>
+        {credit && <p class="absolute right-[0.9rem] top-[0.7rem] text-[0.625rem] font-light text-on-photo/70">{credit}</p>}
         <h1 class="font-display text-[2.6rem] font-normal leading-[1.1] md:text-[3.25rem]"><span data-es-value="El vino encuentra su">Wine finds its</span> <em class="not-italic text-hero-accent" data-es-value="mesa">table</em>.</h1>
       </div>
       <div class="min-w-0">
