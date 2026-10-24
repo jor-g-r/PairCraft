@@ -6,9 +6,10 @@ export const prerender = false;
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import WineCard from '../components/WineCard.astro';
-import { countryEs, originLine } from '../lib/i18n';
-import { Image } from 'astro:assets';
-import tableImage from '../assets/wine-at-table.webp';
+import CatalogHero from '../components/CatalogHero.astro';
+import { t } from '../lib/i18n';
+import heroImage from '../assets/home-hero.webp';
+import heroSource from '../assets/home-hero.source.json';
 
 const wines = await getCollection('wines');
 const grapes = await getCollection('grapes');
@@ -71,164 +72,89 @@ const searchIndex: SearchEntry[] = [
   ...dishes.map((d) => ({ id: d.id, type: 'dish' as const, name: d.data.name })),
 ];
 
-// Most-stocked origins first: an order that reads the same in English and Spanish.
-const countryCounts = new Map<string, number>();
-for (const { region } of winesWithRegion) if (region) countryCounts.set(region.data.country, (countryCounts.get(region.data.country) ?? 0) + 1);
-const countries = [...countryCounts.keys()].sort((a, b) => countryCounts.get(b)! - countryCounts.get(a)! || a.localeCompare(b));
+// Only the wine types this market's feed actually carries get a filter.
+const colors = (['red', 'white', 'rose', 'sparkling', 'orange'] as const).filter((c) => winesWithRegion.some(({ wine }) => wine.data.color === c));
 ---
 
 <Base
   title="Paircraft"
   description="A pocket guide to what pairs with what — wines, grapes, regions, dishes."
 >
-  <main class="page-shell">
-    <header class="grid items-center gap-8 sm:grid-cols-[1fr_180px] md:grid-cols-[1fr_240px]">
-      <div>
-      <h1 class="page-title max-w-xl" data-i18n="home.heading">Your bottle. Tonight’s table.</h1>
-      <p class="mt-5 max-w-lg text-lg leading-relaxed text-muted" data-i18n="home.intro">
-        Find your wine. Decide what goes on the plate.
-      </p>
-      </div>
-      <Image src={tableImage} alt="Two glasses of wine at the table" class="hidden aspect-[4/5] w-full rounded-xl object-cover sm:block" widths={[240,480]} sizes="240px" loading="eager" />
-    </header>
-
-    <section class="relative mt-10 md:mt-14">
-      <label for="search-input" class="sr-only" data-i18n="home.searchLabel">Search wines, grapes, dishes, or regions</label>
-      <div class="relative">
-        <svg
-          class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-neutral-400"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          aria-hidden="true"
-        >
-          <circle cx="11" cy="11" r="7"></circle>
-          <path d="m21 21-4.3-4.3"></path>
-        </svg>
-        <input
-          id="search-input"
-          type="search"
-          role="combobox"
-          autocomplete="off"
-          placeholder="Type a wine, dish or grape"
-          class="w-full rounded-xl border border-neutral-300 bg-white py-4 pl-12 pr-4 text-base md:text-lg shadow-sm focus:border-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-900/10 transition"
-          aria-autocomplete="list"
-          aria-controls="search-results"
-          aria-expanded="false"
-          data-i18n-placeholder="home.searchPlaceholder"
-        />
-      </div>
-      <ul
-        id="search-results"
-        class="absolute left-0 right-0 top-full z-20 mt-2 hidden overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-lg"
-        role="listbox"
-      >
-      </ul>
-
-      <div class="mt-4 flex flex-wrap items-center gap-2 text-sm">
-        <span class="text-neutral-500" data-i18n="home.try">Try:</span>
-        <a
-          href="/grape/malbec"
-          class="inline-flex min-h-11 items-center rounded-full border border-rule px-3 py-1 hover:border-ink transition"
-          >Malbec</a
-        >
-        <a
-          href="/grape/albarino"
-          class="inline-flex min-h-11 items-center rounded-full border border-rule px-3 py-1 hover:border-ink transition"
-          >Albariño</a
-        >
-        <a
-          href="/dish/ribeye-grilled"
-          class="inline-flex min-h-11 items-center rounded-full border border-rule px-3 py-1 hover:border-ink transition"
-          >Ribeye</a
-        >
-      </div>
-    </section>
-
-    <div class="mt-3">
-      <a href="/wine-style" class="editorial-link text-muted" data-i18n="wineStyle.missingBottle">Not in the catalogue? Find an example by style.</a>
-    </div>
-
-    <div class="mt-12 border-t border-rule" aria-hidden="true"></div>
-
-    <section class="mt-6">
-      <div class="flex flex-wrap items-center gap-2 text-sm">
-        <label for="market-select" class="text-neutral-500" data-i18n="home.marketLabel">Showing wines available in</label>
+  <main class="page-shell pt-6 md:pt-10">
+    <CatalogHero image={heroImage} alt={heroSource.alt}>
+      <Fragment slot="head">
+        <h1 class="hero-title"><span data-i18n="home.headingLead">Your</span> <em data-i18n="home.headingAccent">bottle</em>.<span class="block" data-i18n="home.headingTail">Tonight’s table.</span></h1>
+        <p class="hero-intro" data-i18n="home.intro">Find your wine. Decide what goes on the plate.</p>
+      </Fragment>
+      <div slot="search" class="relative">
+        <label for="search-input" class="sr-only" data-i18n="home.searchLabel">Search wines, grapes, dishes, or regions</label>
         <div class="relative">
-          <select
-            id="market-select"
-            class="min-h-11 appearance-none rounded-full border border-rule bg-paper py-1 pl-3 pr-8 font-medium text-ink transition"
-          >
-            {
-              markets
-                .slice()
-                .sort((a, b) => a.data.name.localeCompare(b.data.name))
-                .map((m) => (
-                  <option value={m.data.code} selected={m.data.code === marketCode} data-es-value={m.data.nameEs}>
-                    {m.data.name}
-                  </option>
-                ))
-            }
-          </select>
-          <svg
-            class="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 h-4 w-4 text-neutral-400"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-          >
-            <path d="m6 9 6 6 6-6"></path>
-          </svg>
+          <svg class="pointer-events-none absolute left-3 top-1/2 h-[1.1rem] w-[1.1rem] -translate-y-1/2 text-on-photo sm:left-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg>
+          <input
+            id="search-input"
+            type="search"
+            role="combobox"
+            autocomplete="off"
+            placeholder="Type a wine, dish or grape"
+            class="hero-field"
+            aria-autocomplete="list"
+            aria-controls="search-results"
+            aria-expanded="false"
+            data-i18n-placeholder="home.searchPlaceholder"
+          />
         </div>
+        <ul
+          id="search-results"
+          class="absolute left-0 right-0 top-full z-20 mt-2 hidden overflow-hidden rounded-xl border border-rule bg-surface text-left text-ink shadow-lg"
+          role="listbox"
+        >
+        </ul>
+        <p class="mt-[0.7rem] flex flex-wrap items-baseline gap-x-[0.65rem] gap-y-1 text-xs font-light sm:text-sm">
+          <span class="mr-[0.3rem]" data-i18n="home.try">Try:</span>
+          <a href="/grape/malbec" class="hero-link italic">Malbec</a>
+          <a href="/grape/albarino" class="hero-link italic">Albariño</a>
+          <a href="/dish/ribeye-grilled" class="hero-link italic">Ribeye</a>
+        </p>
+        <a href="/wine-style" class="hero-link mt-[0.55rem] inline-block text-xs" data-i18n="wineStyle.missingBottle">Not in the catalogue? Find an example by style.</a>
       </div>
+      <div slot="foot" class="flex items-center justify-between gap-3">
+        <label for="market-select" class="min-w-0 text-balance text-xs font-light sm:text-sm" data-i18n="home.marketLabel">Showing wines available in</label>
+        <select id="market-select" class="hero-select">
+          {
+            markets
+              .slice()
+              .sort((a, b) => a.data.name.localeCompare(b.data.name))
+              .map((m) => (
+                <option value={m.data.code} selected={m.data.code === marketCode} data-es-value={m.data.nameEs}>
+                  {m.data.name}
+                </option>
+              ))
+          }
+        </select>
+      </div>
+    </CatalogHero>
 
+    <section class="mt-[1.275rem]">
       {
         winesWithRegion.length > 0 ? (
           <>
-            <p class="mt-6 text-xs uppercase tracking-widest text-neutral-500" data-i18n="home.origin">Origin</p>
-            <div
-              class="mt-2 flex flex-wrap gap-2"
-              id="region-pills"
-              role="group"
-              aria-label="Filter by origin"
-            >
-              <button
-                type="button"
-                class="region-pill is-active min-h-11 rounded-full border px-3 py-1 text-sm transition"
-                data-country=""
-                aria-pressed="true"
-                data-i18n="home.all"
-              >
-                All
-              </button>
-              {countries.map((c) => (
-                <button
-                  type="button"
-                  class="region-pill min-h-11 rounded-full border px-3 py-1 text-sm transition"
-                  data-country={c}
-                  aria-pressed="false"
-                  data-es-value={countryEs(c)}
-                >
-                  {c}
-                </button>
+            <p id="type-label" class="text-xs font-light" data-i18n="home.type">Type</p>
+            <div class="-mx-5 flex gap-[0.6rem] overflow-x-auto px-5 py-[0.6rem] [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 [&::-webkit-scrollbar]:hidden" id="type-pills" role="group" aria-labelledby="type-label">
+              <button type="button" class="type-pill" data-color="" aria-pressed="true" data-i18n="home.all">All</button>
+              {colors.map((c) => (
+                <button type="button" class="type-pill" data-color={c} aria-pressed="false" data-i18n={`color.${c}`}>{t(`color.${c}`)}</button>
               ))}
             </div>
 
-            <ul class="mt-5 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3" id="wine-grid">
+            <ul class="wine-feed wine-tiles mt-3" id="wine-grid">
               {winesWithRegion.map(({ wine, region }) => (
-                <li class="wine-card" data-country={region?.data.country ?? ''}>
+                <li class="wine-card" data-color={wine.data.color}>
                   <WineCard wine={wine} region={region} />
                 </li>
               ))}
             </ul>
-            <p id="grid-empty" class="mt-6 hidden text-center text-sm text-neutral-500 italic" data-i18n="home.noWinesOrigin">
-              No wines from this origin yet.
+            <p id="grid-empty" class="mt-6 hidden text-center text-sm text-neutral-500 italic" data-i18n="home.noWinesType">
+              No wines of this type here yet.
             </p>
           </>
         ) : (
@@ -413,15 +339,15 @@ const countries = [...countryCounts.keys()].sort((a, b) => countryCounts.get(b)!
         }
       });
 
-      // Region pills + grid filter
-      const pills = document.querySelectorAll('.region-pill');
+      // Type pills + grid filter
+      const pills = document.querySelectorAll('.type-pill');
       const cards = document.querySelectorAll('.wine-card');
       const empty = document.getElementById('grid-empty');
 
-      function applyFilter(country) {
+      function applyFilter(color) {
         let visible = 0;
         cards.forEach((card) => {
-          const match = !country || card.dataset.country === country;
+          const match = !color || card.dataset.color === color;
           card.classList.toggle('hidden', !match);
           if (match) visible++;
         });
@@ -430,13 +356,9 @@ const countries = [...countryCounts.keys()].sort((a, b) => countryCounts.get(b)!
 
       pills.forEach((p) => {
         p.addEventListener('click', () => {
-          pills.forEach((q) => {
-            q.classList.remove('is-active');
-            q.setAttribute('aria-pressed', 'false');
-          });
-          p.classList.add('is-active');
+          pills.forEach((q) => q.setAttribute('aria-pressed', 'false'));
           p.setAttribute('aria-pressed', 'true');
-          applyFilter(p.dataset.country || '');
+          applyFilter(p.dataset.color || '');
         });
       });
 
@@ -454,18 +376,4 @@ const countries = [...countryCounts.keys()].sort((a, b) => countryCounts.get(b)!
     document.addEventListener('astro:page-load', initPaircraftHome);
   </script>
 
-  <style>
-    .region-pill {
-      border-color: var(--color-rule);
-      color: var(--color-muted);
-    }
-    .region-pill:hover {
-      border-color: var(--color-ink);
-    }
-    .region-pill.is-active {
-      background-color: var(--color-accent);
-      color: white;
-      border-color: var(--color-accent);
-    }
-  </style>
 </Base>

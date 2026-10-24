@@ -61,7 +61,7 @@ const styleCorpus = wines.map(({ id, data }) => ({
       <p id="wine-style-summary" class="mt-3 text-sm font-semibold"></p>
       <p class="mt-4 max-w-prose text-sm leading-relaxed text-muted" data-i18n="wineStyle.disclaimer">Open a bottle to see its exact reviewed pairings. Use them as a style reference for your wine.</p>
       <p id="wine-style-empty" class="mt-6 max-w-prose text-muted" data-i18n="wineStyle.empty" hidden>No similar bottles are listed in your market yet. Change a descriptor or browse the full catalogue.</p>
-      <ul id="wine-style-candidates" class="mt-5 grid gap-x-8 sm:grid-cols-2">
+      <ul id="wine-style-candidates" class="wine-tiles mt-5 lg:grid-cols-2">
         {wines.map((wine) => <li data-style-candidate={wine.id} hidden><WineCard wine={wine} region={regions.get(wine.data.region.id)}>
           {examplePairings.get(wine.id)!.length > 0 && <ul class="mt-4 space-y-1">
             {examplePairings.get(wine.id)!.map(({ dish, tier, occasion }) => <li><a href={`/dish/${dish.id}?wine=${wine.id}&occasion=${occasion}`} class="group flex min-h-11 items-center justify-between gap-3">

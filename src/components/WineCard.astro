@@ -6,15 +6,17 @@ interface Props { wine: CollectionEntry<'wines'>; region?: CollectionEntry<'regi
 const { wine, region } = Astro.props;
 const origin = region && originLine(region.data, ' · ');
 ---
-<article class="flex h-full flex-col border-t border-rule py-6">
-  <div class="flex items-start gap-4">
-    <WineGlass color={wine.data.color} class="mt-1 h-9 w-9 shrink-0" />
-    <div><h2 class="font-display text-2xl font-semibold leading-tight"><a href={`/wine/${wine.id}`} class="hover:underline">{wine.data.name}</a></h2>{origin && <p class="mt-2 text-xs text-muted" data-es-value={origin.es}>{origin.en}</p>}</div>
+<article class="relative flex h-full flex-col bg-surface shadow-[0_4px_4px_rgb(0_0_0/0.25)]">
+  <div class="px-[1.15rem] pb-[1.15rem] pt-5">
+    <WineGlass color={wine.data.color} class="h-[2.6rem] w-[2.6rem] text-ink" />
+    {/* The name link stretches over the tile; occasion links and slotted links sit above it. */}
+    <h2 class="mt-[0.9rem] font-display text-[1.4rem] font-normal leading-[1.15]"><a href={`/wine/${wine.id}`} class="after:absolute after:inset-0 after:content-['']">{wine.data.name}</a></h2>
+    {origin && <p class="mt-[0.35rem] text-xs font-light text-muted" data-es-value={origin.es}>{origin.en}</p>}
+    <p class="mt-[0.8rem] text-sm font-light leading-[1.55] text-muted" data-es-value={wine.data.taglineEs}>{wine.data.tagline}</p>
+    {Astro.slots.has('default') && <div class="relative z-[1]"><slot /></div>}
   </div>
-  <p class="mt-4 font-display text-lg italic leading-relaxed text-muted" data-es-value={wine.data.taglineEs}>{wine.data.tagline}</p>
-  <slot />
-  <nav class="mt-auto flex flex-wrap gap-x-5 gap-y-2 pt-5 text-sm font-semibold" aria-label="Pairing occasions">
-    <a href={`/wine/${wine.id}?occasion=meal#pairings`} class="min-h-11 inline-flex items-center underline decoration-rule underline-offset-4 hover:decoration-current" data-i18n="wine.forMeal">For a meal</a>
-    <a href={`/wine/${wine.id}?occasion=snack#pairings`} class="min-h-11 inline-flex items-center underline decoration-rule underline-offset-4 hover:decoration-current" data-i18n="wine.forSnack">For a snack</a>
+  <nav class="relative z-[1] mt-auto grid grid-cols-2 border-t border-rule" aria-label="Pairing occasions">
+    <a href={`/wine/${wine.id}?occasion=meal#pairings`} class="flex min-h-11 items-center justify-center px-2 text-center text-[0.6875rem] uppercase tracking-[0.04em] transition-colors hover:bg-accent hover:text-on-accent" data-i18n="wine.forMeal">For a meal</a>
+    <a href={`/wine/${wine.id}?occasion=snack#pairings`} class="flex min-h-11 items-center justify-center border-l border-rule px-2 text-center text-[0.6875rem] uppercase tracking-[0.04em] transition-colors hover:bg-accent hover:text-on-accent" data-i18n="wine.forSnack">For a snack</a>
   </nav>
 </article>

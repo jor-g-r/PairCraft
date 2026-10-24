@@ -1,6 +1,6 @@
 ---
 name: Paircraft
-description: A wine-first pocket guide with editorial type, ruled lists, and restrained wine-red emphasis.
+description: A wine-first pocket guide with photo-led catalog heroes, Playfair names, light Open Sans facts and restrained wine-red emphasis.
 colors:
   accent: "#7b2d2f"
   paper: "#ffffff"
@@ -9,67 +9,76 @@ colors:
   muted: "#525252"
   rule: "#d9d9d9"
   on-accent: "#ffffff"
+  chrome: "#ffffff"
+  on-photo: "#ffffff"
+  hero-accent: "#bd0000"
   accent-dark: "#961623"
-  paper-dark: "#1e1e1e"
-  surface-dark: "#111111"
+  paper-dark: "#0e0e0e"
+  surface-dark: "#1e1e1e"
   ink-dark: "#fafafa"
   muted-dark: "#bdbdbd"
-  rule-dark: "#515151"
+  rule-dark: "#3a3a3a"
+  chrome-dark: "#1e1e1e"
   wine-gold: "#e8d97e"
   wine-rose: "#e8a4a8"
   wine-orange: "#cf7e2a"
 typography:
+  hero:
+    fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
+    fontSize: "2.5rem"
+    fontWeight: 400
+    lineHeight: 1.2
   display:
-    fontFamily: '"Alegreya Variable", ui-serif, Georgia, serif'
+    fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
     fontSize: "clamp(2.5rem, 7vw, 5.5rem)"
     fontWeight: 700
     lineHeight: 1.05
     letterSpacing: "-0.03em"
   headline:
-    fontFamily: '"Alegreya Variable", ui-serif, Georgia, serif'
+    fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
     fontSize: "2.25rem"
     fontWeight: 700
     lineHeight: 1.25
     letterSpacing: "-0.025em"
   headline-sm:
-    fontFamily: '"Alegreya Variable", ui-serif, Georgia, serif'
+    fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
     fontSize: "3.75rem"
     fontWeight: 700
     lineHeight: 1.25
     letterSpacing: "-0.025em"
   section:
-    fontFamily: '"Alegreya Variable", ui-serif, Georgia, serif'
+    fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
     fontSize: "1.5rem"
     fontWeight: 600
     lineHeight: "2rem"
   section-sm:
-    fontFamily: '"Alegreya Variable", ui-serif, Georgia, serif'
+    fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
     fontSize: "1.875rem"
     fontWeight: 600
     lineHeight: "2.25rem"
   title:
-    fontFamily: '"Alegreya Variable", ui-serif, Georgia, serif'
+    fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
     fontSize: "1.25rem"
     fontWeight: 600
     lineHeight: "1.75rem"
   pairing-prose:
-    fontFamily: '"Alegreya Variable", ui-serif, Georgia, serif'
+    fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
     fontStyle: italic
     fontSize: "1.125rem"
     fontWeight: 400
     lineHeight: 1.375
   body:
-    fontFamily: '"Source Sans 3 Variable", ui-sans-serif, system-ui, sans-serif'
+    fontFamily: '"Open Sans Variable", ui-sans-serif, system-ui, sans-serif'
     fontSize: "1rem"
     fontWeight: 400
     lineHeight: 1.625
   label:
-    fontFamily: '"Source Sans 3 Variable", ui-sans-serif, system-ui, sans-serif'
+    fontFamily: '"Open Sans Variable", ui-sans-serif, system-ui, sans-serif'
     fontSize: "0.875rem"
     fontWeight: 600
     lineHeight: "1.25rem"
   tier:
-    fontFamily: '"Source Sans 3 Variable", ui-sans-serif, system-ui, sans-serif'
+    fontFamily: '"Open Sans Variable", ui-sans-serif, system-ui, sans-serif'
     fontSize: "0.75rem"
     fontWeight: 500
     lineHeight: "1rem"
@@ -91,6 +100,31 @@ spacing:
   "16": "4rem"
   "20": "5rem"
 components:
+  catalog-hero:
+    backgroundColor: "#000000"
+    textColor: "{colors.on-photo}"
+    rounded: "0"
+    padding: "2.45rem 1.15rem 1.3rem"
+  hero-field:
+    textColor: "{colors.on-photo}"
+    rounded: "5px"
+    padding: "0 0.75rem 0 2.45rem"
+    height: "2.6rem"
+  type-pill:
+    textColor: "{colors.ink}"
+    typography: "{typography.tier}"
+    rounded: "{rounded.full}"
+    padding: "0 0.875rem"
+    height: "1.6rem"
+  type-pill-selected:
+    backgroundColor: "{colors.accent}"
+    textColor: "{colors.on-accent}"
+    rounded: "{rounded.full}"
+  wine-tile:
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.ink}"
+    rounded: "0"
+    padding: "1.25rem 1.15rem 1.15rem"
   button-primary:
     backgroundColor: "{colors.accent}"
     textColor: "{colors.on-accent}"
@@ -146,18 +180,19 @@ components:
 
 **Creative North Star: "The Wine Pocket Guide"**
 
-Paircraft reads like a concise, opinionated pocket guide: Alegreya carries wine identity and editorial prose; Source Sans 3 carries controls and facts. Generous white or charcoal ground, restrained wine-red emphasis, ruled lists, and scene photography keep the guide distinct from a generic wine catalogue. Editorial modularity takes cues from Kinfolk and The Modern House; Wine Folly informs wine-reference clarity and bottle prominence without borrowing its assets or layout wholesale.
+Paircraft reads like a concise, opinionated pocket guide: Playfair Display carries wine identity and editorial prose; Open Sans (mostly Light) carries controls and facts; Alegreya survives only in the wordmark. The 2026-10-23 dashboard comp (the founder's Figma file, mobile-first) sets the catalog language: a square-cornered photograph darkened to 35% brightness carries a centered Playfair headline with one red word, white outline fields, and outline pills below it. Dark is the reference theme; the light rendition is still to be designed. Editorial modularity takes cues from Kinfolk and The Modern House; Wine Folly informs wine-reference clarity and bottle prominence without borrowing its assets or layout wholesale.
 
 Density follows the task. Catalogs use scannable ruled rows, while wine pages give identity and an occasion choice room to breathe before sensory detail. Meal and snack remain distinct through wine, dish and free-text food lookup. `/wine-style` is a compact profile finder: body and color anchor the search; other recorded axes refine it; close matches link to exact catalogue examples and their reviewed pairings. EN/ES text and incomplete records must fit without invented copy or measurements.
 
 **Key Characteristics:**
 - Wine-red actions and verdicts on neutral, theme-aware ground.
-- Alegreya identity and editorial prose; Source Sans 3 controls and facts.
+- Photo-led catalog heroes (`CatalogHero.astro`) on home, `/wines`, `/dishes` and `/pair`.
+- Playfair identity and editorial prose; light Open Sans controls and facts.
 - Ruled lists, oval properties, thin independent sensory tracks.
 - Editorial scene photographs with recorded provenance; never the specific bottle.
 - Mobile-first reading with explicit navigation and honest missing-data states.
 
-Recorded from the current working-tree implementation on 2026-10-14, not from a production deployment or a real-device audit. Evidence: `src/styles/global.css`, `src/layouts/Base.astro`, `src/components/`, `/wine-style`, wine and food occasion flows, entity templates, `src/lib/region-images.ts`, and scene imagery with `*.source.json` provenance sidecars. `PRODUCT.md` and `.impeccable/surfaces/paircraft.md` establish product direction; source code establishes implemented values. The sidecar's illustrative tonal ramps are panel aids, not additional application colors.
+Recorded from the current working-tree implementation on 2026-10-14 and updated for the 2026-10-23 dashboard comp; not from a production deployment or a real-device audit. Evidence: `src/styles/global.css`, `src/layouts/Base.astro`, `src/components/`, `/wine-style`, wine and food occasion flows, entity templates, `src/lib/region-images.ts`, and scene imagery with `*.source.json` provenance sidecars. `PRODUCT.md` and `.impeccable/surfaces/paircraft.md` establish product direction; source code establishes implemented values. The sidecar's illustrative tonal ramps are panel aids, not additional application colors.
 
 ## Colors
 
@@ -178,7 +213,7 @@ One wine-red accent carries emphasis; the rest is neutral except the small, lite
 | Supporting text | `muted` | `muted-dark` | Descriptions, metadata, placeholders |
 | Hairline | `rule` | `rule-dark` | Row separators, field borders, heading rules |
 
-Dark surfaces are darker than the page ground. Preserve that direction rather than treating every panel as a lighter raised card. Existing entity templates also use Tailwind neutrals: `global.css` remaps `white` and `neutral-50` through `neutral-900` in dark mode. Worth trying retains the `neutral-100`/`neutral-900` pairing; Risky bridge retains a `neutral-300` outline and `neutral-700` text. These utility mappings are distinct from the semantic palette; prefer semantic roles for new surfaces.
+Since 2026-10-23 dark surfaces are lighter than the page ground: page `#0e0e0e`, header (`chrome`), wine tiles and insets `#1e1e1e`. `on-photo` is a white that the dark theme never remaps; use it for anything set on a darkened photograph, because the legacy `white` utility turns charcoal in dark mode. `hero-accent` (`#bd0000`) is the red word in a hero headline; the comp's `#b50000` was nudged to reach 3:1 on the darkened photograph. Existing entity templates also use Tailwind neutrals: `global.css` remaps `white` and `neutral-50` through `neutral-900` in dark mode. Worth trying retains the `neutral-100`/`neutral-900` pairing; Risky bridge retains a `neutral-300` outline and `neutral-700` text. These utility mappings are distinct from the semantic palette; prefer semantic roles for new surfaces.
 
 The `wine-gold`, `wine-rose` and `wine-orange` entries are categorical SVG liquid fills, not secondary action palettes. Red wine uses the accent; sparkling wine uses the gold fill in a flute. Outlines inherit text color.
 
@@ -186,9 +221,13 @@ The `wine-gold`, `wine-rose` and `wine-orange` entries are categorical SVG liqui
 
 ## Typography
 
-**Display Font:** self-hosted Alegreya Variable, with ui-serif / Georgia / serif fallbacks.
+**Display Font:** self-hosted Playfair Display Variable (upright and italic), with ui-serif / Georgia / serif fallbacks.
 
-**Body Font:** self-hosted Source Sans 3 Variable, with ui-sans-serif / system-ui / sans-serif fallbacks. Controls and labels share this family; there is no separate mono face.
+**Body Font:** self-hosted Open Sans Variable (upright and italic, 300–800), with ui-sans-serif / system-ui / sans-serif fallbacks. Controls and labels share this family; there is no separate mono face.
+
+**Wordmark:** Alegreya Variable (`font-brand`), only for "Paircraft" in the header.
+
+**Hero type** (measured from the comp at 375px): headline Playfair 400 at 2.5rem / 1.2, rising to 3.5rem at `sm` and 4.25rem at `lg`; intro Open Sans Light 0.875rem; secondary hero text, labels and the "Type" label Open Sans Light 0.75rem; pills uppercase Light 0.6875rem. Search and select stay at 1rem so iOS does not zoom on focus (the comp shows ~0.75rem), and the style-finder link stays at 0.75rem (the comp shows ~0.5rem).
 
 The serif carries wine identity and opinion; the sans carries operation and evidence. This is an observed Tailwind size ladder plus a fluid wine title, not a newly imposed modular ratio.
 
@@ -202,7 +241,7 @@ The serif carries wine identity and opinion; the sans carries operation and evid
 - **Body:** `body` describes relaxed reading copy. Ordinary unmodified body text uses line-height (1.5); pairing descriptions use smaller Source Sans 3 (0.875rem) with relaxed line-height. Long copy commonly stops at the prose measure (65ch).
 - **Label:** `label` describes actions. Fields remain at readable base size (1rem); metadata and tier chips use smaller text (0.75rem). Property terms are functional uppercase labels (0.75rem, tracking 0.05em), not decorative section kickers.
 
-**The Two Voices Rule.** Set names and concise editorial judgments in Alegreya; set controls, supporting descriptions and factual labels in Source Sans 3.
+**The Two Voices Rule.** Set names and concise editorial judgments in Playfair Display; set controls, supporting descriptions and factual labels in Open Sans.
 
 ## Layout
 
@@ -212,9 +251,10 @@ The serif carries wine identity and opinion; the sans carries operation and evid
 - **Header:** sticky, opaque, bordered and two-row at all breakpoints. Brand and theme/language controls occupy the first row; four navigation links occupy the second. Mobile navigation distributes links across the width; from `sm` it aligns left with (2rem) gaps. Header stacking level is (30); page scroll padding is (9rem).
 - **Wine detail:** centered identity, tagline, origin/grape links and two direct occasion actions. Sweetness and acidity stack on mobile and sit side by side at `sm`. The property definition list stays **2×2 on mobile**, with (1rem) gaps, becoming four columns at `md`. Serving temperature, body, tannin and finish keep this order.
 - **Pairing feeds:** meal and snack selectors are persistent links. Meal recommendations retain tri-modal ruled groups, but each pairing appears once, under its dominant mode (the mode with the most rule weight, `dominantMode` in `src/lib/tier.ts`); on desktop the grid has one column per non-empty group, and a single group keeps a reading measure. Pairing rows show tier, food name and the explanation only; the food description lives on the food page. Snack recommendations are a single food-first list ordered by qualitative tier, avoiding duplicate bites across rule modes. A guided board appears only when at least one component has curated pairing prose; every component retains its own tier and explanation. A component without a curated pairing reads "Better with another wine" and links to its food page, which lists only the wines that do work; it is never averaged.
-- **Catalogs and finders:** `/wines` leads with full-width name search and a visible market selector; color/style filters live in a native disclosure so common search results appear before optional controls. Wine results use one / two / three columns at base / `sm` / `lg`. Dish results use one column then two at `sm`, with a separate occasion selector. `/wine-style` uses a compact multi-field form and ranked examples, without showing a numeric fit score; results open with a one-line summary of the chosen descriptors, and each example carries its best reviewed meal and snack pairing. A grape page features the first bottle stocked in the visitor's market, ordered by the grape's own colour, then single-variety bottles, then the most widely stocked. Empty results remain explanatory text with an available next action.
+- **Catalog heroes:** home, `/wines`, `/dishes` and `/pair` open with `CatalogHero.astro`: a square photo card (2:3 on phones, at least 32–36rem tall from `sm`), the photograph under a 65% black overlay, a centered headline with one `hero-accent` word, a search slot, and a foot row (market selector on home and `/wines`, "Find a pairing" on `/dishes`, the style-finder link on `/pair`). Filter pills follow under a small Light label: Type (All / Red / White / Rosé / Sparkling, only the types the feed carries) on home and `/wines`, Occasion on `/dishes`. On phones the Type row scrolls sideways rather than wrapping. `/pair` puts the meal/snack pills, the field and the submit inside the card; familiar foods follow as outline pills.
+- **Catalogs and finders:** `/wines` leads with name search and the market selector inside its hero; Type pills replace the colour select, and the style filter lives in a native disclosure. Wine results use one / two / three columns at base / `sm` / `lg`. Dish results use one column then two at `sm`, with a separate occasion selector. `/wine-style` uses a compact multi-field form and ranked examples, without showing a numeric fit score; results open with a one-line summary of the chosen descriptors, and each example carries its best reviewed meal and snack pairing. A grape page features the first bottle stocked in the visitor's market, ordered by the grape's own colour, then single-variety bottles, then the most widely stocked. Empty results remain explanatory text with an available next action.
 - **About:** one column becoming two at `md`, with a portrait editorial image (4:5). The same table photograph is a small supporting image on home, hidden below `sm`. It is not bottle or regional evidence.
-- **Editorial photo bands:** `/dishes` and `/pair` each close with one lazy 21:9 band (`dishes-table`, `pair-table`), so the occasion choice sits directly under the instruction it answers; the `/wines` catalogue stays search-first without a decorative cellar image. Region pages carry a 21:9 region band after the header; wine pages close the "In the glass" section with a 21:9 "From <region>" band; grape pages carry a 3:1 strip labeled "From <region>", sourced from the first signature region with an image. The home's catalog divider is a plain hairline, not a labeled kicker.
+- **Editorial photo bands:** `/dishes` and `/pair` no longer close with a band; their hero carries the photograph (`dishes-hero`, `pair-table`). The `dishes-table` asset is retained but unused. Region pages carry a 21:9 region band after the header; wine pages close the "In the glass" section with a 21:9 "From <region>" band; grape pages carry a 3:1 strip labeled "From <region>", sourced from the first signature region with an image. The home's catalog divider is a plain hairline, not a labeled kicker.
 
 `/wines` writes filter state to the query string, and the wine page's explicit “All wines” links (`data-catalog-return`) restore the last catalog query: the catalog saves its query to session storage (`pc_catalog_query`), and a page-load handler rewrites those links on every navigation. Wine-card titles open the wine record; two distinct text links enter meal or snack pairings directly.
 
@@ -256,7 +296,7 @@ Decisive match is filled wine red with white text; Worth trying is neutral-fille
 
 ### Catalog and pairing rows
 
-`WineCard.astro` is the one wine card on home, `/wines` and `/wine-style`: a top rule, vertical padding (1.5rem), a small SVG glass (2.25rem), Alegreya title, optional origin, italic tagline, an optional slot (on `/wine-style`, the bottle's best reviewed meal and snack pairing with tier chips) and two direct occasion links ("For a meal" / "Para comer", "For a snack" / "Para picar"; the same two labels everywhere an occasion is chosen). The title underlines on hover. Dish catalog rows use the same ruled reading model; pairing rows use slightly tighter vertical padding (1.25rem), a tier chip, food title and optional italic explanation; the food description lives on the food page. A wine-to-food link carries `?wine=<id>` so the food page can show a contextual return link when it finds that wine. `WineStyle` keeps candidate cards tied to specific catalogue wines and routes to that example's exact pairing feed.
+`WineCard.astro` is the one wine card on home, `/wines` and `/wine-style`, chosen in a live Impeccable round on 2026-10-23 ("cellar tiles"): a square `surface` tile with the hero's soft shadow, an SVG glass (2.6rem), a Playfair 400 name (1.4rem) whose link stretches over the tile, a Light origin line, a Light tagline, an optional slot (on `/wine-style`, the bottle's best reviewed meal and snack pairing with tier chips), and two equal uppercase occasion halves split by a hairline ("For a meal" / "Para comer", "For a snack" / "Para picar") that fill wine red on hover. `.wine-tiles` lays them out one / two / three per row at base / `sm` / `lg`. Dish catalog rows use the same ruled reading model; pairing rows use slightly tighter vertical padding (1.25rem), a tier chip, food title and optional italic explanation; the food description lives on the food page. A wine-to-food link carries `?wine=<id>` so the food page can show a contextual return link when it finds that wine. `WineStyle` keeps candidate cards tied to specific catalogue wines and routes to that example's exact pairing feed.
 
 ### Editorial photo bands
 
@@ -288,7 +328,8 @@ The shared section heading pairs semibold Alegreya with a flexible trailing rule
 
 ### Do:
 - **Do** use semantic colors so page ground, text, rules and accent-filled controls remain coherent in both themes.
-- **Do** preserve Alegreya names and editorial prose alongside Source Sans 3 controls and facts.
+- **Do** preserve Playfair names and editorial prose alongside Open Sans controls and facts; keep Alegreya to the wordmark.
+- **Do** set type on darkened photographs with `on-photo`, never the remapped `white` utility.
 - **Do** keep wine properties in a mobile 2×2 grid and display sweetness and acidity independently.
 - **Do** use ruled, linked rows and native disclosures for readable pairing lists.
 - **Do** label style guidance, show missing finish honestly, and omit unrecorded optional detail.

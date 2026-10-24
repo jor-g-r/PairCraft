@@ -1,26 +1,36 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import PhotoBand from '../components/PhotoBand.astro';
-import tableImage from '../assets/dishes-table.webp';
+import CatalogHero from '../components/CatalogHero.astro';
+import heroImage from '../assets/dishes-hero.webp';
+import heroSource from '../assets/dishes-hero.source.json';
 const dishes = (await getCollection('dishes')).sort((a,b) => a.data.name.localeCompare(b.data.name));
 ---
 <Base title="Dishes — Paircraft" description="Find the right wine for a dish.">
-  <main class="page-shell">
-    <header><h1 class="page-title" data-i18n="nav.dishes">Dishes</h1><p class="mt-4 text-lg text-muted" data-i18n="dishes.intro">A good plate deserves the right glass.</p></header>
-    <nav class="mt-8 flex gap-6 border-b border-rule" aria-label="Choose a food occasion">
-      <a href="?occasion=meal" class="min-h-11 inline-flex items-center border-b-2 border-transparent text-sm font-semibold text-muted hover:text-ink" data-dish-occasion="meal" data-i18n="dishes.forMeal">For a meal</a>
-      <a href="?occasion=snack" class="min-h-11 inline-flex items-center border-b-2 border-transparent text-sm font-semibold text-muted hover:text-ink" data-dish-occasion="snack" data-i18n="dishes.forSnack">For a snack</a>
-    </nav>
-    <label class="mt-6 block max-w-xl space-y-2 text-sm"><span data-i18n="dishes.search">Find a dish</span><span class="relative block"><svg class="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-neutral-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg><input id="dish-search" class="field pl-12" type="search" placeholder="Type a dish or bite" data-i18n-placeholder="dishes.searchPlaceholder" /></span></label>
+  <main class="page-shell pt-6 md:pt-10">
+    <CatalogHero image={heroImage} alt={heroSource.alt}>
+      <Fragment slot="head">
+        <h1 class="hero-title"><span data-i18n="dishes.headingLead">A good</span> <em data-i18n="dishes.headingAccent">plate</em> <span data-i18n="dishes.headingTail">deserves the right glass.</span></h1>
+        <p class="hero-intro" data-i18n="dishes.intro">Choose the occasion first; then find the food and wine that belong together.</p>
+      </Fragment>
+      <label slot="search" class="relative block"><span class="sr-only" data-i18n="dishes.search">Find a dish</span><svg class="pointer-events-none absolute left-3 top-1/2 h-[1.1rem] w-[1.1rem] -translate-y-1/2 text-on-photo sm:left-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg><input id="dish-search" class="hero-field" type="search" placeholder="Type a dish or bite" data-i18n-placeholder="dishes.searchPlaceholder" /></label>
+      <div slot="foot" class="flex items-center justify-between gap-3">
+        <span class="min-w-0 text-xs font-light sm:text-sm" data-i18n="dishes.custom">Something else on the menu?</span>
+        <a href="/pair" class="inline-flex h-[2.1rem] shrink-0 items-center rounded-[5px] border border-on-photo/85 px-3 text-sm font-light hover:bg-on-photo/10 sm:h-10" data-i18n="nav.pair">Find a pairing</a>
+      </div>
+    </CatalogHero>
+    <section class="mt-[1.275rem]">
+      <p id="occasion-label" class="text-xs font-light" data-i18n="dishes.occasion">Occasion</p>
+      <nav class="flex gap-[0.6rem] py-[0.6rem]" aria-labelledby="occasion-label">
+        <a href="?occasion=meal" class="type-pill px-4" data-dish-occasion="meal" data-i18n="dishes.forMeal">For a meal</a>
+        <a href="?occasion=snack" class="type-pill px-4" data-dish-occasion="snack" data-i18n="dishes.forSnack">For a snack</a>
+      </nav>
+    </section>
     <p id="dish-empty" hidden class="mt-8 text-muted" role="status" data-i18n="dishes.empty">No dish found. Describe it and we’ll look for a related dish.</p>
     <ul id="dish-catalog" class="mt-8 grid gap-x-8 sm:grid-cols-2">
       {dishes.map((dish) => <li data-search={`${dish.data.name} ${dish.data.nameEs ?? ''} ${dish.data.category ?? ''} ${dish.data.categoryEs ?? ''}`} data-occasions={dish.data.occasion.join(',')} class="border-t border-rule"><a href={`/dish/${dish.id}`} class="group block py-6"><h2 class="font-display text-2xl font-semibold group-hover:underline" data-es-value={dish.data.nameEs}>{dish.data.name}</h2><p class="mt-3 leading-relaxed text-muted" data-es-value={dish.data.descriptionEs}>{dish.data.description}</p><span class="mt-4 block text-sm font-semibold" data-i18n={dish.data.format === 'board' ? 'dish.exploreBoard' : 'dish.exploreBite'}>{dish.data.format === 'board' ? 'Explore this board' : 'Explore this food'}</span></a></li>)}
     </ul>
     <aside class="mt-12 border-t border-rule pt-8"><h2 class="font-display text-2xl" data-i18n="dishes.custom">Something else on the menu?</h2><a href="/pair" class="action mt-5" data-i18n="nav.pair">Find a pairing</a></aside>
-    <div class="mt-12 md:mt-16">
-      <PhotoBand src={tableImage} alt="Overhead view of a table set with gourmet dishes" />
-    </div>
   </main>
 </Base>
 <script>
@@ -41,9 +51,6 @@ const dishes = (await getCollection('dishes')).sort((a,b) => a.data.name.localeC
       links.forEach((link) => {
         const active = link.dataset.dishOccasion === occasion;
         link.setAttribute('aria-current', active ? 'page' : 'false');
-        link.classList.toggle('border-ink', active);
-        link.classList.toggle('text-ink', active);
-        link.classList.toggle('border-transparent', !active);
       });
     };
     links.forEach((link) => link.addEventListener('click', (event) => {

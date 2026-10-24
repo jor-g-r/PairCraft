@@ -1,14 +1,17 @@
 @import "tailwindcss";
 @import "@fontsource-variable/alegreya";
-@import "@fontsource-variable/alegreya/wght-italic.css";
-@import "@fontsource-variable/source-sans-3";
-@import "@fontsource-variable/source-sans-3/wght-italic.css";
+@import "@fontsource-variable/playfair-display";
+@import "@fontsource-variable/playfair-display/wght-italic.css";
+@import "@fontsource-variable/open-sans";
+@import "@fontsource-variable/open-sans/wght-italic.css";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-sans: "Source Sans 3 Variable", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Alegreya Variable", ui-serif, Georgia, serif;
+  --font-sans: "Open Sans Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display Variable", ui-serif, Georgia, serif;
+  /* The wordmark keeps its original Alegreya lettering. */
+  --font-brand: "Alegreya Variable", ui-serif, Georgia, serif;
 
   /* Single warm accent — used sparingly: tier=Decisive badges, primary CTAs,
    * signature callout borders, active region pill. Everything else stays
@@ -21,20 +24,24 @@
   --color-muted: #525252;
   --color-rule: #d9d9d9;
   --color-on-accent: #ffffff;
+  --color-chrome: #ffffff;
+  /* Type on darkened photographs; never remapped by the dark theme. */
+  --color-on-photo: #ffffff;
 }
 
 :root { color-scheme: light; scroll-padding-top: 9rem; }
 :root.dark {
   color-scheme: dark;
   --color-accent: #961623;
-  --color-paper: #1e1e1e;
-  --color-surface: #111111;
+  --color-paper: #0e0e0e;
+  --color-surface: #1e1e1e;
   --color-ink: #fafafa;
   --color-muted: #bdbdbd;
-  --color-rule: #515151;
+  --color-rule: #3a3a3a;
+  --color-chrome: #1e1e1e;
   /* Existing entity templates share Tailwind's neutral palette. */
   --color-white: #1e1e1e;
-  --color-neutral-50: #111111;
+  --color-neutral-50: #161616;
   --color-neutral-100: #292929;
   --color-neutral-200: #424242;
   --color-neutral-300: #5c5c5c;
@@ -86,6 +93,30 @@
     summary::after { transition: transform 0.2s ease-out; }
   }
   .editorial-link { @apply inline-flex min-h-11 items-center gap-2 text-sm font-semibold underline decoration-rule hover:decoration-current; }
+
+  /* Catalog hero: type and controls sit on a darkened photograph in both themes. */
+  .hero-title { @apply font-display text-[2.5rem] font-normal leading-[1.2] sm:text-[3.5rem] lg:text-[4.25rem]; }
+  .hero-title em { font-style: normal; color: #bd0000; }
+  .hero-intro { @apply mt-[0.9rem] text-balance text-sm font-light leading-snug sm:text-base lg:text-lg; }
+  .hero-field { @apply h-[2.6rem] w-full rounded-[5px] border border-on-photo/85 bg-black/20 pl-[2.45rem] pr-3 text-base font-light text-on-photo placeholder:text-on-photo/80 focus:border-on-photo focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-on-photo sm:h-12 sm:pl-12; caret-color: var(--color-on-photo); }
+  .hero-textarea { @apply block min-h-[6.5rem] w-full resize-none rounded-[5px] border border-on-photo/85 bg-black/20 px-[0.8rem] py-[0.7rem] text-base font-light leading-[1.45] text-on-photo placeholder:text-on-photo/80 focus:border-on-photo focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-on-photo; caret-color: var(--color-on-photo); }
+  .hero-select {
+    @apply h-[2.1rem] w-[7.2rem] shrink-0 appearance-none truncate rounded-[5px] border border-on-photo/85 bg-transparent pl-[0.6rem] pr-[1.9rem] text-base font-light text-on-photo sm:h-10;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 0.55rem center / 1rem;
+  }
+  .hero-select option { color: var(--color-ink); background: var(--color-paper); }
+  .hero-link { @apply relative font-light text-on-photo underline decoration-on-photo/70 underline-offset-[0.2em] hover:decoration-on-photo; }
+  .hero-link::after { content: ''; position: absolute; inset: -0.5rem -0.25rem; }
+  .catalog-hero :focus-visible { outline-color: var(--color-on-photo); }
+
+  /* Wine tiles: one per row on phones, then two and three. */
+  .wine-tiles { @apply grid grid-cols-1 gap-[0.9rem] sm:grid-cols-2 sm:gap-5 lg:grid-cols-3; }
+
+  /* Filter pills under a catalog hero. */
+  .type-pill { @apply relative inline-flex h-[1.6rem] min-w-[4.1rem] shrink-0 items-center justify-center rounded-full border border-ink px-3.5 text-[0.6875rem] font-light uppercase text-ink transition-colors hover:bg-ink/10; }
+  .type-pill::after { content: ''; position: absolute; inset: -0.6rem 0; }
+  .type-pill.is-on-photo { @apply border-on-photo text-on-photo hover:bg-on-photo/10; }
+  .type-pill[aria-pressed='true'], .type-pill[aria-current='page'] { @apply border-accent bg-accent text-on-accent; }
 }
 
 /* Scroll-triggered fade-up — applied via .reveal class with IntersectionObserver.

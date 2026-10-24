@@ -2,30 +2,46 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import WineCard from '../components/WineCard.astro';
+import CatalogHero from '../components/CatalogHero.astro';
+import heroImage from '../assets/wines-hero.webp';
+import heroSource from '../assets/wines-hero.source.json';
 import { t } from '../lib/i18n';
 const wines = (await getCollection('wines')).sort((a,b) => a.data.name.localeCompare(b.data.name));
 const regions = new Map((await getCollection('regions')).map((r) => [r.id, r]));
 const markets = await getCollection('markets');
+const colors = (['red', 'white', 'rose', 'sparkling', 'orange'] as const).filter((c) => wines.some((w) => w.data.color === c));
 const styles = [...new Map(wines.filter((w) => w.data.style).map((w) => [w.data.style!, w.data.styleEs])).entries()].sort(([a], [b]) => a.localeCompare(b));
 ---
 <Base title="Wines — Paircraft" description="Find a bottle and what to eat with it.">
-  <main class="page-shell">
-    <header><h1 class="page-title" data-i18n="nav.wines">Wines</h1><p class="mt-4 text-lg text-muted" data-i18n="catalog.intro">Start with a bottle. Find its place at the table.</p></header>
-    <form id="wine-filters" class="mt-6" role="search">
-      <label class="block max-w-2xl space-y-2 text-sm"><span data-i18n="catalog.search">Find a wine</span><span class="relative block"><svg class="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-neutral-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg><input class="field pl-12" type="search" name="q" autocomplete="off" placeholder="Type a wine name" data-i18n-placeholder="catalog.searchPlaceholder" /></span></label>
-      <a href="/wine-style" class="editorial-link mt-1 text-muted" data-i18n="wineStyle.missingBottle">Not in the catalogue? Find an example by style.</a>
-      <label class="mt-4 flex max-w-2xl items-center gap-3 text-sm"><span class="shrink-0" data-i18n="catalog.market">Available in</span><select name="market" class="field min-w-0"><option value="" data-i18n="catalog.allMarkets">Entire collection</option>{markets.map((m) => <option value={m.data.code} data-es-value={m.data.nameEs}>{m.data.name}</option>)}</select></label>
-      <details class="mt-3 max-w-2xl border-t border-rule pt-2">
-        <summary class="min-h-11 cursor-pointer py-3 text-sm font-semibold" data-i18n="catalog.moreFilters">Colour and style filters</summary>
-        <div class="grid gap-4 pt-3 sm:grid-cols-2">
-          <label class="space-y-2 text-sm"><span data-i18n="catalog.color">Wine colour</span><select name="color" class="field"><option value="" data-i18n="catalog.allColors">All colours</option>{['red','white','rose','orange','sparkling'].map((color) => <option value={color} data-i18n={`color.${color}`}>{t(`color.${color}`)}</option>)}</select></label>
-          <label class="space-y-2 text-sm"><span data-i18n="catalog.style">Style</span><select name="style" class="field"><option value="" data-i18n="catalog.allStyles">All styles</option>{styles.map(([style, es]) => <option value={style} data-es-value={es}>{style}</option>)}</select></label>
+  <main class="page-shell pt-6 md:pt-10">
+    <form id="wine-filters" role="search">
+      <CatalogHero image={heroImage} alt={heroSource.alt}>
+        <Fragment slot="head">
+          <h1 class="hero-title"><span data-i18n="catalog.headingLead">Start with a</span> <em data-i18n="catalog.headingAccent">bottle</em>.</h1>
+          <p class="hero-intro" data-i18n="catalog.heroIntro">Find its place at the table.</p>
+        </Fragment>
+        <div slot="search">
+          <label class="relative block"><span class="sr-only" data-i18n="catalog.search">Find a wine</span><svg class="pointer-events-none absolute left-3 top-1/2 h-[1.1rem] w-[1.1rem] -translate-y-1/2 text-on-photo sm:left-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg><input class="hero-field" type="search" name="q" autocomplete="off" placeholder="Type a wine name" data-i18n-placeholder="catalog.searchPlaceholder" /></label>
+          <a href="/wine-style" class="hero-link mt-[0.7rem] inline-block text-xs" data-i18n="wineStyle.missingBottle">Not in the catalogue? Find an example by style.</a>
         </div>
-      </details>
+        <label slot="foot" class="flex items-center justify-between gap-3"><span class="min-w-0 text-xs font-light sm:text-sm" data-i18n="catalog.market">Available in</span><select name="market" class="hero-select w-auto max-w-[11rem]"><option value="" data-i18n="catalog.allMarkets">Entire collection</option>{markets.map((m) => <option value={m.data.code} data-es-value={m.data.nameEs}>{m.data.name}</option>)}</select></label>
+      </CatalogHero>
+      <section class="mt-[1.275rem]">
+        <p id="type-label" class="text-xs font-light" data-i18n="home.type">Type</p>
+        <input type="hidden" name="color" />
+        <div class="-mx-5 flex gap-[0.6rem] overflow-x-auto px-5 py-[0.6rem] [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 [&::-webkit-scrollbar]:hidden" role="group" aria-labelledby="type-label">
+          <button type="button" class="type-pill" data-color="" aria-pressed="true" data-i18n="home.all">All</button>
+          {colors.map((color) => <button type="button" class="type-pill" data-color={color} aria-pressed="false" data-i18n={`color.${color}`}>{t(`color.${color}`)}</button>)}
+        </div>
+        <details class="mt-2 max-w-2xl">
+          <summary class="min-h-11 cursor-pointer text-sm font-semibold" data-i18n="catalog.styleFilter">Filter by style</summary>
+          <label class="block max-w-sm space-y-2 pb-2 pt-1 text-sm"><span class="sr-only" data-i18n="catalog.style">Style</span><select name="style" class="field"><option value="" data-i18n="catalog.allStyles">All styles</option>{styles.map(([style, es]) => <option value={style} data-es-value={es}>{style}</option>)}</select></label>
+        </details>
+      </section>
     </form>
     <div class="mt-5 flex items-center justify-between gap-4 text-sm text-muted"><p aria-live="polite"><span id="wine-count">{wines.length}</span> <span id="wine-count-label" data-i18n={wines.length === 1 ? 'catalog.countSingular' : 'catalog.countPlural'}>{t(wines.length === 1 ? 'catalog.countSingular' : 'catalog.countPlural')}</span></p><button type="button" id="reset-filters" class="min-h-11 underline" data-i18n="catalog.reset">Reset filters</button></div>
     <p id="wine-empty" hidden class="my-10 max-w-prose text-muted" data-i18n="catalog.empty">No bottles match these filters. Try the entire collection or reset your search.</p>
-    <ul class="mt-4 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3" id="catalog-wines">
+    <ul class="wine-tiles mt-4" id="catalog-wines">
       {wines.map((wine) => <li data-name={[wine.data.name, wine.data.nameEs, wine.data.style, wine.data.styleEs, regions.get(wine.data.region.id)?.data.name].filter(Boolean).join(' ')} data-markets={wine.data.markets.join(',')} data-color={wine.data.color} data-style={wine.data.style ?? ''}><WineCard wine={wine} region={regions.get(wine.data.region.id)} /></li>)}
     </ul>
     <noscript><p>All wines are shown. / Se muestran todos los vinos.</p></noscript>
@@ -47,9 +63,12 @@ const styles = [...new Map(wines.filter((w) => w.data.style).map((w) => [w.data.
       controls[key].value = value;
     }
     const moreFilters = form.querySelector<HTMLDetailsElement>('details');
-    if (moreFilters && (controls.color.value || controls.style.value)) moreFilters.open = true;
+    if (moreFilters && controls.style.value) moreFilters.open = true;
+    const pills = [...form.querySelectorAll<HTMLButtonElement>('.type-pill')];
+    pills.forEach((pill) => pill.addEventListener('click', () => { controls.color.value = pill.dataset.color ?? ''; filter(); }));
     function filter() {
       const values = Object.fromEntries(fields.map((key) => [key, controls[key].value]));
+      pills.forEach((pill) => pill.setAttribute('aria-pressed', String((pill.dataset.color ?? '') === values.color)));
       let count = 0;
       document.querySelectorAll<HTMLElement>('#catalog-wines > li').forEach((item) => {
         const visible = normalize(item.dataset.name ?? '').includes(normalize(values.q)) && (!values.market || item.dataset.markets?.split(',').includes(values.market)) && (!values.color || item.dataset.color === values.color) && (!values.style || item.dataset.style === values.style);

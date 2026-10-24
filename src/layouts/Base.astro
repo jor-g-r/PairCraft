@@ -44,7 +44,7 @@ const navigation = [
     <ClientRouter />
     <script type="application/json" id="i18n-dict" set:html={JSON.stringify(UI_STRINGS)}></script>
   </head>
-  <body class="min-h-dvh bg-white text-neutral-900 antialiased font-sans">
+  <body class="min-h-dvh bg-paper text-ink antialiased font-sans">
     <script is:inline>
       (function () {
         function getLang() {
@@ -147,14 +147,14 @@ const navigation = [
     </script>
 
     <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-paper focus:p-4" data-i18n="nav.skip">Skip to content</a>
-    <header class="sticky top-0 z-30 border-b border-rule bg-paper">
+    <header class="sticky top-0 z-30 border-b border-rule bg-chrome">
       <div class="mx-auto flex max-w-5xl items-center justify-between gap-3 px-5 py-3 sm:px-8">
         <a
           href="/"
           class="inline-flex min-w-0 items-start gap-2.5 text-neutral-900 transition-colors hover:text-neutral-600"
         >
           <span class="brand-mark h-9 w-9 shrink-0" aria-hidden="true" set:html={brandMark} />
-          <span class="min-w-0 pt-1 font-display text-2xl font-semibold leading-none tracking-tight sm:text-3xl">
+          <span class="min-w-0 pt-1 font-brand text-2xl font-semibold leading-none tracking-tight sm:text-3xl">
             Paircraft
           </span>
         </a>
