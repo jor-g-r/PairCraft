@@ -31,19 +31,19 @@ typography:
   display:
     fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
     fontSize: "clamp(2.5rem, 7vw, 5.5rem)"
-    fontWeight: 700
+    fontWeight: 400
     lineHeight: 1.05
     letterSpacing: "-0.03em"
   headline:
     fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
     fontSize: "2.25rem"
-    fontWeight: 700
+    fontWeight: 400
     lineHeight: 1.25
     letterSpacing: "-0.025em"
   headline-sm:
     fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
     fontSize: "3.75rem"
-    fontWeight: 700
+    fontWeight: 400
     lineHeight: 1.25
     letterSpacing: "-0.025em"
   section:
@@ -59,7 +59,7 @@ typography:
   title:
     fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
     fontSize: "1.25rem"
-    fontWeight: 600
+    fontWeight: 400
     lineHeight: "1.75rem"
   pairing-prose:
     fontFamily: '"Playfair Display Variable", ui-serif, Georgia, serif'
@@ -87,7 +87,6 @@ rounded:
   lg: "0.5rem"
   xl: "0.75rem"
   full: "calc(infinity * 1px)"
-  oval: "50%"
 spacing:
   "2": "0.5rem"
   "3": "0.75rem"
@@ -148,19 +147,6 @@ components:
     typography: "{typography.tier}"
     rounded: "{rounded.full}"
     padding: "0.125rem 0.625rem"
-  wine-card:
-    textColor: "{colors.ink}"
-    padding: "1.5rem 0"
-  property:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.oval}"
-    padding: "1.25rem 1rem"
-  property-featured:
-    backgroundColor: "{colors.accent}"
-    textColor: "{colors.on-accent}"
-    rounded: "{rounded.xl}"
-    padding: "1.25rem 1rem"
   theme-toggle:
     textColor: "{colors.ink}"
     rounded: "{rounded.full}"
@@ -170,8 +156,6 @@ components:
   section-heading:
     textColor: "{colors.ink}"
     typography: "{typography.section}"
-  photo-band:
-    rounded: "{rounded.xl}"
 ---
 
 # Design System: Paircraft
@@ -188,7 +172,7 @@ Density follows the task. Catalogs use scannable ruled rows, while wine pages gi
 - Wine-red actions and verdicts on neutral, theme-aware ground.
 - Photo-led catalog heroes (`CatalogHero.astro`) on home, `/wines`, `/dishes` and `/pair`.
 - Playfair identity and editorial prose; light Open Sans controls and facts.
-- Ruled lists, oval properties, thin independent sensory tracks.
+- Ruled spec rows, square `surface` tiles, thin independent sensory tracks.
 - Editorial scene photographs with recorded provenance; never the specific bottle.
 - Mobile-first reading with explicit navigation and honest missing-data states.
 
@@ -235,10 +219,10 @@ The serif carries wine identity and opinion; the sans carries operation and evid
 
 - **Display:** `display` is the fluid wine-detail title. A recorded vintage is appended at regular weight; no vintage is supplied when absent.
 - **Headline:** `headline` becomes `headline-sm` at the small breakpoint. Used for catalog, dish, pairing-input and About titles; balanced wrapping and tight tracking are shared.
-- **Section:** `section` becomes `section-sm` at the small breakpoint and carries a trailing horizontal rule. Pairing-mode headings instead use italic Alegreya (1.5rem) without that rule.
-- **Title:** `title` covers property values and dish names in pairing rows. Catalog wine titles are larger (1.5rem), semibold, with tight line-height (1.25).
-- **Editorial prose:** `pairing-prose` is italic in `DishPairing.astro`. Wine taglines use italic Alegreya (1.25rem, rising to 1.5rem at the small breakpoint) with relaxed line-height (1.625).
-- **Body:** `body` describes relaxed reading copy. Ordinary unmodified body text uses line-height (1.5); pairing descriptions use smaller Source Sans 3 (0.875rem) with relaxed line-height. Long copy commonly stops at the prose measure (65ch).
+- **Section:** `section` becomes `section-sm` at the small breakpoint and carries a trailing horizontal rule. Pairing-mode headings instead use italic Playfair (1.45rem) without that rule.
+- **Title:** names in tiles and rows are Playfair 400: wine tiles 1.4rem, pairing and wine tiles 1.3rem, spec-row values 1.15rem.
+- **Editorial prose:** pairing sentences are italic Playfair (1.02rem, line-height 1.5) in `DishPairing.astro` and the dish page's wine tiles. Wine, grape and region taglines are italic Playfair (1.15rem, 1.5).
+- **Body:** `body` describes relaxed reading copy. Ordinary unmodified body text uses line-height (1.5); supporting descriptions use Open Sans Light (0.8125–0.9375rem) with relaxed line-height. Long copy commonly stops at the prose measure (65ch).
 - **Label:** `label` describes actions. Fields remain at readable base size (1rem); metadata and tier chips use smaller text (0.75rem). Property terms are functional uppercase labels (0.75rem, tracking 0.05em), not decorative section kickers.
 
 **The Two Voices Rule.** Set names and concise editorial judgments in Playfair Display; set controls, supporting descriptions and factual labels in Open Sans.
@@ -260,15 +244,15 @@ The serif carries wine identity and opinion; the sans carries operation and evid
 
 ## Elevation & Depth
 
-Most content stays flat: hairlines, whitespace, typography and inset surfaces separate material. Oval property panels have no shadows. The sticky header is opaque rather than blurred. Home search is the narrow exception: its input has Tailwind's small ambient shadow, and its dropdown has the larger floating shadow. Exact shadow values live in the sidecar; this exception does not turn catalog or pairing rows into raised cards.
+Depth is soft and declared once per element. Square `surface` tiles (wine tiles, pairing tiles, the bottle module, the pairing-logic and climate tiles) take `--tile-shadow`: a faint 0 4px 12px at 7% black on the light stone ground, a denser 0 4px 4px at 25% on the dark ground. Photo cards (catalog heroes, entity covers, the About spread, the wine page's region cover) carry the comp's 0 4px 4px at 25%. Hairlines still separate ruled rows, and the sticky header stays opaque; the home search dropdown keeps its floating shadow.
 
-**The Flat Reading Rule.** Separate reading content with rules and tonal surfaces; reserve floating depth for the existing search affordance and its results overlay.
+**The One Shadow Rule.** A tile or photo card has one shadow and no border; ruled rows have rules and no shadow.
 
 Motion is modest: action opacity and link colors use the default transition (150ms); the language indicator slides (200ms, ease-out). Astro supplies client navigation transitions. The reveal selector declares an opacity/transform transition (600ms), but both initial and visible states already show content with no displacement: no actual fade-up is currently implemented. Its reduced-motion rule removes that transition. Do not describe this as site-wide reduced-motion coverage.
 
 ## Shapes
 
-Fields, the featured property and editorial images use the gently rounded `xl` radius. Actions, theme/language controls and badges use the `full` pill shape. Nonfeatured wine properties use true `oval` corners with a minimum height (8rem); they are a signature reading device, not a general card template. Legacy grape fallback cards use the smaller `lg` radius. Catalog and pairing rows remain rectangular and unboxed, separated by single-pixel rules. Sensory tracks are single-pixel lines with circular markers (0.625rem).
+Since 2026-10-23 tiles and photographs are square-cornered, and fields set on photographs use a 5px radius. Actions, filter and tag pills, theme/language controls and tier chips use the `full` pill shape. The `xl` radius survives only on the common `.field` (e.g. `/wines`' style select) and the home search dropdown. The oval property panels are retired. Ruled rows stay rectangular and unboxed, separated by single-pixel rules. Sensory tracks are single-pixel lines with circular markers (0.625rem).
 
 ## Components
 
@@ -324,9 +308,9 @@ Below that cover the wine page lists the teaching note, a `.spec-list` of colour
 
 ### Ruled headings
 
-The shared section heading pairs semibold Alegreya with a flexible trailing rule, separated by a gap (1.25rem). The rule is structural, not a decorative underline beneath every heading. Keep actual headings for content hierarchy.
+The shared section heading pairs semibold Playfair with a flexible trailing rule, separated by a gap (1.25rem). The rule is structural, not a decorative underline beneath every heading. Keep actual headings for content hierarchy.
 
-**Retired, not canonized:** `Eyebrow.astro` was deleted rather than promoted into a heading tier; dish detail's former eyebrow labels are now italic Alegreya (1.5rem) section headings like the pairing-mode headings; dish, grape and region facts lines (category · weight · intensity, grape colour · origin, country) sit below the h1, never above it, and the home's decorative "or browse" kicker is a plain hairline divider. The reveal comment still promises a fade-up absent from its CSS states; that remains unrepaired. Functional property terms and origin-filter labels are not decorative kickers.
+**Retired, not canonized:** `Eyebrow.astro` was deleted rather than promoted into a heading tier; dish detail's former eyebrow labels became italic section headings, now Playfair like the pairing-mode headings; dish, grape and region facts lines (category · weight · intensity, grape colour · origin, country) sit below the h1, never above it, and the home's decorative "or browse" kicker is a plain hairline divider. The reveal comment still promises a fade-up absent from its CSS states; that remains unrepaired. Functional property terms and origin-filter labels are not decorative kickers.
 
 ## Do's and Don'ts
 
