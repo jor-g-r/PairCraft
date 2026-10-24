@@ -2,7 +2,7 @@
 import { getCollection, getEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import DishPairing from '../../components/DishPairing.astro';
-import PhotoBand from '../../components/PhotoBand.astro';
+import { Image } from 'astro:assets';
 import WineGlass from '../../components/WineGlass.astro';
 import WhereToBuy from '../../components/WhereToBuy.astro';
 import SensoryDial from '../../components/SensoryDial.astro';
@@ -133,46 +133,40 @@ const retailer = listingUrl ? markets.flatMap((market) => market.data.retailers)
     </section>
 
     <section class="mt-16">
-      <h2 class="section-title" data-i18n="wine.character">In the glass</h2>
-      <div class="mt-6 grid gap-8 md:grid-cols-[2fr_1fr]">
-        <div>
-          <p class="max-w-prose leading-relaxed text-muted" data-es-value={wine.data.summaryEs}>{wine.data.summary}</p>
-          {wine.data.pedagogicalRole && <details class="mt-5 border-y border-rule py-3"><summary class="cursor-pointer py-3 text-sm font-semibold" data-i18n="wine.teachingNote">Teaching note</summary><p class="pb-3 pt-2 text-sm leading-relaxed text-muted" data-es-value={wine.data.pedagogicalRoleEs}>{wine.data.pedagogicalRole}</p></details>}
-        </div>
-        <dl class="space-y-3 text-sm">
-          <div><dt class="text-muted" data-i18n="wine.colour">Colour</dt><dd class="mt-1" data-i18n={`color.${wine.data.color}`}>{t(`color.${wine.data.color}`)}</dd></div>
-          {wine.data.style && <div><dt class="text-muted" data-i18n="catalog.style">Style</dt><dd class="mt-1" data-es-value={wine.data.styleEs}>{wine.data.style}</dd></div>}
-        </dl>
+      <div class="relative isolate flex min-h-[26rem] flex-col justify-end overflow-hidden bg-[#1e1e1e] px-[1.15rem] pb-[1.4rem] pt-5 text-on-photo shadow-[0_4px_4px_rgb(0_0_0/0.25)] md:min-h-[30rem] md:p-8">
+        {fromRegion && <Image src={fromRegion.image} alt={fromRegion.alt ?? ''} class="absolute inset-0 -z-20 h-full w-full object-cover" widths={[640, 1024, 1600]} sizes="(min-width: 1024px) 1024px, 100vw" />}
+        <div class="absolute inset-0 -z-10 bg-linear-to-t from-black/85 to-black/15" aria-hidden="true"></div>
+        {fromRegion?.creditLine && <span class="absolute right-[0.9rem] top-[0.7rem] text-[0.625rem] font-light text-on-photo/75">{fromRegion.creditLine}</span>}
+        <h2 class="font-display text-[1.9rem] font-normal" data-i18n="wine.character">In the glass</h2>
+        <p class="mt-[0.7rem] max-w-[38rem] text-[0.9375rem] font-light leading-[1.7]" data-es-value={wine.data.summaryEs}>{wine.data.summary}</p>
+        {region && <a href={`/region/${region.id}`} class="relative mt-[0.9rem] self-start text-xs font-light underline underline-offset-[0.2em] after:absolute after:-inset-x-[0.3rem] after:-inset-y-3 after:content-['']" data-es-value={`De ${region.data.nameEs ?? region.data.name}`}>{`From ${region.data.name}`}</a>}
       </div>
-      {fromRegion && (
-        <div class="mt-10">
-          <PhotoBand
-            src={fromRegion.image}
-            alt={fromRegion.alt ?? (region ? `${region.data.name} scene` : 'Wine region')}
-            label={region ? `From ${region.data.name}` : undefined}
-            labelEs={region ? `De ${region.data.nameEs ?? region.data.name}` : undefined}
-            credit={fromRegion.creditLine}
-          />
-        </div>
-      )}
+      {wine.data.pedagogicalRole && <details class="mt-5 border-t border-rule"><summary class="min-h-11 cursor-pointer text-[0.8125rem] font-semibold" data-i18n="wine.teachingNote">Teaching note</summary><p class="pb-[0.9rem] text-sm font-light leading-[1.6] text-muted" data-es-value={wine.data.pedagogicalRoleEs}>{wine.data.pedagogicalRole}</p></details>}
+      <dl class="spec-list mt-5">
+        <div><dt data-i18n="wine.colour">Colour</dt><dd data-i18n={`color.${wine.data.color}`}>{t(`color.${wine.data.color}`)}</dd></div>
+        {wine.data.style && <div><dt data-i18n="catalog.style">Style</dt><dd data-es-value={wine.data.styleEs}>{wine.data.style}</dd></div>}
+      </dl>
     </section>
 
-    {wine.data.flavouring && notes.some((key) => wine.data.flavouring?.[key]?.length) && <section class="mt-16">
+    {wine.data.flavouring && notes.some((key) => wine.data.flavouring?.[key]?.length) && <section class="mt-14">
       <h2 class="section-title" data-i18n="wine.flavouring">Flavour notes</h2>
       <dl class="mt-6 grid gap-6 sm:grid-cols-3">
-        {notes.map((key) => wine.data.flavouring?.[key]?.length ? <div><dt class="text-sm text-muted" data-i18n={`wine.${key}Notes`}>{t(`wine.${key}Notes`)}</dt><dd class="mt-2 font-display text-xl" data-es-value={wine.data.flavouringEs?.[key]?.length ? wine.data.flavouringEs[key].join(' · ') : undefined}>{wine.data.flavouring[key].join(' · ')}</dd></div> : null)}
+        {notes.map((key) => wine.data.flavouring?.[key]?.length ? <div><dt class="text-[0.6875rem] uppercase tracking-[0.06em] text-muted" data-i18n={`wine.${key}Notes`}>{t(`wine.${key}Notes`)}</dt><dd class="mt-[0.4rem] font-display text-[1.5rem] leading-[1.25]" data-es-value={wine.data.flavouringEs?.[key]?.length ? wine.data.flavouringEs[key].join(' · ') : undefined}>{wine.data.flavouring[key].join(' · ')}</dd></div> : null)}
       </dl>
     </section>}
 
-    {wine.data.tanninProfile && <section class="mt-16">
+    {wine.data.tanninProfile && <section class="mt-14">
       <h2 class="section-title" data-i18n="wine.tanninDetail">A closer look at tannins</h2>
-      <div class="mt-8 grid gap-8 sm:grid-cols-2">{tanninAxes.map((key) => {
+      <div class="mt-6 grid gap-6 sm:grid-cols-2">{tanninAxes.map((key) => {
         const value = wine.data.tanninProfile?.[key];
         return value != null && <SensoryDial label={t(`wine.${key}`)} i18n={`wine.${key}`} value={value} />;
       })}</div>
     </section>}
 
-    {wine.data.recommendedPairings.length > 0 && <section class="mt-12"><h2 class="font-display text-2xl" data-i18n="wine.quickHints">Quick hints</h2><p class="mt-3 text-muted" data-es-value={wine.data.recommendedPairingsEs.length ? wine.data.recommendedPairingsEs.join(' · ') : undefined}>{wine.data.recommendedPairings.join(' · ')}</p></section>}
+    {wine.data.recommendedPairings.length > 0 && <section class="mt-11">
+      <h2 class="mb-[0.7rem] font-display text-[1.3rem] font-normal italic" data-i18n="wine.quickHints">Quick hints</h2>
+      <ul class="flex flex-wrap gap-[0.45rem]">{wine.data.recommendedPairings.map((hint, i) => <li class="tag-pill border-ink" data-es-value={wine.data.recommendedPairingsEs[i]}>{hint}</li>)}</ul>
+    </section>}
     <a href="/wines" data-catalog-return class="editorial-link mt-10" data-i18n="wine.back">All wines</a>
   </main>
 </Base>

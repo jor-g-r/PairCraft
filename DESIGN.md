@@ -300,7 +300,9 @@ Decisive match is filled wine red with white text; Worth trying is neutral-fille
 
 ### Editorial photo bands
 
-`PhotoBand.astro` renders one `<Image>` from `src/assets/` inside a `<figure>`: the full-width band crops 21:9 and the grape strip crops 3:1, both at the `xl` radius, widths (640/1024/1600), `sizes` "(min-width: 1024px) 1024px, 100vw", lazy by default; no current band is eager. Dark mode dims and desaturates slightly (`brightness-[0.87]`, `saturate-[0.94]`). The caption is a small muted `figcaption` below the image: an optional label span (bilingual via `data-es-value`) plus a license credit where the license requires one. `src/lib/region-images.ts` resolves a region slug to its WebP and provenance sidecar; the sidecars are the single source of truth for alt text and credits.
+`PhotoBand.astro` was retired on 2026-10-23. Photographs now live inside the surfaces that use them: `CatalogHero.astro` (home, `/wines`, `/dishes`, `/pair`), `EntityCover.astro` (grape and region pages), the About spread, and the wine page's "In the glass" cover, where the region photograph under a bottom-up gradient (85% to 15% black, picked in a live Impeccable round) carries the heading, the summary and a "From <region>" link to the region page. All are square-cornered with the soft photo shadow; licence credits sit small at the top right. `src/lib/region-images.ts` still resolves a region slug to its WebP and provenance sidecar, the single source of truth for alt text and credits.
+
+Below that cover the wine page lists the teaching note, a `.spec-list` of colour and style, flavour notes as up to three columns (small uppercase label, Playfair 1.5rem notes), the optional tannin tracks, and quick hints as ink-outlined pills.
 
 ### Wine properties and sensory tracks
 
