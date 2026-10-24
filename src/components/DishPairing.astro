@@ -12,8 +12,8 @@ interface Props {
 const { dish, wineId, occasion, tier, prose } = Astro.props;
 const returnContext = new URLSearchParams({ wine: wineId, occasion });
 ---
-<a href={`/dish/${dish.id}?${returnContext}`} class="group block py-5">
+<a href={`/dish/${dish.id}?${returnContext}`} class="tile-shadow group block h-full bg-surface px-[1.15rem] pb-5 pt-[1.1rem]">
   <TierBadge tier={tier} />
-  <h4 class="mt-3 font-display text-xl font-semibold group-hover:underline" data-es-value={dish.data.nameEs}>{dish.data.name}</h4>
-  {prose && <p class="mt-2 font-display text-lg italic leading-snug" data-es-value={prose.explanationEs}>{prose.explanation}</p>}
+  <h4 class="mt-3 font-display text-[1.3rem] font-normal leading-[1.2] group-hover:underline" data-es-value={dish.data.nameEs}>{dish.data.name}</h4>
+  {prose && <p class="mt-2 font-display text-[1.02rem] italic leading-[1.5]" data-es-value={prose.explanationEs}>{prose.explanation}</p>}
 </a>

@@ -88,41 +88,41 @@ const retailer = listingUrl ? markets.flatMap((market) => market.data.retailers)
 
     <section id="pairings" class="mt-16 md:mt-20">
       <h2 class="section-title" data-i18n="wine.pairings">Pairings</h2>
-      <nav class="mt-6 flex gap-6 border-b border-rule" aria-label="Choose a pairing occasion">
-        <a href="?occasion=meal#pairings" class="min-h-11 inline-flex items-center border-b-2 border-transparent text-sm font-semibold text-muted hover:text-ink" data-occasion-link="meal" data-i18n="wine.mealPairings">With a meal</a>
-        <a href="?occasion=snack#pairings" class="min-h-11 inline-flex items-center border-b-2 border-transparent text-sm font-semibold text-muted hover:text-ink" data-occasion-link="snack" data-i18n="wine.snackPairings">For a snack</a>
+      <nav class="mt-5 flex gap-[0.6rem]" aria-label="Choose a pairing occasion">
+        <a href="?occasion=meal#pairings" class="type-pill h-[2.1rem] px-4" data-occasion-link="meal" data-i18n="wine.mealPairings">With a meal</a>
+        <a href="?occasion=snack#pairings" class="type-pill h-[2.1rem] px-4" data-occasion-link="snack" data-i18n="wine.snackPairings">For a snack</a>
       </nav>
-      {feeds.map(({ occasion, entries, groups }) => <div class="mt-8" data-occasion-feed={occasion} hidden>
+      {feeds.map(({ occasion, entries, groups }) => <div class="mt-7" data-occasion-feed={occasion} hidden>
         {occasion === 'snack' ? <section>
-          <h3 class="font-display text-2xl italic" data-i18n="wine.snackSuggestions">Bites for this wine</h3>
-          {entries.length ? <ul class="mt-4 divide-y divide-rule border-t border-rule">{entries.map(({ dish, result, prose }) => <li><DishPairing dish={dish} wineId={wine.id} occasion="snack" tier={result.tier} prose={prose} /></li>)}</ul> : <p class="mt-4 text-muted" data-i18n="wine.noOccasionPairings">No pairings for this occasion have been curated yet.</p>}
+          <h3 class="font-display text-[1.45rem] font-normal italic leading-[1.2]" data-i18n="wine.snackSuggestions">Bites for this wine</h3>
+          {entries.length ? <ul class="mt-4 grid gap-3 lg:grid-cols-3">{entries.map(({ dish, result, prose }) => <li><DishPairing dish={dish} wineId={wine.id} occasion="snack" tier={result.tier} prose={prose} /></li>)}</ul> : <p class="mt-4 text-sm font-light text-muted" data-i18n="wine.noOccasionPairings">No pairings for this occasion have been curated yet.</p>}
         </section> : <>
-          {!groups.length && <p class="text-muted" data-i18n="wine.noOccasionPairings">No pairings for this occasion have been curated yet.</p>}
+          {!groups.length && <p class="text-sm font-light text-muted" data-i18n="wine.noOccasionPairings">No pairings for this occasion have been curated yet.</p>}
           <div class={`grid items-start gap-10 lg:gap-6 ${groupGrid[groups.length]}`}>
             {groups.map(({ mode, entries }) => <section>
-              <h3 class="font-display text-2xl italic" data-i18n={`mode.${mode}`}>{t(`mode.${mode}`)}</h3>
-              <p class="mt-2 text-sm text-muted" data-i18n={`mode.${mode}Hint`}>{t(`mode.${mode}Hint`)}</p>
-              <ul class="mt-4 divide-y divide-rule border-t border-rule">
+              <h3 class="font-display text-[1.45rem] font-normal italic leading-[1.2]" data-i18n={`mode.${mode}`}>{t(`mode.${mode}`)}</h3>
+              <p class="mt-[0.35rem] text-[0.8125rem] font-light text-muted" data-i18n={`mode.${mode}Hint`}>{t(`mode.${mode}Hint`)}</p>
+              <ul class="mt-4 grid gap-3">
                 {entries.slice(0, 3).map(({ dish, result, prose }) => <li><DishPairing dish={dish} wineId={wine.id} occasion="meal" tier={result.tier} prose={prose} /></li>)}
               </ul>
-              {entries.length > 3 && <details class="border-t border-rule"><summary class="cursor-pointer py-4 text-sm font-semibold" data-es-value={entries.length - 3 === 1 ? 'Ver 1 maridaje más' : `Ver ${entries.length - 3} maridajes más`}>{entries.length - 3 === 1 ? 'View 1 more pairing' : `View ${entries.length - 3} more pairings`}</summary><ul class="divide-y divide-rule">{entries.slice(3).map(({ dish, result, prose }) => <li><DishPairing dish={dish} wineId={wine.id} occasion="meal" tier={result.tier} prose={prose} /></li>)}</ul></details>}
+              {entries.length > 3 && <details class="mt-2"><summary class="min-h-11 cursor-pointer text-[0.8125rem] font-semibold" data-es-value={entries.length - 3 === 1 ? 'Ver 1 maridaje más' : `Ver ${entries.length - 3} maridajes más`}>{entries.length - 3 === 1 ? 'View 1 more pairing' : `View ${entries.length - 3} more pairings`}</summary><ul class="mt-1 grid gap-3">{entries.slice(3).map(({ dish, result, prose }) => <li><DishPairing dish={dish} wineId={wine.id} occasion="meal" tier={result.tier} prose={prose} /></li>)}</ul></details>}
             </section>)}
           </div>
         </>}
-        {occasion === 'snack' && boardGuides.length > 0 && <section class="mt-14">
+        {occasion === 'snack' && boardGuides.length > 0 && <section class="mt-12">
           <h3 class="section-title" data-i18n="wine.guidedBoards">Build a cheese board</h3>
-          <p class="mt-2 max-w-prose text-sm text-muted" data-i18n="wine.guidedBoardsNote">Each cheese keeps its own pairing; the board itself receives no averaged verdict.</p>
+          <p class="mt-[0.35rem] text-[0.8125rem] font-light text-muted" data-i18n="wine.guidedBoardsNote">Each cheese keeps its own pairing; the board itself receives no averaged verdict.</p>
           {boardGuides.map(({ board, components }) => {
             const recommendedCount = components.filter(({ prose, result }) => prose && result.tier !== 'skip').length;
-            return <article class="mt-6 border-t border-rule pt-5">
-              <h4 class="font-display text-xl font-semibold" data-es-value={board.data.nameEs}>{board.data.name}</h4>
-              <p class="mt-1 text-sm text-muted" data-es-value={board.data.descriptionEs}>{board.data.description}</p>
-              <p class="mt-3 text-xs text-muted" data-es-value={`Maridajes recomendados para ${recommendedCount} de ${components.length} componentes.`}>Recommended pairings for {recommendedCount} of {components.length} components.</p>
-              <ul class="mt-3 divide-y divide-rule border-t border-rule">
+            return <article class="mt-6">
+              <h4 class="font-display text-[1.3rem] font-normal" data-es-value={board.data.nameEs}>{board.data.name}</h4>
+              <p class="mt-[0.35rem] text-sm font-light leading-[1.55] text-muted" data-es-value={board.data.descriptionEs}>{board.data.description}</p>
+              <p class="mt-2 text-xs font-light text-muted" data-es-value={`Maridajes recomendados para ${recommendedCount} de ${components.length} componentes.`}>Recommended pairings for {recommendedCount} of {components.length} components.</p>
+              <ul class="mt-4 grid gap-3 lg:grid-cols-3">
                 {components.map(({ dish, result, prose }) => <li>
-                  {prose && result.tier !== 'skip' ? <DishPairing dish={dish} wineId={wine.id} occasion="snack" tier={result.tier} prose={prose} /> : <a href={`/dish/${dish.id}?wine=${wine.id}&occasion=snack`} class="block py-4">
-                    <span class="font-display text-lg font-semibold" data-es-value={dish.data.nameEs}>{dish.data.name}</span>
-                    <span class="mt-1 block text-sm text-muted underline decoration-rule underline-offset-4" data-i18n="wine.componentBetterElsewhere">Better with another wine</span>
+                  {prose && result.tier !== 'skip' ? <DishPairing dish={dish} wineId={wine.id} occasion="snack" tier={result.tier} prose={prose} /> : <a href={`/dish/${dish.id}?wine=${wine.id}&occasion=snack`} class="tile-shadow group block h-full bg-surface px-[1.15rem] pb-5 pt-[1.1rem]">
+                    <h5 class="font-display text-[1.3rem] font-normal leading-[1.2] group-hover:underline" data-es-value={dish.data.nameEs}>{dish.data.name}</h5>
+                    <span class="mt-[0.4rem] inline-block text-[0.8125rem] font-light text-muted underline underline-offset-[0.2em]" data-i18n="wine.componentBetterElsewhere">Better with another wine</span>
                   </a>}
                 </li>)}
               </ul>
@@ -187,9 +187,6 @@ const retailer = listingUrl ? markets.flatMap((market) => market.data.retailers)
       links.forEach((link) => {
         const active = link.dataset.occasionLink === selected;
         link.setAttribute('aria-current', active ? 'page' : 'false');
-        link.classList.toggle('border-ink', active);
-        link.classList.toggle('text-ink', active);
-        link.classList.toggle('border-transparent', !active);
       });
       if (updateUrl) {
         const url = new URL(location.href);
