@@ -1,0 +1,26 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import WineGlass from './WineGlass.astro';
+
+interface Props {
+  color: CollectionEntry<'wines'>['data']['color'];
+  soldIn: CollectionEntry<'markets'>[];
+  listingUrl?: string;
+  retailer?: string;
+}
+
+const { color, soldIn, listingUrl, retailer } = Astro.props;
+---
+<aside class="tile-shadow flex flex-col bg-surface" aria-labelledby="where-to-buy-title">
+  {/* The bottle slot: if a placement is ever sold, the brand's cleared bottle photograph and a visible "Sponsored" label go here. Until then the glass stands in. */}
+  <div class="mx-3 mt-3 grid aspect-[4/3] place-items-center bg-paper">
+    <WineGlass color={color} class="h-16 w-16 text-ink" />
+  </div>
+  <div class="px-[1.15rem] pb-5 pt-4">
+    <h2 id="where-to-buy-title" class="font-display text-[1.35rem] font-normal" data-i18n="wine.whereToFind">Where to find it</h2>
+    {soldIn.length > 0 && <p class="mt-[0.35rem] text-[0.8125rem] font-light text-muted"><span data-i18n="wine.soldIn">Sold in</span> <span data-es-value={soldIn.map((m) => m.data.nameEs ?? m.data.name).join(' · ')}>{soldIn.map((m) => m.data.name).join(' · ')}</span></p>}
+    {listingUrl && (retailer
+      ? <a href={listingUrl} target="_blank" rel="noopener noreferrer" class="mt-4 flex min-h-11 items-center justify-center bg-accent px-3 text-[0.8125rem] font-semibold text-on-accent transition-opacity hover:opacity-90" data-es-value={`Ver en ${retailer} ↗`}>{`View at ${retailer} ↗`}</a>
+      : <a href={listingUrl} target="_blank" rel="noopener noreferrer" class="mt-4 flex min-h-11 items-center justify-center bg-accent px-3 text-[0.8125rem] font-semibold text-on-accent transition-opacity hover:opacity-90" data-i18n="wine.viewListing">View listing</a>)}
+  </div>
+</aside>

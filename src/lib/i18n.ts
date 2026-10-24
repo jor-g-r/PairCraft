@@ -167,6 +167,8 @@ export const UI_STRINGS: Record<string, Record<Locale, string>> = {
   'wine.secondaryNotes': { en: 'Secondary notes', es: 'Notas secundarias' },
   'wine.tertiaryNotes': { en: 'Tertiary notes', es: 'Notas terciarias' },
   'wine.teachingNote': { en: 'Teaching note', es: 'Nota didáctica' },
+  'wine.sheet': { en: 'On the sheet', es: 'En la ficha' },
+  'wine.soldIn': { en: 'Sold in', es: 'Se vende en' },
   'wine.whereToFind': { en: 'Where to find it', es: 'Dónde encontrarlo' },
   'wine.viewListing': { en: 'View listing', es: 'Ver ficha' },
   'wine.colour': { en: 'Colour', es: 'Color' },

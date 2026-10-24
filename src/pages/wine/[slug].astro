@@ -4,7 +4,7 @@ import Base from '../../layouts/Base.astro';
 import DishPairing from '../../components/DishPairing.astro';
 import PhotoBand from '../../components/PhotoBand.astro';
 import WineGlass from '../../components/WineGlass.astro';
-import PropertyCard from '../../components/PropertyCard.astro';
+import WhereToBuy from '../../components/WhereToBuy.astro';
 import SensoryDial from '../../components/SensoryDial.astro';
 import { computeTier, dominantMode, type Tier } from '../../lib/tier';
 import { regionImage } from '../../lib/region-images';
@@ -43,43 +43,48 @@ const suggestedTemperature = wine.data.color === 'sparkling' ? [6, 8] : wine.dat
 const temperature = wine.data.servingTemperature ? [wine.data.servingTemperature.minC, wine.data.servingTemperature.maxC] : suggestedTemperature;
 const notes = ['primary', 'secondary', 'tertiary'] as const;
 const tanninAxes = ['softness', 'astringency', 'complexity', 'structure', 'firmness'] as const;
+// Where the bottle is sold: market names plus the retailer behind the listing, named from the markets' retailer list.
+const markets = await getCollection('markets');
+const soldIn = markets.filter((market) => wine.data.markets.includes(market.data.code));
+const hostOf = (url: string) => new URL(url).hostname.replace(/^www\./, '');
+const listingUrl = wine.data.availability?.sourceUrl;
+const retailer = listingUrl ? markets.flatMap((market) => market.data.retailers).find((r) => r.url && hostOf(r.url) === hostOf(listingUrl))?.name : undefined;
 ---
 <Base title={`${wine.data.name} — Paircraft`} description={wine.data.tagline}>
   <main class="page-shell">
     <a href="/wines" data-catalog-return class="editorial-link text-muted" data-i18n="wine.back">All wines</a>
-    <header class="mx-auto mt-4 max-w-3xl text-center">
-      <WineGlass color={wine.data.color} class="mx-auto mb-5 h-16 w-16 text-ink" />
-      <h1 class="font-display text-[clamp(2.5rem,7vw,5.5rem)] font-bold leading-[1.05] tracking-[-0.03em]">{wine.data.name}{wine.data.vintage && <span class="font-normal"> {wine.data.vintage}</span>}</h1>
-      <p class="mx-auto mt-5 max-w-xl font-display text-xl italic leading-relaxed text-muted sm:text-2xl" data-es-value={wine.data.taglineEs}>{wine.data.tagline}</p>
-      <p class="mt-5 text-sm text-muted">
-        {region && <a href={`/region/${region.id}`} class="underline hover:text-ink" data-es-value={originLine(region.data).es}>{originLine(region.data).en}</a>}
-        {grapes.map(({ entry, percentage }) => entry && <><span aria-hidden="true"> · </span><a href={`/grape/${entry.id}`} class="underline hover:text-ink" data-es-value={entry.data.nameEs && `${entry.data.nameEs}${percentage != null && grapes.length > 1 ? ` ${percentage}%` : ''}`}>{entry.data.name}{percentage != null && grapes.length > 1 ? ` ${percentage}%` : ''}</a></>)}
-      </p>
-      <nav class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2" aria-label="Choose a pairing occasion">
-        <a href={`?occasion=meal#pairings`} class="action" data-i18n="wine.forMeal">For a meal</a>
-        <a href={`?occasion=snack#pairings`} class="action" data-i18n="wine.forSnack">For a snack</a>
-      </nav>
-    </header>
-
-    <section class="mx-auto mt-10 max-w-3xl" aria-label="Sensory profile">
-      <!-- Sweetness and acidity are independent; neither is the opposite of the other. -->
-      <div class="grid gap-7 sm:grid-cols-2">
-        <SensoryDial label="Sweetness" i18n="wine.sweetness" value={profile.sweetness} />
-        <SensoryDial label="Acidity" i18n="wine.acidity" value={profile.acidity} />
+    <div class="wine-intro">
+      <header>
+        <WineGlass color={wine.data.color} class="mt-6 h-10 w-10 text-ink" />
+        <h1 class="mt-4 text-balance font-display text-[clamp(2.35rem,6.5vw,4rem)] font-normal leading-[1.1]">{wine.data.name}{wine.data.vintage && <span> {wine.data.vintage}</span>}</h1>
+        <p class="mt-[0.8rem] max-w-[36rem] font-display text-[1.15rem] italic leading-[1.5] text-muted" data-es-value={wine.data.taglineEs}>{wine.data.tagline}</p>
+        <p class="mt-[0.8rem] text-[0.8125rem] font-light [&_a]:underline [&_a]:underline-offset-[0.2em]">
+          {region && <a href={`/region/${region.id}`} data-es-value={originLine(region.data).es}>{originLine(region.data).en}</a>}
+          {grapes.map(({ entry, percentage }) => entry && <><span aria-hidden="true"> · </span><a href={`/grape/${entry.id}`} data-es-value={entry.data.nameEs && `${entry.data.nameEs}${percentage != null && grapes.length > 1 ? ` ${percentage}%` : ''}`}>{entry.data.name}{percentage != null && grapes.length > 1 ? ` ${percentage}%` : ''}</a></>)}
+        </p>
+        <nav class="tile-shadow mt-6 grid grid-cols-2 bg-surface" aria-label="Choose a pairing occasion">
+          <a href={`?occasion=meal#pairings`} class="flex min-h-12 items-center justify-center text-xs uppercase tracking-[0.04em] transition-colors hover:bg-accent hover:text-on-accent" data-i18n="wine.forMeal">For a meal</a>
+          <a href={`?occasion=snack#pairings`} class="flex min-h-12 items-center justify-center border-l border-rule text-xs uppercase tracking-[0.04em] transition-colors hover:bg-accent hover:text-on-accent" data-i18n="wine.forSnack">For a snack</a>
+        </nav>
+      </header>
+      <div class="mt-9 grid gap-8 md:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] md:items-start md:gap-12">
+        <section aria-labelledby="wine-sheet-title">
+          <h2 id="wine-sheet-title" class="font-display text-2xl font-normal" data-i18n="wine.sheet">On the sheet</h2>
+          <dl class="spec-list mt-3">
+            <div><dt data-i18n="wine.temperature">Serve at</dt><dd>{temperature[0]}–{temperature[1]} °C<small>{Math.round(temperature[0] * 9/5 + 32)}–{Math.round(temperature[1] * 9/5 + 32)} °F</small>{!wine.data.servingTemperature && <span class="block text-[0.6875rem] font-light text-muted" data-i18n="wine.temperatureGuide">Style guide</span>}</dd></div>
+            <div><dt data-i18n="wine.body">Body</dt><dd><span data-i18n={bodyKey}>{t(bodyKey)}</span></dd></div>
+            <div><dt data-i18n="wine.tannin">Tannin</dt><dd><span data-i18n={tanninKey}>{t(tanninKey)}</span></dd></div>
+            <div><dt data-i18n={wine.data.aftertaste ? 'wine.aftertaste' : 'wine.primaryNotes'}>{wine.data.aftertaste ? 'Finish' : 'Primary notes'}</dt><dd>{wine.data.aftertaste ? <span data-es-value={wine.data.aftertasteEs}>{wine.data.aftertaste}</span> : wine.data.flavouring?.primary.length ? <span data-es-value={wine.data.flavouringEs?.primary.length ? wine.data.flavouringEs.primary.slice(0,2).join(' · ') : undefined}>{wine.data.flavouring.primary.slice(0,2).join(' · ')}</span> : <span class="font-sans text-[0.8125rem] font-light text-muted" data-i18n="wine.notRecorded">Not yet recorded</span>}</dd></div>
+          </dl>
+          {/* Sweetness and acidity are independent; neither is the opposite of the other. */}
+          <div class="mt-5 grid gap-5">
+            <SensoryDial label="Sweetness" i18n="wine.sweetness" value={profile.sweetness} />
+            <SensoryDial label="Acidity" i18n="wine.acidity" value={profile.acidity} />
+          </div>
+        </section>
+        <WhereToBuy color={wine.data.color} soldIn={soldIn} listingUrl={listingUrl} retailer={retailer} />
       </div>
-      <dl class="mt-9 grid grid-cols-2 gap-4 md:grid-cols-4">
-        <PropertyCard label="Serve at" i18n="wine.temperature" featured>
-          {temperature[0]}–{temperature[1]} °C
-          <span class="mt-1 block font-sans text-xs font-normal">{Math.round(temperature[0] * 9/5 + 32)}–{Math.round(temperature[1] * 9/5 + 32)} °F</span>
-          {!wine.data.servingTemperature && <span class="mt-2 block font-sans text-xs font-normal" data-i18n="wine.temperatureGuide">Style guide</span>}
-        </PropertyCard>
-        <PropertyCard label="Body" i18n="wine.body"><span data-i18n={bodyKey}>{t(bodyKey)}</span></PropertyCard>
-        <PropertyCard label="Tannin" i18n="wine.tannin"><span data-i18n={tanninKey}>{t(tanninKey)}</span></PropertyCard>
-        <PropertyCard label={wine.data.aftertaste ? 'Finish' : 'Primary notes'} i18n={wine.data.aftertaste ? 'wine.aftertaste' : 'wine.primaryNotes'}>
-          {wine.data.aftertaste ? <span data-es-value={wine.data.aftertasteEs}>{wine.data.aftertaste}</span> : wine.data.flavouring?.primary.length ? <span class="text-base" data-es-value={wine.data.flavouringEs?.primary.length ? wine.data.flavouringEs.primary.slice(0,2).join(' · ') : undefined}>{wine.data.flavouring.primary.slice(0,2).join(' · ')}</span> : <span class="font-sans text-sm font-normal text-muted" data-i18n="wine.notRecorded">Not yet recorded</span>}
-        </PropertyCard>
-      </dl>
-    </section>
+    </div>
 
     <section id="pairings" class="mt-16 md:mt-20">
       <h2 class="section-title" data-i18n="wine.pairings">Pairings</h2>
@@ -168,7 +173,6 @@ const tanninAxes = ['softness', 'astringency', 'complexity', 'structure', 'firmn
     </section>}
 
     {wine.data.recommendedPairings.length > 0 && <section class="mt-12"><h2 class="font-display text-2xl" data-i18n="wine.quickHints">Quick hints</h2><p class="mt-3 text-muted" data-es-value={wine.data.recommendedPairingsEs.length ? wine.data.recommendedPairingsEs.join(' · ') : undefined}>{wine.data.recommendedPairings.join(' · ')}</p></section>}
-    {wine.data.availability && <section class="mt-16 rounded-xl bg-surface p-6"><h2 class="font-display text-2xl" data-i18n="wine.whereToFind">Where to find it</h2><p class="mt-3 max-w-prose text-sm leading-relaxed text-muted" data-es-value={wine.data.availability.noteEs}>{wine.data.availability.note}</p>{wine.data.availability.sourceUrl && <a href={wine.data.availability.sourceUrl} target="_blank" rel="noopener noreferrer" class="editorial-link mt-3" data-i18n="wine.viewListing">View listing</a>}</section>}
     <a href="/wines" data-catalog-return class="editorial-link mt-10" data-i18n="wine.back">All wines</a>
   </main>
 </Base>
