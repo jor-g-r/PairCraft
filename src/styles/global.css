@@ -27,6 +27,8 @@
   --color-chrome: #ffffff;
   /* Type on darkened photographs; never remapped by the dark theme. */
   --color-on-photo: #ffffff;
+  /* The red word in a photo headline; #b50000 in the comp, nudged to 3:1. */
+  --color-hero-accent: #bd0000;
 }
 
 :root { color-scheme: light; scroll-padding-top: 9rem; }
@@ -96,7 +98,7 @@
 
   /* Catalog hero: type and controls sit on a darkened photograph in both themes. */
   .hero-title { @apply font-display text-[2.5rem] font-normal leading-[1.2] sm:text-[3.5rem] lg:text-[4.25rem]; }
-  .hero-title em { font-style: normal; color: #bd0000; }
+  .hero-title em { font-style: normal; color: var(--color-hero-accent); }
   .hero-intro { @apply mt-[0.9rem] text-balance text-sm font-light leading-snug sm:text-base lg:text-lg; }
   .hero-field { @apply h-[2.6rem] w-full rounded-[5px] border border-on-photo/85 bg-black/20 pl-[2.45rem] pr-3 text-base font-light text-on-photo placeholder:text-on-photo/80 focus:border-on-photo focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-on-photo sm:h-12 sm:pl-12; caret-color: var(--color-on-photo); }
   .hero-textarea { @apply block min-h-[6.5rem] w-full resize-none rounded-[5px] border border-on-photo/85 bg-black/20 px-[0.8rem] py-[0.7rem] text-base font-light leading-[1.45] text-on-photo placeholder:text-on-photo/80 focus:border-on-photo focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-on-photo; caret-color: var(--color-on-photo); }
