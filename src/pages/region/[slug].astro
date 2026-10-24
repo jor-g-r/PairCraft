@@ -1,7 +1,8 @@
 ---
 import { getCollection, getEntry, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import PhotoBand from '../../components/PhotoBand.astro';
+import EntityCover from '../../components/EntityCover.astro';
+import WineCard from '../../components/WineCard.astro';
 import { regionImage } from '../../lib/region-images';
 import { countryEs } from '../../lib/i18n';
 
@@ -26,76 +27,32 @@ const wines = allWines.filter((w) => w.data.region.id === region.id);
 <Base title={`${region.data.name} — Paircraft`} description={region.data.tagline}>
   <main class="page-shell max-w-3xl">
     <a href="/wines" class="editorial-link mb-6 text-muted" data-i18n="wine.back">All wines</a>
-    <header>
-      <h1 class="page-title" data-es-value={region.data.nameEs}>{region.data.name}</h1>
-      <p class="mt-2 font-display text-lg italic text-neutral-700" data-es-value={region.data.taglineEs}>{region.data.tagline}</p>
-      <p class="mt-3 text-sm text-neutral-500" data-es-value={countryEs(region.data.country)}>{region.data.country}</p>
-    </header>
+    <EntityCover image={band?.image} alt={band?.alt ?? region.data.name} credit={band?.creditLine}>
+      <h1 class="text-balance font-display text-[clamp(2.35rem,6.5vw,3.75rem)] font-normal leading-[1.1]" data-es-value={region.data.nameEs}>{region.data.name}</h1>
+      <p class="mt-[0.7rem] max-w-[36rem] font-display text-[1.15rem] italic leading-[1.5]" data-es-value={region.data.taglineEs}>{region.data.tagline}</p>
+    </EntityCover>
+    <dl class="spec-list mt-7">
+      <div><dt data-i18n="region.country">Country</dt><dd data-es-value={countryEs(region.data.country)}>{region.data.country}</dd></div>
+    </dl>
+    <aside class="tile-shadow mt-8 bg-surface px-[1.15rem] pb-[1.3rem] pt-[1.15rem]">
+      <h2 class="text-[0.6875rem] uppercase tracking-[0.06em] text-muted" data-i18n="region.climate">Climate</h2>
+      <p class="mt-2 font-display text-[1.2rem] italic leading-[1.45]" data-es-value={region.data.climateEs}>{region.data.climate}</p>
+    </aside>
 
-    {band && (
-      <div class="mt-8">
-        <PhotoBand src={band.image} alt={band.alt ?? region.data.name} credit={band.creditLine} />
-      </div>
-    )}
-
-    <p class="mt-6 text-sm text-neutral-600 italic" data-es-value={region.data.climateEs}>{region.data.climate}</p>
-
-    <article class="prose prose-neutral mt-8 max-w-none text-neutral-800 leading-relaxed [&_p]:mt-4" data-lang-content="en">
+    <article class="mt-8 max-w-[40rem] text-[0.9375rem] font-light leading-[1.7] [&_p+p]:mt-4" data-lang-content="en">
       <Content />
     </article>
-    {
-      region.data.bodyEs && (
-        <article class="prose prose-neutral mt-8 max-w-none text-neutral-800 leading-relaxed [&_p]:mt-4 hidden" data-lang-content="es" set:html={region.data.bodyEs} />
-      )
-    }
+    {region.data.bodyEs && <article class="mt-8 hidden max-w-[40rem] text-[0.9375rem] font-light leading-[1.7] [&_p+p]:mt-4" data-lang-content="es" set:html={region.data.bodyEs} />}
 
-    {
-      signatureGrapes.length > 0 && (
-        <section class="mt-12">
-          <h2 class="font-display text-2xl font-semibold" data-i18n="region.signatureGrapes">Signature grapes</h2>
-          <ul class="mt-3 flex flex-wrap gap-2">
-            {signatureGrapes.map(
-              (g) =>
-                g && (
-                  <li>
-                    <a
-                      href={`/grape/${g.id}`}
-                      class="inline-flex min-h-11 items-center rounded-full border border-rule px-4 py-2 text-sm hover:border-ink transition"
-                      data-es-value={g.data.nameEs}
-                    >
-                      {g.data.name}
-                    </a>
-                  </li>
-                ),
-            )}
-          </ul>
-        </section>
-      )
-    }
+    {signatureGrapes.length > 0 && <section class="mt-10">
+      <h2 class="mb-[0.7rem] font-display text-[1.3rem] font-normal italic" data-i18n="region.signatureGrapes">Signature grapes</h2>
+      <ul class="flex flex-wrap gap-2">{signatureGrapes.map((g) => g && <li><a href={`/grape/${g.id}`} class="type-pill h-[2.1rem] px-4 text-[0.8125rem] normal-case" data-es-value={g.data.nameEs}>{g.data.name}</a></li>)}</ul>
+    </section>}
 
     <section class="mt-12">
       <h2 class="section-title" data-i18n="region.wines">Wines</h2>
-      {wines.length === 0 && <p class="mt-4 text-neutral-500" data-i18n="region.noWines">No wines yet.</p>}
-      <ul class="mt-4 space-y-3">
-        {
-          wines.map((wine) => (
-            <li>
-              <a
-                href={`/wine/${wine.id}`}
-                class="block border-t border-rule py-5 transition hover:border-ink"
-              >
-                <p class="font-display text-lg font-semibold">
-                  {wine.data.name}
-                  {wine.data.vintage && (
-                    <span class="font-normal text-neutral-500"> {wine.data.vintage}</span>
-                  )}
-                </p>
-                <p class="mt-1 text-sm italic text-neutral-700" data-es-value={wine.data.taglineEs}>{wine.data.tagline}</p>
-              </a>
-            </li>
-          ))
-        }
-      </ul>
+      {wines.length === 0 && <p class="mt-4 text-sm font-light text-muted" data-i18n="region.noWines">No wines yet.</p>}
+      <ul class="wine-tiles mt-4">{wines.map((wine) => <li><WineCard wine={wine} region={region} /></li>)}</ul>
     </section>
   </main>
 </Base>

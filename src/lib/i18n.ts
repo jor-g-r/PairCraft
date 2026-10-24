@@ -182,6 +182,8 @@ export const UI_STRINGS: Record<string, Record<Locale, string>> = {
   // Grape page
   'grape.red': { en: 'Red grape', es: 'Uva tinta' },
   'grape.white': { en: 'White grape', es: 'Uva blanca' },
+  'grape.origin': { en: 'Origin', es: 'Origen' },
+  'grape.aliases': { en: 'Also called', es: 'También llamada' },
   'grape.alsoCalled': { en: 'Also called:', es: 'También llamada:' },
   'grape.signatureRegions': { en: 'Signature regions', es: 'Regiones emblemáticas' },
   'grape.wines': { en: 'Wines', es: 'Vinos' },
@@ -191,6 +193,8 @@ export const UI_STRINGS: Record<string, Record<Locale, string>> = {
   'grape.noMarketBottle': { en: 'No bottle of this grape is listed in your market yet.', es: 'Aún no hay una botella de esta cepa registrada en tu mercado.' },
 
   // Region page
+  'region.country': { en: 'Country', es: 'País' },
+  'region.climate': { en: 'Climate', es: 'Clima' },
   'region.signatureGrapes': { en: 'Signature grapes', es: 'Uvas emblemáticas' },
   'region.wines': { en: 'Wines', es: 'Vinos' },
   'region.noWines': { en: 'No wines yet.', es: 'Aún no hay vinos.' },
