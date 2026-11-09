@@ -10,8 +10,9 @@ interface Props {
 }
 
 const { image, alt, credit } = Astro.props;
+// z-10: the home search dropdown overflows the hero and must paint over the type pills below it.
 ---
-<section class="catalog-hero relative isolate flex aspect-[332/497] flex-col px-[1.15rem] pb-[1.3rem] pt-[2.45rem] text-on-photo shadow-[0_4px_4px_rgb(0_0_0/0.25)] sm:aspect-auto sm:min-h-[32rem] sm:px-10 sm:pb-8 sm:pt-16 lg:min-h-[36rem]">
+<section class="catalog-hero relative isolate z-10 flex aspect-[332/497] flex-col px-[1.15rem] pb-[1.3rem] pt-[2.45rem] text-on-photo shadow-[0_4px_4px_rgb(0_0_0/0.25)] sm:aspect-auto sm:min-h-[32rem] sm:px-10 sm:pb-8 sm:pt-16 lg:min-h-[36rem]">
   <div class="absolute inset-0 -z-10 overflow-hidden bg-black">
     <Image src={image} alt={alt} class="h-full w-full object-cover" widths={[400, 800, 1200, 1600]} sizes="(min-width: 1024px) 1024px, 100vw" loading="eager" fetchpriority="high" />
     <div class="absolute inset-0 bg-black/65" aria-hidden="true"></div>
