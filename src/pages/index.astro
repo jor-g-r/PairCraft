@@ -9,6 +9,7 @@ import WineCard from '../components/WineCard.astro';
 import CatalogHero from '../components/CatalogHero.astro';
 import { photoCredit } from '../lib/photo-credit';
 import { t } from '../lib/i18n';
+import { buildSearchIndex } from '../lib/home-search';
 import heroImage from '../assets/home-hero.webp';
 import heroSource from '../assets/home-hero.source.json';
 
@@ -45,33 +46,7 @@ const fallbackGrapes = market
   ? (await Promise.all(market.data.dominantGrapes.map((g) => getEntry(g)))).filter(Boolean)
   : [];
 
-interface SearchEntry {
-  id: string;
-  type: 'wine' | 'grape' | 'region' | 'dish';
-  name: string;
-  meta?: string;
-  /** Wine color, only set for type=wine entries. Used by the dropdown
-   * renderer to inline a glass icon. */
-  color?: string;
-}
-
-const searchIndex: SearchEntry[] = [
-  ...wines.map((wine) => ({
-    id: wine.id,
-    type: 'wine' as const,
-    name: wine.data.name,
-    meta: regions.find((region) => region.id === wine.data.region.id)?.data.name,
-    color: wine.data.color,
-  })),
-  ...grapes.map((g) => ({ id: g.id, type: 'grape' as const, name: g.data.name })),
-  ...regions.map((r) => ({
-    id: r.id,
-    type: 'region' as const,
-    name: r.data.name,
-    meta: r.data.country,
-  })),
-  ...dishes.map((d) => ({ id: d.id, type: 'dish' as const, name: d.data.name })),
-];
+const searchIndex = buildSearchIndex({ wines, grapes, regions, dishes });
 
 // Only the wine types this market's feed actually carries get a filter.
 const colors = (['red', 'white', 'rose', 'sparkling', 'orange'] as const).filter((c) => winesWithRegion.some(({ wine }) => wine.data.color === c));
@@ -190,76 +165,49 @@ const colors = (['red', 'white', 'rose', 'sparkling', 'orange'] as const).filter
 
   <script type="application/json" id="search-index" set:html={JSON.stringify(searchIndex)}></script>
 
-  <script is:inline>
+  <script>
+    import { t, type Locale } from '../lib/i18n';
+    import { searchEntries, type SearchEntry, type SearchHit, type SearchType } from '../lib/home-search';
+
     function initPaircraftHome() {
       const indexEl = document.getElementById('search-index');
-      const input = document.getElementById('search-input');
+      const input = document.querySelector<HTMLInputElement>('#search-input');
       const results = document.getElementById('search-results');
       if (!indexEl || !input || !results) return;
       if (input.dataset.ready) return;
       input.dataset.ready = 'true';
 
-      /** @type {Array<{id:string,type:string,name:string,meta?:string}>} */
-      const entries = JSON.parse(indexEl.textContent || '[]');
-
-      const TYPE_RANK = { wine: 0, grape: 1, dish: 2, region: 3 };
-      const TYPE_PATH = { wine: 'wine', grape: 'grape', dish: 'dish', region: 'region' };
-      const TYPE_LABEL = { wine: 'wine', grape: 'grape', dish: 'dish', region: 'region' };
+      const entries: SearchEntry[] = JSON.parse(indexEl.textContent || '[]');
+      const locale = (): Locale => (document.documentElement.lang === 'es' ? 'es' : 'en');
+      const TYPE_LABEL_KEY: Record<SearchType, string> = {
+        wine: 'home.searchTypeWine',
+        grape: 'home.searchTypeGrape',
+        dish: 'home.searchTypeDish',
+        region: 'home.searchTypeRegion',
+      };
 
       let activeIndex = -1;
-      let currentMatches = [];
-
-      function normalize(s) {
-        return s
-          .toLowerCase()
-          .normalize('NFD')
-          .replace(/[̀-ͯ]/g, '');
-      }
-
-      function search(query) {
-        const q = normalize(query.trim());
-        if (!q) return [];
-        return entries
-          .map((e) => {
-            const name = normalize(e.name);
-            const meta = e.meta ? normalize(e.meta) : '';
-            let score = -1;
-            if (name.startsWith(q)) score = 0;
-            else if (name.includes(q)) score = 1;
-            else if (meta.includes(q)) score = 2;
-            return score < 0 ? null : { entry: e, score };
-          })
-          .filter((x) => x !== null)
-          .sort((a, b) => {
-            if (a.score !== b.score) return a.score - b.score;
-            const ta = TYPE_RANK[a.entry.type] ?? 9;
-            const tb = TYPE_RANK[b.entry.type] ?? 9;
-            if (ta !== tb) return ta - tb;
-            return a.entry.name.localeCompare(b.entry.name);
-          })
-          .slice(0, 8)
-          .map((x) => x.entry);
-      }
+      let currentMatches: SearchHit[] = [];
 
       // SVG markup duplicated from src/components/WineGlass.astro because the
       // dropdown is rendered client-side from a template string. Keep these
       // two in sync when iterating on the glass design.
-      const GLASS_FILL = {
+      const GLASS_FILL: Record<string, string> = {
         red: 'var(--color-accent)',
         white: '#e8d97e',
         rose: '#e8a4a8',
         orange: '#cf7e2a',
         sparkling: '#e8d97e',
       };
-      function glassSvg(color) {
+      const glassSvg = (color: string) => {
         const fill = GLASS_FILL[color] || GLASS_FILL.white;
         if (color === 'sparkling') {
           return `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" class="shrink-0 text-neutral-700" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M10 3 V15 C10 16 10.6 17 12 17 C13.4 17 14 16 14 15 V3 Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M11 5 V15 C11 15.5 11.3 16 12 16 C12.7 16 13 15.5 13 15 V5 Z" fill="${fill}"/><line x1="12" y1="17" x2="12" y2="20.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><line x1="9.5" y1="21" x2="14.5" y2="21" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>`;
         }
         return `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" class="shrink-0 text-neutral-700" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M7 3 C7 11 9 14 12 14 C15 14 17 11 17 3 Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M8.6 6 C8.6 11 10 13 12 13 C14 13 15.4 11 15.4 6 Z" fill="${fill}"/><line x1="12" y1="14" x2="12" y2="20.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><line x1="9" y1="21" x2="15" y2="21" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>`;
-      }
+      };
 
-      function render(matches) {
+      const render = (matches: SearchHit[]) => {
         currentMatches = matches;
         activeIndex = -1;
         input.removeAttribute('aria-activedescendant');
@@ -274,7 +222,7 @@ const colors = (['red', 'white', 'rose', 'sparkling', 'orange'] as const).filter
           .map(
             (m, i) => `
             <li role="option" id="search-opt-${i}" data-index="${i}">
-              <a href="/${TYPE_PATH[m.type]}/${m.id}"
+              <a href="/${m.type}/${m.id}"
                  class="flex items-center gap-3 px-4 py-3 hover:bg-neutral-100 transition border-b border-neutral-100 last:border-b-0"
                  data-index="${i}">
                 ${m.type === 'wine' && m.color ? glassSvg(m.color) : ''}
@@ -282,7 +230,7 @@ const colors = (['red', 'white', 'rose', 'sparkling', 'orange'] as const).filter
                   <span class="font-display text-base font-semibold block truncate">${escapeHtml(m.name)}</span>
                   ${m.meta ? `<span class="block text-xs text-neutral-500 truncate">${escapeHtml(m.meta)}</span>` : ''}
                 </span>
-                <span class="shrink-0 text-xs text-neutral-600" data-i18n-search-type="${m.type}">${document.documentElement.lang === 'es' ? ({wine:'vino', grape:'uva', dish:'plato', region:'región'}[m.type]) : TYPE_LABEL[m.type]}</span>
+                <span class="shrink-0 text-xs text-neutral-600" data-i18n-search-type="${m.type}">${t(TYPE_LABEL_KEY[m.type], locale())}</span>
               </a>
             </li>`,
           )
@@ -290,30 +238,28 @@ const colors = (['red', 'white', 'rose', 'sparkling', 'orange'] as const).filter
         results.hidden = false;
         results.classList.remove('hidden');
         input.setAttribute('aria-expanded', 'true');
-      }
+      };
 
-      function escapeHtml(s) {
-        return s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-      }
+      const HTML_ESCAPES: Record<string, string> = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+      const escapeHtml = (s: string) => s.replace(/[&<>"']/g, (c) => HTML_ESCAPES[c]);
 
-      function setActive(i) {
+      const setActive = (i: number) => {
         const items = results.querySelectorAll('a');
         items.forEach((el, idx) => {
           if (idx === i) {
             el.classList.add('bg-neutral-100');
-            el.parentElement.setAttribute('aria-selected', 'true');
+            el.parentElement?.setAttribute('aria-selected', 'true');
             input.setAttribute('aria-activedescendant', `search-opt-${i}`);
           } else {
             el.classList.remove('bg-neutral-100');
-            el.parentElement.setAttribute('aria-selected', 'false');
+            el.parentElement?.setAttribute('aria-selected', 'false');
           }
         });
         activeIndex = i;
-      }
+      };
 
-      input.addEventListener('input', (e) => {
-        const q = e.target.value;
-        render(search(q));
+      input.addEventListener('input', () => {
+        render(searchEntries(entries, input.value, locale()));
       });
 
       input.addEventListener('keydown', (e) => {
@@ -327,7 +273,7 @@ const colors = (['red', 'white', 'rose', 'sparkling', 'orange'] as const).filter
         } else if (e.key === 'Enter') {
           e.preventDefault();
           const m = currentMatches[Math.max(activeIndex, 0)];
-          window.location.href = `/${TYPE_PATH[m.type]}/${m.id}`;
+          window.location.href = `/${m.type}/${m.id}`;
         } else if (e.key === 'Escape') {
           input.blur();
           render([]);
@@ -335,17 +281,17 @@ const colors = (['red', 'white', 'rose', 'sparkling', 'orange'] as const).filter
       });
 
       document.addEventListener('click', (e) => {
-        if (!results.contains(e.target) && e.target !== input) {
+        if (!results.contains(e.target as Node) && e.target !== input) {
           render([]);
         }
       });
 
       // Type pills + grid filter
-      const pills = document.querySelectorAll('.type-pill');
-      const cards = document.querySelectorAll('.wine-card');
+      const pills = document.querySelectorAll<HTMLButtonElement>('.type-pill');
+      const cards = document.querySelectorAll<HTMLElement>('.wine-card');
       const empty = document.getElementById('grid-empty');
 
-      function applyFilter(color) {
+      const applyFilter = (color: string) => {
         let visible = 0;
         cards.forEach((card) => {
           const match = !color || card.dataset.color === color;
@@ -353,7 +299,7 @@ const colors = (['red', 'white', 'rose', 'sparkling', 'orange'] as const).filter
           if (match) visible++;
         });
         if (empty) empty.classList.toggle('hidden', visible > 0);
-      }
+      };
 
       pills.forEach((p) => {
         p.addEventListener('click', () => {
@@ -365,7 +311,7 @@ const colors = (['red', 'white', 'rose', 'sparkling', 'orange'] as const).filter
 
       // Market selector — persist the choice (overrides geo) and re-render the
       // localized feed server-side on reload.
-      const marketSelect = document.getElementById('market-select');
+      const marketSelect = document.querySelector<HTMLSelectElement>('#market-select');
       if (marketSelect) {
         marketSelect.addEventListener('change', () => {
           const code = encodeURIComponent(marketSelect.value);
