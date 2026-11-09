@@ -25,6 +25,12 @@ describe('/api/pair without a paid fallback', () => {
     expect(await ask('grilled ribeye')).toEqual({ status: 200, body: { dishIds: ['ribeye-grilled'], kind: 'exact' } });
     expect(await ask('QUESO AZUL', 'snack')).toEqual({ status: 200, body: { dishIds: ['queso-azul'], kind: 'exact' } });
   });
+  test('a word of a dish name finds it as a related starting point, within the occasion', async () => {
+    expect(await ask('ribeye')).toEqual({ status: 200, body: { dishIds: ['ribeye-grilled'], kind: 'related' } });
+    expect(await ask('parrilla')).toEqual({ status: 200, body: { dishIds: ['ribeye-grilled'], kind: 'related' } });
+    expect(await ask('queso')).toEqual({ status: 200, body: { dishIds: [], kind: 'related' } });
+    expect(await ask('queso', 'snack')).toEqual({ status: 200, body: { dishIds: ['queso-azul'], kind: 'related' } });
+  });
   test('a free-text description gets the empty answer and never leaves the server', async () => {
     delete process.env.ANTHROPIC_API_KEY;
     expect(await ask('grilled salmon with lemon and herbs')).toEqual({ status: 200, body: { dishIds: [], kind: 'related' } });

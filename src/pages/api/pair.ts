@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
-import { DishSearchInput, exactDishMatch, filterDishesByOccasion } from '../../lib/dish-search';
+import { DishSearchInput, exactDishMatch, filterDishesByOccasion, wordDishMatch } from '../../lib/dish-search';
 
 export const prerender = false;
 
@@ -36,8 +36,10 @@ export const POST: APIRoute = async ({ request, url }) => {
     (await getCollection('dishes')).map(({ id, data }) => ({ id, ...data })),
     input.occasion,
   );
-  // The paid model fallback is off (2026-11-08): the MVP is a search engine, so only an exact
-  // dish name matches. Anything else gets the empty answer /pair shows as "no close match".
+  // The paid model fallback is off (2026-11-08): the MVP is a search engine. An exact dish name is
+  // "in the guide". Otherwise the dishes whose names hold every word of the query are shown as
+  // related starting points, and an empty list is what /pair shows as "no close match".
   const exact = exactDishMatch(input.query, dishes);
-  return json(exact.length ? { dishIds: exact, kind: 'exact' } : { dishIds: [], kind: 'related' });
+  if (exact.length) return json({ dishIds: exact, kind: 'exact' });
+  return json({ dishIds: wordDishMatch(input.query, dishes), kind: 'related' });
 };

@@ -21,6 +21,30 @@ export function exactDishMatch(query: string, dishes: SearchableDish[]): string[
   return dishes.filter((dish) => [dish.id, dish.name, dish.nameEs].some((name) => name && normalizeDish(name) === normalized)).map((dish) => dish.id);
 }
 
+// Joining words the query may carry that no dish name needs to contain.
+const STOPWORDS = new Set(['a', 'al', 'an', 'and', 'con', 'de', 'del', 'el', 'en', 'in', 'la', 'las', 'los', 'of', 'on', 'the', 'with', 'y']);
+
+/** The word itself, and without a plural ending, so "mushrooms" finds "mushroom". */
+function wordForms(word: string): string[] {
+  const forms = [word];
+  if (word.length > 3 && word.endsWith('es')) forms.push(word.slice(0, -2));
+  if (word.length > 3 && word.endsWith('s')) forms.push(word.slice(0, -1));
+  return forms;
+}
+
+/**
+ * Dishes whose names, in either language, have a word starting with each word of the query.
+ * Every word must be found, so a description that adds a sauce or method we lack matches nothing.
+ */
+export function wordDishMatch(query: string, dishes: SearchableDish[]): string[] {
+  const words = normalizeDish(query).split(' ').filter((word) => word && !STOPWORDS.has(word));
+  if (!words.length) return [];
+  return dishes.filter((dish) => {
+    const dishWords = [dish.id, dish.name, dish.nameEs].flatMap((name) => (name ? normalizeDish(name).split(' ') : []));
+    return words.every((word) => wordForms(word).some((form) => dishWords.some((dishWord) => dishWord.startsWith(form))));
+  }).map((dish) => dish.id);
+}
+
 export function validatedDishIds(output: unknown, dishes: SearchableDish[]): string[] {
   const { dishIds } = DishMatchOutput.parse(output);
   const allowed = new Set(dishes.map((dish) => dish.id));
