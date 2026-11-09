@@ -125,6 +125,7 @@ export const UI_STRINGS: Record<string, Record<Locale, string>> = {
   'pair.submitSnack': { en: 'Find a bite to pair', es: 'Buscar un bocado para maridar' },
   'pair.loading': { en: 'Looking through the guide…', es: 'Consultando la guía…' },
   'pair.error': { en: 'We couldn’t complete the search. Try again or browse the dish collection below.', es: 'No pudimos completar la búsqueda. Intenta de nuevo o explora los platos de abajo.' },
+  'pair.busy': { en: 'Too many searches in a short time. Wait a minute and try again, or browse the dishes below.', es: 'Demasiadas búsquedas en poco tiempo. Espera un minuto y vuelve a intentarlo, o explora los platos de abajo.' },
   'pair.empty': { en: 'We don’t have a close match yet. Try a simpler description or explore the dishes below.', es: 'Aún no tenemos una coincidencia cercana. Prueba una descripción más sencilla o explora los platos de abajo.' },
   'pair.related': { en: 'Related dishes in our guide', es: 'Platos similares en nuestra guía' },
   'pair.relatedSnack': { en: 'Related bites in our guide', es: 'Bocados similares en nuestra guía' },
