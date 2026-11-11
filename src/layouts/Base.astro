@@ -12,6 +12,12 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+// Link previews (LinkedIn, WhatsApp, X…) need absolute URLs. The card is
+// public/og.png, rendered by scripts/og/render.ts.
+const site = Astro.site ?? new URL('https://pair-craft.vercel.app');
+const pageUrl = new URL(Astro.url.pathname, site).href;
+const ogImage = new URL('/og.png', site).href;
+const shareDescription = description ?? 'A pocket guide to what pairs with what — wines, grapes, regions, dishes.';
 const navigation = [
   { href: '/wines', label: 'Wines', key: 'nav.wines', active: Astro.url.pathname.startsWith('/wine') },
   { href: '/dishes', label: 'Dishes', key: 'nav.dishes', active: Astro.url.pathname.startsWith('/dish') },
@@ -41,6 +47,19 @@ const navigation = [
     {description && <meta name="description" content={description} />}
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Paircraft" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={shareDescription} />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Paircraft. Your bottle. Tonight’s table." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta name="twitter:card" content="summary_large_image" />
     <ClientRouter />
     <script type="application/json" id="i18n-dict" set:html={JSON.stringify(UI_STRINGS)}></script>
   </head>

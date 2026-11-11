@@ -8,6 +8,7 @@ import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://pair-craft.vercel.app',
   integrations: [
     mdx(),
     AstroPWA({
@@ -34,6 +35,8 @@ export default defineConfig({
       workbox: {
         navigateFallback: '/',
         globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff2}'],
+        // The link preview card is for crawlers, not for the offline app.
+        globIgnores: ['og.png'],
       },
     }),
   ],

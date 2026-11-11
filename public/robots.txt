@@ -1,2 +1,7 @@
+# Still closed to search engines until the demo (pages also send noindex).
+# LinkedIn may read pages only to build link previews.
+User-agent: LinkedInBot
+Allow: /
+
 User-agent: *
 Disallow: /
