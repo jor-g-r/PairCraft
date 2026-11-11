@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig, envField } from 'astro/config';
+import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import AstroPWA from '@vite-pwa/astro';
 import mdx from '@astrojs/mdx';
@@ -8,11 +8,6 @@ import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
-  env: {
-    schema: {
-      ANTHROPIC_API_KEY: envField.string({ context: 'server', access: 'secret' }),
-    },
-  },
   integrations: [
     mdx(),
     AstroPWA({
