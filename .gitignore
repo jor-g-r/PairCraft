@@ -38,3 +38,9 @@ pnpm-debug.log*
 .impeccable/live/previews/
 .impeccable/live/cache/
 .impeccable/*.png
+
+# Local secrets
+.env.local
+
+# Harness: scripts/verify logs and evidence
+.harness/
