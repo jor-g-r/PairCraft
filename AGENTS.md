@@ -1,160 +1,89 @@
-# Paircraft — Project Context
+# Paircraft
 
 Wine and food pairings with short, opinionated explanations — pocket guide style, inspired by Hugh Johnson's *Pocket Wine Book*.
 
-**Live:** https://pair-craft.vercel.app/ (auto-deploys on push to `main` — hosts the v2 entity-graph product; the v1 chat MVP is gone)
-**Production baseline (2026-09-25):** search-first home, visual system, market-gated feed across **7 markets** (CO/VE/CL/AR + ES/FR/AE), market-scout pipeline (CO/CL/AR/VE catalogs scraped; ~7900 candidates on file), **21 wines / 240 pairings**. Bilingual EN/ES shipped 2026-08-17 (commit `f5f3dc8`); Paircraft logo + favicon 2026-08-20 (commits `4542f3a`/`8ea098e`). **Design-system burst 2026-09-25** (commits `c0ccb20`→`b6c616d`): Impeccable tooling + `PRODUCT.md`/`DESIGN.md`, light/dark tokens + top nav, `/wines` `/dishes` `/about` `/pair` routes, entity pages rebuilt from the approved Merlot wireframe, plus the phase-2 imagery pass — 18 scene photos with provenance sidecars, `PhotoBand` + `region-images.ts`, `Eyebrow` retired. Imagery closeout remains open on Jorge's visual review, device QA, finish review/verdict and Mendoza provenance confirmation (see Reactivation §1). The Day-21 demo for Teo + profesora did not happen; it remains the next milestone and the gate for tier-engine tuning. Canonical plan is `paircraft-mvp-v2.md` (v1 superseded).
+- **Live:** https://pair-craft.vercel.app/ — Vercel deploys every push to `main`.
+- **Authorities:** `PRODUCT.md` (product rules, editorial vetoes) and `DESIGN.md` (what ships visually) win over this file on their topics. Git history holds what shipped when.
 
-**Dashboard redesign (2026-10-23, shipped to production):** the founder's mobile-first Figma comp (`~/Downloads/paircraft assets and inspire/`) drives the catalog surfaces. Shipped locally: Playfair Display + Open Sans site-wide (Alegreya kept for the wordmark), dark ground `#0e0e0e` with `#1e1e1e` chrome/surfaces, `CatalogHero.astro` (darkened photo card, centered headline with one red word) on home, `/wines`, `/dishes` and `/pair`, Type pills (All/Red/White/Rosé/Sparkling) replacing the origin filter, and wine tiles in `WineCard.astro` (picked in a live Impeccable round). Also done: About as a photo spread; light theme "stone" (`#e9e9e7` ground, white surfaces, `#961623` in both themes). Wine page intro rebuilt as a spec sheet with `WhereToBuy.astro`, the bottle module meant as the future ad surface (brand deals: sponsorship buys visibility, never verdicts; check alcohol-ad rules per market first). Also rebuilt from live Impeccable rounds: wine-page pairings as tiles, the dish page (mirrors the wine page), grape and region pages (`EntityCover.astro`; grape's featured bottle is a second future sponsored slot). Every page is now in the new language (the wine page's lower half leads with the region photo; `/wine-style` is a ruled sheet). Photo credits render quietly and unlinked from the sidecars (`src/lib/photo-credit.ts`). Emulated QA 2026-10-23 (agent-browser, iPhone 14 and Pixel 7, 10 routes): no horizontal overflow; wine-page origin links raised to 29px. Open: real-device QA (iPhone Safari, Android Chrome) and the provenance of the three supplied hero photos plus Mendoza (no credit renders until recorded), the decided finish-review polish, and provenance for the three supplied hero photos (`src/assets/{home,wines,dishes}-hero.source.json` say unrecorded).
+## Project profile
 
-**UX expansion (2026-10-14):** food records distinguish meal/snack occasion and dish/bite/board format; boards expose separately linked components and receive no aggregate verdict. Wine, dish and free-text lookup flows separate meal from snack. A sweet-wine/blue-cheese rule and two component-level snack relations were added. `/wine-style` finds market-available catalogue examples with similar body, sweetness, acidity and tannin; it explicitly does not claim a verdict about an unlisted bottle. Grape pages show a text-only local-market example, not active advertising. `/wines` now leads with name search, keeps market selection visible, collapses colour/style refinements and removes the decorative cellar band. Typography is self-hosted Alegreya + Source Sans 3; Impeccable updated to 4.5.2. Follow-up: expand/review bite and board prose, source cleared bottle photos and finish the visual refresh. See `PRODUCT.md`/`DESIGN.md`.
+- Type: web: Astro 6 (TypeScript strict), Tailwind 4, Bun; Vercel adapter, home is the only SSR page
+- Workdir: repo root
+- Requires: Bun (lockfile `bun.lock`); env names: `ANTHROPIC_API_KEY`, `OPENCODE_API_KEY`, `LLM_PROVIDER`, `CHROME_BIN` (local scripts only; the deploy needs none)
+- Setup: `bun install` [verified 2026-11-11]
+- Run: `bun run dev` → http://localhost:4321 [documented]
+- Verify: `./scripts/verify quick|full` [verified 2026-11-11]: quick = `bun run check` + `bun run test` (about 20 s); full adds `bun run build`
+- Publish: merge or push to `main` deploys to production; needs explicit GO
 
-**Dev agent stack:** OpenCode + Codex (since ~Sep 2026; Claude Code retired from this repo). This file is `AGENTS.md` — renamed from the former `CLAUDE.md` (2026-09-14) because OpenCode treats `AGENTS.md` as primary and Codex only reads `AGENTS.md`. The curation-time LLM remains the Anthropic SDK (see Stack).
+### Manual checks
+- [ ] Changed routes at 390 px and 1440 px, light and dark, from `http://localhost:4321/<route>`
+- [ ] UI work: iPhone Safari and Android Chrome before calling it done
 
----
+### Evidence
+- The `RESULT` line of `./scripts/verify full`; for UI, the URLs checked; for a deploy, the commit status on GitHub (Vercel), without calling production.
 
-## Strategic context (full plan elsewhere)
+| Task | Read first |
+| --- | --- |
+| Product rules, vetoes, voice | `PRODUCT.md` |
+| Visual change | `DESIGN.md`, `.impeccable/surfaces/paircraft.md` |
+| Add a market or refresh retailers | `scripts/market-scout.md` |
 
-This is the v1 product of "Wedge B" — AI tools for hospitality/F&B in LATAM, leveraging the founder's CUHELAV (hospitality school) background. Strategy/operational docs live outside this repo:
+## Locked product decisions (don't relitigate without an explicit signal)
 
-- `/Users/user/LocalDocuments/sideprojects/Bootstrap/paircraft-mvp-v2.md` — **CANONICAL operational plan (since 2026-05-13)**. Entity-graph model, MVP-demo-first for profesor + Teo, tier-only scoring. Supersedes v1.
-- `/Users/user/LocalDocuments/sideprojects/Bootstrap/paircraft-mvp.md` — v1 plan, preserved for traceability. §14 (CUHELAV affiliate) and §15 (Hugh Johnson voice + IP) are inherited unchanged by v2.
-- `/Users/user/LocalDocuments/sideprojects/Bootstrap/paircraft-capacitor-spec.md` — **native-app wrap spec (2026-07-05, DRAFT).** Capacitor over React Native (decision record inside), Android-first sequencing, scenarios + precautions (Apple 4.2, Ventura/Xcode blocker for iOS, store-vs-demo-gating conflict, payments stay on web). Execution gated on the Day-21 demo; v0.2/v0.3 horizon.
-- `/Users/user/LocalDocuments/sideprojects/Bootstrap/Paircraft-—-Product-&-System-Description.txt` — original 12-month vision (symmetric food/wine model; superseded).
-- `/Users/user/LocalDocuments/sideprojects/Bootstrap/README.md` — financial framing ($200/mo floor → $2000/mo aspiration, Pieter-Levels-style portfolio).
-- `/Users/user/LocalDocuments/sideprojects/Bootstrap/offer-candidates.md` — portfolio context.
-
-Always read `paircraft-mvp-v2.md` first if context is needed beyond what's here.
-
----
-
-## Locked product decisions (don't relitigate without explicit signal)
-
-- **Navigable entity graph, not chat UX.** v1 entities = Wine / Grape / Region / Dish. Each has a Content Collection, a URL, a page template. The chat-style "type a wine → 9 pairings out" surface from v1 is **removed**. FlavorNote / Method / Sauce / etc. live as tags, not entities (v0.2 promotion only if signal warrants).
-- **Tri-modal rules layer (signature IP, preserved).** 14 rules from `src/lib/rules.ts`, tagged by mode:
-  - `by Harmony` — matching/balancing (e.g., rich wine + rich food)
-  - `by Contrast` — opposing axis (e.g., acid cuts fat, tannin meets protein)
-  - `by Enhancement` — bridging notes (shared flavors, terroir, aromatic complement)
-  - In v2 these become data (a `rules` collection with `strength: strong|moderate|mild`), consumed by the pure-function tier engine.
-- **Pairing scoring = tier-only.** `Decisive match` / `Worth trying` / `Risky bridge` / `Skip` plus Hugh-voice prose. **No numeric score, no itemized `+25 / +18 / −6` breakdown** in v1. Numbers deferred to Day 36+ pending profesor + Teo feedback.
-- **Voice anchor:** Hugh Johnson pocket-guide. Opinionated. One-sentence pairing explanations. "Drink this with that" — confidence > caveats. Test: would Hugh Johnson put this in a 200-page pocket guide, or save it for the encyclopedia? If encyclopedia-shaped, defer.
-- **LLM is a curation-time layer, not a runtime engine.** Anthropic SDK drafts entity copy and pairing prose; user reviews; output is committed to Content Collections. Per-query LLM cost approaches zero. Free-text dish parsing is the one runtime LLM use (and only on the dish-input affordance).
-- **Data layer: Astro Content Collections** (YAML/MDX, Zod schemas, cross-references). Supabase deferred to v0.2.
-- **Product language: bilingual EN/ES since 2026-08-17** (originally locked as "English at launch, Spanish reserved for v0.2" — shipped early in commit `f5f3dc8`). Client-side toggle (`LangToggle.astro` pill in header) + optional `*Es` fields across all 6 collections. Per-field EN fallback where ES is missing — **every pairing has `explanationEs` since 2026-10-16**, and `draft-pairings.ts` writes both languages.
-- **Auth: none in v1.** Demo is unlisted/password-gated. Public launch (Day 60) introduces hybrid signup wall at magic moment.
-- **Mobile-first PWA.** Native wrap via Capacitor reserved for v0.2/v0.3 — spec'd 2026-07-05 (`Bootstrap/paircraft-capacitor-spec.md`); React Native evaluated and rejected there.
-- **Pricing:** $9/month or $79/year (provisional). Activates at Day 60, not at MVP-demo.
+- **Navigable entity graph, not chat UX.** Entities: Wine / Grape / Region / Dish, each with a Content Collection, a URL and a page template. Flavour notes, methods and sauces are tags, not entities.
+- **Tri-modal rules layer (signature IP).** Rules in `src/lib/rules.ts` are tagged by mode — `by Harmony` (matching/balancing), `by Contrast` (opposing axis: acid cuts fat, tannin meets protein), `by Enhancement` (bridging notes) — with `strength: strong|moderate|mild`, consumed by the pure-function tier engine.
+- **Pairing scoring is tier-only:** `Decisive match` / `Worth trying` / `Risky bridge` / `Skip`, plus Hugh-voice prose. No numeric score or itemized breakdown until demo feedback says otherwise.
+- **Voice anchor:** Hugh Johnson's pocket guide. Opinionated, one-sentence explanations, confidence over caveats. If it is encyclopedia-shaped, defer it.
+- **Models are a curation-time layer, not a runtime engine.** Scripts draft entity copy and pairing prose, a human reviews it, and the output is committed to Content Collections. No runtime code calls a model.
+- **Only reviewed pairings are shown.** A missing record for an engine-allowed combination is an editorial veto, not a gap (`PRODUCT.md`; vetoed ids in `scripts/seed/pairing-vetoes.txt`).
+- **Data layer: Astro Content Collections** (YAML/MDX, Zod schemas, cross-references). Supabase is deferred.
+- **Bilingual EN/ES.** Client-side toggle (`LangToggle.astro`) and optional `*Es` fields in every collection, with per-field EN fallback. Pairings are drafted in both languages.
+- **No auth.** The site stays closed to search engines until the demo: `robots.txt` disallows all but LinkedInBot (link previews), and every page sends `noindex, nofollow`.
+- **Mobile-first PWA.** A native wrap is deferred.
+- **Market tags are conservative.** Only cuvée-level retailer matches or domestic production justify a `wine.markets` tag, never producer-only matches. Empty feeds are allowed (grape fallback). See `scripts/market-scout.md`.
+- **Tier engine tuning waits for demo feedback.** The engine over-fires `Decisive` (two strong rules are enough); the editorial veto removes indefensible combinations without touching it. Don't tune blindly.
 
 ## Visual identity (locked)
 
-- **Headings/wine names:** Playfair Display Variable (`font-display`) — since 2026-10-23, from the founder's dashboard comp
-- **Body:** Open Sans Variable (`font-sans`, mostly Light 300)
-- **Wordmark only:** Alegreya Variable (`font-brand`)
-- Self-hosted via `@fontsource-variable/*`. Theme tokens in `src/styles/global.css`. Editorial references approved 2026-10-14: Kinfolk, The Modern House, Wine Folly; keep Paircraft's own identity and only borrow structural lessons.
-- Shipped foundations (2026-05-14): accent color token, view transitions, scroll reveals, editorial hero photography on home. Visual/branding work is the founder's personal creative outlet — don't plan it for them. Paircraft logo in navbar + favicon shipped 2026-08-20 (commits `4542f3a`/`8ea098e`).
-- Mobile-first responsive. Reference wireframe: Merlot detail page (grape illustration + name + tagline + Sweet/Sour slider + 4 property cards + tri-modal pairing grid + Flavouring/Tannins detail). v0.1 ships only top section + tri-modal grid; rest is v0.2. **Superseded 2026-09-25:** the wireframe-aligned rebuild (commit `40628bc`) shipped the property grid + sensory tracks + tri-modal groups on real entity pages; `DESIGN.md` is the record of what shipped and the authority for visual decisions.
-
----
+- Headings and wine names: Playfair Display Variable (`font-display`). Body: Open Sans Variable (`font-sans`, mostly Light 300). Wordmark only: Alegreya Variable (`font-brand`). Self-hosted via `@fontsource-variable/*`; theme tokens in `src/styles/global.css`.
+- `DESIGN.md` is the record of what ships and the authority for visual decisions. Visual and branding work is the owner's creative call: don't plan it for them.
+- Photos are scene imagery, never the specific bottle. Every asset has a `*.source.json` provenance sidecar, the single source of truth for alt text and credits. An asset without recorded provenance must not reach a public launch.
 
 ## Stack
 
-- **Astro 6** with TypeScript strict
-- **Tailwind v4** (CSS-first via `@tailwindcss/vite`, `@theme` tokens in `src/styles/global.css`)
-- **@vite-pwa/astro** — manifest + service worker (autoUpdate)
-- **@astrojs/vercel** — adapter for on-demand server endpoints (Astro Actions / API routes)
-- **@anthropic-ai/sdk** — Claude SDK, used only by the local curation and translation scripts in `scripts/` (no runtime code calls a model)
-- **@fontsource-variable/alegreya** + **@fontsource-variable/source-sans-3**
-- **Bun** runtime + package manager
-- **Dev agent stack: OpenCode + Codex** (Claude Code retired ~Sep 2026). Project memory file: this `AGENTS.md` (rename of `CLAUDE.md`, 2026-09-14).
+- Astro 6 with TypeScript strict; Tailwind v4 via `@tailwindcss/vite`, `@theme` tokens in `src/styles/global.css`
+- `@vite-pwa/astro` (manifest and service worker, autoUpdate); `@astrojs/vercel` adapter for the SSR home and API routes
+- `@anthropic-ai/sdk`, used only by the local curation and translation scripts in `scripts/` (no runtime code calls a model)
+- Bun as runtime and package manager
+- Agents: any tool that reads `AGENTS.md`. Keep project instructions here: a `CLAUDE.md` in the repo or above it would make Claude Code ignore this file.
 
 ## Conventions
 
-- **Bun, not npm/pnpm/yarn.** `bun install`, `bun add`, `bunx`. If Vercel auto-detects npm, override Build Command to `bun install && bun run build`.
-- **Mobile-first design.** Test on iPhone Safari + Android Chrome before considering UI work "done".
-- **Tailwind utilities first.** Custom CSS only when truly necessary.
-- **Comments only when the *why* is non-obvious.** Don't narrate what code does.
-- **Commit style:** present-tense imperative. Reference `paircraft-mvp.md §X` for traceability when relevant.
-- **No backwards-compat shims** unless we have real users on a prior version (we don't yet).
+- **Bun, not npm/pnpm/yarn:** `bun install`, `bun add`, `bunx`. If Vercel auto-detects npm, override the Build Command to `bun install && bun run build`.
+- Mobile-first. Tailwind utilities first; custom CSS only when truly necessary.
+- Comments only when the *why* is non-obvious. Don't narrate what code does.
+- Commit style: present-tense imperative.
+- No backwards-compat shims until there are real users on a prior version.
+- This repo is public: no local paths, strategy, unpublished prices or people's names in versioned files.
 
----
+## Repo and deploy
 
-## Repo + Deploy
+- Repo: `git@github.com:jor-g-r/PairCraft.git` (public). No CI besides Vercel.
+- Vercel via the GitHub integration: push to `main` → production. Check a deploy by the commit status on GitHub, not by calling production.
 
-- **Repo:** `git@github.com:jor-g-r/PairCraft.git` (private)
-- **Branch:** `main` only for now. PRs not required (solo dev). Direct push.
-- **CI/CD:** Vercel via GitHub integration. Push to `main` → production.
+## Engine and data
 
----
+- `src/content.config.ts` — 6 collections: `wines`, `grapes`, `regions`, `dishes`, `pairings`, `markets`. `wines.markets` holds ISO codes of where a bottle is *sold* (default `['CO']`), distinct from origin `region.country`. Markets carry `code`, `name`, `tagline`, `dominantOrigins`, `dominantGrapes`, `retailers[]`. Food entries classify `occasion` (meal/snack) and `format` (dish/bite/board); board `components` reference independent food records, and boards get no aggregate tier.
+- Home is market-gated: cookie `pc_market` > Vercel `x-vercel-ip-country` header > default `CO`. A visible `<select>` overrides it (sets the cookie, reloads). Markets with no curated bottles fall back to dominant-grape cards.
+- `src/lib/rules.ts` — tri-modal rules `{ mode, strength, predicate }`; `terroir-bridge` is always false for now. `src/lib/tier.ts` — pure-function tier engine with unit tests.
+- `src/lib/prompt.ts` + `src/lib/curation.ts` — curation prompts. `LLM_PROVIDER` switches between `anthropic` (default; best Hugh voice) and `opencode-go`.
+- Scripts, all idempotent: `draft-pairings.ts` (wine×food, EN + ES, skips boards and vetoed ids), `draft-entities.ts` (from `scripts/seed/*.txt`, order regions→grapes→wines→dishes), `import-csv.ts`, `test-curation.ts` (prints one pairing without writing), `backfill-region-grapes.ts`, and `translate-*.ts`. New wines go through the owner and `import-csv.ts`; nothing auto-imports.
+- `scripts/scout-retailers.ts` + playbook `scripts/market-scout.md`: retailer discovery → platform probe (VTEX, WooCommerce, Shopify; always query the category tree, never free text: "vino tinto" matches bedspreads) → catalog scrape → artifacts in `scripts/seed/scout/`. `--cached` re-ranks without re-scraping. Output is review material.
+- `/api/pair`: an exact dish name (id, `name` or `nameEs`, accent- and case-insensitive) returns `kind: 'exact'`; otherwise the dishes of the chosen occasion whose name, in either language, holds every word of the query return as `kind: 'related'`, possibly empty. `src/lib/pair-route.test.ts` fails if the route touches the network. The `/pair` 429 branch and `pair.busy` stay for platform rate limits.
+- Before bringing a model call back to `/api/pair`: put the production key in a spend-limited Anthropic workspace first (the Default Workspace takes no spend limit). A per-IP Vercel WAF rule on `POST /api/pair` also counts exact matches, because the page always posts. Don't add an in-memory limiter: per-instance counters give no ceiling.
 
-## Current state (2026-10-14)
+## Dev tooling
 
-The 2026-10-14 UX expansion adds distinct meal/snack paths to wine, dish and free-text food search; two new bite records; component-level board guides without an overall score; a sweet-wine/blue-cheese rule; and `/wine-style`, a profile-matching finder for market-available bottle examples. Style analogues point to exact reviewed bottle pairings with an explicit distinction from the user's unknown bottle. A follow-up `/wines` usability pass removed the non-informative cellar band, moved name search and market selection ahead of the results, and folded optional colour/style refinements into a disclosure. Corpus: 21 wines, 18 foods and 220 pairing relations, all with Spanish prose. **Snack pass 2026-10-16:** four new bites (jamón serrano, empanadas de carne, aceitunas aliñadas, chicharrón) with 34 EN+ES pairings written for the wines that suit them; the 21 hidden composite-board relations were deleted; `scripts/seed/pairing-vetoes.txt` records all 125 vetoed combinations and `draft-pairings.ts` skips them and boards. **Demo prep 2026-10-15:** a dry-run as the profesora (mobile, ES, CO) led to a full ES pass (144 pairings translated; flavour notes, wine suggestions, region names/climates, grape origins, food tags/weight/category, market names), home search Enter opening the first match, and an editorial veto of 43 pairings (light, sparkling or sweet wines with grilled beef, plus pairings whose own prose argued against them). Jorge approved the UX/Gestalt recommendations the same day: meal pairings appear once under their dominant mode (`dominantMode`), pairing rows drop the food description, the /dishes and /pair photo bands close the page instead of separating instruction from control, home controls are left-aligned, and the remaining small touch targets reach 44px. **Cheese pass 2026-10-15:** 8 fresh-cheese pairings (EN+ES) written for the wines that suit it; the other 32 engine-allowed cheese combinations (structured reds with fresh cheese, every dry wine with blue) were deliberately left unwritten as an editorial veto, and the board labels those components "Better with another wine" (links to the food page, which lists only wines that work). Typography is Alegreya/Source Sans 3. `bun run check`, `bun test src/lib`, `bun run build`, and Impeccable Detect pass. Device QA: iPhone 14 Simulator (iOS 16.4) in Safari; Chrome Pixel 7 mobile emulation. No Android SDK/emulator or attached Android device is configured on the test machine. No bottle photography or paid campaign is active. Follow-up: expand/review bite and board prose, provide cleared bottle images, test on a real Android device and complete the visual refresh. Imagery closeout and Day-21 demo remain open. Production deploy status is determined by the latest Vercel deployment from `main`.
-
-**Milestone check:** the Day-21 demo (target **2026-06-02**) **did not happen** — lapsed, not cancelled. It is still the next milestone. Consequence: no Teo/profesora feedback exists yet, so tier-engine tuning and the numeric-score decision (Day 36+) remain deliberately blocked.
-
-**What's live in prod (`pair-craft.vercel.app`):**
-- **2026-10-23 dashboard redesign supersedes the visual details in the older bullets below** (fonts, rows, bands, ovals, origin filters). `DESIGN.md` is the record of what ships; the bullets remain as history.
-- Home `/` — **search-first and market-gated**. Typeahead search (global scope, cyclic keyboard nav, a11y-polished), origin pills, filterable wine grid. The grid shows only wines stocked in the visitor's **market**, resolved as: cookie `pc_market` > Vercel `x-vercel-ip-country` header > default `CO`. A visible `<select>` lets the visitor override (sets the cookie, reloads). Markets with no curated bottles fall back to dominant-grape cards. Home is the **only SSR page** (`export const prerender = false`); the rest of the site stays static.
-- `/wine/<slug>`, `/grape/<slug>`, `/region/<slug>`, `/dish/<slug>` — entity pages with cross-navigation, tri-modal pairing groups, Hugh-voice prose in italic Playfair. Wine pages surface flavour notes (primary/secondary/tertiary) and the strategic editorial fields; dish pages likewise.
-- Visual system shipped 2026-05-14: accent token, view transitions, scroll reveals, Catena editorial hero photo on home, `WineGlass` component (`Eyebrow` later retired 2026-09-25, commit `b6c616d` — craft-floor bans kickers), site-wide footer with editorial quote + creator credit. Tier badges as chips (filled black Decisive / light Worth trying / outlined Risky / Skip hidden on wine pages, "Better choices elsewhere" on dish pages).
-- Bilingual EN/ES since 2026-08-17: `LangToggle.astro` pill in header; client-side i18n engine (`data-i18n` / `data-es-value` / `data-lang-content` attributes); `*Es` fields across all 6 collections; per-field EN fallback where ES is missing.
-- Paircraft logo in navbar + favicon since 2026-08-20.
-- **2026-09-25 burst A:** `/wines` `/dishes` (ruled catalog rows + origin filters; `/wines` persists filter state to the query string + `pc_catalog_query` session storage for catalog-return links), `/about`, and `/pair` — the free-text dish input whose runtime-LLM routes to curated dishes only (never generated verdicts). Entity pages rebuilt from the approved wireframe: oval property panels, thin sensory tracks, tri-modal pairing groups, tier chips. `DESIGN.md` is the source of truth for all current surfaces.
-- **2026-10-14 UX expansion:** wine cards offer “For a meal” and “For a snack”; wine-detail, `/dishes` and `/pair` flows switch by occasion. Food entries carry `occasion`, `format` and optional component references. The cheese board has no aggregate tier and reveals only independently curated component pairings. `/wine-style` compares an unlisted bottle's chosen structure to available guide examples and labels those pairings as exemplars. Grape pages show a local-market bottle as editorial text, not paid placement. Translations are per-field; older pairing prose still falls back to English.
-- **2026-09-25 burst B — imagery (commit `b6c616d`):** editorial scene photographs — 15 region bands, a "From <region>" band closing wine pages' "In the glass" section, a "From <region>" strip on grape pages, and catalog bands on `/dishes` (table) and `/pair` (set table). The `/wines` cellar photo was removed from the search-first catalogue in the 2026-10-14 UX pass; its source asset is retained but not rendered. Every asset carries a `*.source.json` provenance sidecar; CC BY-SA credits render in captions (ribera-del-duero, somontano, pays-doc); dish-page eyebrows became italic Alegreya section headings; home's "or browse" kicker became a plain hairline. Photos are scene imagery, never the specific bottle.
-- Still demo-gated: `robots.txt` `Disallow: /` + meta `noindex, nofollow` site-wide. No `/debug` in prod.
-
-**Engine + infra:**
-- `src/content.config.ts` — **6 collections:** `wines`, `grapes`, `regions`, `dishes`, `pairings`, `markets`. Wines carry `markets: z.array(z.string()).default(['CO'])` (ISO country codes = where the bottle is *sold*; distinct from origin `region.country`). Markets (`src/content/markets/*.mdx`) carry `code`, `name`, `tagline`, `dominantOrigins`, `dominantGrapes`, `retailers[]`. Food entries classify occasions and formats; board `components` reference independent food records. Only reviewed `pairings` are shown to users. A missing record for an engine-allowed combination is an editorial veto, not a gap (see `PRODUCT.md`); outside the veto, every non-skip wine×food combination has prose.
-- `src/lib/rules.ts` — 14 tri-modal rules with `{ mode, strength, predicate }`. `sweetness-meets-blue-cheese` was added for the snack corpus in 2026-10-14; `terroir-bridge` remains always-false in v1.
-- `src/lib/tier.ts` — pure-function tier engine. 6/6 unit tests pass (`bun test src/lib/tier.test.ts`). Unchanged since May.
-- `src/lib/prompt.ts` + `src/lib/curation.ts` — unchanged. `LLM_PROVIDER` env switch (`anthropic` default, `opencode-go` alternate; Anthropic wins on Hugh-voice quality).
-- Scripts: `draft-pairings.ts` (idempotent wine×food orchestrator: EN + ES, skips boards and every id in `scripts/seed/pairing-vetoes.txt`), `draft-entities.ts` (idempotent entity drafter from `scripts/seed/*.txt`, dep order regions→grapes→wines→dishes), `import-csv.ts` (one-shot Medellín CSV importer), `test-curation.ts` (print one pairing's prose without writing), and `backfill-region-grapes.ts` — idempotent, recomputes `signatureGrapes` per region from the wine corpus. **Already run: regions are backfilled** (commit 8b5c1f3). Translation scripts (2026-08-17): `translate-content.ts`, `translate-mdx.ts`, `translate-mdx-remaining.ts`. Caveat: `draft-pairings.ts` writes `explanation` only, no `explanationEs` — newly drafted pairings are EN-only until a translation pass runs.
-- `scripts/scout-retailers.ts` + **playbook `scripts/market-scout.md`** (added 2026-07-05) — market-scout pipeline for adding/refreshing a country: web-search retailer discovery → platform probe (supports VTEX, WooCommerce, Shopify; VTEX dominates LATAM; always query the category tree, never free-text — "vino tinto" matches bedspreads) → catalog scrape → `scripts/seed/scout/` artifacts: per-retailer JSONs, candidates CSV ranked by multi-retailer presence (3+ = market staple), corpus availability cross-check with **two match levels** (cuvée vs producer-only; only cuvée justifies a `wine.markets` tag). `--cached` re-ranks without re-scraping. Prices in local currency per market. Output is review material — new wines still go through Jorge + `import-csv.ts`; never auto-imports.
-- **Paid fallback off for `/api/pair` (2026-11-08):** product direction from Jorge — the MVP is a search engine, and a paid assistant waits until the project earns money. `/api/pair` answers exact dish names only (id, `name` or `nameEs`, accent- and case-insensitive); any other description returns `{ dishIds: [], kind: 'related' }`, which `/pair` shows as `pair.empty`. No runtime code calls a model: the old runtime client `src/lib/anthropic.ts` and its `astro:env` schema entry were removed (2026-11-10), so the deploy needs no `ANTHROPIC_API_KEY`; the curation scripts read their own local one from `.env`. `src/lib/pair-route.test.ts` fails if the route touches the network. The `/pair` 429 branch and `pair.busy` stay for platform rate limits. **Before bringing a model call back:** put the production key in a spend-limited Anthropic workspace first (the Default Workspace takes no spend limit). A per-IP Vercel WAF rule on `POST /api/pair` also counts exact matches, because the page always posts. And at 10 requests/min, a single IP drains a $10 budget (~2,000 searches at ~$0.005) in about 3h20, so the cap protects money, not availability. Don't add an in-memory limiter: per-instance counters give no ceiling.
-- **Imagery layer (2026-09-25, commit `b6c616d`):** `src/lib/region-images.ts` (import.meta.glob over `src/assets/regions/*.webp` + `*.source.json`; sidecars are the single source of truth for alt text and credits), `src/components/PhotoBand.astro` (retired 2026-10-23; photos now live in `CatalogHero`, `EntityCover`, the About spread and the wine page's region cover). 18 assets on file: 15 regions + `wines-cellar` (retained but unused) / `dishes-table` / `pair-table`. **Mendoza band provenance unrecorded** (flagged in its sidecar) — confirm with Jorge before any public launch.
-- **Impeccable design tooling (2026-09-25):** `.agents/skills/impeccable/` skill + `PRODUCT.md` + `DESIGN.md` + `.impeccable/design.json` + `.impeccable/surfaces/paircraft.md` (direction contract). Live-mode config committed at `.impeccable/live/config.json` (injection target `src/layouts/Base.astro`; no CSP in the project). `.impeccable/review/` (gitignored, on-disk only) holds 26 phase-2 screenshots (light/dark × desktop/mobile) + 5 from the burst-A session.
-- **Impeccable live (learned 2026-10-23):** a browser Accept sometimes never reaches the helper (bar stuck on "Applying variant…", `impeccable live-status` still shows `variants_ready` with no pending event). Accept from the terminal with `impeccable live-accept --id <session> --variant <n> --page-url <route>`, then do the carbonize cleanup, `live-complete`, and `live-server stop` (which also removes the injected script from `Base.astro`; never commit while it is injected).
-- **Dev-server ops (learned 2026-09-25):** run the dev server detached via `screen -dmS paircraft-dev bash -c 'cd /Users/user/LocalDocuments/sideprojects/paircraft && bun run dev --host 127.0.0.1 > /tmp/paircraft-dev.log 2>&1'` — plain backgrounded processes get SIGTERM'd when the agent's shell call ends, and a stale server instance can 500 every `/_image` request with `MissingSharp` (restart fixes; `sharp` is installed). `agent-browser` CLI is available for screenshots/DOM verification (dark mode via `set media dark`, mobile via `set viewport 390 844`). When reporting a local build to Jorge, include the direct `http://localhost:4321/<route>` URL(s) for the surfaces changed or tested.
-
-**Corpus (2026-10-14):**
-- **21 wines, 15 grapes, 15 regions, 18 foods, 220 pairings, 7 markets** (CO, VE, CL, AR + ES, FR, AE added 2026-07-05; two snack bites added in local work on 2026-10-14).
-- **Corpus expansion 2026-07-05 (scout-driven, 8 wines):** Santa Carolina Reservado Carmenère (CL), Norton Malbec, Trapiche Broquel Torrontés, Chandon Extra Brut, Alamos Malbec Rosé (AR ×4), Moët & Chandon Brut Impérial, JP Chenet Merlot (FR ×2), Protos Roble (ES). Selection criteria: multi-retailer presence in CO (3-5 chains each, Éxito URLs in `availability.sourceUrl`) + corpus gaps (first rosado, first Champagne, first Carmenère/Torrontés/Merlot, second Spanish region). New grapes: carmenere, torrontes, merlot, pinot-meunier. New regions: salta, champagne, pays-doc, ribera-del-duero. 92 new pairings drafted (10 combos correctly skip). Feed effects: AR 1→5, FR 0→2, ES 3→4, CL 5→6, CO 11→19 wines.
-- **+2 wines 2026-08-17 (commit `f5f3dc8`, selection rationale not recorded):** Catena Angélica Zapata Malbec (`angelica-zapata-malbec`), Casillero del Diablo Reserva Cabernet Sauvignon (`casillero-del-diablo-reserva-cabernet-sauvignon`) — 11 pairings each (5 with ES). Corpus: 19→21 wines, 218→240 pairings.
-- Wines: Catena Malbec, 1865 Cab Sauv, Castillo de Molina Sauv Blanc, Enate Chardonnay, Leyda Pinot Noir, Mionetto Prosecco, Pazo Barrantes Albariño, Ramón Bilbao Crianza, Piccini Chianti Riserva, Gato Negro Blanco Dulce, Garzón Marselan Reserva. No vintages in slugs (producer/cuvée archetype, not bottlings). LATAM retail anchors in `availability.sourceUrl`.
-- Foods: 4 legacy (ribeye-grilled, oysters-raw, aged-manchego, fried-calamari) + 8 Medellín (lomo-a-la-parrilla, cerdo-asado, salmon-a-la-parrilla, ceviche, pasta-con-salsa-de-tomate, risotto-de-hongos, pollo-con-mole, tabla-de-quesos) + two snack components added 2026-10-14 (fresh soft cheese, blue cheese) + four snack bites added 2026-10-16 (jamon-serrano, empanadas-de-carne, aceitunas, chicharron). The board references all three cheeses individually.
-- Pairings: 126 from the original 11-wine corpus + 92 from the 2026-07-05 expansion + 22 from the 2026-08-17 additions + 2 component-level snack pairings (2026-10-14) + 8 fresh-cheese pairings (2026-10-15) = 250, minus 43 vetoed on 2026-10-15, minus 21 hidden composite-board relations, plus 34 new-bite pairings on 2026-10-16 = **220 on file**. Historic relations were LLM-drafted, Claude Sonnet 4.6, Hugh-voice; the ten cheese-component relations are written for a named cheese, EN+ES together. **ES coverage: all 220 pairings have `explanationEs`.** Boards carry no relation of their own.
-- **Market tags are deliberately conservative.** All wines are in CO (schema default). VE list **verified by Jorge 2026-06-18** (6 bottles: Catena, 1865, Castillo de Molina, Gato Negro, Leyda, Ramón Bilbao) **+ 3 scout-earned VE tags 2026-07-05: Moët, Protos Roble, Enate Chardonnay** (cuvée-level listings at Licoteca/El Catador; Norton "Reserva" rejected — tier mismatch). CL/AR/ES tag domestic bottles (grown there ⇒ high confidence; AR feed thin by design — only Catena; **ES tags added 2026-07-05: Ramón Bilbao, Enate, Pazo Barrantes**) **plus scout-verified cuvées: Garzón Marselan earned CL 2026-07-05** (exact listing at La Vinoteca). Mionetto+CL **confirmed by Jorge 2026-07-06** (La Vinoteca base listing = Treviso Brut). Piccini stays CO-only (producer-only in CO chains). FR/AE have zero tagged wines → grape-fallback feeds by design. Rule: **only cuvée-level scout matches or domestic production justify tags, never producer-only** (see playbook §5).
-- **Retailers (all verified 2026-07-05):** CO 6 (Carulla, Dislicores, Vinos El Kiosco, Éxito, Jumbo, Olímpica — **all 11 corpus wines confirmed in CO retail**; 3 Dislicores-only: Leyda, Pazo Barrantes, Enate), CL 3 (La Vinoteca, Descorcha, VentaVinos — specialists only; every CL supermarket site is custom/bot-blocked, so supermarket value brands are a known blind spot), AR 4 (Jumbo, Día, ChangoMás, Winery — Jumbo/Disco/Vea share one Cencosud catalog; Carrefour/Coto blocked), **VE 3 (Licoteca, El Catador, Curda 24 — specialist e-shops, scouted 2026-07-05; Licores Mundiales/Prodelsur bot-blocked, Gama/Sigo custom SPAs; Jorge's 6 manual VE wine tags stand — scout absence ≠ counter-evidence)**, **ES 5 / FR 3 / AE 2 (retailers verified live, catalogs NOT scraped — all bot-protected or custom stacks; agent-browser is the documented path if depth is needed, playbook §ES/§FR/§AE)**. Scout evidence + URLs live in `scripts/seed/scout/<mkt>-corpus-availability.json` (CO/CL/AR/VE). The future "Recommended Wines" ads slot keys off `markets.retailers`.
-- Market-selection policy: originally LATAM-first (2026-06-18; a market earns its place only with real curatable data OR a real user living there — Netherlands was a throwaway VPN-test market, added and removed same day). **Loosened by Jorge 2026-07-05: ES/FR/AE added as strategic global markets.** The honesty bar stays: verified retailers only, tags only with evidence or domestic logic, feeds allowed to be empty (FR/AE run on grape fallback).
-
-**Engine note (still open, still gated on demo feedback):** Tier engine over-fires Decisive — most wines land Decisive against most non-Skip dishes (after the 2026-10-15 veto, ~90% of visible pairings are Decisive) because 2 strong rules firing is enough. The editorial veto removes indefensible combinations without touching the engine. Candidate fixes: raise threshold to 3 strong, require multi-mode coverage, or add anti-rules. **Don't tune blindly — wait for Teo + profesora feedback from the demo.**
-
-## Reactivation starting points
-
-These are the live threads in rough priority order (as of 2026-09-25):
-
-1. **Close the phase-2 imagery pass** — implementation shipped in commit `b6c616d` (2026-09-25, verified: build/check/tests/`impeccable detect` green, 26 screenshots captured, DOM verification green — bands load, CC credits render, no mobile overflow). What remains, in order:
-   - **Jorge's visual review** (he has not yet looked at the shipped imagery): 26 screenshots sit in `.impeccable/review/` (local-only, gitignored — `<surface>-{light,dark}-{desktop,mobile}.png`), or he directs changes live: boot `.agents/skills/impeccable/scripts/impeccable live`, open the app URL (`http://127.0.0.1:4321/`), then loop `.agents/skills/impeccable/scripts/impeccable live-poll` (foreground, default long timeout; handle generate/steer/accept per `.agents/skills/impeccable/reference/live.md`). Stop with `impeccable live-server stop`. Note: the 2026-09-25 live session was booted, polled ~30 min with no events, and parked cleanly at Jorge's request (injection removed, no wrappers left behind); `impeccable live-resume` is the recovery path if a session ever hangs mid-flight.
-   - **Device QA:** iPhone Safari + Android Chrome (project convention before UI work is "done").
-   - **Surface-brief FINISH:** the finish review and verdict ran 2026-10-16 (recorded at the end of `.impeccable/surfaces/paircraft.md`; final reviewer disposition "fix" for one regression, fixed in-thread; four polish items open). The only FINISH item left is raster provenance: the Mendoza band.
-   - **Mendoza band provenance** unrecorded (flagged in `src/assets/regions/mendoza.source.json`) — confirm with Jorge or swap the asset before any public launch.
-   - Cosmetic leftover: i18n key `home.orBrowse` is now unused (harmless; remove if touched otherwise).
-2. **Do the Day-21 demo** (overdue since 2026-06-02) — **still pending as of 2026-10-15**. It's shippable from `main` as-is. The 3-question feedback script was updated 2026-10-15: `Bootstrap/paircraft-demo-feedback-script.md` (B2B-vs-B2C question, tier-credibility question, open what's-missing question + observational note). Status 2026-10-15: the profesora already has the site and is reviewing it asynchronously; she also directs a sommelier academy, which makes her answer to the B2B question especially valuable. Teo is still to be scheduled. Agent dry-run done 2026-10-15. Post-demo: re-anchor Day-35/Day-60 dates (both lapsed).
-3. **ES translation of pairings — done 2026-10-15/16** for every pairing; `draft-pairings.ts` now drafts EN and ES together.
-4. **Post-demo: tier-engine tuning** with real feedback (see engine note above). This also unblocks the Day-36+ numeric-score decision.
-5. **Market-scout playbook: all 4 LATAM markets done** (`scripts/market-scout.md`; CO/CL/AR/VE scraped 2026-07-05 — 16 retailers, ~7900 unique candidates in `scripts/seed/scout/*-candidates.csv`). ES/FR/AE retailer-verified but catalogs bot-blocked → agent-browser if depth ever needed. French corpus wines remain an editorial decision (FR feed shows Moët + JP Chenet).
-6. **Offline tasks** (see below — domain purchase deadline already lapsed).
-
----
-
-## Offline tasks (user-track; statuses as of 2026-09-25)
-
-From `paircraft-mvp.md §12/§14/§15`:
-
-- §15.6 — Informal trademark search "Paircraft" (USPTO TESS + EUIPO + INPI/IMPI). **DONE** (confirmed 2026-07-05; outcome not recorded — note here if anything surfaced).
-- §12.2 — Buy domain. **Pending; June 2026 target lapsed.** Order: `paircraft.com` → `.app` → `.ai` → `.co`.
-- §12.3 — Fill 5 named B2C buyers in `paircraft-mvp.md §7 Pool B`. **Pending; deadline 2026-05-18 lapsed.**
-- §14.7 — Name 3 CUHELAV alumni for the Founder's Cut affiliate experiment. **Pending; deadline 2026-05-25 lapsed.** Top candidate already in doc: Teo (De la Capellanía).
-
-These are user-execution tasks; the agent doesn't need to drive them, but should surface the lapsed ones when the project reactivates.
+- Run the dev server detached: `screen -dmS paircraft-dev bash -c 'cd "$(git rev-parse --show-toplevel)" && bun run dev --host 127.0.0.1 > /tmp/paircraft-dev.log 2>&1'`. Plain background processes get SIGTERM'd when the agent's shell call ends, and a stale server can 500 every `/_image` request with `MissingSharp` (restart it).
+- `agent-browser` CLI for screenshots and DOM checks (dark mode: `set media dark`; mobile: `set viewport 390 844`). When reporting local work, include the direct `http://localhost:4321/<route>` URLs.
+- Impeccable design tooling: `.agents/skills/impeccable/`, `.impeccable/design.json`, `.impeccable/surfaces/paircraft.md` (direction contract), live-mode config in `.impeccable/live/config.json` (injects into `src/layouts/Base.astro`; never commit while it is injected). If a browser Accept never arrives, accept from the terminal with `impeccable live-accept --id <session> --variant <n> --page-url <route>`, then the carbonize cleanup, `live-complete` and `live-server stop`.
