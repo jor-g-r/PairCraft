@@ -1,0 +1,113 @@
+#!/bin/sh
+# verify: this project's verification contract (template: craftzilla-space/templates/verify).
+#
+# Usage: ./scripts/verify quick|full
+#   quick  fast checks while working (target: under 90 s)
+#   full   quick + build + e2e, before closing a task
+#
+# Exit: 0 every automatic check ran and passed
+#       1 at least one check failed (wins over 2: a measured failure comes first)
+#       2 something could not be measured (missing tool, or no checks defined)
+#      64 usage error
+# The last line is always:
+#   RESULT mode=<m> pass=<n> fail=<n> unmeasured=<n> manual_pending=<n>
+# manual_pending counts the "- [ ]" items under "### Manual checks" in AGENTS.md.
+# Exit 0 speaks only for the automatic checks.
+#
+# Rules: a check that does not run never counts as passed. Call the project's
+# own scripts; do not replace them. No `|| true`, no `2>/dev/null` on evidence,
+# and no pipes inside a check: POSIX sh has no pipefail, so `cmd | tee` reports
+# the exit of tee, not of cmd. Logs go to .harness/logs/ (keep .harness/ in .gitignore).
+
+set -u
+
+mode=${1:-}
+result() { echo "RESULT mode=${mode:-none} pass=$1 fail=$2 unmeasured=$3 manual_pending=$4"; }
+
+if [ $# -ne 1 ] || { [ "$mode" != quick ] && [ "$mode" != full ]; }; then
+  echo "usage: $0 quick|full" >&2
+  result 0 0 0 0
+  exit 64
+fi
+
+if ! cd "$(dirname "$0")/.."; then
+  echo "UNMEASURED cannot reach the project root from $0"
+  result 0 0 1 0
+  exit 2
+fi
+
+LOGS=.harness/logs
+pass=0
+fail=0
+unmeasured=0
+
+if ! mkdir -p "$LOGS"; then
+  echo "UNMEASURED cannot create $LOGS"
+  result 0 0 1 0
+  exit 2
+fi
+
+check() { # check <name> <required binary> <command...>
+  name=$1
+  need=$2
+  shift 2
+  if ! command -v "$need" >/dev/null 2>&1; then
+    unmeasured=$((unmeasured + 1))
+    echo "UNMEASURED $name (missing $need)"
+    return 0
+  fi
+  log="$LOGS/$name.log"
+  if "$@" >"$log" 2>&1; then
+    pass=$((pass + 1))
+    echo "PASS $name"
+  else
+    rc=$?
+    fail=$((fail + 1))
+    echo "FAIL $name (exit $rc) -> $log"
+    tail -n 30 "$log"
+  fi
+}
+
+# --- Project checks: fill these in when adopting the project -----------------
+# One line per check: check <name> <required binary> <command...>
+#   check typecheck bun bun run check
+#   check unit pnpm pnpm test
+# For shell syntax, wrap it: check lint sh sh -c 'npm run lint -- --max-warnings 0'
+quick_checks() {
+  check typecheck bun bun run check
+  check unit-tests bun bun run test
+}
+
+full_checks() { # runs after quick_checks in full mode: build, e2e (this project has no e2e)
+  check build bun bun run build
+}
+# -----------------------------------------------------------------------------
+
+quick_checks
+if [ $((pass + fail + unmeasured)) -eq 0 ]; then
+  unmeasured=1
+  echo "UNMEASURED no quick checks defined in scripts/verify"
+fi
+
+if [ "$mode" = full ]; then
+  before=$((pass + fail + unmeasured))
+  full_checks
+  if [ $((pass + fail + unmeasured)) -eq "$before" ]; then
+    unmeasured=$((unmeasured + 1))
+    echo "UNMEASURED no full checks (build, e2e) defined in scripts/verify"
+  fi
+fi
+
+manual_pending=0
+if [ -f AGENTS.md ]; then
+  manual_pending=$(awk '/^### Manual checks/ { on = 1; next } /^#/ { on = 0 } on && /^- \[ \]/ { n++ } END { print n + 0 }' AGENTS.md)
+fi
+
+result "$pass" "$fail" "$unmeasured" "$manual_pending"
+if [ "$fail" -gt 0 ]; then
+  exit 1
+fi
+if [ "$unmeasured" -gt 0 ]; then
+  exit 2
+fi
+exit 0
