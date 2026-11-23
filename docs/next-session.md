@@ -1,27 +1,30 @@
 # Next session
-_Updated: 2026-11-13 13:15 -04 · Branch: main · Tool: Claude Code, claude-opus-5-5_
+_Updated: 2026-11-23 15:40 -04 · Branch: feat/404-integrated · Tool: Claude Code, claude-opus-5-5_
 
 ## Goal
-Keep Paircraft a shippable search-first pocket guide.
+Keep Paircraft a shippable search-first pocket guide. This session: a custom not-found page that leads back into the guide.
 
 ## Changes
-- The verification contract and this handoff are on `main` since `7c7817c` (2026-11-11): `AGENTS.md` with a `Project profile`, `scripts/verify`, and `.gitignore` for `.env.local` and `.harness/`. No source file changed.
-- This file now reflects the state after that merge.
+- `src/pages/404.astro` (4aa778b, on top of `origin/main` 0cd8c10): Base layout, Playfair headline with one red word ("This page isn't on the list." / "Esta página no está en la carta."), a "Back to the guide" action to `/`, and four ruled links (Wines, Dishes, Find a pairing, Find by wine style), EN/ES. Follows the `/wine-style` sheet pattern; no new image.
 
 ## State
-- measured: `./scripts/verify full` on `main` = `7c7817c` -> `pass=3 fail=0 unmeasured=0` in 29 s, 2026-11-13.
-- measured: the owner reviewed production at 390 and 1440 px, light and dark, and found it unchanged, 2026-11-13.
-- measured: production search for "Malbec" returns 5 results at 390 and 1440 px and opens `/wine/catena-malbec`, with no console errors and no horizontal overflow, 2026-11-13.
-- measured: Vercel status of `7c7817c` on GitHub was `success`, 2026-11-11.
+- measured: `./scripts/verify full` on `feat/404-integrated` -> `pass=3 fail=0 unmeasured=0 manual_pending=2`, 2026-11-23.
+- measured: build `.vercel/output/config.json` ends with `^/.*$ -> /404.html, status 404`; `404.html` sends `noindex, nofollow` and highlights no nav link.
+- measured: dev `curl` on `/ruta-que-no-existe`, `/wine/no-existe`, `/dish/no-existe` -> 404 with the new title; no horizontal overflow at 390 and 1440 px.
+- measured: `feat/404-integrated` is `origin/main` + 1 commit; nothing pushed yet.
+- measured: local `main` diverged from `origin/main` (an older squash of the harness adoption plus pre-integration commits, also kept on `feat/404-page`). Do not push local `main`.
+- inferred, pre-existing: `sw.js` builds to `dist/server/`, not `.vercel/output/static/`, so `/sw.js` likely 404s in production and the service worker never registers. Not touched.
+- manual_pending: owner's real-device check (iPhone Safari, Android Chrome).
 
 ## Blocked on
-Nothing.
+The owner's GO to push `feat/404-integrated` to `main` (push deploys to production).
 
 ## Next action
-None pending in this repo. The next task comes from the owner; re-measure first.
+With the GO: `git push origin feat/404-integrated:main`, then check the Vercel commit status on GitHub.
 
 ## Gotchas
 - Re-measure before trusting this file: `git status -sb` and `./scripts/verify quick`.
 - A push to `main` deploys to production: only with the owner's explicit GO. Local hooks block it otherwise.
 - Before starting a dev server, check that nothing else holds port 4321.
+- Dev renders the 404 per request, so on `/wine/<missing>` the Wines nav link shows active in dev; the built `404.html` is prerendered as `/404` and highlights nothing.
 - `.impeccable/live` injects a script into `src/layouts/Base.astro`; never commit while it is injected.
