@@ -1,5 +1,5 @@
 # Next session
-_Updated: 2026-11-23 16:07 -04 · Branch: feat/404-integrated · Tool: Claude Code, claude-opus-5-5_
+_Updated: 2026-11-23 16:20 -04 · Branch: main · Tool: Claude Code, claude-opus-5-5_
 
 ## Goal
 Keep Paircraft a shippable search-first pocket guide. This session: a custom not-found page that leads back into the guide.
@@ -12,15 +12,15 @@ Keep Paircraft a shippable search-first pocket guide. This session: a custom not
 - measured: build `.vercel/output/config.json` ends with `^/.*$ -> /404.html, status 404`; `404.html` sends `noindex, nofollow` and highlights no nav link.
 - measured: dev `curl` on `/ruta-que-no-existe`, `/wine/no-existe`, `/dish/no-existe` -> 404 with the new title; no horizontal overflow at 390 and 1440 px.
 - measured: pushed with the owner's GO, `origin/main` 0cd8c10..832a6b3; GitHub commit status `Vercel: success`, "Deployment has completed", 2026-11-23T20:06:17Z.
-- measured: local `main` diverged from `origin/main` (an older squash of the harness adoption plus pre-integration commits, also kept on `feat/404-page`). Do not push local `main`.
+- measured: local `main` = `origin/main` + this handoff commit, tracking `origin/main`. Superseded pre-integration commits stay on `feat/404-page`.
 - inferred, pre-existing: `sw.js` builds to `dist/server/`, not `.vercel/output/static/`, so `/sw.js` likely 404s in production and the service worker never registers. Not touched.
-- manual_pending: owner's real-device check (iPhone Safari, Android Chrome).
+- inherited: the owner checked the production 404 URLs and approved them ("PERFECTO"), 2026-11-23; devices not stated.
 
 ## Blocked on
-The owner: real-device check of the 404 in production (iPhone Safari, Android Chrome).
+Nothing.
 
 ## Next action
-Align local `main` with `origin/main` once the owner agrees (`feat/404-page` keeps the superseded commits).
+None queued. Candidate if the owner wants it: why `sw.js` is not in the static output (separate brief).
 
 ## Gotchas
 - Re-measure before trusting this file: `git status -sb` and `./scripts/verify quick`.
