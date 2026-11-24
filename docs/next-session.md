@@ -1,8 +1,8 @@
 # Next session
-_Updated: 2026-11-23 22:45 -04 · Branch: docs/handoff-manifest · Tool: Claude Code, claude-opus-5-5_
+_Updated: 2026-11-23 22:47 -04 · Branch: docs/handoff-manifest · Tool: Claude Code, claude-opus-5-5_
 
 ## Goal
-Keep Paircraft a shippable search-first pocket guide. The 404 page is closed; the static manifest is deployed and waits for the owner's review.
+Keep Paircraft a shippable search-first pocket guide. The 404 page and the static manifest are both deployed and closed by the owner.
 
 ## Changes
 - `src/pages/404.astro` is in production since 832a6b3; the owner approved it on the production URLs.
@@ -14,15 +14,15 @@ Keep Paircraft a shippable search-first pocket guide. The 404 page is closed; th
 - measured: `./scripts/verify full` on 6510949 -> `pass=3 fail=0 unmeasured=0 manual_pending=2`, 2026-11-23.
 - measured: no `sw.js`, `workbox-*` or `registerSW.js` in `dist/` or `.vercel/output/`; no reference to them or to `@vite-pwa/astro` in versioned code or `bun.lock`.
 - measured: built `manifest.webmanifest` is valid JSON and identical to `public/`; `about` and `404.html` link it.
-- measured: no unpushed commits or stashes in this clone before this file's commit; all local branches are integrated in `origin/main`.
+- measured: in the clone that wrote this file, no stashes and nothing unpushed except the commits of `docs/handoff-manifest`; every other local branch is integrated in `origin/main`.
 - inherited: dev serves the manifest as `application/manifest+json`, and it is JSON-identical to the one the plugin generated. The evidence copy (`.harness/evidence/sw/`) is in the clone that did the work, not in every clone.
-- not measured: the manifest in production, on a real device.
+- reported by the owner: "Add to Home Screen" in production on iPhone Safari and Android Chrome, name and icon checked and approved, 2026-11-23.
 
 ## Blocked on
-The owner's review of the installed app in production: "Add to Home Screen" on iPhone Safari and Android Chrome, checking name and icon. Nothing in the repo records it yet.
+Nothing.
 
 ## Next action
-Record the owner's review here. This commit has no push of its own: it goes out with the next task, with the owner's GO, so the handoff does not spend a deploy.
+None pending in this repo; the next task comes from the owner. The commits on `docs/handoff-manifest` have no push of their own: they go out with that task, with the owner's GO, so the handoff does not spend a deploy.
 
 ## Gotchas
 - Re-measure before trusting this file: `git fetch`, `git status -sb` and `./scripts/verify quick`. Work happens in more than one clone, so without the fetch a clean status can be days behind.
