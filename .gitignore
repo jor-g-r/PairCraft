@@ -42,3 +42,6 @@ pnpm-debug.log*
 
 # Harness: scripts/verify logs and evidence
 .harness/
+
+# Private notes: strategy stays out of this public repo
+docs/private/
