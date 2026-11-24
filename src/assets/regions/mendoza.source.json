@@ -5,7 +5,7 @@
   "location": "Mendoza, Argentina (assumed from filename — unverified)",
   "license": "Unsplash License assumed from the founder's statement — flag: find the photo page and rule out Unsplash+ before any public launch",
   "alt": "Vineyard in Mendoza",
-  "suppliedBy": "Jorge, 2026-05-14",
+  "suppliedBy": "founder, 2026-05-14",
   "original": "mendoza-vineyard.jpg (2000x3000 JPEG)",
   "transformation": "Resized to 1200px wide and encoded as WebP (q80).",
   "note": "The commit that added the photo (5281d9e, 2026-05-14) also says Unsplash. The original (mendoza-vineyard.jpg) carries no EXIF, and the location stays unverified."

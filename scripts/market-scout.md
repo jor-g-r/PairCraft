@@ -60,7 +60,7 @@ request time. Executor: Claude session + `scripts/scout-retailers.ts`.
      Catena Clásica).
    - Update `src/content/markets/<mkt>.mdx` `retailers` with verified names+URLs.
 
-6. **Human selection gate (do not skip).** New wines go through Jorge's review
+6. **Human selection gate (do not skip).** New wines go through the owner's review
    and then the normal `import-csv.ts` → `draft-pairings.ts` flow. Every new
    wine costs ~12 pairings of Hugh-voice curation — the bottleneck is
    editorial, not extraction. The scout produces candidates, never corpus.
@@ -102,13 +102,13 @@ request time. Executor: Claude session + `scripts/scout-retailers.ts`.
   per-store: "Champagne"/"Tinto", which forced widening the Shopify type
   filter to color words), Curda 24 (WooCommerce, 17 — small but real). Total
   947 rows → **788 candidates** (prices USD).
-- **Corpus check:** Jorge's 6 manual VE tags (2026-06-18) stand — the scout
+- **Corpus check:** The owner's 6 manual VE tags (2026-06-18) stand — the scout
   sees 3 e-shops, not the full market, so absence here is NOT counter-
   evidence. Scout-earned cuvée tags: **Moët Brut Impérial (Licoteca $45 +
   El Catador), Protos Roble (both), Enate Chardonnay (Licoteca)**. Rejected
   by the eyeball rule: Norton "Reserva" Malbec (tier above our Norton Malbec
   — same call as DV Catena in AR). Ramón Bilbao Crianza corroborated
-  (magnum Ed. Limitada listing — fuzzy but the tag rests on Jorge anyway).
+  (magnum Ed. Limitada listing — fuzzy but the tag rests on the owner anyway).
 
 ### CL — Chile (run 2026-07-05)
 
@@ -122,7 +122,7 @@ request time. Executor: Claude session + `scripts/scout-retailers.ts`.
   VentaVinos (Shopify, 84). Total 888 rows → **544 candidates** (prices CLP).
 - **Corpus check:** cuvée-level: Garzón Reserva Marselan (La Vinoteca → earned
   the CL tag), Leyda Pinot Noir, 1865 Old Vines Cab (already CL-tagged).
-  Producer-only resolved: Mionetto+CL confirmed by Jorge 2026-07-06 (base listing = Treviso Brut);
+  Producer-only resolved: Mionetto+CL confirmed by the owner 2026-07-06 (base listing = Treviso Brut);
   Castillo de Molina (Cabernet, not our SB). **Known blind spot:** supermarket
   value brands (Gato Negro) don't surface in specialist catalogs — their CL
   tags rest on domestic-production confidence, not scout evidence.
@@ -160,8 +160,7 @@ request time. Executor: Claude session + `scripts/scout-retailers.ts`.
   retailer URLs verified live, recorded in `ae.mdx`.
 - **Tags:** none — import-only market, so domestic logic can't apply and
   there's no scout evidence. Feed shows grape fallback until curated.
-- **Why it's here despite the data gap:** Jorge's diversification call +
-  the CUHELAV angle (LATAM hospitality alumni staff Dubai hotels).
+- **Why it's here despite the data gap:** the owner's diversification call.
 
 ### AR — Argentina (run 2026-07-05)
 
