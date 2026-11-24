@@ -1,11 +1,13 @@
 {
   "type": "stock",
-  "author": "Unrecorded",
-  "source": "Unrecorded (supplied with the founder's dashboard designs as wine-dashboard-bg.jpg, 2026-10-23)",
+  "author": "Kateryna Hliznitsova",
+  "source": "https://unsplash.com/photos/9cob_4FyJ1E",
+  "assetUrl": "https://images.unsplash.com/photo-1696081248267-b7cdcf172d6d",
   "location": "Outdoor table under a vine (scene)",
-  "license": "Unrecorded — flag: confirm provenance with the founder before any public launch",
+  "license": "Unsplash License (free to use, attribution appreciated not required)",
   "alt": "A bottle and a glass of white wine on a table under a vine, with cheese and bread",
   "suppliedBy": "founder, 2026-10-23",
-  "original": "wine-dashboard-bg.jpg (3652x5471 JPEG)",
-  "transformation": "Resized to 1600px wide and encoded as WebP (q80). Editorial scene photograph; the bottle shown is not a bottle in the guide."
+  "original": "kateryna-hliznitsova-9cob_4FyJ1E-unsplash.jpg, supplied as wine-dashboard-bg.jpg (3652x5471 JPEG)",
+  "transformation": "Resized to 1600px wide and encoded as WebP (q80). Editorial scene photograph; the bottle shown is not a bottle in the guide.",
+  "note": "Recovered 2026-11-24 from the download URL macOS kept on the founder's original; author and license read on the Unsplash page the same day."
 }
