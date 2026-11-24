@@ -52,7 +52,7 @@ Wine and food pairings with short, opinionated explanations — pocket guide sty
 ## Stack
 
 - Astro 6 with TypeScript strict; Tailwind v4 via `@tailwindcss/vite`, `@theme` tokens in `src/styles/global.css`
-- `@vite-pwa/astro` (manifest and service worker, autoUpdate); `@astrojs/vercel` adapter for the SSR home and API routes
+- Web app manifest as a static file, `public/manifest.webmanifest`; no service worker, so nothing works offline yet. `@astrojs/vercel` adapter for the SSR home and API routes
 - `@anthropic-ai/sdk`, used only by the local curation and translation scripts in `scripts/` (no runtime code calls a model)
 - Bun as runtime and package manager
 - Agents: any tool that reads `AGENTS.md`. Keep project instructions here: a `CLAUDE.md` in the repo or above it would make Claude Code ignore this file.

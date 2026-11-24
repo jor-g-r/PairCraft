@@ -1,0 +1,19 @@
+{
+  "name": "Paircraft",
+  "short_name": "Paircraft",
+  "description": "Wine and food pairings with short, opinionated explanations — pocket guide style.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a1a1a",
+  "lang": "en",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

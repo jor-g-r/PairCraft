@@ -6,7 +6,6 @@ Wine and food pairings with short, opinionated explanations — pocket guide sty
 
 - [Astro](https://astro.build/) — mobile-first PWA
 - [Tailwind CSS v4](https://tailwindcss.com/) — CSS-first config
-- [@vite-pwa/astro](https://vite-pwa-org.netlify.app/frameworks/astro.html) — manifest + service worker
 - [Bun](https://bun.sh/) — runtime and package manager
 
 ## Dev
