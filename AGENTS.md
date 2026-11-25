@@ -7,7 +7,7 @@ Wine and food pairings with short, opinionated explanations — pocket guide sty
 
 ## Project profile
 
-- Type: web: Astro 6 (TypeScript strict), Tailwind 4, Bun; Vercel adapter, home is the only SSR page
+- Type: web: Astro 7 (TypeScript strict), Tailwind 4, Bun; Vercel adapter, home is the only SSR page
 - Workdir: repo root
 - Requires: Bun (lockfile `bun.lock`); env names: `ANTHROPIC_API_KEY`, `OPENCODE_API_KEY`, `LLM_PROVIDER`, `CHROME_BIN` (local scripts only; the deploy needs none)
 - Setup: `bun install` [verified 2026-11-11]
@@ -51,7 +51,7 @@ Wine and food pairings with short, opinionated explanations — pocket guide sty
 
 ## Stack
 
-- Astro 6 with TypeScript strict; Tailwind v4 via `@tailwindcss/vite`, `@theme` tokens in `src/styles/global.css`
+- Astro 7 with TypeScript strict; Tailwind v4 via `@tailwindcss/vite`, `@theme` tokens in `src/styles/global.css`
 - Web app manifest as a static file, `public/manifest.webmanifest`; no service worker, so nothing works offline yet. `@astrojs/vercel` adapter for the SSR home and API routes
 - `@anthropic-ai/sdk`, used only by the local curation and translation scripts in `scripts/` (no runtime code calls a model)
 - Bun as runtime and package manager
@@ -84,6 +84,6 @@ Wine and food pairings with short, opinionated explanations — pocket guide sty
 
 ## Dev tooling
 
-- Run the dev server detached: `screen -dmS paircraft-dev bash -c 'cd "$(git rev-parse --show-toplevel)" && bun run dev --host 127.0.0.1 > /tmp/paircraft-dev.log 2>&1'`. Plain background processes get SIGTERM'd when the agent's shell call ends, and a stale server can 500 every `/_image` request with `MissingSharp` (restart it).
+- Dev server: `bun run dev --host 127.0.0.1`. Started by an agent, Astro 7 puts itself in the background and outlives the shell call: `bunx astro dev status`, `bunx astro dev logs` and `bunx astro dev stop` (killing its `screen` leaves it running). A stale server can 500 every `/_image` request with `MissingSharp` (stop it and start again).
 - `agent-browser` CLI for screenshots and DOM checks (dark mode: `set media dark`; mobile: `set viewport 390 844`). When reporting local work, include the direct `http://localhost:4321/<route>` URLs.
 - Impeccable design tooling: `.agents/skills/impeccable/`, `.impeccable/design.json`, `.impeccable/surfaces/paircraft.md` (direction contract), live-mode config in `.impeccable/live/config.json` (injects into `src/layouts/Base.astro`; never commit while it is injected). If a browser Accept never arrives, accept from the terminal with `impeccable live-accept --id <session> --variant <n> --page-url <route>`, then the carbonize cleanup, `live-complete` and `live-server stop`.
